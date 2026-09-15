@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#090d17" />
+  <title>MOB GUN CAT - Dual Handgun Action</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div id="gameRoot">
+    <section id="titleScreen" class="screen-layer active" aria-label="タイトル画面">
+      <div class="title-grid"></div>
+      <div class="title-emblem" aria-hidden="true">
+        <span class="ear ear-left"></span>
+        <span class="ear ear-right"></span>
+        <span class="glasses g-left"></span>
+        <span class="glasses g-right"></span>
+        <span class="glasses-bridge"></span>
+      </div>
+      <div class="title-copy">
+        <div class="kicker">DUAL HANDGUN ACTION</div>
+        <h1><span>MOB</span> GUN CAT</h1>
+        <p>ピンク猫フード × 二丁拳銃 × 3Dウェーブバトル</p>
+      </div>
+      <button id="titleStartBtn" class="tap-start" type="button">TAP TO START</button>
+      <div class="title-foot">BROWSER PROTOTYPE / v0.4</div>
+    </section>
+
+    <section id="mainScreen" class="screen-layer" aria-label="メイン画面">
+      <div class="main-panel">
+        <div class="main-brand">
+          <span class="mini-label">MOB</span>
+          <strong>GUN CAT</strong>
+          <small>DUAL HANDGUN ACTION</small>
+        </div>
+
+        <div class="pilot-card">
+          <div class="avatar-mark" aria-hidden="true">
+            <span class="mini-ear left"></span>
+            <span class="mini-ear right"></span>
+            <span class="mini-goggle left"></span>
+            <span class="mini-goggle right"></span>
+          </div>
+          <div>
+            <div class="pilot-name">MOB CAT</div>
+            <div class="pilot-desc">DUAL HANDGUN / AUTO LOCK / DODGE</div>
+          </div>
+        </div>
+
+        <div class="feature-row" aria-label="追加機能">
+          <span>AUTO AIM</span><span>LEVEL UP</span><span>SPECIAL</span><span>BOSS</span>
+        </div>
+
+        <div class="main-actions">
+          <button id="battleStartBtn" class="menu-btn primary" type="button"><span>BATTLE START</span><small>ウェーブ戦を開始</small></button>
+          <button id="howToBtn" class="menu-btn" type="button"><span>HOW TO PLAY</span><small>操作方法</small></button>
+          <button id="settingsBtn" class="menu-btn" type="button"><span>SETTINGS</span><small>ゲーム設定</small></button>
+        </div>
+
+        <div class="main-stats">
+          <div><small>BEST SCORE</small><strong id="bestScore">0</strong></div>
+          <div><small>BEST WAVE</small><strong id="bestWave">1</strong></div>
+        </div>
+      </div>
+      <div class="main-caption">Blenderモデル差し替え前のプレイアブル版</div>
+    </section>
+
+    <div id="modalBackdrop" class="modal-backdrop hidden" aria-hidden="true">
+      <div id="howToModal" class="modal-card hidden" role="dialog" aria-modal="true" aria-labelledby="howToTitle">
+        <h2 id="howToTitle">HOW TO PLAY</h2>
+        <p><b>移動：</b>WASD / 矢印キー / スマホ十字キー</p>
+        <p><b>射撃：</b>Space長押し / 右下⚡長押し。近い敵を自動ロック。</p>
+        <p><b>回避：</b>Shift / DODGE。入力方向へ無敵ステップ。</p>
+        <p><b>必殺：</b>Q / SPECIAL。ゲージMAXで360°二丁乱射。</p>
+        <p><b>LEVEL UP：</b>敵を倒してEXPを集め、3つから強化を選択。</p>
+        <button class="modal-close" data-close-modal type="button">CLOSE</button>
+      </div>
+      <div id="settingsModal" class="modal-card hidden" role="dialog" aria-modal="true" aria-labelledby="settingsTitle">
+        <h2 id="settingsTitle">SETTINGS</h2>
+        <label class="setting-row"><span>CAMERA SHAKE</span><input id="shakeToggle" type="checkbox" checked /></label>
+        <label class="setting-row"><span>DAMAGE FLASH</span><input id="flashToggle" type="checkbox" checked /></label>
+        <label class="setting-row"><span>AUTO AIM</span><input id="autoAimToggle" type="checkbox" checked /></label>
+        <button class="modal-close" data-close-modal type="button">CLOSE</button>
+      </div>
+    </div>
+
+    <div id="hud" class="hidden">
+      <div class="hud-left">
+        <button id="menuBtn" type="button" class="hud-menu" aria-label="メイン画面へ戻る">MENU</button>
+        <div class="hud-stack">
+          <div class="brand">MOB GUN CAT</div>
+          <div id="quest">WAVE 1 を生き残れ</div>
+          <div id="lockText" class="lock-text">LOCK: ---</div>
+        </div>
+      </div>
+      <div class="hud-center">
+        <div class="bar-label"><span>LV <b id="levelText">1</b></span><span id="xpText">0 / 100</span></div>
+        <div class="meter"><i id="xpFill"></i></div>
+        <div class="bar-label special-label"><span>SPECIAL</span><span id="specialText">0%</span></div>
+        <div class="meter special-meter"><i id="specialFill"></i></div>
+      </div>
+      <div class="hud-right">
+        <div id="hp">HP ♥♥♥♥♥♥</div>
+        <div id="wave">WAVE 1</div>
+        <div id="score">SCORE 0</div>
+      </div>
+    </div>
+
+    <div id="bossHud" class="boss-hud hidden" aria-live="polite">
+      <div class="boss-name">BOSS / VOLT BRUTE</div>
+      <div class="boss-meter"><i id="bossFill"></i></div>
+    </div>
+
+    <div id="levelUpOverlay" class="levelup-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="levelUpTitle">
+      <div class="levelup-panel">
+        <div class="levelup-kicker">LEVEL UP</div>
+        <h2 id="levelUpTitle">強化を1つ選択</h2>
+        <div id="levelChoices" class="level-choices"></div>
+      </div>
+    </div>
+
+    <div id="message" class="hidden">
+      <div id="speaker">SYSTEM</div>
+      <div id="messageText"></div>
+      <div class="messageHint">タップ / E / Enter で次へ</div>
+    </div>
+
+    <div id="toast" class="hidden"></div>
+    <div id="damageFlash" class="damage-flash hidden"></div>
+    <div id="crosshair" class="hidden">+</div>
+
+    <div id="mobileControls" class="hidden" aria-label="スマホ操作">
+      <div class="dpad">
+        <button class="ctl up" data-key="up" aria-label="前へ">▲</button>
+        <button class="ctl left" data-key="left" aria-label="左へ">◀</button>
+        <button class="ctl down" data-key="down" aria-label="後ろへ">▼</button>
+        <button class="ctl right" data-key="right" aria-label="右へ">▶</button>
+      </div>
+      <div class="actionPad">
+        <button id="specialBtn" class="round special" aria-label="必殺技">SP</button>
+        <button id="dashBtn" class="round info" aria-label="回避">D</button>
+        <button id="attackBtn" class="round danger" aria-label="射撃">⚡</button>
+      </div>
+    </div>
+
+    <div id="help" class="hidden">
+      PC: WASD / 矢印=移動・Space長押し=射撃・Shift=回避・Q=必殺<br />
+      スマホ: 左=移動・⚡長押し=射撃・D=回避・SP=必殺
+    </div>
+  </div>
+
+  <script type="module" src="./game.js"></script>
+</body>
+</html>
