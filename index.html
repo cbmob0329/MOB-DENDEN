@@ -24,7 +24,7 @@
         <p>ピンク猫フード × 二丁拳銃 × 3Dウェーブバトル</p>
       </div>
       <button id="titleStartBtn" class="tap-start" type="button">TAP TO START</button>
-      <div class="title-foot">BROWSER PROTOTYPE / v0.6 MOBILE FIX</div>
+      <div class="title-foot">BROWSER PROTOTYPE / v0.7 MOBILE PAD FIX</div>
     </section>
 
     <section id="mainScreen" class="screen-layer" aria-label="メイン画面">
@@ -71,7 +71,7 @@
         <h2 id="howToTitle">HOW TO PLAY</h2>
         <p><b>移動：</b>WASD / 矢印キー / スマホ左バーチャルスティック</p>
         <p><b>射撃：</b>Space長押し / 右下FIREをタップ / 長押し。左右の銃口からロック敵へクロス収束。</p>
-        <p><b>回避：</b>Shift / DODGE。入力方向へ無敵ステップ。</p>
+        <p><b>回避：</b>Shift / DODGE。移動入力方向へ短距離の無敵ステップ。</p>
         <p><b>必殺：</b>Q / SPECIAL。ゲージMAXで360°二丁乱射。</p>
         <p><b>LEVEL UP：</b>敵を倒してEXPを集め、3つから強化を選択。</p>
         <button class="modal-close" data-close-modal type="button">CLOSE</button>
@@ -139,14 +139,14 @@
       </div>
       <div class="actionPad">
         <button id="specialBtn" type="button" class="round special" aria-label="必殺技">SP</button>
-        <button id="dashBtn" type="button" class="round info" aria-label="回避">D</button>
+        <button id="dashBtn" type="button" class="round info dodge-button" aria-label="回避">DODGE</button>
         <button id="attackBtn" type="button" class="round danger fire-button" aria-label="射撃">FIRE</button>
       </div>
     </div>
 
     <div id="help" class="hidden">
       PC: WASD / 矢印=移動・Space長押し=射撃・Shift=回避・Q=必殺<br />
-      スマホ: 左スティック=移動・FIREタップ/長押し=射撃・D=回避・SP=必殺
+      スマホ: 左バーチャルパッド=移動・FIRE長押し=連射・DODGE=回避・SP=必殺
     </div>
   </div>
 

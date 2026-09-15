@@ -274,7 +274,29 @@ function shootPlayer(){
 }
 function enemyShoot(e){e.shootCd=e.type==='boss'?.72:1.55+Math.random()*.45;const from=e.group.position.clone().add(new THREE.Vector3(0,e.type==='boss'?1.3:.82,0));const aim=new THREE.Vector3().subVectors(player.position.clone().add(new THREE.Vector3(0,.65,0)),from).normalize();const shots=e.type==='boss'&&e.hp<e.maxHp*.5?3:1;for(let s=0;s<shots;s++){const dir=aim.clone().applyAxisAngle(new THREE.Vector3(0,1,0),(s-(shots-1)/2)*.13);const mesh=new THREE.Mesh(new THREE.SphereGeometry(e.type==='boss'?.19:.13,8,8),new THREE.MeshBasicMaterial({color:e.type==='boss'?0xffa53a:0x79f8ff}));mesh.position.copy(from);scene.add(mesh);enemyProjectiles.push({mesh,dir,life:2.5,damage:e.type==='boss'?2:1});}}
 
-function dash(){if(!state.inGame||state.messageOpen||state.gameOver||state.levelUpOpen||state.dashCooldown>0)return;let mx=((keys.right?1:0)-(keys.left?1:0))+stick.x,mz=((keys.down?1:0)-(keys.up?1:0))+stick.y;if(Math.hypot(mx,mz)<.08){mx=Math.sin(player.rotation.y);mz=Math.cos(player.rotation.y);}const len=Math.hypot(mx,mz)||1;mx/=len;mz/=len;for(let i=1;i<=7;i++){const nx=player.position.x+mx*.82,nz=player.position.z+mz*.82;if(!collides(nx,nz)){player.position.x=nx;player.position.z=nz;}}state.dashCooldown=state.dashCooldownBase||1.15;state.dashTimer=.24;state.invincible=Math.max(state.invincible,.34);burst(player.position.clone().add(new THREE.Vector3(0,.8,0)),0x8ef4ff,16,2.5);}
+function dash(){
+  if(!state.inGame||state.messageOpen||state.gameOver||state.levelUpOpen||state.dashCooldown>0)return;
+  let mx=((keys.right?1:0)-(keys.left?1:0))+stick.x;
+  let mz=((keys.down?1:0)-(keys.up?1:0))+stick.y;
+  if(Math.hypot(mx,mz)<.08){mx=Math.sin(player.rotation.y);mz=Math.cos(player.rotation.y);}
+  const len=Math.hypot(mx,mz)||1;mx/=len;mz/=len;
+  // Safe short-step dodge. v0.6 could move almost six world units instantly and pass through obstacles.
+  const totalDistance=2.55;
+  const steps=10;
+  const step=totalDistance/steps;
+  for(let i=0;i<steps;i++){
+    const nx=player.position.x+mx*step;
+    const nz=player.position.z+mz*step;
+    if(collides(nx,nz,.45))break;
+    player.position.x=nx;
+    player.position.z=nz;
+  }
+  player.rotation.y=Math.atan2(mx,mz);
+  state.dashCooldown=state.dashCooldownBase||1.15;
+  state.dashTimer=.18;
+  state.invincible=Math.max(state.invincible,.38);
+  burst(player.position.clone().add(new THREE.Vector3(0,.8,0)),0x8ef4ff,12,2.0);
+}
 
 function useSpecial(){if(!state.inGame||state.gameOver||state.messageOpen||state.levelUpOpen)return;if(state.special<state.specialMax){toast(`SPECIAL ${Math.floor(state.special/state.specialMax*100)}%`);return;}state.special=0;state.invincible=Math.max(state.invincible,1.0);state.shakeStrength=.7;const count=32;for(let i=0;i<count;i++){const a=i/count*Math.PI*2;const dir=new THREE.Vector3(Math.sin(a),0,Math.cos(a));const muzzle=player.position.clone().add(new THREE.Vector3(0,1.1,0)).addScaledVector(dir,.9);const mesh=new THREE.Mesh(new THREE.SphereGeometry(.16,8,8),new THREE.MeshBasicMaterial({color:i%2?0xfff26e:0xff72c8}));mesh.position.copy(muzzle);scene.add(mesh);projectiles.push({mesh,dir,life:1.65,damage:state.damage*2.2,pierce:2,special:true});}burst(player.position.clone().add(new THREE.Vector3(0,1,0)),0xffdf59,30,4.2);toast('SPECIAL / 360° DUAL BARRAGE!');updateHUD();}
 
@@ -343,11 +365,28 @@ function restartGame(){
   state.inGame=true;clearBattleObjects();state.hp=state.maxHp=6;state.wave=1;state.score=0;state.level=1;state.xp=0;state.xpNext=100;state.pendingLevelUps=0;state.levelUpOpen=false;state.damage=1;state.fireInterval=.145;state.bulletSpeed=20;state.moveSpeed=6.2;state.bulletCount=2;state.pierce=0;state.crit=.08;state.special=0;state.specialGain=1;state.dashCooldownBase=1.15;state.waveClearDelay=0;state.invincible=0;state.shootCooldown=0;state.dashCooldown=0;state.dashTimer=0;state.gameOver=false;state.messageQueue=[];state.messageOpen=false;messageEl.classList.add('hidden');levelUpOverlay.classList.add('hidden');player.position.set(0,.05,18);player.rotation.y=Math.PI;player.visible=true;spawnWave(1);updateHUD();setQuest('WAVE 1 を生き残れ');}
 function stopMovement(){keys.up=keys.down=keys.left=keys.right=false;attackHeld=false;attackBtn.classList.remove('pressed');resetStick();}
 function clearBattleObjects(){while(projectiles.length)scene.remove(projectiles.pop().mesh);while(enemyProjectiles.length)scene.remove(enemyProjectiles.pop().mesh);while(pickups.length)scene.remove(pickups.pop().group);clearEnemies();}
-function setGameplayUi(visible){hudEl.classList.toggle('hidden',!visible);crosshairEl.classList.toggle('hidden',!visible);mobileControlsEl.classList.toggle('hidden',!visible);helpEl.classList.toggle('hidden',!visible);if(!visible)bossHud.classList.add('hidden');}
+function isTouchUi(){
+  return (navigator.maxTouchPoints||0)>0 || window.matchMedia('(pointer: coarse)').matches || window.matchMedia('(any-pointer: coarse)').matches || innerWidth<=1024;
+}
+function refreshInputUi(){
+  const touch=isTouchUi();
+  document.body.classList.toggle('touch-ui',touch);
+  if(state.inGame){
+    mobileControlsEl.classList.toggle('hidden',!touch);
+    helpEl.classList.toggle('hidden',touch);
+  }
+}
+function setGameplayUi(visible){
+  hudEl.classList.toggle('hidden',!visible);
+  crosshairEl.classList.toggle('hidden',!visible);
+  if(visible){refreshInputUi();}
+  else{mobileControlsEl.classList.add('hidden');helpEl.classList.add('hidden');}
+  if(!visible)bossHud.classList.add('hidden');
+}
 function closeModal(){modalBackdrop.classList.add('hidden');howToModal.classList.add('hidden');settingsModal.classList.add('hidden');modalBackdrop.setAttribute('aria-hidden','true');}
 function openModal(which){modalBackdrop.classList.remove('hidden');modalBackdrop.setAttribute('aria-hidden','false');howToModal.classList.toggle('hidden',which!=='how');settingsModal.classList.toggle('hidden',which!=='settings');}
 function showMain(){state.inGame=false;stopMovement();closeModal();setGameplayUi(false);messageEl.classList.add('hidden');levelUpOverlay.classList.add('hidden');titleScreen.classList.remove('active');mainScreen.classList.add('active');clearBattleObjects();state.gameOver=false;player.visible=true;player.position.set(0,.05,8);player.rotation.y=Math.PI;updateHUD();}
-function startBattle(){closeModal();titleScreen.classList.remove('active');mainScreen.classList.remove('active');setGameplayUi(true);restartGame();say('SYSTEM',['BATTLE START！','近い敵を自動ロック。Space / FIREタップ・長押しで二丁拳銃を連射します。','EXPでレベルアップ、SPECIALが100%になったら360°乱射が使えます。']);}
+function startBattle(){closeModal();titleScreen.classList.remove('active');mainScreen.classList.remove('active');setGameplayUi(true);restartGame();toast(isTouchUi()?'左PADで移動 / FIRE長押しで連射':'WASDで移動 / Space長押しで連射');}
 
 titleStartBtn.addEventListener('click',showMain);battleStartBtn.addEventListener('click',startBattle);howToBtn.addEventListener('click',()=>openModal('how'));settingsBtn.addEventListener('click',()=>openModal('settings'));document.querySelectorAll('[data-close-modal]').forEach(b=>b.addEventListener('click',closeModal));modalBackdrop.addEventListener('pointerdown',e=>{if(e.target===modalBackdrop)closeModal();});$('menuBtn').addEventListener('click',showMain);shakeToggle.addEventListener('change',()=>state.cameraShake=shakeToggle.checked);flashToggle.addEventListener('change',()=>state.damageFlash=flashToggle.checked);autoAimToggle.addEventListener('change',()=>state.autoAim=autoAimToggle.checked);
 
@@ -400,7 +439,12 @@ attackBtn.addEventListener('pointerdown',startFire);
 attackBtn.addEventListener('pointerup',stopFire);
 attackBtn.addEventListener('pointercancel',stopFire);
 attackBtn.addEventListener('lostpointercapture',()=>{attackHeld=false;attackBtn.classList.remove('pressed');});
-dashBtn.addEventListener('pointerdown',e=>{e.preventDefault();e.stopPropagation();try{dashBtn.setPointerCapture(e.pointerId);}catch{}dash();});
+const pressDodge=e=>{e.preventDefault();e.stopPropagation();dashBtn.classList.add('pressed');dash();};
+const releaseDodge=e=>{e.preventDefault();e.stopPropagation();dashBtn.classList.remove('pressed');};
+dashBtn.addEventListener('pointerdown',pressDodge);
+dashBtn.addEventListener('pointerup',releaseDodge);
+dashBtn.addEventListener('pointercancel',releaseDodge);
+dashBtn.addEventListener('pointerleave',releaseDodge);
 specialBtn.addEventListener('pointerdown',e=>{e.preventDefault();e.stopPropagation();try{specialBtn.setPointerCapture(e.pointerId);}catch{}useSpecial();});
 messageEl.addEventListener('pointerdown',e=>{e.preventDefault();if(state.messageOpen)nextMessage();else if(state.gameOver)restartGame();});
 
@@ -421,6 +465,7 @@ function loop(now){requestAnimationFrame(loop);const dt=Math.min((now-last)/1000
   if(state.inGame&&!state.messageOpen&&!state.gameOver&&!state.levelUpOpen){updateEnemies(dt,t);updateProjectiles(dt);updatePickups(dt,t);updateParticles(dt);updateWave(dt);}else{updateParticles(dt);}
   const desired=new THREE.Vector3(player.position.x+9,11.5,player.position.z+12);if(state.cameraShake&&state.shakeStrength>0){desired.x+=(Math.random()-.5)*state.shakeStrength;desired.y+=(Math.random()-.5)*state.shakeStrength;desired.z+=(Math.random()-.5)*state.shakeStrength;}camera.position.lerp(desired,1-Math.pow(.001,dt));camTarget.set(player.position.x,1.4,player.position.z);camera.lookAt(camTarget);renderer.render(scene,camera);
 }
-window.addEventListener('resize',()=>{camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight);renderer.setPixelRatio(Math.min(devicePixelRatio,1.55));});
+window.addEventListener('resize',()=>{camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight);renderer.setPixelRatio(Math.min(devicePixelRatio,1.55));refreshInputUi();});
+window.addEventListener('orientationchange',()=>setTimeout(refreshInputUi,120));
 
-bestScoreEl.textContent=String(state.bestScore);bestWaveEl.textContent=String(state.bestWave);updateHUD();showMain();titleScreen.classList.add('active');mainScreen.classList.remove('active');requestAnimationFrame(loop);
+bestScoreEl.textContent=String(state.bestScore);bestWaveEl.textContent=String(state.bestWave);updateHUD();refreshInputUi();showMain();titleScreen.classList.add('active');mainScreen.classList.remove('active');requestAnimationFrame(loop);
