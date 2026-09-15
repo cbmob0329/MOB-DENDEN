@@ -175,6 +175,14 @@ function say(speaker,lines){state.messageQueue=lines.map(text=>({speaker,text}))
 function nextMessage(){if(state.messageQueue.length===0){state.messageOpen=false;messageEl.classList.add('hidden');return;}const m=state.messageQueue.shift();state.messageOpen=true;speakerEl.textContent=m.speaker;messageText.textContent=m.text;messageEl.classList.remove('hidden');}
 
 function findNearestEnemy(maxDist=26){let best=null,bestD=maxDist;for(const e of enemies){if(e.dead)continue;const d=player.position.distanceTo(e.group.position);if(d<bestD){bestD=d;best=e;}}return best;}
+function enemyAimPoint(e){
+  const y=e.type==='boss'?1.35:e.type==='shield'?1.0:.86;
+  return e.group.position.clone().add(new THREE.Vector3(0,y,0));
+}
+function enemyHitRadius(e){
+  // Mobile-friendly hit assist: intentionally larger than the visible body.
+  return e.type==='boss'?1.75:e.type==='shield'?1.28:1.05;
+}
 function updateLock(){lockTarget=state.autoAim&&state.inGame&&!state.gameOver&&!state.levelUpOpen?findNearestEnemy(30):null;if(lockTarget){const d=player.position.distanceTo(lockTarget.group.position);lockTextEl.textContent=`LOCK: ${lockTarget.label} ${d.toFixed(1)}m`; }else lockTextEl.textContent='LOCK: ---';}
 
 function damagePlayer(amount=1){if(state.invincible>0||state.gameOver||!state.inGame||state.levelUpOpen)return;state.hp=Math.max(0,state.hp-amount);state.invincible=.72;if(state.cameraShake)state.shakeStrength=Math.max(state.shakeStrength,.5);if(state.damageFlash)state.damageFlashTimer=.14;updateHUD();burst(player.position.clone().add(new THREE.Vector3(0,1.5,0)),0xff8fb3,12,1.7);if(state.hp<=0){state.gameOver=true;attackHeld=false;say('SYSTEM',['やられてしまった……','E / Enter または射撃ボタンでリスタートできます。']);setQuest('GAME OVER');}}
@@ -234,12 +242,31 @@ function openLevelUp(){if(state.pendingLevelUps<=0)return;state.levelUpOpen=true
 
 function shootPlayer(){
   if(!state.inGame||state.levelUpOpen)return;if(state.messageOpen){nextMessage();return;}if(state.gameOver){restartGame();return;}if(state.shootCooldown>0)return;
-  const target=state.autoAim?findNearestEnemy(30):null;let baseDir;
-  if(target){baseDir=new THREE.Vector3().subVectors(target.group.position.clone().add(new THREE.Vector3(0,.75,0)),player.position.clone().add(new THREE.Vector3(0,1,0))).normalize();player.rotation.y=Math.atan2(baseDir.x,baseDir.z);}else baseDir=new THREE.Vector3(0,0,1).applyQuaternion(player.quaternion).normalize();
+  const target=state.autoAim?findNearestEnemy(30):null;
+  let fallbackDir=new THREE.Vector3(0,0,1).applyQuaternion(player.quaternion).normalize();
+  let aimPoint=null;
+  if(target){
+    aimPoint=enemyAimPoint(target);
+    const bodyDir=new THREE.Vector3().subVectors(aimPoint,player.position.clone().add(new THREE.Vector3(0,1,0))).normalize();
+    player.rotation.y=Math.atan2(bodyDir.x,bodyDir.z);
+    fallbackDir=bodyDir;
+  }
   state.shootCooldown=state.fireInterval;
   for(let n=0;n<state.bulletCount;n++){
-    state.shotSide=1-state.shotSide;const muzzle=worldPos(state.shotSide?player.userData.leftMuzzle:player.userData.rightMuzzle);const dir=baseDir.clone();if(state.bulletCount>1){const spread=(n-(state.bulletCount-1)/2)*.055;dir.applyAxisAngle(new THREE.Vector3(0,1,0),spread).normalize();}
-    const crit=Math.random()<state.crit;const mesh=new THREE.Mesh(new THREE.SphereGeometry(crit?.16:.13,8,8),new THREE.MeshBasicMaterial({color:crit?0xff9cf0:0xffe45a}));mesh.position.copy(muzzle);scene.add(mesh);projectiles.push({mesh,dir,life:1.35,damage:state.damage*(crit?2:1),pierce:state.pierce,crit});muzzleFlash(muzzle,dir);
+    state.shotSide=1-state.shotSide;
+    const muzzle=worldPos(state.shotSide?player.userData.leftMuzzle:player.userData.rightMuzzle);
+    // Dual-handgun cross auto aim: every barrel converges on the same target point.
+    // This avoids the old parallel-shot gap where a centered enemy could slip between both bullets.
+    const dir=aimPoint?new THREE.Vector3().subVectors(aimPoint,muzzle).normalize():fallbackDir.clone();
+    if(!aimPoint&&state.bulletCount>1){
+      const spread=(n-(state.bulletCount-1)/2)*.035;
+      dir.applyAxisAngle(new THREE.Vector3(0,1,0),spread).normalize();
+    }
+    const crit=Math.random()<state.crit;
+    const mesh=new THREE.Mesh(new THREE.SphereGeometry(crit?.16:.13,8,8),new THREE.MeshBasicMaterial({color:crit?0xff9cf0:0xffe45a}));
+    mesh.position.copy(muzzle);scene.add(mesh);
+    projectiles.push({mesh,dir,life:1.35,damage:state.damage*(crit?2:1),pierce:state.pierce,crit,target});
+    muzzleFlash(muzzle,dir);
   }
 }
 function enemyShoot(e){e.shootCd=e.type==='boss'?.72:1.55+Math.random()*.45;const from=e.group.position.clone().add(new THREE.Vector3(0,e.type==='boss'?1.3:.82,0));const aim=new THREE.Vector3().subVectors(player.position.clone().add(new THREE.Vector3(0,.65,0)),from).normalize();const shots=e.type==='boss'&&e.hp<e.maxHp*.5?3:1;for(let s=0;s<shots;s++){const dir=aim.clone().applyAxisAngle(new THREE.Vector3(0,1,0),(s-(shots-1)/2)*.13);const mesh=new THREE.Mesh(new THREE.SphereGeometry(e.type==='boss'?.19:.13,8,8),new THREE.MeshBasicMaterial({color:e.type==='boss'?0xffa53a:0x79f8ff}));mesh.position.copy(from);scene.add(mesh);enemyProjectiles.push({mesh,dir,life:2.5,damage:e.type==='boss'?2:1});}}
@@ -264,8 +291,42 @@ function updateEnemies(dt,t){
 }
 function moveEnemy(e,dx,dz){const p=e.group.position;const nx=p.x+dx,nz=p.z+dz;if(!collides(nx,p.z,.45))p.x=nx;if(!collides(p.x,nz,.45))p.z=nz;}
 
+function segmentSphereHit(a,b,center,radius){
+  const ab=new THREE.Vector3().subVectors(b,a);
+  const len2=ab.lengthSq();
+  if(len2<=0.000001)return a.distanceToSquared(center)<=radius*radius;
+  const t=THREE.MathUtils.clamp(new THREE.Vector3().subVectors(center,a).dot(ab)/len2,0,1);
+  const closest=a.clone().addScaledVector(ab,t);
+  return closest.distanceToSquared(center)<=radius*radius;
+}
 function updateProjectiles(dt){
-  for(let i=projectiles.length-1;i>=0;i--){const p=projectiles[i];p.mesh.position.addScaledVector(p.dir,dt*state.bulletSpeed);p.life-=dt;let remove=p.life<=0;for(const e of enemies){if(e.dead)continue;const hitPos=e.group.position.clone().add(new THREE.Vector3(0,e.type==='boss'?1.2:.75,0));const radius=e.type==='boss'?1.4:e.type==='shield'?1:.78;if(p.mesh.position.distanceTo(hitPos)<radius){let damage=p.damage;if(e.type==='shield'){const front=new THREE.Vector3(0,0,1).applyQuaternion(e.group.quaternion);const incoming=p.dir.clone().negate();if(front.dot(incoming)>.1)damage*=.42;}e.hp-=damage;burst(hitPos,p.crit?0xff83e7:0xffef75,p.special?10:6,p.special?2.8:1.7);if(e.type==='boss')updateBossHud();if(e.hp<=0)killEnemy(e);if(p.pierce>0){p.pierce--;p.mesh.position.addScaledVector(p.dir,.6);}else remove=true;break;}}
+  for(let i=projectiles.length-1;i>=0;i--){
+    const p=projectiles[i];
+    const prev=p.mesh.position.clone();
+    const next=prev.clone().addScaledVector(p.dir,dt*state.bulletSpeed);
+    p.mesh.position.copy(next);
+    p.life-=dt;
+    let remove=p.life<=0;
+    for(const e of enemies){
+      if(e.dead)continue;
+      const hitPos=enemyAimPoint(e);
+      const radius=enemyHitRadius(e);
+      // Swept hit test prevents fast bullets from tunneling through enemies on slower phones.
+      if(segmentSphereHit(prev,next,hitPos,radius)){
+        let damage=p.damage;
+        if(e.type==='shield'){
+          const front=new THREE.Vector3(0,0,1).applyQuaternion(e.group.quaternion);
+          const incoming=p.dir.clone().negate();
+          if(front.dot(incoming)>.1)damage*=.42;
+        }
+        e.hp-=damage;
+        burst(hitPos,p.crit?0xff83e7:0xffef75,p.special?10:6,p.special?2.8:1.7);
+        if(e.type==='boss')updateBossHud();
+        if(e.hp<=0)killEnemy(e);
+        if(p.pierce>0){p.pierce--;p.mesh.position.addScaledVector(p.dir,.6);}else remove=true;
+        break;
+      }
+    }
     if(remove){scene.remove(p.mesh);projectiles.splice(i,1);}
   }
   for(let i=enemyProjectiles.length-1;i>=0;i--){const p=enemyProjectiles[i];p.mesh.position.addScaledVector(p.dir,dt*10);p.life-=dt;let remove=p.life<=0;if(!remove&&p.mesh.position.distanceTo(player.position.clone().add(new THREE.Vector3(0,1,0)))<.86){damagePlayer(p.damage);remove=true;}if(remove){scene.remove(p.mesh);enemyProjectiles.splice(i,1);}}
