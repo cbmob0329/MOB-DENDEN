@@ -46,8 +46,8 @@ const moveStickEl = $('moveStick');
 const moveStickKnobEl = $('moveStickKnob');
 
 const scene = new THREE.Scene();
-scene.background = new THREE.Color(0x8bcdf6);
-scene.fog = new THREE.Fog(0xb8e5ff, 30, 84);
+scene.background = new THREE.Color(0x09101c);
+scene.fog = new THREE.Fog(0x101828, 34, 88);
 
 const camera = new THREE.PerspectiveCamera(56, innerWidth / innerHeight, 0.1, 220);
 const renderer = new THREE.WebGLRenderer({ antialias:true, powerPreference:'high-performance' });
@@ -57,18 +57,28 @@ renderer.shadowMap.enabled = true;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 root.prepend(renderer.domElement);
 
-scene.add(new THREE.HemisphereLight(0xffffff, 0x5b7561, 1.18));
-const sun = new THREE.DirectionalLight(0xffffff, 1.35);
-sun.position.set(18,26,14);
+scene.add(new THREE.HemisphereLight(0xccefff, 0x15081a, 0.94));
+const sun = new THREE.DirectionalLight(0xb7d2ff, 0.92);
+sun.position.set(18,30,14);
 sun.castShadow = true;
 sun.shadow.mapSize.set(1024,1024);
 sun.shadow.camera.left=-45; sun.shadow.camera.right=45; sun.shadow.camera.top=45; sun.shadow.camera.bottom=-45;
 scene.add(sun);
 
+const magentaLight = new THREE.PointLight(0xff48b7, 1.6, 90, 2);
+magentaLight.position.set(-22, 18, -10);
+scene.add(magentaLight);
+const cyanLight = new THREE.PointLight(0x39e0ff, 1.75, 90, 2);
+cyanLight.position.set(20, 16, 14);
+scene.add(cyanLight);
+const purpleLight = new THREE.PointLight(0x8e68ff, 1.05, 70, 2);
+purpleLight.position.set(0, 14, -26);
+scene.add(purpleLight);
+
 const mats = {
-  sand:new THREE.MeshLambertMaterial({color:0xd4bd8d}),
-  sand2:new THREE.MeshLambertMaterial({color:0xc8ae78}),
-  road:new THREE.MeshLambertMaterial({color:0x9f8760}),
+  sand:new THREE.MeshLambertMaterial({color:0x101828}),
+  sand2:new THREE.MeshLambertMaterial({color:0x172335}),
+  road:new THREE.MeshLambertMaterial({color:0x24293a}),
   dark:new THREE.MeshLambertMaterial({color:0x202936}),
   black:new THREE.MeshLambertMaterial({color:0x11151d}),
   pink:new THREE.MeshLambertMaterial({color:0xf05f96}),
@@ -80,6 +90,16 @@ const mats = {
   bullet:new THREE.MeshBasicMaterial({color:0xffe45a}),
   heart:new THREE.MeshBasicMaterial({color:0xff6d8a}),
   exp:new THREE.MeshBasicMaterial({color:0x8ee6ff}),
+  metal:new THREE.MeshLambertMaterial({color:0x485469}),
+  metalDark:new THREE.MeshLambertMaterial({color:0x2a3344}),
+  vinyl:new THREE.MeshLambertMaterial({color:0x151a25}),
+  speaker:new THREE.MeshLambertMaterial({color:0x303745}),
+  speakerDark:new THREE.MeshLambertMaterial({color:0x161b24}),
+  panel:new THREE.MeshLambertMaterial({color:0x26354c}),
+  neonPink:new THREE.MeshBasicMaterial({color:0xff4fc3}),
+  neonBlue:new THREE.MeshBasicMaterial({color:0x4de5ff}),
+  neonPurple:new THREE.MeshBasicMaterial({color:0xa06dff}),
+  neonGreen:new THREE.MeshBasicMaterial({color:0x89ff9d}),
 };
 
 const enemyPalette = {
@@ -103,7 +123,7 @@ let lockTarget=null;
 let bossRef=null;
 let toastTimer=0;
 
-const saveKey='mob-gun-cat-v04';
+const saveKey='mob-gun-cat-v08';
 function loadSave(){
   try{
     const raw=JSON.parse(localStorage.getItem(saveKey)||'{}');
@@ -131,16 +151,88 @@ function box(w,h,d,mat,x,y,z,cast=true){const m=new THREE.Mesh(new THREE.BoxGeom
 function addBlocker(x,z,w,d){blockers.push({x,z,w,d});}
 function collides(x,z,r=.45){if(x<-39||x>39||z<-39||z>39)return true;return blockers.some(b=>Math.abs(x-b.x)<b.w/2+r&&Math.abs(z-b.z)<b.d/2+r);}
 
-// arena
+// arena - neon city / DJ street stage
 box(84,1,84,mats.sand,0,-.5,0,false);
-for(let x=-38;x<=38;x+=4){for(let z=-38;z<=38;z+=4){if((Math.abs(x+z))%10===0)box(3.95,.04,3.95,mats.sand2,x,.02,z,false);}}
-box(74,.06,10,mats.road,0,.03,0,false);box(10,.06,74,mats.road,0,.03,0,false);
-function crate(x,z,w=2,h=2,d=2,color=0x687281){const mat=new THREE.MeshLambertMaterial({color});box(w,h,d,mat,x,h/2,z);addBlocker(x,z,w,d);}
-function barrel(x,z){const g=new THREE.Group();const c1=new THREE.Mesh(new THREE.CylinderGeometry(.55,.55,1.25,10),new THREE.MeshLambertMaterial({color:0x4b5c6a}));c1.position.y=.62;g.add(c1);const cap=new THREE.Mesh(new THREE.CylinderGeometry(.58,.58,.12,10),new THREE.MeshLambertMaterial({color:0x9db4c8}));cap.position.y=.08;g.add(cap);const cap2=cap.clone();cap2.position.y=1.16;g.add(cap2);g.position.set(x,0,z);scene.add(g);addBlocker(x,z,1.1,1.1);}
-[[-18,-16],[-18,16],[18,-16],[18,16],[-28,0],[28,0],[0,-28],[0,28],[-6,13],[6,-13],[-13,-6],[13,6]].forEach(p=>crate(p[0],p[1],2.4,2.4,2.4));
-[[-23,8],[-23,-8],[23,8],[23,-8],[-8,23],[8,23],[-8,-23],[8,-23]].forEach(p=>barrel(p[0],p[1]));
-for(let i=0;i<18;i++){const x=Math.cos(i*.35)*34,z=Math.sin(i*.35)*34;crate(x,z,1.6,2.4,1.6,i%2?0x60768a:0x8d7263);}
+for(let x=-38;x<=38;x+=4){
+  for(let z=-38;z<=38;z+=4){
+    const useAlt=((Math.round((x+40)/4)+Math.round((z+40)/4))%2===0);
+    if(useAlt)box(3.96,.03,3.96,mats.sand2,x,.02,z,false);
+  }
+}
+box(76,.08,14,mats.road,0,.03,0,false);
+box(14,.08,76,mats.road,0,.03,0,false);
+for(let x=-34;x<=34;x+=4){box(2.1,.03,.22,mats.neonPink,x,.055,-6.3,false);box(2.1,.03,.22,mats.neonBlue,x,.055,6.3,false);}
+for(let z=-34;z<=34;z+=4){box(.22,.03,2.1,mats.neonPurple,-6.3,.055,z,false);box(.22,.03,2.1,mats.neonGreen,6.3,.055,z,false);}
+box(10,.03,10,mats.neonBlue,0,.06,0,false);
 
+function stagePillar(x,z,height=6,colorMat=mats.neonBlue){
+  const g=new THREE.Group();
+  const pole=boxMesh(new THREE.BoxGeometry(.7,height,.7),mats.metalDark); pole.position.y=height/2; g.add(pole);
+  const ring1=boxMesh(new THREE.BoxGeometry(1.18,.16,1.18),colorMat); ring1.position.y=1.5; g.add(ring1);
+  const ring2=boxMesh(new THREE.BoxGeometry(1.18,.16,1.18),colorMat); ring2.position.y=height-1.2; g.add(ring2);
+  const cap=boxMesh(new THREE.BoxGeometry(1.05,.5,1.05),mats.panel); cap.position.y=height+.2; g.add(cap);
+  g.position.set(x,0,z); scene.add(g); addBlocker(x,z,1.15,1.15);
+}
+function speakerStack(x,z,rot=0,colorMat=mats.neonBlue){
+  const g=new THREE.Group();
+  const base=boxMesh(new THREE.BoxGeometry(1.6,3.0,1.45),mats.speaker); base.position.y=1.5; g.add(base);
+  const woofer1=new THREE.Mesh(new THREE.CylinderGeometry(.28,.28,.16,18),mats.speakerDark); woofer1.rotation.x=Math.PI/2; woofer1.position.set(0,1.05,.76); g.add(woofer1);
+  const woofer2=woofer1.clone(); woofer2.position.y=1.95; g.add(woofer2);
+  const glow1=new THREE.Mesh(new THREE.TorusGeometry(.34,.05,8,18),colorMat); glow1.rotation.x=Math.PI/2; glow1.position.set(0,1.05,.82); g.add(glow1);
+  const glow2=glow1.clone(); glow2.position.y=1.95; g.add(glow2);
+  const top=boxMesh(new THREE.BoxGeometry(1.72,.18,1.52),mats.metal); top.position.y=3.02; g.add(top);
+  g.position.set(x,0,z); g.rotation.y=rot; scene.add(g); addBlocker(x,z,1.7,1.55);
+}
+function turntableDeck(x,z,rot=0){
+  const g=new THREE.Group();
+  const table=boxMesh(new THREE.BoxGeometry(3.3,1.15,1.95),mats.panel); table.position.y=.78; g.add(table);
+  const top=boxMesh(new THREE.BoxGeometry(3.45,.16,2.1),mats.metal); top.position.y=1.43; g.add(top);
+  const legPos=[[-1.32,.6,-.72],[1.32,.6,-.72],[-1.32,.6,.72],[1.32,.6,.72]];
+  for(const [lx,ly,lz] of legPos){ const leg=boxMesh(new THREE.BoxGeometry(.16,1.2,.16),mats.metalDark); leg.position.set(lx,ly,lz); g.add(leg); }
+  for(const sx of [-.95,.95]){
+    const disc=new THREE.Mesh(new THREE.CylinderGeometry(.52,.52,.12,24),mats.vinyl); disc.rotation.x=Math.PI/2; disc.position.set(sx,1.55,-.05); g.add(disc);
+    const center=new THREE.Mesh(new THREE.CylinderGeometry(.14,.14,.13,16),mats.neonPink); center.rotation.x=Math.PI/2; center.position.set(sx,1.56,-.05); g.add(center);
+    const rim=new THREE.Mesh(new THREE.TorusGeometry(.56,.04,8,24),mats.neonBlue); rim.rotation.x=Math.PI/2; rim.position.set(sx,1.57,-.05); g.add(rim);
+  }
+  const mixer=boxMesh(new THREE.BoxGeometry(.6,.12,.9),mats.speakerDark); mixer.position.set(0,1.54,.18); g.add(mixer);
+  for(let i=0;i<4;i++){ const knob=new THREE.Mesh(new THREE.CylinderGeometry(.05,.05,.08,12),i%2?mats.neonPurple:mats.neonGreen); knob.position.set(-.18+i*.12,1.63,-.1); g.add(knob); }
+  const label=boxMesh(new THREE.BoxGeometry(1.1,.14,.22),mats.neonPink); label.position.set(0,1.55,.86); g.add(label);
+  g.position.set(x,0,z); g.rotation.y=rot; scene.add(g); addBlocker(x,z,3.4,2.25);
+}
+function recordBarrier(x,z,rot=0){
+  const g=new THREE.Group();
+  const disc=new THREE.Mesh(new THREE.CylinderGeometry(1.0,1.0,.22,30),mats.vinyl); disc.rotation.z=Math.PI/2; disc.position.set(0,1.2,0); g.add(disc);
+  const center=new THREE.Mesh(new THREE.CylinderGeometry(.24,.24,.24,18),mats.neonPink); center.rotation.z=Math.PI/2; center.position.set(0,1.2,0); g.add(center);
+  const stand=boxMesh(new THREE.BoxGeometry(.2,1.1,1.5),mats.metalDark); stand.position.set(0,.55,0); g.add(stand);
+  const base=boxMesh(new THREE.BoxGeometry(1.5,.18,1.5),mats.metal); base.position.y=.09; g.add(base);
+  g.position.set(x,0,z); g.rotation.y=rot; scene.add(g); addBlocker(x,z,1.7,1.7);
+}
+function mobNeonSign(x,z,rot=0,colorMat=mats.neonPurple){
+  const g=new THREE.Group();
+  const post=boxMesh(new THREE.BoxGeometry(.22,4.2,.22),mats.metalDark); post.position.y=2.1; g.add(post);
+  const board=boxMesh(new THREE.BoxGeometry(2.6,1.2,.18),mats.panel); board.position.set(0,4.05,0); g.add(board);
+  const glowA=boxMesh(new THREE.BoxGeometry(2.1,.18,.22),colorMat); glowA.position.set(0,4.05,.12); g.add(glowA);
+  const glowB=boxMesh(new THREE.BoxGeometry(.22,.82,.22),mats.neonBlue); glowB.position.set(-.62,4.05,.12); g.add(glowB);
+  const glowC=boxMesh(new THREE.BoxGeometry(.22,.82,.22),mats.neonPink); glowC.position.set(0,4.05,.12); g.add(glowC);
+  const glowD=boxMesh(new THREE.BoxGeometry(.22,.82,.22),mats.neonGreen); glowD.position.set(.62,4.05,.12); g.add(glowD);
+  g.position.set(x,0,z); g.rotation.y=rot; scene.add(g);
+}
+function skylineBlock(x,z,w,h,d,color=0x0d1220){ box(w,h,d,new THREE.MeshLambertMaterial({color}),x,h/2,z,false); }
+
+// decorative skyline around the arena edges
+[[-35,-39,8,12,2],[-23,-39,6,16,2],[-10,-39,7,10,2],[3,-39,9,14,2],[18,-39,6,11,2],[31,-39,8,17,2],
+ [-35,39,8,14,2],[-21,39,7,12,2],[-8,39,6,18,2],[7,39,8,11,2],[22,39,7,15,2],[34,39,8,13,2],
+ [-39,-29,2,14,7],[-39,-10,2,11,8],[-39,11,2,16,8],[-39,29,2,12,6],[39,-28,2,12,8],[39,-9,2,18,6],[39,12,2,13,9],[39,30,2,15,7]].forEach(v=>skylineBlock(...v));
+
+// stage obstacles / DJ props
+[[ -18,-16,0],[ -18,16,Math.PI],[ 18,-16,0],[ 18,16,Math.PI],[-28,0,Math.PI/2],[28,0,-Math.PI/2],[0,-28,0],[0,28,Math.PI]].forEach(p=>turntableDeck(p[0],p[1],p[2]));
+[[-23,8,0],[-23,-8,0],[23,8,Math.PI],[23,-8,Math.PI],[-8,23,Math.PI/2],[8,23,-Math.PI/2],[-8,-23,Math.PI/2],[8,-23,-Math.PI/2]].forEach(p=>recordBarrier(p[0],p[1],p[2]));
+for(let i=0;i<18;i++){
+  const x=Math.cos(i*.35)*34, z=Math.sin(i*.35)*34;
+  speakerStack(x,z,Math.atan2(x,z),i%2?mats.neonBlue:mats.neonPink);
+}
+[[ -6,13,mats.neonBlue],[ 6,-13,mats.neonPink],[-13,-6,mats.neonPurple],[13,6,mats.neonGreen]].forEach(p=>stagePillar(p[0],p[1],6,p[2]));
+[[ -31,-2,0],[31,2,Math.PI],[-2,31,Math.PI/2],[2,-31,-Math.PI/2]].forEach(p=>mobNeonSign(p[0],p[1],p[2]));
 // player - temporary code model
 const player=new THREE.Group();
 function buildGun(){const g=new THREE.Group();const base=boxMesh(new THREE.BoxGeometry(.56,.26,.26),mats.gun);base.position.set(0,0,.18);g.add(base);const barrel=boxMesh(new THREE.BoxGeometry(.24,.18,.36),mats.black);barrel.position.set(0,0,.48);g.add(barrel);const grip=boxMesh(new THREE.BoxGeometry(.18,.34,.14),mats.black);grip.position.set(0,-.22,.07);grip.rotation.x=-.28;g.add(grip);const cyl=new THREE.Mesh(new THREE.CylinderGeometry(.11,.11,.18,8),new THREE.MeshLambertMaterial({color:0x454d59}));cyl.rotation.z=Math.PI/2;cyl.position.set(.02,0,.22);g.add(cyl);return g;}
