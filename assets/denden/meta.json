@@ -1,0 +1,910 @@
+{
+  "footAnchor": [
+    0.5,
+    0.921875
+  ],
+  "handAnchor": [
+    0.58984375,
+    0.75
+  ],
+  "handAnchors": {
+    "reach": [
+      0.73828125,
+      0.66015625
+    ],
+    "hold": [
+      0.58984375,
+      0.75
+    ],
+    "read": [
+      0.5703125,
+      0.75390625
+    ],
+    "book_return": [
+      0.74609375,
+      0.69140625
+    ],
+    "food_take": [
+      0.6875,
+      0.703125
+    ],
+    "eat": [
+      0.53515625,
+      0.69921875
+    ],
+    "dj_a": [
+      0.5703125,
+      0.76171875
+    ],
+    "dj_b": [
+      0.5546875,
+      0.76953125
+    ],
+    "clean": [
+      0.58984375,
+      0.75
+    ],
+    "garden": [
+      0.58984375,
+      0.75
+    ]
+  },
+  "nominalStandingHeightPx": 160,
+  "sourceScale": 0.13322231473771856,
+  "canvas": [
+    256,
+    256
+  ],
+  "filter": "nearest",
+  "mipmaps": false,
+  "frames": {
+    "idle": {
+      "source": "masters/denden_idle.png",
+      "file": "assets/denden/idle.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceOpaqueBounds": [
+        244,
+        33,
+        1127,
+        1234
+      ],
+      "sourceBodyAxisX": 625,
+      "scale": 0.13322231473771856,
+      "exportOffset": [
+        45,
+        72
+      ],
+      "opaqueBounds": [
+        77,
+        76,
+        195,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 31376,
+      "sha256": "bc45fdbffa2383e7b1c787192a7a70116b0ceb893bb31ea379547966ccb16d26"
+    },
+    "walk_front_1": {
+      "source": "masters/denden_walk_front_1.png",
+      "file": "assets/denden/walk_front_1.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceOpaqueBounds": [
+        236,
+        39,
+        1029,
+        1234
+      ],
+      "sourceBodyAxisX": 625,
+      "scale": 0.13322231473771856,
+      "exportOffset": [
+        45,
+        72
+      ],
+      "opaqueBounds": [
+        76,
+        77,
+        182,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 29341,
+      "sha256": "5dfabba5a75e34e9b49b3fda822d2a85c0d4f53132303a4353bdd633cfdfec8c"
+    },
+    "walk_front_2": {
+      "source": "masters/denden_walk_front_2.png",
+      "file": "assets/denden/walk_front_2.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceOpaqueBounds": [
+        235,
+        38,
+        1030,
+        1235
+      ],
+      "sourceBodyAxisX": 625,
+      "scale": 0.13322231473771856,
+      "exportOffset": [
+        45,
+        71
+      ],
+      "opaqueBounds": [
+        76,
+        76,
+        182,
+        235
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 29178,
+      "sha256": "0df64b2fe064cfb78817bafe2bcf27d19f56f449b02005bc1e9e97bbdde75d61"
+    },
+    "walk_side_1": {
+      "source": "masters/denden_walk_side_1.png",
+      "file": "assets/denden/walk_side_1.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceOpaqueBounds": [
+        152,
+        49,
+        1060,
+        1225
+      ],
+      "sourceBodyAxisX": 670,
+      "scale": 0.13322231473771856,
+      "exportOffset": [
+        39,
+        73
+      ],
+      "opaqueBounds": [
+        59,
+        80,
+        180,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 25706,
+      "sha256": "1ea932e805cbdfe14b8adcd83f1c0f0258ed18d2aeab5c2450ab342f27b72643"
+    },
+    "walk_side_2": {
+      "source": "masters/denden_walk_side_2.png",
+      "file": "assets/denden/walk_side_2.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceOpaqueBounds": [
+        178,
+        48,
+        1061,
+        1229
+      ],
+      "sourceBodyAxisX": 670,
+      "scale": 0.13322231473771856,
+      "exportOffset": [
+        39,
+        72
+      ],
+      "opaqueBounds": [
+        63,
+        78,
+        180,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 24199,
+      "sha256": "0eb82377665aced56797bea656353571f5cd8e81d5a031033b567de235065c04"
+    },
+    "walk_back_1": {
+      "source": "masters/denden_walk_back_1.png",
+      "file": "assets/denden/walk_back_1.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceOpaqueBounds": [
+        249,
+        40,
+        1041,
+        1227
+      ],
+      "sourceBodyAxisX": 630,
+      "scale": 0.13322231473771856,
+      "exportOffset": [
+        44,
+        73
+      ],
+      "opaqueBounds": [
+        77,
+        78,
+        183,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 24721,
+      "sha256": "620857360918445783f0452c61962a610d8c5ca70172ced9929dc8f2e6be24ca"
+    },
+    "walk_back_2": {
+      "source": "masters/denden_walk_back_2.png",
+      "file": "assets/denden/walk_back_2.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceOpaqueBounds": [
+        248,
+        41,
+        1035,
+        1221
+      ],
+      "sourceBodyAxisX": 630,
+      "scale": 0.13322231473771856,
+      "exportOffset": [
+        44,
+        73
+      ],
+      "opaqueBounds": [
+        77,
+        78,
+        182,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 24492,
+      "sha256": "4e458e71dfffc8a0c2f40a31fa9ab9668acbabd1c869cdaba6684bc5a12b2452"
+    },
+    "sit": {
+      "source": "masters/denden_sit.png",
+      "file": "assets/denden/sit.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceOpaqueBounds": [
+        212,
+        69,
+        1045,
+        1198
+      ],
+      "sourceBodyAxisX": 660,
+      "scale": 0.13322231473771856,
+      "exportOffset": [
+        40,
+        76
+      ],
+      "opaqueBounds": [
+        68,
+        85,
+        179,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 27687,
+      "sha256": "1739cbfcf6ff1c2ff2567ab07ee550e436aed5821c03fee7ce05fb86b1202d23",
+      "sitAnchor": [
+        0.44140625,
+        0.8515625
+      ],
+      "sitAnchorPx": [
+        113,
+        218
+      ],
+      "sourceSitAnchor": [
+        550,
+        1066
+      ]
+    },
+    "bed_mount": {
+      "source": "masters/denden_bed_mount.png",
+      "file": "assets/denden/bed_mount.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceOpaqueBounds": [
+        88,
+        47,
+        1197,
+        1235
+      ],
+      "sourceBodyAxisX": 570,
+      "scale": 0.13322231473771856,
+      "exportOffset": [
+        52,
+        71
+      ],
+      "opaqueBounds": [
+        64,
+        77,
+        211,
+        235
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 26126,
+      "sha256": "3021ba398c1acb58771c6f23dc3139b838a208468ba82be7d89df1da0a741f0c"
+    },
+    "sleep": {
+      "source": "masters/denden_sleep.png",
+      "file": "assets/denden/sleep.png",
+      "sourceSize": [
+        1619,
+        972
+      ],
+      "sourceOpaqueBounds": [
+        55,
+        40,
+        1579,
+        923
+      ],
+      "sourceBodyAxisX": 817,
+      "scale": 0.13322231473771856,
+      "exportOffset": [
+        19,
+        113
+      ],
+      "opaqueBounds": [
+        26,
+        118,
+        230,
+        235
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 30925,
+      "sha256": "bc7e906665419a4501b65aae0393a1d5d51e9c6e219484188c5e4afbc161bc45",
+      "sleepAnchor": [
+        0.5,
+        0.69140625
+      ],
+      "sleepAnchorPx": [
+        128,
+        177
+      ],
+      "sourceSleepAnchor": [
+        817,
+        482
+      ]
+    },
+    "book_reach": {
+      "source": "masters/denden_book_reach.png",
+      "file": "assets/denden/book_reach.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceOpaqueBounds": [
+        79,
+        48,
+        1216,
+        1214
+      ],
+      "sourceBodyAxisX": 675,
+      "scale": 0.13322231473771856,
+      "exportOffset": [
+        38,
+        74
+      ],
+      "opaqueBounds": [
+        49,
+        80,
+        200,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 26401,
+      "sha256": "48c1c122fce2de936380ccbf235b85505d653cbc385c38337550a4a47d67352d",
+      "handAnchorPx": [
+        189,
+        169
+      ],
+      "handAnchor": [
+        0.73828125,
+        0.66015625
+      ],
+      "sourceHandContact": [
+        1133,
+        710
+      ]
+    },
+    "book_hold": {
+      "source": "masters/denden_book_hold.png",
+      "file": "assets/denden/book_hold.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceOpaqueBounds": [
+        246,
+        36,
+        1060,
+        1235
+      ],
+      "sourceBodyAxisX": 630,
+      "scale": 0.13322231473771856,
+      "exportOffset": [
+        44,
+        71
+      ],
+      "opaqueBounds": [
+        77,
+        76,
+        185,
+        235
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 29838,
+      "sha256": "1edb546e6717289f4a3ad5ea3242a9205f6de8e0a5c8b85cabe0a8c06eb4d0c6",
+      "handAnchorPx": [
+        151,
+        192
+      ],
+      "handAnchor": [
+        0.58984375,
+        0.75
+      ],
+      "sourceHandContact": [
+        800,
+        910
+      ]
+    },
+    "book_read": {
+      "source": "masters/denden_book_read.png",
+      "file": "assets/denden/book_read.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceOpaqueBounds": [
+        136,
+        52,
+        1032,
+        1226
+      ],
+      "sourceBodyAxisX": 650,
+      "scale": 0.13322231473771856,
+      "exportOffset": [
+        41,
+        73
+      ],
+      "opaqueBounds": [
+        59,
+        80,
+        178,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 29455,
+      "sha256": "c7091ce78d98c16c5d1695bbf59d128520f3fd8759e58482e4638beb2f9f6f9a",
+      "handAnchorPx": [
+        146,
+        193
+      ],
+      "handAnchor": [
+        0.5703125,
+        0.75390625
+      ],
+      "sourceHandContact": [
+        787,
+        900
+      ]
+    },
+    "book_return": {
+      "source": "masters/denden_book_return.png",
+      "file": "assets/denden/book_return.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceOpaqueBounds": [
+        139,
+        51,
+        1210,
+        1216
+      ],
+      "sourceBodyAxisX": 645,
+      "scale": 0.13322231473771856,
+      "exportOffset": [
+        42,
+        74
+      ],
+      "opaqueBounds": [
+        61,
+        81,
+        203,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 26193,
+      "sha256": "7601a136f3321c82e76e2f8a011e295dbf12096964b9e18bcb3572d3afc0fb42",
+      "handAnchorPx": [
+        191,
+        177
+      ],
+      "handAnchor": [
+        0.74609375,
+        0.69140625
+      ],
+      "sourceHandContact": [
+        1120,
+        770
+      ]
+    },
+    "dorayaki_take": {
+      "source": "masters/denden_dorayaki_take.png",
+      "file": "assets/denden/dorayaki_take.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceOpaqueBounds": [
+        181,
+        35,
+        1097,
+        1227
+      ],
+      "sourceBodyAxisX": 650,
+      "scale": 0.13322231473771856,
+      "exportOffset": [
+        41,
+        73
+      ],
+      "opaqueBounds": [
+        65,
+        78,
+        187,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 29859,
+      "sha256": "38a4574ee31516b8b58f2c60a30d2c8caaa60e564b9b44367aa81e1869a7fcf4",
+      "handAnchorPx": [
+        176,
+        180
+      ],
+      "handAnchor": [
+        0.6875,
+        0.703125
+      ],
+      "sourceHandContact": [
+        1010,
+        802
+      ]
+    },
+    "dorayaki_eat": {
+      "source": "masters/denden_dorayaki_eat.png",
+      "file": "assets/denden/dorayaki_eat.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceOpaqueBounds": [
+        241,
+        32,
+        1076,
+        1238
+      ],
+      "sourceBodyAxisX": 635,
+      "scale": 0.13322231473771856,
+      "exportOffset": [
+        43,
+        71
+      ],
+      "opaqueBounds": [
+        75,
+        75,
+        186,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 29729,
+      "sha256": "eb7be0063f51483a48c78757670bd41143ef78b50093afb44809a60d294f4f77",
+      "handAnchorPx": [
+        137,
+        179
+      ],
+      "handAnchor": [
+        0.53515625,
+        0.69921875
+      ],
+      "sourceHandContact": [
+        707,
+        810
+      ]
+    },
+    "dj_a": {
+      "source": "masters/denden_dj_a.png",
+      "file": "assets/denden/dj_a.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceOpaqueBounds": [
+        265,
+        42,
+        1139,
+        1233
+      ],
+      "sourceBodyAxisX": 640,
+      "scale": 0.13322231473771856,
+      "exportOffset": [
+        43,
+        72
+      ],
+      "opaqueBounds": [
+        78,
+        78,
+        195,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 29956,
+      "sha256": "dd1343e2fe544e8ee60bbdf0fe4cf044caddc875dadc7fb551b350dbe6459f1b",
+      "handAnchorPx": [
+        146,
+        195
+      ],
+      "handAnchor": [
+        0.5703125,
+        0.76171875
+      ],
+      "sourceHandContact": [
+        775,
+        920
+      ]
+    },
+    "dj_b": {
+      "source": "masters/denden_dj_b.png",
+      "file": "assets/denden/dj_b.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceOpaqueBounds": [
+        265,
+        35,
+        1063,
+        1233
+      ],
+      "sourceBodyAxisX": 640,
+      "scale": 0.13322231473771856,
+      "exportOffset": [
+        43,
+        72
+      ],
+      "opaqueBounds": [
+        78,
+        77,
+        185,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 29162,
+      "sha256": "bcb196e84a7b59a06df0e9db523e18f22afd9a721d2c1d3e0dba55905f038364",
+      "handAnchorPx": [
+        142,
+        197
+      ],
+      "handAnchor": [
+        0.5546875,
+        0.76953125
+      ],
+      "sourceHandContact": [
+        746,
+        941
+      ]
+    },
+    "cheer_cheeks": {
+      "source": "masters/denden_cheer_cheeks.png",
+      "file": "assets/denden/cheer_cheeks.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceOpaqueBounds": [
+        245,
+        42,
+        1106,
+        1228
+      ],
+      "sourceBodyAxisX": 630,
+      "scale": 0.13322231473771856,
+      "exportOffset": [
+        44,
+        72
+      ],
+      "opaqueBounds": [
+        77,
+        78,
+        191,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 30321,
+      "sha256": "f3e95ee403579f72ea7faeb1539e3a710ef77ed67a0aca504353646c8457056d"
+    },
+    "cheer_hop": {
+      "source": "masters/denden_cheer_hop.png",
+      "file": "assets/denden/cheer_hop.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceOpaqueBounds": [
+        244,
+        42,
+        1118,
+        1194
+      ],
+      "sourceBodyAxisX": 635,
+      "scale": 0.13322231473771856,
+      "exportOffset": [
+        43,
+        77
+      ],
+      "opaqueBounds": [
+        75,
+        83,
+        192,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 29679,
+      "sha256": "505785fd77080e2c82d1d007ca463dedac6af53020d17fce0b5c146c7859de6e"
+    }
+  },
+  "sitAnchor": [
+    0.44140625,
+    0.8515625
+  ],
+  "sleepAnchor": [
+    0.5,
+    0.69140625
+  ]
+}

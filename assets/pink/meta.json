@@ -1,0 +1,910 @@
+{
+  "footAnchor": [
+    0.5,
+    0.921875
+  ],
+  "handAnchor": [
+    0.59375,
+    0.7265625
+  ],
+  "handAnchors": {
+    "reach": [
+      0.765625,
+      0.62109375
+    ],
+    "hold": [
+      0.59375,
+      0.7265625
+    ],
+    "read": [
+      0.6015625,
+      0.72265625
+    ],
+    "book_return": [
+      0.7578125,
+      0.62109375
+    ],
+    "food_take": [
+      0.6796875,
+      0.69921875
+    ],
+    "eat": [
+      0.5703125,
+      0.6875
+    ],
+    "dj_a": [
+      0.6015625,
+      0.73046875
+    ],
+    "dj_b": [
+      0.61328125,
+      0.734375
+    ],
+    "clean": [
+      0.59375,
+      0.7265625
+    ],
+    "garden": [
+      0.59375,
+      0.7265625
+    ]
+  },
+  "nominalStandingHeightPx": 160,
+  "sourceScale": 0.14532243415077203,
+  "canvas": [
+    256,
+    256
+  ],
+  "filter": "nearest",
+  "mipmaps": false,
+  "frames": {
+    "idle": {
+      "source": "masters/pink_idle.png",
+      "file": "assets/pink/idle.png",
+      "sourceSize": [
+        1235,
+        1274
+      ],
+      "sourceOpaqueBounds": [
+        274,
+        100,
+        996,
+        1201
+      ],
+      "sourceBodyAxisX": 655,
+      "scale": 0.14532243415077203,
+      "exportOffset": [
+        33,
+        61
+      ],
+      "opaqueBounds": [
+        73,
+        76,
+        177,
+        235
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 27457,
+      "sha256": "558a4e26ee465ed2d4c98dcac62be7054405108791c1649392e9d834ccd38d28"
+    },
+    "walk_front_1": {
+      "source": "masters/pink_walk_front_1.png",
+      "file": "assets/pink/walk_front_1.png",
+      "sourceSize": [
+        1235,
+        1274
+      ],
+      "sourceOpaqueBounds": [
+        254,
+        98,
+        981,
+        1222
+      ],
+      "sourceBodyAxisX": 615,
+      "scale": 0.14532243415077203,
+      "exportOffset": [
+        39,
+        58
+      ],
+      "opaqueBounds": [
+        76,
+        72,
+        181,
+        235
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 25660,
+      "sha256": "6e71857fc4188cd673f1b744268a4600985ec81fef7f0bea318a4f3b39814f5c"
+    },
+    "walk_front_2": {
+      "source": "masters/pink_walk_front_2.png",
+      "file": "assets/pink/walk_front_2.png",
+      "sourceSize": [
+        1235,
+        1274
+      ],
+      "sourceOpaqueBounds": [
+        252,
+        97,
+        981,
+        1221
+      ],
+      "sourceBodyAxisX": 615,
+      "scale": 0.14532243415077203,
+      "exportOffset": [
+        39,
+        59
+      ],
+      "opaqueBounds": [
+        76,
+        73,
+        181,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 25998,
+      "sha256": "953ef944b00ebe9583d1d61dd862cda593648ba0de9f1aa9276af44182b4faab"
+    },
+    "walk_side_1": {
+      "source": "masters/pink_walk_side_1.png",
+      "file": "assets/pink/walk_side_1.png",
+      "sourceSize": [
+        1235,
+        1274
+      ],
+      "sourceOpaqueBounds": [
+        264,
+        100,
+        987,
+        1196
+      ],
+      "sourceBodyAxisX": 650,
+      "scale": 0.14532243415077203,
+      "exportOffset": [
+        34,
+        62
+      ],
+      "opaqueBounds": [
+        72,
+        77,
+        177,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 25940,
+      "sha256": "0c456512e9faebb866adb987d8f2c2f4ea7cd04b76274162a6f1575442e2925c"
+    },
+    "walk_side_2": {
+      "source": "masters/pink_walk_side_2.png",
+      "file": "assets/pink/walk_side_2.png",
+      "sourceSize": [
+        1235,
+        1274
+      ],
+      "sourceOpaqueBounds": [
+        265,
+        99,
+        992,
+        1195
+      ],
+      "sourceBodyAxisX": 650,
+      "scale": 0.14532243415077203,
+      "exportOffset": [
+        34,
+        62
+      ],
+      "opaqueBounds": [
+        72,
+        76,
+        178,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 24646,
+      "sha256": "865dd07e65df191458ba4127aa435160123527327cc68876ddc4fbb78c7a997d"
+    },
+    "walk_back_1": {
+      "source": "masters/pink_walk_back_1.png",
+      "file": "assets/pink/walk_back_1.png",
+      "sourceSize": [
+        1235,
+        1274
+      ],
+      "sourceOpaqueBounds": [
+        286,
+        109,
+        1001,
+        1200
+      ],
+      "sourceBodyAxisX": 640,
+      "scale": 0.14532243415077203,
+      "exportOffset": [
+        35,
+        62
+      ],
+      "opaqueBounds": [
+        76,
+        78,
+        180,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 23029,
+      "sha256": "8bb014d458c1f7a7cc289c78594e1be1886797336c083fcc81e246c273fa1a45"
+    },
+    "walk_back_2": {
+      "source": "masters/pink_walk_back_2.png",
+      "file": "assets/pink/walk_back_2.png",
+      "sourceSize": [
+        1235,
+        1274
+      ],
+      "sourceOpaqueBounds": [
+        283,
+        108,
+        1001,
+        1189
+      ],
+      "sourceBodyAxisX": 640,
+      "scale": 0.14532243415077203,
+      "exportOffset": [
+        35,
+        63
+      ],
+      "opaqueBounds": [
+        76,
+        79,
+        180,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 22112,
+      "sha256": "d2a095ce223218e865c667e341200730558c84464d9d5273355f2c65271fff57"
+    },
+    "sit": {
+      "source": "masters/pink_sit.png",
+      "file": "assets/pink/sit.png",
+      "sourceSize": [
+        1235,
+        1274
+      ],
+      "sourceOpaqueBounds": [
+        276,
+        134,
+        976,
+        1154
+      ],
+      "sourceBodyAxisX": 665,
+      "scale": 0.14532243415077203,
+      "exportOffset": [
+        31,
+        68
+      ],
+      "opaqueBounds": [
+        71,
+        87,
+        172,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 24573,
+      "sha256": "96d853276d1350b21ca2aaf22c106ee3b7475b2ac700d357e7a1c1bc4cbb982a",
+      "sitAnchor": [
+        0.4765625,
+        0.83984375
+      ],
+      "sitAnchorPx": [
+        122,
+        215
+      ],
+      "sourceSitAnchor": [
+        625,
+        1009
+      ]
+    },
+    "bed_mount": {
+      "source": "masters/pink_bed_mount.png",
+      "file": "assets/pink/bed_mount.png",
+      "sourceSize": [
+        1235,
+        1274
+      ],
+      "sourceOpaqueBounds": [
+        274,
+        89,
+        1067,
+        1203
+      ],
+      "sourceBodyAxisX": 470,
+      "scale": 0.14532243415077203,
+      "exportOffset": [
+        60,
+        61
+      ],
+      "opaqueBounds": [
+        100,
+        74,
+        215,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 24964,
+      "sha256": "4d5c5736d8d75b5f1416d551a7fa13f0b2129bf2b2e5228f32e9a2f046bd469f"
+    },
+    "sleep": {
+      "source": "masters/pink_sleep.png",
+      "file": "assets/pink/sleep.png",
+      "sourceSize": [
+        1635,
+        962
+      ],
+      "sourceOpaqueBounds": [
+        106,
+        93,
+        1522,
+        876
+      ],
+      "sourceBodyAxisX": 814,
+      "scale": 0.14532243415077203,
+      "exportOffset": [
+        10,
+        109
+      ],
+      "opaqueBounds": [
+        25,
+        123,
+        232,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 29264,
+      "sha256": "a3a4e187011578e89021851630376472265e14e0f0125e1b078d810e18c56e1c",
+      "sleepAnchor": [
+        0.5,
+        0.69921875
+      ],
+      "sleepAnchorPx": [
+        128,
+        179
+      ],
+      "sourceSleepAnchor": [
+        814,
+        484
+      ]
+    },
+    "book_reach": {
+      "source": "masters/pink_book_reach.png",
+      "file": "assets/pink/book_reach.png",
+      "sourceSize": [
+        1235,
+        1274
+      ],
+      "sourceOpaqueBounds": [
+        212,
+        68,
+        1177,
+        1196
+      ],
+      "sourceBodyAxisX": 625,
+      "scale": 0.14532243415077203,
+      "exportOffset": [
+        37,
+        62
+      ],
+      "opaqueBounds": [
+        68,
+        72,
+        208,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 28033,
+      "sha256": "56342e8882be7793a9ca2db99e80a5a89008a3398d0db63b8a70809d16ffcc4c",
+      "handAnchorPx": [
+        196,
+        159
+      ],
+      "handAnchor": [
+        0.765625,
+        0.62109375
+      ],
+      "sourceHandContact": [
+        1094,
+        665
+      ]
+    },
+    "book_hold": {
+      "source": "masters/pink_book_hold.png",
+      "file": "assets/pink/book_hold.png",
+      "sourceSize": [
+        1235,
+        1274
+      ],
+      "sourceOpaqueBounds": [
+        270,
+        93,
+        993,
+        1208
+      ],
+      "sourceBodyAxisX": 645,
+      "scale": 0.14532243415077203,
+      "exportOffset": [
+        34,
+        60
+      ],
+      "opaqueBounds": [
+        73,
+        74,
+        178,
+        235
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 26020,
+      "sha256": "be47f3db15c64f3f6ac9975c8c1ff84535bcc6a40cf501d54b40362fcbb3064d",
+      "handAnchorPx": [
+        152,
+        186
+      ],
+      "handAnchor": [
+        0.59375,
+        0.7265625
+      ],
+      "sourceHandContact": [
+        812,
+        866
+      ]
+    },
+    "book_read": {
+      "source": "masters/pink_book_read.png",
+      "file": "assets/pink/book_read.png",
+      "sourceSize": [
+        1235,
+        1274
+      ],
+      "sourceOpaqueBounds": [
+        293,
+        111,
+        1047,
+        1201
+      ],
+      "sourceBodyAxisX": 650,
+      "scale": 0.14532243415077203,
+      "exportOffset": [
+        34,
+        61
+      ],
+      "opaqueBounds": [
+        76,
+        77,
+        186,
+        235
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 26211,
+      "sha256": "852b9c27c03d35ce115fa269ac22cc4b211d02c9945c9fb7544a59a8d77d0710",
+      "handAnchorPx": [
+        154,
+        185
+      ],
+      "handAnchor": [
+        0.6015625,
+        0.72265625
+      ],
+      "sourceHandContact": [
+        828,
+        850
+      ]
+    },
+    "book_return": {
+      "source": "masters/pink_book_return.png",
+      "file": "assets/pink/book_return.png",
+      "sourceSize": [
+        1235,
+        1274
+      ],
+      "sourceOpaqueBounds": [
+        196,
+        93,
+        1158,
+        1192
+      ],
+      "sourceBodyAxisX": 600,
+      "scale": 0.14532243415077203,
+      "exportOffset": [
+        41,
+        63
+      ],
+      "opaqueBounds": [
+        69,
+        77,
+        209,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 25550,
+      "sha256": "04f80891611e3d0cd799c34040b2e5c4e1a8297e26b1e82833db03ca81954b73",
+      "handAnchorPx": [
+        194,
+        159
+      ],
+      "handAnchor": [
+        0.7578125,
+        0.62109375
+      ],
+      "sourceHandContact": [
+        1052,
+        662
+      ]
+    },
+    "dorayaki_take": {
+      "source": "masters/pink_dorayaki_take.png",
+      "file": "assets/pink/dorayaki_take.png",
+      "sourceSize": [
+        1235,
+        1274
+      ],
+      "sourceOpaqueBounds": [
+        263,
+        99,
+        1078,
+        1201
+      ],
+      "sourceBodyAxisX": 640,
+      "scale": 0.14532243415077203,
+      "exportOffset": [
+        35,
+        61
+      ],
+      "opaqueBounds": [
+        73,
+        75,
+        191,
+        235
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 26992,
+      "sha256": "e8d2f7fcf0156519ec0bfdb559a40274afd077f3cc0c10cb004eb7134f513d57",
+      "handAnchorPx": [
+        174,
+        179
+      ],
+      "handAnchor": [
+        0.6796875,
+        0.69921875
+      ],
+      "sourceHandContact": [
+        959,
+        813
+      ]
+    },
+    "dorayaki_eat": {
+      "source": "masters/pink_dorayaki_eat.png",
+      "file": "assets/pink/dorayaki_eat.png",
+      "sourceSize": [
+        1235,
+        1274
+      ],
+      "sourceOpaqueBounds": [
+        270,
+        101,
+        1001,
+        1207
+      ],
+      "sourceBodyAxisX": 655,
+      "scale": 0.14532243415077203,
+      "exportOffset": [
+        33,
+        61
+      ],
+      "opaqueBounds": [
+        72,
+        76,
+        178,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 25531,
+      "sha256": "d14b67624a2398ccbfc0912c4abf1fb2cd9d715543f3f001006e71f45aaae19f",
+      "handAnchorPx": [
+        146,
+        176
+      ],
+      "handAnchor": [
+        0.5703125,
+        0.6875
+      ],
+      "sourceHandContact": [
+        780,
+        793
+      ]
+    },
+    "dj_a": {
+      "source": "masters/pink_dj_a.png",
+      "file": "assets/pink/dj_a.png",
+      "sourceSize": [
+        1235,
+        1274
+      ],
+      "sourceOpaqueBounds": [
+        291,
+        96,
+        1150,
+        1201
+      ],
+      "sourceBodyAxisX": 655,
+      "scale": 0.14532243415077203,
+      "exportOffset": [
+        33,
+        61
+      ],
+      "opaqueBounds": [
+        75,
+        75,
+        200,
+        235
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 27294,
+      "sha256": "165ce73e9945dfec1e06f99f5be110e4e19977f10e62d2e908ac7346ef69d5f2",
+      "handAnchorPx": [
+        154,
+        187
+      ],
+      "handAnchor": [
+        0.6015625,
+        0.73046875
+      ],
+      "sourceHandContact": [
+        832,
+        866
+      ]
+    },
+    "dj_b": {
+      "source": "masters/pink_dj_b.png",
+      "file": "assets/pink/dj_b.png",
+      "sourceSize": [
+        1235,
+        1274
+      ],
+      "sourceOpaqueBounds": [
+        288,
+        95,
+        1191,
+        1200
+      ],
+      "sourceBodyAxisX": 655,
+      "scale": 0.14532243415077203,
+      "exportOffset": [
+        33,
+        62
+      ],
+      "opaqueBounds": [
+        75,
+        76,
+        206,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 27258,
+      "sha256": "268d156192bfe36738ff54d052cca56941f37ed70564fd1acf0b2ee0663ca05b",
+      "handAnchorPx": [
+        157,
+        188
+      ],
+      "handAnchor": [
+        0.61328125,
+        0.734375
+      ],
+      "sourceHandContact": [
+        850,
+        868
+      ]
+    },
+    "cheer_cheeks": {
+      "source": "masters/pink_cheer_cheeks.png",
+      "file": "assets/pink/cheer_cheeks.png",
+      "sourceSize": [
+        1235,
+        1274
+      ],
+      "sourceOpaqueBounds": [
+        273,
+        100,
+        1005,
+        1198
+      ],
+      "sourceBodyAxisX": 640,
+      "scale": 0.14532243415077203,
+      "exportOffset": [
+        35,
+        62
+      ],
+      "opaqueBounds": [
+        75,
+        77,
+        181,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 25290,
+      "sha256": "720d2b63f6be111325387b944bc401b6545810f6b7d56d8bfa7bcb84366b0931"
+    },
+    "cheer_hop": {
+      "source": "masters/pink_cheer_hop.png",
+      "file": "assets/pink/cheer_hop.png",
+      "sourceSize": [
+        1235,
+        1274
+      ],
+      "sourceOpaqueBounds": [
+        277,
+        90,
+        993,
+        1175
+      ],
+      "sourceBodyAxisX": 640,
+      "scale": 0.14532243415077203,
+      "exportOffset": [
+        35,
+        65
+      ],
+      "opaqueBounds": [
+        75,
+        78,
+        179,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 24575,
+      "sha256": "2477a8b0ffcddc182e3276c6ab5c0234572d94541917151a6ccf00ea529e9573"
+    }
+  },
+  "sitAnchor": [
+    0.4765625,
+    0.83984375
+  ],
+  "sleepAnchor": [
+    0.5,
+    0.69921875
+  ]
+}

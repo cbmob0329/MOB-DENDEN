@@ -1,563 +1,90 @@
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js';
-
-const $ = (id) => document.getElementById(id);
-const root = $('gameRoot');
-const titleScreen = $('titleScreen');
-const mainScreen = $('mainScreen');
-const titleStartBtn = $('titleStartBtn');
-const battleStartBtn = $('battleStartBtn');
-const howToBtn = $('howToBtn');
-const settingsBtn = $('settingsBtn');
-const modalBackdrop = $('modalBackdrop');
-const howToModal = $('howToModal');
-const settingsModal = $('settingsModal');
-const shakeToggle = $('shakeToggle');
-const flashToggle = $('flashToggle');
-const autoAimToggle = $('autoAimToggle');
-const bestScoreEl = $('bestScore');
-const bestWaveEl = $('bestWave');
-const hudEl = $('hud');
-const crosshairEl = $('crosshair');
-const mobileControlsEl = $('mobileControls');
-const helpEl = $('help');
-const questEl = $('quest');
-const hpEl = $('hp');
-const waveEl = $('wave');
-const scoreEl = $('score');
-const levelTextEl = $('levelText');
-const xpTextEl = $('xpText');
-const xpFillEl = $('xpFill');
-const specialTextEl = $('specialText');
-const specialFillEl = $('specialFill');
-const lockTextEl = $('lockText');
-const bossHud = $('bossHud');
-const bossFillEl = $('bossFill');
-const levelUpOverlay = $('levelUpOverlay');
-const levelChoicesEl = $('levelChoices');
-const messageEl = $('message');
-const messageText = $('messageText');
-const speakerEl = $('speaker');
-const toastEl = $('toast');
-const damageFlashEl = $('damageFlash');
-const attackBtn = $('attackBtn');
-const dashBtn = $('dashBtn');
-const specialBtn = $('specialBtn');
-const moveStickEl = $('moveStick');
-const moveStickKnobEl = $('moveStickKnob');
-
-const scene = new THREE.Scene();
-scene.background = new THREE.Color(0x09101c);
-scene.fog = new THREE.Fog(0x101828, 34, 88);
-
-const camera = new THREE.PerspectiveCamera(56, innerWidth / innerHeight, 0.1, 220);
-const renderer = new THREE.WebGLRenderer({ antialias:true, powerPreference:'high-performance' });
-renderer.setPixelRatio(Math.min(devicePixelRatio, 1.55));
-renderer.setSize(innerWidth, innerHeight);
-renderer.shadowMap.enabled = true;
-renderer.shadowMap.type = THREE.PCFSoftShadowMap;
-root.prepend(renderer.domElement);
-
-scene.add(new THREE.HemisphereLight(0xccefff, 0x15081a, 0.94));
-const sun = new THREE.DirectionalLight(0xb7d2ff, 0.92);
-sun.position.set(18,30,14);
-sun.castShadow = true;
-sun.shadow.mapSize.set(1024,1024);
-sun.shadow.camera.left=-45; sun.shadow.camera.right=45; sun.shadow.camera.top=45; sun.shadow.camera.bottom=-45;
-scene.add(sun);
-
-const magentaLight = new THREE.PointLight(0xff48b7, 1.6, 90, 2);
-magentaLight.position.set(-22, 18, -10);
-scene.add(magentaLight);
-const cyanLight = new THREE.PointLight(0x39e0ff, 1.75, 90, 2);
-cyanLight.position.set(20, 16, 14);
-scene.add(cyanLight);
-const purpleLight = new THREE.PointLight(0x8e68ff, 1.05, 70, 2);
-purpleLight.position.set(0, 14, -26);
-scene.add(purpleLight);
-
-const mats = {
-  sand:new THREE.MeshLambertMaterial({color:0x101828}),
-  sand2:new THREE.MeshLambertMaterial({color:0x172335}),
-  road:new THREE.MeshLambertMaterial({color:0x24293a}),
-  dark:new THREE.MeshLambertMaterial({color:0x202936}),
-  black:new THREE.MeshLambertMaterial({color:0x11151d}),
-  pink:new THREE.MeshLambertMaterial({color:0xf05f96}),
-  pink2:new THREE.MeshLambertMaterial({color:0xd73f79}),
-  yellow:new THREE.MeshLambertMaterial({color:0xf4d63f}),
-  yellow2:new THREE.MeshLambertMaterial({color:0xdfbe26}),
-  gun:new THREE.MeshLambertMaterial({color:0x2a313d}),
-  glow:new THREE.MeshBasicMaterial({color:0xffe36b}),
-  bullet:new THREE.MeshBasicMaterial({color:0xffe45a}),
-  heart:new THREE.MeshBasicMaterial({color:0xff6d8a}),
-  exp:new THREE.MeshBasicMaterial({color:0x8ee6ff}),
-  metal:new THREE.MeshLambertMaterial({color:0x485469}),
-  metalDark:new THREE.MeshLambertMaterial({color:0x2a3344}),
-  vinyl:new THREE.MeshLambertMaterial({color:0x151a25}),
-  speaker:new THREE.MeshLambertMaterial({color:0x303745}),
-  speakerDark:new THREE.MeshLambertMaterial({color:0x161b24}),
-  panel:new THREE.MeshLambertMaterial({color:0x26354c}),
-  neonPink:new THREE.MeshBasicMaterial({color:0xff4fc3}),
-  neonBlue:new THREE.MeshBasicMaterial({color:0x4de5ff}),
-  neonPurple:new THREE.MeshBasicMaterial({color:0xa06dff}),
-  neonGreen:new THREE.MeshBasicMaterial({color:0x89ff9d}),
+(()=>{'use strict';
+const $=s=>document.querySelector(s),clamp=(v,a,b)=>Math.max(a,Math.min(b,v)),v3=(x,y,z)=>new THREE.Vector3(x,y,z),ease=t=>t*t*(3-2*t),lerp=(a,b,t)=>a.clone().lerp(b,t);
+const scene=new THREE.Scene();scene.background=new THREE.Color('#ece7dc');let renderer;try{renderer=new THREE.WebGLRenderer({antialias:true})}catch{$('#dev').textContent='WebGL対応ブラウザで開いてください。';return}renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;renderer.outputColorSpace=THREE.SRGBColorSpace;$('#world').appendChild(renderer.domElement);
+const camera=new THREE.PerspectiveCamera(36,1,.1,100);let az=.7,el=.79,zoom=1,view=0;scene.add(new THREE.HemisphereLight(0xfff8de,0x8d9c95,2.15));const sun=new THREE.DirectionalLight(0xffead0,2.6);sun.position.set(-3,9,5);sun.castShadow=true;sun.shadow.mapSize.set(1536,1536);Object.assign(sun.shadow.camera,{left:-9,right:9,top:9,bottom:-9,near:.1,far:30});sun.shadow.bias=-.001;scene.add(sun);const lamp=new THREE.PointLight(0xffc381,8,10,2);lamp.position.set(-4.5,1.7,2.85);scene.add(lamp);
+const room=new ChillRoom(scene);const actions={
+ walk:{name:'おさんぽ',icon:'↝',pose:'walk'},sit:{name:'ソファでひと休み',icon:'♧',resource:'sofa'},nap:{name:'ベッドでおひるね',icon:'☾',resource:'bed'},eat:{name:'どら焼きを食べる',icon:'◒',resource:'table'},read:{name:'本を読んで戻す',icon:'▤',resource:'shelf'},window:{name:'窓をながめる',icon:'☀'},clean:{name:'おそうじ',icon:'✧'},plant:{name:'植物に水やり',icon:'♧',resource:'plant'},dance:{name:'音楽とダンス',icon:'♫'},chat:{name:'ふたりでお話',icon:'♡',resource:'chat'},dj:{name:'ターンテーブル',icon:'◎',resource:'deck'},joy:{name:'よろこぶ',icon:'✿'}
 };
-
-const enemyPalette = {
-  chaser: 0x7d38d1,
-  gunner: 0x24b8d7,
-  shield: 0x768b58,
-  rusher: 0xe05a59,
-  boss: 0xf08a27,
-};
-
-const keys = {up:false,down:false,left:false,right:false};
-const stick = { x:0, y:0, active:false, pointerId:null };
-let attackHeld = false;
-const blockers=[];
-const projectiles=[];
-const enemyProjectiles=[];
-const particles=[];
-const pickups=[];
-const enemies=[];
-let lockTarget=null;
-let bossRef=null;
-let toastTimer=0;
-
-const saveKey='mob-gun-cat-v08';
-function loadSave(){
-  try{
-    const raw=JSON.parse(localStorage.getItem(saveKey)||'{}');
-    return {bestScore:Number(raw.bestScore)||0,bestWave:Math.max(1,Number(raw.bestWave)||1)};
-  }catch{return {bestScore:0,bestWave:1};}
+const lines={walk:['いい日でやんす。','探検であります！'],sit:['ふかふかやんす～。','僕もひと息であります。'],nap:['おやすみでやんす…。','少し休むであります。'],eat:['どら焼き、おいしいやんす！','僕、どら焼きが大好きであります！'],read:['続きが気になるでやんす。','なるほどであります！'],window:['きれいな空やんす～。','いい景色であります！'],clean:['ぴかぴかでやんす！','僕にお任せであります！'],plant:['元気に育つでやんす。','お水の時間であります！'],dance:['踊るでやんす！','ノリノリであります！'],chat:['いっしょだと楽しいやんす。','僕も楽しいであります！'],dj:['いい音でやんす～。','僕の選曲であります！'],joy:['ほぅ～！','うれしいであります！']};
+let elapsed=0,paused=false,speed=1,sound=false,history=[],food=null,foodSerial=0,placedCount=0,consumedCount=0,pendingLayout=null,mode='observe',selected=0,draftLayout=0,toastTime=0,saveElapsed=0,lastBeat=-1;
+const reservations=new Map();const actors=[{id:0,key:'denden',name:'モブデンデン',pos:v3(-.8,0,1.4),speed:1.15},{id:1,key:'pink',name:'モブピンク',pos:v3(.8,0,1.4),speed:1.32}];
+function devTexture(id){let c=document.createElement('canvas');c.width=32;c.height=40;let ctx=c.getContext('2d');ctx.fillStyle=id?'#eaa6bc':'#ddc282';ctx.fillRect(7,7,18,23);ctx.fillRect(4,16,4,12);ctx.fillRect(24,16,4,12);ctx.fillRect(8,29,6,9);ctx.fillRect(19,29,6,9);ctx.fillStyle='#526459';ctx.fillRect(9,13,5,5);ctx.fillRect(18,13,5,5);ctx.fillStyle='#fff';ctx.font='6px monospace';ctx.fillText('DEV',10,26);let t=new THREE.CanvasTexture(c);t.magFilter=t.minFilter=THREE.NearestFilter;t.generateMipmaps=false;t.colorSpace=THREE.SRGBColorSpace;return t;}
+actors.forEach(a=>{Object.assign(a,{state:'idle',action:'walk',timer:2+a.id*2,path:[],queue:null,phases:[],phaseIndex:0,done:{},cooldowns:{},lastAction:null,speech:0,textures:{},scale:1.4,anchor:[.5,0],hasAsset:false});a.sprite=new THREE.Sprite(new THREE.SpriteMaterial({map:devTexture(a.id),alphaTest:.06,transparent:true,depthWrite:false}));a.sprite.scale.set(1.12,1.4,1);a.sprite.center.set(.5,0);scene.add(a.sprite);a.sleepGroup=new THREE.Group();a.sleepPlane=new THREE.Mesh(new THREE.PlaneGeometry(1,1),new THREE.MeshBasicMaterial({transparent:true,alphaTest:.06,depthWrite:false,side:THREE.DoubleSide}));a.sleepPlane.rotation.x=-Math.PI/2;a.sleepGroup.add(a.sleepPlane);scene.add(a.sleepGroup);a.sleepGroup.visible=false;a.shadow=new THREE.Mesh(new THREE.CircleGeometry(.25,24),new THREE.MeshBasicMaterial({color:0x54694b,opacity:.18,transparent:true,depthWrite:false}));a.shadow.rotation.x=-Math.PI/2;scene.add(a.shadow);a.bubble=document.createElement('div');a.bubble.className='bubble';$('#labels').appendChild(a.bubble);a.effect=document.createElement('div');a.effect.className='bubble effect';$('#labels').appendChild(a.effect);loadCharacter(a);});
+function loadCharacter(a){const packet=window.CHARACTER_ASSETS?.[a.key];if(!packet)return;const poses=typeof packet==='string'?{idle:packet}:packet.poses||packet;a.meta=packet.meta||{};const aliases={bed_mount:'climb',book_reach:'reach',book_hold:'hold',book_read:'read',book_return:'book_return',dorayaki_take:'food_take',dorayaki_eat:'eat',cheer_cheeks:'joy',cheer_hop:'hop'};for(let [pose,url]of Object.entries(poses)){if(typeof url!=='string')continue;new THREE.TextureLoader().load(url,t=>{t.magFilter=t.minFilter=THREE.NearestFilter;t.generateMipmaps=false;t.colorSpace=THREE.SRGBColorSpace;a.textures[pose]=t;if(aliases[pose])a.textures[aliases[pose]]=t;if(pose==='idle'){a.hasAsset=true;a.anchor=a.meta.footAnchor||[.5,.921875];let height=.65*t.image.height;try{let c=document.createElement('canvas');c.width=t.image.width;c.height=t.image.height;let cx=c.getContext('2d');cx.drawImage(t.image,0,0);let data=cx.getImageData(0,0,c.width,c.height).data,lo=c.height,hi=0;for(let y=0;y<c.height;y++)for(let x=0;x<c.width;x++)if(data[(y*c.width+x)*4+3]>32){lo=Math.min(lo,y);hi=Math.max(hi,y)}if(hi>lo)height=hi-lo+1}catch{}a.scale=1.35*t.image.height/height;}if(actors.every(a=>a.hasAsset))$('#dev').hidden=true;},undefined,()=>toast('一部の画像を読み込めませんでした。'));}}
+const book=new THREE.Group();room.box(book,0,0,0,.38,.055,.28,'#72958a');room.box(book,0,.037,0,.34,.035,.255,'#f7efd9');scene.add(book);
+const snack=new THREE.Group();room.cyl(snack,0,0,0,.155,.155,.07,'#7e4931');room.cyl(snack,0,.05,0,.17,.15,.065,'#c89046');room.cyl(snack,0,-.05,0,.15,.17,.055,'#d4a356');scene.add(snack);snack.visible=false;
+const broom=new THREE.Group();room.box(broom,0,.45,0,.025,.85,.025,'#ae8c5f');room.box(broom,0,.06,0,.25,.13,.08,'#ccbc91');scene.add(broom);broom.visible=false;
+const can=new THREE.Group();room.cyl(can,0,0,0,.11,.11,.21,'#91b6ac');let spout=room.box(can,-.26,0,0,.36,.045,.055,'#91b6ac');spout.rotation.z=-.3;scene.add(can);can.visible=false;
+const drops=[];for(let i=0;i<7;i++){let d=new THREE.Mesh(new THREE.SphereGeometry(.02,6,6),new THREE.MeshBasicMaterial({color:'#95ccd1',transparent:true,opacity:.7}));scene.add(d);drops.push(d);d.visible=false;}
+function speak(a,text,d=4){a.speech=d;a.bubble.replaceChildren();const name=document.createElement('small');name.textContent=a.name;a.bubble.append(name,document.createTextNode(text));}
+function log(a,text){history.unshift({n:Math.floor(elapsed/60),text:(a?a.name+' · ':'')+text});history=history.slice(0,60);}
+function toast(text){$('#toast').textContent=text;$('#toast').style.opacity=1;toastTime=4;}
+// Snapped endpoints avoid the previous off-grid wandering failure. Search is 4-connected.
+const grid=.2;function cell(x,z){return[Math.round((x+4.6)/grid),Math.round((z+3.6)/grid)]}function point(i,j){return v3(i*grid-4.6,0,j*grid-3.6)}
+function nearest(p){let base=cell(p.x,p.z),best=null,dist=Infinity;for(let r=0;r<5;r++){for(let dx=-r;dx<=r;dx++)for(let dz=-r;dz<=r;dz++){let q=point(base[0]+dx,base[1]+dz);if(room.valid(q.x,q.z)&&q.distanceToSquared(p)<dist){best=q;dist=q.distanceToSquared(p)}}if(best)return best}return null;}
+function route(from,to){let target=nearest(to);if(!target)return null;let st=cell(from.x,from.z),en=cell(target.x,target.z),key=p=>p.join(','),open=[st],cost=new Map([[key(st),0]]),came=new Map(),limit=3500;while(open.length&&limit--){open.sort((a,b)=>cost.get(key(a))+Math.abs(a[0]-en[0])+Math.abs(a[1]-en[1])-cost.get(key(b))-Math.abs(b[0]-en[0])-Math.abs(b[1]-en[1]));let cur=open.shift(),ck=key(cur);if(ck===key(en)){let result=[];while(ck!==key(st)){result.unshift(point(...cur));cur=came.get(ck);ck=key(cur)}if(result.length===0&&from.distanceTo(target)>.03)result.push(target);return result;}for(let [dx,dz]of [[1,0],[-1,0],[0,1],[0,-1]]){let n=[cur[0]+dx,cur[1]+dz],p=point(...n),nk=key(n);if(!room.valid(p.x,p.z))continue;let g=cost.get(ck)+1;if(!cost.has(nk)||g<cost.get(nk)){cost.set(nk,g);came.set(nk,cur);if(!open.some(t=>key(t)===nk))open.push(n)}}}return null;}
+function targetFor(a,key){if(actions[key].resource&&actions[key].resource!=='chat')return room.socket(actions[key].resource,'entry');if(key==='window')return v3(-2.3,0,-3.12);if(key==='clean')return v3(-1.15,0,1.45);if(key==='dance')return v3(-1.65,0,2.05);if(key==='joy')return v3(-.4,0,.4);if(key==='chat')return v3(a.id?.65:0,0,.25);for(let i=0;i<80;i++){let p=nearest(v3(-4.4+Math.random()*8.8,0,-3.2+Math.random()*6.6));if(p&&p.distanceTo(a.pos)>1.3)return p;}return null;}
+function canStart(a,key){if(!actions[key]||pendingLayout!==null)return false;let resource=actions[key].resource;if(resource&&reservations.has(resource)&&reservations.get(resource)!==a.id)return false;if(key==='eat'&&(!food||food.state!=='placed'))return false;return true;}
+function start(a,key,forced=false){if(!canStart(a,key)){if(forced)speak(a,key==='eat'?(a.id?'どら焼きを待つであります。':'どら焼き、待ってるでやんす。'):(a.id?'あとで使うであります！':'あとで使うでやんす。'));return false;}if(a.state!=='idle'){if(forced){a.queue=key;toast('今の行動を終えたら、'+actions[key].name+'。');return true;}return false;}let target=targetFor(a,key);if(!target)return false;let path=route(a.pos,target);if(!path)return false;a.action=key;a.path=path;a.state='moving';a.phaseIndex=0;a.blocked=0;a.lastAction=key;let r=actions[key].resource;if(r)reservations.set(r,a.id);if(key==='eat'){food.state='reserved';food.actor=a.id;}return true;}
+function choose(a){let weights=a.id?{walk:2,sit:1,nap:.7,eat:4,read:2,window:1.3,clean:3,plant:3,dance:2.5,chat:2,dj:2.5,joy:1}:{walk:2,sit:3,nap:2.5,eat:5,read:3,window:2,clean:1,plant:1.5,dance:2,chat:2.5,dj:1.7,joy:1.3};let choices=Object.keys(actions).filter(k=>canStart(a,k)&&elapsed>=(a.cooldowns[k]||0));if(choices.length>1)choices=choices.filter(k=>k!==a.lastAction);let total=choices.reduce((v,k)=>v+weights[k],0),roll=Math.random()*total;for(let k of choices){roll-=weights[k];if(roll<=0){if(!start(a,k))a.timer=1;return;}}a.timer=1;}
+function phase(name,duration,pose,point=null,extra={}){return{name,duration,pose,point,...extra};}
+function phasesFor(a){let key=a.action,r=actions[key].resource,entry=r&&r!=='chat'?room.socket(r,'entry'):a.pos.clone(),walkTo=(name,p,d=1)=>phase(name,d,'walk',p);
+ if(key==='sit')return[walkTo('腰をかける',room.socket('sofa','seat'),1.2),phase('くつろぎ中',9,'sit'),walkTo('ソファから降りる',entry,1.2)];
+ if(key==='nap')return[phase('ベッドに乗る',1.1,'climb',room.socket('bed','edge'),{arc:.13}),walkTo('ベッド中央へ',room.socket('bed','center'),1.25),phase('すやすや',12,'sleep'),phase('起きる',.7,'sit'),walkTo('ベッドの端へ',room.socket('bed','edge'),1.2),phase('ベッドから降りる',1.1,'climb',entry,{arc:.12})];
+ if(key==='read'){let reading=nearest(entry.clone().add(v3(-.3,0,.85)))||entry.clone();return[phase('本に手を伸ばす',.65,'reach'),phase('本を手に取る',1,'hold',null,{transfer:'book-in'}),phase('本を持って一歩下がる',.9,'hold',reading,{hold:'book',undock:true}),phase('読書中',9,'read',null,{hold:'book'}),phase('本棚へ戻る',.9,'hold',entry,{hold:'book',redock:true}),phase('本を棚に戻す',1,'book_return',null,{transfer:'book-out'}),phase('手を離す',.45,'idle')];}
+ if(key==='eat'){let eating=nearest(entry.clone().add(v3(-.3,0,.85)))||entry.clone();return[phase('どら焼きに手を伸ばす',.65,'food_take'),phase('どら焼きを取る',1,'hold',null,{transfer:'food-in'}),phase('どら焼きを持って一歩下がる',.9,'hold',eating,{hold:'foodCarry'}),phase('どら焼きを食べる',5,'eat',null,{hold:'food'}),phase('ごちそうさま',1.3,'joy')];}
+ if(key==='plant')return[phase('じょうろを構える',1,'hold'),phase('水やり中',7,'garden'),phase('じょうろを片付ける',.7,'idle')];
+ if(key==='clean')return[phase('ほうきを持つ',.7,'hold'),phase('床をはく',8,'clean'),phase('お片付け',.7,'idle')];
+ if(key==='dj')return[phase('盤に手を伸ばす',.8,'dj_a'),phase('選曲とミックス',9,'dj'),phase('音にうなずく',1,'idle')];
+ if(key==='chat')return[phase('ふたりでおしゃべり',9,'chat')];
+ if(key==='joy')return[phase('両手をほっぺに',1.2,'joy'),phase('ほぅ～！',1.1,'joy',null,{hop:Math.random()<.6}),phase('うれしい余韻',2,'joy')];
+ return[phase(actions[key].name,key==='walk'?2:key==='dance'?9:8,key==='window'?'windowlook':key==='dance'?'dance':'idle')];}
+function enterPhase(a){let p=a.phases[a.phaseIndex];if(!p){finish(a);return;}a.phase=p;a.phaseTime=0;a.phaseFrom=a.pos.clone();if(p.name==='ごちそうさま')speak(a,a.id?'ごちそうさまであります！':'ほぅ～！ おいしかったやんす！');if(p.transfer==='book-in')a.transferFrom=room.socket('shelf','book');if(p.transfer==='book-out')a.transferFrom=book.position.clone();if(p.transfer==='food-in'){a.transferFrom=room.socket('table','food');if(food)food.state='held';}if(p.hold==='food')a.bites=0;}
+function arrive(a){if(a.state==='staging'){a.state='ready';return;}a.state='acting';a.done[a.action]=(a.done[a.action]||0)+1;a.phases=phasesFor(a);a.phaseIndex=0;enterPhase(a);speak(a,lines[a.action][a.id]);log(a,actions[a.action].name);tone(a.id?660:440);if(a.action==='chat'){let other=actors[1-a.id];if(other.state==='idle'&&pendingLayout===null){let path=route(other.pos,targetFor(other,'chat'));if(path){other.action='chat';other.lastAction='chat';other.path=path;other.state='moving';other.joining=true;}}else speak(other,other.id?'聞いているであります！':'いいねでやんす～。',3);}}
+function finish(a){let r=actions[a.action]?.resource;if(r&&reservations.get(r)===a.id)reservations.delete(r);if(a.action==='eat'&&food?.actor===a.id){if(food.state==='held'){consumedCount++;food=null;snack.visible=false;}else if(food)food.state='placed';}if(a.action==='read')book.position.copy(room.socket('shelf','book'));a.cooldowns[a.action]=elapsed+18;a.phase=null;a.state='idle';a.timer=1.1+Math.random()*2;a.joining=false;if(pendingLayout!==null)stageActor(a);else if(a.queue){let next=a.queue;a.queue=null;start(a,next,true);}}
+function stageActor(a){if(a.state!=='idle')return;let target=v3(a.id?.7:0,0,1.45),path=route(a.pos,target);if(path){a.path=path;a.state='staging';}else{toast('配置変更の動線を確認できませんでした。');pendingLayout=null;room.clearPreview();}}
+function updateActor(a,dt){a.speech=Math.max(0,a.speech-dt);if(a.state==='idle'){if(pendingLayout!==null){stageActor(a);return;}a.timer-=dt;if(a.timer<=0)choose(a);}else if(a.state==='moving'||a.state==='staging'){if(a.path.length){let target=a.path[0],d=a.pos.distanceTo(target);if(d<.03){a.pos.copy(target);a.path.shift();}else{a.heading=target.clone().sub(a.pos).normalize();a.pos.lerp(target,Math.min(1,a.speed*dt/d));}}else arrive(a);}else if(a.state==='acting'){a.phaseTime+=dt;let p=a.phase,u=clamp(a.phaseTime/p.duration,0,1);if(p.point){a.heading=p.point.clone().sub(a.phaseFrom).normalize();a.pos.copy(lerp(a.phaseFrom,p.point,ease(u)));if(p.arc)a.pos.y+=Math.sin(Math.PI*u)*p.arc;}if(p.hold==='food'&&u>=.92&&food?.actor===a.id){consumedCount++;food=null;snack.visible=false;}if(a.phaseTime>=p.duration){if(p.point)a.pos.copy(p.point);if(p.transfer==='book-out')book.position.copy(room.socket('shelf','book'));a.phaseIndex++;enterPhase(a);}}}
+// Convert an actual sprite pixel to world space using the same camera-facing axes as THREE.Sprite.
+function spriteAnchorWorld(a,anchor,depth=.012){let center=a.sprite.center,p=v3((anchor[0]-center.x)*a.sprite.scale.x,(1-anchor[1]-center.y)*a.sprite.scale.y,depth);if(a.sprite.material.rotation)p.applyAxisAngle(v3(0,0,1),a.sprite.material.rotation);return p.applyQuaternion(camera.quaternion).add(a.sprite.position);}
+function hand(a,side=1){let actualPose=(a.drawPose==='clean'||a.drawPose==='garden')&&!a.textures[a.drawPose]?'hold':a.drawPose,anchor=a.meta?.handAnchors?.[actualPose]||a.meta?.handAnchors?.[a.phase?.pose]||a.meta?.handAnchor;if(anchor){let point=side===1?anchor:[a.sprite.center.x+(anchor[0]-a.sprite.center.x)*side,anchor[1]];return spriteAnchorWorld(a,point);}return a.pos.clone().add(v3(.19*side,.78,.12));}
+// A sprite has no rigid 3D hand. Align its rendered contact pixel to the station, keeping its feet on the floor.
+function groundedDock(a,target,anchor){const origin=a.sprite.position.clone(),offset=spriteAnchorWorld(a,anchor,0).sub(origin),ray=target.clone().sub(camera.position);let depth=(origin.y+offset.y-target.y)/ray.y;return target.clone().addScaledVector(ray,depth).sub(offset);}
+function dockContact(a){a.contact=null;if(a.state!=='acting'||!a.hasAsset)return;let target,anchor,weight=1;
+ if(a.action==='read'){if(a.phase?.hold==='book'&&!a.phase?.undock&&!a.phase?.redock)return;target=room.socket('shelf','book');anchor=a.meta?.handAnchors?.[a.phase?.pose==='book_return'?'book_return':'reach'];if(a.phase?.pose==='reach'||a.phase?.redock)weight=ease(clamp(a.phaseTime/a.phase.duration,0,1));if(a.phase?.pose==='idle'||a.phase?.undock)weight=1-ease(clamp(a.phaseTime/a.phase.duration,0,1));}
+ if(a.action==='dj'){target=room.socket('deck',a.id?'hands_pink':'hands_denden');anchor=a.meta?.handAnchors?.[a.drawPose]||a.meta?.handAnchors?.dj_a;if(a.phaseIndex===0)weight=ease(clamp(a.phaseTime/a.phase.duration,0,1));if(a.phase?.pose==='idle')weight=1-ease(clamp(a.phaseTime/a.phase.duration,0,1));}
+ if(!anchor||!target)return;let desired=groundedDock(a,target,anchor);if(!room.contactFloorValid(desired.x,desired.z,a.action==='dj'?'deck':'shelf')){a.contact={safe:false,target:target.toArray(),desiredFoot:desired.toArray()};return;}a.sprite.position.lerp(desired,weight);let actual=spriteAnchorWorld(a,anchor,0),ap=actual.clone().project(camera),tp=target.clone().project(camera);a.contact={safe:true,target:target.toArray(),actual:actual.toArray(),projectedErrorPx:Math.hypot((ap.x-tp.x)*innerWidth/2,(ap.y-tp.y)*innerHeight/2),depthDifference:actual.distanceTo(target),footY:a.sprite.position.y,weight};}
+function renderActor(a){let p=a.phase,moving=a.state==='moving'||a.state==='staging'||p?.pose==='walk',pose=p?.pose||'idle',flip=1;let frame=Math.floor(elapsed*7)%2+1;
+ if(moving){let dir=a.heading||v3(0,0,1),right=dir.x*Math.cos(az)-dir.z*Math.sin(az),front=dir.x*Math.sin(az)+dir.z*Math.cos(az);let facing=Math.abs(right)>Math.abs(front)*.9?'side':front>=0?'front':'back';pose='walk_'+facing+'_'+frame;if(facing==='side'&&right<0)flip=-1;}else if(pose==='dj')pose=Math.floor(elapsed*3)%2?'dj_a':'dj_b';else if(p?.hop&&a.textures.hop)pose='hop';
+ let fallback=moving?(a.textures[frame===1?'walk':'walk2']||a.textures.walk):pose==='dj_a'||pose==='dj_b'?a.textures.dj||a.textures.hold:pose==='garden'||pose==='clean'?a.textures.hold:pose==='food_take'?a.textures.reach:pose==='dance'?a.textures.hop||a.textures.joy:pose==='windowlook'?a.textures.walk_back_1:null;let tex=a.textures[pose]||fallback||a.textures.idle;a.drawPose=pose;
+ if(tex){a.sprite.material.map=tex;a.sprite.scale.set(flip*a.scale*tex.image.width/tex.image.height,a.scale,1);}let bob=moving||(p?.hold==='book'||p?.hold==='foodCarry')&&p?.point?Math.abs(Math.sin(elapsed*10))*.035:0;let hop=p?.hop?Math.sin(Math.PI*clamp(a.phaseTime/p.duration,0,1))*.35:0;if(pose==='dance')bob=Math.abs(Math.sin(elapsed*8))*.1;a.sprite.position.copy(a.pos);a.sprite.position.y+=(pose==='sit'||a.pos.y>.15?.005:.035)+bob+hop;
+ const realSleep=pose==='sleep'&&!!a.textures.sleep;a.sprite.visible=!realSleep;a.sleepGroup.visible=realSleep;if(realSleep){let anchor=a.meta?.sleepAnchor||[.5,.65],w=a.scale*tex.image.width/tex.image.height,h=a.scale;a.sleepGroup.position.copy(a.pos);a.sleepGroup.position.y+=.006;a.sleepGroup.rotation.y=room.furniture.bed.group.rotation.y-Math.PI/2;a.sleepPlane.material.map=tex;a.sleepPlane.scale.set(w,h,1);a.sleepPlane.position.set((.5-anchor[0])*w,0,(.5-anchor[1])*h);}
+ if(pose==='sleep'){a.sprite.center.set(.5,.35);a.sprite.material.rotation=.8;}else{let standing=a.hasAsset?a.anchor:[.5,1],seat=pose==='sit'&&a.hasAsset?(a.meta?.sitAnchor||[.5,.65]):standing;a.sprite.center.set(seat[0],1-seat[1]);a.sprite.material.rotation=pose==='dance'?Math.sin(elapsed*6)*.09:0;}
+ dockContact(a);a.shadow.position.set(a.sprite.position.x,.067,a.sprite.position.z);a.shadow.visible=a.pos.y<.15;let projection=a.sprite.position.clone().add(v3(0,pose==='sleep'?.65:1.48,0)).project(camera),px=(projection.x*.5+.5)*innerWidth,py=(-projection.y*.5+.5)*innerHeight;a.bubble.style.left=clamp(px,65,innerWidth-65)+'px';a.bubble.style.top=py+'px';a.bubble.style.opacity=a.speech>0?1:0;a.effect.style.left=px+'px';a.effect.style.top=py+'px';a.effect.style.opacity=a.speech>0?0:1;a.effect.textContent=pose==='sleep'?'z z Z':pose==='dance'||pose.startsWith('dj')?'♫':pose==='joy'||pose==='hop'?'✿':pose==='chat'?'♡':'';$('#state'+a.id).textContent=a.state==='moving'?actions[a.action].name+'へ':a.state==='staging'||a.state==='ready'?'模様替えの準備':p?.name||'のんびり';}
+ function renderProps(){const reader=actors.find(a=>a.state==='acting'&&a.action==='read');if(reader){let p=reader.phase,u=ease(clamp(reader.phaseTime/p.duration,0,1));if(p.transfer==='book-in')book.position.copy(lerp(reader.transferFrom,hand(reader),u));else if(p.transfer==='book-out')book.position.copy(lerp(reader.transferFrom,room.socket('shelf','book'),u));else if(p.hold==='book')book.position.copy(hand(reader));else book.position.copy(room.socket('shelf','book'));book.rotation.set(0,p.hold==='book'?az:0,p.hold==='book'?-.18:0);}else{book.position.copy(room.socket('shelf','book'));book.rotation.set(0,0,0);}book.visible=true;
+ snack.visible=!!food;if(food){let a=food.actor!==undefined?actors[food.actor]:null,p=a?.phase;snack.scale.setScalar(1);if(food.state==='held'&&a&&p){let u=clamp(a.phaseTime/p.duration,0,1);if(p.transfer==='food-in')snack.position.copy(lerp(a.transferFrom,hand(a),ease(u)));else{snack.position.copy(hand(a));if(p.hold==='food')snack.scale.setScalar(Math.max(.05,1-u*.95));}}else snack.position.copy(room.socket('table','food'));}
+ let cleaner=actors.find(a=>a.phase?.pose==='clean'),gardener=actors.find(a=>a.phase?.pose==='garden'),dj=actors.find(a=>a.phase?.pose==='dj');broom.visible=!!cleaner;if(cleaner){let grip=hand(cleaner),angle=Math.sin(elapsed*5)*.13;broom.rotation.z=angle;let sy=Math.max(.12,(grip.y-.035)/(.62*Math.cos(angle)));broom.scale.set(1,sy,1);let localGrip=v3(0,.62*sy,0).applyAxisAngle(v3(0,0,1),angle);broom.position.copy(grip).sub(localGrip);}can.visible=!!gardener;for(let d of drops)d.visible=!!gardener;if(gardener){let water=room.socket('plant','water');can.position.copy(hand(gardener));can.rotation.z=-.62;can.updateMatrixWorld(true);let pour=can.localToWorld(v3(-.44,0,0));drops.forEach((d,i)=>{let t=(elapsed*1.6+i/7)%1;d.position.copy(lerp(pour,water,t)).add(v3(.015*Math.sin(i),0,.015*Math.cos(i)));});}
+ for(let disc of room.furniture.deck.discs||[])if(dj)disc.rotation.y=elapsed*3;
 }
-function saveBest(){
-  try{localStorage.setItem(saveKey,JSON.stringify({bestScore:state.bestScore,bestWave:state.bestWave}));}catch{}
-}
-const saved=loadSave();
-
-const state={
-  hp:6,maxHp:6,wave:1,score:0,
-  level:1,xp:0,xpNext:100,pendingLevelUps:0,levelUpOpen:false,
-  damage:1,fireInterval:.145,bulletSpeed:20,moveSpeed:6.2,bulletCount:2,pierce:0,crit:.08,
-  special:0,specialMax:100,specialGain:1,
-  waveClearDelay:0,messageQueue:[],messageOpen:false,
-  invincible:0,shootCooldown:0,dashCooldown:0,dashTimer:0,shotSide:0,
-  gameOver:false,inGame:false,bestScore:saved.bestScore,bestWave:saved.bestWave,
-  cameraShake:true,damageFlash:true,autoAim:true,shakeStrength:0,damageFlashTimer:0,
-};
-
-function boxMesh(g,m){const o=new THREE.Mesh(g,m);o.castShadow=true;o.receiveShadow=true;return o;}
-function box(w,h,d,mat,x,y,z,cast=true){const m=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),mat);m.position.set(x,y,z);m.castShadow=cast;m.receiveShadow=true;scene.add(m);return m;}
-function addBlocker(x,z,w,d){blockers.push({x,z,w,d});}
-function collides(x,z,r=.45){if(x<-39||x>39||z<-39||z>39)return true;return blockers.some(b=>Math.abs(x-b.x)<b.w/2+r&&Math.abs(z-b.z)<b.d/2+r);}
-
-// arena - neon city / DJ street stage
-box(84,1,84,mats.sand,0,-.5,0,false);
-for(let x=-38;x<=38;x+=4){
-  for(let z=-38;z<=38;z+=4){
-    const useAlt=((Math.round((x+40)/4)+Math.round((z+40)/4))%2===0);
-    if(useAlt)box(3.96,.03,3.96,mats.sand2,x,.02,z,false);
-  }
-}
-box(76,.08,14,mats.road,0,.03,0,false);
-box(14,.08,76,mats.road,0,.03,0,false);
-for(let x=-34;x<=34;x+=4){box(2.1,.03,.22,mats.neonPink,x,.055,-6.3,false);box(2.1,.03,.22,mats.neonBlue,x,.055,6.3,false);}
-for(let z=-34;z<=34;z+=4){box(.22,.03,2.1,mats.neonPurple,-6.3,.055,z,false);box(.22,.03,2.1,mats.neonGreen,6.3,.055,z,false);}
-box(10,.03,10,mats.neonBlue,0,.06,0,false);
-
-function stagePillar(x,z,height=6,colorMat=mats.neonBlue){
-  const g=new THREE.Group();
-  const pole=boxMesh(new THREE.BoxGeometry(.7,height,.7),mats.metalDark); pole.position.y=height/2; g.add(pole);
-  const ring1=boxMesh(new THREE.BoxGeometry(1.18,.16,1.18),colorMat); ring1.position.y=1.5; g.add(ring1);
-  const ring2=boxMesh(new THREE.BoxGeometry(1.18,.16,1.18),colorMat); ring2.position.y=height-1.2; g.add(ring2);
-  const cap=boxMesh(new THREE.BoxGeometry(1.05,.5,1.05),mats.panel); cap.position.y=height+.2; g.add(cap);
-  g.position.set(x,0,z); scene.add(g); addBlocker(x,z,1.15,1.15);
-}
-function speakerStack(x,z,rot=0,colorMat=mats.neonBlue){
-  const g=new THREE.Group();
-  const base=boxMesh(new THREE.BoxGeometry(1.6,3.0,1.45),mats.speaker); base.position.y=1.5; g.add(base);
-  const woofer1=new THREE.Mesh(new THREE.CylinderGeometry(.28,.28,.16,18),mats.speakerDark); woofer1.rotation.x=Math.PI/2; woofer1.position.set(0,1.05,.76); g.add(woofer1);
-  const woofer2=woofer1.clone(); woofer2.position.y=1.95; g.add(woofer2);
-  const glow1=new THREE.Mesh(new THREE.TorusGeometry(.34,.05,8,18),colorMat); glow1.rotation.x=Math.PI/2; glow1.position.set(0,1.05,.82); g.add(glow1);
-  const glow2=glow1.clone(); glow2.position.y=1.95; g.add(glow2);
-  const top=boxMesh(new THREE.BoxGeometry(1.72,.18,1.52),mats.metal); top.position.y=3.02; g.add(top);
-  g.position.set(x,0,z); g.rotation.y=rot; scene.add(g); addBlocker(x,z,1.7,1.55);
-}
-function turntableDeck(x,z,rot=0){
-  const g=new THREE.Group();
-  const table=boxMesh(new THREE.BoxGeometry(3.3,1.15,1.95),mats.panel); table.position.y=.78; g.add(table);
-  const top=boxMesh(new THREE.BoxGeometry(3.45,.16,2.1),mats.metal); top.position.y=1.43; g.add(top);
-  const legPos=[[-1.32,.6,-.72],[1.32,.6,-.72],[-1.32,.6,.72],[1.32,.6,.72]];
-  for(const [lx,ly,lz] of legPos){ const leg=boxMesh(new THREE.BoxGeometry(.16,1.2,.16),mats.metalDark); leg.position.set(lx,ly,lz); g.add(leg); }
-  for(const sx of [-.95,.95]){
-    const disc=new THREE.Mesh(new THREE.CylinderGeometry(.52,.52,.12,24),mats.vinyl); disc.rotation.x=Math.PI/2; disc.position.set(sx,1.55,-.05); g.add(disc);
-    const center=new THREE.Mesh(new THREE.CylinderGeometry(.14,.14,.13,16),mats.neonPink); center.rotation.x=Math.PI/2; center.position.set(sx,1.56,-.05); g.add(center);
-    const rim=new THREE.Mesh(new THREE.TorusGeometry(.56,.04,8,24),mats.neonBlue); rim.rotation.x=Math.PI/2; rim.position.set(sx,1.57,-.05); g.add(rim);
-  }
-  const mixer=boxMesh(new THREE.BoxGeometry(.6,.12,.9),mats.speakerDark); mixer.position.set(0,1.54,.18); g.add(mixer);
-  for(let i=0;i<4;i++){ const knob=new THREE.Mesh(new THREE.CylinderGeometry(.05,.05,.08,12),i%2?mats.neonPurple:mats.neonGreen); knob.position.set(-.18+i*.12,1.63,-.1); g.add(knob); }
-  const label=boxMesh(new THREE.BoxGeometry(1.1,.14,.22),mats.neonPink); label.position.set(0,1.55,.86); g.add(label);
-  g.position.set(x,0,z); g.rotation.y=rot; scene.add(g); addBlocker(x,z,3.4,2.25);
-}
-function recordBarrier(x,z,rot=0){
-  const g=new THREE.Group();
-  const disc=new THREE.Mesh(new THREE.CylinderGeometry(1.0,1.0,.22,30),mats.vinyl); disc.rotation.z=Math.PI/2; disc.position.set(0,1.2,0); g.add(disc);
-  const center=new THREE.Mesh(new THREE.CylinderGeometry(.24,.24,.24,18),mats.neonPink); center.rotation.z=Math.PI/2; center.position.set(0,1.2,0); g.add(center);
-  const stand=boxMesh(new THREE.BoxGeometry(.2,1.1,1.5),mats.metalDark); stand.position.set(0,.55,0); g.add(stand);
-  const base=boxMesh(new THREE.BoxGeometry(1.5,.18,1.5),mats.metal); base.position.y=.09; g.add(base);
-  g.position.set(x,0,z); g.rotation.y=rot; scene.add(g); addBlocker(x,z,1.7,1.7);
-}
-function mobNeonSign(x,z,rot=0,colorMat=mats.neonPurple){
-  const g=new THREE.Group();
-  const post=boxMesh(new THREE.BoxGeometry(.22,4.2,.22),mats.metalDark); post.position.y=2.1; g.add(post);
-  const board=boxMesh(new THREE.BoxGeometry(2.6,1.2,.18),mats.panel); board.position.set(0,4.05,0); g.add(board);
-  const glowA=boxMesh(new THREE.BoxGeometry(2.1,.18,.22),colorMat); glowA.position.set(0,4.05,.12); g.add(glowA);
-  const glowB=boxMesh(new THREE.BoxGeometry(.22,.82,.22),mats.neonBlue); glowB.position.set(-.62,4.05,.12); g.add(glowB);
-  const glowC=boxMesh(new THREE.BoxGeometry(.22,.82,.22),mats.neonPink); glowC.position.set(0,4.05,.12); g.add(glowC);
-  const glowD=boxMesh(new THREE.BoxGeometry(.22,.82,.22),mats.neonGreen); glowD.position.set(.62,4.05,.12); g.add(glowD);
-  g.position.set(x,0,z); g.rotation.y=rot; scene.add(g);
-}
-function skylineBlock(x,z,w,h,d,color=0x0d1220){ box(w,h,d,new THREE.MeshLambertMaterial({color}),x,h/2,z,false); }
-
-// decorative skyline around the arena edges
-[[-35,-39,8,12,2],[-23,-39,6,16,2],[-10,-39,7,10,2],[3,-39,9,14,2],[18,-39,6,11,2],[31,-39,8,17,2],
- [-35,39,8,14,2],[-21,39,7,12,2],[-8,39,6,18,2],[7,39,8,11,2],[22,39,7,15,2],[34,39,8,13,2],
- [-39,-29,2,14,7],[-39,-10,2,11,8],[-39,11,2,16,8],[-39,29,2,12,6],[39,-28,2,12,8],[39,-9,2,18,6],[39,12,2,13,9],[39,30,2,15,7]].forEach(v=>skylineBlock(...v));
-
-// stage obstacles / DJ props
-[[ -18,-16,0],[ -18,16,Math.PI],[ 18,-16,0],[ 18,16,Math.PI],[-28,0,Math.PI/2],[28,0,-Math.PI/2],[0,-28,0],[0,28,Math.PI]].forEach(p=>turntableDeck(p[0],p[1],p[2]));
-[[-23,8,0],[-23,-8,0],[23,8,Math.PI],[23,-8,Math.PI],[-8,23,Math.PI/2],[8,23,-Math.PI/2],[-8,-23,Math.PI/2],[8,-23,-Math.PI/2]].forEach(p=>recordBarrier(p[0],p[1],p[2]));
-for(let i=0;i<18;i++){
-  const x=Math.cos(i*.35)*34, z=Math.sin(i*.35)*34;
-  speakerStack(x,z,Math.atan2(x,z),i%2?mats.neonBlue:mats.neonPink);
-}
-[[ -6,13,mats.neonBlue],[ 6,-13,mats.neonPink],[-13,-6,mats.neonPurple],[13,6,mats.neonGreen]].forEach(p=>stagePillar(p[0],p[1],6,p[2]));
-[[ -31,-2,0],[31,2,Math.PI],[-2,31,Math.PI/2],[2,-31,-Math.PI/2]].forEach(p=>mobNeonSign(p[0],p[1],p[2]));
-// player - temporary code model
-const player=new THREE.Group();
-function buildGun(){const g=new THREE.Group();const base=boxMesh(new THREE.BoxGeometry(.56,.26,.26),mats.gun);base.position.set(0,0,.18);g.add(base);const barrel=boxMesh(new THREE.BoxGeometry(.24,.18,.36),mats.black);barrel.position.set(0,0,.48);g.add(barrel);const grip=boxMesh(new THREE.BoxGeometry(.18,.34,.14),mats.black);grip.position.set(0,-.22,.07);grip.rotation.x=-.28;g.add(grip);const cyl=new THREE.Mesh(new THREE.CylinderGeometry(.11,.11,.18,8),new THREE.MeshLambertMaterial({color:0x454d59}));cyl.rotation.z=Math.PI/2;cyl.position.set(.02,0,.22);g.add(cyl);return g;}
-function buildPlayer(){
-  const body=boxMesh(new THREE.BoxGeometry(1.18,1,.86),mats.pink);body.position.y=1;player.add(body);
-  const belly=boxMesh(new THREE.BoxGeometry(.86,.52,.52),mats.pink2);belly.position.set(0,.82,.43);player.add(belly);
-  const head=boxMesh(new THREE.BoxGeometry(1.25,1,1.02),mats.yellow);head.position.y=1.92;player.add(head);
-  const hood=boxMesh(new THREE.BoxGeometry(1.48,1.18,1.18),mats.pink);hood.position.set(0,2,0);player.add(hood);
-  const face=boxMesh(new THREE.BoxGeometry(1.02,.76,.28),mats.yellow2);face.position.set(0,1.85,.53);player.add(face);
-  const mouth=boxMesh(new THREE.BoxGeometry(.54,.055,.05),mats.black);mouth.position.set(0,1.53,.7);player.add(mouth);
-  const ringMat=new THREE.MeshBasicMaterial({color:0x101214});
-  for(const sx of [-.28,.28]){const ring=new THREE.Mesh(new THREE.TorusGeometry(.22,.055,8,20),ringMat);ring.position.set(sx,1.83,.73);ring.rotation.x=Math.PI/2;player.add(ring);}
-  const bridge=boxMesh(new THREE.BoxGeometry(.15,.05,.05),mats.black);bridge.position.set(0,1.83,.73);player.add(bridge);
-  const earG=new THREE.ConeGeometry(.24,.42,4);const earL=new THREE.Mesh(earG,mats.pink);earL.position.set(-.46,2.68,-.04);earL.rotation.z=.16;player.add(earL);const earR=earL.clone();earR.position.x=.46;earR.rotation.z=-.16;player.add(earR);
-  const armL=boxMesh(new THREE.BoxGeometry(.34,.75,.34),mats.yellow);armL.position.set(-.77,1.1,.08);player.add(armL);const armR=armL.clone();armR.position.x=.77;player.add(armR);
-  const legL=boxMesh(new THREE.BoxGeometry(.4,.7,.45),mats.yellow);legL.position.set(-.35,.34,.05);player.add(legL);const legR=legL.clone();legR.position.x=.35;player.add(legR);
-  const tail=boxMesh(new THREE.BoxGeometry(.9,.18,.18),mats.yellow);tail.position.set(.62,.55,-.25);tail.rotation.y=-.7;player.add(tail);
-  const gunL=buildGun();gunL.position.set(-.95,1.16,.26);gunL.rotation.y=Math.PI/2;player.add(gunL);const gunR=buildGun();gunR.position.set(.95,1.16,.26);gunR.rotation.y=Math.PI/2;player.add(gunR);
-  player.userData.leftMuzzle=new THREE.Vector3(-1.19,1.16,.74);player.userData.rightMuzzle=new THREE.Vector3(1.19,1.16,.74);
-}
-buildPlayer();player.position.set(0,.05,18);scene.add(player);
-function worldPos(local){return player.localToWorld(local.clone());}
-
-function updateHUD(){
-  hpEl.textContent='HP '+'♥'.repeat(Math.max(0,state.hp))+'♡'.repeat(Math.max(0,state.maxHp-state.hp));
-  waveEl.textContent=`WAVE ${state.wave}`;scoreEl.textContent=`SCORE ${Math.floor(state.score)}`;
-  levelTextEl.textContent=String(state.level);xpTextEl.textContent=`${Math.floor(state.xp)} / ${state.xpNext}`;xpFillEl.style.width=`${Math.min(100,state.xp/state.xpNext*100)}%`;
-  specialTextEl.textContent=`${Math.floor(state.special/state.specialMax*100)}%`;specialFillEl.style.width=`${Math.min(100,state.special/state.specialMax*100)}%`;
-  specialBtn.classList.toggle('ready',state.special>=state.specialMax);
-  state.bestScore=Math.max(state.bestScore,Math.floor(state.score));state.bestWave=Math.max(state.bestWave,state.wave);bestScoreEl.textContent=String(state.bestScore);bestWaveEl.textContent=String(state.bestWave);saveBest();
-}
-function setQuest(t){questEl.textContent=t;}
-function toast(t){toastEl.textContent=t;toastEl.classList.remove('hidden');toastTimer=2;}
-function say(speaker,lines){state.messageQueue=lines.map(text=>({speaker,text}));nextMessage();}
-function nextMessage(){if(state.messageQueue.length===0){state.messageOpen=false;messageEl.classList.add('hidden');return;}const m=state.messageQueue.shift();state.messageOpen=true;speakerEl.textContent=m.speaker;messageText.textContent=m.text;messageEl.classList.remove('hidden');}
-
-function findNearestEnemy(maxDist=26){let best=null,bestD=maxDist;for(const e of enemies){if(e.dead)continue;const d=player.position.distanceTo(e.group.position);if(d<bestD){bestD=d;best=e;}}return best;}
-function enemyAimPoint(e){
-  const y=e.type==='boss'?1.35:e.type==='shield'?1.0:.86;
-  return e.group.position.clone().add(new THREE.Vector3(0,y,0));
-}
-function enemyHitRadius(e){
-  // Mobile-friendly hit assist: intentionally larger than the visible body.
-  return e.type==='boss'?1.75:e.type==='shield'?1.28:1.05;
-}
-function updateLock(){lockTarget=state.autoAim&&state.inGame&&!state.gameOver&&!state.levelUpOpen?findNearestEnemy(30):null;if(lockTarget){const d=player.position.distanceTo(lockTarget.group.position);lockTextEl.textContent=`LOCK: ${lockTarget.label} ${d.toFixed(1)}m`; }else lockTextEl.textContent='LOCK: ---';}
-
-function damagePlayer(amount=1){if(state.invincible>0||state.gameOver||!state.inGame||state.levelUpOpen)return;state.hp=Math.max(0,state.hp-amount);state.invincible=.72;if(state.cameraShake)state.shakeStrength=Math.max(state.shakeStrength,.5);if(state.damageFlash)state.damageFlashTimer=.14;updateHUD();burst(player.position.clone().add(new THREE.Vector3(0,1.5,0)),0xff8fb3,12,1.7);if(state.hp<=0){state.gameOver=true;attackHeld=false;say('SYSTEM',['やられてしまった……','E / Enter または射撃ボタンでリスタートできます。']);setQuest('GAME OVER');}}
-function healPlayer(amount=1){state.hp=Math.min(state.maxHp,state.hp+amount);updateHUD();}
-
-function buildEnemy(type='chaser',x=0,z=0){
-  const isBoss=type==='boss';const g=new THREE.Group();const mat=new THREE.MeshLambertMaterial({color:enemyPalette[type]||0x7d38d1});
-  const scale=isBoss?1.5:type==='shield'?1.18:1;
-  const body=boxMesh(new THREE.BoxGeometry(1.05*scale,.92*scale,.84*scale),mat);body.position.y=.64*scale;g.add(body);
-  const hood=boxMesh(new THREE.BoxGeometry(1.2*scale,.98*scale,.96*scale),mats.dark);hood.position.y=1.28*scale;g.add(hood);
-  const face=boxMesh(new THREE.BoxGeometry(.82*scale,.56*scale,.12),mats.black);face.position.set(0,1.26*scale,.5*scale);g.add(face);
-  const eyeMat=new THREE.MeshBasicMaterial({color:isBoss?0xffda66:0xffff94});for(const sx of [-.2,.2]){const eye=new THREE.Mesh(new THREE.BoxGeometry(.12*scale,.12*scale,.04),eyeMat);eye.position.set(sx*scale,1.27*scale,.56*scale);g.add(eye);}
-  if(type==='gunner'||type==='boss'){const gun=buildGun();gun.scale.set(.82*scale,.82*scale,.82*scale);gun.position.set(.62*scale,.72*scale,.1);gun.rotation.y=Math.PI/2;g.add(gun);}
-  if(type==='shield'){const shield=boxMesh(new THREE.BoxGeometry(1.05,.9,.18),new THREE.MeshLambertMaterial({color:0x48563e}));shield.position.set(0,.86,.68);g.add(shield);}
-  if(type==='rusher'){const hornMat=new THREE.MeshBasicMaterial({color:0xff8a70});for(const sx of [-.32,.32]){const horn=new THREE.Mesh(new THREE.ConeGeometry(.14,.38,5),hornMat);horn.position.set(sx,1.95,0);horn.rotation.z=sx<0?.22:-.22;g.add(horn);}}
-  if(isBoss){for(const sx of [-.38,.38]){const horn=new THREE.Mesh(new THREE.ConeGeometry(.18,.48,5),mats.glow);horn.position.set(sx,2.25,0);horn.rotation.z=sx<0?.22:-.22;g.add(horn);}}
-  g.position.set(x,.05,z);scene.add(g);
-  const hpBase={chaser:3,gunner:4,shield:9,rusher:4,boss:40+state.wave*5}[type]||3;
-  const e={group:g,type,label:{chaser:'CHASER',gunner:'GUNNER',shield:'SHIELD',rusher:'RUSHER',boss:'VOLT BRUTE'}[type],hp:hpBase,maxHp:hpBase,speed:{chaser:2.7,gunner:1.65,shield:1.45,rusher:2.1,boss:1.85}[type],dead:false,shootCd:1.2+Math.random()*.8,phase:Math.random()*10,rushCd:1.6+Math.random()*1.4,rushTimer:0,rushDir:new THREE.Vector3(),shieldAngle:0};
-  enemies.push(e);if(isBoss){bossRef=e;bossHud.classList.remove('hidden');updateBossHud();}return e;
-}
-function updateBossHud(){if(!bossRef||bossRef.dead){bossHud.classList.add('hidden');return;}bossHud.classList.remove('hidden');bossFillEl.style.width=`${Math.max(0,bossRef.hp/bossRef.maxHp*100)}%`;}
-function clearEnemies(){while(enemies.length){const e=enemies.pop();scene.remove(e.group);}bossRef=null;bossHud.classList.add('hidden');}
-
-function spawnWave(wave){
-  clearEnemies();
-  const spots=[[-30,-30],[30,-30],[-30,30],[30,30],[0,-34],[34,0],[-34,0],[0,34]];
-  const total=Math.min(18,4+wave*2);
-  for(let i=0;i<total;i++){
-    const [bx,bz]=spots[i%spots.length];const x=bx+(Math.random()-.5)*6,z=bz+(Math.random()-.5)*6;
-    let type='chaser';
-    if(wave>=2&&i%4===0)type='gunner';
-    if(wave>=3&&i%5===0)type='shield';
-    if(wave>=4&&i%6===0)type='rusher';
-    buildEnemy(type,x,z);
-  }
-  if(wave%5===0){buildEnemy('boss',0,-30);toast('BOSS / VOLT BRUTE');}
-  setQuest(`WAVE ${wave} を生き残れ`);updateHUD();
-}
-
-function spawnPickup(pos,kind='heart'){const g=new THREE.Group();const mat=kind==='heart'?mats.heart:mats.exp;const mesh=new THREE.Mesh(new THREE.OctahedronGeometry(.42),mat);mesh.position.y=.7;g.add(mesh);const ring=new THREE.Mesh(new THREE.TorusGeometry(.58,.04,8,20),new THREE.MeshBasicMaterial({color:kind==='heart'?0xffa2ba:0x8ee6ff}));ring.rotation.x=Math.PI/2;ring.position.y=.7;g.add(ring);g.position.copy(pos);g.position.y=.05;scene.add(g);pickups.push({group:g,kind,phase:Math.random()*10,life:15});}
-
-function gainXp(amount){state.xp+=amount;while(state.xp>=state.xpNext){state.xp-=state.xpNext;state.level++;state.xpNext=Math.floor(state.xpNext*1.25+20);state.pendingLevelUps++;}updateHUD();if(state.pendingLevelUps>0&&!state.levelUpOpen&&!state.gameOver)openLevelUp();}
-const upgrades=[
-  {id:'damage',icon:'💥',name:'POWER UP',desc:'弾丸ダメージ +35%',apply:()=>state.damage*=1.35},
-  {id:'rapid',icon:'⚡',name:'RAPID FIRE',desc:'連射速度 +18%',apply:()=>state.fireInterval=Math.max(.065,state.fireInterval*.82)},
-  {id:'speed',icon:'👟',name:'SPEED',desc:'移動速度 +12%',apply:()=>state.moveSpeed*=1.12},
-  {id:'hp',icon:'♥',name:'MAX HP',desc:'最大HP +1、HPを2回復',apply:()=>{state.maxHp++;state.hp=Math.min(state.maxHp,state.hp+2)}},
-  {id:'multishot',icon:'✦',name:'TWIN BURST',desc:'同時発射数 +1（最大4）',apply:()=>state.bulletCount=Math.min(4,state.bulletCount+1)},
-  {id:'pierce',icon:'➤',name:'PIERCE',desc:'貫通回数 +1',apply:()=>state.pierce++},
-  {id:'crit',icon:'★',name:'CRITICAL',desc:'クリティカル率 +8%',apply:()=>state.crit=Math.min(.5,state.crit+.08)},
-  {id:'special',icon:'◎',name:'SPECIAL CHARGE',desc:'必殺ゲージ獲得量 +25%',apply:()=>state.specialGain*=1.25},
-  {id:'dodge',icon:'↯',name:'DODGE TECH',desc:'回避クールダウン -15%',apply:()=>state.dashCooldownBase=Math.max(.55,(state.dashCooldownBase||1.15)*.85)},
-];
-function pickUpgradeChoices(){const arr=[...upgrades];for(let i=arr.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[arr[i],arr[j]]=[arr[j],arr[i]];}return arr.slice(0,3);}
-function openLevelUp(){if(state.pendingLevelUps<=0)return;state.levelUpOpen=true;attackHeld=false;levelChoicesEl.innerHTML='';for(const u of pickUpgradeChoices()){const btn=document.createElement('button');btn.type='button';btn.className='level-choice';btn.innerHTML=`<div class="icon">${u.icon}</div><div><strong>${u.name}</strong><p>${u.desc}</p><small>SELECT</small></div>`;btn.addEventListener('click',()=>{u.apply();state.pendingLevelUps--;state.levelUpOpen=false;levelUpOverlay.classList.add('hidden');updateHUD();toast(`${u.name} 獲得`);if(state.pendingLevelUps>0)setTimeout(openLevelUp,80);});levelChoicesEl.appendChild(btn);}levelUpOverlay.classList.remove('hidden');}
-
-function shootPlayer(){
-  if(!state.inGame||state.levelUpOpen)return;if(state.messageOpen){nextMessage();return;}if(state.gameOver){restartGame();return;}if(state.shootCooldown>0)return;
-  const target=state.autoAim?findNearestEnemy(30):null;
-  let fallbackDir=new THREE.Vector3(0,0,1).applyQuaternion(player.quaternion).normalize();
-  let aimPoint=null;
-  if(target){
-    aimPoint=enemyAimPoint(target);
-    const bodyDir=new THREE.Vector3().subVectors(aimPoint,player.position.clone().add(new THREE.Vector3(0,1,0))).normalize();
-    player.rotation.y=Math.atan2(bodyDir.x,bodyDir.z);
-    fallbackDir=bodyDir;
-  }
-  state.shootCooldown=state.fireInterval;
-  for(let n=0;n<state.bulletCount;n++){
-    state.shotSide=1-state.shotSide;
-    const muzzle=worldPos(state.shotSide?player.userData.leftMuzzle:player.userData.rightMuzzle);
-    // Dual-handgun cross auto aim: every barrel converges on the same target point.
-    // This avoids the old parallel-shot gap where a centered enemy could slip between both bullets.
-    const dir=aimPoint?new THREE.Vector3().subVectors(aimPoint,muzzle).normalize():fallbackDir.clone();
-    if(!aimPoint&&state.bulletCount>1){
-      const spread=(n-(state.bulletCount-1)/2)*.035;
-      dir.applyAxisAngle(new THREE.Vector3(0,1,0),spread).normalize();
-    }
-    const crit=Math.random()<state.crit;
-    const mesh=new THREE.Mesh(new THREE.SphereGeometry(crit?.16:.13,8,8),new THREE.MeshBasicMaterial({color:crit?0xff9cf0:0xffe45a}));
-    mesh.position.copy(muzzle);scene.add(mesh);
-    projectiles.push({mesh,dir,life:1.35,damage:state.damage*(crit?2:1),pierce:state.pierce,crit,target});
-    muzzleFlash(muzzle,dir);
-  }
-}
-function enemyShoot(e){e.shootCd=e.type==='boss'?.72:1.55+Math.random()*.45;const from=e.group.position.clone().add(new THREE.Vector3(0,e.type==='boss'?1.3:.82,0));const aim=new THREE.Vector3().subVectors(player.position.clone().add(new THREE.Vector3(0,.65,0)),from).normalize();const shots=e.type==='boss'&&e.hp<e.maxHp*.5?3:1;for(let s=0;s<shots;s++){const dir=aim.clone().applyAxisAngle(new THREE.Vector3(0,1,0),(s-(shots-1)/2)*.13);const mesh=new THREE.Mesh(new THREE.SphereGeometry(e.type==='boss'?.19:.13,8,8),new THREE.MeshBasicMaterial({color:e.type==='boss'?0xffa53a:0x79f8ff}));mesh.position.copy(from);scene.add(mesh);enemyProjectiles.push({mesh,dir,life:2.5,damage:e.type==='boss'?2:1});}}
-
-function dash(){
-  if(!state.inGame||state.messageOpen||state.gameOver||state.levelUpOpen||state.dashCooldown>0)return;
-  let mx=((keys.right?1:0)-(keys.left?1:0))+stick.x;
-  let mz=((keys.down?1:0)-(keys.up?1:0))+stick.y;
-  if(Math.hypot(mx,mz)<.08){mx=Math.sin(player.rotation.y);mz=Math.cos(player.rotation.y);}
-  const len=Math.hypot(mx,mz)||1;mx/=len;mz/=len;
-  // Safe short-step dodge. v0.6 could move almost six world units instantly and pass through obstacles.
-  const totalDistance=2.55;
-  const steps=10;
-  const step=totalDistance/steps;
-  for(let i=0;i<steps;i++){
-    const nx=player.position.x+mx*step;
-    const nz=player.position.z+mz*step;
-    if(collides(nx,nz,.45))break;
-    player.position.x=nx;
-    player.position.z=nz;
-  }
-  player.rotation.y=Math.atan2(mx,mz);
-  state.dashCooldown=state.dashCooldownBase||1.15;
-  state.dashTimer=.18;
-  state.invincible=Math.max(state.invincible,.38);
-  burst(player.position.clone().add(new THREE.Vector3(0,.8,0)),0x8ef4ff,12,2.0);
-}
-
-function useSpecial(){if(!state.inGame||state.gameOver||state.messageOpen||state.levelUpOpen)return;if(state.special<state.specialMax){toast(`SPECIAL ${Math.floor(state.special/state.specialMax*100)}%`);return;}state.special=0;state.invincible=Math.max(state.invincible,1.0);state.shakeStrength=.7;const count=32;for(let i=0;i<count;i++){const a=i/count*Math.PI*2;const dir=new THREE.Vector3(Math.sin(a),0,Math.cos(a));const muzzle=player.position.clone().add(new THREE.Vector3(0,1.1,0)).addScaledVector(dir,.9);const mesh=new THREE.Mesh(new THREE.SphereGeometry(.16,8,8),new THREE.MeshBasicMaterial({color:i%2?0xfff26e:0xff72c8}));mesh.position.copy(muzzle);scene.add(mesh);projectiles.push({mesh,dir,life:1.65,damage:state.damage*2.2,pierce:2,special:true});}burst(player.position.clone().add(new THREE.Vector3(0,1,0)),0xffdf59,30,4.2);toast('SPECIAL / 360° DUAL BARRAGE!');updateHUD();}
-
-function muzzleFlash(pos,dir){const m=new THREE.Mesh(new THREE.SphereGeometry(.18,6,6),new THREE.MeshBasicMaterial({color:0xfff2a2,transparent:true,opacity:1}));m.position.copy(pos).addScaledVector(dir,.2);scene.add(m);particles.push({mesh:m,vel:new THREE.Vector3(),life:.08,fade:.08});}
-function burst(pos,color=0xffe45a,count=10,speed=1.8){for(let i=0;i<count;i++){const mesh=new THREE.Mesh(new THREE.BoxGeometry(.08,.08,.08),new THREE.MeshBasicMaterial({color,transparent:true,opacity:1}));mesh.position.copy(pos);scene.add(mesh);particles.push({mesh,vel:new THREE.Vector3((Math.random()-.5)*speed,Math.random()*speed,(Math.random()-.5)*speed),life:.5,fade:.5});}}
-
-function killEnemy(e){if(e.dead)return;e.dead=true;e.group.visible=false;const base={chaser:120,gunner:180,shield:260,rusher:220,boss:1800}[e.type]||100;state.score+=base;gainXp(e.type==='boss'?160:({chaser:24,gunner:32,shield:42,rusher:36}[e.type]||20));state.special=Math.min(state.specialMax,state.special+(e.type==='boss'?45:12)*state.specialGain);if(Math.random()<(e.type==='boss'?.9:.18))spawnPickup(e.group.position.clone(),Math.random()<.55?'heart':'exp');if(e.type==='boss'){bossRef=null;bossHud.classList.add('hidden');toast('BOSS DEFEATED!');}else toast(`${e.label} DOWN`);updateHUD();}
-
-function updateEnemies(dt,t){
-  for(const e of enemies){if(e.dead)continue;const p=e.group.position;const toP=new THREE.Vector3(player.position.x-p.x,0,player.position.z-p.z);const d=toP.length();if(d>.01)e.group.rotation.y=Math.atan2(toP.x,toP.z);
-    if(e.type==='chaser'){if(d>1.25){toP.normalize();moveEnemy(e,toP.x*e.speed*dt,toP.z*e.speed*dt);}if(d<1.25)damagePlayer(1);}
-    else if(e.type==='gunner'){if(d>10){toP.normalize();moveEnemy(e,toP.x*e.speed*dt,toP.z*e.speed*dt);}else if(d<6){toP.normalize();moveEnemy(e,-toP.x*e.speed*.65*dt,-toP.z*e.speed*.65*dt);}e.shootCd-=dt;if(e.shootCd<=0&&d<20)enemyShoot(e);}
-    else if(e.type==='shield'){if(d>1.55){toP.normalize();moveEnemy(e,toP.x*e.speed*dt,toP.z*e.speed*dt);}if(d<1.55)damagePlayer(1);}
-    else if(e.type==='rusher'){e.rushCd-=dt;if(e.rushTimer>0){e.rushTimer-=dt;moveEnemy(e,e.rushDir.x*8.5*dt,e.rushDir.z*8.5*dt);if(d<1.35)damagePlayer(1);}else if(e.rushCd<=0&&d<16){e.rushDir=toP.normalize().clone();e.rushTimer=.48;e.rushCd=2.2+Math.random();burst(p.clone().add(new THREE.Vector3(0,.8,0)),0xff796b,8,1.5);}else if(d>4){toP.normalize();moveEnemy(e,toP.x*e.speed*dt,toP.z*e.speed*dt);}}
-    else if(e.type==='boss'){const phase2=e.hp<e.maxHp*.5;const sp=e.speed*(phase2?1.5:1);if(d>7){toP.normalize();moveEnemy(e,toP.x*sp*dt,toP.z*sp*dt);}e.shootCd-=dt;if(e.shootCd<=0&&d<25)enemyShoot(e);if(d<1.8)damagePlayer(2);if(phase2&&Math.sin(t*2.8)>0.96)burst(p.clone().add(new THREE.Vector3(0,1,0)),0xff9a45,5,1.8);}
-  }
-}
-function moveEnemy(e,dx,dz){const p=e.group.position;const nx=p.x+dx,nz=p.z+dz;if(!collides(nx,p.z,.45))p.x=nx;if(!collides(p.x,nz,.45))p.z=nz;}
-
-function segmentSphereHit(a,b,center,radius){
-  const ab=new THREE.Vector3().subVectors(b,a);
-  const len2=ab.lengthSq();
-  if(len2<=0.000001)return a.distanceToSquared(center)<=radius*radius;
-  const t=THREE.MathUtils.clamp(new THREE.Vector3().subVectors(center,a).dot(ab)/len2,0,1);
-  const closest=a.clone().addScaledVector(ab,t);
-  return closest.distanceToSquared(center)<=radius*radius;
-}
-function updateProjectiles(dt){
-  for(let i=projectiles.length-1;i>=0;i--){
-    const p=projectiles[i];
-    const prev=p.mesh.position.clone();
-    const next=prev.clone().addScaledVector(p.dir,dt*state.bulletSpeed);
-    p.mesh.position.copy(next);
-    p.life-=dt;
-    let remove=p.life<=0;
-    for(const e of enemies){
-      if(e.dead)continue;
-      const hitPos=enemyAimPoint(e);
-      const radius=enemyHitRadius(e);
-      // Swept hit test prevents fast bullets from tunneling through enemies on slower phones.
-      if(segmentSphereHit(prev,next,hitPos,radius)){
-        let damage=p.damage;
-        if(e.type==='shield'){
-          const front=new THREE.Vector3(0,0,1).applyQuaternion(e.group.quaternion);
-          const incoming=p.dir.clone().negate();
-          if(front.dot(incoming)>.1)damage*=.42;
-        }
-        e.hp-=damage;
-        burst(hitPos,p.crit?0xff83e7:0xffef75,p.special?10:6,p.special?2.8:1.7);
-        if(e.type==='boss')updateBossHud();
-        if(e.hp<=0)killEnemy(e);
-        if(p.pierce>0){p.pierce--;p.mesh.position.addScaledVector(p.dir,.6);}else remove=true;
-        break;
-      }
-    }
-    if(remove){scene.remove(p.mesh);projectiles.splice(i,1);}
-  }
-  for(let i=enemyProjectiles.length-1;i>=0;i--){const p=enemyProjectiles[i];p.mesh.position.addScaledVector(p.dir,dt*10);p.life-=dt;let remove=p.life<=0;if(!remove&&p.mesh.position.distanceTo(player.position.clone().add(new THREE.Vector3(0,1,0)))<.86){damagePlayer(p.damage);remove=true;}if(remove){scene.remove(p.mesh);enemyProjectiles.splice(i,1);}}
-}
-function updatePickups(dt,t){for(let i=pickups.length-1;i>=0;i--){const p=pickups[i];p.life-=dt;p.group.rotation.y+=dt;p.group.position.y=.25+Math.sin(t*3+p.phase)*.12;if(p.group.position.distanceTo(player.position)<1.6){if(p.kind==='heart'){healPlayer(1);toast('HP +1');}else{gainXp(30);state.special=Math.min(state.specialMax,state.special+15);toast('ENERGY +');}burst(p.group.position.clone().add(new THREE.Vector3(0,.8,0)),p.kind==='heart'?0xff8ba7:0x8ee6ff,10,2);scene.remove(p.group);pickups.splice(i,1);continue;}if(p.life<=0){scene.remove(p.group);pickups.splice(i,1);}}}
-function updateParticles(dt){for(let i=particles.length-1;i>=0;i--){const p=particles[i];p.life-=dt;p.mesh.position.addScaledVector(p.vel,dt);p.mesh.material.opacity=Math.max(0,p.life/p.fade);if(p.life<=0){scene.remove(p.mesh);particles.splice(i,1);}}}
-
-function updateWave(dt){if(state.gameOver||state.levelUpOpen)return;const alive=enemies.some(e=>!e.dead);if(!alive){if(state.waveClearDelay<=0){state.waveClearDelay=2.2;toast(`WAVE ${state.wave} CLEAR!`);setQuest('次のウェーブ準備中…');}else{state.waveClearDelay-=dt;if(state.waveClearDelay<=0){state.wave++;spawnWave(state.wave);}}}}
-
-function restartGame(){
-  state.inGame=true;clearBattleObjects();state.hp=state.maxHp=6;state.wave=1;state.score=0;state.level=1;state.xp=0;state.xpNext=100;state.pendingLevelUps=0;state.levelUpOpen=false;state.damage=1;state.fireInterval=.145;state.bulletSpeed=20;state.moveSpeed=6.2;state.bulletCount=2;state.pierce=0;state.crit=.08;state.special=0;state.specialGain=1;state.dashCooldownBase=1.15;state.waveClearDelay=0;state.invincible=0;state.shootCooldown=0;state.dashCooldown=0;state.dashTimer=0;state.gameOver=false;state.messageQueue=[];state.messageOpen=false;messageEl.classList.add('hidden');levelUpOverlay.classList.add('hidden');player.position.set(0,.05,18);player.rotation.y=Math.PI;player.visible=true;spawnWave(1);updateHUD();setQuest('WAVE 1 を生き残れ');}
-function stopMovement(){keys.up=keys.down=keys.left=keys.right=false;attackHeld=false;attackBtn.classList.remove('pressed');resetStick();}
-function clearBattleObjects(){while(projectiles.length)scene.remove(projectiles.pop().mesh);while(enemyProjectiles.length)scene.remove(enemyProjectiles.pop().mesh);while(pickups.length)scene.remove(pickups.pop().group);clearEnemies();}
-function isTouchUi(){
-  return (navigator.maxTouchPoints||0)>0 || window.matchMedia('(pointer: coarse)').matches || window.matchMedia('(any-pointer: coarse)').matches || innerWidth<=1024;
-}
-function refreshInputUi(){
-  const touch=isTouchUi();
-  document.body.classList.toggle('touch-ui',touch);
-  if(state.inGame){
-    mobileControlsEl.classList.toggle('hidden',!touch);
-    helpEl.classList.toggle('hidden',touch);
-  }
-}
-function setGameplayUi(visible){
-  hudEl.classList.toggle('hidden',!visible);
-  crosshairEl.classList.toggle('hidden',!visible);
-  if(visible){refreshInputUi();}
-  else{mobileControlsEl.classList.add('hidden');helpEl.classList.add('hidden');}
-  if(!visible)bossHud.classList.add('hidden');
-}
-function closeModal(){modalBackdrop.classList.add('hidden');howToModal.classList.add('hidden');settingsModal.classList.add('hidden');modalBackdrop.setAttribute('aria-hidden','true');}
-function openModal(which){modalBackdrop.classList.remove('hidden');modalBackdrop.setAttribute('aria-hidden','false');howToModal.classList.toggle('hidden',which!=='how');settingsModal.classList.toggle('hidden',which!=='settings');}
-function showMain(){state.inGame=false;stopMovement();closeModal();setGameplayUi(false);messageEl.classList.add('hidden');levelUpOverlay.classList.add('hidden');titleScreen.classList.remove('active');mainScreen.classList.add('active');clearBattleObjects();state.gameOver=false;player.visible=true;player.position.set(0,.05,8);player.rotation.y=Math.PI;updateHUD();}
-function startBattle(){closeModal();titleScreen.classList.remove('active');mainScreen.classList.remove('active');setGameplayUi(true);restartGame();toast(isTouchUi()?'左PADで移動 / FIRE長押しで連射':'WASDで移動 / Space長押しで連射');}
-
-titleStartBtn.addEventListener('click',showMain);battleStartBtn.addEventListener('click',startBattle);howToBtn.addEventListener('click',()=>openModal('how'));settingsBtn.addEventListener('click',()=>openModal('settings'));document.querySelectorAll('[data-close-modal]').forEach(b=>b.addEventListener('click',closeModal));modalBackdrop.addEventListener('pointerdown',e=>{if(e.target===modalBackdrop)closeModal();});$('menuBtn').addEventListener('click',showMain);shakeToggle.addEventListener('change',()=>state.cameraShake=shakeToggle.checked);flashToggle.addEventListener('change',()=>state.damageFlash=flashToggle.checked);autoAimToggle.addEventListener('change',()=>state.autoAim=autoAimToggle.checked);
-
-window.addEventListener('keydown',e=>{if(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter','KeyE','KeyQ','ShiftLeft','ShiftRight','KeyW','KeyA','KeyS','KeyD'].includes(e.code))e.preventDefault();if(e.code==='KeyW'||e.code==='ArrowUp')keys.up=true;if(e.code==='KeyS'||e.code==='ArrowDown')keys.down=true;if(e.code==='KeyA'||e.code==='ArrowLeft')keys.left=true;if(e.code==='KeyD'||e.code==='ArrowRight')keys.right=true;if(e.code==='Space')attackHeld=true;if(e.code==='ShiftLeft'||e.code==='ShiftRight')dash();if(e.code==='KeyQ')useSpecial();if(e.code==='KeyE'||e.code==='Enter'){if(state.messageOpen)nextMessage();else if(state.gameOver&&state.inGame)restartGame();}if(e.code==='Escape'&&state.inGame)showMain();});
-window.addEventListener('keyup',e=>{if(e.code==='KeyW'||e.code==='ArrowUp')keys.up=false;if(e.code==='KeyS'||e.code==='ArrowDown')keys.down=false;if(e.code==='KeyA'||e.code==='ArrowLeft')keys.left=false;if(e.code==='KeyD'||e.code==='ArrowRight')keys.right=false;if(e.code==='Space')attackHeld=false;});
-
-function resetStick(){
-  stick.x=0;stick.y=0;stick.active=false;stick.pointerId=null;
-  if(moveStickKnobEl)moveStickKnobEl.style.transform='translate(0px,0px)';
-}
-function updateStickFromPointer(e){
-  const rect=moveStickEl.getBoundingClientRect();
-  const cx=rect.left+rect.width/2,cy=rect.top+rect.height/2;
-  let dx=e.clientX-cx,dy=e.clientY-cy;
-  const max=Math.max(42,Math.min(rect.width,rect.height)*.31);
-  const dist=Math.hypot(dx,dy);
-  if(dist>max){dx=dx/dist*max;dy=dy/dist*max;}
-  stick.x=THREE.MathUtils.clamp(dx/max,-1,1);
-  stick.y=THREE.MathUtils.clamp(dy/max,-1,1);
-  const dead=.12;
-  if(Math.abs(stick.x)<dead)stick.x=0;
-  if(Math.abs(stick.y)<dead)stick.y=0;
-  moveStickKnobEl.style.transform=`translate(${dx}px,${dy}px)`;
-}
-moveStickEl.addEventListener('pointerdown',e=>{
-  e.preventDefault();e.stopPropagation();
-  stick.active=true;stick.pointerId=e.pointerId;
-  try{moveStickEl.setPointerCapture(e.pointerId);}catch{}
-  updateStickFromPointer(e);
-});
-moveStickEl.addEventListener('pointermove',e=>{if(stick.active&&e.pointerId===stick.pointerId){e.preventDefault();updateStickFromPointer(e);}});
-const endStick=e=>{if(stick.pointerId===null||e.pointerId===stick.pointerId){e.preventDefault();resetStick();}};
-moveStickEl.addEventListener('pointerup',endStick);
-moveStickEl.addEventListener('pointercancel',endStick);
-moveStickEl.addEventListener('lostpointercapture',()=>resetStick());
-
-const startFire=e=>{
-  e.preventDefault();e.stopPropagation();
-  attackHeld=true;
-  try{attackBtn.setPointerCapture(e.pointerId);}catch{}
-  shootPlayer();
-  attackBtn.classList.add('pressed');
-};
-const stopFire=e=>{
-  e.preventDefault();e.stopPropagation();
-  attackHeld=false;
-  attackBtn.classList.remove('pressed');
-};
-attackBtn.addEventListener('pointerdown',startFire);
-attackBtn.addEventListener('pointerup',stopFire);
-attackBtn.addEventListener('pointercancel',stopFire);
-attackBtn.addEventListener('lostpointercapture',()=>{attackHeld=false;attackBtn.classList.remove('pressed');});
-const pressDodge=e=>{e.preventDefault();e.stopPropagation();dashBtn.classList.add('pressed');dash();};
-const releaseDodge=e=>{e.preventDefault();e.stopPropagation();dashBtn.classList.remove('pressed');};
-dashBtn.addEventListener('pointerdown',pressDodge);
-dashBtn.addEventListener('pointerup',releaseDodge);
-dashBtn.addEventListener('pointercancel',releaseDodge);
-dashBtn.addEventListener('pointerleave',releaseDodge);
-specialBtn.addEventListener('pointerdown',e=>{e.preventDefault();e.stopPropagation();try{specialBtn.setPointerCapture(e.pointerId);}catch{}useSpecial();});
-messageEl.addEventListener('pointerdown',e=>{e.preventDefault();if(state.messageOpen)nextMessage();else if(state.gameOver)restartGame();});
-
-// Prevent mobile Safari/Chrome from stealing long-press, text selection, context menu or double-tap zoom.
-document.addEventListener('contextmenu',e=>e.preventDefault());
-document.addEventListener('selectstart',e=>e.preventDefault());
-document.addEventListener('dragstart',e=>e.preventDefault());
-document.addEventListener('dblclick',e=>{e.preventDefault();e.stopPropagation();},{passive:false});
-document.addEventListener('touchmove',e=>{if(root.contains(e.target))e.preventDefault();},{passive:false});
-for(const type of ['gesturestart','gesturechange','gestureend'])document.addEventListener(type,e=>e.preventDefault(),{passive:false});
-
-function updatePlayer(dt){if(!state.inGame||state.messageOpen||state.gameOver||state.levelUpOpen)return;let mx=((keys.right?1:0)-(keys.left?1:0))+stick.x,mz=((keys.down?1:0)-(keys.up?1:0))+stick.y;const len=Math.hypot(mx,mz);if(len>.04){mx/=Math.max(1,len);mz/=Math.max(1,len);const speed=state.moveSpeed*(state.dashTimer>0?1.65:1);const nx=player.position.x+mx*speed*dt,nz=player.position.z+mz*speed*dt;if(!collides(nx,player.position.z))player.position.x=nx;if(!collides(player.position.x,nz))player.position.z=nz;if(!(state.autoAim&&lockTarget&&attackHeld))player.rotation.y=Math.atan2(mx,mz);}if(attackHeld)shootPlayer();if(state.invincible>0)player.visible=Math.floor(performance.now()/65)%2===0;else player.visible=true;}
-
-const camTarget=new THREE.Vector3();let last=performance.now();
-function loop(now){requestAnimationFrame(loop);const dt=Math.min((now-last)/1000,.05);last=now;const t=now/1000;
-  state.shootCooldown=Math.max(0,state.shootCooldown-dt);state.dashCooldown=Math.max(0,state.dashCooldown-dt);state.dashTimer=Math.max(0,state.dashTimer-dt);state.invincible=Math.max(0,state.invincible-dt);state.damageFlashTimer=Math.max(0,state.damageFlashTimer-dt);state.shakeStrength=Math.max(0,state.shakeStrength-dt*2.8);if(toastTimer>0){toastTimer-=dt;if(toastTimer<=0)toastEl.classList.add('hidden');}
-  damageFlashEl.classList.toggle('hidden',!(state.damageFlashTimer>0&&state.inGame));updateLock();updatePlayer(dt);
-  if(state.inGame&&!state.messageOpen&&!state.gameOver&&!state.levelUpOpen){updateEnemies(dt,t);updateProjectiles(dt);updatePickups(dt,t);updateParticles(dt);updateWave(dt);}else{updateParticles(dt);}
-  const desired=new THREE.Vector3(player.position.x+9,11.5,player.position.z+12);if(state.cameraShake&&state.shakeStrength>0){desired.x+=(Math.random()-.5)*state.shakeStrength;desired.y+=(Math.random()-.5)*state.shakeStrength;desired.z+=(Math.random()-.5)*state.shakeStrength;}camera.position.lerp(desired,1-Math.pow(.001,dt));camTarget.set(player.position.x,1.4,player.position.z);camera.lookAt(camTarget);renderer.render(scene,camera);
-}
-window.addEventListener('resize',()=>{camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight);renderer.setPixelRatio(Math.min(devicePixelRatio,1.55));refreshInputUi();});
-window.addEventListener('orientationchange',()=>setTimeout(refreshInputUi,120));
-
-bestScoreEl.textContent=String(state.bestScore);bestWaveEl.textContent=String(state.bestWave);updateHUD();refreshInputUi();showMain();titleScreen.classList.add('active');mainScreen.classList.remove('active');requestAnimationFrame(loop);
+function placeFood(){if(food){toast('どら焼きは、もうテーブルにあります。');return false;}food={id:++foodSerial,state:'placed'};placedCount++;log(null,'どら焼きをひとつ置いた');toast('どら焼きを置きました。食べたいタイミングを待ちましょう。');save();return true;}
+function requestLayout(index){if(index===room.layout){room.clearPreview();toast('今の配置です。');return;}if(pendingLayout!==null)return;pendingLayout=index;actors.forEach(a=>a.queue=null);toast('ふたりが作業を終えて中央へ移動したら、模様替えします。');actors.filter(a=>a.state==='idle').forEach(stageActor);}
+function applyPending(){if(pendingLayout!==null&&actors.every(a=>a.state==='ready')){let next=pendingLayout;room.clearPreview();room.applyLayout(next);pendingLayout=null;reservations.clear();actors.forEach(a=>{a.state='idle';a.timer=1+a.id;a.phase=null;});log(null,'部屋の配置を変更した');save();toast('模様替えができました。');}}
+function simulate(dt){if(paused)return;let remain=Math.min(dt,.3)*speed;while(remain>0){let s=Math.min(remain,1/30);elapsed+=s;actors.forEach(a=>updateActor(a,s));applyPending();saveElapsed+=s;remain-=s;}if(saveElapsed>=20){save();saveElapsed=0;}}
+function tick(dt){simulate(dt);toastTime=Math.max(0,toastTime-dt);if(!toastTime)$('#toast').style.opacity=0;actors.forEach(renderActor);renderProps();let beat=Math.floor(elapsed*2);if(sound&&beat!==lastBeat&&actors.some(a=>a.phase?.pose==='dj'||a.phase?.pose==='dance')){lastBeat=beat;tone([220,330,440,330][beat%4]);}$('#food').textContent=food?'どら焼きあり':'どら焼きを置く';renderer.render(scene,camera);}
+function layout(){let w=innerWidth,h=innerHeight;renderer.setSize(w,h);camera.aspect=w/h;let dist=(w/h<.8?37/(w/h/.55):20.5)*zoom;camera.position.set(Math.sin(az)*Math.cos(el)*dist,Math.sin(el)*dist,Math.cos(az)*Math.cos(el)*dist);camera.lookAt(0,.55,0);if(w<600&&mode==='edit')camera.setViewOffset(w,h,0,75,w,h);else camera.clearViewOffset();camera.updateProjectionMatrix();}
+function tone(f){if(!sound)return;try{let ctx=window.chillAudio||(window.chillAudio=new(window.AudioContext||window.webkitAudioContext)());let o=ctx.createOscillator(),g=ctx.createGain();o.type='sine';o.frequency.value=f;g.gain.setValueAtTime(.017,ctx.currentTime);g.gain.exponentialRampToValueAtTime(.001,ctx.currentTime+.2);o.connect(g).connect(ctx.destination);o.start();o.stop(ctx.currentTime+.22);}catch{}}
+function save(){try{localStorage.setItem('mob-chill-life-v2',JSON.stringify({v:2,layout:room.layout,theme:room.theme,elapsed,history,food:food?.state==='held'?null:food?{id:food.id,state:'placed'}:null,placedCount,consumedCount:consumedCount+(food?.state==='held'?1:0),foodSerial,actors:actors.map(a=>({done:a.done,lastAction:a.lastAction}))}));return true;}catch{return false;}}
+function restore(){try{let s=JSON.parse(localStorage.getItem('mob-chill-life-v2'));if(!s||s.v!==2)return;if(Number.isInteger(s.layout)&&s.layout>=0&&s.layout<3)room.applyLayout(s.layout);if(Number.isInteger(s.theme)&&s.theme>=0&&s.theme<3)room.applyTheme(s.theme);elapsed=Number.isFinite(s.elapsed)?Math.max(0,s.elapsed):0;history=Array.isArray(s.history)?s.history.filter(h=>typeof h.text==='string').slice(0,60):[];food=s.food?.state==='placed'?{id:s.food.id,state:'placed'}:null;foodSerial=Number(s.foodSerial)||0;placedCount=Number(s.placedCount)||0;consumedCount=Number(s.consumedCount)||0;s.actors?.slice(0,2).forEach((a,i)=>{actors[i].done=a.done||{};actors[i].lastAction=a.lastAction||null;});}catch{}}
+function reset(){history=[];food=null;placedCount=consumedCount=foodSerial=0;elapsed=0;pendingLayout=null;reservations.clear();room.clearPreview();room.applyLayout(0);room.applyTheme(0);actors.forEach((a,i)=>{Object.assign(a,{state:'idle',action:'walk',timer:2+i,path:[],queue:null,phases:[],phase:null,done:{},cooldowns:{},speech:0});a.pos.set(i?.8:-.8,0,1.4);});save();}
+function drawer(title,tag,html){$('#drawer').dataset.mode=tag==='ROOM STUDIO'?'editor':'resident';$('#drawerTitle').textContent=title;$('#drawerTag').textContent=tag;$('#drawerBody').innerHTML=html;$('#drawer').hidden=false;}
+function showActor(id){selected=id;drawer(actors[id].name,'RESIDENT','<p class="caption">'+(id?'僕のペースで、きちんと楽しく。':'のんびり暮らすでやんす～。')+'</p><div class="grid">'+Object.entries(actions).map(([key,a])=>'<button data-action="'+key+'">'+a.icon+' '+a.name+'</button>').join('')+'</div><p class="caption" style="margin-top:12px">作業中のお誘いは、今の作業と片付けが終わってから。</p>');}
+function edit(){mode='edit';draftLayout=room.layout;$('#edit').classList.add('active');$('#observe').classList.remove('active');showEditor();layout();}
+function showEditor(){drawer('部屋を、ちょっと自分らしく。','ROOM STUDIO','<p class="caption">色と家具の配置を選びましょう。配置は床のプレビューで確認できます。</p><div class="section-label">家具の色</div><div class="choices">'+['セージ','ピーチ','ミスト'].map((n,i)=>'<button class="choice '+(room.theme===i?'selected':'')+'" data-theme="'+i+'"><span class="swatch" style="background:'+['#8ea27b','#c7999d','#7d969c'][i]+'"></span>'+n+'</button>').join('')+'</div><div class="section-label">部屋の配置</div><div class="choices">'+['ひだまり','読書の時間','音楽の午後'].map((n,i)=>'<button class="choice '+(draftLayout===i?'selected':'')+'" data-layout="'+i+'"><span class="layout-icon">'+['▥','▦','▤'][i]+'</span>'+n+'</button>').join('')+'</div><button class="primary wide" id="applyLayout">この配置にする</button><p class="caption" style="margin-top:12px">ふたりの作業を終えてから安全に変更します。置いたどら焼きもテーブルと一緒に移ります。</p>');}
+function observe(){mode='observe';room.clearPreview();$('#drawer').hidden=true;$('#observe').classList.add('active');$('#edit').classList.remove('active');layout();}
+$('#drawerBody').onclick=e=>{let b=e.target.closest('button');if(!b)return;if(b.dataset.action){if(start(actors[selected],b.dataset.action,true)){$('#drawer').hidden=true;}}else if(b.dataset.theme!==undefined){room.applyTheme(+b.dataset.theme);save();showEditor();}else if(b.dataset.layout!==undefined){draftLayout=+b.dataset.layout;room.previewLayout(draftLayout);showEditor();}else if(b.id==='applyLayout'){requestLayout(draftLayout);observe();}};
+document.querySelectorAll('[data-actor]').forEach(b=>b.onclick=()=>showActor(+b.dataset.actor));$('#closeDrawer').onclick=observe;$('#observe').onclick=observe;$('#edit').onclick=edit;$('#food').onclick=placeFood;$('#pause').onclick=()=>{paused=!paused;$('#pause').textContent=paused?'▶':'Ⅱ';$('#pause').setAttribute('aria-label',paused?'再開':'一時停止');};$('#speed').onclick=()=>{speed=speed===1?2:speed===2?4:1;$('#speed').textContent=speed+'×';};$('#audio').onclick=()=>{sound=!sound;$('#audio').textContent='音 '+(sound?'ON':'OFF');tone(660);};$('#camera').onclick=()=>{view=(view+1)%3;az=[.7,.25,1.08][view];el=[.79,.97,.66][view];zoom=1;layout();};$('#zoomIn').onclick=()=>{zoom=clamp(zoom-.12,.58,1.3);layout();};$('#zoomOut').onclick=()=>{zoom=clamp(zoom+.12,.58,1.3);layout();};
+function modal(title,html){$('#modalTitle').textContent=title;$('#modalBody').innerHTML=html;$('#modal').showModal();}$('#modalClose').onclick=()=>$('#modal').close();$('#help').onclick=()=>modal('MOB CHILL LIFE','<p>ふたりは気の向くまま暮らします。名前やキャラをタップして行動に誘えます。</p><p>ドラッグで回転、ピンチ／ホイール／＋−で拡大。視点ボタンでおすすめの眺めに戻れます。</p><p><b>部屋づくり</b>で家具の色と3つの配置を選択。作業中の家具は、ふたりが離れてから模様替えします。</p><p><b>どら焼きを置く</b>とテーブルに1個置けます。ふたりが好きなタイミングで食べます。勝手には補充されません。</p><p>Ⅱは一時停止、1×は1・2・4倍速。音は任意ON。記録は端末内だけに保存されます。</p><p>正式40フレームを組み込み、Windows Edgeで実画面を確認しました。実機iPhone／iPad Safariは未検証です。</p>');
+$('#more').onclick=()=>{modal('暮らしの記録','<button id="saveNow">いま保存</button><button id="resetSave" class="danger">記録を初期化</button><div class="journal">'+(history.length?history.map(h=>'<p><time>'+h.n+'分目</time>'+escapeText(h.text)+'</p>').join(''):'<p>ふたりの暮らしは、ここから。</p>')+'</div>');$('#saveNow').onclick=()=>toast(save()?'保存しました。':'このブラウザでは保存できません。');$('#resetSave').onclick=()=>{if(confirm('配置・思い出・どら焼きの記録を初期化しますか？')){reset();$('#modal').close();toast('新しい暮らしを始めました。');}};};function escapeText(s){let d=document.createElement('span');d.textContent=s;return d.innerHTML;}
+const canvas=renderer.domElement;let pointers=new Map(),down=null,pinch=0;canvas.oncontextmenu=e=>e.preventDefault();canvas.addEventListener('pointerdown',e=>{canvas.setPointerCapture(e.pointerId);pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});down={x:e.clientX,y:e.clientY,moved:false};if(pointers.size===2){let p=[...pointers.values()];pinch=Math.hypot(p[0].x-p[1].x,p[0].y-p[1].y);down.moved=true;}});canvas.addEventListener('pointermove',e=>{let p=pointers.get(e.pointerId);if(!p)return;let dx=e.clientX-p.x,dy=e.clientY-p.y;pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});if(down&&Math.hypot(e.clientX-down.x,e.clientY-down.y)>5)down.moved=true;if(pointers.size===2){let ps=[...pointers.values()],d=Math.hypot(ps[0].x-ps[1].x,ps[0].y-ps[1].y);zoom=clamp(zoom*pinch/(d||1),.58,1.3);pinch=d;}else{az=clamp(az-dx*.005,-.12,1.42);el=clamp(el+dy*.004,.45,1.12);}layout();});canvas.addEventListener('pointerup',e=>{pointers.delete(e.pointerId);if(down&&!down.moved){let ray=new THREE.Raycaster();ray.setFromCamera(new THREE.Vector2(e.clientX/innerWidth*2-1,1-e.clientY/innerHeight*2),camera);let hit=ray.intersectObjects(actors.flatMap(a=>a.sleepGroup.visible?[a.sleepPlane]:[a.sprite]));if(hit.length){let a=actors.find(a=>a.sprite===hit[0].object||a.sleepPlane===hit[0].object);showActor(a.id);speak(a,a.id?'僕を呼んだであります？':'呼んだでやんす？');}}if(!pointers.size)down=null;});canvas.addEventListener('pointercancel',e=>{pointers.delete(e.pointerId);down=null;});canvas.addEventListener('wheel',e=>{e.preventDefault();zoom=clamp(zoom+e.deltaY*.001,.58,1.3);layout();},{passive:false});window.addEventListener('resize',layout);window.addEventListener('pagehide',save);
+restore();layout();let last=performance.now();document.addEventListener('visibilitychange',()=>{last=performance.now();if(document.hidden)save();});function loop(now){tick((now-last)/1000);last=now;requestAnimationFrame(loop);}requestAnimationFrame(loop);
+window.CHILL={actors,room,actions,reservations,book,snack,broom,can,hand,spriteAnchorWorld,camera,groundedDock,setView(azimuth,elevation){az=azimuth;el=elevation;layout();},start,route,placeFood,requestLayout,save,restore,reset,tick,renderProps,setPaused(v){paused=v;},setSpeed(v){speed=v;},get state(){return{elapsed,paused,speed,food,placedCount,consumedCount,pendingLayout,history,layout:room.layout,theme:room.theme};},advance(seconds,dt=1/30){let was=paused;paused=false;for(let t=0;t<seconds;t+=dt)simulate(Math.min(dt,seconds-t));paused=was;renderProps();},snapshot(){return actors.map(a=>({id:a.id,state:a.state,action:a.action,phase:a.phase?.name,pos:a.pos.toArray(),done:{...a.done},queue:a.queue}));}};
+})();
