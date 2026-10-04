@@ -1,0 +1,10 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="theme-color" content="#eae4d8"><title>ふたりの、ひだまり。｜確認版</title><link rel="stylesheet" href="style.css"></head><body>
+<main id="world" aria-label="3Dの箱庭"></main><div id="labels"></div>
+<header><div class="eyebrow">MOB & MOB · LITTLE DAYS</div><h1>ふたりの、ひだまり<span>。</span></h1><p>なんでもない日が、ちょっと好きになる。</p></header>
+<div class="topright"><span id="clock">☀ 09:00</span><button id="sound" title="音のオン・オフ">音 OFF</button><button id="help" aria-label="操作説明">？</button></div>
+<div id="notice">ふたりの暮らしを準備中…</div>
+<aside id="panel" class="glass" hidden><div class="panelhead"><b id="selectedName"></b><button id="closePanel" aria-label="閉じる">×</button></div><p id="personality"></p><div id="actions"></div><div class="import"><label>キャラ画像のローカル読込<input type="file" id="import" accept="image/png,image/webp"></label></div></aside>
+<aside id="journal" class="glass" hidden><div class="panelhead"><b>きょうの思い出</b><button id="closeJournal">×</button></div><div id="history"></div></aside>
+<footer><div class="residents"><button class="resident" data-id="0"><i class="avatar den">D</i><span><b>モブデンデン</b><small id="status0">のんびり準備中</small></span><em>•••</em></button><button class="resident" data-id="1"><i class="avatar pink">P</i><span><b>モブピンク</b><small id="status1">のんびり準備中</small></span><em>•••</em></button></div><nav class="glass"><button id="pause" title="一時停止">Ⅱ</button><button id="speed">1×</button><span class="sep"></span><button id="camera">視点</button><button id="time">時間帯</button><button id="diary">思い出</button><button id="settings">設定</button></nav><div class="hint">ドラッグで眺める · ピンチで拡大 · ふたりをタップしてお誘い</div></footer>
+<dialog id="modal"><h2>ひだまりの暮らしかた</h2><div id="modalBody"></div><button id="modalClose">部屋にもどる</button></dialog>
+<script src="vendor/three.min.js"></script><script src="assets/characters.js"></script><script src="game.js"></script></body></html>

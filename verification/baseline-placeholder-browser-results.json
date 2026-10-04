@@ -1,0 +1,247 @@
+{
+  "out": [
+    {
+      "actor": 0,
+      "action": "walk",
+      "start": true,
+      "reached": true
+    },
+    {
+      "actor": 0,
+      "action": "sit",
+      "start": true,
+      "reached": true
+    },
+    {
+      "actor": 0,
+      "action": "nap",
+      "start": true,
+      "reached": true
+    },
+    {
+      "actor": 0,
+      "action": "eat",
+      "start": true,
+      "reached": true
+    },
+    {
+      "actor": 0,
+      "action": "read",
+      "start": true,
+      "reached": true
+    },
+    {
+      "actor": 0,
+      "action": "window",
+      "start": true,
+      "reached": true
+    },
+    {
+      "actor": 0,
+      "action": "clean",
+      "start": true,
+      "reached": true
+    },
+    {
+      "actor": 0,
+      "action": "plant",
+      "start": true,
+      "reached": true
+    },
+    {
+      "actor": 0,
+      "action": "dance",
+      "start": true,
+      "reached": true
+    },
+    {
+      "actor": 0,
+      "action": "chat",
+      "start": true,
+      "reached": true
+    },
+    {
+      "actor": 1,
+      "action": "walk",
+      "start": true,
+      "reached": true
+    },
+    {
+      "actor": 1,
+      "action": "sit",
+      "start": true,
+      "reached": true
+    },
+    {
+      "actor": 1,
+      "action": "nap",
+      "start": true,
+      "reached": true
+    },
+    {
+      "actor": 1,
+      "action": "eat",
+      "start": true,
+      "reached": true
+    },
+    {
+      "actor": 1,
+      "action": "read",
+      "start": true,
+      "reached": true
+    },
+    {
+      "actor": 1,
+      "action": "window",
+      "start": true,
+      "reached": true
+    },
+    {
+      "actor": 1,
+      "action": "clean",
+      "start": true,
+      "reached": true
+    },
+    {
+      "actor": 1,
+      "action": "plant",
+      "start": true,
+      "reached": true
+    },
+    {
+      "actor": 1,
+      "action": "dance",
+      "start": true,
+      "reached": true
+    },
+    {
+      "actor": 1,
+      "action": "chat",
+      "start": true,
+      "reached": true
+    }
+  ],
+  "reserveFirst": true,
+  "reserveSecond": false,
+  "long": [
+    {
+      "name": "モブデンデン",
+      "x": 2,
+      "z": 0.8074999999999998,
+      "state": "moving",
+      "action": "read",
+      "done": {
+        "walk": 29,
+        "sit": 31,
+        "nap": 23,
+        "eat": 19,
+        "read": 21,
+        "window": 26,
+        "clean": 1,
+        "plant": 26,
+        "dance": 23,
+        "chat": 14
+      },
+      "path": 21
+    },
+    {
+      "name": "モブピンク",
+      "x": 0.25,
+      "z": 1.75,
+      "state": "acting",
+      "action": "clean",
+      "done": {
+        "walk": 35,
+        "sit": 12,
+        "nap": 2,
+        "eat": 24,
+        "read": 27,
+        "window": 27,
+        "clean": 27,
+        "plant": 24,
+        "dance": 29,
+        "chat": 37
+      },
+      "path": 0
+    }
+  ],
+  "finite": true,
+  "history": 60,
+  "restored": true,
+  "viewports": [
+    {
+      "width": 320,
+      "overflow": false,
+      "footer": {
+        "x": 10,
+        "y": 569,
+        "width": 300,
+        "height": 121,
+        "top": 569,
+        "right": 310,
+        "bottom": 690,
+        "left": 10
+      }
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "footer": {
+        "x": 10,
+        "y": 713,
+        "width": 370,
+        "height": 121,
+        "top": 713,
+        "right": 380,
+        "bottom": 834,
+        "left": 10
+      }
+    },
+    {
+      "width": 430,
+      "overflow": false,
+      "footer": {
+        "x": 10,
+        "y": 801,
+        "width": 410,
+        "height": 121,
+        "top": 801,
+        "right": 420,
+        "bottom": 922,
+        "left": 10
+      }
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "footer": {
+        "x": 460,
+        "y": 835,
+        "width": 520,
+        "height": 145,
+        "top": 835,
+        "right": 980,
+        "bottom": 980,
+        "left": 460
+      }
+    },
+    {
+      "width": 844,
+      "overflow": false,
+      "footer": {
+        "x": 177,
+        "y": 278,
+        "width": 490,
+        "height": 104,
+        "top": 278,
+        "right": 667,
+        "bottom": 382,
+        "left": 177
+      }
+    }
+  ],
+  "menu": 10,
+  "controls": "2×",
+  "reset": true,
+  "errors": []
+}

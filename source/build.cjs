@@ -1,0 +1,6 @@
+const fs=require('fs'),path=require('path');
+const poses=['idle','walk','walk2','sit','sleep','eat','read','windowlook','clean','garden','dance','chat'];
+const assets={};for(let who of ['denden','pink']){let dir=path.join('assets',who);if(fs.existsSync(path.join(dir,'idle.png'))){assets[who]={};for(let p of poses){let f=path.join(dir,p+'.png');if(fs.existsSync(f))assets[who][p]='data:image/png;base64,'+fs.readFileSync(f).toString('base64')}}else if(fs.existsSync('assets/'+who+'.png'))assets[who]='data:image/png;base64,'+fs.readFileSync('assets/'+who+'.png').toString('base64');}
+if(Object.keys(assets).length)fs.writeFileSync('assets/characters.js','window.CHARACTER_ASSETS='+JSON.stringify(assets)+';\n');
+let html=fs.readFileSync('index.html','utf8');html=html.replace('<link rel="stylesheet" href="style.css">','<style>'+fs.readFileSync('style.css','utf8')+'</style>');for(let src of ['vendor/three.min.js','assets/characters.js','game.js'])html=html.replace('<script src="'+src+'"></script>',()=>'<script>'+fs.readFileSync(src,'utf8').replace(/<\/script/gi,'<\\/script')+'</script>');fs.writeFileSync('hidamari-standalone.html',html);console.log('Built hidamari-standalone.html; final assets:',Object.keys(assets).length);
+// ZIP creation is independent of npm; PowerShell Compress-Archive can package the explicit deliverable files.

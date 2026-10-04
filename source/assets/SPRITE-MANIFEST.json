@@ -1,0 +1,932 @@
+{
+  "version": 1,
+  "characters": [
+    "denden",
+    "pink"
+  ],
+  "canvas": [
+    256,
+    256
+  ],
+  "anchorPx": [
+    128,
+    236
+  ],
+  "anchorNormalized": [
+    0.5,
+    0.921875
+  ],
+  "nominalHeadWidthPx": 76,
+  "filter": "nearest",
+  "mipmaps": false,
+  "alpha": "binary, threshold 128 from imagegen original",
+  "normalization": "Head-width calibrated uniform scale, nearest-neighbor resample, horizontal body anchor and shared contact baseline. No drawing, inpainting or character reconstruction. The256 version only pads at integer offset(48,88), without resampling.",
+  "sourceNote": "Independent imagegen masters are high-resolution pixel-style images, not a shared native sprite grid. Game PNGs are independent 160x160 RGBA sprites on a strict 1 px output grid.",
+  "facing": "Mostly front three-quarter right; flip horizontally for left travel. No back-facing views.",
+  "states": {
+    "idle": [
+      "idle"
+    ],
+    "walk": [
+      "walk_a",
+      "walk_b"
+    ],
+    "sit": [
+      "sit"
+    ],
+    "sleep": [
+      "sleep"
+    ],
+    "eat": [
+      "eat"
+    ],
+    "read": [
+      "read"
+    ],
+    "windowlook": [
+      "windowlook"
+    ],
+    "clean": [
+      "clean"
+    ],
+    "garden": [
+      "garden"
+    ],
+    "dance": [
+      "dance"
+    ],
+    "chat": [
+      "chat"
+    ]
+  },
+  "activityNotes": {
+    "eat": "Cozy drink with mug; faces remain closed/mouthless.",
+    "sleep": "Horizontal lying pose; anchor is surface contact, not feet.",
+    "sit": "No chair included; anchor at lowest feet contact.",
+    "walk": "Two distinct stride/passing poses; suggested 5-7 frames/sec with 1-2 px bob.",
+    "clean": "Cloth only; animate small hand/body bob in place.",
+    "garden": "Watering can only; room supplies plant.",
+    "dance": "Different raised-leg/arms pose from chat.",
+    "chat": "Raised greeting hand, no speech graphics baked in."
+  },
+  "assets": [
+    {
+      "character": "denden",
+      "pose": "idle",
+      "file": "denden/idle.png",
+      "sourceFile": "masters/denden_idle.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceAlphaBounds": [
+        247,
+        65,
+        1040,
+        1204
+      ],
+      "sourceHeadWidth": 768,
+      "sourceAxisX": 630,
+      "scale": 0.09895833,
+      "offsetPx": [
+        42,
+        35
+      ],
+      "alphaBounds": [
+        90,
+        123,
+        168,
+        236
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "sizeBytes": 16473,
+      "sha256": "91eddf965810372f5430bd6f70c73b3181b1d170c12ff39b1137670179799f9b"
+    },
+    {
+      "character": "denden",
+      "pose": "walk_a",
+      "file": "denden/walk.png",
+      "sourceFile": "masters/denden_walk_a.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceAlphaBounds": [
+        197,
+        78,
+        1065,
+        1206
+      ],
+      "sourceHeadWidth": 773,
+      "sourceAxisX": 680,
+      "scale": 0.09831824,
+      "offsetPx": [
+        33,
+        37
+      ],
+      "alphaBounds": [
+        81,
+        125,
+        166,
+        236
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "sizeBytes": 15976,
+      "sha256": "030b2fdc6e74f48e1c8b8c3ca6b6bce12604195ab3cc29a4383e4a09772d0e8d"
+    },
+    {
+      "character": "denden",
+      "pose": "walk_b",
+      "file": "denden/walk2.png",
+      "sourceFile": "masters/denden_walk_b.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceAlphaBounds": [
+        269,
+        65,
+        1023,
+        1204
+      ],
+      "sourceHeadWidth": 751,
+      "sourceAxisX": 650,
+      "scale": 0.1011984,
+      "offsetPx": [
+        41,
+        33
+      ],
+      "alphaBounds": [
+        89,
+        121,
+        165,
+        236
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "sizeBytes": 15518,
+      "sha256": "7858a1207a043de2e24b4cac16497d416595faebe338ebb19f9b0609dbcd60d7"
+    },
+    {
+      "character": "denden",
+      "pose": "sit",
+      "file": "denden/sit.png",
+      "sourceFile": "masters/denden_sit.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceAlphaBounds": [
+        247,
+        65,
+        1085,
+        1210
+      ],
+      "sourceHeadWidth": 781,
+      "sourceAxisX": 635,
+      "scale": 0.09731114,
+      "offsetPx": [
+        42,
+        37
+      ],
+      "alphaBounds": [
+        90,
+        125,
+        172,
+        236
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "sizeBytes": 15973,
+      "sha256": "3f9244d059ee190b5ea12ce7e0e0853f007b5c7a5a2025d036c957b2c8e4d5f7"
+    },
+    {
+      "character": "denden",
+      "pose": "sleep",
+      "file": "denden/sleep.png",
+      "sourceFile": "masters/denden_sleep.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceAlphaBounds": [
+        42,
+        238,
+        1215,
+        1029
+      ],
+      "sourceHeadWidth": 738,
+      "sourceAxisX": 628,
+      "scale": 0.10298103,
+      "offsetPx": [
+        20,
+        67
+      ],
+      "alphaBounds": [
+        68,
+        155,
+        189,
+        236
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "sizeBytes": 14779,
+      "sha256": "306f6b3252da0dedaf3b4f1a1243284f302e9f3596b513c423f68101023a6172"
+    },
+    {
+      "character": "denden",
+      "pose": "eat",
+      "file": "denden/eat.png",
+      "sourceFile": "masters/denden_eat.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceAlphaBounds": [
+        248,
+        50,
+        1058,
+        1211
+      ],
+      "sourceHeadWidth": 772,
+      "sourceAxisX": 639,
+      "scale": 0.0984456,
+      "offsetPx": [
+        42,
+        34
+      ],
+      "alphaBounds": [
+        90,
+        122,
+        170,
+        236
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "sizeBytes": 16379,
+      "sha256": "c70340d3cb1c25bc48651fbd40e9b170a4350bab86b965e91178c755a086df83"
+    },
+    {
+      "character": "denden",
+      "pose": "read",
+      "file": "denden/read.png",
+      "sourceFile": "masters/denden_read.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceAlphaBounds": [
+        226,
+        48,
+        1066,
+        1220
+      ],
+      "sourceHeadWidth": 753,
+      "sourceAxisX": 675,
+      "scale": 0.10092961,
+      "offsetPx": [
+        35,
+        30
+      ],
+      "alphaBounds": [
+        83,
+        118,
+        168,
+        236
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "sizeBytes": 17306,
+      "sha256": "f10cb3ada1753357c3dec695631602c95b6409c251504e7426635063fa0f2258"
+    },
+    {
+      "character": "denden",
+      "pose": "windowlook",
+      "file": "denden/windowlook.png",
+      "sourceFile": "masters/denden_windowlook.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceAlphaBounds": [
+        255,
+        67,
+        1043,
+        1208
+      ],
+      "sourceHeadWidth": 759,
+      "sourceAxisX": 700,
+      "scale": 0.10013175,
+      "offsetPx": [
+        35,
+        34
+      ],
+      "alphaBounds": [
+        83,
+        122,
+        162,
+        236
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "sizeBytes": 15351,
+      "sha256": "55356ace0396dff3b4c1f26545cbf865397baf82eed632713b8c8f6e6914ea73"
+    },
+    {
+      "character": "denden",
+      "pose": "clean",
+      "file": "denden/clean.png",
+      "sourceFile": "masters/denden_clean.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceAlphaBounds": [
+        173,
+        41,
+        1099,
+        1218
+      ],
+      "sourceHeadWidth": 764,
+      "sourceAxisX": 630,
+      "scale": 0.09947644,
+      "offsetPx": [
+        35,
+        31
+      ],
+      "alphaBounds": [
+        83,
+        119,
+        175,
+        236
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "sizeBytes": 17981,
+      "sha256": "043efd0641e69806bc675e3dd1fdf5496970a98e734df893261fdb812cad42b1"
+    },
+    {
+      "character": "denden",
+      "pose": "garden",
+      "file": "denden/garden.png",
+      "sourceFile": "masters/denden_garden.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceAlphaBounds": [
+        203,
+        72,
+        1075,
+        1202
+      ],
+      "sourceHeadWidth": 747,
+      "sourceAxisX": 635,
+      "scale": 0.10174029,
+      "offsetPx": [
+        36,
+        33
+      ],
+      "alphaBounds": [
+        84,
+        121,
+        173,
+        236
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "sizeBytes": 16983,
+      "sha256": "235ca7b3386bc4a39c4d6ee13323c8b5654c2ce185b81f0bdbb85f81750c6328"
+    },
+    {
+      "character": "denden",
+      "pose": "dance",
+      "file": "denden/dance.png",
+      "sourceFile": "masters/denden_dance.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceAlphaBounds": [
+        232,
+        62,
+        1072,
+        1202
+      ],
+      "sourceHeadWidth": 734,
+      "sourceAxisX": 650,
+      "scale": 0.10354223,
+      "offsetPx": [
+        37,
+        30
+      ],
+      "alphaBounds": [
+        85,
+        118,
+        172,
+        236
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "sizeBytes": 17191,
+      "sha256": "31cbcad055e06c764ffb1c4cc62833e8b83320b8019d9a9780a643cf8724e60b"
+    },
+    {
+      "character": "denden",
+      "pose": "chat",
+      "file": "denden/chat.png",
+      "sourceFile": "masters/denden_chat.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceAlphaBounds": [
+        212,
+        64,
+        1120,
+        1204
+      ],
+      "sourceHeadWidth": 767,
+      "sourceAxisX": 635,
+      "scale": 0.09908735,
+      "offsetPx": [
+        38,
+        35
+      ],
+      "alphaBounds": [
+        86,
+        123,
+        176,
+        236
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "sizeBytes": 16741,
+      "sha256": "a2d7d0277dbefb1a1f00ab4651ce698bcfec53d46127c603b97eaeed2adf63c2"
+    },
+    {
+      "character": "pink",
+      "pose": "idle",
+      "file": "pink/idle.png",
+      "sourceFile": "masters/pink_idle.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceAlphaBounds": [
+        272,
+        73,
+        1037,
+        1209
+      ],
+      "sourceHeadWidth": 765,
+      "sourceAxisX": 675,
+      "scale": 0.09934641,
+      "offsetPx": [
+        40,
+        35
+      ],
+      "alphaBounds": [
+        88,
+        123,
+        164,
+        236
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "sizeBytes": 13850,
+      "sha256": "9eb04b35496fa8d848c15a054d20550c06dcbbc85fefbd78feecac7b592da806"
+    },
+    {
+      "character": "pink",
+      "pose": "walk_a",
+      "file": "pink/walk.png",
+      "sourceFile": "masters/pink_walk_a.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceAlphaBounds": [
+        268,
+        50,
+        1066,
+        1217
+      ],
+      "sourceHeadWidth": 778,
+      "sourceAxisX": 675,
+      "scale": 0.09768638,
+      "offsetPx": [
+        40,
+        34
+      ],
+      "alphaBounds": [
+        88,
+        122,
+        166,
+        236
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "sizeBytes": 14828,
+      "sha256": "61cc09c44f042fa84b6e7037727d873792d8c3da0c0c7c7e9a484fcd853ef7ea"
+    },
+    {
+      "character": "pink",
+      "pose": "walk_b",
+      "file": "pink/walk2.png",
+      "sourceFile": "masters/pink_walk_b.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceAlphaBounds": [
+        301,
+        62,
+        1018,
+        1194
+      ],
+      "sourceHeadWidth": 742,
+      "sourceAxisX": 650,
+      "scale": 0.10242588,
+      "offsetPx": [
+        44,
+        32
+      ],
+      "alphaBounds": [
+        92,
+        120,
+        165,
+        236
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "sizeBytes": 13707,
+      "sha256": "6abc283b6b2b15572d07b6470babd77c4ab87e4cc027c3f7903b20d775855fa1"
+    },
+    {
+      "character": "pink",
+      "pose": "sit",
+      "file": "pink/sit.png",
+      "sourceFile": "masters/pink_sit.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceAlphaBounds": [
+        233,
+        76,
+        1047,
+        1207
+      ],
+      "sourceHeadWidth": 814,
+      "sourceAxisX": 690,
+      "scale": 0.09336609,
+      "offsetPx": [
+        37,
+        42
+      ],
+      "alphaBounds": [
+        85,
+        130,
+        161,
+        236
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "sizeBytes": 13118,
+      "sha256": "edc640e0377ad4e98ca45b9df6a1fdc5a9b1c59c385ff453fe7033f2c6045c44"
+    },
+    {
+      "character": "pink",
+      "pose": "sleep",
+      "file": "pink/sleep.png",
+      "sourceFile": "masters/pink_sleep.png",
+      "sourceSize": [
+        1774,
+        887
+      ],
+      "sourceAlphaBounds": [
+        55,
+        87,
+        1680,
+        827
+      ],
+      "sourceHeadWidth": 810,
+      "sourceAxisX": 875,
+      "scale": 0.09382716,
+      "offsetPx": [
+        3,
+        79
+      ],
+      "alphaBounds": [
+        51,
+        167,
+        203,
+        236
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "sizeBytes": 14025,
+      "sha256": "78413054869112fdde5d391009eee19312a052e0dc8bc78e13f104046d86a8d8"
+    },
+    {
+      "character": "pink",
+      "pose": "eat",
+      "file": "pink/eat.png",
+      "sourceFile": "masters/pink_eatdrink.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceAlphaBounds": [
+        268,
+        73,
+        1036,
+        1212
+      ],
+      "sourceHeadWidth": 768,
+      "sourceAxisX": 675,
+      "scale": 0.09895833,
+      "offsetPx": [
+        40,
+        35
+      ],
+      "alphaBounds": [
+        88,
+        123,
+        164,
+        236
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "sizeBytes": 13516,
+      "sha256": "5da3ca7d96def4de76c87e88ce10b3c6c4c788345909ef043fe9960eeb4c5328"
+    },
+    {
+      "character": "pink",
+      "pose": "read",
+      "file": "pink/read.png",
+      "sourceFile": "masters/pink_read.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceAlphaBounds": [
+        250,
+        59,
+        1028,
+        1219
+      ],
+      "sourceHeadWidth": 778,
+      "sourceAxisX": 660,
+      "scale": 0.09768638,
+      "offsetPx": [
+        40,
+        35
+      ],
+      "alphaBounds": [
+        88,
+        123,
+        164,
+        236
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "sizeBytes": 14023,
+      "sha256": "c1e51bbe7c26604f77b5d0acdd446aa54946ee952443b6b08623117e1b2e5a8f"
+    },
+    {
+      "character": "pink",
+      "pose": "windowlook",
+      "file": "pink/windowlook.png",
+      "sourceFile": "masters/pink_windowlook.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceAlphaBounds": [
+        288,
+        79,
+        1039,
+        1202
+      ],
+      "sourceHeadWidth": 751,
+      "sourceAxisX": 690,
+      "scale": 0.1011984,
+      "offsetPx": [
+        39,
+        34
+      ],
+      "alphaBounds": [
+        87,
+        122,
+        163,
+        236
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "sizeBytes": 13422,
+      "sha256": "b76479ef2d066d390bcf29c76fd1d143b62f77e0a66a9a5016523229e4ed7270"
+    },
+    {
+      "character": "pink",
+      "pose": "clean",
+      "file": "pink/clean.png",
+      "sourceFile": "masters/pink_clean.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceAlphaBounds": [
+        315,
+        71,
+        1114,
+        1206
+      ],
+      "sourceHeadWidth": 785,
+      "sourceAxisX": 635,
+      "scale": 0.09681529,
+      "offsetPx": [
+        49,
+        38
+      ],
+      "alphaBounds": [
+        97,
+        126,
+        174,
+        236
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "sizeBytes": 14799,
+      "sha256": "0374e3fe8115f62fa56b44f07f11ff9e595702ac2f35b29e1549ae9686911216"
+    },
+    {
+      "character": "pink",
+      "pose": "garden",
+      "file": "pink/garden.png",
+      "sourceFile": "masters/pink_garden.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceAlphaBounds": [
+        243,
+        61,
+        1161,
+        1210
+      ],
+      "sourceHeadWidth": 783,
+      "sourceAxisX": 625,
+      "scale": 0.09706258,
+      "offsetPx": [
+        43,
+        36
+      ],
+      "alphaBounds": [
+        91,
+        124,
+        180,
+        236
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "sizeBytes": 14774,
+      "sha256": "805fc66306a2878ed1c3a921f733e12999c598e62b9c5e8c562dc169d7125f45"
+    },
+    {
+      "character": "pink",
+      "pose": "dance",
+      "file": "pink/dance.png",
+      "sourceFile": "masters/pink_dance.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceAlphaBounds": [
+        186,
+        68,
+        1128,
+        1198
+      ],
+      "sourceHeadWidth": 748,
+      "sourceAxisX": 680,
+      "scale": 0.10160428,
+      "offsetPx": [
+        30,
+        33
+      ],
+      "alphaBounds": [
+        78,
+        121,
+        174,
+        236
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "sizeBytes": 15031,
+      "sha256": "078b9f916e414447a2da4e9e93b1ca4fb43cf8f1560652bc41647201c79d58a0"
+    },
+    {
+      "character": "pink",
+      "pose": "chat",
+      "file": "pink/chat.png",
+      "sourceFile": "masters/pink_chat.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceAlphaBounds": [
+        247,
+        52,
+        1122,
+        1212
+      ],
+      "sourceHeadWidth": 782,
+      "sourceAxisX": 665,
+      "scale": 0.0971867,
+      "offsetPx": [
+        39,
+        35
+      ],
+      "alphaBounds": [
+        87,
+        123,
+        172,
+        236
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "sizeBytes": 14504,
+      "sha256": "84692ef662e89bb3975fba775660c5eaa49291717a0ad78bb0ca23c3eb4a138a"
+    }
+  ],
+  "threeJsSpriteCenter": [
+    0.5,
+    0.078125
+  ],
+  "nominalStandingHeightPx": 112,
+  "paddingFrom160": [
+    48,
+    88
+  ],
+  "runtime": {
+    "nominalStandingHeightWorld": 1.4,
+    "texturePlaneHeightWorld": 3.2,
+    "footCenterUV": [
+      0.5,
+      0.078125
+    ],
+    "sleepRotation": 0
+  }
+}
