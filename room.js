@@ -16,7 +16,7 @@ window.ChillRoom=class ChillRoom{
  {sofa:[-3.85,.05,0],bed:[3.5,1.7,0],table:[1.0,-2.15,0],shelf:[3.55,-3.55,0],plant:[-4.3,-2.75,0],deck:[.5,2.65,0]},
  {sofa:[-3.8,.8,0],bed:[3.5,.95,0],table:[.55,-2.3,0],shelf:[3.55,-3.55,0],plant:[-4.3,-2.7,0],deck:[-.2,2.65,0]},
  {sofa:[-3.85,-.2,0],bed:[3.25,1.45,Math.PI/2],table:[.7,-1.95,0],shelf:[3.6,-3.55,0],plant:[-4.35,-2.75,0],deck:[-.45,2.65,0]}
- ];}
+ ].map(c=>({...c,oven:[-1.4,-2.75,0]}));}
  create(key,x,z,rotation){let f={key,group:new THREE.Group(),sockets:{},w:1,d:1};f.group.position.set(x,0,z);f.group.rotation.y=rotation;this.scene.add(f.group);this.furniture[key]=f;const b=(...a)=>this.box(f.group,...a),c=(...a)=>this.cyl(f.group,...a);const socket=(k,a)=>f.sockets[k]=new THREE.Vector3(...a);
  if(key==='sofa'){f.w=1.6;f.d=2.7;b(0,.44,0,1.4,.65,2.6,this.fabric);b(-.61,.95,0,.25,1.2,2.7,this.fabric);for(let zz of [-1.25,1.25])b(0,.8,zz,1.6,.9,.2,this.fabric);for(let zz of [-.56,.5])b(.06,.82,zz,1.15,.19,.95,this.blanket);b(-.25,1.05,-.7,.3,.48,.5,this.accent);socket('entry',[1.13,0,.4]);socket('seat',[.18,.915,.4]);}
  if(key==='bed'){f.w=2;f.d=3;b(0,.33,0,2,.5,3,this.oak);b(0,.65,0,1.92,.3,2.94,this.cream);b(0,.83,.4,1.96,.13,1.93,this.blanket);for(let xx of [-.43,.43])b(xx,.85,-.95,.76,.1,.5,'#fffced');b(0,.9,-1.48,2.06,1.15,.12,this.oak);socket('entry',[-1.37,0,.3]);socket('edge',[-.68,.90,.3]);socket('center',[0,.90,0]);}
@@ -30,6 +30,7 @@ window.ChillRoom=class ChillRoom{
  for(let xx of [-.12,0,.12])b(xx,.237,.07,.04,.04,.28,'#718477');
  socket('entry',[0,0,.92]);socket('hands',[-.55,.27,.385]);socket('hands_denden',[-.55,.27,.385]);socket('hands_pink',[.55,.33,.385]);}
 
+ if(key==='oven')this.buildOven(f);
  return f;}
  applyLayout(index){for(let f of Object.values(this.furniture)){this.scene.remove(f.group);f.group.traverse(o=>o.geometry?.dispose())}this.furniture={};this.layout=index;for(let [key,v]of Object.entries(this.configs()[index]))this.create(key,...v);this.bounds=Object.values(this.furniture).map(f=>{let a=f.group.rotation.y;return{x:f.group.position.x,z:f.group.position.z,w:Math.abs(Math.cos(a))*f.w+Math.abs(Math.sin(a))*f.d+.36,d:Math.abs(Math.sin(a))*f.w+Math.abs(Math.cos(a))*f.d+.36,key:f.key}});this.bounds.push({x:-4.5,z:2.85,w:.7,d:.7,key:'lamp'});this.scene.updateMatrixWorld(true);}
  applyTheme(index){this.theme=index;const colors=[['#8ea27b','#b2c4a1','#d4a590'],['#c7999d','#e2c2b4','#a6b999'],['#7d969c','#b3c3bd','#d1b080']][index];this.fabric.color.set(colors[0]);this.blanket.color.set(colors[1]);this.accent.color.set(colors[2]);}

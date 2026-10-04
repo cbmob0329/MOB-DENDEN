@@ -398,26 +398,26 @@
       "source": "masters/pink_sleep.png",
       "file": "assets/pink/sleep.png",
       "sourceSize": [
-        1635,
-        962
+        1536,
+        1024
       ],
       "sourceOpaqueBounds": [
-        106,
-        93,
-        1522,
-        876
+        180,
+        95,
+        1427,
+        933
       ],
-      "sourceBodyAxisX": 814,
+      "sourceBodyAxisX": 620,
       "scale": 0.14532243415077203,
       "exportOffset": [
-        10,
-        109
+        38,
+        53
       ],
       "opaqueBounds": [
-        25,
-        123,
-        232,
-        236
+        64,
+        67,
+        245,
+        189
       ],
       "footAnchorPx": [
         128,
@@ -427,19 +427,22 @@
         0.5,
         0.921875
       ],
-      "bytes": 29264,
-      "sha256": "a3a4e187011578e89021851630376472265e14e0f0125e1b078d810e18c56e1c",
+      "bytes": 30431,
+      "sha256": "5fb682f3c426e971865972d05da0ec34637bfd612a73fe7fdad6d163d8c2562b",
       "sleepAnchor": [
         0.5,
-        0.69921875
+        0.5
       ],
+      "placementMode": "supine top-down, head right, feet left; torso-center anchor, not foot anchor",
+      "sleepDirection": "head_right",
+      "sleepAnchorMeaning": "center of torso excluding head, limbs and tail",
       "sleepAnchorPx": [
         128,
-        179
+        128
       ],
       "sourceSleepAnchor": [
-        814,
-        484
+        620,
+        516
       ]
     },
     "book_reach": {
@@ -897,6 +900,294 @@
       ],
       "bytes": 24575,
       "sha256": "2477a8b0ffcddc182e3276c6ab5c0234572d94541917151a6ccf00ea529e9573"
+    },
+    "yawn_1": {
+      "source": "masters/pink_yawn_1.png",
+      "file": "assets/pink/yawn_1.png",
+      "sourceSize": [
+        1235,
+        1274
+      ],
+      "sourceOpaqueBounds": [
+        276,
+        100,
+        995,
+        1205
+      ],
+      "sourceBodyAxisX": 653.5,
+      "scale": 0.14532243415077203,
+      "exportOffset": [
+        33,
+        61
+      ],
+      "opaqueBounds": [
+        73,
+        76,
+        177,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 25453,
+      "sha256": "85812898c235308e762d2d58b66597f939bd2d217b60930965dbe2abe68bce02"
+    },
+    "yawn_2": {
+      "source": "masters/pink_yawn_2.png",
+      "file": "assets/pink/yawn_2.png",
+      "sourceSize": [
+        1235,
+        1274
+      ],
+      "sourceOpaqueBounds": [
+        298,
+        136,
+        997,
+        1201
+      ],
+      "sourceBodyAxisX": 648,
+      "scale": 0.14532243415077203,
+      "exportOffset": [
+        34,
+        61
+      ],
+      "opaqueBounds": [
+        77,
+        81,
+        179,
+        235
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 24465,
+      "sha256": "aecb936754a465b000d5504ca537ec9efae11d5b13a3933ea63f542c1f2430f9"
+    },
+    "stretch_1": {
+      "source": "masters/pink_stretch_1.png",
+      "file": "assets/pink/stretch_1.png",
+      "sourceSize": [
+        1235,
+        1274
+      ],
+      "sourceOpaqueBounds": [
+        91,
+        70,
+        1152,
+        1195
+      ],
+      "sourceBodyAxisX": 657,
+      "scale": 0.14532243415077203,
+      "exportOffset": [
+        33,
+        62
+      ],
+      "opaqueBounds": [
+        46,
+        72,
+        200,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 30191,
+      "sha256": "d0afe5a52cf7b5036a53a4d75ee2cde5d420b55e7f7f59a16258d1dcf4bd0fff"
+    },
+    "stretch_2": {
+      "source": "masters/pink_stretch_2.png",
+      "file": "assets/pink/stretch_2.png",
+      "sourceSize": [
+        1235,
+        1274
+      ],
+      "sourceOpaqueBounds": [
+        208,
+        73,
+        1151,
+        1194
+      ],
+      "sourceBodyAxisX": 646.5,
+      "scale": 0.14532243415077203,
+      "exportOffset": [
+        34,
+        62
+      ],
+      "opaqueBounds": [
+        64,
+        73,
+        201,
+        235
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 28920,
+      "sha256": "da111655a18ba10e61424d006608cd617f57f83821fa788fd1046feff3c5b080"
+    },
+    "wave_1": {
+      "source": "masters/pink_wave_1.png",
+      "file": "assets/pink/wave_1.png",
+      "sourceSize": [
+        1235,
+        1274
+      ],
+      "sourceOpaqueBounds": [
+        258,
+        75,
+        1140,
+        1197
+      ],
+      "sourceBodyAxisX": 646,
+      "scale": 0.14532243415077203,
+      "exportOffset": [
+        34,
+        62
+      ],
+      "opaqueBounds": [
+        71,
+        73,
+        199,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 29682,
+      "sha256": "e118bc033f100623b6f8069f59357e83f605c7291b71541c290bc4018fcd7fa0"
+    },
+    "wave_2": {
+      "source": "masters/pink_wave_2.png",
+      "file": "assets/pink/wave_2.png",
+      "sourceSize": [
+        1235,
+        1274
+      ],
+      "sourceOpaqueBounds": [
+        256,
+        74,
+        1186,
+        1196
+      ],
+      "sourceBodyAxisX": 645,
+      "scale": 0.14532243415077203,
+      "exportOffset": [
+        34,
+        62
+      ],
+      "opaqueBounds": [
+        71,
+        73,
+        206,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 29640,
+      "sha256": "2845cbfe05c75ca93e948bdc4ae9d385d82fb07b60975e24e4368f565a006faf"
+    },
+    "music_1": {
+      "source": "masters/pink_music_1.png",
+      "file": "assets/pink/music_1.png",
+      "sourceSize": [
+        1235,
+        1274
+      ],
+      "sourceOpaqueBounds": [
+        273,
+        99,
+        1017,
+        1195
+      ],
+      "sourceBodyAxisX": 666,
+      "scale": 0.14532243415077203,
+      "exportOffset": [
+        31,
+        62
+      ],
+      "opaqueBounds": [
+        71,
+        76,
+        178,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 26692,
+      "sha256": "3015831c678e12ca2d99c8de8eb3f8f7df5066c18732efb5b40cc5667ac2942b"
+    },
+    "music_2": {
+      "source": "masters/pink_music_2.png",
+      "file": "assets/pink/music_2.png",
+      "sourceSize": [
+        1235,
+        1274
+      ],
+      "sourceOpaqueBounds": [
+        280,
+        106,
+        987,
+        1180
+      ],
+      "sourceBodyAxisX": 650.5,
+      "scale": 0.14532243415077203,
+      "exportOffset": [
+        33,
+        65
+      ],
+      "opaqueBounds": [
+        74,
+        80,
+        176,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 26878,
+      "sha256": "9b66721b9779e3a13f78c3a214b1619eb6a3360047e15c517e655c1f12d8cead"
     }
   },
   "sitAnchor": [
@@ -905,6 +1196,8 @@
   ],
   "sleepAnchor": [
     0.5,
-    0.69921875
-  ]
+    0.5
+  ],
+  "sleepDirection": "head_right",
+  "sleepAnchorMeaning": "center of torso excluding head, limbs and tail"
 }

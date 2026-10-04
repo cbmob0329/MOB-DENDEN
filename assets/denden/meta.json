@@ -174,21 +174,21 @@
         1254
       ],
       "sourceOpaqueBounds": [
-        152,
-        49,
-        1060,
-        1225
+        149,
+        48,
+        1045,
+        1228
       ],
       "sourceBodyAxisX": 670,
       "scale": 0.13322231473771856,
       "exportOffset": [
         39,
-        73
+        72
       ],
       "opaqueBounds": [
         59,
-        80,
-        180,
+        78,
+        178,
         236
       ],
       "footAnchorPx": [
@@ -199,8 +199,8 @@
         0.5,
         0.921875
       ],
-      "bytes": 25706,
-      "sha256": "1ea932e805cbdfe14b8adcd83f1c0f0258ed18d2aeab5c2450ab342f27b72643"
+      "bytes": 25540,
+      "sha256": "a82f1011c26b3c904831ebddbeae877877c3e216e00290e40924aae54de37b7f"
     },
     "walk_side_2": {
       "source": "masters/denden_walk_side_2.png",
@@ -210,10 +210,10 @@
         1254
       ],
       "sourceOpaqueBounds": [
-        178,
+        177,
         48,
-        1061,
-        1229
+        1019,
+        1231
       ],
       "sourceBodyAxisX": 670,
       "scale": 0.13322231473771856,
@@ -224,7 +224,7 @@
       "opaqueBounds": [
         63,
         78,
-        180,
+        175,
         236
       ],
       "footAnchorPx": [
@@ -235,8 +235,8 @@
         0.5,
         0.921875
       ],
-      "bytes": 24199,
-      "sha256": "0eb82377665aced56797bea656353571f5cd8e81d5a031033b567de235065c04"
+      "bytes": 23868,
+      "sha256": "a07441c54b1f34127330424ea4f6db2c7c5e4e94d9144a8521eb15b1529ee6bb"
     },
     "walk_back_1": {
       "source": "masters/denden_walk_back_1.png",
@@ -367,7 +367,7 @@
       ],
       "sourceOpaqueBounds": [
         88,
-        47,
+        48,
         1197,
         1235
       ],
@@ -391,33 +391,33 @@
         0.5,
         0.921875
       ],
-      "bytes": 26126,
-      "sha256": "3021ba398c1acb58771c6f23dc3139b838a208468ba82be7d89df1da0a741f0c"
+      "bytes": 25846,
+      "sha256": "9be702b6374c2925fc18c5312ad8e266b9771b8d4b22bf5702839094e70efb16"
     },
     "sleep": {
       "source": "masters/denden_sleep.png",
       "file": "assets/denden/sleep.png",
       "sourceSize": [
-        1619,
-        972
+        1536,
+        1024
       ],
       "sourceOpaqueBounds": [
-        55,
-        40,
-        1579,
-        923
+        62,
+        79,
+        1474,
+        957
       ],
-      "sourceBodyAxisX": 817,
+      "sourceBodyAxisX": 620,
       "scale": 0.13322231473771856,
       "exportOffset": [
-        19,
-        113
+        45,
+        59
       ],
       "opaqueBounds": [
-        26,
-        118,
-        230,
-        235
+        53,
+        69,
+        242,
+        186
       ],
       "footAnchorPx": [
         128,
@@ -427,19 +427,22 @@
         0.5,
         0.921875
       ],
-      "bytes": 30925,
-      "sha256": "bc7e906665419a4501b65aae0393a1d5d51e9c6e219484188c5e4afbc161bc45",
+      "bytes": 33809,
+      "sha256": "521d9d161fc5657c54a8b7f586565df5bae825c30fb1aede587d76a46da95407",
       "sleepAnchor": [
         0.5,
-        0.69140625
+        0.5
       ],
+      "placementMode": "supine top-down, head right, feet left; torso-center anchor, not foot anchor",
+      "sleepDirection": "head_right",
+      "sleepAnchorMeaning": "center of torso excluding head, limbs and tail",
       "sleepAnchorPx": [
         128,
-        177
+        128
       ],
       "sourceSleepAnchor": [
-        817,
-        482
+        620,
+        516
       ]
     },
     "book_reach": {
@@ -452,8 +455,8 @@
       "sourceOpaqueBounds": [
         79,
         48,
-        1216,
-        1214
+        1217,
+        1215
       ],
       "sourceBodyAxisX": 675,
       "scale": 0.13322231473771856,
@@ -475,8 +478,8 @@
         0.5,
         0.921875
       ],
-      "bytes": 26401,
-      "sha256": "48c1c122fce2de936380ccbf235b85505d653cbc385c38337550a4a47d67352d",
+      "bytes": 26096,
+      "sha256": "9760d0d94f45e62af18dae4876e83b53d24772936e4f42487c4805ab0c215077",
       "handAnchorPx": [
         189,
         169
@@ -595,9 +598,9 @@
       ],
       "sourceOpaqueBounds": [
         139,
-        51,
-        1210,
-        1216
+        50,
+        1211,
+        1217
       ],
       "sourceBodyAxisX": 645,
       "scale": 0.13322231473771856,
@@ -619,8 +622,8 @@
         0.5,
         0.921875
       ],
-      "bytes": 26193,
-      "sha256": "7601a136f3321c82e76e2f8a011e295dbf12096964b9e18bcb3572d3afc0fb42",
+      "bytes": 26197,
+      "sha256": "23f6b72c1527f5e3f60dbf76bc76e0fd79f416ec009a310fa59ee05be2c7fa06",
       "handAnchorPx": [
         191,
         177
@@ -897,6 +900,294 @@
       ],
       "bytes": 29679,
       "sha256": "505785fd77080e2c82d1d007ca463dedac6af53020d17fce0b5c146c7859de6e"
+    },
+    "yawn_1": {
+      "source": "masters/denden_yawn_1.png",
+      "file": "assets/denden/yawn_1.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceOpaqueBounds": [
+        244,
+        34,
+        1128,
+        1237
+      ],
+      "sourceBodyAxisX": 628,
+      "scale": 0.13322231473771856,
+      "exportOffset": [
+        44,
+        71
+      ],
+      "opaqueBounds": [
+        76,
+        76,
+        194,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 31008,
+      "sha256": "9b7ea88fa5e83942d5fee500451be3ae174a41ceedfbf3737c71b17398155fa5"
+    },
+    "yawn_2": {
+      "source": "masters/denden_yawn_2.png",
+      "file": "assets/denden/yawn_2.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceOpaqueBounds": [
+        243,
+        34,
+        1128,
+        1238
+      ],
+      "sourceBodyAxisX": 628,
+      "scale": 0.13322231473771856,
+      "exportOffset": [
+        44,
+        71
+      ],
+      "opaqueBounds": [
+        76,
+        76,
+        194,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 30711,
+      "sha256": "76f9b5d5eae9f64507901878b25e1d92cfcc275485473a977853c01adeeac0c8"
+    },
+    "stretch_1": {
+      "source": "masters/denden_stretch_1.png",
+      "file": "assets/denden/stretch_1.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceOpaqueBounds": [
+        63,
+        48,
+        1194,
+        1236
+      ],
+      "sourceBodyAxisX": 626,
+      "scale": 0.13322231473771856,
+      "exportOffset": [
+        45,
+        71
+      ],
+      "opaqueBounds": [
+        53,
+        77,
+        204,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 33819,
+      "sha256": "495aebdbb30995801edad73cd42c9bb68d464e49193510c739ba54442cc40ace"
+    },
+    "stretch_2": {
+      "source": "masters/denden_stretch_2.png",
+      "file": "assets/denden/stretch_2.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceOpaqueBounds": [
+        199,
+        39,
+        1190,
+        1235
+      ],
+      "sourceBodyAxisX": 627.5,
+      "scale": 0.13322231473771856,
+      "exportOffset": [
+        44,
+        71
+      ],
+      "opaqueBounds": [
+        71,
+        76,
+        202,
+        235
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 32584,
+      "sha256": "8b63bfdfff2f9ef832e8fa5e74f7d5a6d457a5543e78d254f80f4b1dfb4faf5d"
+    },
+    "wave_1": {
+      "source": "masters/denden_wave_1.png",
+      "file": "assets/denden/wave_1.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceOpaqueBounds": [
+        162,
+        36,
+        1126,
+        1236
+      ],
+      "sourceBodyAxisX": 629.5,
+      "scale": 0.13322231473771856,
+      "exportOffset": [
+        44,
+        71
+      ],
+      "opaqueBounds": [
+        66,
+        76,
+        194,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 31920,
+      "sha256": "9439bdd997089e41f1f6e087560047910949e34176ab6c78801f44ac74a6ab4b"
+    },
+    "wave_2": {
+      "source": "masters/denden_wave_2.png",
+      "file": "assets/denden/wave_2.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceOpaqueBounds": [
+        70,
+        36,
+        1126,
+        1236
+      ],
+      "sourceBodyAxisX": 630,
+      "scale": 0.13322231473771856,
+      "exportOffset": [
+        44,
+        71
+      ],
+      "opaqueBounds": [
+        53,
+        76,
+        194,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 32651,
+      "sha256": "effdcc69063bfd2c1c5e13499ea36dff3a9b4d9b12ff31cb7ef2f0ffcab7a947"
+    },
+    "music_1": {
+      "source": "masters/denden_music_1.png",
+      "file": "assets/denden/music_1.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceOpaqueBounds": [
+        231,
+        40,
+        1150,
+        1234
+      ],
+      "sourceBodyAxisX": 648,
+      "scale": 0.13322231473771856,
+      "exportOffset": [
+        42,
+        72
+      ],
+      "opaqueBounds": [
+        73,
+        77,
+        195,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 31394,
+      "sha256": "925db7a585916271ad8b75a3119504208ed176be427bebca1486aa400d938e60"
+    },
+    "music_2": {
+      "source": "masters/denden_music_2.png",
+      "file": "assets/denden/music_2.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceOpaqueBounds": [
+        172,
+        41,
+        1097,
+        1231
+      ],
+      "sourceBodyAxisX": 632.5,
+      "scale": 0.13322231473771856,
+      "exportOffset": [
+        44,
+        72
+      ],
+      "opaqueBounds": [
+        67,
+        77,
+        190,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "footAnchor": [
+        0.5,
+        0.921875
+      ],
+      "bytes": 30018,
+      "sha256": "911718d8c56b21cc4f90f237703e4f30e255e01c6060d95681692f3c84269556"
     }
   },
   "sitAnchor": [
@@ -905,6 +1196,8 @@
   ],
   "sleepAnchor": [
     0.5,
-    0.69140625
-  ]
+    0.5
+  ],
+  "sleepDirection": "head_right",
+  "sleepAnchorMeaning": "center of torso excluding head, limbs and tail"
 }

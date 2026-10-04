@@ -10,3 +10,9 @@ footer{bottom:max(10px,env(safe-area-inset-bottom,0px));max-width:calc(100% - ma
 #drawer{max-width:calc(100% - 20px);overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
 footer,.side{z-index:7}
 @media(max-height:320px){.side{top:48px;right:max(10px,env(safe-area-inset-right,0px));display:flex;gap:4px}.side button{width:32px;height:32px}#drawer,#drawer[data-mode=editor]{top:45px;bottom:auto;max-height:calc(100% - 150px);width:320px}.drawer-head{position:static;margin-bottom:6px}header{max-width:55%}h1{font-size:15px}.top{top:7px}.top button{padding:6px 8px}}
+
+.pantry{display:flex;justify-content:center;gap:18px;align-items:center;padding:6px 12px;margin-bottom:6px;background:#fffaf1eb;border:1px solid #fff;border-radius:12px;font-size:10px;color:#77816c}.pantry b{font-size:12px;color:#4b5e47;margin-left:5px}.pantry.large{gap:14px;padding:14px;font-size:12px}.pantry.large b{font-size:19px}.oven-intro{color:#78846d}.oven-status{font-size:17px;font-weight:700;margin:17px 0 12px}.bake-track{height:9px;background:#e9e4d3;border-radius:10px;overflow:hidden}.bake-track i{display:block;height:100%;background:#c39450;width:0;transition:width .3s}.oven-note{color:#88917d;font-size:10px!important}.ready{background:#f5d69e!important;color:#654b25}.oven-panel #ovenTime{min-height:24px}nav{gap:1px}nav button{padding:10px 8px}footer{width:600px}#toast{bottom:210px}
+@media(max-width:600px){nav button{font-size:9px;padding:9px 5px;flex:1}footer{max-width:calc(100% - 16px)}.pantry{gap:16px;padding:4px;margin-bottom:5px}#toast{bottom:170px}#drawer[data-mode=editor]{bottom:165px}}
+@media(max-height:320px){.pantry{padding:2px;margin-bottom:2px;font-size:9px}.pantry b{font-size:10px}#drawer,#drawer[data-mode=editor]{max-height:calc(100% - 175px)}nav button{padding:6px 5px}#toast{bottom:145px}}
+
+button,canvas{-webkit-tap-highlight-color:transparent}
