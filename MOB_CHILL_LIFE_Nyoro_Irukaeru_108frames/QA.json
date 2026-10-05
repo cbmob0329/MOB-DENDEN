@@ -1,0 +1,8 @@
+{
+  "frameCount": 108,
+  "actions": 27,
+  "alpha": "binary 0/255",
+  "cellMargins": "at least 2px per cell; no neighbor pixels",
+  "pixelGrid": "2px nearest-neighbor",
+  "duplicatesWithinActions": []
+}

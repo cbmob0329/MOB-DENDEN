@@ -1,0 +1,3705 @@
+{
+  "title": "MOB CHILL LIFE — モブニョロ / モブイルカエル",
+  "version": 1,
+  "cell": [
+    256,
+    256
+  ],
+  "anchorPx": [
+    128,
+    236
+  ],
+  "pixelGrid": 2,
+  "filter": "nearest",
+  "mipmaps": false,
+  "bodyHeightPx": {
+    "nyoro": 160,
+    "irukaeru": 168
+  },
+  "frames": [
+    {
+      "character": "nyoro",
+      "action": "idle",
+      "frame": 0,
+      "file": "frames/nyoro/idle_00.png",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        76,
+        76,
+        234,
+        236
+      ],
+      "sha256": "859245a5930e988f66b2873a5cde3ae10feb3e71cf6309ff9f6f7c96c1cecc1f",
+      "sheet": "sheets/nyoro/idle.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        0,
+        0,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "idle",
+      "frame": 1,
+      "file": "frames/nyoro/idle_01.png",
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        74,
+        78,
+        228,
+        236
+      ],
+      "sha256": "4bfeae30fc7462e940e99fd5be684f38aa2e90902b2206e03cccae312764a732",
+      "sheet": "sheets/nyoro/idle.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        256,
+        0,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "idle",
+      "frame": 2,
+      "file": "frames/nyoro/idle_02.png",
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        76,
+        76,
+        230,
+        236
+      ],
+      "sha256": "c33ff993ee7c81ff7ea7cf67cab47faa7506f9ffe0a4d41e766cefbff9cbf8dc",
+      "sheet": "sheets/nyoro/idle.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        512,
+        0,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "idle",
+      "frame": 3,
+      "file": "frames/nyoro/idle_03.png",
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        76,
+        78,
+        226,
+        236
+      ],
+      "sha256": "a4f790bda799005271f181f8863dbea51fb73bb50e2584190c05e76279554a07",
+      "sheet": "sheets/nyoro/idle.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        768,
+        0,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "umbrella_idle",
+      "frame": 0,
+      "file": "frames/nyoro/umbrella_idle_00.png",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        38,
+        6,
+        252,
+        236
+      ],
+      "sha256": "b1238a85a347dade7164e2f9247cc21fbe72284313ba63f2238084c90f769432",
+      "sheet": "sheets/nyoro/umbrella_idle.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        0,
+        256,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "umbrella_idle",
+      "frame": 1,
+      "file": "frames/nyoro/umbrella_idle_01.png",
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        44,
+        10,
+        252,
+        236
+      ],
+      "sha256": "1f2836052a6edd7bdc337aefedcd6b3217298a2b0ea54f729052f29c16b6a607",
+      "sheet": "sheets/nyoro/umbrella_idle.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        256,
+        256,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "umbrella_idle",
+      "frame": 2,
+      "file": "frames/nyoro/umbrella_idle_02.png",
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        40,
+        8,
+        252,
+        236
+      ],
+      "sha256": "799af9f8552122818ae95afe3709cc5ada7255cb8d73c7f7106eab3c13c43e25",
+      "sheet": "sheets/nyoro/umbrella_idle.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        512,
+        256,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "umbrella_idle",
+      "frame": 3,
+      "file": "frames/nyoro/umbrella_idle_03.png",
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        44,
+        10,
+        252,
+        236
+      ],
+      "sha256": "abb6e89fa3d6c70093d555645a23a3720c1382979bdb5367277934c919729dc8",
+      "sheet": "sheets/nyoro/umbrella_idle.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        768,
+        256,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "umbrella_walk",
+      "frame": 0,
+      "file": "frames/nyoro/umbrella_walk_00.png",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 180,
+      "opaqueBounds": [
+        38,
+        8,
+        252,
+        236
+      ],
+      "sha256": "6701a1404adefb3f24871f5f174d86ecc66ff806b509db092d9dd5ebeb3b65d9",
+      "sheet": "sheets/nyoro/umbrella_walk.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        0,
+        512,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "umbrella_walk",
+      "frame": 1,
+      "file": "frames/nyoro/umbrella_walk_01.png",
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 180,
+      "opaqueBounds": [
+        36,
+        10,
+        252,
+        236
+      ],
+      "sha256": "767ce0773a7f260bb63f4fd76e30374d366be42c03c2dd5fea5b832d11916ec9",
+      "sheet": "sheets/nyoro/umbrella_walk.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        256,
+        512,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "umbrella_walk",
+      "frame": 2,
+      "file": "frames/nyoro/umbrella_walk_02.png",
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 180,
+      "opaqueBounds": [
+        32,
+        4,
+        252,
+        236
+      ],
+      "sha256": "fcf0b18289289a8207fc2997e2d4b17225e3f6124c4bc1a40d58166813e70b4b",
+      "sheet": "sheets/nyoro/umbrella_walk.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        512,
+        512,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "umbrella_walk",
+      "frame": 3,
+      "file": "frames/nyoro/umbrella_walk_03.png",
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 180,
+      "opaqueBounds": [
+        36,
+        10,
+        252,
+        236
+      ],
+      "sha256": "e6ea5f52049ead389a0db1b7be630fbe15a12d3c3ce52e78fa1451c364369ce9",
+      "sheet": "sheets/nyoro/umbrella_walk.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        768,
+        512,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "umbrella_open",
+      "frame": 0,
+      "file": "frames/nyoro/umbrella_open_00.png",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        74,
+        74,
+        240,
+        236
+      ],
+      "sha256": "902356929063b275033da1944865f64c748ef2826da0bc432b73b6332aaeb2c6",
+      "sheet": "sheets/nyoro/umbrella_open.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        0,
+        768,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "umbrella_open",
+      "frame": 1,
+      "file": "frames/nyoro/umbrella_open_01.png",
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        74,
+        38,
+        238,
+        236
+      ],
+      "sha256": "081fa822e7aafc4e57c0c88f1f250dfae04516707fec88a4d423e75ff54fd901",
+      "sheet": "sheets/nyoro/umbrella_open.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        256,
+        768,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "umbrella_open",
+      "frame": 2,
+      "file": "frames/nyoro/umbrella_open_02.png",
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        74,
+        32,
+        248,
+        236
+      ],
+      "sha256": "65af118ed815ff2fe27b09c09801a9aa3adef905354153588f575f78eae9a7b6",
+      "sheet": "sheets/nyoro/umbrella_open.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        512,
+        768,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "umbrella_open",
+      "frame": 3,
+      "file": "frames/nyoro/umbrella_open_03.png",
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        60,
+        24,
+        252,
+        236
+      ],
+      "sha256": "aac3d2a01e277166a15d4b7fc7c52ecb8335e56773039040663f9a4b05ef16a3",
+      "sheet": "sheets/nyoro/umbrella_open.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        768,
+        768,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "umbrella_close",
+      "frame": 0,
+      "file": "frames/nyoro/umbrella_close_00.png",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        52,
+        16,
+        252,
+        236
+      ],
+      "sha256": "8c44c1c88d20cf18de7fa5c426f7b3b66456b350f20e9f7f7328ff1078b0e57a",
+      "sheet": "sheets/nyoro/umbrella_close.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        0,
+        1024,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "umbrella_close",
+      "frame": 1,
+      "file": "frames/nyoro/umbrella_close_01.png",
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        74,
+        30,
+        248,
+        236
+      ],
+      "sha256": "78ec45c055ee8b70093261bba67cd36ebae133af4e19b00f33041287826c0a7f",
+      "sheet": "sheets/nyoro/umbrella_close.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        256,
+        1024,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "umbrella_close",
+      "frame": 2,
+      "file": "frames/nyoro/umbrella_close_02.png",
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        74,
+        52,
+        244,
+        236
+      ],
+      "sha256": "f98f90c887f2a59f8e4a84ad4e98c944e8141e44cca0dfaedce40e96a1917f07",
+      "sheet": "sheets/nyoro/umbrella_close.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        512,
+        1024,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "umbrella_close",
+      "frame": 3,
+      "file": "frames/nyoro/umbrella_close_03.png",
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        74,
+        74,
+        240,
+        236
+      ],
+      "sha256": "902356929063b275033da1944865f64c748ef2826da0bc432b73b6332aaeb2c6",
+      "sheet": "sheets/nyoro/umbrella_close.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        768,
+        1024,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "greet",
+      "frame": 0,
+      "file": "frames/nyoro/greet_00.png",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        70,
+        76,
+        234,
+        236
+      ],
+      "sha256": "7ecd326f7a52bb201b8b721b4ce40671316a6c949f2939b56d99ba401be6b418",
+      "sheet": "sheets/nyoro/greet.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        0,
+        1280,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "greet",
+      "frame": 1,
+      "file": "frames/nyoro/greet_01.png",
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        50,
+        76,
+        236,
+        236
+      ],
+      "sha256": "ab3505c75c870639c1e3b3960923902ecc2f7686d71fb1b345c5da58afbcfcfa",
+      "sheet": "sheets/nyoro/greet.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        256,
+        1280,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "greet",
+      "frame": 2,
+      "file": "frames/nyoro/greet_02.png",
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        44,
+        76,
+        236,
+        236
+      ],
+      "sha256": "5a0cb19385ada611bbe03b40c2232f051c0edba9e438b24a8573cce6dab82c7b",
+      "sheet": "sheets/nyoro/greet.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        512,
+        1280,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "greet",
+      "frame": 3,
+      "file": "frames/nyoro/greet_03.png",
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        70,
+        76,
+        236,
+        236
+      ],
+      "sha256": "b1d157489158d5514051bf51f6c21765dd4c16b797e8e8597fcb35b2b85f107d",
+      "sheet": "sheets/nyoro/greet.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        768,
+        1280,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "chat",
+      "frame": 0,
+      "file": "frames/nyoro/chat_00.png",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        70,
+        72,
+        238,
+        236
+      ],
+      "sha256": "c66ceb2b6b95a041d1c957aee18b531941e9033fb1c41e7b49438b25e61bcc8d",
+      "sheet": "sheets/nyoro/chat.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        0,
+        1536,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "chat",
+      "frame": 1,
+      "file": "frames/nyoro/chat_01.png",
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        56,
+        76,
+        230,
+        236
+      ],
+      "sha256": "4a0b9cf914a5ea0774b9ca7ef831fcaa946e958ef1fb1be19d470b2d22c1956c",
+      "sheet": "sheets/nyoro/chat.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        256,
+        1536,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "chat",
+      "frame": 2,
+      "file": "frames/nyoro/chat_02.png",
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        52,
+        76,
+        240,
+        236
+      ],
+      "sha256": "51f96b245f39ebe0324ee57b961b53267f9c9c3a8c4f37e15d82a70b1ee30eec",
+      "sheet": "sheets/nyoro/chat.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        512,
+        1536,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "chat",
+      "frame": 3,
+      "file": "frames/nyoro/chat_03.png",
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        68,
+        76,
+        232,
+        236
+      ],
+      "sha256": "9fcc8b094119b483e1b014519aacdd84beb47221be44273c81d1706195c3cde4",
+      "sheet": "sheets/nyoro/chat.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        768,
+        1536,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "sit",
+      "frame": 0,
+      "file": "frames/nyoro/sit_00.png",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        64,
+        104,
+        224,
+        236
+      ],
+      "sha256": "a806f819ee035b876edbd9ea6ac919a815f2ce15ceb2da20ede2b406e1ac6e71",
+      "sheet": "sheets/nyoro/sit.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        0,
+        1792,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "sit",
+      "frame": 1,
+      "file": "frames/nyoro/sit_01.png",
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        60,
+        108,
+        218,
+        236
+      ],
+      "sha256": "acf1cf584fd4c4b3c8204e810195cc5cd2eb4d1fb9a1f922196a9735aabcf7e7",
+      "sheet": "sheets/nyoro/sit.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        256,
+        1792,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "sit",
+      "frame": 2,
+      "file": "frames/nyoro/sit_02.png",
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        58,
+        100,
+        216,
+        236
+      ],
+      "sha256": "5d6b572ddfcf1018db0b2d6275fbe87948cbd1244c0435bc3f60bf3e3d9d7992",
+      "sheet": "sheets/nyoro/sit.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        512,
+        1792,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "sit",
+      "frame": 3,
+      "file": "frames/nyoro/sit_03.png",
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        60,
+        100,
+        214,
+        236
+      ],
+      "sha256": "1ac70db822013c98ce4ed02d229f6f8d574503fac042389fcb17989f51a2be77",
+      "sheet": "sheets/nyoro/sit.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        768,
+        1792,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "read",
+      "frame": 0,
+      "file": "frames/nyoro/read_00.png",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        68,
+        76,
+        244,
+        236
+      ],
+      "sha256": "11c9ffef25015120a6829360094811e44513f6bc2ce1d7e1194b85d41f0578f3",
+      "sheet": "sheets/nyoro/read.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        0,
+        2048,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "read",
+      "frame": 1,
+      "file": "frames/nyoro/read_01.png",
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        56,
+        78,
+        244,
+        236
+      ],
+      "sha256": "471ef819b8d433155f9078da1e27051bfe0bd849e3b1acc94928f0e12cbb4b21",
+      "sheet": "sheets/nyoro/read.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        256,
+        2048,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "read",
+      "frame": 2,
+      "file": "frames/nyoro/read_02.png",
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        58,
+        76,
+        244,
+        236
+      ],
+      "sha256": "e5c303387fe24c96291a90c488b7d52b6118e19ffe48b3e22229653a91fc3cd1",
+      "sheet": "sheets/nyoro/read.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        512,
+        2048,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "read",
+      "frame": 3,
+      "file": "frames/nyoro/read_03.png",
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        64,
+        72,
+        236,
+        236
+      ],
+      "sha256": "2590a719d948c7e580e31df63d60e89f654d8c3ce1e209a31b77106e55eca365",
+      "sheet": "sheets/nyoro/read.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        768,
+        2048,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "eat",
+      "frame": 0,
+      "file": "frames/nyoro/eat_00.png",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        66,
+        76,
+        244,
+        236
+      ],
+      "sha256": "0bba587d361c4dc2c5540a1c2a814fcb07b25f1e66a3a0863429aed5579fdaee",
+      "sheet": "sheets/nyoro/eat.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        0,
+        2304,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "eat",
+      "frame": 1,
+      "file": "frames/nyoro/eat_01.png",
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        60,
+        76,
+        242,
+        236
+      ],
+      "sha256": "8ff434f15230482d50c449add151d4996f5fa14488cc58853296f64eca7f94f4",
+      "sheet": "sheets/nyoro/eat.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        256,
+        2304,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "eat",
+      "frame": 2,
+      "file": "frames/nyoro/eat_02.png",
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        60,
+        78,
+        240,
+        236
+      ],
+      "sha256": "f2e98bf44a78696f0cb20b333d1782f743c7640b22b696fd49c2f9320b9145bd",
+      "sheet": "sheets/nyoro/eat.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        512,
+        2304,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "eat",
+      "frame": 3,
+      "file": "frames/nyoro/eat_03.png",
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        64,
+        76,
+        230,
+        236
+      ],
+      "sha256": "2de81af9e963635e24457c7f8b26d910d0e77a3975b9ec7645cb6ce3a6002f58",
+      "sheet": "sheets/nyoro/eat.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        768,
+        2304,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "drink",
+      "frame": 0,
+      "file": "frames/nyoro/drink_00.png",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        68,
+        78,
+        246,
+        236
+      ],
+      "sha256": "c2892981a72474d4ba4f477b0b393d7c61d59bb7d6bccef0ee762e17827fb66c",
+      "sheet": "sheets/nyoro/drink.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        0,
+        2560,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "drink",
+      "frame": 1,
+      "file": "frames/nyoro/drink_01.png",
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        68,
+        78,
+        246,
+        236
+      ],
+      "sha256": "b5b41f2e4fb173ba9692a67864e97b34ec6f58f6eb4d5bcb53032547d545a228",
+      "sheet": "sheets/nyoro/drink.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        256,
+        2560,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "drink",
+      "frame": 2,
+      "file": "frames/nyoro/drink_02.png",
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        62,
+        76,
+        240,
+        236
+      ],
+      "sha256": "630f9a963f2c7435fc4d38e5a871378160b04602f96ac243f047b8e449b3efb1",
+      "sheet": "sheets/nyoro/drink.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        512,
+        2560,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "drink",
+      "frame": 3,
+      "file": "frames/nyoro/drink_03.png",
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        68,
+        78,
+        236,
+        236
+      ],
+      "sha256": "c30513699fb5b5583f43066062f9ace7aa86c57eca3b3b9ab6f928ce600189ef",
+      "sheet": "sheets/nyoro/drink.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        768,
+        2560,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "sleep",
+      "frame": 0,
+      "file": "frames/nyoro/sleep_00.png",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        38,
+        136,
+        218,
+        236
+      ],
+      "sha256": "e4ba2ff5f928f4b5d08252cc3e4dd831f0b53ae93139eb7004444c6b92c1e24d",
+      "sheet": "sheets/nyoro/sleep.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        0,
+        2816,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "sleep",
+      "frame": 1,
+      "file": "frames/nyoro/sleep_01.png",
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        36,
+        138,
+        218,
+        236
+      ],
+      "sha256": "463e8ffec97ef26ef200e93707578ec430a4182b06cb18912e76684ef57be0b1",
+      "sheet": "sheets/nyoro/sleep.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        256,
+        2816,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "sleep",
+      "frame": 2,
+      "file": "frames/nyoro/sleep_02.png",
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        34,
+        140,
+        216,
+        236
+      ],
+      "sha256": "9f678747e0c14b59e37aebcd759559ae5ff2e7441633fa0445fbc4024bba6750",
+      "sheet": "sheets/nyoro/sleep.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        512,
+        2816,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "sleep",
+      "frame": 3,
+      "file": "frames/nyoro/sleep_03.png",
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        32,
+        140,
+        216,
+        236
+      ],
+      "sha256": "be7521994fcfeb6aca72003516da884467108996eb2b1bdc38165106ef1d0033",
+      "sheet": "sheets/nyoro/sleep.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        768,
+        2816,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "stretch",
+      "frame": 0,
+      "file": "frames/nyoro/stretch_00.png",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        76,
+        78,
+        234,
+        236
+      ],
+      "sha256": "c9ce295e516b720d31dec9c6db4125a926d07316151148b1697228b610c6b6c2",
+      "sheet": "sheets/nyoro/stretch.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        0,
+        3072,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "stretch",
+      "frame": 1,
+      "file": "frames/nyoro/stretch_01.png",
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        64,
+        76,
+        232,
+        236
+      ],
+      "sha256": "5d6d43991c764a70d41d63589e67382b65b4c9e761dabda8ddacbad331e1f47c",
+      "sheet": "sheets/nyoro/stretch.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        256,
+        3072,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "stretch",
+      "frame": 2,
+      "file": "frames/nyoro/stretch_02.png",
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        62,
+        68,
+        232,
+        236
+      ],
+      "sha256": "bf72624bab74fc655340a54e881ae50ac12b5090cb82c91a22d87ab79228fd5a",
+      "sheet": "sheets/nyoro/stretch.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        512,
+        3072,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "stretch",
+      "frame": 3,
+      "file": "frames/nyoro/stretch_03.png",
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        76,
+        78,
+        228,
+        236
+      ],
+      "sha256": "fce5a2a69ddbf5ec55c463a7997a32a2aa6b739647e5b659592102e288c20005",
+      "sheet": "sheets/nyoro/stretch.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        768,
+        3072,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "joy",
+      "frame": 0,
+      "file": "frames/nyoro/joy_00.png",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        74,
+        100,
+        246,
+        236
+      ],
+      "sha256": "0d2af1c1add2bf496a42f60748a977ed7e7d555d2a0ce7fbefdac63b1de8afaa",
+      "sheet": "sheets/nyoro/joy.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        0,
+        3328,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "joy",
+      "frame": 1,
+      "file": "frames/nyoro/joy_01.png",
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        56,
+        68,
+        248,
+        222
+      ],
+      "sha256": "507cafeb9640001fb84a62b43422edcc48e51d3959311f9ba1f2d2aba872b431",
+      "sheet": "sheets/nyoro/joy.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        256,
+        3328,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "joy",
+      "frame": 2,
+      "file": "frames/nyoro/joy_02.png",
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        76,
+        98,
+        252,
+        236
+      ],
+      "sha256": "5f3e6e62805013fe070de182c92003b7015d18e0bda9c4dba8fb5cab2f4f14e0",
+      "sheet": "sheets/nyoro/joy.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        512,
+        3328,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "joy",
+      "frame": 3,
+      "file": "frames/nyoro/joy_03.png",
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        56,
+        80,
+        230,
+        236
+      ],
+      "sha256": "dcbea530b57c654c5094d456ef2912d9b90fabd443a246b65dfc3e3e0b3247bf",
+      "sheet": "sheets/nyoro/joy.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        768,
+        3328,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "walk",
+      "frame": 0,
+      "file": "frames/nyoro/walk_00.png",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 180,
+      "opaqueBounds": [
+        74,
+        78,
+        242,
+        236
+      ],
+      "sha256": "78e962edf0bb0005a44541b3c6fb1ecb125d5de4a5f817591ea25a46b69b3e43",
+      "sheet": "sheets/nyoro/walk.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        0,
+        3584,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "walk",
+      "frame": 1,
+      "file": "frames/nyoro/walk_01.png",
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 180,
+      "opaqueBounds": [
+        76,
+        74,
+        244,
+        234
+      ],
+      "sha256": "634756be272f8620a1f2abe14859219fab154e20aa7d77f5a5830e49a9cdb3dc",
+      "sheet": "sheets/nyoro/walk.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        256,
+        3584,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "walk",
+      "frame": 2,
+      "file": "frames/nyoro/walk_02.png",
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 180,
+      "opaqueBounds": [
+        76,
+        78,
+        244,
+        236
+      ],
+      "sha256": "79b9e7351aaabb5dd5a3747edf456e762bb40bb2713d7187685e16e214c01152",
+      "sheet": "sheets/nyoro/walk.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        512,
+        3584,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "walk",
+      "frame": 3,
+      "file": "frames/nyoro/walk_03.png",
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 180,
+      "opaqueBounds": [
+        76,
+        76,
+        242,
+        234
+      ],
+      "sha256": "ceee114c6c7715ddf94f650ad696159e24bf81451574f0bb4bcb79ddbecaf0a1",
+      "sheet": "sheets/nyoro/walk.png",
+      "masterSheet": "sheets/nyoro_all.png",
+      "masterRect": [
+        768,
+        3584,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "idle",
+      "frame": 0,
+      "file": "frames/irukaeru/idle_00.png",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        76,
+        68,
+        192,
+        236
+      ],
+      "sha256": "61fad05e4c52b48c4401222bb055395ce6a0922f398b59a106db7f3c530989c3",
+      "sheet": "sheets/irukaeru/idle.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        0,
+        0,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "idle",
+      "frame": 1,
+      "file": "frames/irukaeru/idle_01.png",
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        76,
+        68,
+        192,
+        236
+      ],
+      "sha256": "f573c97be65cbbc9c192760e7ab057d952f0d9ec9aef1793ef0f6f5fa4f2c098",
+      "sheet": "sheets/irukaeru/idle.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        256,
+        0,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "idle",
+      "frame": 2,
+      "file": "frames/irukaeru/idle_02.png",
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        76,
+        68,
+        192,
+        236
+      ],
+      "sha256": "25539f954636ebf2118911b58172ad838edbc6566beb7318cc2b4de2e4532fbd",
+      "sheet": "sheets/irukaeru/idle.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        512,
+        0,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "idle",
+      "frame": 3,
+      "file": "frames/irukaeru/idle_03.png",
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        74,
+        68,
+        190,
+        236
+      ],
+      "sha256": "a4492ebab8461b2eb59a7fd080466584734ffd6b8704c9714fc14970d1af4355",
+      "sheet": "sheets/irukaeru/idle.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        768,
+        0,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "walk",
+      "frame": 0,
+      "file": "frames/irukaeru/walk_00.png",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 180,
+      "opaqueBounds": [
+        76,
+        68,
+        192,
+        236
+      ],
+      "sha256": "3b2c5c392c234232ec94181ec6cd47aac1c552c00ed991a6b1d5fa909f2d75d2",
+      "sheet": "sheets/irukaeru/walk.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        0,
+        256,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "walk",
+      "frame": 1,
+      "file": "frames/irukaeru/walk_01.png",
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 180,
+      "opaqueBounds": [
+        72,
+        68,
+        188,
+        236
+      ],
+      "sha256": "2067271bc379d23f271d3906745c0e05ffae5666b2f4ba3665d97300fa951403",
+      "sheet": "sheets/irukaeru/walk.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        256,
+        256,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "walk",
+      "frame": 2,
+      "file": "frames/irukaeru/walk_02.png",
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 180,
+      "opaqueBounds": [
+        62,
+        68,
+        178,
+        234
+      ],
+      "sha256": "2a0b088737fb2446517b2dfa1d76a9248ff0bbaf8c52f89228f955481e790c1f",
+      "sheet": "sheets/irukaeru/walk.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        512,
+        256,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "walk",
+      "frame": 3,
+      "file": "frames/irukaeru/walk_03.png",
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 180,
+      "opaqueBounds": [
+        78,
+        68,
+        194,
+        236
+      ],
+      "sha256": "714eb357d693d1f89220c1c714abf08afb495d08ed47356bbaa686a5591b7111",
+      "sheet": "sheets/irukaeru/walk.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        768,
+        256,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "greet_bow",
+      "frame": 0,
+      "file": "frames/irukaeru/greet_bow_00.png",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        60,
+        68,
+        184,
+        236
+      ],
+      "sha256": "d8bf9c87a1f37afaf662411b52081f8edf17fe106bbf17cdb63ddb042ed6adfb",
+      "sheet": "sheets/irukaeru/greet_bow.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        0,
+        512,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "greet_bow",
+      "frame": 1,
+      "file": "frames/irukaeru/greet_bow_01.png",
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        66,
+        70,
+        184,
+        236
+      ],
+      "sha256": "bcf475b6ff6a8c793887d09af447f235e5265f8c418d3466504f881f19c23ef5",
+      "sheet": "sheets/irukaeru/greet_bow.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        256,
+        512,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "greet_bow",
+      "frame": 2,
+      "file": "frames/irukaeru/greet_bow_02.png",
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        68,
+        82,
+        186,
+        236
+      ],
+      "sha256": "e4fbcab3d79ffcc1d85fc00800c7a26d7b89bf5ab93393b4e7ac451408143f45",
+      "sheet": "sheets/irukaeru/greet_bow.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        512,
+        512,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "greet_bow",
+      "frame": 3,
+      "file": "frames/irukaeru/greet_bow_03.png",
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        68,
+        66,
+        190,
+        236
+      ],
+      "sha256": "44bb72dbe629f63c4d18fb20e14472bd26226da9d30b3d994d0ba95ad56e8aee",
+      "sheet": "sheets/irukaeru/greet_bow.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        768,
+        512,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "chat",
+      "frame": 0,
+      "file": "frames/irukaeru/chat_00.png",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        62,
+        70,
+        180,
+        236
+      ],
+      "sha256": "47e53618920ef719efc6dc526c77f61a3eaf437f256f632e00b7c6132144195f",
+      "sheet": "sheets/irukaeru/chat.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        0,
+        768,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "chat",
+      "frame": 1,
+      "file": "frames/irukaeru/chat_01.png",
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        62,
+        72,
+        174,
+        236
+      ],
+      "sha256": "c8b667b62f30da9592347f75eb97b26fa269f60e2ef70f9a9f00495bd448354b",
+      "sheet": "sheets/irukaeru/chat.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        256,
+        768,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "chat",
+      "frame": 2,
+      "file": "frames/irukaeru/chat_02.png",
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        66,
+        68,
+        184,
+        236
+      ],
+      "sha256": "510bbde945f70471bd2cc3a7e77f41c861f2b7c422b0a6829a76383f65978963",
+      "sheet": "sheets/irukaeru/chat.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        512,
+        768,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "chat",
+      "frame": 3,
+      "file": "frames/irukaeru/chat_03.png",
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        72,
+        70,
+        190,
+        236
+      ],
+      "sha256": "feceddca755de516ec1f22f9dd4eb0850b2975b3f8011504bf1654a52fe0e818",
+      "sheet": "sheets/irukaeru/chat.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        768,
+        768,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "carry_tray",
+      "frame": 0,
+      "file": "frames/irukaeru/carry_tray_00.png",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 180,
+      "opaqueBounds": [
+        50,
+        68,
+        178,
+        236
+      ],
+      "sha256": "04b76496586a69572d53c3a18594508b2ffa9ba392c313c0598a13e03fd3503c",
+      "sheet": "sheets/irukaeru/carry_tray.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        0,
+        1024,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "carry_tray",
+      "frame": 1,
+      "file": "frames/irukaeru/carry_tray_01.png",
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 180,
+      "opaqueBounds": [
+        46,
+        66,
+        166,
+        236
+      ],
+      "sha256": "3ef6bcda48358f1fb7d006b7003de33e6a095fe349b990ff96f858fd45cf2b70",
+      "sheet": "sheets/irukaeru/carry_tray.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        256,
+        1024,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "carry_tray",
+      "frame": 2,
+      "file": "frames/irukaeru/carry_tray_02.png",
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 180,
+      "opaqueBounds": [
+        70,
+        68,
+        194,
+        236
+      ],
+      "sha256": "be2c0f27beecf7997019c560123339f895240a01136585e4b4f52a198a3636bd",
+      "sheet": "sheets/irukaeru/carry_tray.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        512,
+        1024,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "carry_tray",
+      "frame": 3,
+      "file": "frames/irukaeru/carry_tray_03.png",
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 180,
+      "opaqueBounds": [
+        50,
+        68,
+        172,
+        236
+      ],
+      "sha256": "7d2c7fc353d80b885d3d741ab27e5d91e9890b809d5df8fb8a1cb7629ebd4264",
+      "sheet": "sheets/irukaeru/carry_tray.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        768,
+        1024,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "serve",
+      "frame": 0,
+      "file": "frames/irukaeru/serve_00.png",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        68,
+        68,
+        194,
+        236
+      ],
+      "sha256": "04432070f6840840394dd3a7afde643c4727004c113d5c989bf582e00ef5ef69",
+      "sheet": "sheets/irukaeru/serve.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        0,
+        1280,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "serve",
+      "frame": 1,
+      "file": "frames/irukaeru/serve_01.png",
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        70,
+        68,
+        218,
+        236
+      ],
+      "sha256": "c3fd2971dc5872edef87c8c082ac0b242b2301fc791b7274ebd901fbf51f8e21",
+      "sheet": "sheets/irukaeru/serve.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        256,
+        1280,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "serve",
+      "frame": 2,
+      "file": "frames/irukaeru/serve_02.png",
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        50,
+        72,
+        196,
+        236
+      ],
+      "sha256": "0e498650c730cd739e1fe9dae63a3c97016da412068165c952679c7cb13e1e76",
+      "sheet": "sheets/irukaeru/serve.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        512,
+        1280,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "serve",
+      "frame": 3,
+      "file": "frames/irukaeru/serve_03.png",
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        64,
+        68,
+        188,
+        236
+      ],
+      "sha256": "688bc9918150d28175162c43549d0a26fc17fdacc9ea82e0be089cd7c0c7156d",
+      "sheet": "sheets/irukaeru/serve.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        768,
+        1280,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "drink",
+      "frame": 0,
+      "file": "frames/irukaeru/drink_00.png",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        72,
+        68,
+        196,
+        236
+      ],
+      "sha256": "ede8e2f061a7b4a4ba33df3e2f0e517853ab345832ae2e66d301b764b549f0b1",
+      "sheet": "sheets/irukaeru/drink.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        0,
+        1536,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "drink",
+      "frame": 1,
+      "file": "frames/irukaeru/drink_01.png",
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        72,
+        68,
+        196,
+        236
+      ],
+      "sha256": "d51cd622e4f8236c52e937e9dded036f9d5fb6b80e2e17f4045b7ea00a2752f6",
+      "sheet": "sheets/irukaeru/drink.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        256,
+        1536,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "drink",
+      "frame": 2,
+      "file": "frames/irukaeru/drink_02.png",
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        74,
+        68,
+        200,
+        236
+      ],
+      "sha256": "102b789f221fe12fba51d7c6a9681374e70ea6578ceb38bb291defd20cf03661",
+      "sheet": "sheets/irukaeru/drink.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        512,
+        1536,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "drink",
+      "frame": 3,
+      "file": "frames/irukaeru/drink_03.png",
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        72,
+        68,
+        196,
+        236
+      ],
+      "sha256": "4fb2458dc7bfc37a79e1251422f953a9651b54d402ec493c0eae8db63cc57a6d",
+      "sheet": "sheets/irukaeru/drink.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        768,
+        1536,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "pour",
+      "frame": 0,
+      "file": "frames/irukaeru/pour_00.png",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        50,
+        68,
+        182,
+        236
+      ],
+      "sha256": "b783ea39c5a1ff4f2111ada976ae33c1e81f07f24b5f1c3d7d41be0cf14a0844",
+      "sheet": "sheets/irukaeru/pour.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        0,
+        1792,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "pour",
+      "frame": 1,
+      "file": "frames/irukaeru/pour_01.png",
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        60,
+        68,
+        186,
+        236
+      ],
+      "sha256": "35d55c13562ac85dd186384f18e8848101085ae0f1561f56115925c0c95b7891",
+      "sheet": "sheets/irukaeru/pour.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        256,
+        1792,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "pour",
+      "frame": 2,
+      "file": "frames/irukaeru/pour_02.png",
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        58,
+        68,
+        184,
+        236
+      ],
+      "sha256": "15342deaa977aba53af41a33e34e195d78b70eba0c1c3c4523bc8c34d583aa0c",
+      "sheet": "sheets/irukaeru/pour.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        512,
+        1792,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "pour",
+      "frame": 3,
+      "file": "frames/irukaeru/pour_03.png",
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        46,
+        68,
+        188,
+        236
+      ],
+      "sha256": "9c53f3a2d70aef6b96e46abff1168c35df833ce48e2964fff47cd625813c2723",
+      "sheet": "sheets/irukaeru/pour.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        768,
+        1792,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "wipe",
+      "frame": 0,
+      "file": "frames/irukaeru/wipe_00.png",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        60,
+        66,
+        206,
+        236
+      ],
+      "sha256": "787d8b8fc8c957118a6a520a79aa25dadd60291ea48ca8222a3d028e4aa6c906",
+      "sheet": "sheets/irukaeru/wipe.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        0,
+        2048,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "wipe",
+      "frame": 1,
+      "file": "frames/irukaeru/wipe_01.png",
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        56,
+        68,
+        180,
+        236
+      ],
+      "sha256": "bee8916cbc7be161b5470cfbc6ba896850c5d805601f0e41ef4679fe65e9ae2e",
+      "sheet": "sheets/irukaeru/wipe.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        256,
+        2048,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "wipe",
+      "frame": 2,
+      "file": "frames/irukaeru/wipe_02.png",
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        58,
+        66,
+        212,
+        236
+      ],
+      "sha256": "a3cf50a25562d3a9bd92c80b81f7d64ecd2a921aa6c4a590e670c03ec297104c",
+      "sheet": "sheets/irukaeru/wipe.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        512,
+        2048,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "wipe",
+      "frame": 3,
+      "file": "frames/irukaeru/wipe_03.png",
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        82,
+        66,
+        206,
+        236
+      ],
+      "sha256": "17a7875ecf7ef80761cd7ba94dca749458caa03df866bf860c879241299767b8",
+      "sheet": "sheets/irukaeru/wipe.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        768,
+        2048,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "tidy",
+      "frame": 0,
+      "file": "frames/irukaeru/tidy_00.png",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        78,
+        68,
+        204,
+        236
+      ],
+      "sha256": "c5285022caaacb7b55733f06fdf1402029de02c96e852a57daa4d54be30c4afb",
+      "sheet": "sheets/irukaeru/tidy.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        0,
+        2304,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "tidy",
+      "frame": 1,
+      "file": "frames/irukaeru/tidy_01.png",
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        58,
+        68,
+        182,
+        236
+      ],
+      "sha256": "291bc65df4ed3071905ce646a1e7ef679228d41a18dc827b5b0f2f662e50d97f",
+      "sheet": "sheets/irukaeru/tidy.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        256,
+        2304,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "tidy",
+      "frame": 2,
+      "file": "frames/irukaeru/tidy_02.png",
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        74,
+        68,
+        200,
+        236
+      ],
+      "sha256": "3b188654f24f0c4f2814fc20d54b9b057019d465e3d47f524189d4c547c61fe6",
+      "sheet": "sheets/irukaeru/tidy.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        512,
+        2304,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "tidy",
+      "frame": 3,
+      "file": "frames/irukaeru/tidy_03.png",
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        72,
+        66,
+        196,
+        236
+      ],
+      "sha256": "09eff9755a3058deae374e56e56306c03caf2fe1cfa026364902024581740580",
+      "sheet": "sheets/irukaeru/tidy.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        768,
+        2304,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "rest",
+      "frame": 0,
+      "file": "frames/irukaeru/rest_00.png",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        72,
+        88,
+        196,
+        236
+      ],
+      "sha256": "a8cecc5b7dd7cede1afc06d17b62802c62a3523c13d1bb4ec6d4ca6ce13c62d8",
+      "sheet": "sheets/irukaeru/rest.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        0,
+        2560,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "rest",
+      "frame": 1,
+      "file": "frames/irukaeru/rest_01.png",
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        64,
+        90,
+        190,
+        236
+      ],
+      "sha256": "9c1ea6eb63db614dc1692b65fc7cfaa6c70fd421fa245bfeb9b98a9210ded107",
+      "sheet": "sheets/irukaeru/rest.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        256,
+        2560,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "rest",
+      "frame": 2,
+      "file": "frames/irukaeru/rest_02.png",
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        68,
+        88,
+        192,
+        236
+      ],
+      "sha256": "1fe7f6ac5506b469045409cd367353e659a3336d249f060c22c675fb6076ea63",
+      "sheet": "sheets/irukaeru/rest.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        512,
+        2560,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "rest",
+      "frame": 3,
+      "file": "frames/irukaeru/rest_03.png",
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        70,
+        88,
+        190,
+        236
+      ],
+      "sha256": "4aed0d491cb0d03753db24f259c616a98e420fec2bef8283e2613a8e723f5bff",
+      "sheet": "sheets/irukaeru/rest.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        768,
+        2560,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "joy",
+      "frame": 0,
+      "file": "frames/irukaeru/joy_00.png",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        76,
+        68,
+        200,
+        236
+      ],
+      "sha256": "39c307af619e65dbcda05e948420c27122ba2556d4dae359fc259671fef23d3e",
+      "sheet": "sheets/irukaeru/joy.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        0,
+        2816,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "joy",
+      "frame": 1,
+      "file": "frames/irukaeru/joy_01.png",
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        52,
+        66,
+        174,
+        222
+      ],
+      "sha256": "b4fd7be219bd87560527647f507a9d69fcba59d4b70f9ffe3ca49ddf18eed966",
+      "sheet": "sheets/irukaeru/joy.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        256,
+        2816,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "joy",
+      "frame": 2,
+      "file": "frames/irukaeru/joy_02.png",
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        74,
+        72,
+        210,
+        234
+      ],
+      "sha256": "817bd07ee83677f5f3865d2243a630ed4fae91dc8d776eb03edc403c1faf0d4d",
+      "sheet": "sheets/irukaeru/joy.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        512,
+        2816,
+        256,
+        256
+      ]
+    },
+    {
+      "character": "irukaeru",
+      "action": "joy",
+      "frame": 3,
+      "file": "frames/irukaeru/joy_03.png",
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        76,
+        66,
+        198,
+        236
+      ],
+      "sha256": "734165fe98943cfc15841d7b7ecb06ce1d6dc7f08b1f6e60a662ec77a77d3401",
+      "sheet": "sheets/irukaeru/joy.png",
+      "masterSheet": "sheets/irukaeru_all.png",
+      "masterRect": [
+        768,
+        2816,
+        256,
+        256
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "character": "nyoro",
+      "action": "idle",
+      "sheet": "sheets/nyoro/idle.png",
+      "frames": 4,
+      "loop": true,
+      "fps": 4.166666666666667
+    },
+    {
+      "character": "nyoro",
+      "action": "umbrella_idle",
+      "sheet": "sheets/nyoro/umbrella_idle.png",
+      "frames": 4,
+      "loop": true,
+      "fps": 4.166666666666667
+    },
+    {
+      "character": "nyoro",
+      "action": "umbrella_walk",
+      "sheet": "sheets/nyoro/umbrella_walk.png",
+      "frames": 4,
+      "loop": true,
+      "fps": 5.555555555555555,
+      "motionType": "front_shuffle"
+    },
+    {
+      "character": "nyoro",
+      "action": "umbrella_open",
+      "sheet": "sheets/nyoro/umbrella_open.png",
+      "frames": 4,
+      "loop": false,
+      "fps": 4.166666666666667
+    },
+    {
+      "character": "nyoro",
+      "action": "umbrella_close",
+      "sheet": "sheets/nyoro/umbrella_close.png",
+      "frames": 4,
+      "loop": false,
+      "fps": 4.166666666666667
+    },
+    {
+      "character": "nyoro",
+      "action": "greet",
+      "sheet": "sheets/nyoro/greet.png",
+      "frames": 4,
+      "loop": false,
+      "fps": 4.166666666666667
+    },
+    {
+      "character": "nyoro",
+      "action": "chat",
+      "sheet": "sheets/nyoro/chat.png",
+      "frames": 4,
+      "loop": true,
+      "fps": 4.166666666666667
+    },
+    {
+      "character": "nyoro",
+      "action": "sit",
+      "sheet": "sheets/nyoro/sit.png",
+      "frames": 4,
+      "loop": true,
+      "fps": 4.166666666666667
+    },
+    {
+      "character": "nyoro",
+      "action": "read",
+      "sheet": "sheets/nyoro/read.png",
+      "frames": 4,
+      "loop": true,
+      "fps": 4.166666666666667
+    },
+    {
+      "character": "nyoro",
+      "action": "eat",
+      "sheet": "sheets/nyoro/eat.png",
+      "frames": 4,
+      "loop": true,
+      "fps": 4.166666666666667
+    },
+    {
+      "character": "nyoro",
+      "action": "drink",
+      "sheet": "sheets/nyoro/drink.png",
+      "frames": 4,
+      "loop": true,
+      "fps": 4.166666666666667
+    },
+    {
+      "character": "nyoro",
+      "action": "sleep",
+      "sheet": "sheets/nyoro/sleep.png",
+      "frames": 4,
+      "loop": true,
+      "fps": 4.166666666666667
+    },
+    {
+      "character": "nyoro",
+      "action": "stretch",
+      "sheet": "sheets/nyoro/stretch.png",
+      "frames": 4,
+      "loop": true,
+      "fps": 4.166666666666667
+    },
+    {
+      "character": "nyoro",
+      "action": "joy",
+      "sheet": "sheets/nyoro/joy.png",
+      "frames": 4,
+      "loop": false,
+      "fps": 4.166666666666667
+    },
+    {
+      "character": "nyoro",
+      "action": "walk",
+      "sheet": "sheets/nyoro/walk.png",
+      "frames": 4,
+      "loop": true,
+      "fps": 5.555555555555555,
+      "motionType": "front_shuffle"
+    },
+    {
+      "character": "irukaeru",
+      "action": "idle",
+      "sheet": "sheets/irukaeru/idle.png",
+      "frames": 4,
+      "loop": true,
+      "fps": 4.166666666666667
+    },
+    {
+      "character": "irukaeru",
+      "action": "walk",
+      "sheet": "sheets/irukaeru/walk.png",
+      "frames": 4,
+      "loop": true,
+      "fps": 5.555555555555555
+    },
+    {
+      "character": "irukaeru",
+      "action": "greet_bow",
+      "sheet": "sheets/irukaeru/greet_bow.png",
+      "frames": 4,
+      "loop": false,
+      "fps": 4.166666666666667
+    },
+    {
+      "character": "irukaeru",
+      "action": "chat",
+      "sheet": "sheets/irukaeru/chat.png",
+      "frames": 4,
+      "loop": true,
+      "fps": 4.166666666666667
+    },
+    {
+      "character": "irukaeru",
+      "action": "carry_tray",
+      "sheet": "sheets/irukaeru/carry_tray.png",
+      "frames": 4,
+      "loop": true,
+      "fps": 5.555555555555555,
+      "motionType": "carry_idle_sway"
+    },
+    {
+      "character": "irukaeru",
+      "action": "serve",
+      "sheet": "sheets/irukaeru/serve.png",
+      "frames": 4,
+      "loop": false,
+      "fps": 4.166666666666667
+    },
+    {
+      "character": "irukaeru",
+      "action": "drink",
+      "sheet": "sheets/irukaeru/drink.png",
+      "frames": 4,
+      "loop": true,
+      "fps": 4.166666666666667
+    },
+    {
+      "character": "irukaeru",
+      "action": "pour",
+      "sheet": "sheets/irukaeru/pour.png",
+      "frames": 4,
+      "loop": true,
+      "fps": 4.166666666666667
+    },
+    {
+      "character": "irukaeru",
+      "action": "wipe",
+      "sheet": "sheets/irukaeru/wipe.png",
+      "frames": 4,
+      "loop": true,
+      "fps": 4.166666666666667
+    },
+    {
+      "character": "irukaeru",
+      "action": "tidy",
+      "sheet": "sheets/irukaeru/tidy.png",
+      "frames": 4,
+      "loop": false,
+      "fps": 4.166666666666667
+    },
+    {
+      "character": "irukaeru",
+      "action": "rest",
+      "sheet": "sheets/irukaeru/rest.png",
+      "frames": 4,
+      "loop": true,
+      "fps": 4.166666666666667
+    },
+    {
+      "character": "irukaeru",
+      "action": "joy",
+      "sheet": "sheets/irukaeru/joy.png",
+      "frames": 4,
+      "loop": false,
+      "fps": 4.166666666666667
+    }
+  ],
+  "perspective": "fixed front / three-quarter billboard; not a four-direction turnaround",
+  "limitations": [
+    "Generated art has modest pose-to-pose proportion variation.",
+    "Nyoro walk and umbrella_walk are small front-view shuffle cycles, not full alternating-leg locomotion.",
+    "No game integration or runtime animation tests performed.",
+    "Irukaeru carry_tray is a carrying/sway loop, not an alternating-leg walk."
+  ]
+}

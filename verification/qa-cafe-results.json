@@ -1,0 +1,101 @@
+{
+  "checks": [
+    {
+      "name": "new save: four assets, no invented cafe stock",
+      "result": true
+    },
+    {
+      "name": "old v2 pantry and furniture preserved; cafe starts empty",
+      "result": true
+    },
+    {
+      "name": "exact deposit, insufficient and invalid quantities rejected",
+      "result": true
+    },
+    {
+      "name": "failed persistence rolls back both owners",
+      "result": true
+    },
+    {
+      "name": "camera switch cannot teleport residents",
+      "result": true
+    },
+    {
+      "name": "home to cafe via door, two seats for three guests",
+      "result": true
+    },
+    {
+      "name": "service conserves food through multiple guests",
+      "result": true
+    },
+    {
+      "name": "orders canceled on departure; reload refunds unconsumed once",
+      "result": true
+    },
+    {
+      "name": "empty stock cannot reserve or become negative",
+      "result": true
+    },
+    {
+      "name": "saved cafe pantry survives actual restore",
+      "result": true
+    },
+    {
+      "name": "ready bubble is single collect for each recipe",
+      "result": true
+    },
+    {
+      "name": "furniture move rotate store confirm at 320",
+      "result": true
+    },
+    {
+      "name": "furniture place at 320",
+      "result": true
+    },
+    {
+      "name": "furniture cancel at 320",
+      "result": true
+    },
+    {
+      "name": "editor within viewport at 320",
+      "result": true
+    },
+    {
+      "name": "furniture move rotate store confirm at 390",
+      "result": true
+    },
+    {
+      "name": "furniture place at 390",
+      "result": true
+    },
+    {
+      "name": "furniture cancel at 390",
+      "result": true
+    },
+    {
+      "name": "editor within viewport at 390",
+      "result": true
+    },
+    {
+      "name": "furniture move rotate store confirm at 430",
+      "result": true
+    },
+    {
+      "name": "furniture place at 430",
+      "result": true
+    },
+    {
+      "name": "furniture cancel at 430",
+      "result": true
+    },
+    {
+      "name": "editor within viewport at 430",
+      "result": true
+    },
+    {
+      "name": "room swipe blocked during editor and cooking modal",
+      "result": true
+    }
+  ],
+  "errors": []
+}

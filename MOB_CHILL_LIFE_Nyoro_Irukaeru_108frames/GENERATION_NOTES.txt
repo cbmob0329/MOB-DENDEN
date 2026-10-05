@@ -1,0 +1,5 @@
+Raster artwork generated with the built-in image generation tool using the user's two actual character references.
+Nyoro prompt set: (1) idle/walk with umbrella on/off, (2) umbrella opening/closing and greet/chat, (3) sit/read/eat/drink, (4) sleep/stretch/joy and alternate stride walking.
+Each generation requested four columns by four rows, four distinct poses per row, fixed front three-quarter perspective, transparent alpha, no grid/text/shadows, consistent identity and proportions. Nyoro invariants: black charcoal salamander/frog, orange lava cracks/cape, gold goggles and brooch, closed yellow muzzle, short spikes. Umbrella always on the reference hand side. No mirrored synthesis.
+Irukaeru prompt set is provided separately when available.
+Mechanical export only: isolate each generated character's connected alpha component; remove near-transparent edge artifacts; resample nearest-neighbor to a shared 2px pixel grid; pack into fixed 256px cells with consistent anchor and body scale. Raster figures were not drawn procedurally. Raw generation grids are deliberately not shipped as final sheets because their spacing is irregular.
