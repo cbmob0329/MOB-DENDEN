@@ -1,0 +1,197 @@
+{
+  "checks": [
+    "five meal phases, exclusive food ownership, persistent plate",
+    "shop 320 confirm/cancel/double-tap transaction and touch size",
+    "shop 390 confirm/cancel/double-tap transaction and touch size",
+    "shop 430 confirm/cancel/double-tap transaction and touch size",
+    "purchase persistence failure rolls back both inventory and hearts",
+    "three room camera navigation never moves actors; actual bath sprites ready",
+    "four bath routes, serialized entry/exit gate, exit and reservation release (actual installed textures)",
+    "reload preserves bath reservation and safely resumes entry"
+  ],
+  "owners": [
+    {
+      "time": 0,
+      "stage": "take",
+      "plate": true,
+      "hand": false,
+      "plateMesh": true
+    },
+    {
+      "time": 0.3,
+      "stage": "take",
+      "plate": true,
+      "hand": false,
+      "plateMesh": true
+    },
+    {
+      "time": 0.58,
+      "stage": "take",
+      "plate": false,
+      "hand": true,
+      "plateMesh": true
+    },
+    {
+      "time": 0.65,
+      "stage": "handlift",
+      "plate": false,
+      "hand": true,
+      "plateMesh": true
+    },
+    {
+      "time": 1,
+      "stage": "handlift",
+      "plate": false,
+      "hand": true,
+      "plateMesh": true
+    },
+    {
+      "time": 1.4,
+      "stage": "bite",
+      "plate": false,
+      "hand": true,
+      "plateMesh": true
+    },
+    {
+      "time": 2.4,
+      "stage": "chew",
+      "plate": false,
+      "hand": false,
+      "plateMesh": true
+    },
+    {
+      "time": 30,
+      "stage": "chew",
+      "plate": false,
+      "hand": false,
+      "plateMesh": true
+    },
+    {
+      "time": 31.2,
+      "stage": "finish",
+      "plate": false,
+      "hand": false,
+      "plateMesh": true
+    }
+  ],
+  "failure": {
+    "ok": false,
+    "before": {
+      "h": 16,
+      "e": 16
+    },
+    "after": {
+      "h": 16,
+      "e": 16
+    }
+  },
+  "nav": {
+    "before": [
+      [
+        12,
+        0.48,
+        -1.03
+      ],
+      [
+        0.8,
+        0,
+        1.4
+      ],
+      [
+        1.4,
+        0,
+        1.4
+      ],
+      [
+        10.7,
+        0,
+        -2.25
+      ]
+    ],
+    "after": [
+      [
+        12,
+        0.48,
+        -1.03
+      ],
+      [
+        0.8,
+        0,
+        1.4
+      ],
+      [
+        1.4,
+        0,
+        1.4
+      ],
+      [
+        10.7,
+        0,
+        -2.25
+      ]
+    ],
+    "available": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "view": "bath"
+  },
+  "bath": {
+    "accepted": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "entered": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "left": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "max": 4,
+    "reservations": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "gate": null,
+    "lines": [
+      "モブデンデン · 窓をながめる",
+      "モブピンク · 本を読んで戻す",
+      "モブピンク · ふたりでお話"
+    ],
+    "pos": [
+      [
+        -2.3999999999999995,
+        0,
+        -3.2
+      ],
+      [
+        3.000000000000001,
+        0,
+        -1.8
+      ],
+      [
+        1.9,
+        0,
+        3.45
+      ],
+      [
+        10.7,
+        0,
+        -2.25
+      ]
+    ]
+  },
+  "errors": []
+}

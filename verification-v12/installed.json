@@ -1,0 +1,95 @@
+{
+  "root": "D:/GitHub/MOB-DENDEN",
+  "results": [
+    {
+      "file": "MOB_CHILL_LIFE.html",
+      "state": {
+        "version": "V12 final-20261006",
+        "bath": "soak",
+        "pose": "bath_3",
+        "frames": [
+          [
+            true,
+            true
+          ],
+          [
+            true,
+            true
+          ],
+          [
+            true,
+            true
+          ],
+          [
+            true,
+            true
+          ]
+        ],
+        "mouth": [
+          [
+            129,
+            164
+          ],
+          [
+            131,
+            179
+          ],
+          [
+            119,
+            167
+          ],
+          [
+            129,
+            163
+          ]
+        ]
+      },
+      "errors": []
+    },
+    {
+      "file": "index.html",
+      "state": {
+        "version": "V12 final-20261006",
+        "bath": "soak",
+        "pose": "bath_3",
+        "frames": [
+          [
+            true,
+            true
+          ],
+          [
+            true,
+            true
+          ],
+          [
+            true,
+            true
+          ],
+          [
+            true,
+            true
+          ]
+        ],
+        "mouth": [
+          [
+            129,
+            164
+          ],
+          [
+            131,
+            179
+          ],
+          [
+            119,
+            167
+          ],
+          [
+            129,
+            163
+          ]
+        ]
+      },
+      "errors": []
+    }
+  ]
+}

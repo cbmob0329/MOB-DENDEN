@@ -1,0 +1,34 @@
+{
+  "result": {
+    "frames": [
+      {
+        "meal": 5,
+        "bath": 4
+      },
+      {
+        "meal": 5,
+        "bath": 4
+      },
+      {
+        "meal": 5,
+        "bath": 4
+      },
+      {
+        "meal": 5,
+        "bath": 4
+      }
+    ],
+    "pose": "meal_2",
+    "center": [
+      0.46875,
+      0.1484375
+    ],
+    "hand": [
+      0.515625,
+      0.6640625
+    ],
+    "depth": 1
+  },
+  "errors": [],
+  "note": "Existing sprite duplicated in browser memory solely as sheet loader fixture. No art exported or installed."
+}

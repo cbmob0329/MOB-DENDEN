@@ -1,0 +1,503 @@
+{
+  "results": [
+    {
+      "key": "denden",
+      "pose": "meal_0",
+      "stage": "take",
+      "visible": true,
+      "copies": 0,
+      "pos": [
+        13.68,
+        0.8760000000000001,
+        -0.12
+      ],
+      "owner": "plate",
+      "depth": 1
+    },
+    {
+      "key": "denden",
+      "pose": "meal_0",
+      "stage": "take",
+      "visible": true,
+      "copies": 0,
+      "pos": [
+        14.373323521781407,
+        0.9284272590456376,
+        -0.8921677705329963
+      ],
+      "owner": "hand",
+      "depth": 1
+    },
+    {
+      "key": "denden",
+      "pose": "meal_1",
+      "stage": "handlift",
+      "visible": true,
+      "copies": 0,
+      "pos": [
+        14.314181374947223,
+        0.9539598046692986,
+        -1.064299221277924
+      ],
+      "owner": "hand",
+      "depth": 1
+    },
+    {
+      "key": "denden",
+      "pose": "meal_2",
+      "stage": "bite",
+      "visible": true,
+      "copies": 0,
+      "pos": [
+        14.135818307794853,
+        1.0652079008148418,
+        -1.018755653036361
+      ],
+      "owner": "hand",
+      "depth": 1
+    },
+    {
+      "key": "denden",
+      "pose": "meal_3",
+      "stage": "chew",
+      "visible": false,
+      "copies": 0,
+      "pos": [
+        14.1418118551249,
+        1.080499875469209,
+        -1.0202860569265444
+      ],
+      "owner": "none",
+      "depth": 1
+    },
+    {
+      "key": "denden",
+      "pose": "meal_4",
+      "stage": "finish",
+      "visible": false,
+      "copies": 0,
+      "pos": [
+        14.1418118551249,
+        1.080499875469209,
+        -1.0202860569265444
+      ],
+      "owner": "none",
+      "depth": 1
+    },
+    {
+      "key": "pink",
+      "pose": "meal_0",
+      "stage": "take",
+      "visible": true,
+      "copies": 0,
+      "pos": [
+        13.68,
+        0.8270000000000001,
+        -0.12
+      ],
+      "owner": "plate",
+      "depth": 1
+    },
+    {
+      "key": "pink",
+      "pose": "meal_0",
+      "stage": "take",
+      "visible": true,
+      "copies": 0,
+      "pos": [
+        14.345860635463879,
+        0.7648846351036329,
+        -0.8851553443784035
+      ],
+      "owner": "hand",
+      "depth": 1
+    },
+    {
+      "key": "pink",
+      "pose": "meal_1",
+      "stage": "handlift",
+      "visible": true,
+      "copies": 0,
+      "pos": [
+        14.161039651319717,
+        0.7902549038474098,
+        -1.0251957193477756
+      ],
+      "owner": "hand",
+      "depth": 1
+    },
+    {
+      "key": "pink",
+      "pose": "meal_2",
+      "stage": "bite",
+      "visible": true,
+      "copies": 0,
+      "pos": [
+        14.075789618081254,
+        0.8904436159680129,
+        -1.0034278120765092
+      ],
+      "owner": "hand",
+      "depth": 1
+    },
+    {
+      "key": "pink",
+      "pose": "meal_3",
+      "stage": "chew",
+      "visible": false,
+      "copies": 0,
+      "pos": [
+        14.084128466540449,
+        0.8904436159680129,
+        -1.0055570696628513
+      ],
+      "owner": "none",
+      "depth": 1
+    },
+    {
+      "key": "pink",
+      "pose": "meal_4",
+      "stage": "finish",
+      "visible": false,
+      "copies": 0,
+      "pos": [
+        14.084128466540449,
+        0.8904436159680129,
+        -1.0055570696628513
+      ],
+      "owner": "none",
+      "depth": 1
+    },
+    {
+      "key": "nyoro",
+      "pose": "meal_0",
+      "stage": "take",
+      "visible": true,
+      "copies": 0,
+      "pos": [
+        13.68,
+        0.8230000000000001,
+        -0.12
+      ],
+      "owner": "plate",
+      "depth": 1
+    },
+    {
+      "key": "nyoro",
+      "pose": "meal_0",
+      "stage": "take",
+      "visible": true,
+      "copies": 0,
+      "pos": [
+        13.63590523966502,
+        0.8132456844626089,
+        -0.703873969633882
+      ],
+      "owner": "hand",
+      "depth": 1
+    },
+    {
+      "key": "nyoro",
+      "pose": "meal_1",
+      "stage": "handlift",
+      "visible": true,
+      "copies": 0,
+      "pos": [
+        13.783036181226931,
+        0.9145182379861267,
+        -0.9286755870660648
+      ],
+      "owner": "hand",
+      "depth": 1
+    },
+    {
+      "key": "nyoro",
+      "pose": "meal_2",
+      "stage": "bite",
+      "visible": true,
+      "copies": 0,
+      "pos": [
+        13.933048929878794,
+        0.9310049195691309,
+        -0.9669801305144803
+      ],
+      "owner": "hand",
+      "depth": 1
+    },
+    {
+      "key": "nyoro",
+      "pose": "meal_3",
+      "stage": "chew",
+      "visible": false,
+      "copies": 0,
+      "pos": [
+        13.953618784315514,
+        0.9321976935921714,
+        -0.9722324766655893
+      ],
+      "owner": "none",
+      "depth": 1
+    },
+    {
+      "key": "nyoro",
+      "pose": "meal_4",
+      "stage": "finish",
+      "visible": false,
+      "copies": 0,
+      "pos": [
+        13.953618784315514,
+        0.9321976935921714,
+        -0.9722324766655893
+      ],
+      "owner": "none",
+      "depth": 1
+    },
+    {
+      "key": "irukaeru",
+      "pose": "meal_0",
+      "stage": "take",
+      "visible": true,
+      "copies": 0,
+      "pos": [
+        13.68,
+        0.8760000000000001,
+        -0.12
+      ],
+      "owner": "plate",
+      "depth": 1
+    },
+    {
+      "key": "irukaeru",
+      "pose": "meal_0",
+      "stage": "take",
+      "visible": true,
+      "copies": 0,
+      "pos": [
+        13.748192007775314,
+        0.8751610355464603,
+        -0.7325454887308654
+      ],
+      "owner": "hand",
+      "depth": 1
+    },
+    {
+      "key": "irukaeru",
+      "pose": "meal_1",
+      "stage": "handlift",
+      "visible": true,
+      "copies": 0,
+      "pos": [
+        13.885257687461946,
+        0.95810938312916,
+        -0.9547770228582219
+      ],
+      "owner": "hand",
+      "depth": 1
+    },
+    {
+      "key": "irukaeru",
+      "pose": "meal_2",
+      "stage": "bite",
+      "visible": true,
+      "copies": 0,
+      "pos": [
+        14.00167016063972,
+        1.0475944587700883,
+        -0.9845020074135269
+      ],
+      "owner": "hand",
+      "depth": 1
+    },
+    {
+      "key": "irukaeru",
+      "pose": "meal_3",
+      "stage": "chew",
+      "visible": false,
+      "copies": 0,
+      "pos": [
+        14.018794581582709,
+        1.0636146226937107,
+        -0.9888745899569077
+      ],
+      "owner": "none",
+      "depth": 1
+    },
+    {
+      "key": "irukaeru",
+      "pose": "meal_4",
+      "stage": "finish",
+      "visible": false,
+      "copies": 0,
+      "pos": [
+        14.018794581582709,
+        1.0636146226937107,
+        -0.9888745899569077
+      ],
+      "owner": "none",
+      "depth": 1
+    },
+    [
+      {
+        "key": "denden",
+        "pose": "bath_0",
+        "center": [
+          0.5,
+          0.203125
+        ],
+        "pos": [
+          26.8,
+          0.55,
+          -0.85
+        ]
+      },
+      {
+        "key": "pink",
+        "pose": "bath_0",
+        "center": [
+          0.5,
+          0.203125
+        ],
+        "pos": [
+          29.2,
+          0.55,
+          -0.85
+        ]
+      },
+      {
+        "key": "nyoro",
+        "pose": "bath_0",
+        "center": [
+          0.5,
+          0.203125
+        ],
+        "pos": [
+          26.8,
+          0.55,
+          0.75
+        ]
+      },
+      {
+        "key": "irukaeru",
+        "pose": "bath_0",
+        "center": [
+          0.5,
+          0.203125
+        ],
+        "pos": [
+          29.2,
+          0.55,
+          0.75
+        ]
+      }
+    ],
+    [
+      {
+        "key": "denden",
+        "pose": "bath_0",
+        "center": [
+          0.5,
+          0.203125
+        ],
+        "pos": [
+          26.8,
+          0.55,
+          -0.85
+        ]
+      },
+      {
+        "key": "pink",
+        "pose": "bath_0",
+        "center": [
+          0.5,
+          0.203125
+        ],
+        "pos": [
+          29.2,
+          0.55,
+          -0.85
+        ]
+      },
+      {
+        "key": "nyoro",
+        "pose": "bath_0",
+        "center": [
+          0.5,
+          0.203125
+        ],
+        "pos": [
+          26.8,
+          0.55,
+          0.75
+        ]
+      },
+      {
+        "key": "irukaeru",
+        "pose": "bath_0",
+        "center": [
+          0.5,
+          0.203125
+        ],
+        "pos": [
+          29.2,
+          0.55,
+          0.75
+        ]
+      }
+    ],
+    [
+      {
+        "key": "denden",
+        "pose": "bath_0",
+        "center": [
+          0.5,
+          0.203125
+        ],
+        "pos": [
+          26.8,
+          0.55,
+          -0.85
+        ]
+      },
+      {
+        "key": "pink",
+        "pose": "bath_0",
+        "center": [
+          0.5,
+          0.203125
+        ],
+        "pos": [
+          29.2,
+          0.55,
+          -0.85
+        ]
+      },
+      {
+        "key": "nyoro",
+        "pose": "bath_0",
+        "center": [
+          0.5,
+          0.203125
+        ],
+        "pos": [
+          26.8,
+          0.55,
+          0.75
+        ]
+      },
+      {
+        "key": "irukaeru",
+        "pose": "bath_0",
+        "center": [
+          0.5,
+          0.203125
+        ],
+        "pos": [
+          29.2,
+          0.55,
+          0.75
+        ]
+      }
+    ]
+  ],
+  "errors": []
+}

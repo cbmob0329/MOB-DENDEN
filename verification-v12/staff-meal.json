@@ -1,0 +1,49 @@
+{
+  "checks": [
+    "staff pending meal reload refunds once, repeated request no extra inventory transfer",
+    "staff consumed meal reload never refunds or consumes twice",
+    "staff meal finishes, earns only meal hearts, clears own plate and returns to shelf"
+  ],
+  "transfer": {
+    "first": true,
+    "second": false,
+    "stock": 1,
+    "mode": "staffSeating"
+  },
+  "eaten": {
+    "mode": "eating",
+    "stock": 1,
+    "eaten": 1,
+    "pose": "meal_0"
+  },
+  "complete": {
+    "states": [
+      "staffSeating",
+      "eating",
+      "satisfied",
+      "staffReturning",
+      null
+    ],
+    "stock": 0,
+    "eaten": 1,
+    "dirty": [
+      false,
+      false,
+      false
+    ],
+    "pending": [
+      3
+    ],
+    "pos": [
+      10.7,
+      0,
+      -2.25
+    ],
+    "seat": [
+      null,
+      null,
+      null
+    ]
+  },
+  "errors": []
+}

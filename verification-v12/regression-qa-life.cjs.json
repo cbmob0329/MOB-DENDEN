@@ -1,0 +1,26 @@
+[
+  {
+    "file": "qa-life.cjs",
+    "code": 0,
+    "output": "inventory {\n  wheat: 10,\n  beans: 10,\n  dorayaki: 0,\n  egg: 10,\n  corn: 10,\n  milk: 10,\n  omelet: 0,\n  soup: 0\n}\nstates [\n  'seating',\n  'seated',\n  'eating',\n  'satisfied',\n  'toHome',\n  'clean:approach',\n  'clean:return',\n  null,\n  'toCafe',\n  'waiting'\n]\nPassed 7\n",
+    "error": ""
+  },
+  {
+    "file": "qa-life-edges.cjs",
+    "code": 0,
+    "output": "contacts [\n  {\n    contact: {\n      safe: true,\n      target: [Array],\n      actual: [Array],\n      projectedErrorPx: 1.5948808767523112e-14,\n      depthDifference: 0.28652695243668286,\n      footY: 0.035,\n      weight: 1\n    },\n    pos: [ 0.40000000000000036, 0, 3.6 ],\n    height: 0.49\n  },\n  {\n    contact: {\n      safe: true,\n      target: [Array],\n      actual: [Array],\n      projectedErrorPx: 1.2902880211047162e-14,\n      depthDifference: 0.31015796060223105,\n      footY: 0.03500000000000003,\n      weight: 1\n    },\n    pos: [ 0.40000000000000036, 0, 3.6 ],\n    height: 0.55\n  }\n]\nPassed 9 edge checks\n",
+    "error": ""
+  },
+  {
+    "file": "qa-kitchen-v11.cjs",
+    "code": 0,
+    "output": "{\n  shader: 'uniform float rotation;\\n' +\n    'uniform vec2 center;\\n' +\n    '#include <common>\\n' +\n    '#include <uv_pars_vertex>\\n' +\n    '#include <fog_pars_vertex>\\n' +\n    '#include <logdepthbuf_pars_vertex>\\n' +\n    '#include <clipping_planes_pars_vertex>\\n' +\n    'void main() {\\n' +\n    '\\t#include <uv_vertex>\\n' +\n    '\\tvec4 mvPosition = modelViewMatrix * vec4( 0.0, 0.0, 0.0, 1.0 );\\n' +\n    '\\tvec2 scale;\\n' +\n    '\\tscale.x = length( vec3( modelMatrix[ 0 ].x, modelMatrix[ 0 ].y, modelMatrix[ 0 ].z ) );\\n' +\n    '\\tscale.y = length( vec3( modelMatrix[ 1 ].x, modelMatrix[ 1 ].y, modelMatrix[ 1 ].z ) );\\n' +\n    '\\t#ifndef USE_SIZEATTENUATION\\n' +\n    '\\t\\tbool isPerspective = isPerspectiveMatrix( projectionMatrix );\\n' +\n    '\\t\\tif ( isPerspective ) scale *= - mvPosition.z;\\n' +\n    '\\t#endif\\n' +\n    '\\tvec2 alignedPosition = ( position.xy - ( center - vec2( 0.5 ) ) ) * scale;\\n' +\n    '\\tvec2 rotatedPosition;\\n' +\n    '\\trotatedPosition.x = cos( rotation ) * alignedPosition.x - sin( rotation ) * alignedPosition.y;\\n' +\n    '\\trotatedPosition.y = sin( rotation ) * alignedPosition.x + cos( rotation ) * alignedPosition.y;\\n' +\n    '\\tmvPosition.xy += rotatedPosition;\\n' +\n    '\\tgl_Position = projectionMatrix * mvPosition;\\n' +\n    '\\t#include <logdepthbuf_vertex>\\n' +\n    '\\t#include <clipping_planes_vertex>\\n' +\n    '\\t#include <fog_vertex>\\n' +\n    '}',\n  valid: null,\n  bounds: { key: 'stove', x: -2.3, z: 3.1, w: 2.08, d: 1.2000000000000002 }\n}\nPassed 6\n",
+    "error": ""
+  },
+  {
+    "file": "qa-navigation-touch-v11.cjs",
+    "code": 0,
+    "output": "Passed 6 navigation/touch checks\n",
+    "error": ""
+  }
+]

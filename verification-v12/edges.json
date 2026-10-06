@@ -1,0 +1,32 @@
+{
+  "checks": [
+    "insufficient hearts and malformed quantities change nothing",
+    "cancel cart never consumes inventory or currency",
+    "bath waterline anchor, exact dialogue, no meal action/currency/food side effects",
+    "missing art after reload can cancel and return home without deadlock"
+  ],
+  "boundary": {
+    "ok": true,
+    "blocked": false,
+    "at": [
+      26.8,
+      0.55,
+      -0.85
+    ],
+    "center": [
+      0.5,
+      0.203125
+    ],
+    "hearts": 0,
+    "pending": 0,
+    "eggDelta": 0,
+    "lines": [
+      "ここでの時間は、少しゆっくりですね。",
+      "気持ち良かったでやんす♪",
+      "いい湯でやんす～♪",
+      "窓辺の光が、やわらかいですね。",
+      "今日も、ゆっくり過ごせる一日にしたいですね。"
+    ]
+  },
+  "errors": []
+}

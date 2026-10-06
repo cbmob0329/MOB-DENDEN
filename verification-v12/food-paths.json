@@ -1,0 +1,96 @@
+{
+  "checks": [
+    "4 residents x3 dishes: single prop, continuous hand switches, actual mouth contact, no chew respawn",
+    "actual four-resident bath mobile 320",
+    "actual four-resident bath mobile 390",
+    "actual four-resident bath mobile 430",
+    "old V11 save without bath/staffMeal fields preserves inventory and wallet"
+  ],
+  "paths": [
+    {
+      "id": 0,
+      "kind": "dorayaki",
+      "maxStep": 0.04289104251057122,
+      "endError": 0.0005282180784071461,
+      "hidden": true
+    },
+    {
+      "id": 0,
+      "kind": "omelet",
+      "maxStep": 0.04303858006758596,
+      "endError": 0.0005282180784071461,
+      "hidden": true
+    },
+    {
+      "id": 0,
+      "kind": "soup",
+      "maxStep": 0.04305260011905944,
+      "endError": 0.0005282180784071461,
+      "hidden": true
+    },
+    {
+      "id": 1,
+      "kind": "dorayaki",
+      "maxStep": 0.041790488540352826,
+      "endError": 0.00024589716034400735,
+      "hidden": true
+    },
+    {
+      "id": 1,
+      "kind": "omelet",
+      "maxStep": 0.0417257234521861,
+      "endError": 0.00024589716034400735,
+      "hidden": true
+    },
+    {
+      "id": 1,
+      "kind": "soup",
+      "maxStep": 0.04172249427386873,
+      "endError": 0.00024589716034400735,
+      "hidden": true
+    },
+    {
+      "id": 2,
+      "kind": "dorayaki",
+      "maxStep": 0.01774783041435818,
+      "endError": 0.0006078081832824901,
+      "hidden": true
+    },
+    {
+      "id": 2,
+      "kind": "omelet",
+      "maxStep": 0.01776097241726843,
+      "endError": 0.0006078081832824901,
+      "hidden": true
+    },
+    {
+      "id": 2,
+      "kind": "soup",
+      "maxStep": 0.01776688808329056,
+      "endError": 0.0006078081832824901,
+      "hidden": true
+    },
+    {
+      "id": 3,
+      "kind": "dorayaki",
+      "maxStep": 0.02102946182442921,
+      "endError": 0.000725899173618006,
+      "hidden": true
+    },
+    {
+      "id": 3,
+      "kind": "omelet",
+      "maxStep": 0.021179475467757385,
+      "endError": 0.000725899173618006,
+      "hidden": true
+    },
+    {
+      "id": 3,
+      "kind": "soup",
+      "maxStep": 0.021195734211265853,
+      "endError": 0.000725899173618006,
+      "hidden": true
+    }
+  ],
+  "errors": []
+}

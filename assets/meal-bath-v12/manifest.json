@@ -1,0 +1,1648 @@
+{
+  "denden": {
+    "meal": {
+      "sheet": "sheets/denden_meal.png",
+      "sheetSize": [
+        1280,
+        256
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "name": "take",
+          "file": "frames/denden/meal/00_take.png",
+          "rect": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "contentBoundsPx": [
+            64,
+            84,
+            197,
+            239
+          ],
+          "durationMs": 650,
+          "seatAnchorPx": [
+            113,
+            218
+          ],
+          "handAnchorPx": [
+            184,
+            177
+          ],
+          "mouthAnchorPx": [
+            126,
+            164
+          ],
+          "propVisibilityPhase": "acquire",
+          "runtimeFood": {
+            "visible": "after contact",
+            "showAfterFraction": 0.55,
+            "attachTo": "hand"
+          },
+          "heldFoodAnchorPx": [
+            184,
+            177
+          ]
+        },
+        {
+          "index": 1,
+          "name": "handlift",
+          "file": "frames/denden/meal/01_handlift.png",
+          "rect": [
+            256,
+            0,
+            256,
+            256
+          ],
+          "contentBoundsPx": [
+            64,
+            84,
+            181,
+            239
+          ],
+          "durationMs": 750,
+          "seatAnchorPx": [
+            113,
+            218
+          ],
+          "handAnchorPx": [
+            145,
+            174
+          ],
+          "mouthAnchorPx": [
+            126,
+            164
+          ],
+          "propVisibilityPhase": "held",
+          "runtimeFood": {
+            "visible": true,
+            "attachTo": "hand"
+          },
+          "heldFoodAnchorPx": [
+            145,
+            174
+          ]
+        },
+        {
+          "index": 2,
+          "name": "bite",
+          "file": "frames/denden/meal/02_bite.png",
+          "rect": [
+            512,
+            0,
+            256,
+            256
+          ],
+          "contentBoundsPx": [
+            65,
+            84,
+            182,
+            239
+          ],
+          "durationMs": 550,
+          "seatAnchorPx": [
+            113,
+            218
+          ],
+          "handAnchorPx": [
+            124,
+            174
+          ],
+          "mouthAnchorPx": [
+            129,
+            164
+          ],
+          "propVisibilityPhase": "bite",
+          "runtimeFood": {
+            "visible": "before consume",
+            "hideAfterFraction": 0.7,
+            "attachTo": "hand"
+          },
+          "heldFoodAnchorPx": [
+            124,
+            174
+          ]
+        },
+        {
+          "index": 3,
+          "name": "chew",
+          "file": "frames/denden/meal/03_chew.png",
+          "rect": [
+            768,
+            0,
+            256,
+            256
+          ],
+          "contentBoundsPx": [
+            62,
+            84,
+            182,
+            239
+          ],
+          "durationMs": 650,
+          "seatAnchorPx": [
+            113,
+            218
+          ],
+          "handAnchorPx": [
+            120,
+            199
+          ],
+          "mouthAnchorPx": [
+            128,
+            167
+          ],
+          "propVisibilityPhase": "hidden",
+          "runtimeFood": {
+            "visible": false,
+            "attachTo": null
+          },
+          "heldFoodAnchorPx": [
+            120,
+            199
+          ]
+        },
+        {
+          "index": 4,
+          "name": "finish",
+          "file": "frames/denden/meal/04_finish.png",
+          "rect": [
+            1024,
+            0,
+            256,
+            256
+          ],
+          "contentBoundsPx": [
+            63,
+            84,
+            182,
+            239
+          ],
+          "durationMs": 900,
+          "seatAnchorPx": [
+            113,
+            218
+          ],
+          "handAnchorPx": [
+            153,
+            205
+          ],
+          "mouthAnchorPx": [
+            129,
+            164
+          ],
+          "propVisibilityPhase": "hidden",
+          "runtimeFood": {
+            "visible": false,
+            "attachTo": null
+          },
+          "heldFoodAnchorPx": [
+            153,
+            205
+          ]
+        }
+      ],
+      "playback": "take once; loop handlift/bite/chew; finish once",
+      "seatAnchorPx": [
+        113,
+        218
+      ],
+      "runtimeFoodPolicy": {
+        "singlePropOnly": true,
+        "neverMirrorSprite": true,
+        "interpolation": "Interpolate one existing food prop along paths; do not create per-frame copies. Sprite frame changes and food movement are synchronized by normalized action time.",
+        "handSideSwitch": true,
+        "handSideSwitchNote": "The active food hand changes across some poses; the transfer arcs below guide one food prop through the center. Do not teleport to the next anchor."
+      },
+      "heldFoodTransitions": [
+        {
+          "from": "take",
+          "to": "handlift",
+          "pathPx": [
+            [
+              184,
+              177
+            ],
+            [
+              164,
+              183
+            ],
+            [
+              145,
+              174
+            ]
+          ],
+          "pathType": "quadratic Bezier; three points are start, control, end",
+          "foodInstances": 1,
+          "visible": true
+        },
+        {
+          "from": "handlift",
+          "to": "bite",
+          "pathPx": [
+            [
+              145,
+              174
+            ],
+            [
+              134,
+              181
+            ],
+            [
+              124,
+              174
+            ]
+          ],
+          "pathType": "quadratic Bezier; three points are start, control, end",
+          "foodInstances": 1,
+          "visible": true
+        },
+        {
+          "from": "bite",
+          "to": "chew",
+          "pathPx": [
+            [
+              124,
+              174
+            ],
+            [
+              129,
+              164
+            ]
+          ],
+          "pathType": "linear until consume",
+          "foodInstances": 1,
+          "hideAtBiteFraction": 0.7,
+          "visibleDuringChew": false
+        },
+        {
+          "from": "chew",
+          "to": "finish",
+          "pathPx": [],
+          "foodInstances": 0,
+          "visible": false
+        }
+      ],
+      "initialAcquire": {
+        "start": "runtime table-food position in world space",
+        "endLocalPx": [
+          184,
+          177
+        ],
+        "takeContactFraction": 0.55,
+        "reuseSameFoodObject": true
+      },
+      "file": "denden_meal.png"
+    },
+    "bath": {
+      "sheet": "sheets/denden_bath.png",
+      "sheetSize": [
+        1024,
+        256
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "name": "relax_01",
+          "file": "frames/denden/bath/00_relax_01.png",
+          "rect": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "contentBoundsPx": [
+            73,
+            99,
+            184,
+            213
+          ],
+          "durationMs": 420,
+          "waterlineAnchorPx": [
+            128,
+            204
+          ],
+          "propVisibilityPhase": "hidden"
+        },
+        {
+          "index": 1,
+          "name": "blink",
+          "file": "frames/denden/bath/01_blink.png",
+          "rect": [
+            256,
+            0,
+            256,
+            256
+          ],
+          "contentBoundsPx": [
+            73,
+            99,
+            184,
+            212
+          ],
+          "durationMs": 420,
+          "waterlineAnchorPx": [
+            128,
+            204
+          ],
+          "propVisibilityPhase": "hidden"
+        },
+        {
+          "index": 2,
+          "name": "relax_02",
+          "file": "frames/denden/bath/02_relax_02.png",
+          "rect": [
+            512,
+            0,
+            256,
+            256
+          ],
+          "contentBoundsPx": [
+            73,
+            99,
+            184,
+            213
+          ],
+          "durationMs": 420,
+          "waterlineAnchorPx": [
+            128,
+            204
+          ],
+          "propVisibilityPhase": "hidden"
+        },
+        {
+          "index": 3,
+          "name": "smile",
+          "file": "frames/denden/bath/03_smile.png",
+          "rect": [
+            768,
+            0,
+            256,
+            256
+          ],
+          "contentBoundsPx": [
+            73,
+            99,
+            184,
+            213
+          ],
+          "durationMs": 420,
+          "waterlineAnchorPx": [
+            128,
+            204
+          ],
+          "propVisibilityPhase": "hidden"
+        }
+      ],
+      "playback": "4-frame loop",
+      "towelEmblem": "small pink paw print",
+      "emblemStatus": "original character-inspired emblem, not an existing supplied logo",
+      "waterlineAnchorPx": [
+        128,
+        204
+      ],
+      "headwearRemoved": true,
+      "file": "denden_bath.png"
+    }
+  },
+  "pink": {
+    "meal": {
+      "sheet": "sheets/pink_meal.png",
+      "sheetSize": [
+        1280,
+        256
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "name": "take",
+          "file": "frames/pink/meal/00_take.png",
+          "rect": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "contentBoundsPx": [
+            73,
+            86,
+            204,
+            249
+          ],
+          "durationMs": 650,
+          "seatAnchorPx": [
+            122,
+            215
+          ],
+          "handAnchorPx": [
+            189,
+            193
+          ],
+          "mouthAnchorPx": [
+            131,
+            179
+          ],
+          "propVisibilityPhase": "acquire",
+          "runtimeFood": {
+            "visible": "after contact",
+            "showAfterFraction": 0.55,
+            "attachTo": "hand"
+          },
+          "heldFoodAnchorPx": [
+            189,
+            193
+          ]
+        },
+        {
+          "index": 1,
+          "name": "handlift",
+          "file": "frames/pink/meal/01_handlift.png",
+          "rect": [
+            256,
+            0,
+            256,
+            256
+          ],
+          "contentBoundsPx": [
+            74,
+            86,
+            186,
+            249
+          ],
+          "durationMs": 750,
+          "seatAnchorPx": [
+            122,
+            215
+          ],
+          "handAnchorPx": [
+            133,
+            186
+          ],
+          "mouthAnchorPx": [
+            131,
+            179
+          ],
+          "propVisibilityPhase": "held",
+          "runtimeFood": {
+            "visible": true,
+            "attachTo": "hand"
+          },
+          "heldFoodAnchorPx": [
+            133,
+            186
+          ]
+        },
+        {
+          "index": 2,
+          "name": "bite",
+          "file": "frames/pink/meal/02_bite.png",
+          "rect": [
+            512,
+            0,
+            256,
+            256
+          ],
+          "contentBoundsPx": [
+            74,
+            86,
+            186,
+            249
+          ],
+          "durationMs": 550,
+          "seatAnchorPx": [
+            122,
+            215
+          ],
+          "handAnchorPx": [
+            124,
+            179
+          ],
+          "mouthAnchorPx": [
+            131,
+            179
+          ],
+          "propVisibilityPhase": "bite",
+          "runtimeFood": {
+            "visible": "before consume",
+            "hideAfterFraction": 0.7,
+            "attachTo": "hand"
+          },
+          "heldFoodAnchorPx": [
+            124,
+            179
+          ]
+        },
+        {
+          "index": 3,
+          "name": "chew",
+          "file": "frames/pink/meal/03_chew.png",
+          "rect": [
+            768,
+            0,
+            256,
+            256
+          ],
+          "contentBoundsPx": [
+            74,
+            86,
+            186,
+            249
+          ],
+          "durationMs": 650,
+          "seatAnchorPx": [
+            122,
+            215
+          ],
+          "handAnchorPx": [
+            122,
+            205
+          ],
+          "mouthAnchorPx": [
+            131,
+            178
+          ],
+          "propVisibilityPhase": "hidden",
+          "runtimeFood": {
+            "visible": false,
+            "attachTo": null
+          },
+          "heldFoodAnchorPx": [
+            122,
+            205
+          ]
+        },
+        {
+          "index": 4,
+          "name": "finish",
+          "file": "frames/pink/meal/04_finish.png",
+          "rect": [
+            1024,
+            0,
+            256,
+            256
+          ],
+          "contentBoundsPx": [
+            74,
+            86,
+            186,
+            249
+          ],
+          "durationMs": 900,
+          "seatAnchorPx": [
+            122,
+            215
+          ],
+          "handAnchorPx": [
+            157,
+            210
+          ],
+          "mouthAnchorPx": [
+            131,
+            178
+          ],
+          "propVisibilityPhase": "hidden",
+          "runtimeFood": {
+            "visible": false,
+            "attachTo": null
+          },
+          "heldFoodAnchorPx": [
+            157,
+            210
+          ]
+        }
+      ],
+      "playback": "take once; loop handlift/bite/chew; finish once",
+      "seatAnchorPx": [
+        122,
+        215
+      ],
+      "runtimeFoodPolicy": {
+        "singlePropOnly": true,
+        "neverMirrorSprite": true,
+        "interpolation": "Interpolate one existing food prop along paths; do not create per-frame copies. Sprite frame changes and food movement are synchronized by normalized action time.",
+        "handSideSwitch": true,
+        "handSideSwitchNote": "The active food hand changes across some poses; the transfer arcs below guide one food prop through the center. Do not teleport to the next anchor."
+      },
+      "heldFoodTransitions": [
+        {
+          "from": "take",
+          "to": "handlift",
+          "pathPx": [
+            [
+              189,
+              193
+            ],
+            [
+              161,
+              197
+            ],
+            [
+              133,
+              186
+            ]
+          ],
+          "pathType": "quadratic Bezier; three points are start, control, end",
+          "foodInstances": 1,
+          "visible": true
+        },
+        {
+          "from": "handlift",
+          "to": "bite",
+          "pathPx": [
+            [
+              133,
+              186
+            ],
+            [
+              128,
+              189
+            ],
+            [
+              124,
+              179
+            ]
+          ],
+          "pathType": "quadratic Bezier; three points are start, control, end",
+          "foodInstances": 1,
+          "visible": true
+        },
+        {
+          "from": "bite",
+          "to": "chew",
+          "pathPx": [
+            [
+              124,
+              179
+            ],
+            [
+              131,
+              179
+            ]
+          ],
+          "pathType": "linear until consume",
+          "foodInstances": 1,
+          "hideAtBiteFraction": 0.7,
+          "visibleDuringChew": false
+        },
+        {
+          "from": "chew",
+          "to": "finish",
+          "pathPx": [],
+          "foodInstances": 0,
+          "visible": false
+        }
+      ],
+      "initialAcquire": {
+        "start": "runtime table-food position in world space",
+        "endLocalPx": [
+          189,
+          193
+        ],
+        "takeContactFraction": 0.55,
+        "reuseSameFoodObject": true
+      },
+      "file": "pink_meal.png"
+    },
+    "bath": {
+      "sheet": "sheets/pink_bath.png",
+      "sheetSize": [
+        1024,
+        256
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "name": "relax_01",
+          "file": "frames/pink/bath/00_relax_01.png",
+          "rect": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "contentBoundsPx": [
+            78,
+            99,
+            179,
+            213
+          ],
+          "durationMs": 420,
+          "waterlineAnchorPx": [
+            128,
+            204
+          ],
+          "propVisibilityPhase": "hidden"
+        },
+        {
+          "index": 1,
+          "name": "blink",
+          "file": "frames/pink/bath/01_blink.png",
+          "rect": [
+            256,
+            0,
+            256,
+            256
+          ],
+          "contentBoundsPx": [
+            77,
+            99,
+            179,
+            213
+          ],
+          "durationMs": 420,
+          "waterlineAnchorPx": [
+            128,
+            204
+          ],
+          "propVisibilityPhase": "hidden"
+        },
+        {
+          "index": 2,
+          "name": "relax_02",
+          "file": "frames/pink/bath/02_relax_02.png",
+          "rect": [
+            512,
+            0,
+            256,
+            256
+          ],
+          "contentBoundsPx": [
+            77,
+            99,
+            179,
+            213
+          ],
+          "durationMs": 420,
+          "waterlineAnchorPx": [
+            128,
+            204
+          ],
+          "propVisibilityPhase": "hidden"
+        },
+        {
+          "index": 3,
+          "name": "smile",
+          "file": "frames/pink/bath/03_smile.png",
+          "rect": [
+            768,
+            0,
+            256,
+            256
+          ],
+          "contentBoundsPx": [
+            77,
+            99,
+            178,
+            213
+          ],
+          "durationMs": 420,
+          "waterlineAnchorPx": [
+            128,
+            204
+          ],
+          "propVisibilityPhase": "hidden"
+        }
+      ],
+      "playback": "4-frame loop",
+      "towelEmblem": "small pink hood-inspired curl",
+      "emblemStatus": "original character-inspired emblem, not an existing supplied logo",
+      "waterlineAnchorPx": [
+        128,
+        204
+      ],
+      "headwearRemoved": true,
+      "file": "pink_bath.png"
+    }
+  },
+  "nyoro": {
+    "meal": {
+      "sheet": "sheets/nyoro_meal.png",
+      "sheetSize": [
+        1280,
+        256
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "name": "take",
+          "file": "frames/nyoro/meal/00_take.png",
+          "rect": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "contentBoundsPx": [
+            52,
+            103,
+            210,
+            237
+          ],
+          "durationMs": 650,
+          "seatAnchorPx": [
+            128,
+            218
+          ],
+          "handAnchorPx": [
+            67,
+            182
+          ],
+          "mouthAnchorPx": [
+            115,
+            167
+          ],
+          "propVisibilityPhase": "acquire",
+          "runtimeFood": {
+            "visible": "after contact",
+            "showAfterFraction": 0.55,
+            "attachTo": "hand"
+          },
+          "heldFoodAnchorPx": [
+            67,
+            182
+          ]
+        },
+        {
+          "index": 1,
+          "name": "handlift",
+          "file": "frames/nyoro/meal/01_handlift.png",
+          "rect": [
+            256,
+            0,
+            256,
+            256
+          ],
+          "contentBoundsPx": [
+            64,
+            104,
+            209,
+            237
+          ],
+          "durationMs": 750,
+          "seatAnchorPx": [
+            128,
+            218
+          ],
+          "handAnchorPx": [
+            86,
+            176
+          ],
+          "mouthAnchorPx": [
+            117,
+            167
+          ],
+          "propVisibilityPhase": "held",
+          "runtimeFood": {
+            "visible": true,
+            "attachTo": "hand",
+            "propOffsetFromHandPx": [
+              10,
+              -8
+            ],
+            "note": "Small prop extends inward/upward from gripping paw toward muzzle; keep the empty paw beneath the prop."
+          },
+          "heldFoodAnchorPx": [
+            96,
+            168
+          ]
+        },
+        {
+          "index": 2,
+          "name": "bite",
+          "file": "frames/nyoro/meal/02_bite.png",
+          "rect": [
+            512,
+            0,
+            256,
+            256
+          ],
+          "contentBoundsPx": [
+            63,
+            103,
+            206,
+            237
+          ],
+          "durationMs": 550,
+          "seatAnchorPx": [
+            128,
+            218
+          ],
+          "handAnchorPx": [
+            87,
+            176
+          ],
+          "mouthAnchorPx": [
+            119,
+            167
+          ],
+          "propVisibilityPhase": "bite",
+          "runtimeFood": {
+            "visible": "before consume",
+            "hideAfterFraction": 0.7,
+            "attachTo": "hand",
+            "propOffsetFromHandPx": [
+              10,
+              -8
+            ],
+            "note": "Small prop extends inward/upward from gripping paw toward muzzle; keep the empty paw beneath the prop."
+          },
+          "heldFoodAnchorPx": [
+            97,
+            168
+          ]
+        },
+        {
+          "index": 3,
+          "name": "chew",
+          "file": "frames/nyoro/meal/03_chew.png",
+          "rect": [
+            768,
+            0,
+            256,
+            256
+          ],
+          "contentBoundsPx": [
+            62,
+            103,
+            208,
+            237
+          ],
+          "durationMs": 650,
+          "seatAnchorPx": [
+            128,
+            218
+          ],
+          "handAnchorPx": [
+            88,
+            199
+          ],
+          "mouthAnchorPx": [
+            119,
+            167
+          ],
+          "propVisibilityPhase": "hidden",
+          "runtimeFood": {
+            "visible": false,
+            "attachTo": null
+          },
+          "heldFoodAnchorPx": [
+            88,
+            199
+          ]
+        },
+        {
+          "index": 4,
+          "name": "finish",
+          "file": "frames/nyoro/meal/04_finish.png",
+          "rect": [
+            1024,
+            0,
+            256,
+            256
+          ],
+          "contentBoundsPx": [
+            62,
+            104,
+            206,
+            237
+          ],
+          "durationMs": 900,
+          "seatAnchorPx": [
+            128,
+            218
+          ],
+          "handAnchorPx": [
+            85,
+            214
+          ],
+          "mouthAnchorPx": [
+            117,
+            167
+          ],
+          "propVisibilityPhase": "hidden",
+          "runtimeFood": {
+            "visible": false,
+            "attachTo": null
+          },
+          "heldFoodAnchorPx": [
+            85,
+            214
+          ]
+        }
+      ],
+      "playback": "take once; loop handlift/bite/chew; finish once",
+      "seatAnchorPx": [
+        128,
+        218
+      ],
+      "runtimeFoodPolicy": {
+        "singlePropOnly": true,
+        "neverMirrorSprite": true,
+        "interpolation": "Interpolate one existing food prop along paths; do not create per-frame copies. Sprite frame changes and food movement are synchronized by normalized action time.",
+        "handSideSwitch": false,
+        "handSideSwitchNote": "Active hand stays on the viewer-left side for this generated sequence."
+      },
+      "heldFoodTransitions": [
+        {
+          "from": "take",
+          "to": "handlift",
+          "pathPx": [
+            [
+              67,
+              182
+            ],
+            [
+              82,
+              172
+            ],
+            [
+              96,
+              168
+            ]
+          ],
+          "pathType": "quadratic Bezier; three points are start, control, end",
+          "foodInstances": 1,
+          "visible": true
+        },
+        {
+          "from": "handlift",
+          "to": "bite",
+          "pathPx": [
+            [
+              96,
+              168
+            ],
+            [
+              96,
+              165
+            ],
+            [
+              97,
+              168
+            ]
+          ],
+          "pathType": "quadratic Bezier; three points are start, control, end",
+          "foodInstances": 1,
+          "visible": true
+        },
+        {
+          "from": "bite",
+          "to": "chew",
+          "pathPx": [
+            [
+              97,
+              168
+            ],
+            [
+              119,
+              167
+            ]
+          ],
+          "pathType": "linear until consume",
+          "foodInstances": 1,
+          "hideAtBiteFraction": 0.7,
+          "visibleDuringChew": false
+        },
+        {
+          "from": "chew",
+          "to": "finish",
+          "pathPx": [],
+          "foodInstances": 0,
+          "visible": false
+        }
+      ],
+      "initialAcquire": {
+        "start": "runtime table-food position in world space",
+        "endLocalPx": [
+          67,
+          182
+        ],
+        "takeContactFraction": 0.55,
+        "reuseSameFoodObject": true
+      },
+      "file": "nyoro_meal.png"
+    },
+    "bath": {
+      "sheet": "sheets/nyoro_bath.png",
+      "sheetSize": [
+        1024,
+        256
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "name": "relax_01",
+          "file": "frames/nyoro/bath/00_relax_01.png",
+          "rect": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "contentBoundsPx": [
+            60,
+            101,
+            197,
+            213
+          ],
+          "durationMs": 420,
+          "waterlineAnchorPx": [
+            128,
+            204
+          ],
+          "propVisibilityPhase": "hidden"
+        },
+        {
+          "index": 1,
+          "name": "blink",
+          "file": "frames/nyoro/bath/01_blink.png",
+          "rect": [
+            256,
+            0,
+            256,
+            256
+          ],
+          "contentBoundsPx": [
+            60,
+            100,
+            196,
+            213
+          ],
+          "durationMs": 420,
+          "waterlineAnchorPx": [
+            128,
+            204
+          ],
+          "propVisibilityPhase": "hidden"
+        },
+        {
+          "index": 2,
+          "name": "relax_02",
+          "file": "frames/nyoro/bath/02_relax_02.png",
+          "rect": [
+            512,
+            0,
+            256,
+            256
+          ],
+          "contentBoundsPx": [
+            60,
+            100,
+            196,
+            214
+          ],
+          "durationMs": 420,
+          "waterlineAnchorPx": [
+            128,
+            204
+          ],
+          "propVisibilityPhase": "hidden"
+        },
+        {
+          "index": 3,
+          "name": "smile",
+          "file": "frames/nyoro/bath/03_smile.png",
+          "rect": [
+            768,
+            0,
+            256,
+            256
+          ],
+          "contentBoundsPx": [
+            59,
+            99,
+            197,
+            213
+          ],
+          "durationMs": 420,
+          "waterlineAnchorPx": [
+            128,
+            204
+          ],
+          "propVisibilityPhase": "hidden"
+        }
+      ],
+      "playback": "4-frame loop",
+      "towelEmblem": "small orange three-branch crack",
+      "emblemStatus": "original character-inspired emblem, not an existing supplied logo",
+      "waterlineAnchorPx": [
+        128,
+        204
+      ],
+      "headwearRemoved": true,
+      "file": "nyoro_bath.png"
+    }
+  },
+  "irukaeru": {
+    "meal": {
+      "sheet": "sheets/irukaeru_meal.png",
+      "sheetSize": [
+        1280,
+        256
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "name": "take",
+          "file": "frames/irukaeru/meal/00_take.png",
+          "rect": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "contentBoundsPx": [
+            70,
+            80,
+            187,
+            237
+          ],
+          "durationMs": 650,
+          "seatAnchorPx": [
+            128,
+            218
+          ],
+          "handAnchorPx": [
+            97,
+            182
+          ],
+          "mouthAnchorPx": [
+            129,
+            163
+          ],
+          "propVisibilityPhase": "acquire",
+          "runtimeFood": {
+            "visible": "after contact",
+            "showAfterFraction": 0.55,
+            "attachTo": "hand"
+          },
+          "heldFoodAnchorPx": [
+            97,
+            182
+          ]
+        },
+        {
+          "index": 1,
+          "name": "handlift",
+          "file": "frames/irukaeru/meal/01_handlift.png",
+          "rect": [
+            256,
+            0,
+            256,
+            256
+          ],
+          "contentBoundsPx": [
+            69,
+            80,
+            185,
+            237
+          ],
+          "durationMs": 750,
+          "seatAnchorPx": [
+            128,
+            218
+          ],
+          "handAnchorPx": [
+            114,
+            173
+          ],
+          "mouthAnchorPx": [
+            127,
+            163
+          ],
+          "propVisibilityPhase": "held",
+          "runtimeFood": {
+            "visible": true,
+            "attachTo": "hand"
+          },
+          "heldFoodAnchorPx": [
+            114,
+            173
+          ]
+        },
+        {
+          "index": 2,
+          "name": "bite",
+          "file": "frames/irukaeru/meal/02_bite.png",
+          "rect": [
+            512,
+            0,
+            256,
+            256
+          ],
+          "contentBoundsPx": [
+            70,
+            80,
+            186,
+            237
+          ],
+          "durationMs": 550,
+          "seatAnchorPx": [
+            128,
+            218
+          ],
+          "handAnchorPx": [
+            114,
+            174
+          ],
+          "mouthAnchorPx": [
+            129,
+            163
+          ],
+          "propVisibilityPhase": "bite",
+          "runtimeFood": {
+            "visible": "before consume",
+            "hideAfterFraction": 0.7,
+            "attachTo": "hand"
+          },
+          "heldFoodAnchorPx": [
+            114,
+            174
+          ]
+        },
+        {
+          "index": 3,
+          "name": "chew",
+          "file": "frames/irukaeru/meal/03_chew.png",
+          "rect": [
+            768,
+            0,
+            256,
+            256
+          ],
+          "contentBoundsPx": [
+            69,
+            80,
+            186,
+            237
+          ],
+          "durationMs": 650,
+          "seatAnchorPx": [
+            128,
+            218
+          ],
+          "handAnchorPx": [
+            110,
+            185
+          ],
+          "mouthAnchorPx": [
+            128,
+            163
+          ],
+          "propVisibilityPhase": "hidden",
+          "runtimeFood": {
+            "visible": false,
+            "attachTo": null
+          },
+          "heldFoodAnchorPx": [
+            110,
+            185
+          ]
+        },
+        {
+          "index": 4,
+          "name": "finish",
+          "file": "frames/irukaeru/meal/04_finish.png",
+          "rect": [
+            1024,
+            0,
+            256,
+            256
+          ],
+          "contentBoundsPx": [
+            70,
+            80,
+            186,
+            237
+          ],
+          "durationMs": 900,
+          "seatAnchorPx": [
+            128,
+            218
+          ],
+          "handAnchorPx": [
+            105,
+            198
+          ],
+          "mouthAnchorPx": [
+            128,
+            163
+          ],
+          "propVisibilityPhase": "hidden",
+          "runtimeFood": {
+            "visible": false,
+            "attachTo": null
+          },
+          "heldFoodAnchorPx": [
+            105,
+            198
+          ]
+        }
+      ],
+      "playback": "take once; loop handlift/bite/chew; finish once",
+      "seatAnchorPx": [
+        128,
+        218
+      ],
+      "runtimeFoodPolicy": {
+        "singlePropOnly": true,
+        "neverMirrorSprite": true,
+        "interpolation": "Interpolate one existing food prop along paths; do not create per-frame copies. Sprite frame changes and food movement are synchronized by normalized action time.",
+        "handSideSwitch": false,
+        "handSideSwitchNote": "Active hand stays on the viewer-left side for this generated sequence."
+      },
+      "heldFoodTransitions": [
+        {
+          "from": "take",
+          "to": "handlift",
+          "pathPx": [
+            [
+              97,
+              182
+            ],
+            [
+              106,
+              175
+            ],
+            [
+              114,
+              173
+            ]
+          ],
+          "pathType": "quadratic Bezier; three points are start, control, end",
+          "foodInstances": 1,
+          "visible": true
+        },
+        {
+          "from": "handlift",
+          "to": "bite",
+          "pathPx": [
+            [
+              114,
+              173
+            ],
+            [
+              114,
+              171
+            ],
+            [
+              114,
+              174
+            ]
+          ],
+          "pathType": "quadratic Bezier; three points are start, control, end",
+          "foodInstances": 1,
+          "visible": true
+        },
+        {
+          "from": "bite",
+          "to": "chew",
+          "pathPx": [
+            [
+              114,
+              174
+            ],
+            [
+              129,
+              163
+            ]
+          ],
+          "pathType": "linear until consume",
+          "foodInstances": 1,
+          "hideAtBiteFraction": 0.7,
+          "visibleDuringChew": false
+        },
+        {
+          "from": "chew",
+          "to": "finish",
+          "pathPx": [],
+          "foodInstances": 0,
+          "visible": false
+        }
+      ],
+      "initialAcquire": {
+        "start": "runtime table-food position in world space",
+        "endLocalPx": [
+          97,
+          182
+        ],
+        "takeContactFraction": 0.55,
+        "reuseSameFoodObject": true
+      },
+      "file": "irukaeru_meal.png"
+    },
+    "bath": {
+      "sheet": "sheets/irukaeru_bath.png",
+      "sheetSize": [
+        1024,
+        256
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "name": "relax_01",
+          "file": "frames/irukaeru/bath/00_relax_01.png",
+          "rect": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "contentBoundsPx": [
+            61,
+            99,
+            195,
+            213
+          ],
+          "durationMs": 420,
+          "waterlineAnchorPx": [
+            128,
+            204
+          ],
+          "propVisibilityPhase": "hidden"
+        },
+        {
+          "index": 1,
+          "name": "blink",
+          "file": "frames/irukaeru/bath/01_blink.png",
+          "rect": [
+            256,
+            0,
+            256,
+            256
+          ],
+          "contentBoundsPx": [
+            61,
+            99,
+            195,
+            213
+          ],
+          "durationMs": 420,
+          "waterlineAnchorPx": [
+            128,
+            204
+          ],
+          "propVisibilityPhase": "hidden"
+        },
+        {
+          "index": 2,
+          "name": "relax_02",
+          "file": "frames/irukaeru/bath/02_relax_02.png",
+          "rect": [
+            512,
+            0,
+            256,
+            256
+          ],
+          "contentBoundsPx": [
+            61,
+            99,
+            195,
+            212
+          ],
+          "durationMs": 420,
+          "waterlineAnchorPx": [
+            128,
+            204
+          ],
+          "propVisibilityPhase": "hidden"
+        },
+        {
+          "index": 3,
+          "name": "smile",
+          "file": "frames/irukaeru/bath/03_smile.png",
+          "rect": [
+            768,
+            0,
+            256,
+            256
+          ],
+          "contentBoundsPx": [
+            61,
+            99,
+            195,
+            212
+          ],
+          "durationMs": 420,
+          "waterlineAnchorPx": [
+            128,
+            204
+          ],
+          "propVisibilityPhase": "hidden"
+        }
+      ],
+      "playback": "4-frame loop",
+      "towelEmblem": "small teal curved dolphin fin",
+      "emblemStatus": "original character-inspired emblem, not an existing supplied logo",
+      "waterlineAnchorPx": [
+        128,
+        204
+      ],
+      "headwearRemoved": true,
+      "file": "irukaeru_bath.png"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "file": "qa-sprites-v10.cjs",
+    "code": 0,
+    "output": "Passed 6 V10 groups\n",
+    "error": ""
+  },
+  {
+    "file": "qa-sprites-visual.cjs",
+    "code": 0,
+    "output": "8 normal-speed direction loops and seat/table routes passed\n",
+    "error": ""
+  },
+  {
+    "file": "qa-motions.cjs",
+    "code": 0,
+    "output": "Passed 13 checks\n",
+    "error": ""
+  },
+  {
+    "file": "qa-contact-depth.cjs",
+    "code": 0,
+    "output": "[{\"width\":320,\"az\":0.05,\"el\":0.5,\"counts\":[{\"before\":1,\"after\":0,\"depthTest\":true},{\"before\":0,\"after\":0,\"depthTest\":true},{\"before\":275,\"after\":0,\"depthTest\":true}]},{\"width\":320,\"az\":0.74,\"el\":0.95,\"counts\":[{\"before\":8,\"after\":0,\"depthTest\":true},{\"before\":5,\"after\":0,\"depthTest\":true},{\"before\":409,\"after\":0,\"depthTest\":true}]},{\"width\":320,\"az\":1.35,\"el\":1.08,\"counts\":[{\"before\":5,\"after\":0,\"depthTest\":true},{\"before\":4,\"after\":0,\"depthTest\":true},{\"before\":337,\"after\":0,\"depthTest\":true}]},{\"width\":390,\"az\":0.05,\"el\":0.5,\"counts\":[{\"before\":0,\"after\":0,\"depthTest\":true},{\"before\":0,\"after\":0,\"depthTest\":true},{\"before\":429,\"after\":0,\"depthTest\":true}]},{\"width\":390,\"az\":0.74,\"el\":0.95,\"counts\":[{\"before\":6,\"after\":0,\"depthTest\":true},{\"before\":20,\"after\":0,\"depthTest\":true},{\"before\":608,\"after\":0,\"depthTest\":true}]},{\"width\":390,\"az\":1.35,\"el\":1.08,\"counts\":[{\"before\":10,\"after\":0,\"depthTest\":true},{\"before\":12,\"after\":0,\"depthTest\":true},{\"before\":537,\"after\":0,\"depthTest\":true}]},{\"width\":430,\"az\":0.05,\"el\":0.5,\"counts\":[{\"before\":4,\"after\":0,\"depthTest\":true},{\"before\":0,\"after\":0,\"depthTest\":true},{\"before\":538,\"after\":0,\"depthTest\":true}]},{\"width\":430,\"az\":0.74,\"el\":0.95,\"counts\":[{\"before\":7,\"after\":0,\"depthTest\":true},{\"before\":23,\"after\":0,\"depthTest\":true},{\"before\":747,\"after\":0,\"depthTest\":true}]},{\"width\":430,\"az\":1.35,\"el\":1.08,\"counts\":[{\"before\":6,\"after\":0,\"depthTest\":true},{\"before\":20,\"after\":0,\"depthTest\":true},{\"before\":703,\"after\":0,\"depthTest\":true}]}]\n",
+    "error": ""
+  }
+]

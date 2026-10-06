@@ -1,0 +1,161 @@
+{
+  "checks": [
+    "heart reward/collection idempotence and exact ingredient transaction",
+    "wallet reload no duplicate",
+    "three foods, three customers, before/after exact dialogue, plate retrieval",
+    "three completed meals award exactly nine hearts",
+    "mobile 320 speech and shop",
+    "mobile 390 speech and shop",
+    "mobile 430 speech and shop"
+  ],
+  "economy": {
+    "r": true,
+    "twice": false,
+    "collect": true,
+    "double": false,
+    "buy": true,
+    "balance": 1,
+    "egg": 1
+  },
+  "result": {
+    "wallet": {
+      "balance": 1,
+      "serial": 7,
+      "pending": [
+        {
+          "id": 2,
+          "value": 3,
+          "pos": [
+            14,
+            0.48,
+            -1.03
+          ],
+          "room": "cafe"
+        },
+        {
+          "id": 3,
+          "value": 3,
+          "pos": [
+            12,
+            0.48,
+            -1.03
+          ],
+          "room": "cafe"
+        },
+        {
+          "id": 4,
+          "value": 3,
+          "pos": [
+            16,
+            0.48,
+            -1.03
+          ],
+          "room": "cafe"
+        },
+        {
+          "id": 5,
+          "value": 1,
+          "pos": [
+            0.40000000000000036,
+            0,
+            3.6
+          ],
+          "room": "home"
+        },
+        {
+          "id": 6,
+          "value": 1,
+          "pos": [
+            -0.39999999999999947,
+            0,
+            0.3999999999999999
+          ],
+          "room": "home"
+        },
+        {
+          "id": 7,
+          "value": 1,
+          "pos": [
+            -0.39999999999999947,
+            0,
+            0.3999999999999999
+          ],
+          "room": "home"
+        }
+      ],
+      "claimed": {
+        "test:meal": true,
+        "cafe:1": true,
+        "cafe:2": true,
+        "cafe:3": true,
+        "fun:1:dj:1": true,
+        "fun:0:joy:1": true,
+        "fun:2:joy:1": true
+      },
+      "funDay": "2026-10-06",
+      "funCount": 3,
+      "funTimes": {
+        "0": 1791303912.941,
+        "1": 1791303909.255,
+        "2": 1791303918.319
+      }
+    },
+    "dirty": [
+      false,
+      false,
+      false
+    ],
+    "seats": [
+      1,
+      0,
+      null
+    ],
+    "stock": {
+      "dorayaki": 0,
+      "omelet": 0,
+      "soup": 0
+    },
+    "eaten": 3
+  },
+  "states": [
+    "seating",
+    "seated",
+    "eating",
+    "satisfied",
+    "toHome",
+    "clean:approach",
+    "clean:return",
+    null,
+    "toCafe",
+    "waiting"
+  ],
+  "lines": [
+    "",
+    "モブピンクひと息つくであります。",
+    "モブデンデンひと休みするでやんす～。",
+    "モブニョロひと休みするニョロ",
+    "モブピンクいただきますであります！",
+    "モブデンデンいただきますでやんす～！",
+    "モブニョロいただきますニョロ～！",
+    "モブピンクごちそうさまであります！",
+    "モブピンクまた来るであります！",
+    "モブデンデンごちそうさまでやんす～！",
+    "モブデンデンまた来るでやんす。",
+    "モブニョロごちそうさまニョロ～！",
+    "モブニョロまた来るニョロ！",
+    "モブピンク僕にお任せであります！",
+    "モブピンク僕の選曲であります！",
+    "モブデンデンふかふかでやんす～。",
+    "モブデンデンいいねでやんす～。",
+    "モブピンク僕も楽しいであります！",
+    "モブデンデンほぅ～！",
+    "モブニョロここは落ち着くニョロ～",
+    "モブデンデンいい日でやんす。",
+    "モブピンク探検であります！",
+    "モブピンクカフェへ行くであります！",
+    "モブデンデンおやすみでやんす…。",
+    "モブデンデンカフェへ行くでやんす。",
+    "モブニョロおいしいニョロ～！"
+  ],
+  "errors": []
+}

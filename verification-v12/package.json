@@ -1,0 +1,41 @@
+{
+  "file": "C:\\Users\\CB-Me\\Documents\\Codex\\2026-10-05\\task-2\\MOB_CHILL_LIFE_V12_FINAL.zip",
+  "bytes": 8091302,
+  "htmlSha256": "d6b06ffa04b2ea4f6f09ca2b20b0aa3c50282712db510cd9b56ea2de0f48173f",
+  "originalSheetHashes": [
+    {
+      "name": "denden_meal.png",
+      "sha256": "414e8d54ddf97571ecc3a74e09a3f0cc9405afbe9a3181462b115b58b30601f9"
+    },
+    {
+      "name": "denden_bath.png",
+      "sha256": "8a1769c11e36f45a24c6f6addcf882e15486fe414d007913adf34d5e558f0b27"
+    },
+    {
+      "name": "pink_meal.png",
+      "sha256": "b39f637a260b549b7658d43ac3d57f9f6caaf8aebd9534b1832382a36a6bd8ee"
+    },
+    {
+      "name": "pink_bath.png",
+      "sha256": "887f4463be6e500139b21d9f3467f1696bb0ba36b96f0fee4676ad762a24f2bc"
+    },
+    {
+      "name": "nyoro_meal.png",
+      "sha256": "49d7af95b1d5063cde3b6e2244a98e90e91c88d6fe9960711efacabee2ec3982"
+    },
+    {
+      "name": "nyoro_bath.png",
+      "sha256": "316fdfa101da11cc9bebe8d6fdaf4e4b7f9cd2714ac01c03335e77249b556a8e"
+    },
+    {
+      "name": "irukaeru_meal.png",
+      "sha256": "9e8a2955df8f98b59964d4d49382a0bdea254d9bc36cadb31ef263b4de646631"
+    },
+    {
+      "name": "irukaeru_bath.png",
+      "sha256": "a6fe0cb382dda2c7bb79ae90822de2ddf0fb8aeb60f859a871733a900ff464e2"
+    }
+  ],
+  "allInstalledFilesMatch": true,
+  "zipHTMLMatches": true
+}

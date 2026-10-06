@@ -1,0 +1,11 @@
+{
+  "checks": [
+    "320 visible separate 44px kitchen/plate targets and empty inventory",
+    "390 visible separate 44px kitchen/plate targets and empty inventory",
+    "430 visible separate 44px kitchen/plate targets and empty inventory",
+    "cancel consumes zero; choose consumes one; occupied plate cannot replace or duplicate",
+    "physical plate ray target matches rendered plate",
+    "both cooking timers survive reload unchanged"
+  ],
+  "errors": []
+}

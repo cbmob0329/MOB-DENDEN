@@ -1,0 +1,37 @@
+[
+  {
+    "file": "game.js",
+    "source": "D:/GitHub/MOB-DENDEN/game.js",
+    "sourceHash": "1bc4f8dc8f74b150516fc67b875520b8a9c78e3ab3c6fd475d4fa31a0c63ec40",
+    "v11Hash": "1bc4f8dc8f74b150516fc67b875520b8a9c78e3ab3c6fd475d4fa31a0c63ec40",
+    "candidateHash": "9d32154e2e4bcfe9bebdd4fec430070ec6725493c2ea823bab9c182ea7e8d65c"
+  },
+  {
+    "file": "life-v9.js",
+    "source": "D:/GitHub/MOB-DENDEN/life-v9.js",
+    "sourceHash": "3f690606e840201168f8841693e461e29def37e5456d24b18a702c2d8e1cab11",
+    "v11Hash": "3f690606e840201168f8841693e461e29def37e5456d24b18a702c2d8e1cab11",
+    "candidateHash": "f79d4db5efe84660e159b64ed238be3a20f3fc27437ec4769ed6957fa71d5449"
+  },
+  {
+    "file": "contact-depth.js",
+    "source": "D:/GitHub/MOB-DENDEN/contact-depth.js",
+    "sourceHash": "87f2b6a2e8668f9cd1fa97e80d33721c8008ba05740d86e4ead0b867e004920e",
+    "v11Hash": "87f2b6a2e8668f9cd1fa97e80d33721c8008ba05740d86e4ead0b867e004920e",
+    "candidateHash": "c44824252798e7b60870d7afd089bb508cc15248f98886cdbac31419a93d8f3f"
+  },
+  {
+    "file": "index.html",
+    "source": "D:/GitHub/MOB-DENDEN/index.html",
+    "sourceHash": "21a768b898e8b1652e9d12cd6ac5d9fb7f8586f60a26839a931ad98a74652adb",
+    "v11Hash": "21a768b898e8b1652e9d12cd6ac5d9fb7f8586f60a26839a931ad98a74652adb",
+    "candidateHash": "f694c80c6e114a34c4487a867b55511ccf2e34ad5d8a57296ac54498e0a3ef13"
+  },
+  {
+    "file": "build.cjs",
+    "source": "D:/GitHub/MOB-DENDEN/build.cjs",
+    "sourceHash": "1bdd00626e26007948dd76a1b9587b58621680cf40a9f75676fd3ba1884f3d51",
+    "v11Hash": "1bdd00626e26007948dd76a1b9587b58621680cf40a9f75676fd3ba1884f3d51",
+    "candidateHash": "d3a595c0e5711ff106c0e2ae107c255796aff0dbd6cc75b9785381b5eb147e21"
+  }
+]
