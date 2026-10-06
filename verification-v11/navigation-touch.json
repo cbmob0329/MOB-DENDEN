@@ -1,0 +1,61 @@
+{
+  "checks": [
+    "actual canvas plate tap opens selection",
+    "actual vessel canvas taps choose correct station",
+    "move/rotate/store/restore moves vessel and target with widened footprint",
+    "blocked destination refuses route rather than entering furniture",
+    "new blockage waits then releases action without teleport",
+    "foreground 3D object still occludes seated face; depth testing remains active"
+  ],
+  "placement": [
+    {
+      "visible": true,
+      "panLocal": [
+        -0.48,
+        0.72,
+        0
+      ],
+      "occupied": true,
+      "valid": null
+    },
+    {
+      "visible": false,
+      "panLocal": [
+        -0.48,
+        0.72,
+        0
+      ],
+      "occupied": false,
+      "valid": null
+    },
+    {
+      "visible": true,
+      "panLocal": [
+        -0.48,
+        0.72,
+        0
+      ],
+      "occupied": true,
+      "valid": null
+    }
+  ],
+  "stuck": {
+    "before": [
+      -0.8,
+      0,
+      1.4
+    ],
+    "after": [
+      -0.8,
+      0,
+      1.4
+    ],
+    "state": "idle"
+  },
+  "probe": {
+    "x": 173,
+    "y": 361,
+    "depth": true
+  },
+  "errors": []
+}

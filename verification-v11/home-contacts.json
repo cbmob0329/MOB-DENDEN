@@ -1,0 +1,14 @@
+[
+  {
+    "key": "nap",
+    "pose": "sleep",
+    "sleep": true,
+    "contactDepth": 0
+  },
+  {
+    "key": "sit",
+    "pose": "sit",
+    "sleep": false,
+    "contactDepth": 1
+  }
+]

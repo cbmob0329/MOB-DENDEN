@@ -1,0 +1,75 @@
+{
+  "hashes": [
+    {
+      "file": "game.js",
+      "sha256": "1bc4f8dc8f74b150516fc67b875520b8a9c78e3ab3c6fd475d4fa31a0c63ec40"
+    },
+    {
+      "file": "living.js",
+      "sha256": "3c7280ce3a3ed90000c1b4b6d993502f19534227a4e548b5185c83535a5ad9d5"
+    },
+    {
+      "file": "room.js",
+      "sha256": "e89bf8126fa021c221c9454ab858f5cdad7130464b49b86512197619e055197e"
+    },
+    {
+      "file": "cafe-v8.js",
+      "sha256": "e09de8d70eceffcaf3e179bfa503d1a72f505ef024c7abe3435ed86e5986b4fd"
+    },
+    {
+      "file": "mobile.js",
+      "sha256": "2bba0eaaf5263f60ec66085fcc2dd8bfce41a04d7f407f9f66672a81c75b555b"
+    },
+    {
+      "file": "build.cjs",
+      "sha256": "1bdd00626e26007948dd76a1b9587b58621680cf40a9f75676fd3ba1884f3d51"
+    },
+    {
+      "file": "index.html",
+      "sha256": "21a768b898e8b1652e9d12cd6ac5d9fb7f8586f60a26839a931ad98a74652adb"
+    },
+    {
+      "file": "MOB_CHILL_LIFE.html",
+      "sha256": "874f92cba10981b31d6f074a9e6cb59c7a83ec07b5f3929cd9bbe8564229c3f8"
+    },
+    {
+      "file": "contact-depth.js",
+      "sha256": "87f2b6a2e8668f9cd1fa97e80d33721c8008ba05740d86e4ead0b867e004920e"
+    },
+    {
+      "file": "touch-targets.js",
+      "sha256": "fd93b3e93bc06c8125cb7de4888955100ed6568fff1dde3d7671b34cef71e15e"
+    },
+    {
+      "file": "touch-targets.css",
+      "sha256": "1916cb0730b1587f0c79e87a320029e0cf7ffdaba0f447e42de40b4b55c7ed00"
+    }
+  ],
+  "checks": [
+    {
+      "version": "V11 kitchen-20261006",
+      "plateTarget": true,
+      "stoveWidth": 1.72,
+      "upright": 1,
+      "depthTest": true,
+      "frames": [
+        4,
+        4,
+        12
+      ]
+    },
+    {
+      "version": "V11 kitchen-20261006",
+      "plateTarget": true,
+      "stoveWidth": 1.72,
+      "upright": 1,
+      "depthTest": true,
+      "frames": [
+        4,
+        4,
+        12
+      ]
+    }
+  ],
+  "errors": []
+}

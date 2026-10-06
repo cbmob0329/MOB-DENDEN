@@ -1,0 +1,80 @@
+{
+  "results": [
+    {
+      "umbrella": false,
+      "dir": "front",
+      "poses": [
+        "walk_00",
+        "walk_01",
+        "walk_02",
+        "walk_03"
+      ]
+    },
+    {
+      "umbrella": false,
+      "dir": "back",
+      "poses": [
+        "walk_back_00",
+        "walk_back_01"
+      ]
+    },
+    {
+      "umbrella": false,
+      "dir": "left",
+      "poses": [
+        "walk_left_00",
+        "walk_left_01"
+      ]
+    },
+    {
+      "umbrella": false,
+      "dir": "right",
+      "poses": [
+        "walk_right_00",
+        "walk_right_01"
+      ]
+    },
+    {
+      "umbrella": true,
+      "dir": "front",
+      "poses": [
+        "umbrella_walk_00",
+        "umbrella_walk_01",
+        "umbrella_walk_02",
+        "umbrella_walk_03"
+      ]
+    },
+    {
+      "umbrella": true,
+      "dir": "back",
+      "poses": [
+        "umbrella_walk_back_00",
+        "umbrella_walk_back_01"
+      ]
+    },
+    {
+      "umbrella": true,
+      "dir": "left",
+      "poses": [
+        "umbrella_walk_left_00",
+        "umbrella_walk_left_01"
+      ]
+    },
+    {
+      "umbrella": true,
+      "dir": "right",
+      "poses": [
+        "umbrella_walk_right_00",
+        "umbrella_walk_right_01"
+      ]
+    }
+  ],
+  "routes": {
+    "conflicts": [],
+    "rooms": [
+      "home",
+      "home",
+      "home"
+    ]
+  }
+}
