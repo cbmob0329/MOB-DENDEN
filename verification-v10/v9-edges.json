@@ -1,0 +1,14 @@
+{
+  "checks": [
+    "save-failure heart reward and collect rollback",
+    "joy spam cooldown",
+    "20 completion taps yield one dish",
+    "order reload releases once",
+    "home shared meal gesture and exact thanks",
+    "raised DJ table hand contacts and grounded feet",
+    "mobile 320 select/move/rotate/store/restore/confirm/cancel",
+    "mobile 390 select/move/rotate/store/restore/confirm/cancel",
+    "mobile 430 select/move/rotate/store/restore/confirm/cancel"
+  ],
+  "errors": []
+}

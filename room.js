@@ -28,7 +28,8 @@ window.ChillRoom=class ChillRoom{
  b(0,.10,0,1.8,.16,.72,this.wood);b(0,.195,0,1.88,.03,.8,this.cream);
  for(let [i,xx]of [-.55,.55].entries()){let surface=i?.33:.27;b(xx,(surface+.20)/2,.06,.58,surface-.20,.62,'#4c5c52');let disc=c(xx,surface-.011,.17,.215,.215,.022,'#283d36');c(xx,surface+.006,.17,.065,.065,.012,this.accent);this.box(disc,.12,.018,0,.06,.008,.018,'#b3bfa7');f.discs=f.discs||[];f.discs.push(disc);b(xx+.19,surface+.025,-.02,.02,.025,.26,'#c4b887',.3);let speaker=c(xx,.12,-.374,.065,.065,.03,'#34463d');speaker.rotation.x=Math.PI/2;}
  for(let xx of [-.12,0,.12])b(xx,.237,.07,.04,.04,.28,'#718477');
- socket('entry',[0,0,.92]);socket('hands',[-.55,.27,.385]);socket('hands_denden',[-.55,.27,.385]);socket('hands_pink',[.55,.33,.385]);}
+ for(let child of [...f.group.children])child.position.y+=.22; b(0,.21,0,1.88,.08,.8,this.oak);for(let xx of [-.8,.8])for(let zz of [-.29,.29])b(xx,.095,zz,.09,.19,.09,this.wood);
+ socket('entry',[0,0,.92]);socket('hands',[-.55,.49,.385]);socket('hands_denden',[-.55,.49,.385]);socket('hands_pink',[.55,.55,.385]);}
 
  if(key==='oven')this.buildOven(f);
  return f;}
@@ -36,7 +37,7 @@ window.ChillRoom=class ChillRoom{
  applyTheme(index){this.theme=index;const colors=[['#8ea27b','#b2c4a1','#d4a590'],['#c7999d','#e2c2b4','#a6b999'],['#7d969c','#b3c3bd','#d1b080']][index];this.fabric.color.set(colors[0]);this.blanket.color.set(colors[1]);this.accent.color.set(colors[2]);}
  socket(key,name){this.scene.updateMatrixWorld(true);return this.furniture[key].group.localToWorld(this.furniture[key].sockets[name].clone());}
  valid(x,z){return x>=-4.6&&x<=4.6&&z>=-3.55&&z<=3.65&&!this.bounds.some(o=>Math.abs(x-o.x)<o.w/2&&Math.abs(z-o.z)<o.d/2);}
- contactFloorValid(x,z,key){return x>=-4.6&&x<=4.6&&z>=-3.55&&z<=3.65&&!this.bounds.some(o=>{let inset=o.key===key?.12:0;return Math.abs(x-o.x)<(o.w-inset)/2&&Math.abs(z-o.z)<(o.d-inset)/2});}
+ contactFloorValid(x,z,key){return x>=-4.6&&x<=4.6&&z>=-3.55&&z<=3.65&&!this.bounds.some(o=>{let inset=o.key===key?(key==='deck'?.24:.12):0;return Math.abs(x-o.x)<(o.w-inset)/2&&Math.abs(z-o.z)<(o.d-inset)/2});}
  previewLayout(index){this.clearPreview();let g=new THREE.Group(),m=new THREE.MeshBasicMaterial({color:0x91ae85,transparent:true,opacity:.2,depthWrite:false});for(let [key,v]of Object.entries(this.configs()[index])){let f=this.furniture[key],o=new THREE.Mesh(new THREE.BoxGeometry(f.w,.08,f.d),m);o.position.set(v[0],.12,v[1]);o.rotation.y=v[2];g.add(o)}this.preview=g;this.scene.add(g);}
  clearPreview(){if(this.preview){this.scene.remove(this.preview);this.preview.traverse(o=>o.geometry?.dispose());this.preview=null;}}
 };

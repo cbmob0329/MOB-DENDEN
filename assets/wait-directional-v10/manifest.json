@@ -1,0 +1,1025 @@
+{
+  "title": "MOB CHILL LIFE - excited waiting and directional walking",
+  "version": 1,
+  "cell": [
+    256,
+    256
+  ],
+  "filter": "nearest",
+  "mipmaps": false,
+  "newFrameCount": 20,
+  "nyoroRuntimeMultiplier": 0.78,
+  "generation": "Built-in official imagegen, one isolated frame per call; 20 selected outputs, four targeted stride corrections. No programmatic character redraw or mirroring.",
+  "frames": [
+    {
+      "character": "pink",
+      "action": "excited_seated_wait",
+      "frame": 0,
+      "file": "frames/pink/excited_seated_wait_00.png",
+      "anchorPx": [
+        122,
+        215
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        70,
+        87,
+        174,
+        236
+      ],
+      "nominalBodyHeightPx": 149,
+      "sha256": "f3d1240e6b69c39ff16235543095a1b9fb91bc16d6044096ee834c9bd24e8660",
+      "sheet": "sheets/pink/excited_seated_wait.png",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "sourceTransform": {
+        "opaqueThreshold": 128,
+        "sourceBounds": [
+          352,
+          370,
+          867,
+          1111
+        ],
+        "scale": 0.20107962213225372,
+        "offset": [
+          70,
+          87
+        ],
+        "resample": "nearest"
+      },
+      "sitAnchorPx": [
+        122,
+        215
+      ]
+    },
+    {
+      "character": "pink",
+      "action": "excited_seated_wait",
+      "frame": 1,
+      "file": "frames/pink/excited_seated_wait_01.png",
+      "anchorPx": [
+        122,
+        215
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        70,
+        87,
+        173,
+        236
+      ],
+      "nominalBodyHeightPx": 149,
+      "sha256": "9c9c4776e366697ac6fdc1e9b80cdff8b29d29d34602b00e1de430605c423279",
+      "sheet": "sheets/pink/excited_seated_wait.png",
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "sourceTransform": {
+        "opaqueThreshold": 128,
+        "sourceBounds": [
+          362,
+          447,
+          862,
+          1173
+        ],
+        "scale": 0.20523415977961432,
+        "offset": [
+          70,
+          87
+        ],
+        "resample": "nearest"
+      },
+      "sitAnchorPx": [
+        122,
+        215
+      ]
+    },
+    {
+      "character": "pink",
+      "action": "excited_seated_wait",
+      "frame": 2,
+      "file": "frames/pink/excited_seated_wait_02.png",
+      "anchorPx": [
+        122,
+        215
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        72,
+        85,
+        171,
+        236
+      ],
+      "nominalBodyHeightPx": 151,
+      "sha256": "06ab5cb84dedeb720812982e2e36d1a3439beb376fbe5988b555b4cf0abb3437",
+      "sheet": "sheets/pink/excited_seated_wait.png",
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "sourceTransform": {
+        "opaqueThreshold": 128,
+        "sourceBounds": [
+          375,
+          425,
+          855,
+          1154
+        ],
+        "scale": 0.20713305898491083,
+        "offset": [
+          72,
+          85
+        ],
+        "resample": "nearest"
+      },
+      "sitAnchorPx": [
+        122,
+        215
+      ]
+    },
+    {
+      "character": "pink",
+      "action": "excited_seated_wait",
+      "frame": 3,
+      "file": "frames/pink/excited_seated_wait_03.png",
+      "anchorPx": [
+        122,
+        215
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        72,
+        87,
+        172,
+        236
+      ],
+      "nominalBodyHeightPx": 149,
+      "sha256": "78f60d552da1917073a3374d613c311eccfa5efabb7aaad437e8d018db848249",
+      "sheet": "sheets/pink/excited_seated_wait.png",
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "sourceTransform": {
+        "opaqueThreshold": 128,
+        "sourceBounds": [
+          381,
+          429,
+          854,
+          1133
+        ],
+        "scale": 0.21164772727272727,
+        "offset": [
+          72,
+          87
+        ],
+        "resample": "nearest"
+      },
+      "sitAnchorPx": [
+        122,
+        215
+      ]
+    },
+    {
+      "character": "denden",
+      "action": "excited_seated_wait",
+      "frame": 0,
+      "file": "frames/denden/excited_seated_wait_00.png",
+      "anchorPx": [
+        113,
+        218
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        67,
+        85,
+        181,
+        236
+      ],
+      "nominalBodyHeightPx": 151,
+      "sha256": "19219c415e439d6197076645be42520c36ec9aff437b1bee3453c35c7724de30",
+      "sheet": "sheets/denden/excited_seated_wait.png",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "sourceTransform": {
+        "opaqueThreshold": 128,
+        "sourceBounds": [
+          339,
+          428,
+          899,
+          1167
+        ],
+        "scale": 0.20433017591339647,
+        "offset": [
+          67,
+          85
+        ],
+        "resample": "nearest"
+      },
+      "sitAnchorPx": [
+        113,
+        218
+      ]
+    },
+    {
+      "character": "denden",
+      "action": "excited_seated_wait",
+      "frame": 1,
+      "file": "frames/denden/excited_seated_wait_01.png",
+      "anchorPx": [
+        113,
+        218
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        66,
+        85,
+        183,
+        236
+      ],
+      "nominalBodyHeightPx": 151,
+      "sha256": "d58a47955c04da3a569b1ae976d5910b22cbb27f62729069d8e8b66bbd5e92a6",
+      "sheet": "sheets/denden/excited_seated_wait.png",
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "sourceTransform": {
+        "opaqueThreshold": 128,
+        "sourceBounds": [
+          323,
+          408,
+          911,
+          1167
+        ],
+        "scale": 0.19894598155467721,
+        "offset": [
+          66,
+          85
+        ],
+        "resample": "nearest"
+      },
+      "sitAnchorPx": [
+        113,
+        218
+      ]
+    },
+    {
+      "character": "denden",
+      "action": "excited_seated_wait",
+      "frame": 2,
+      "file": "frames/denden/excited_seated_wait_02.png",
+      "anchorPx": [
+        113,
+        218
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        68,
+        83,
+        178,
+        236
+      ],
+      "nominalBodyHeightPx": 153,
+      "sha256": "58e6263ffea0625dc135b30759e1953d7874764302067f00a41a38030ad0cc8b",
+      "sheet": "sheets/denden/excited_seated_wait.png",
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "sourceTransform": {
+        "opaqueThreshold": 128,
+        "sourceBounds": [
+          346,
+          390,
+          895,
+          1151
+        ],
+        "scale": 0.20105124835742444,
+        "offset": [
+          68,
+          83
+        ],
+        "resample": "nearest"
+      },
+      "sitAnchorPx": [
+        113,
+        218
+      ]
+    },
+    {
+      "character": "denden",
+      "action": "excited_seated_wait",
+      "frame": 3,
+      "file": "frames/denden/excited_seated_wait_03.png",
+      "anchorPx": [
+        113,
+        218
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 240,
+      "opaqueBounds": [
+        68,
+        85,
+        179,
+        236
+      ],
+      "nominalBodyHeightPx": 151,
+      "sha256": "45c056aadcfb6200417aafcb8b898c3eb7bfea6361157ee87c3039b7cb456315",
+      "sheet": "sheets/denden/excited_seated_wait.png",
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "sourceTransform": {
+        "opaqueThreshold": 128,
+        "sourceBounds": [
+          346,
+          430,
+          887,
+          1166
+        ],
+        "scale": 0.20516304347826086,
+        "offset": [
+          68,
+          85
+        ],
+        "resample": "nearest"
+      },
+      "sitAnchorPx": [
+        113,
+        218
+      ]
+    },
+    {
+      "character": "nyoro",
+      "action": "walk_back",
+      "frame": 0,
+      "file": "frames/nyoro/walk_back_00.png",
+      "anchorPx": [
+        128,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 180,
+      "opaqueBounds": [
+        31,
+        76,
+        176,
+        236
+      ],
+      "nominalBodyHeightPx": 160,
+      "sha256": "cc382fbae47146c8e67ce631ccbb2e7510753b42aa110348b3822b2a637eb05c",
+      "sheet": "sheets/nyoro/walk_back.png",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "sourceTransform": {
+        "opaqueThreshold": 128,
+        "sourceBounds": [
+          212,
+          271,
+          943,
+          1077
+        ],
+        "scale": 0.19851116625310175,
+        "offset": [
+          31,
+          76
+        ],
+        "resample": "nearest"
+      }
+    },
+    {
+      "character": "nyoro",
+      "action": "walk_back",
+      "frame": 1,
+      "file": "frames/nyoro/walk_back_01.png",
+      "anchorPx": [
+        128,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 180,
+      "opaqueBounds": [
+        31,
+        76,
+        173,
+        236
+      ],
+      "nominalBodyHeightPx": 160,
+      "sha256": "6e44b82295d3dad08dd7b01a337c8173a1795a6fd94098fb631d30dc9db17337",
+      "sheet": "sheets/nyoro/walk_back.png",
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "sourceTransform": {
+        "opaqueThreshold": 128,
+        "sourceBounds": [
+          192,
+          263,
+          944,
+          1110
+        ],
+        "scale": 0.18890200708382526,
+        "offset": [
+          31,
+          76
+        ],
+        "resample": "nearest"
+      }
+    },
+    {
+      "character": "nyoro",
+      "action": "walk_left",
+      "frame": 0,
+      "file": "frames/nyoro/walk_left_00.png",
+      "anchorPx": [
+        128,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 180,
+      "opaqueBounds": [
+        65,
+        76,
+        249,
+        236
+      ],
+      "nominalBodyHeightPx": 160,
+      "sha256": "fe4d2fc4c22f3626c692077e15f50bfe0237b99ea6f11663164d40d8bed7cfa5",
+      "sheet": "sheets/nyoro/walk_left.png",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "sourceTransform": {
+        "opaqueThreshold": 128,
+        "sourceBounds": [
+          306,
+          331,
+          1200,
+          1107
+        ],
+        "scale": 0.20618556701030927,
+        "offset": [
+          65,
+          76
+        ],
+        "resample": "nearest"
+      }
+    },
+    {
+      "character": "nyoro",
+      "action": "walk_left",
+      "frame": 1,
+      "file": "frames/nyoro/walk_left_01.png",
+      "anchorPx": [
+        128,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 180,
+      "opaqueBounds": [
+        65,
+        76,
+        250,
+        236
+      ],
+      "nominalBodyHeightPx": 160,
+      "sha256": "5a7b5c136c21a42a8b66f117617d77563e797326ffcad292021f176d24f22e1f",
+      "sheet": "sheets/nyoro/walk_left.png",
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "sourceTransform": {
+        "opaqueThreshold": 128,
+        "sourceBounds": [
+          303,
+          332,
+          1199,
+          1108
+        ],
+        "scale": 0.20618556701030927,
+        "offset": [
+          65,
+          76
+        ],
+        "resample": "nearest"
+      }
+    },
+    {
+      "character": "nyoro",
+      "action": "walk_right",
+      "frame": 0,
+      "file": "frames/nyoro/walk_right_00.png",
+      "anchorPx": [
+        128,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 180,
+      "opaqueBounds": [
+        12,
+        76,
+        185,
+        236
+      ],
+      "nominalBodyHeightPx": 160,
+      "sha256": "12e3c7c8ca2c27b2d9b68f564ec0f618234a29cd9ccf970c78bd3499ff90a81e",
+      "sheet": "sheets/nyoro/walk_right.png",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "sourceTransform": {
+        "opaqueThreshold": 128,
+        "sourceBounds": [
+          169,
+          268,
+          1071,
+          1100
+        ],
+        "scale": 0.19230769230769232,
+        "offset": [
+          12,
+          76
+        ],
+        "resample": "nearest"
+      }
+    },
+    {
+      "character": "nyoro",
+      "action": "walk_right",
+      "frame": 1,
+      "file": "frames/nyoro/walk_right_01.png",
+      "anchorPx": [
+        128,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 180,
+      "opaqueBounds": [
+        10,
+        76,
+        187,
+        236
+      ],
+      "nominalBodyHeightPx": 160,
+      "sha256": "7d8e93a03fa3206f800efe7acd730d1d7bcecae9a297025464e7fea7b445b209",
+      "sheet": "sheets/nyoro/walk_right.png",
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "sourceTransform": {
+        "opaqueThreshold": 128,
+        "sourceBounds": [
+          161,
+          266,
+          1074,
+          1092
+        ],
+        "scale": 0.1937046004842615,
+        "offset": [
+          10,
+          76
+        ],
+        "resample": "nearest"
+      }
+    },
+    {
+      "character": "nyoro",
+      "action": "umbrella_walk_back",
+      "frame": 0,
+      "file": "frames/nyoro/umbrella_walk_back_00.png",
+      "anchorPx": [
+        128,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 180,
+      "opaqueBounds": [
+        20,
+        5,
+        215,
+        236
+      ],
+      "nominalBodyHeightPx": 160,
+      "sha256": "cb1dc6da80c140f62d7e7d590904aa94f2093561a677197c8c96b46c9bff8484",
+      "sheet": "sheets/nyoro/umbrella_walk_back.png",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "sourceTransform": {
+        "opaqueThreshold": 128,
+        "sourceBounds": [
+          172,
+          78,
+          1109,
+          1189
+        ],
+        "scale": 0.20833333333333334,
+        "offset": [
+          20,
+          5
+        ],
+        "resample": "nearest"
+      }
+    },
+    {
+      "character": "nyoro",
+      "action": "umbrella_walk_back",
+      "frame": 1,
+      "file": "frames/nyoro/umbrella_walk_back_01.png",
+      "anchorPx": [
+        128,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 180,
+      "opaqueBounds": [
+        31,
+        8,
+        209,
+        236
+      ],
+      "nominalBodyHeightPx": 160,
+      "sha256": "4c5de3db2bced1f02b75312dc80362a87b114fa6b6ea9fdbfa987edace89413b",
+      "sheet": "sheets/nyoro/umbrella_walk_back.png",
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "sourceTransform": {
+        "opaqueThreshold": 128,
+        "sourceBounds": [
+          229,
+          31,
+          1142,
+          1202
+        ],
+        "scale": 0.19488428745432398,
+        "offset": [
+          31,
+          8
+        ],
+        "resample": "nearest"
+      }
+    },
+    {
+      "character": "nyoro",
+      "action": "umbrella_walk_left",
+      "frame": 0,
+      "file": "frames/nyoro/umbrella_walk_left_00.png",
+      "anchorPx": [
+        128,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 180,
+      "opaqueBounds": [
+        42,
+        15,
+        242,
+        236
+      ],
+      "nominalBodyHeightPx": 160,
+      "sha256": "d891b3e4b87c673661af2a004bc4a45d3eb5e174cbbbce3c2b7b74a62a410534",
+      "sheet": "sheets/nyoro/umbrella_walk_left.png",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "sourceTransform": {
+        "opaqueThreshold": 128,
+        "sourceBounds": [
+          170,
+          44,
+          1168,
+          1147
+        ],
+        "scale": 0.2002503128911139,
+        "offset": [
+          42,
+          15
+        ],
+        "resample": "nearest"
+      }
+    },
+    {
+      "character": "nyoro",
+      "action": "umbrella_walk_left",
+      "frame": 1,
+      "file": "frames/nyoro/umbrella_walk_left_01.png",
+      "anchorPx": [
+        128,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 180,
+      "opaqueBounds": [
+        41,
+        15,
+        242,
+        236
+      ],
+      "nominalBodyHeightPx": 160,
+      "sha256": "be643c80ff2fa32685d2f5f151655c6d3952ed2fd0dae3976de80bc33054774b",
+      "sheet": "sheets/nyoro/umbrella_walk_left.png",
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "sourceTransform": {
+        "opaqueThreshold": 128,
+        "sourceBounds": [
+          169,
+          45,
+          1170,
+          1145
+        ],
+        "scale": 0.20075282308657466,
+        "offset": [
+          41,
+          15
+        ],
+        "resample": "nearest"
+      }
+    },
+    {
+      "character": "nyoro",
+      "action": "umbrella_walk_right",
+      "frame": 0,
+      "file": "frames/nyoro/umbrella_walk_right_00.png",
+      "anchorPx": [
+        128,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 180,
+      "opaqueBounds": [
+        4,
+        26,
+        199,
+        236
+      ],
+      "nominalBodyHeightPx": 160,
+      "sha256": "9160761fcbf78e696f72d1ebd8508be33e88a6d443f627560e8595a94d9b190e",
+      "sheet": "sheets/nyoro/umbrella_walk_right.png",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "sourceTransform": {
+        "opaqueThreshold": 128,
+        "sourceBounds": [
+          159,
+          70,
+          1151,
+          1142
+        ],
+        "scale": 0.19631901840490798,
+        "offset": [
+          4,
+          26
+        ],
+        "resample": "nearest"
+      }
+    },
+    {
+      "character": "nyoro",
+      "action": "umbrella_walk_right",
+      "frame": 1,
+      "file": "frames/nyoro/umbrella_walk_right_01.png",
+      "anchorPx": [
+        128,
+        236
+      ],
+      "footAnchorPx": [
+        128,
+        236
+      ],
+      "durationMs": 180,
+      "opaqueBounds": [
+        3,
+        26,
+        200,
+        236
+      ],
+      "nominalBodyHeightPx": 160,
+      "sha256": "839308749d13ca1f692a4c52a66fda42b816fc636abe1e04aec9bab78720ef9a",
+      "sheet": "sheets/nyoro/umbrella_walk_right.png",
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "sourceTransform": {
+        "opaqueThreshold": 128,
+        "sourceBounds": [
+          162,
+          73,
+          1152,
+          1132
+        ],
+        "scale": 0.19875776397515527,
+        "offset": [
+          3,
+          26
+        ],
+        "resample": "nearest"
+      }
+    }
+  ],
+  "actions": [
+    {
+      "character": "pink",
+      "action": "excited_seated_wait",
+      "sheet": "sheets/pink/excited_seated_wait.png",
+      "frames": 4,
+      "loop": true,
+      "durationMs": 240
+    },
+    {
+      "character": "denden",
+      "action": "excited_seated_wait",
+      "sheet": "sheets/denden/excited_seated_wait.png",
+      "frames": 4,
+      "loop": true,
+      "durationMs": 240
+    },
+    {
+      "character": "nyoro",
+      "action": "walk_back",
+      "sheet": "sheets/nyoro/walk_back.png",
+      "frames": 2,
+      "loop": true,
+      "durationMs": 180
+    },
+    {
+      "character": "nyoro",
+      "action": "walk_left",
+      "sheet": "sheets/nyoro/walk_left.png",
+      "frames": 2,
+      "loop": true,
+      "durationMs": 180
+    },
+    {
+      "character": "nyoro",
+      "action": "walk_right",
+      "sheet": "sheets/nyoro/walk_right.png",
+      "frames": 2,
+      "loop": true,
+      "durationMs": 180
+    },
+    {
+      "character": "nyoro",
+      "action": "umbrella_walk_back",
+      "sheet": "sheets/nyoro/umbrella_walk_back.png",
+      "frames": 2,
+      "loop": true,
+      "durationMs": 180
+    },
+    {
+      "character": "nyoro",
+      "action": "umbrella_walk_left",
+      "sheet": "sheets/nyoro/umbrella_walk_left.png",
+      "frames": 2,
+      "loop": true,
+      "durationMs": 180
+    },
+    {
+      "character": "nyoro",
+      "action": "umbrella_walk_right",
+      "sheet": "sheets/nyoro/umbrella_walk_right.png",
+      "frames": 2,
+      "loop": true,
+      "durationMs": 180
+    }
+  ],
+  "qa": {
+    "allTransparent": true,
+    "allCells256": true,
+    "noCanvasEdgeContact": true,
+    "uniqueFrames": 20,
+    "limitations": [
+      "Generated contours and fine clothing details vary slightly between frames.",
+      "Two-frame Nyoro cycles use opposite leg layering/contact poses; back views have slight viewpoint variation.",
+      "Seat and foot anchors are normalized asset metadata; final sitting contact and motion should be checked in game.",
+      "No game runtime integration or animation test has been performed in this cloud task."
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "checks": [
+    "four simultaneous bubbles stay on screen without overlap",
+    "camera room switch does not teleport and hides off-room speech",
+    "editor/modal block room switch; vertical movement does not swipe",
+    "early departure leaves dirty plate, no completion reward; reload preserves plate",
+    "old-save migration preserves inventory and starts new wallet at zero"
+  ],
+  "four": [
+    {
+      "x": 35.46875,
+      "y": 283.078125,
+      "w": 179.03125,
+      "h": 52,
+      "opacity": "1"
+    },
+    {
+      "x": 41.078125,
+      "y": 224.078125,
+      "w": 179.03125,
+      "h": 52,
+      "opacity": "1"
+    },
+    {
+      "x": 46.71875,
+      "y": 165.078125,
+      "w": 179.03125,
+      "h": 52,
+      "opacity": "1"
+    },
+    {
+      "x": 132.96875,
+      "y": 491,
+      "w": 179.03125,
+      "h": 52,
+      "opacity": "1"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "hashes": [
+    {
+      "name": "build.cjs",
+      "sha256": "52a8323e435688676021f9fd0be9145dec5f33fd1436833638a71ae4fe6b7a29"
+    },
+    {
+      "name": "cafe.js",
+      "sha256": "54d9716d8ea65ec7e332795ec2d34a5ebee0a595e1a839df2c0e48a622859b67"
+    },
+    {
+      "name": "cafe-v8.js",
+      "sha256": "ee91c49bcec0793e19435eb91566a5d7bac77db245136283dcec3391ab752e88"
+    },
+    {
+      "name": "game.js",
+      "sha256": "a4441a245ad741f6069337fd37b69d176097308955186e32361d8b8fd4d18237"
+    },
+    {
+      "name": "room.js",
+      "sha256": "410bac66031831e4e6d68920076ad7a2e5b2c1fbed450bc7f15cb98799b1d929"
+    },
+    {
+      "name": "index.html",
+      "sha256": "cc05393fc163fa0a313f56b865705e07dd842b85f7202045a576fdfbec6a0037"
+    },
+    {
+      "name": "life-v9.js",
+      "sha256": "3f690606e840201168f8841693e461e29def37e5456d24b18a702c2d8e1cab11"
+    },
+    {
+      "name": "life-v9.css",
+      "sha256": "6f8e8bbf55ff9be657e2b775358a9c66343dcf20072ae36b0bfadf105921616d"
+    },
+    {
+      "name": "MOB_CHILL_LIFE.html",
+      "sha256": "03665478318a50e087f6dab2581b913698a5acae8c09e9e2e0f8a7b644159b3f"
+    }
+  ],
+  "result": {
+    "version": "V9 life-20261006",
+    "actors": [
+      {
+        "name": "モブデンデン",
+        "loaded": true
+      },
+      {
+        "name": "モブピンク",
+        "loaded": true
+      },
+      {
+        "name": "モブニョロ",
+        "loaded": true
+      },
+      {
+        "name": "モブイルカエル",
+        "loaded": true
+      }
+    ],
+    "djDance": true,
+    "frames": 32
+  },
+  "errors": []
+}

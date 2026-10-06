@@ -1,0 +1,7 @@
+.bubble:not(.effect):not([data-essential=true]){display:block}
+.bubble:not(.effect){max-width:min(260px,calc(100vw - 20px));z-index:12;line-height:1.5;pointer-events:none}
+.heart-drop{position:absolute;z-index:5;min-width:44px;min-height:44px;border:0;background:transparent;color:#e9919e;font-size:32px;text-shadow:0 2px #a96374,2px 0 #fff,-2px 0 #fff;transform:translate(-50%,-50%);pointer-events:auto;animation:heart-fall .85s ease-out}
+.heart-drop[hidden]{display:none}@keyframes heart-fall{0%{transform:translate(-50%,calc(-50% - 80px)) scale(.5)}55%{transform:translate(-50%,-50%) scale(1.13,.86)}75%{transform:translate(-50%,calc(-50% - 17px))}100%{transform:translate(-50%,-50%)}}
+.shop-row{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:8px 0}.shop-row small{display:block}.shop-row button,.shop-actions button,#heartWallet,#lifeControls{min-height:44px}.shop-actions{display:flex;gap:10px;flex-wrap:wrap}
+#extraControls{display:flex;justify-content:center;gap:5px;flex-wrap:wrap;background:#f3eee2;padding:7px;border-radius:14px}#extraControls[hidden]{display:none}#extraControls button{min-height:44px;min-width:44px}#heartWallet{color:#9e5566;font-weight:bold}
+@media(max-width:600px){footer nav{grid-template-columns:repeat(5,minmax(0,1fr))}footer .hint{display:none}.top{gap:4px}.top button{padding:5px 9px}.bubble:not(.effect){font-size:12px;max-width:240px}#extraControls{position:absolute;bottom:100%;left:8px;right:8px;box-shadow:0 2px 12px #665c4833}}

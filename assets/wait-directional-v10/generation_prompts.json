@@ -1,0 +1,121 @@
+[
+  {
+    "name": "pink_0",
+    "path": "exec-2d969222-2d5f-4d93-a8dc-06aedde1770e.png",
+    "finalFile": "frames/pink/excited_seated_wait_00.png"
+  },
+  {
+    "name": "pink_1",
+    "prompt": "Use case: identity-preserve. ONE individual animation frame 1 of a four-frame excited seated waiting loop. Reference image is the exact pink character and invariant outfit, proportions and style. Pose: bring both hands close together near chest in eager anticipation, elbows bent. Keep seated legs and same three-quarter orientation. Pink is a dark-faced hooded character, round gold glasses, fuchsia hood WITHOUT cat ears, pink clothes, brown gloves and boots. Preserve exact reference design, no species change or clothing changes. Crisp outlined chibi pixel/raster game sprite. Transparent square canvas with one whole character and generous empty margins; no chair, food, text, effects, extra objects or characters. Match reference pose scale and placement, intended 256px cell, foot baseline236; seat anchor 122,215. Output ONE isolated frame, not a sheet.",
+    "path": "exec-ec93ebc1-ca3f-49de-90e1-3ccde3a3314a.png",
+    "finalFile": "frames/pink/excited_seated_wait_01.png"
+  },
+  {
+    "name": "pink_2",
+    "prompt": "Use case: identity-preserve. ONE individual animation frame 2 of a four-frame excited seated waiting loop. Reference image is the exact pink character and invariant outfit, proportions and style. Pose: happy upper-body bob upward very slightly while hips stay seated; hands together near chest, delighted expression. Keep seated legs and same three-quarter orientation. Pink is a dark-faced hooded character, round gold glasses, fuchsia hood WITHOUT cat ears, pink clothes, brown gloves and boots. Preserve exact reference design, no species change or clothing changes. Crisp outlined chibi pixel/raster game sprite. Transparent square canvas with one whole character and generous empty margins; no chair, food, text, effects, extra objects or characters. Match reference pose scale and placement, intended 256px cell, foot baseline236; seat anchor 122,215. Output ONE isolated frame, not a sheet.",
+    "path": "exec-f36eeb46-74a0-402e-bc31-d338985c602d.png",
+    "finalFile": "frames/pink/excited_seated_wait_02.png"
+  },
+  {
+    "name": "pink_3",
+    "prompt": "Use case: identity-preserve. ONE individual animation frame 3 of a four-frame excited seated waiting loop. Reference image is the exact pink character and invariant outfit, proportions and style. Pose: settle back toward relaxed seated waiting pose, hands lowering halfway toward lap. Keep seated legs and same three-quarter orientation. Pink is a dark-faced hooded character, round gold glasses, fuchsia hood WITHOUT cat ears, pink clothes, brown gloves and boots. Preserve exact reference design, no species change or clothing changes. Crisp outlined chibi pixel/raster game sprite. Transparent square canvas with one whole character and generous empty margins; no chair, food, text, effects, extra objects or characters. Match reference pose scale and placement, intended 256px cell, foot baseline236; seat anchor 122,215. Output ONE isolated frame, not a sheet.",
+    "path": "exec-851371cd-ed4c-4ca8-bb27-c1cf2c5723b8.png",
+    "finalFile": "frames/pink/excited_seated_wait_03.png"
+  },
+  {
+    "name": "denden_0",
+    "prompt": "Use case: identity-preserve. ONE individual animation frame 0 of a four-frame excited seated waiting loop. Reference image is the exact denden character and invariant outfit, proportions and style. Pose: relaxed seated anticipation with hands just above lap. Keep seated legs and same three-quarter orientation. Denden is a YELLOW cat with pointed ears in a pink cat-eared hoodie, dark round sunglasses, yellow paws and bare yellow feet, long yellow tail. Preserve exact reference design, no species change or clothing changes. Crisp outlined chibi pixel/raster game sprite. Transparent square canvas with one whole character and generous empty margins; no chair, food, text, effects, extra objects or characters. Match reference pose scale and placement, intended 256px cell, foot baseline236; seat anchor 113,218. Output ONE isolated frame, not a sheet.",
+    "path": "exec-e618d968-859b-4365-a9e2-ffd843da5152.png",
+    "finalFile": "frames/denden/excited_seated_wait_00.png"
+  },
+  {
+    "name": "denden_1",
+    "prompt": "Use case: identity-preserve. ONE individual animation frame 1 of a four-frame excited seated waiting loop. Reference image is the exact denden character and invariant outfit, proportions and style. Pose: bring both hands close together near chest in eager anticipation, elbows bent. Keep seated legs and same three-quarter orientation. Denden is a YELLOW cat with pointed ears in a pink cat-eared hoodie, dark round sunglasses, yellow paws and bare yellow feet, long yellow tail. Preserve exact reference design, no species change or clothing changes. Crisp outlined chibi pixel/raster game sprite. Transparent square canvas with one whole character and generous empty margins; no chair, food, text, effects, extra objects or characters. Match reference pose scale and placement, intended 256px cell, foot baseline236; seat anchor 113,218. Output ONE isolated frame, not a sheet.",
+    "path": "exec-2c55e561-03dc-432b-967b-31c061231f73.png",
+    "finalFile": "frames/denden/excited_seated_wait_01.png"
+  },
+  {
+    "name": "denden_2",
+    "prompt": "Use case: identity-preserve. ONE individual animation frame 2 of a four-frame excited seated waiting loop. Reference image is the exact denden character and invariant outfit, proportions and style. Pose: happy upper-body bob upward very slightly while hips stay seated; hands together near chest, delighted expression. Keep seated legs and same three-quarter orientation. Denden is a YELLOW cat with pointed ears in a pink cat-eared hoodie, dark round sunglasses, yellow paws and bare yellow feet, long yellow tail. Preserve exact reference design, no species change or clothing changes. Crisp outlined chibi pixel/raster game sprite. Transparent square canvas with one whole character and generous empty margins; no chair, food, text, effects, extra objects or characters. Match reference pose scale and placement, intended 256px cell, foot baseline236; seat anchor 113,218. Output ONE isolated frame, not a sheet.",
+    "path": "exec-fc58dc20-0ac9-460c-b465-4e507e8af936.png",
+    "finalFile": "frames/denden/excited_seated_wait_02.png"
+  },
+  {
+    "name": "denden_3",
+    "prompt": "Use case: identity-preserve. ONE individual animation frame 3 of a four-frame excited seated waiting loop. Reference image is the exact denden character and invariant outfit, proportions and style. Pose: settle back toward relaxed seated waiting pose, hands lowering halfway toward lap. Keep seated legs and same three-quarter orientation. Denden is a YELLOW cat with pointed ears in a pink cat-eared hoodie, dark round sunglasses, yellow paws and bare yellow feet, long yellow tail. Preserve exact reference design, no species change or clothing changes. Crisp outlined chibi pixel/raster game sprite. Transparent square canvas with one whole character and generous empty margins; no chair, food, text, effects, extra objects or characters. Match reference pose scale and placement, intended 256px cell, foot baseline236; seat anchor 113,218. Output ONE isolated frame, not a sheet.",
+    "path": "exec-b080abc7-0eb2-4249-9303-f86e264d5f1b.png",
+    "finalFile": "frames/denden/excited_seated_wait_03.png"
+  },
+  {
+    "name": "nyoro_walk_back_0",
+    "prompt": "Use case: identity-preserve. ONE isolated individual animation sprite frame, Nyoro walk_back_0. Input reference is exact character identity/outfit/style. Create a genuinely BACK-FACING walking AWAY pose: back of head and back of outfit visible, NO face or frontal glasses visible, NOT a front-view shuffle and not stationary sideways stance. Stride contact A: near leg extended forward with heel contacting ground; far leg extended backward; counter-swing arms. Nyoro is the EXACT black-and-yellow small reptilian mascot in reference with pointed black horns, yellow muzzle/underside, orange accents and spines, black outfit with orange outlines, small round gold chest clasp and long black/orange patterned tail. Preserve gold goggles wrapping around head correctly for viewpoint, species, chibi proportions, colors and clothing asymmetry. NO umbrella or prop. Preserve outlined pixel-art style. Transparent background. Entire silhouette and tail inside square canvas with no cropping or neighboring limbs. Intended 256x256 cell, ground/foot anchor (128,236), character body height160px excluding umbrella.  ONE character, ONE frame only. No sheet, text, scene, floor shadow, particles.",
+    "path": "exec-03c5c4a4-6391-44ea-8be5-b623780687ad.png",
+    "finalFile": "frames/nyoro/walk_back_00.png"
+  },
+  {
+    "name": "nyoro_walk_back_1",
+    "prompt": "Use case: identity-preserve. ONE isolated individual animation sprite frame, Nyoro walk_back_1. Input reference is exact character identity/outfit/style. Create a genuinely BACK-FACING walking AWAY pose: back of head and back of outfit visible, NO face or frontal glasses visible, NOT a front-view shuffle and not stationary sideways stance. Opposite stride contact B: near leg extended backward; far leg extended forward with heel contacting ground; opposite arm swing. Nyoro is the EXACT black-and-yellow small reptilian mascot in reference with pointed black horns, yellow muzzle/underside, orange accents and spines, black outfit with orange outlines, small round gold chest clasp and long black/orange patterned tail. Preserve gold goggles wrapping around head correctly for viewpoint, species, chibi proportions, colors and clothing asymmetry. NO umbrella or prop. Preserve outlined pixel-art style. Transparent background. Entire silhouette and tail inside square canvas with no cropping or neighboring limbs. Intended 256x256 cell, ground/foot anchor (128,236), character body height160px excluding umbrella.  ONE character, ONE frame only. No sheet, text, scene, floor shadow, particles.",
+    "path": "exec-e3c7eab2-65d3-49a9-94bd-c95818d8c8fc.png",
+    "finalFile": "frames/nyoro/walk_back_01.png"
+  },
+  {
+    "name": "nyoro_walk_left_0",
+    "prompt": "Use case: identity-preserve. ONE isolated individual animation sprite frame, Nyoro walk_left_0. Input reference is exact character identity/outfit/style. Create a genuinely LEFT-FACING PROFILE walking toward screen left, head, muzzle, torso and feet all aimed left, NOT a front-view shuffle and not stationary sideways stance. Stride contact A: near leg extended forward with heel contacting ground; far leg extended backward; counter-swing arms. Nyoro is the EXACT black-and-yellow small reptilian mascot in reference with pointed black horns, yellow muzzle/underside, orange accents and spines, black outfit with orange outlines, small round gold chest clasp and long black/orange patterned tail. Preserve gold goggles wrapping around head correctly for viewpoint, species, chibi proportions, colors and clothing asymmetry. NO umbrella or prop. Preserve outlined pixel-art style. Transparent background. Entire silhouette and tail inside square canvas with no cropping or neighboring limbs. Intended 256x256 cell, ground/foot anchor (128,236), character body height160px excluding umbrella.  ONE character, ONE frame only. No sheet, text, scene, floor shadow, particles.",
+    "path": "exec-29ce1dfb-0f58-4267-9861-7e77874a9f75.png",
+    "finalFile": "frames/nyoro/walk_left_00.png"
+  },
+  {
+    "name": "nyoro_walk_left_1",
+    "prompt": "Use case: precise-object-edit. This reference is contact-A of a two-frame walking animation. Create contact-B by changing ONLY the LEGS and free arm. Preserve identical head, body, tail, canvas location, scale, colors, viewpoint and umbrella if present. The nearest leg must now be BEHIND the hip, with its knee bent and heel raised, while the farther leg extends FORWARD past the hip with foot contacting ground. This is opposite to reference. Do not repeat the same forward leg. The visible near thigh angles BACK toward the tail; near boot beneath tail. Far boot extends forward toward nose. Small reverse swing of free arm. Keep whole character pixel game sprite identical, no face or outfit redesign, no flipping image. Transparent background. One individual frame.",
+    "path": "exec-690a1af2-0b7d-4798-b5ca-4d950d2ed526.png",
+    "finalFile": "frames/nyoro/walk_left_01.png"
+  },
+  {
+    "name": "nyoro_walk_right_0",
+    "prompt": "Use case: identity-preserve. ONE isolated individual animation sprite frame, Nyoro walk_right_0. Input reference is exact character identity/outfit/style. Create a genuinely RIGHT-FACING PROFILE walking toward screen right, head, muzzle, torso and feet all aimed right, NOT a front-view shuffle and not stationary sideways stance. Stride contact A: near leg extended forward with heel contacting ground; far leg extended backward; counter-swing arms. Nyoro is the EXACT black-and-yellow small reptilian mascot in reference with pointed black horns, yellow muzzle/underside, orange accents and spines, black outfit with orange outlines, small round gold chest clasp and long black/orange patterned tail. Preserve gold goggles wrapping around head correctly for viewpoint, species, chibi proportions, colors and clothing asymmetry. NO umbrella or prop. Preserve outlined pixel-art style. Transparent background. Entire silhouette and tail inside square canvas with no cropping or neighboring limbs. Intended 256x256 cell, ground/foot anchor (128,236), character body height160px excluding umbrella.  ONE character, ONE frame only. No sheet, text, scene, floor shadow, particles.",
+    "path": "exec-ec3ab1e0-cf18-46d0-beb0-a75a93ba6cea.png",
+    "finalFile": "frames/nyoro/walk_right_00.png"
+  },
+  {
+    "name": "nyoro_walk_right_1",
+    "prompt": "Use case: precise-object-edit. This reference is contact-A of a two-frame walking animation. Create contact-B by changing ONLY the LEGS and free arm. Preserve identical head, body, tail, canvas location, scale, colors, viewpoint and umbrella if present. The nearest leg must now be BEHIND the hip, with its knee bent and heel raised, while the farther leg extends FORWARD past the hip with foot contacting ground. This is opposite to reference. Do not repeat the same forward leg. The visible near thigh angles BACK toward the tail; near boot beneath tail. Far boot extends forward toward nose. Small reverse swing of free arm. Keep whole character pixel game sprite identical, no face or outfit redesign, no flipping image. Transparent background. One individual frame.",
+    "path": "exec-5104589a-20df-467b-bf8f-8eedc5ec39eb.png",
+    "finalFile": "frames/nyoro/walk_right_01.png"
+  },
+  {
+    "name": "nyoro_umbrella_walk_back_0",
+    "prompt": "Use case: identity-preserve. ONE isolated individual animation sprite frame, Nyoro umbrella_walk_back_0. Input reference is exact character identity/outfit/style. Create a genuinely BACK-FACING walking AWAY pose: back of head and back of outfit visible, NO face or frontal glasses visible, NOT a front-view shuffle and not stationary sideways stance. Stride contact A: near leg extended forward with heel contacting ground; far leg extended backward; counter-swing arms. Nyoro is the EXACT black-and-yellow small reptilian mascot in reference with pointed black horns, yellow muzzle/underside, orange accents and spines, black outfit with orange outlines, small round gold chest clasp and long black/orange patterned tail. Preserve gold goggles wrapping around head correctly for viewpoint, species, chibi proportions, colors and clothing asymmetry. Hold the SAME orange-and-black umbrella above the head: one hand grips its continuous shaft correctly, canopy attached to shaft and fully visible. Walking legs alternate while grip remains fixed. Preserve outlined pixel-art style. Transparent background. Entire silhouette and tail and umbrella inside square canvas with no cropping or neighboring limbs. Intended 256x256 cell, ground/foot anchor (128,236), character body height160px excluding umbrella. Canopy fits above body inside y4..90; keep body same size as unheld reference. ONE character, ONE frame only. No sheet, text, scene, floor shadow, particles.",
+    "path": "exec-dd1ee939-e712-4df8-b488-77299455e287.png",
+    "finalFile": "frames/nyoro/umbrella_walk_back_00.png"
+  },
+  {
+    "name": "nyoro_umbrella_walk_back_1",
+    "prompt": "Use case: identity-preserve. ONE isolated individual animation sprite frame, Nyoro umbrella_walk_back_1. Input reference is exact character identity/outfit/style. Create a genuinely BACK-FACING walking AWAY pose: back of head and back of outfit visible, NO face or frontal glasses visible, NOT a front-view shuffle and not stationary sideways stance. Opposite stride contact B: near leg extended backward; far leg extended forward with heel contacting ground; opposite arm swing. Nyoro is the EXACT black-and-yellow small reptilian mascot in reference with pointed black horns, yellow muzzle/underside, orange accents and spines, black outfit with orange outlines, small round gold chest clasp and long black/orange patterned tail. Preserve gold goggles wrapping around head correctly for viewpoint, species, chibi proportions, colors and clothing asymmetry. Hold the SAME orange-and-black umbrella above the head: one hand grips its continuous shaft correctly, canopy attached to shaft and fully visible. Walking legs alternate while grip remains fixed. Preserve outlined pixel-art style. Transparent background. Entire silhouette and tail and umbrella inside square canvas with no cropping or neighboring limbs. Intended 256x256 cell, ground/foot anchor (128,236), character body height160px excluding umbrella. Canopy fits above body inside y4..90; keep body same size as unheld reference. ONE character, ONE frame only. No sheet, text, scene, floor shadow, particles.",
+    "path": "exec-71df79b6-b77c-4a5f-91f1-2c061eec0371.png",
+    "finalFile": "frames/nyoro/umbrella_walk_back_01.png"
+  },
+  {
+    "name": "nyoro_umbrella_walk_left_0",
+    "prompt": "Use case: identity-preserve. ONE isolated individual animation sprite frame, Nyoro umbrella_walk_left_0. Input reference is exact character identity/outfit/style. Create a genuinely LEFT-FACING PROFILE walking toward screen left, head, muzzle, torso and feet all aimed left, NOT a front-view shuffle and not stationary sideways stance. Stride contact A: near leg extended forward with heel contacting ground; far leg extended backward; counter-swing arms. Nyoro is the EXACT black-and-yellow small reptilian mascot in reference with pointed black horns, yellow muzzle/underside, orange accents and spines, black outfit with orange outlines, small round gold chest clasp and long black/orange patterned tail. Preserve gold goggles wrapping around head correctly for viewpoint, species, chibi proportions, colors and clothing asymmetry. Hold the SAME orange-and-black umbrella above the head: one hand grips its continuous shaft correctly, canopy attached to shaft and fully visible. Walking legs alternate while grip remains fixed. Preserve outlined pixel-art style. Transparent background. Entire silhouette and tail and umbrella inside square canvas with no cropping or neighboring limbs. Intended 256x256 cell, ground/foot anchor (128,236), character body height160px excluding umbrella. Canopy fits above body inside y4..90; keep body same size as unheld reference. ONE character, ONE frame only. No sheet, text, scene, floor shadow, particles.",
+    "path": "exec-b9e88f2e-5d31-42a8-8d5d-43f0f9cd339f.png",
+    "finalFile": "frames/nyoro/umbrella_walk_left_00.png"
+  },
+  {
+    "name": "nyoro_umbrella_walk_left_1",
+    "prompt": "Use case: precise-object-edit. This reference is contact-A of a two-frame walking animation. Create contact-B by changing ONLY the LEGS and free arm. Preserve identical head, body, tail, canvas location, scale, colors, viewpoint and umbrella if present. The nearest leg must now be BEHIND the hip, with its knee bent and heel raised, while the farther leg extends FORWARD past the hip with foot contacting ground. This is opposite to reference. Do not repeat the same forward leg. The visible near thigh angles BACK toward the tail; near boot beneath tail. Far boot extends forward toward nose. Small reverse swing of free arm. Keep whole character pixel game sprite identical, no face or outfit redesign, no flipping image. Transparent background. One individual frame.",
+    "path": "exec-010aaa68-2e42-4a53-b10b-772c01b49975.png",
+    "finalFile": "frames/nyoro/umbrella_walk_left_01.png"
+  },
+  {
+    "name": "nyoro_umbrella_walk_right_0",
+    "prompt": "Use case: identity-preserve. ONE isolated individual animation sprite frame, Nyoro umbrella_walk_right_0. Input reference is exact character identity/outfit/style. Create a genuinely RIGHT-FACING PROFILE walking toward screen right, head, muzzle, torso and feet all aimed right, NOT a front-view shuffle and not stationary sideways stance. Stride contact A: near leg extended forward with heel contacting ground; far leg extended backward; counter-swing arms. Nyoro is the EXACT black-and-yellow small reptilian mascot in reference with pointed black horns, yellow muzzle/underside, orange accents and spines, black outfit with orange outlines, small round gold chest clasp and long black/orange patterned tail. Preserve gold goggles wrapping around head correctly for viewpoint, species, chibi proportions, colors and clothing asymmetry. Hold the SAME orange-and-black umbrella above the head: one hand grips its continuous shaft correctly, canopy attached to shaft and fully visible. Walking legs alternate while grip remains fixed. Preserve outlined pixel-art style. Transparent background. Entire silhouette and tail and umbrella inside square canvas with no cropping or neighboring limbs. Intended 256x256 cell, ground/foot anchor (128,236), character body height160px excluding umbrella. Canopy fits above body inside y4..90; keep body same size as unheld reference. ONE character, ONE frame only. No sheet, text, scene, floor shadow, particles.",
+    "path": "exec-28330fac-e173-4cf0-b329-45cbb31fcb80.png",
+    "finalFile": "frames/nyoro/umbrella_walk_right_00.png"
+  },
+  {
+    "name": "nyoro_umbrella_walk_right_1",
+    "prompt": "Use case: precise-object-edit. This reference is contact-A of a two-frame walking animation. Create contact-B by changing ONLY the LEGS and free arm. Preserve identical head, body, tail, canvas location, scale, colors, viewpoint and umbrella if present. The nearest leg must now be BEHIND the hip, with its knee bent and heel raised, while the farther leg extends FORWARD past the hip with foot contacting ground. This is opposite to reference. Do not repeat the same forward leg. The visible near thigh angles BACK toward the tail; near boot beneath tail. Far boot extends forward toward nose. Small reverse swing of free arm. Keep whole character pixel game sprite identical, no face or outfit redesign, no flipping image. Transparent background. One individual frame.",
+    "path": "exec-370a5876-1154-42ca-9a1d-97a3c2ff8035.png",
+    "finalFile": "frames/nyoro/umbrella_walk_right_01.png"
+  }
+]

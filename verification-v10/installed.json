@@ -1,0 +1,54 @@
+{
+  "hashes": [
+    {
+      "file": "game.js",
+      "sha256": "d4588f05f4f428693f908396a88af1f547ac88c1b6c57dbc4f2c513e8e2d750f"
+    },
+    {
+      "file": "cafe-v8.js",
+      "sha256": "7a288ee9d44a4d91275da9d2b0356d5d4007d548760ed4d7b5a87208bc767fab"
+    },
+    {
+      "file": "build.cjs",
+      "sha256": "b9a6d23c9305b0b4525c58054a0cede40faeec7da331733f88229ba2e9cf0fbc"
+    },
+    {
+      "file": "index.html",
+      "sha256": "0426f629838b12c5d64fc7cc131c0f24ebb9f785155776ae3cbb118ef031d4e2"
+    },
+    {
+      "file": "MOB_CHILL_LIFE.html",
+      "sha256": "e46d474bf0bf8059895e7e88b0a20b0020c8a1f008c27ab2fe329ac19891355f"
+    },
+    {
+      "file": "sprite-additions.js",
+      "sha256": "3d722b153c6943b6a05b2dffa9a6e49c59590d92141b1a583d7240fe03ec1a39"
+    },
+    {
+      "file": "assets/sprite-additions.js",
+      "sha256": "ad66657347e4ab818f2c15c5d5e415fd13e0b10ffc9b5ce8b1f0fdcc0b95989f"
+    }
+  ],
+  "originalPNGCount": 20,
+  "pages": [
+    {
+      "version": "V10 sprites-20261006",
+      "frames": [
+        4,
+        4,
+        12
+      ],
+      "scale": 1.6848
+    },
+    {
+      "version": "V10 sprites-20261006",
+      "frames": [
+        4,
+        4,
+        12
+      ],
+      "scale": 1.6848
+    }
+  ],
+  "errors": []
+}
