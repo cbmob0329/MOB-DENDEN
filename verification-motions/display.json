@@ -1,0 +1,18 @@
+{
+  "pose": "turnDance_05",
+  "effect": "♪",
+  "opacity": "1",
+  "display": "block",
+  "rect": {
+    "x": 162.9375,
+    "y": 370.296875,
+    "width": 30,
+    "height": 32,
+    "top": 370.296875,
+    "right": 192.9375,
+    "bottom": 402.296875,
+    "left": 162.9375
+  },
+  "missing": [],
+  "scale": 2.16
+}
