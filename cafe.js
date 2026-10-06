@@ -3,7 +3,7 @@
 const V=(x,y,z)=>new THREE.Vector3(x,y,z);
 window.ChillCafe=class{
  constructor(c){this.c=c;this.ledger=new CafeLedger();this.view='home';this.seats=[null,null];this.service=null;this.retry=0;this.group=new THREE.Group();c.scene.add(this.group);this.homeDoor=V(1.9,0,3.45);this.entry=V(14,0,3.45);this.counter=V(14,0,-1.65);this.build();
- this.speech={nyoro:['いい香りニョロ～！','ひと休みするニョロ','カフェへ行くニョロ！','のんびり待つニョロ～','おいしいニョロ～！','また来るニョロ！'],irukaeru:['いらっしゃいませ。','あら～、いい香りですね。','お席でお待ちくださいね。','ふふっ、お待たせしました。','ごゆっくりどうぞ。','またお越しくださいね。']};
+ this.speech={nyoro:['ここは落ち着くニョロ～','ひと休みするニョロ','カフェへ行くニョロ！','のんびり待つニョロ～','おいしいニョロ～！','また来るニョロ！'],irukaeru:['いらっしゃいませ。','あら～、いい香りですね。','お席でお待ちくださいね。','ふふっ、お待たせしました。','ごゆっくりどうぞ。','またお越しくださいね。']};
  c.actors.forEach(a=>{a.room=a.key==='irukaeru'?'cafe':'home';a.cafeWait=8+a.id*7;});c.actors[3].pos.copy(this.counter);this.installUI();
  }
  build(){let r=this.c.room,b=(g,...a)=>r.box(g,...a),g=this.group;
