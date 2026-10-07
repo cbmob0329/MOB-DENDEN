@@ -1,0 +1,29 @@
+[
+  {
+    "width": 320,
+    "gift": true,
+    "eat": true,
+    "gacha": true,
+    "receiptOnce": true,
+    "reload": true,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "gift": true,
+    "eat": true,
+    "gacha": true,
+    "receiptOnce": true,
+    "reload": true,
+    "errors": []
+  },
+  {
+    "width": 430,
+    "gift": true,
+    "eat": true,
+    "gacha": true,
+    "receiptOnce": true,
+    "reload": true,
+    "errors": []
+  }
+]

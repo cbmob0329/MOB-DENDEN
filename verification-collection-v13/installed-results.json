@@ -1,0 +1,21 @@
+{
+  "fiveAreaTouch": true,
+  "staffFarmReturn": {
+    "accepted": true,
+    "seen": true,
+    "returned": true,
+    "pos": [
+      10.7,
+      0,
+      -2.25
+    ],
+    "counter": [
+      10.7,
+      0,
+      -2.25
+    ],
+    "room": "cafe"
+  },
+  "installedFilesEqual": 34,
+  "errors": []
+}

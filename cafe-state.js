@@ -10,7 +10,7 @@ class CafeLedger{
  }
  transaction(save,fn){const before=this.serialize();fn();if(save())return true;this.stock=before.stock;this.orders=before.orders;this.eaten=before.eaten;return false;}
  deposit(pantry,kind,n,save){if(!kinds.includes(kind)||!Number.isSafeInteger(n)||n<1||pantry[kind]<n)return false;const old=pantry[kind];pantry[kind]-=n;if(this.transaction(save,()=>this.stock[kind]+=n))return true;pantry[kind]=old;return false;}
- reserve(seat,actor,save){if(this.orders[seat])return false;let kind=kinds.find(k=>this.stock[k]>0);if(!kind)return false;return this.transaction(save,()=>{this.stock[kind]--;this.orders[seat]={actor,kind};});}
+ reserve(seat,actor,save,request){if(this.orders[seat])return false;let kind=request?.kind&&kinds.includes(request.kind)&&this.stock[request.kind]>0?request.kind:request?null:kinds.find(k=>this.stock[k]>0);if(!kind)return false;return this.transaction(save,()=>{this.stock[kind]--;this.orders[seat]={actor,kind,...(request?{firstWish:!!request.firstWish,requestId:request.requestId}:{})};});}
  release(seat,save){let o=this.orders[seat];if(!o)return true;return this.transaction(save,()=>{this.stock[o.kind]++;delete this.orders[seat];});}
  depositMany(pantry,amounts,save){let entries=Object.entries(amounts);if(!entries.length||!entries.some(([,n])=>n>0)||entries.some(([k,n])=>!kinds.includes(k)||!Number.isSafeInteger(n)||n<0||n>pantry[k]))return false;let before={...pantry};for(let [k,n]of entries)pantry[k]-=n;if(this.transaction(save,()=>{for(let [k,n]of entries)this.stock[k]+=n;}))return true;Object.assign(pantry,before);return false;}
  land(seat,actor,save){let o=this.orders[seat];if(!o||o.actor!==actor)return false;if(o.stage==='placed')return true;return this.transaction(save,()=>{o.stage='placed';});}

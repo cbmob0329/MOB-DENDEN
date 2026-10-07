@@ -1,0 +1,76 @@
+{
+  "all8": [
+    {
+      "id": "P-01",
+      "outcome": {
+        "caught": true,
+        "prize": "P-01"
+      }
+    },
+    {
+      "id": "P-02",
+      "outcome": {
+        "caught": true,
+        "prize": "P-02"
+      }
+    },
+    {
+      "id": "P-03",
+      "outcome": {
+        "caught": true,
+        "prize": "P-03"
+      }
+    },
+    {
+      "id": "P-04",
+      "outcome": {
+        "caught": true,
+        "prize": "P-04"
+      }
+    },
+    {
+      "id": "P-05",
+      "outcome": {
+        "caught": true,
+        "prize": "P-05"
+      }
+    },
+    {
+      "id": "P-06",
+      "outcome": {
+        "caught": true,
+        "prize": "P-06"
+      }
+    },
+    {
+      "id": "P-07",
+      "outcome": {
+        "caught": true,
+        "prize": "P-07"
+      }
+    },
+    {
+      "id": "P-08",
+      "outcome": {
+        "caught": true,
+        "prize": "P-08"
+      }
+    }
+  ],
+  "free": {
+    "before": 100,
+    "afterOpen": 100,
+    "after": 100,
+    "owner": "0",
+    "prize": 1
+  },
+  "interruptedPlayerRefundOnce": true,
+  "performance": {
+    "meanFrameMs": 13.250000000033115,
+    "p95FrameMs": 13.400000000000091,
+    "ufoDrawCalls": 24,
+    "ufoTriangles": 54764,
+    "environment": "Windows Edge headless; not a real phone benchmark"
+  },
+  "errors": []
+}

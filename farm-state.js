@@ -19,7 +19,7 @@ class FarmState {
       const p=s.plots?.[i];if(!cropKeys.includes(p?.crop))return emptyPlot();
       const growing=integer(p.wateredAt)&&Number.isSafeInteger(p.durationMs)&&p.durationMs>0&&[1,2,3].includes(p.yield);
       return {crop:p.crop,wateredAt:growing?p.wateredAt:null,durationMs:growing?p.durationMs:null,yield:growing?p.yield:null};
-    }),seeds:Object.fromEntries(cropKeys.map(k=>[k,count(s.seeds?.[k])])),storage:Object.fromEntries([...cropKeys,'egg','milk'].map(k=>[k,count(s.storage?.[k])])),hen:{eggs:Math.min(3,count(s.hen?.eggs)),nextAt:integer(s.hen?.nextAt)?s.hen.nextAt:null},cow:{ready:!!s.cow?.ready,nextAt:integer(s.cow?.nextAt)?s.cow.nextAt:null}};
+    }),seeds:Object.fromEntries(cropKeys.map(k=>[k,count(s.seeds?.[k])])),storage:Object.fromEntries([...cropKeys,'egg','milk','dorayaki','omelet','soup'].map(k=>[k,count(s.storage?.[k])])),hen:{eggs:Math.min(3,count(s.hen?.eggs)),nextAt:integer(s.hen?.nextAt)?s.hen.nextAt:null},cow:{ready:!!s.cow?.ready,nextAt:integer(s.cow?.nextAt)?s.cow.nextAt:null}};
     if(this.state.hen.eggs===3)this.state.hen.nextAt=null;
     if(this.state.cow.ready)this.state.cow.nextAt=null;
   }

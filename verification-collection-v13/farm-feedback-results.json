@@ -1,0 +1,47 @@
+{
+  "results": [
+    {
+      "width": 320,
+      "nineLabels": true,
+      "noOverlap": true,
+      "waterEffect": true,
+      "harvestThree": true,
+      "storage30Items": true,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "nineLabels": true,
+      "noOverlap": true,
+      "waterEffect": true,
+      "harvestThree": true,
+      "storage30Items": true,
+      "errors": []
+    },
+    {
+      "width": 430,
+      "nineLabels": true,
+      "noOverlap": true,
+      "waterEffect": true,
+      "harvestThree": true,
+      "storage30Items": true,
+      "errors": []
+    }
+  ],
+  "visit": {
+    "accepted": true,
+    "before": [
+      -0.8,
+      0,
+      1.4
+    ],
+    "after": [
+      -0.8,
+      0,
+      1.4
+    ],
+    "seen": true,
+    "room": "farm",
+    "line": "ここで育つのが楽しみでやんす～。"
+  }
+}

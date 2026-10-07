@@ -1,0 +1,51 @@
+{
+  "physics": [
+    {
+      "offset": 0,
+      "outcome": {
+        "caught": true,
+        "prize": "P-01"
+      },
+      "phases": [
+        "lower",
+        "close",
+        "raise",
+        "travel",
+        "release",
+        "complete"
+      ]
+    },
+    {
+      "offset": 0.14,
+      "outcome": {
+        "caught": false
+      },
+      "phases": [
+        "lower",
+        "close",
+        "raise",
+        "travel",
+        "release",
+        "complete"
+      ]
+    },
+    {
+      "offset": 2,
+      "outcome": {
+        "caught": false
+      },
+      "phases": [
+        "lower",
+        "close",
+        "raise",
+        "travel",
+        "release",
+        "complete"
+      ]
+    }
+  ],
+  "raceTwoSeats": true,
+  "raceChargedOnce": true,
+  "ufoCloseSettledOnce": true,
+  "errors": []
+}
