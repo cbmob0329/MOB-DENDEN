@@ -1,0 +1,16 @@
+const assert=require('node:assert/strict');
+const Farm=require('./farm-state.js');
+const config={durations:{wheat:300000,corn:600000,beans:240000},animalMs:240000,harvestWeights:[85,12,3]};
+let stored;const persist=s=>(stored=structuredClone(s),true),accept=(s,k,n)=>Object.values({...s,[k]:s[k]+n}).reduce((a,b)=>a+Math.ceil(b/3),0)<=30;
+const f=new Farm(config);f.state.seeds={wheat:3,corn:3,beans:3};assert(f.advance(1000,persist).ok);
+assert(f.plant(0,'beans',1000,persist).ok);assert(f.water(0,1000,persist,()=>.99).ok);assert(!f.water(0,1001,persist).ok);
+assert.equal(f.plot(0,1000).stage,0);assert.equal(f.plot(0,49000).stage,1);assert.equal(f.plot(0,97000).stage,2);assert.equal(f.plot(0,145000).stage,3);assert.equal(f.plot(0,193000).stage,4);assert.equal(f.plot(0,240999).ready,false);assert.equal(f.plot(0,241000).ready,true);
+const reloaded=new Farm(config,stored);assert.equal(reloaded.plot(0,241000).ready,true);assert(reloaded.collect('crop',0,241000,persist,accept).ok);assert.equal(reloaded.state.storage.beans,3);assert(!reloaded.collect('crop',0,241000,persist,accept).ok);
+assert(f.advance(10000000,persist).ok);assert.equal(f.state.hen.eggs,3);assert.equal(f.state.cow.ready,true);assert.equal(f.state.hen.nextAt,null);assert(f.collect('egg',null,10000000,persist,accept).ok);assert.equal(f.state.hen.nextAt,10240000);assert(f.advance(10000001,persist).ok);assert.equal(f.state.hen.eggs,0);assert(f.collect('milk',null,10000001,persist,accept).ok);assert.equal(f.state.cow.nextAt,10240001);assert(!f.collect('milk',null,10000001,persist,accept).ok);
+assert(f.advance(10240001,persist).ok);const before=f.serialize();assert(!f.collect('egg',null,10240001,()=>false,accept).ok);assert.deepEqual(f.serialize(),before);assert(!f.collect('milk',null,10240001,()=>{throw Error('quota');},accept).ok);assert.deepEqual(f.serialize(),before);assert(!f.collect('egg',null,10240001,persist,()=>false).ok);assert.deepEqual(f.serialize(),before);
+let nested;assert(f.collect('milk',null,10240001,s=>{nested=f.collect('milk',null,10240001,persist,accept);return persist(s);},accept).ok);assert.equal(nested.ok,false);assert.equal(f.state.storage.milk,2);
+f.advance(100,persist);assert.equal(f.state.clock,10240001);assert.equal(f.state.hen.eggs,1);
+const legacy=new Farm(config,{v:2,kitchen:{inventory:{egg:55}}});assert.equal(legacy.state.hen.eggs,0);assert.equal(legacy.state.storage.egg,0);
+const bad=new Farm(config,{v:1,hen:{eggs:Infinity,nextAt:-4},cow:{ready:false,nextAt:NaN},seeds:{wheat:-2},plots:[{crop:'corn',wateredAt:Infinity}]});assert.equal(bad.state.seeds.wheat,0);assert.equal(bad.state.hen.nextAt,null);
+const pending=new Farm();pending.state.seeds.beans=1;pending.plant(0,'beans',100,persist);assert.equal(pending.water(0,100,persist).reason,'configuration-pending');assert.equal(pending.state.hen.nextAt,null);
+console.log('PASS: five growth stages, offline cap, reload, no duplicate crop/egg/milk, save failure rollback, reentrant collection, capacity rejection, clock rollback, legacy/corrupt data, pending configuration');

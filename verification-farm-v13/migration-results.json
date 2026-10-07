@@ -1,0 +1,10 @@
+{
+  "legacyInventoryPreserved": true,
+  "cameraSwitchNoTeleport": true,
+  "swipeNavigation": true,
+  "modalBlocksSwipe": true,
+  "heartCollectedNodeRemoved": true,
+  "heartSquareArtifact": "not reproduced in Edge",
+  "normalActionCommandsHidden": true,
+  "testModeCommandsVisible": true
+}

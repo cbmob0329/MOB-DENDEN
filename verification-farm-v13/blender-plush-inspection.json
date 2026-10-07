@@ -1,0 +1,1318 @@
+[
+  {
+    "path": "D:\\blender\\MOB\\MysticKnight_Apose.blend",
+    "meshObjects": 55,
+    "trianglesBase": 43648,
+    "materials": [
+      "01 Hood | royal violet",
+      "02 Hood piping | orchid",
+      "03 Cat ears | deep violet",
+      "04 Ear inset | muted violet",
+      "05 Face | smooth charcoal • NO MOUTH",
+      "06 Edge / underarm | ink navy",
+      "07 Armor trim | gold",
+      "08 Armor | silver",
+      "09 Rune | ivory white",
+      "10 Glass rims | cyan",
+      "11 Glass lenses | deep blue",
+      "12 Enamel | azure blue",
+      "13 Sword enamel | cobalt",
+      "14 Cape | crimson",
+      "15 Cape reverse | dark crimson",
+      "16 Belt and pouch | brown leather",
+      "17 Pouch piping | warm leather",
+      "18 Gloves and grip | purple",
+      "Material",
+      "Studio | light lavender"
+    ],
+    "armatures": [],
+    "actions": [],
+    "images": [
+      {
+        "name": "back.png",
+        "size": [
+          1086,
+          1448
+        ],
+        "packed": false
+      },
+      {
+        "name": "front.png",
+        "size": [
+          1086,
+          1448
+        ],
+        "packed": false
+      },
+      {
+        "name": "side.png",
+        "size": [
+          1086,
+          1448
+        ],
+        "packed": false
+      },
+      {
+        "name": "Viewer Node",
+        "size": [
+          256,
+          256
+        ],
+        "packed": false
+      }
+    ],
+    "meshes": [
+      {
+        "name": "Hood • open front shell",
+        "vertices": 1025,
+        "modifiers": [
+          "MIRROR",
+          "SOLIDIFY"
+        ]
+      },
+      {
+        "name": "Hood • raised violet opening seam",
+        "vertices": 576,
+        "modifiers": []
+      },
+      {
+        "name": "Head • featureless charcoal face",
+        "vertices": 513,
+        "modifiers": [
+          "SOLIDIFY"
+        ]
+      },
+      {
+        "name": "Cat ear • mirrored assembly",
+        "vertices": 642,
+        "modifiers": [
+          "MIRROR"
+        ]
+      },
+      {
+        "name": "Ear covers • mirrored assembly",
+        "vertices": 760,
+        "modifiers": [
+          "MIRROR"
+        ]
+      },
+      {
+        "name": "Glasses • detail assembly",
+        "vertices": 1460,
+        "modifiers": []
+      },
+      {
+        "name": "Glasses • mirrored assembly",
+        "vertices": 1040,
+        "modifiers": [
+          "MIRROR"
+        ]
+      },
+      {
+        "name": "Hood rune • detail assembly",
+        "vertices": 1683,
+        "modifiers": []
+      },
+      {
+        "name": "Hood rune • side swirl",
+        "vertices": 365,
+        "modifiers": [
+          "MIRROR"
+        ]
+      },
+      {
+        "name": "Neck • scarf inner fold",
+        "vertices": 182,
+        "modifiers": []
+      },
+      {
+        "name": "Torso • navy under-tunic",
+        "vertices": 182,
+        "modifiers": []
+      },
+      {
+        "name": "Pelvis • navy padded shorts",
+        "vertices": 182,
+        "modifiers": []
+      },
+      {
+        "name": "Torso • silver breastplate",
+        "vertices": 119,
+        "modifiers": [
+          "SOLIDIFY",
+          "BEVEL"
+        ]
+      },
+      {
+        "name": "Torso • gold edge",
+        "vertices": 102,
+        "modifiers": []
+      },
+      {
+        "name": "Torso • gold edge.001",
+        "vertices": 102,
+        "modifiers": []
+      },
+      {
+        "name": "Chest enamel • detail assembly",
+        "vertices": 72,
+        "modifiers": []
+      },
+      {
+        "name": "Scarf • soft folded collar 0",
+        "vertices": 384,
+        "modifiers": []
+      },
+      {
+        "name": "Scarf • soft folded collar 1",
+        "vertices": 384,
+        "modifiers": []
+      },
+      {
+        "name": "Scarf • soft folded collar 2",
+        "vertices": 384,
+        "modifiers": []
+      },
+      {
+        "name": "Cape clasp • mirrored assembly",
+        "vertices": 438,
+        "modifiers": [
+          "MIRROR"
+        ]
+      },
+      {
+        "name": "Arms • upper navy sleeve",
+        "vertices": 48,
+        "modifiers": [
+          "BEVEL",
+          "MIRROR"
+        ]
+      },
+      {
+        "name": "Arms • elbow articulation",
+        "vertices": 182,
+        "modifiers": [
+          "MIRROR"
+        ]
+      },
+      {
+        "name": "Arms • lower navy sleeve",
+        "vertices": 48,
+        "modifiers": [
+          "BEVEL",
+          "MIRROR"
+        ]
+      },
+      {
+        "name": "Shoulder armor • mirrored assembly",
+        "vertices": 642,
+        "modifiers": [
+          "MIRROR"
+        ]
+      },
+      {
+        "name": "Arm armor • mirrored assembly",
+        "vertices": 192,
+        "modifiers": [
+          "MIRROR"
+        ]
+      },
+      {
+        "name": "Forearm armor • mirrored assembly",
+        "vertices": 288,
+        "modifiers": [
+          "MIRROR"
+        ]
+      },
+      {
+        "name": "Hands • unified purple gloves",
+        "vertices": 802,
+        "modifiers": [
+          "MIRROR"
+        ]
+      },
+      {
+        "name": "Belt • detail assembly",
+        "vertices": 1016,
+        "modifiers": []
+      },
+      {
+        "name": "Hip armor • mirrored assembly",
+        "vertices": 110,
+        "modifiers": [
+          "MIRROR"
+        ]
+      },
+      {
+        "name": "Hip armor • detail assembly",
+        "vertices": 96,
+        "modifiers": []
+      },
+      {
+        "name": "Waist • detail assembly",
+        "vertices": 1040,
+        "modifiers": []
+      },
+      {
+        "name": "Pouch • detail assembly",
+        "vertices": 382,
+        "modifiers": []
+      },
+      {
+        "name": "Legs • navy thigh",
+        "vertices": 48,
+        "modifiers": [
+          "BEVEL",
+          "MIRROR"
+        ]
+      },
+      {
+        "name": "Leg armor • mirrored assembly",
+        "vertices": 730,
+        "modifiers": [
+          "MIRROR"
+        ]
+      },
+      {
+        "name": "Leg armor • knee chevron",
+        "vertices": 60,
+        "modifiers": []
+      },
+      {
+        "name": "Boots • mirrored assembly",
+        "vertices": 948,
+        "modifiers": [
+          "MIRROR"
+        ]
+      },
+      {
+        "name": "Boots • gold instep arch",
+        "vertices": 300,
+        "modifiers": []
+      },
+      {
+        "name": "Cape • scalloped folded cloth",
+        "vertices": 1025,
+        "modifiers": [
+          "SOLIDIFY",
+          "BEVEL"
+        ]
+      },
+      {
+        "name": "Scarf • back draped cowl",
+        "vertices": 225,
+        "modifiers": [
+          "SOLIDIFY"
+        ]
+      },
+      {
+        "name": "Sword • silver beveled blade",
+        "vertices": 15,
+        "modifiers": []
+      },
+      {
+        "name": "Sword • blue inset front",
+        "vertices": 6,
+        "modifiers": []
+      },
+      {
+        "name": "Sword • white swirl rune",
+        "vertices": 438,
+        "modifiers": []
+      },
+      {
+        "name": "Sword • rune dot",
+        "vertices": 86,
+        "modifiers": []
+      },
+      {
+        "name": "Sword • blue inset back",
+        "vertices": 6,
+        "modifiers": []
+      },
+      {
+        "name": "Sword • gold • detail assembly",
+        "vertices": 510,
+        "modifiers": []
+      },
+      {
+        "name": "Sword • large gold gem bezel",
+        "vertices": 64,
+        "modifiers": [
+          "BEVEL"
+        ]
+      },
+      {
+        "name": "Sword • central • detail assembly",
+        "vertices": 532,
+        "modifiers": []
+      },
+      {
+        "name": "Sword • jewel • detail assembly",
+        "vertices": 172,
+        "modifiers": []
+      },
+      {
+        "name": "Sword • large gold gem bezel.001",
+        "vertices": 64,
+        "modifiers": [
+          "BEVEL"
+        ]
+      },
+      {
+        "name": "Sword • lower gold collar",
+        "vertices": 48,
+        "modifiers": [
+          "BEVEL"
+        ]
+      },
+      {
+        "name": "Sword • violet wrapped grip",
+        "vertices": 40,
+        "modifiers": [
+          "BEVEL"
+        ]
+      },
+      {
+        "name": "Sword • diagonal leather wrap seam",
+        "vertices": 1158,
+        "modifiers": []
+      },
+      {
+        "name": "Sword • pommel • detail assembly",
+        "vertices": 460,
+        "modifiers": []
+      },
+      {
+        "name": "Sword • small • detail assembly",
+        "vertices": 278,
+        "modifiers": []
+      },
+      {
+        "name": "STUDIO • floor",
+        "vertices": 8,
+        "modifiers": []
+      }
+    ]
+  },
+  {
+    "path": "D:\\blender\\MOB\\敵キャラクター\\MUMMY_CAT\\MUMMY_CAT_GAME.blend",
+    "meshObjects": 1,
+    "trianglesBase": 11445,
+    "materials": [
+      "M_AmberEyes",
+      "M_Bandage_Atlas"
+    ],
+    "armatures": [
+      {
+        "name": "RIG_MUMMY_CAT",
+        "bones": 40
+      }
+    ],
+    "actions": [
+      "MC_Attack",
+      "MC_Death",
+      "MC_Hit",
+      "MC_Idle",
+      "MC_Walk_Shamble"
+    ],
+    "images": [
+      {
+        "name": "MUMMY_AmberEyes_BaseColor_512_PACKED",
+        "size": [
+          512,
+          512
+        ],
+        "packed": true
+      },
+      {
+        "name": "MUMMY_Bandage_BaseColor_2048_PACKED",
+        "size": [
+          2048,
+          2048
+        ],
+        "packed": true
+      },
+      {
+        "name": "Viewer Node",
+        "size": [
+          256,
+          256
+        ],
+        "packed": false
+      }
+    ],
+    "meshes": [
+      {
+        "name": "SK_MUMMY_CAT",
+        "vertices": 6120,
+        "modifiers": [
+          "ARMATURE"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "D:\\blender\\MOB\\第2弾キャラクター\\MOB-DENDEN_GAME_MOTIONS.blend",
+    "meshObjects": 98,
+    "trianglesBase": 62862,
+    "materials": [
+      "Body Yellow | #FFD92B",
+      "Hoodie Inner Ear | #B8325B",
+      "Hoodie Pink | #FF5B8F",
+      "Hoodie Shade | #CC3A6B",
+      "Hoodie String | #FFE86B",
+      "QA bone cyan",
+      "Revolver Black | #2B2B2B",
+      "Revolver Gray | #555555",
+      "Revolver Light | #9E9E9E",
+      "Rig Test • title",
+      "String End | #E63973",
+      "Studio warm neutral",
+      "Sunglasses Black | #1A1A1A",
+      "Sunglasses Highlight | #FFFFFF",
+      "Sunglasses Shade | #333333"
+    ],
+    "armatures": [
+      {
+        "name": "MOB_DENDEN_CONTROLS",
+        "bones": 67
+      },
+      {
+        "name": "MOB_DENDEN_DEFORM",
+        "bones": 47
+      }
+    ],
+    "actions": [
+      "Death",
+      "Dodge",
+      "Hit",
+      "Idle",
+      "Motion title DeathAction",
+      "Motion title DodgeAction",
+      "Motion title HitAction",
+      "Motion title IdleAction",
+      "Motion title RunAction",
+      "Motion title ShootAction",
+      "Motion title WalkAction",
+      "POSE • ARMS_OUT",
+      "POSE • CROUCH",
+      "POSE • DUAL_AIM",
+      "POSE • FIST_BUMP",
+      "POSE • HAND_OPEN",
+      "POSE • HAND_POINT",
+      "POSE • MOUTH_HAPPY",
+      "POSE • MOUTH_OPEN",
+      "POSE • MOUTH_SAD",
+      "POSE • MOUTH_SMALL",
+      "POSE • NEUTRAL",
+      "POSE • ONE_LEG",
+      "POSE • RUN",
+      "POSE • SECONDARY_L",
+      "POSE • SECONDARY_R",
+      "POSE • TWIST_L",
+      "POSE • TWIST_R",
+      "PREVIEW_Camera",
+      "PREVIEW_Game_Motions",
+      "QA • Held static test poses (not motion)",
+      "Rig_Test",
+      "Run",
+      "Shoot",
+      "Test label 01 NeutralAction",
+      "Test label 02 Head turnAction",
+      "Test label 03 Arms upAction",
+      "Test label 04 Dual aimAction",
+      "Test label 05 Torso twistAction",
+      "Test label 06 Limb swingAction",
+      "Test label 07 CrouchAction",
+      "Test label 08 One legAction",
+      "Test label 09 Tail swingAction",
+      "Test label 10 EarsAction",
+      "Test label 11 Return neutralAction",
+      "Walk"
+    ],
+    "images": [
+      {
+        "name": "BACK VIEW.png",
+        "size": [
+          1086,
+          1448
+        ],
+        "packed": false
+      },
+      {
+        "name": "COLOR PALETTE.png",
+        "size": [
+          1448,
+          1086
+        ],
+        "packed": false
+      },
+      {
+        "name": "DETAILS.png",
+        "size": [
+          1448,
+          1086
+        ],
+        "packed": false
+      },
+      {
+        "name": "FACE RULES.png",
+        "size": [
+          1448,
+          1086
+        ],
+        "packed": false
+      },
+      {
+        "name": "FRONT VIEW.png",
+        "size": [
+          1086,
+          1448
+        ],
+        "packed": false
+      },
+      {
+        "name": "PROPORTIONS.png",
+        "size": [
+          1448,
+          1086
+        ],
+        "packed": false
+      },
+      {
+        "name": "REVOLVER REFERENCE SHEET.png",
+        "size": [
+          1448,
+          1086
+        ],
+        "packed": false
+      },
+      {
+        "name": "SIDE VIEW RIGHT.png",
+        "size": [
+          1086,
+          1448
+        ],
+        "packed": false
+      },
+      {
+        "name": "Viewer Node",
+        "size": [
+          256,
+          256
+        ],
+        "packed": false
+      }
+    ],
+    "meshes": [
+      {
+        "name": "Hoodie",
+        "vertices": 1121,
+        "modifiers": [
+          "MIRROR",
+          "ARMATURE",
+          "SUBSURF",
+          "SOLIDIFY"
+        ]
+      },
+      {
+        "name": "Hood opening • soft rolled fabric",
+        "vertices": 640,
+        "modifiers": [
+          "ARMATURE",
+          "SUBSURF"
+        ]
+      },
+      {
+        "name": "Hood opening • inset seam",
+        "vertices": 480,
+        "modifiers": [
+          "ARMATURE"
+        ]
+      },
+      {
+        "name": "Hood • back centre seam",
+        "vertices": 654,
+        "modifiers": [
+          "ARMATURE"
+        ]
+      },
+      {
+        "name": "Head_Face",
+        "vertices": 1042,
+        "modifiers": [
+          "ARMATURE",
+          "SUBSURF"
+        ]
+      },
+      {
+        "name": "Ear_R",
+        "vertices": 141,
+        "modifiers": [
+          "ARMATURE",
+          "SUBSURF"
+        ]
+      },
+      {
+        "name": "Ear_R • recessed inner fabric",
+        "vertices": 36,
+        "modifiers": [
+          "ARMATURE",
+          "SUBSURF"
+        ]
+      },
+      {
+        "name": "Ear_L",
+        "vertices": 141,
+        "modifiers": [
+          "ARMATURE",
+          "SUBSURF"
+        ]
+      },
+      {
+        "name": "Ear_L • recessed inner fabric",
+        "vertices": 36,
+        "modifiers": [
+          "ARMATURE",
+          "SUBSURF"
+        ]
+      },
+      {
+        "name": "Sunglasses",
+        "vertices": 2698,
+        "modifiers": [
+          "ARMATURE"
+        ]
+      },
+      {
+        "name": "Face • tiny dot nose",
+        "vertices": 146,
+        "modifiers": [
+          "ARMATURE"
+        ]
+      },
+      {
+        "name": "Face • tiny dot nose.001",
+        "vertices": 146,
+        "modifiers": [
+          "ARMATURE"
+        ]
+      },
+      {
+        "name": "Face • reference wavy mouth",
+        "vertices": 654,
+        "modifiers": [
+          "ARMATURE"
+        ]
+      },
+      {
+        "name": "Body",
+        "vertices": 288,
+        "modifiers": [
+          "ARMATURE",
+          "SUBSURF"
+        ]
+      },
+      {
+        "name": "Torso clothes",
+        "vertices": 432,
+        "modifiers": [
+          "ARMATURE",
+          "SUBSURF"
+        ]
+      },
+      {
+        "name": "Hoodie • soft hem",
+        "vertices": 192,
+        "modifiers": [
+          "ARMATURE",
+          "SUBSURF"
+        ]
+      },
+      {
+        "name": "Arm_R",
+        "vertices": 384,
+        "modifiers": [
+          "ARMATURE",
+          "SUBSURF"
+        ]
+      },
+      {
+        "name": "Sleeve cuff_R",
+        "vertices": 128,
+        "modifiers": [
+          "ARMATURE",
+          "SUBSURF"
+        ]
+      },
+      {
+        "name": "Leg_R",
+        "vertices": 384,
+        "modifiers": [
+          "ARMATURE",
+          "SUBSURF"
+        ]
+      },
+      {
+        "name": "Foot_R",
+        "vertices": 448,
+        "modifiers": [
+          "ARMATURE",
+          "SUBSURF"
+        ]
+      },
+      {
+        "name": "Arm_L",
+        "vertices": 384,
+        "modifiers": [
+          "ARMATURE",
+          "SUBSURF"
+        ]
+      },
+      {
+        "name": "Sleeve cuff_L",
+        "vertices": 128,
+        "modifiers": [
+          "ARMATURE",
+          "SUBSURF"
+        ]
+      },
+      {
+        "name": "Leg_L",
+        "vertices": 384,
+        "modifiers": [
+          "ARMATURE",
+          "SUBSURF"
+        ]
+      },
+      {
+        "name": "Foot_L",
+        "vertices": 448,
+        "modifiers": [
+          "ARMATURE",
+          "SUBSURF"
+        ]
+      },
+      {
+        "name": "Tail",
+        "vertices": 580,
+        "modifiers": [
+          "ARMATURE",
+          "SUBSURF"
+        ]
+      },
+      {
+        "name": "Hoodie • front kangaroo pocket",
+        "vertices": 241,
+        "modifiers": [
+          "ARMATURE",
+          "SOLIDIFY"
+        ]
+      },
+      {
+        "name": "Pocket • edge seam",
+        "vertices": 288,
+        "modifiers": [
+          "ARMATURE"
+        ]
+      },
+      {
+        "name": "Hoodie • front centre seam",
+        "vertices": 426,
+        "modifiers": [
+          "ARMATURE"
+        ]
+      },
+      {
+        "name": "Hoodie • rear centre seam",
+        "vertices": 426,
+        "modifiers": [
+          "ARMATURE"
+        ]
+      },
+      {
+        "name": "Hoodie • drawcord",
+        "vertices": 132,
+        "modifiers": [
+          "ARMATURE"
+        ]
+      },
+      {
+        "name": "Drawcord • rounded pink end",
+        "vertices": 362,
+        "modifiers": [
+          "ARMATURE"
+        ]
+      },
+      {
+        "name": "Drawcord • eyelet",
+        "vertices": 192,
+        "modifiers": [
+          "ARMATURE"
+        ]
+      },
+      {
+        "name": "Hoodie • drawcord.001",
+        "vertices": 132,
+        "modifiers": [
+          "ARMATURE"
+        ]
+      },
+      {
+        "name": "Drawcord • rounded pink end.001",
+        "vertices": 362,
+        "modifiers": [
+          "ARMATURE"
+        ]
+      },
+      {
+        "name": "Drawcord • eyelet.001",
+        "vertices": 192,
+        "modifiers": [
+          "ARMATURE"
+        ]
+      },
+      {
+        "name": "Hand_R",
+        "vertices": 2236,
+        "modifiers": [
+          "ARMATURE"
+        ]
+      },
+      {
+        "name": "Hand_L",
+        "vertices": 2236,
+        "modifiers": [
+          "ARMATURE"
+        ]
+      },
+      {
+        "name": "Mouth opening • hidden at neutral",
+        "vertices": 49,
+        "modifiers": [
+          "ARMATURE"
+        ]
+      },
+      {
+        "name": "Revolver_R",
+        "vertices": 5566,
+        "modifiers": []
+      },
+      {
+        "name": "Revolver_L",
+        "vertices": 5566,
+        "modifiers": []
+      },
+      {
+        "name": "STUDIO floor",
+        "vertices": 4,
+        "modifiers": []
+      },
+      {
+        "name": "WGT_circle",
+        "vertices": 40,
+        "modifiers": []
+      },
+      {
+        "name": "WGT_square",
+        "vertices": 4,
+        "modifiers": []
+      },
+      {
+        "name": "WGT_cross",
+        "vertices": 6,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.001",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.002",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.003",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.004",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.005",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.006",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.007",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.008",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.009",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.010",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.011",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.012",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.013",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.014",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.015",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.016",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.017",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.018",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.019",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.020",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.021",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.022",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.023",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.024",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.025",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.026",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.027",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.028",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.029",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.030",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.031",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.032",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.033",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.034",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.035",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.036",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.037",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.038",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.039",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.040",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.041",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.042",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.043",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.044",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.045",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.046",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.047",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.048",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.049",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.050",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.051",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.052",
+        "vertices": 26,
+        "modifiers": []
+      },
+      {
+        "name": "Sphere.053",
+        "vertices": 26,
+        "modifiers": []
+      }
+    ]
+  },
+  {
+    "path": "D:\\blender\\MOB\\第3弾キャラクター\\mobtetsu\\MOBTETSU_GAME.blend",
+    "meshObjects": 8,
+    "trianglesBase": 36828,
+    "materials": [
+      "MOBTETSU_Body_Material_2048",
+      "MOBTETSU_Weapon_Material_1024",
+      "ReviewGray"
+    ],
+    "armatures": [
+      {
+        "name": "MOB_PrisonSword_Armature",
+        "bones": 55
+      }
+    ],
+    "actions": [
+      "S3_TEST_01_Idle",
+      "S3_TEST_02_Arms_Spread",
+      "S3_TEST_03_Overhead",
+      "S3_TEST_04_Horizontal_Slash",
+      "S3_TEST_05_Two_Hand",
+      "S3_TEST_06_Lunge",
+      "S3_TEST_07_Deep_Squat",
+      "S3_TEST_08_Jump",
+      "S3_TEST_09_Air_Attack",
+      "S3_TEST_10_Landing",
+      "S3_TEST_11_IK_Feet",
+      "S3_TEST_12_IK_Hands",
+      "S3_TEST_13_Twist_Left_60",
+      "S3_TEST_14_Twist_Right_60",
+      "S3_TEST_15_Back_Windup",
+      "S3_TEST_16_Arms_Above_Head",
+      "S3_TEST_17_Wide_Stance"
+    ],
+    "images": [
+      {
+        "name": "MOBTETSU_Body_BaseColor_2048",
+        "size": [
+          2048,
+          2048
+        ],
+        "packed": true
+      },
+      {
+        "name": "MOBTETSU_Weapon_BaseColor_1024",
+        "size": [
+          1024,
+          1024
+        ],
+        "packed": true
+      },
+      {
+        "name": "Viewer Node",
+        "size": [
+          256,
+          256
+        ],
+        "packed": false
+      }
+    ],
+    "meshes": [
+      {
+        "name": "MOBTETSU_Hood",
+        "vertices": 4627,
+        "modifiers": [
+          "ARMATURE"
+        ]
+      },
+      {
+        "name": "MOBTETSU_Face",
+        "vertices": 655,
+        "modifiers": [
+          "ARMATURE"
+        ]
+      },
+      {
+        "name": "MOBTETSU_CatEars",
+        "vertices": 150,
+        "modifiers": [
+          "ARMATURE"
+        ]
+      },
+      {
+        "name": "MOBTETSU_Glasses",
+        "vertices": 1658,
+        "modifiers": [
+          "ARMATURE"
+        ]
+      },
+      {
+        "name": "MOBTETSU_Lens_L",
+        "vertices": 715,
+        "modifiers": [
+          "ARMATURE"
+        ]
+      },
+      {
+        "name": "MOBTETSU_Lens_R",
+        "vertices": 715,
+        "modifiers": [
+          "ARMATURE"
+        ]
+      },
+      {
+        "name": "MOBTETSU_Character_Body",
+        "vertices": 9930,
+        "modifiers": [
+          "ARMATURE"
+        ]
+      },
+      {
+        "name": "MOB_Katana",
+        "vertices": 328,
+        "modifiers": [
+          "ARMATURE"
+        ]
+      }
+    ]
+  }
+]

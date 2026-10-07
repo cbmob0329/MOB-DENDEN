@@ -1,0 +1,32 @@
+[
+  {
+    "width": 320,
+    "seedPurchase": true,
+    "plantWaterHarvest": true,
+    "animalsRepeatedTap": true,
+    "kitchenTransfer": true,
+    "reload": true,
+    "overflow": false,
+    "pageErrors": []
+  },
+  {
+    "width": 390,
+    "seedPurchase": true,
+    "plantWaterHarvest": true,
+    "animalsRepeatedTap": true,
+    "kitchenTransfer": true,
+    "reload": true,
+    "overflow": false,
+    "pageErrors": []
+  },
+  {
+    "width": 430,
+    "seedPurchase": true,
+    "plantWaterHarvest": true,
+    "animalsRepeatedTap": true,
+    "kitchenTransfer": true,
+    "reload": true,
+    "overflow": false,
+    "pageErrors": []
+  }
+]
