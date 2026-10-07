@@ -1,0 +1,18 @@
+{
+  "checks": [
+    "departure during carry returns unconsumed dish once",
+    "departure during settle returns unconsumed dish once",
+    "departure during lower returns unconsumed dish once",
+    "departure during land returns unconsumed dish once",
+    "departure during retract returns unconsumed dish once",
+    "home furniture touch select/move/rotate/store/place/cancel 320",
+    "cafe table+chair storage UI 320",
+    "home furniture touch select/move/rotate/store/place/cancel 390",
+    "cafe table+chair storage UI 390",
+    "home furniture touch select/move/rotate/store/place/cancel 430",
+    "cafe table+chair storage UI 430",
+    "cooking bubbles remain accessible; repeated collect returns only once",
+    "real reload advances saved opening dialogue"
+  ],
+  "errors": []
+}

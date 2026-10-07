@@ -1,0 +1,7 @@
+{
+  "checks": [
+    "1000 mixed transactions/reloads/failures preserve 300 total dishes",
+    "all three meals: exclusive order, actor identity, failed save, single consumption"
+  ],
+  "errors": []
+}

@@ -1,0 +1,238 @@
+{
+  "checks": [
+    {
+      "name": "Nyoro 0.85 scale, same foot anchor, three individual tables",
+      "result": true
+    },
+    {
+      "name": "v7 two-order save migrates with no food loss",
+      "result": true
+    },
+    {
+      "name": "dialogue cycle and reload cursor; no Nyoro smell lines",
+      "result": true
+    },
+    {
+      "name": "collapsed activity / room visibility 320",
+      "result": true
+    },
+    {
+      "name": "open activity 320",
+      "result": true
+    },
+    {
+      "name": "close activity 320",
+      "result": true
+    },
+    {
+      "name": "card touch areas and safe bounds 320",
+      "result": true
+    },
+    {
+      "name": "card transfer quantities and repeat protection 320",
+      "result": true
+    },
+    {
+      "name": "collapsed activity / room visibility 390",
+      "result": true
+    },
+    {
+      "name": "open activity 390",
+      "result": true
+    },
+    {
+      "name": "close activity 390",
+      "result": true
+    },
+    {
+      "name": "card touch areas and safe bounds 390",
+      "result": true
+    },
+    {
+      "name": "card transfer quantities and repeat protection 390",
+      "result": true
+    },
+    {
+      "name": "collapsed activity / room visibility 430",
+      "result": true
+    },
+    {
+      "name": "open activity 430",
+      "result": true
+    },
+    {
+      "name": "close activity 430",
+      "result": true
+    },
+    {
+      "name": "card touch areas and safe bounds 430",
+      "result": true
+    },
+    {
+      "name": "card transfer quantities and repeat protection 430",
+      "result": true
+    },
+    {
+      "name": "mixed deposit rollback on persistence failure",
+      "result": true
+    },
+    {
+      "name": "all three guests eat simultaneously; walking, settle, lower, land, retract in order",
+      "result": {
+        "phases": [
+          [
+            0,
+            "carry"
+          ],
+          [
+            0,
+            "settle"
+          ],
+          [
+            0,
+            "lower"
+          ],
+          [
+            0,
+            "land"
+          ],
+          [
+            0,
+            "retract"
+          ],
+          [
+            1,
+            "carry"
+          ],
+          [
+            1,
+            "settle"
+          ],
+          [
+            1,
+            "lower"
+          ],
+          [
+            1,
+            "land"
+          ],
+          [
+            1,
+            "retract"
+          ],
+          [
+            2,
+            "carry"
+          ],
+          [
+            2,
+            "settle"
+          ],
+          [
+            2,
+            "lower"
+          ],
+          [
+            2,
+            "land"
+          ],
+          [
+            2,
+            "retract"
+          ]
+        ],
+        "maxDishStep": 0.01835804679176777,
+        "maxLowerSpan": 0.3942683830961371,
+        "seen3": true,
+        "eaten": 3,
+        "snapshot": [
+          {
+            "id": 0,
+            "state": "idle",
+            "action": "walk",
+            "pos": [
+              12,
+              0.48,
+              1.03
+            ],
+            "done": {},
+            "queue": null
+          },
+          {
+            "id": 1,
+            "state": "idle",
+            "action": "walk",
+            "pos": [
+              14,
+              0.48,
+              1.03
+            ],
+            "done": {},
+            "queue": null
+          },
+          {
+            "id": 2,
+            "state": "idle",
+            "action": "walk",
+            "pos": [
+              16,
+              0.48,
+              1.03
+            ],
+            "done": {},
+            "queue": null
+          },
+          {
+            "id": 3,
+            "state": "idle",
+            "action": "walk",
+            "pos": [
+              15.11,
+              0,
+              -0.25
+            ],
+            "done": {},
+            "queue": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "occupied or reserved tables cannot be stored",
+      "result": true
+    },
+    {
+      "name": "all meal ownership conserved during service",
+      "result": true
+    },
+    {
+      "name": "reload refunds once during carry",
+      "result": true
+    },
+    {
+      "name": "reload refunds once during settle",
+      "result": true
+    },
+    {
+      "name": "reload refunds once during lower",
+      "result": true
+    },
+    {
+      "name": "reload refunds once during land",
+      "result": true
+    },
+    {
+      "name": "reload refunds once during retract",
+      "result": true
+    },
+    {
+      "name": "table storage and restore persisted",
+      "result": true
+    },
+    {
+      "name": "empty stock does not deadlock waiter or invent meals",
+      "result": true
+    }
+  ],
+  "errors": []
+}
