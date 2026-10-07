@@ -724,15 +724,15 @@
             256
           ],
           "contentBoundsPx": [
-            78,
-            99,
-            179,
-            213
+            67,
+            85,
+            195,
+            191
           ],
           "durationMs": 420,
           "waterlineAnchorPx": [
             128,
-            204
+            184
           ],
           "propVisibilityPhase": "hidden"
         },
@@ -747,15 +747,15 @@
             256
           ],
           "contentBoundsPx": [
-            77,
-            99,
-            179,
-            213
+            66,
+            85,
+            195,
+            191
           ],
           "durationMs": 420,
           "waterlineAnchorPx": [
             128,
-            204
+            184
           ],
           "propVisibilityPhase": "hidden"
         },
@@ -770,15 +770,15 @@
             256
           ],
           "contentBoundsPx": [
-            77,
-            99,
-            179,
-            213
+            65,
+            85,
+            194,
+            191
           ],
           "durationMs": 420,
           "waterlineAnchorPx": [
             128,
-            204
+            184
           ],
           "propVisibilityPhase": "hidden"
         },
@@ -793,15 +793,15 @@
             256
           ],
           "contentBoundsPx": [
-            77,
-            99,
-            178,
-            213
+            65,
+            85,
+            194,
+            191
           ],
           "durationMs": 420,
           "waterlineAnchorPx": [
             128,
-            204
+            184
           ],
           "propVisibilityPhase": "hidden"
         }
@@ -811,9 +811,12 @@
       "emblemStatus": "original character-inspired emblem, not an existing supplied logo",
       "waterlineAnchorPx": [
         128,
-        204
+        184
       ],
       "headwearRemoved": true,
+      "visibleBody": "Towel-framed face only. No neck, shoulders or robe. Runtime opaque water masks at/below y184.",
+      "towelDrape": "Large folded white towel draped down both sides, concealing the bare black head outline.",
+      "revision": "V12.1",
       "file": "pink_bath.png"
     }
   },

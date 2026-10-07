@@ -1,0 +1,14 @@
+[
+  {
+    "file": "qa-food-path-v12.cjs",
+    "code": 0,
+    "output": "{\"checks\":[\"4 residents x3 dishes: single prop, continuous hand switches, actual mouth contact, no chew respawn\",\"actual four-resident bath mobile 320\",\"actual four-resident bath mobile 390\",\"actual four-resident bath mobile 430\",\"old V11 save without bath/staffMeal fields preserves inventory and wallet\"],\"errors\":[]}\n",
+    "error": ""
+  },
+  {
+    "file": "qa-final-visual-v12.cjs",
+    "code": 0,
+    "output": "4 actual meal sprites x6 moments and all 4 bath sprites x3 cameras rendered\n",
+    "error": ""
+  }
+]

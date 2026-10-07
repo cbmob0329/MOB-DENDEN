@@ -23,8 +23,11 @@
   "bathFrameDurationMs": 420,
   "generation": {
     "tool": "built-in imagegen",
-    "outputs": 8,
-    "method": "One generated action sheet per character/action; component bounding-box crops, uniform nearest-neighbor scale, translation and packing only. No character features or animation poses are drawn in code."
+    "outputs": 11,
+    "method": "One generated action sheet per character/action; component bounding-box crops, uniform nearest-neighbor scale, translation and packing only. No character features or animation poses are drawn in code.",
+    "originalOutputs": 8,
+    "targetedCorrectionOutputs": 3,
+    "correctionMethod": "Pink: normalize existing corrected imagegen sheet. Nyoro: composite only tiny clean muzzle patches from existing imagegen corrections, preserving all pixels outside those rectangles. No new generation after resume."
   },
   "characters": {
     "denden": {
@@ -749,15 +752,15 @@
               256
             ],
             "contentBoundsPx": [
-              78,
-              99,
-              179,
-              213
+              67,
+              85,
+              195,
+              191
             ],
             "durationMs": 420,
             "waterlineAnchorPx": [
               128,
-              204
+              184
             ],
             "propVisibilityPhase": "hidden"
           },
@@ -772,15 +775,15 @@
               256
             ],
             "contentBoundsPx": [
-              77,
-              99,
-              179,
-              213
+              66,
+              85,
+              195,
+              191
             ],
             "durationMs": 420,
             "waterlineAnchorPx": [
               128,
-              204
+              184
             ],
             "propVisibilityPhase": "hidden"
           },
@@ -795,15 +798,15 @@
               256
             ],
             "contentBoundsPx": [
-              77,
-              99,
-              179,
-              213
+              65,
+              85,
+              194,
+              191
             ],
             "durationMs": 420,
             "waterlineAnchorPx": [
               128,
-              204
+              184
             ],
             "propVisibilityPhase": "hidden"
           },
@@ -818,15 +821,15 @@
               256
             ],
             "contentBoundsPx": [
-              77,
-              99,
-              178,
-              213
+              65,
+              85,
+              194,
+              191
             ],
             "durationMs": 420,
             "waterlineAnchorPx": [
               128,
-              204
+              184
             ],
             "propVisibilityPhase": "hidden"
           }
@@ -836,9 +839,12 @@
         "emblemStatus": "original character-inspired emblem, not an existing supplied logo",
         "waterlineAnchorPx": [
           128,
-          204
+          184
         ],
-        "headwearRemoved": true
+        "headwearRemoved": true,
+        "visibleBody": "Towel-framed face only. No neck, shoulders or robe. Runtime opaque water masks at/below y184.",
+        "towelDrape": "Large folded white towel draped down both sides, concealing the bare black head outline.",
+        "revision": "V12.1"
       }
     },
     "nyoro": {
@@ -1672,5 +1678,13 @@
     "Bath bare heads are minimally inferred from exposed source faces; towel emblems are new, approved original character-based marks.",
     "Do not use old generic mouth anchor [131,125]. Use each frame mouthAnchorPx and handAnchorPx.",
     "Runtime food show/hide fractions are suggested phase boundaries and can be retimed to match gameplay."
-  ]
+  ],
+  "assetRevision": "V12.1",
+  "revisionNotes": [
+    "Pink bath: larger side-draped towel, face only, no neck/robe/shoulders; Pink waterline changes to [128,184].",
+    "Nyoro bath4 and meal bite/chew/finish: remove extra lower-muzzle mouth marks using tiny patches from generated edits.",
+    "All other 25 frame PNGs and 5 unaffected sheets are byte-identical to V12. All meal anchors, prop paths and timing remain unchanged.",
+    "No new generations after resuming; used the three correction outputs saved before the stop."
+  ],
+  "perCharacterWaterlineRequired": true
 }

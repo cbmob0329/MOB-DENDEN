@@ -1,0 +1,14 @@
+{
+  "unchanged": 25,
+  "changed": 11,
+  "mealAnchorsAndPathsUnchanged": true,
+  "sheetFramePixelEquality": true,
+  "pinkWaterline": [
+    128,
+    184
+  ],
+  "otherWaterlines": [
+    128,
+    204
+  ]
+}

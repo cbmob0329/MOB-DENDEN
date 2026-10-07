@@ -1,7 +1,7 @@
 {
   "file": "C:\\Users\\CB-Me\\Documents\\Codex\\2026-10-05\\task-2\\MOB_CHILL_LIFE_V12_FINAL.zip",
-  "bytes": 8091302,
-  "htmlSha256": "d6b06ffa04b2ea4f6f09ca2b20b0aa3c50282712db510cd9b56ea2de0f48173f",
+  "bytes": 8110404,
+  "htmlSha256": "d14a6f6b3255d12797ab9c9ecee4ec95832c6a4e7e28e39dbf089b4bb900b959",
   "originalSheetHashes": [
     {
       "name": "denden_meal.png",
@@ -17,15 +17,15 @@
     },
     {
       "name": "pink_bath.png",
-      "sha256": "887f4463be6e500139b21d9f3467f1696bb0ba36b96f0fee4676ad762a24f2bc"
+      "sha256": "0773155a25ea39844e75cadefbd8e12579b339b48dcacfdcd4138360ba3b05c0"
     },
     {
       "name": "nyoro_meal.png",
-      "sha256": "49d7af95b1d5063cde3b6e2244a98e90e91c88d6fe9960711efacabee2ec3982"
+      "sha256": "9fb992501eb76f3809dd8e7a323a598b1a6dd926b5fb42a71e46fe95161b8924"
     },
     {
       "name": "nyoro_bath.png",
-      "sha256": "316fdfa101da11cc9bebe8d6fdaf4e4b7f9cd2714ac01c03335e77249b556a8e"
+      "sha256": "ec50f85e574d18cc14e8a717661dc2f9b1eac9990e1659a586b11d1d6e29f352"
     },
     {
       "name": "irukaeru_meal.png",

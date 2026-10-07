@@ -4,9 +4,9 @@
     {
       "file": "MOB_CHILL_LIFE.html",
       "state": {
-        "version": "V12 final-20261006",
+        "version": "V12.1 final-20261007",
         "bath": "soak",
-        "pose": "bath_3",
+        "pose": "bath_0",
         "frames": [
           [
             true,
@@ -41,6 +41,24 @@
           [
             129,
             163
+          ]
+        ],
+        "waterlines": [
+          [
+            128,
+            204
+          ],
+          [
+            128,
+            184
+          ],
+          [
+            128,
+            204
+          ],
+          [
+            128,
+            204
           ]
         ]
       },
@@ -49,9 +67,9 @@
     {
       "file": "index.html",
       "state": {
-        "version": "V12 final-20261006",
+        "version": "V12.1 final-20261007",
         "bath": "soak",
-        "pose": "bath_3",
+        "pose": "bath_0",
         "frames": [
           [
             true,
@@ -86,6 +104,24 @@
           [
             129,
             163
+          ]
+        ],
+        "waterlines": [
+          [
+            128,
+            204
+          ],
+          [
+            128,
+            184
+          ],
+          [
+            128,
+            204
+          ],
+          [
+            128,
+            204
           ]
         ]
       },

@@ -6,12 +6,6 @@
     "error": ""
   },
   {
-    "file": "qa-final-input-v12.cjs",
-    "code": 0,
-    "output": "{\"checks\":[\"real touch on all three navigation buttons\",\"touch swipe moves one room at a time without moving actors\",\"modal blocks navigation; four real bath sprites available\",\"bath furniture button opens home editor; editor blocks swipes\",\"staff waits beside shelf after restore\"],\"errors\":[]}\n",
-    "error": ""
-  },
-  {
     "file": "qa-final-visual-v12.cjs",
     "code": 0,
     "output": "4 actual meal sprites x6 moments and all 4 bath sprites x3 cameras rendered\n",
