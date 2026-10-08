@@ -1,0 +1,63 @@
+{
+  "results": {
+    "start": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "sleep": {
+      "phase": "sleep",
+      "place": "cafe:chair0",
+      "usesSleep": true
+    },
+    "wake": {
+      "rest": false,
+      "transit": false,
+      "planeVisible": false,
+      "spriteVisible": false,
+      "room": "cafe"
+    },
+    "service": {
+      "deposit": true,
+      "visit": true,
+      "served": true,
+      "frames": [
+        4,
+        1,
+        0
+      ],
+      "states": [
+        "carry",
+        "settle",
+        "lower",
+        "land",
+        "retract"
+      ],
+      "carry": {
+        "idx": 4,
+        "dir": "left",
+        "rest": false
+      },
+      "remaining": {
+        "dorayaki": 0,
+        "omelet": 0,
+        "soup": 2
+      },
+      "rest": false,
+      "sleepSpriteVisible": false,
+      "guest": {
+        "mode": "seated",
+        "room": "cafe"
+      },
+      "seats": [
+        2,
+        4,
+        null
+      ]
+    }
+  },
+  "errors": []
+}

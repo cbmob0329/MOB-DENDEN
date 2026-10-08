@@ -90,3 +90,11 @@ iPhone実機Safari、実機のタッチ操作と音の聴取は未確認。モ�
 本体ビルド後にリポジトリで `node package-distribution.cjs` を実行する。旧作業用 `package-final.cjs` もこの処理へ転送する。
 外部ZIPを更新する前に、必須の `MOB_CHILL_LIFE.html` が正本とバイト単位で一致することを検証する。元ZIP・本体HTML・他のZIPは削除しない。
 使用ライブラリは `jszip`（通常のNodeモジュール、またはこのPCのCodexランタイム内の既存ライブラリ）。
+## 睡眠・歩行画像の修正（HEAD 86d89e7 以降）
+
+ピンクの最新睡眠原画に誤って描かれた猫耳を、公式画像編集ツールで下段4コマとも耳のない丸いフードに修正。assets/pink/idle.png と旧 sleep.png を参照し、閉じた寝顔・横寝2コマ・座り寝2コマ・透明背景を維持。切り出し混入ではなく原画の生成ミスだった。
+イルカエルは life-fixed.png の左右歩行4コマ自体が閉眼になっていた。正面歩行と同じ開いた黒い目・黄色の縁・白いハイライトに修正。寝姿の閉眼は維持。両シートの他キャラの外見は目視比較で維持を確認した。
+画像から矩形manifestと埋め込みデータを再作成し、本体HTMLを再ビルド。ユーザーの新しいHEADにある配膳処理・行動コードは上書きしていない。
+独立したEdgeテストセーブで睡眠→起床→歩行→配膳→客のスープ食事を実行。起床時に睡眠用表示が消え、配膳の左歩行はwalk[4]（開眼）を使用。carry→settle→lower→land→retractを通り、預けたスープ3個のうち1個だけを消費（残り2）。pageerrorは0。閉眼オーバーレイの残留や睡眠行の誤参照はこの経路では再現しなかった。
+最新版の目視比較は [eye-fix-comparison.png](verification-v20/eye-fix-comparison.png)、実行記録は [eye-fix-results.json](verification-v20/eye-fix-results.json)。以前の検証スクリーンショットは修正前の記録であり、この比較画像が今回の修正後の状態。
+本体と外部配布ZIPを更新。実機Safari未確認。commit / push は行っていない。
