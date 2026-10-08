@@ -1,0 +1,78 @@
+{
+  "tetsu": {
+    "frames": 32,
+    "boundsSafe": true,
+    "bath": true,
+    "meal": true,
+    "directions": {
+      "front": "front",
+      "back": "back",
+      "left": "left",
+      "right": "right"
+    }
+  },
+  "nekokoo": {
+    "frames": 32,
+    "boundsSafe": true,
+    "bath": true,
+    "meal": true,
+    "directions": {
+      "front": "front",
+      "back": "back",
+      "left": "left",
+      "right": "right"
+    }
+  },
+  "bathRoundTrip": {
+    "m": [
+      [
+        "tetsu",
+        null,
+        "home"
+      ],
+      [
+        "nekokoo",
+        null,
+        "bath"
+      ]
+    ],
+    "slots": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  "fullBathSafe": true,
+  "reload": {
+    "egg": 42,
+    "unique": 2,
+    "actors": [
+      [
+        "tetsu",
+        "enter",
+        "bath"
+      ],
+      [
+        "nekokoo",
+        "entryWait",
+        "bath"
+      ]
+    ]
+  },
+  "meal": {
+    "frames": [
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "joy": true,
+    "bakedFood": false,
+    "foodVisible": true,
+    "extraFood": false
+  },
+  "ownerMealBody": true,
+  "errors": []
+}

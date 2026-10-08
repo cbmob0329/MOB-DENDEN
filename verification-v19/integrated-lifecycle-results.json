@@ -1,0 +1,42 @@
+{
+  "results": {
+    "tetsu": {
+      "finished": true,
+      "noViewTeleport": true,
+      "state": "idle",
+      "outside": false
+    },
+    "nyoro": {
+      "finished": true,
+      "noViewTeleport": true,
+      "state": "idle",
+      "outside": false
+    },
+    "denden": {
+      "finished": true,
+      "noViewTeleport": true,
+      "state": "idle",
+      "outside": false
+    },
+    "pink": {
+      "finished": true,
+      "noViewTeleport": true,
+      "state": "idle",
+      "outside": false
+    },
+    "busyDenied": {
+      "meal": true,
+      "bath": true,
+      "sleep": true,
+      "mealtime": true
+    },
+    "restored": {
+      "egg": 42,
+      "active": false,
+      "flags": false,
+      "bgm": true,
+      "size": 1.32
+    }
+  },
+  "errors": []
+}

@@ -1,0 +1,20 @@
+{
+  "allSixSoaked": [
+    "denden",
+    "pink",
+    "nyoro",
+    "irukaeru",
+    "tetsu",
+    "nekokoo"
+  ],
+  "max": 4,
+  "unique": true,
+  "finished": true,
+  "distanceGait": true,
+  "slots": [
+    null,
+    null,
+    null,
+    null
+  ]
+}

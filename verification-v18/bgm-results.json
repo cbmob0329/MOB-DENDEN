@@ -1,0 +1,21 @@
+{
+  "gestureUnlock": true,
+  "day": {
+    "duration": 148.56,
+    "level": 0.15562500000000004,
+    "context": "running"
+  },
+  "night": true,
+  "arcadePriority": true,
+  "dayAfterExit": true,
+  "pauseResume": true,
+  "freezeResume": true,
+  "persistedMuteVolume": true,
+  "widths": [
+    320,
+    390,
+    430
+  ],
+  "oneAudioElementByConstruction": true,
+  "errors": []
+}

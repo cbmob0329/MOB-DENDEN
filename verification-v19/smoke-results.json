@@ -1,0 +1,27 @@
+{
+  "results": {
+    "behavior": {
+      "denied": true,
+      "rolledBack": true,
+      "autonomous": true,
+      "oneAtATime": true,
+      "tetsuScale": 1.32,
+      "bgm": true
+    },
+    "widths": [
+      {
+        "width": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "overflow": false
+      },
+      {
+        "width": 430,
+        "overflow": false
+      }
+    ]
+  },
+  "errors": []
+}

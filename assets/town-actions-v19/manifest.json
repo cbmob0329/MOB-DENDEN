@@ -1,0 +1,426 @@
+{
+  "tetsu": {
+    "frames": [
+      {
+        "index": 0,
+        "area": 55630,
+        "rect": [
+          115,
+          161,
+          307,
+          275
+        ]
+      },
+      {
+        "index": 1,
+        "area": 59853,
+        "rect": [
+          536,
+          92,
+          336,
+          343
+        ]
+      },
+      {
+        "index": 2,
+        "area": 63988,
+        "rect": [
+          933,
+          66,
+          321,
+          338
+        ]
+      },
+      {
+        "index": 3,
+        "area": 54475,
+        "rect": [
+          1430,
+          87,
+          245,
+          306
+        ]
+      },
+      {
+        "index": 4,
+        "area": 64103,
+        "rect": [
+          100,
+          488,
+          330,
+          286
+        ]
+      },
+      {
+        "index": 5,
+        "area": 62251,
+        "rect": [
+          585,
+          488,
+          266,
+          346
+        ]
+      },
+      {
+        "index": 6,
+        "area": 61488,
+        "rect": [
+          960,
+          553,
+          307,
+          290
+        ]
+      },
+      {
+        "index": 7,
+        "area": 58395,
+        "rect": [
+          1435,
+          500,
+          240,
+          335
+        ]
+      }
+    ],
+    "canvas": 384,
+    "foot": [
+      192,
+      350
+    ],
+    "standingHeight": 196,
+    "states": [
+      "prepare",
+      "launch",
+      "rise",
+      "travelA",
+      "travelB",
+      "descend",
+      "land",
+      "finish"
+    ],
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "source": "tetsu.png",
+    "method": "Official ImageGen articulated poses; alpha-measured isolated crops, no mirrored poses"
+  },
+  "nyoro": {
+    "frames": [
+      {
+        "index": 0,
+        "area": 50428,
+        "rect": [
+          129,
+          149,
+          270,
+          267
+        ]
+      },
+      {
+        "index": 1,
+        "area": 60659,
+        "rect": [
+          553,
+          22,
+          297,
+          389
+        ]
+      },
+      {
+        "index": 2,
+        "area": 73358,
+        "rect": [
+          943,
+          33,
+          293,
+          403
+        ]
+      },
+      {
+        "index": 3,
+        "area": 80932,
+        "rect": [
+          1374,
+          33,
+          383,
+          398
+        ]
+      },
+      {
+        "index": 4,
+        "area": 74026,
+        "rect": [
+          66,
+          451,
+          376,
+          365
+        ]
+      },
+      {
+        "index": 5,
+        "area": 70190,
+        "rect": [
+          505,
+          467,
+          364,
+          384
+        ]
+      },
+      {
+        "index": 6,
+        "area": 73597,
+        "rect": [
+          925,
+          515,
+          373,
+          342
+        ]
+      },
+      {
+        "index": 7,
+        "area": 53044,
+        "rect": [
+          1402,
+          597,
+          302,
+          255
+        ]
+      }
+    ],
+    "canvas": 384,
+    "foot": [
+      192,
+      350
+    ],
+    "standingHeight": 180,
+    "states": [
+      "prepare",
+      "launch",
+      "rise",
+      "travelA",
+      "travelB",
+      "descend",
+      "land",
+      "finish"
+    ],
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "source": "nyoro.png",
+    "method": "Official ImageGen articulated poses; alpha-measured isolated crops, no mirrored poses"
+  },
+  "denden": {
+    "frames": [
+      {
+        "index": 0,
+        "area": 77607,
+        "rect": [
+          73,
+          93,
+          299,
+          370
+        ]
+      },
+      {
+        "index": 1,
+        "area": 76328,
+        "rect": [
+          437,
+          91,
+          283,
+          370
+        ]
+      },
+      {
+        "index": 2,
+        "area": 83420,
+        "rect": [
+          778,
+          81,
+          358,
+          380
+        ]
+      },
+      {
+        "index": 3,
+        "area": 78257,
+        "rect": [
+          1190,
+          40,
+          281,
+          421
+        ]
+      },
+      {
+        "index": 4,
+        "area": 65499,
+        "rect": [
+          88,
+          530,
+          246,
+          397
+        ]
+      },
+      {
+        "index": 5,
+        "area": 69070,
+        "rect": [
+          449,
+          526,
+          272,
+          369
+        ]
+      },
+      {
+        "index": 6,
+        "area": 75277,
+        "rect": [
+          844,
+          533,
+          263,
+          412
+        ]
+      },
+      {
+        "index": 7,
+        "area": 75401,
+        "rect": [
+          1203,
+          592,
+          301,
+          362
+        ]
+      }
+    ],
+    "canvas": 384,
+    "foot": [
+      192,
+      350
+    ],
+    "standingHeight": 160,
+    "states": [
+      "prepare",
+      "launch",
+      "rise",
+      "travelA",
+      "travelB",
+      "descend",
+      "land",
+      "finish"
+    ],
+    "sourceSize": [
+      1536,
+      1024
+    ],
+    "source": "denden.png",
+    "method": "Official ImageGen articulated poses; alpha-measured isolated crops, no mirrored poses"
+  },
+  "pink": {
+    "frames": [
+      {
+        "index": 0,
+        "area": 74214,
+        "rect": [
+          44,
+          80,
+          330,
+          343
+        ]
+      },
+      {
+        "index": 1,
+        "area": 78553,
+        "rect": [
+          459,
+          75,
+          376,
+          346
+        ]
+      },
+      {
+        "index": 2,
+        "area": 80474,
+        "rect": [
+          953,
+          83,
+          369,
+          337
+        ]
+      },
+      {
+        "index": 3,
+        "area": 73725,
+        "rect": [
+          1401,
+          91,
+          328,
+          330
+        ]
+      },
+      {
+        "index": 4,
+        "area": 80554,
+        "rect": [
+          45,
+          494,
+          384,
+          341
+        ]
+      },
+      {
+        "index": 5,
+        "area": 83573,
+        "rect": [
+          486,
+          451,
+          363,
+          385
+        ]
+      },
+      {
+        "index": 6,
+        "area": 70172,
+        "rect": [
+          983,
+          525,
+          366,
+          306
+        ]
+      },
+      {
+        "index": 7,
+        "area": 82573,
+        "rect": [
+          1435,
+          457,
+          295,
+          379
+        ]
+      }
+    ],
+    "canvas": 384,
+    "foot": [
+      192,
+      350
+    ],
+    "standingHeight": 170,
+    "states": [
+      "prepare",
+      "launch",
+      "rise",
+      "travelA",
+      "travelB",
+      "descend",
+      "land",
+      "finish"
+    ],
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "source": "pink.png",
+    "method": "Official ImageGen articulated poses; alpha-measured isolated crops, no mirrored poses"
+  }
+}
