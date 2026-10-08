@@ -1,0 +1,10 @@
+{
+  "sha256": "05873818c4a2c922ad7abbdf74e4d2040cf2b46b7362cba5c48235d1c5f156a6",
+  "title": "MOB CHILL LIFE",
+  "nekokooVoice": "オラ / だぞ",
+  "unconsumedTetsuOrderRestoredOnce": true,
+  "repeatReloadNoDuplicate": true,
+  "errors": [],
+  "browserTestedSha256": "2cf7a3c56c93d664e6d54d7191a070943a552599c5e536c43921e2d5425ddc98",
+  "postBrowserChange": "Nekokoo menu description only; final HTML string verified"
+}

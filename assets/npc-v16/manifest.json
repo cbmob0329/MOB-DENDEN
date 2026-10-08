@@ -1,0 +1,93 @@
+{
+  "source": [
+    "素材集/016.png",
+    "素材集/014.png"
+  ],
+  "method": "ImageGen derived transparent pixel atlas; no mirror or back-facing claims",
+  "grid": [
+    8,
+    4
+  ],
+  "characters": {
+    "tetsu": {
+      "rows": [
+        0,
+        1
+      ],
+      "omissions": [
+        "sword",
+        "scabbard",
+        "ropes",
+        "drawstrings",
+        "mouth in all frames",
+        "baked-in food in meal frames"
+      ],
+      "poses": [
+        "idle",
+        "walk",
+        "wave",
+        "talk",
+        "meditate",
+        "seated sleep",
+        "spread-eagle sleep",
+        "seated meal"
+      ],
+      "voice": {
+        "firstPerson": "拙者",
+        "ending": "でござる",
+        "address": "お主"
+      }
+    },
+    "nekokoo": {
+      "rows": [
+        2,
+        3
+      ],
+      "poses": [
+        "idle bucket",
+        "walk bucket",
+        "wave",
+        "talk",
+        "bow",
+        "delighted"
+      ],
+      "voice": {
+        "firstPerson": "オラ",
+        "ending": "だぞ"
+      }
+    }
+  },
+  "limits": [
+    "front/three-quarter only",
+    "no bath immersion poses",
+    "no bag handling poses"
+  ],
+  "saveIdentity": [
+    "tetsu",
+    "nekokoo"
+  ],
+  "imageSize": [
+    1774,
+    887
+  ],
+  "xCuts": [
+    0,
+    220,
+    445,
+    670,
+    890,
+    1110,
+    1340,
+    1560,
+    1774
+  ],
+  "yCuts": [
+    0,
+    258,
+    485,
+    695,
+    887
+  ],
+  "cellSizing": "Measured source rectangles; not a 256px grid. Runtime UVs use these exact cuts.",
+  "revision": "Mouthless and food-free Tetsu; ImageGen edit with preserved transparency"
+}

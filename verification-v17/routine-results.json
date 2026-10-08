@@ -1,0 +1,12 @@
+{
+  "emptyFood": true,
+  "noConversationHearts": true,
+  "stockConservation": true,
+  "oncePerWindow": true,
+  "noInterrupt": true,
+  "sleepWake": true,
+  "singleBed": true,
+  "reloadMealRecord": true,
+  "offlineClockPreserved": true,
+  "errors": []
+}

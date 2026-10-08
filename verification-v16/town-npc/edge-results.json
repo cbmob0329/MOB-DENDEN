@@ -1,0 +1,26 @@
+[
+  {
+    "width": 320,
+    "fullTerrainVisible": true,
+    "edgePanReachable": true,
+    "pinchNoModal": true,
+    "noActorTeleport": true,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "fullTerrainVisible": true,
+    "edgePanReachable": true,
+    "pinchNoModal": true,
+    "noActorTeleport": true,
+    "errors": []
+  },
+  {
+    "width": 430,
+    "fullTerrainVisible": true,
+    "edgePanReachable": true,
+    "pinchNoModal": true,
+    "noActorTeleport": true,
+    "errors": []
+  }
+]

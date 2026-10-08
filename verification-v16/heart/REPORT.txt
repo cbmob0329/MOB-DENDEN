@@ -1,0 +1,5 @@
+MOB CHILL LIFE heart/bubble fix
+Cause: global button:hover specificity overrides .heart-drop and paints #e3e9dd. Actual reproduction: computed background rgb(227,233,221). DOM button, no image/canvas/3D alpha issue.
+Fix: explicit transparent hover/active/focus and disabled platform button/tap paint; hitbox/heart glyph/fall animation/wallet unchanged. Mobile bubbles compact to 168px max and avoid actors, controls and each other; no dialogue content deleted.
+PASS Edge touch emulation 320/390/430: visible/collected screenshots, old v2 save egg42 wallet6/pending3 -> wallet9 once; save failure rollback and reload; three original lines nonoverlapping. WebKit runtime unavailable, physical Safari unverified.
+Changed tracked files: life-v9.css, life-v9.js, MOB_CHILL_LIFE.html. No stage/commit/push.

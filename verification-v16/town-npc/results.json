@@ -1,0 +1,148 @@
+{
+  "routes": [
+    {
+      "from": "home",
+      "to": "cafe",
+      "count": 6,
+      "clear": true,
+      "front": true
+    },
+    {
+      "from": "home",
+      "to": "arcade",
+      "count": 4,
+      "clear": true,
+      "front": true
+    },
+    {
+      "from": "home",
+      "to": "farm",
+      "count": 5,
+      "clear": true,
+      "front": true
+    },
+    {
+      "from": "home",
+      "to": "bath",
+      "count": 5,
+      "clear": true,
+      "front": true
+    },
+    {
+      "from": "cafe",
+      "to": "home",
+      "count": 6,
+      "clear": true,
+      "front": true
+    },
+    {
+      "from": "cafe",
+      "to": "arcade",
+      "count": 5,
+      "clear": true,
+      "front": true
+    },
+    {
+      "from": "cafe",
+      "to": "farm",
+      "count": 4,
+      "clear": true,
+      "front": true
+    },
+    {
+      "from": "cafe",
+      "to": "bath",
+      "count": 4,
+      "clear": true,
+      "front": true
+    },
+    {
+      "from": "arcade",
+      "to": "home",
+      "count": 4,
+      "clear": true,
+      "front": true
+    },
+    {
+      "from": "arcade",
+      "to": "cafe",
+      "count": 5,
+      "clear": true,
+      "front": true
+    },
+    {
+      "from": "arcade",
+      "to": "farm",
+      "count": 6,
+      "clear": true,
+      "front": true
+    },
+    {
+      "from": "arcade",
+      "to": "bath",
+      "count": 5,
+      "clear": true,
+      "front": true
+    },
+    {
+      "from": "farm",
+      "to": "home",
+      "count": 5,
+      "clear": true,
+      "front": true
+    },
+    {
+      "from": "farm",
+      "to": "cafe",
+      "count": 4,
+      "clear": true,
+      "front": true
+    },
+    {
+      "from": "farm",
+      "to": "arcade",
+      "count": 6,
+      "clear": true,
+      "front": true
+    },
+    {
+      "from": "farm",
+      "to": "bath",
+      "count": 4,
+      "clear": true,
+      "front": true
+    },
+    {
+      "from": "bath",
+      "to": "home",
+      "count": 5,
+      "clear": true,
+      "front": true
+    },
+    {
+      "from": "bath",
+      "to": "cafe",
+      "count": 4,
+      "clear": true,
+      "front": true
+    },
+    {
+      "from": "bath",
+      "to": "arcade",
+      "count": 5,
+      "clear": true,
+      "front": true
+    },
+    {
+      "from": "bath",
+      "to": "farm",
+      "count": 4,
+      "clear": true,
+      "front": true
+    }
+  ],
+  "npcCount": 6,
+  "oldSave": true,
+  "tetsuServed": true,
+  "errors": []
+}

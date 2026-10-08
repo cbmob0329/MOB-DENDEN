@@ -1,0 +1,12 @@
+{
+  "nekoVoice": true,
+  "windows": true,
+  "repeatedMealBlocked": true,
+  "nextDayAllowed": true,
+  "failedConsumeRollback": true,
+  "unconsumedOwnerRefund": true,
+  "consumedOwnerNoRefund": true,
+  "staffCrashReconciliation": true,
+  "pausedClock": true,
+  "errors": []
+}

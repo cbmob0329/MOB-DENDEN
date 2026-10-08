@@ -5,3 +5,7 @@
 .shop-row{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:8px 0}.shop-row small{display:block}.shop-row button,.shop-actions button,#heartWallet,#lifeControls{min-height:44px}.shop-actions{display:flex;gap:10px;flex-wrap:wrap}
 #extraControls{display:flex;justify-content:center;gap:5px;flex-wrap:wrap;background:#f3eee2;padding:7px;border-radius:14px}#extraControls[hidden]{display:none}#extraControls button{min-height:44px;min-width:44px}#heartWallet{color:#9e5566;font-weight:bold}
 @media(max-width:600px){footer nav{grid-template-columns:repeat(5,minmax(0,1fr))}footer .hint{display:none}.top{gap:4px}.top button{padding:5px 9px}.bubble:not(.effect){font-size:12px;max-width:240px}#extraControls{position:absolute;bottom:100%;left:8px;right:8px;box-shadow:0 2px 12px #665c4833}}
+
+/* A touch hover must never paint the rectangular heart button. */
+button.heart-drop,button.heart-drop:hover,button.heart-drop:active,button.heart-drop:focus{background:transparent;box-shadow:none;-webkit-appearance:none;appearance:none;-webkit-tap-highlight-color:transparent}
+@media(max-width:600px){.bubble:not(.effect){max-width:min(168px,calc(100vw - 24px));font-size:11px;line-height:1.35;padding:6px 8px}.bubble:not(.effect) small{font-size:9px;margin-bottom:2px}}

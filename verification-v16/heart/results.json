@@ -1,0 +1,210 @@
+{
+  "source": "C:/Users/CB-Me/Documents/GitHub/MOB-DENDEN/MOB_CHILL_LIFE.html",
+  "sha256": "60fcd9680c1135a8ba7de250f77ef8aef9f57e4cbead8b5268909321cfe778a6",
+  "results": [
+    {
+      "width": 320,
+      "before": {
+        "wallet": {
+          "balance": 6,
+          "serial": 7,
+          "pending": [
+            {
+              "id": 7,
+              "value": 3,
+              "pos": [
+                0,
+                0,
+                2
+              ],
+              "room": "home"
+            }
+          ],
+          "claimed": {
+            "previous-meal": true
+          },
+          "funDay": "2026-10-07",
+          "funCount": 2,
+          "funTimes": {
+            "0": 12345
+          }
+        },
+        "egg": 42,
+        "title": "MOB CHILL LIFE",
+        "heart": {
+          "background": "rgba(0, 0, 0, 0)",
+          "hover": true,
+          "width": 44,
+          "height": 45,
+          "animation": "heart-fall"
+        },
+        "bubbles": [
+          {
+            "text": "モブデンデンいいねでやんす～。",
+            "opacity": "1",
+            "x": 100.6015625,
+            "y": 290,
+            "w": 99.984375,
+            "h": 42.984375
+          },
+          {
+            "text": "モブピンク僕の選曲であります！",
+            "opacity": "1",
+            "x": 103.21875,
+            "y": 240,
+            "w": 113.5625,
+            "h": 42.984375
+          },
+          {
+            "text": "モブニョロここは落ち着くニョロ～",
+            "opacity": "1",
+            "x": 199.4765625,
+            "y": 410,
+            "w": 112.515625,
+            "h": 42.984375
+          }
+        ]
+      },
+      "saveFailureRollback": true,
+      "touchCollectOnce": true,
+      "reloadPreserved": true,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "before": {
+        "wallet": {
+          "balance": 6,
+          "serial": 7,
+          "pending": [
+            {
+              "id": 7,
+              "value": 3,
+              "pos": [
+                0,
+                0,
+                2
+              ],
+              "room": "home"
+            }
+          ],
+          "claimed": {
+            "previous-meal": true
+          },
+          "funDay": "2026-10-07",
+          "funCount": 2,
+          "funTimes": {
+            "0": 12345
+          }
+        },
+        "egg": 42,
+        "title": "MOB CHILL LIFE",
+        "heart": {
+          "background": "rgba(0, 0, 0, 0)",
+          "hover": true,
+          "width": 44,
+          "height": 45,
+          "animation": "heart-fall"
+        },
+        "bubbles": [
+          {
+            "text": "モブデンデンいいねでやんす～。",
+            "opacity": "1",
+            "x": 133.5078125,
+            "y": 290,
+            "w": 99.984375,
+            "h": 42.984375
+          },
+          {
+            "text": "モブピンク僕の選曲であります！",
+            "opacity": "1",
+            "x": 138.21875,
+            "y": 240,
+            "w": 113.5625,
+            "h": 42.984375
+          },
+          {
+            "text": "モブニョロここは落ち着くニョロ～",
+            "opacity": "1",
+            "x": 269.4765625,
+            "y": 410,
+            "w": 112.515625,
+            "h": 42.984375
+          }
+        ]
+      },
+      "saveFailureRollback": true,
+      "touchCollectOnce": true,
+      "reloadPreserved": true,
+      "errors": []
+    },
+    {
+      "width": 430,
+      "before": {
+        "wallet": {
+          "balance": 6,
+          "serial": 7,
+          "pending": [
+            {
+              "id": 7,
+              "value": 3,
+              "pos": [
+                0,
+                0,
+                2
+              ],
+              "room": "home"
+            }
+          ],
+          "claimed": {
+            "previous-meal": true
+          },
+          "funDay": "2026-10-07",
+          "funCount": 2,
+          "funTimes": {
+            "0": 12345
+          }
+        },
+        "egg": 42,
+        "title": "MOB CHILL LIFE",
+        "heart": {
+          "background": "rgba(0, 0, 0, 0)",
+          "hover": true,
+          "width": 44,
+          "height": 45,
+          "animation": "heart-fall"
+        },
+        "bubbles": [
+          {
+            "text": "モブデンデンいいねでやんす～。",
+            "opacity": "1",
+            "x": 152.3046875,
+            "y": 280,
+            "w": 99.984375,
+            "h": 42.984375
+          },
+          {
+            "text": "モブピンク僕の選曲であります！",
+            "opacity": "1",
+            "x": 158.21875,
+            "y": 230,
+            "w": 113.5625,
+            "h": 42.984375
+          },
+          {
+            "text": "モブニョロここは落ち着くニョロ～",
+            "opacity": "1",
+            "x": 171.5859375,
+            "y": 500,
+            "w": 112.515625,
+            "h": 42.984375
+          }
+        ]
+      },
+      "saveFailureRollback": true,
+      "touchCollectOnce": true,
+      "reloadPreserved": true,
+      "errors": []
+    }
+  ]
+}
