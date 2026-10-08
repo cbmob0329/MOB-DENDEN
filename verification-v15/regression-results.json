@@ -1,0 +1,29 @@
+[
+  {
+    "width": 320,
+    "furniture": "select/move/rotate/store/place/confirm/cancel",
+    "touch44": true,
+    "cookingThreeRecipesOnce": true,
+    "fullBagKeepsReady": true,
+    "legacy42EggsPreserved": true,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "furniture": "select/move/rotate/store/place/confirm/cancel",
+    "touch44": true,
+    "cookingThreeRecipesOnce": true,
+    "fullBagKeepsReady": true,
+    "legacy42EggsPreserved": true,
+    "errors": []
+  },
+  {
+    "width": 430,
+    "furniture": "select/move/rotate/store/place/confirm/cancel",
+    "touch44": true,
+    "cookingThreeRecipesOnce": true,
+    "fullBagKeepsReady": true,
+    "legacy42EggsPreserved": true,
+    "errors": []
+  }
+]

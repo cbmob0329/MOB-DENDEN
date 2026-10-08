@@ -1,0 +1,21 @@
+{
+  "format": "ChillBlenderMesh-v1",
+  "coordinateSystem": "+Y up, +Z front, +X right; positions already world-flattened in room local coordinates",
+  "editableSources": ["home_shell.blend", "cafe_shell.blend", "arcade_shell.blend", "bath_interior.blend"],
+  "origin": [0,0,0],
+  "floorSizes": {"home_shell":[11.5,9.3],"cafe_shell":[10.8,8.4],"arcade_shell":[10.8,8.4],"bath_interior":[9,8.5]},
+  "nodes": {
+    "static":"default opaque static structure",
+    "windows":"day/night window color; existing frame preserved",
+    "lamps":"emissive glass and cornice strips; brighten at night",
+    "water":"one bath surface at Y 0.53, upward normals; replace material, do not duplicate mesh",
+    "waterfall":"stream from rear-right inlet, animation optional",
+    "entry_curtain":"indigo split curtain at bath entrance; separate for camera management"
+  },
+  "runtimePreserve":["all existing furniture positions and interactive objects","all residents and their routes","cafe cooking/food/table reservation data","bath four seat coordinates","user saves"],
+  "removeWhenInstalling":["old shell floors/walls duplicated by these models","old bath tub/water/static props duplicated by bath_interior"],
+  "bathSeats":[[-1.2,0.55,-1.3],[1.2,0.55,-1.3],[-1.2,0.55,1.3],[1.2,0.55,1.3]],
+  "mural":{"source":"004.png","displaySize":[4.2,1.6],"uvCrop":"full horizontal width and centered horizon band at V=0.56; preserve source aspect","allowedTextureUse":"actual picture within modeled frame"},
+  "materialRules":{"colorSpace":"linear","mergeBy":["node","material.name"],"uv":"preserve for mural only required","normals":"exported corner normals; do not replace with averaged vertex normals"},
+  "completionBoundary":"Blender assets and renders only; combined game appearance and mobile performance require integration review"
+}

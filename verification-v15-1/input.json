@@ -1,0 +1,10 @@
+{
+  "checks": [
+    "real touch on all three navigation buttons",
+    "touch swipe moves one room at a time without moving actors",
+    "modal blocks navigation; four real bath sprites available",
+    "bath furniture button opens home editor; editor blocks swipes",
+    "staff waits beside shelf after restore"
+  ],
+  "errors": []
+}

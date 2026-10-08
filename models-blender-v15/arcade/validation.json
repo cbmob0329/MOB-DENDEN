@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "checks": "finite triangulated geometry, normals/UV lengths, material alpha, counts, screen nodes, UFO exact physics floor/hole and semantic roof/claw nodes",
+  "assets": [
+    {
+      "id": "gacha",
+      "triangles": 34324,
+      "parts": 57,
+      "glb_bytes": 806456,
+      "json_sha256": "ed3a73a5abcc0b4aad3b6d4792f7f2e105f28696c07f91fc98bd45dcc8813edd"
+    },
+    {
+      "id": "capsule",
+      "triangles": 2464,
+      "parts": 3,
+      "glb_bytes": 44284,
+      "json_sha256": "01143b548d0c8aa46aeb8dfdf02b3ade7521aa893028ccee711ab4d89289be9f"
+    },
+    {
+      "id": "ufo",
+      "triangles": 29664,
+      "parts": 71,
+      "glb_bytes": 1087452,
+      "json_sha256": "e42493eacf6a1b1b158bf2c7e749005a5d4e821874f0808d4a17d1036f1ab2f0"
+    },
+    {
+      "id": "race",
+      "triangles": 31276,
+      "parts": 77,
+      "glb_bytes": 1144396,
+      "json_sha256": "88c1e39cbcd45f085a84a3b665022d7acd9a3ceb6d57464c38f9f22d34150f2b"
+    },
+    {
+      "id": "race_course",
+      "triangles": 45372,
+      "parts": 331,
+      "glb_bytes": 1542856,
+      "json_sha256": "05f5ffc933900782449c25283900622e5d3b35cc565a1becb1918a6761914a29"
+    },
+    {
+      "id": "kart",
+      "triangles": 4652,
+      "parts": 20,
+      "glb_bytes": 194688,
+      "json_sha256": "d4d4e4e4f38142d346fb470464c76084e4e2d57662198f843059cacde904a5ed"
+    }
+  ]
+}

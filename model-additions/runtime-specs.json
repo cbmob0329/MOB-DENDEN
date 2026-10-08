@@ -1,0 +1,126 @@
+[
+  {
+    "id": "P-09",
+    "referenceId": "MOB-DENDEN_MASTER_MODEL.blend",
+    "family": "mob_denden",
+    "height": 1.6,
+    "bounds": {
+      "min": [
+        -0.6049399971961975,
+        0,
+        -0.5573300123214722
+      ],
+      "max": [
+        0.6049399971961975,
+        1.600000023841858,
+        0.5573300123214722
+      ]
+    },
+    "centerOfMass": [
+      0,
+      0.8,
+      0
+    ],
+    "gripPoint": [
+      0,
+      0.64,
+      0
+    ],
+    "gripRadius": 0.32,
+    "colliders": [
+      {
+        "type": "box",
+        "center": [
+          0,
+          0.58,
+          0
+        ],
+        "halfExtents": [
+          0.38,
+          0.4,
+          0.29
+        ]
+      },
+      {
+        "type": "box",
+        "center": [
+          0,
+          1.14,
+          0
+        ],
+        "halfExtents": [
+          0.48,
+          0.42,
+          0.33
+        ]
+      }
+    ],
+    "triangleCount": 25808,
+    "drawCalls": 8,
+    "notes": [
+      "Original Blender source copied; weapons omitted; static lightweight plush."
+    ]
+  },
+  {
+    "id": "P-10",
+    "referenceId": "MOBTETSU_GAME.blend",
+    "family": "mob_tetsu",
+    "height": 1.6,
+    "bounds": {
+      "min": [
+        -0.7219300270080566,
+        0,
+        -0.3991599977016449
+      ],
+      "max": [
+        0.7219300270080566,
+        1.600000023841858,
+        0.3991599977016449
+      ]
+    },
+    "centerOfMass": [
+      0,
+      0.8,
+      0
+    ],
+    "gripPoint": [
+      0,
+      0.64,
+      0
+    ],
+    "gripRadius": 0.32,
+    "colliders": [
+      {
+        "type": "box",
+        "center": [
+          0,
+          0.58,
+          0
+        ],
+        "halfExtents": [
+          0.38,
+          0.4,
+          0.29
+        ]
+      },
+      {
+        "type": "box",
+        "center": [
+          0,
+          1.14,
+          0
+        ],
+        "halfExtents": [
+          0.48,
+          0.42,
+          0.33
+        ]
+      }
+    ],
+    "triangleCount": 8671,
+    "drawCalls": 1,
+    "notes": [
+      "Original Blender source copied; weapons omitted; static lightweight plush."
+    ]
+  }
+]

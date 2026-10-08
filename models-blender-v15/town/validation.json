@@ -1,0 +1,77 @@
+{
+  "assets": [
+    {
+      "id": "town_home",
+      "triangles": 9388,
+      "parts": 211,
+      "mergedNodeMaterialDraws": 12,
+      "zeroAreaTriangles": 0,
+      "opposedNormals": 0,
+      "zeroNormalsNondegenerate": 0,
+      "sha256": "4f239217e7cb04e1059a76f5e350d4197d6c0ca9b2c27e05d2467b01c5d4932f"
+    },
+    {
+      "id": "town_cafe",
+      "triangles": 10108,
+      "parts": 242,
+      "mergedNodeMaterialDraws": 13,
+      "zeroAreaTriangles": 0,
+      "opposedNormals": 0,
+      "zeroNormalsNondegenerate": 0,
+      "sha256": "45b56e04339aa77be5437f4ace8d5423c6df520ea22e890d9fa01fd4fdd25133"
+    },
+    {
+      "id": "town_arcade",
+      "triangles": 9504,
+      "parts": 228,
+      "mergedNodeMaterialDraws": 13,
+      "zeroAreaTriangles": 0,
+      "opposedNormals": 0,
+      "zeroNormalsNondegenerate": 0,
+      "sha256": "2e400375d323327aa6932b86eb59b367e5f5878ff84b1cac32685046537ce9ca"
+    },
+    {
+      "id": "town_bath",
+      "triangles": 10644,
+      "parts": 211,
+      "mergedNodeMaterialDraws": 15,
+      "zeroAreaTriangles": 0,
+      "opposedNormals": 0,
+      "zeroNormalsNondegenerate": 0,
+      "sha256": "07444f01e7b3e281faef9255703fa5990fb6ae0fb0c781c90a1c42bbda26187d"
+    },
+    {
+      "id": "town_farm",
+      "triangles": 5176,
+      "parts": 130,
+      "mergedNodeMaterialDraws": 10,
+      "zeroAreaTriangles": 0,
+      "opposedNormals": 0,
+      "zeroNormalsNondegenerate": 0,
+      "sha256": "117675f603aa1d5c9ab5b323dcf439294a9291c60ea84990ff68d5116cddd9a0"
+    },
+    {
+      "id": "town_train",
+      "triangles": 2288,
+      "parts": 68,
+      "mergedNodeMaterialDraws": 9,
+      "zeroAreaTriangles": 0,
+      "opposedNormals": 0,
+      "zeroNormalsNondegenerate": 0,
+      "sha256": "3f07ff9cebff9268882db5cf269aacd38dd7ffc778618e486861cd156c560415"
+    },
+    {
+      "id": "town_terrain",
+      "triangles": 37396,
+      "parts": 956,
+      "mergedNodeMaterialDraws": 21,
+      "zeroAreaTriangles": 0,
+      "opposedNormals": 0,
+      "zeroNormalsNondegenerate": 0,
+      "sha256": "209e01b10b28fb0d524d39904062f7c1af84219f56cde8b8090208e9e5b5c70f"
+    }
+  ],
+  "failures": [],
+  "warnings": [],
+  "status": "PASS"
+}

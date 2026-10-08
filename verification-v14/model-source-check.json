@@ -1,0 +1,16 @@
+[
+  {
+    "id": "P-09",
+    "source": "D:\\blender\\MOB\\第2弾キャラクター\\MOB-DENDEN_MASTER_MODEL.blend",
+    "sourceUnchanged": true,
+    "triangles": 25808,
+    "materials": 8
+  },
+  {
+    "id": "P-10",
+    "source": "D:\\blender\\MOB\\第3弾キャラクター\\mobtetsu\\MOBTETSU_GAME.blend",
+    "sourceUnchanged": true,
+    "triangles": 8671,
+    "materials": 1
+  }
+]

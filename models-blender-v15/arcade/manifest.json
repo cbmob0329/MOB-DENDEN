@@ -1,0 +1,304 @@
+{
+  "sourceReferences": [
+    "005.png",
+    "006.png",
+    "007.png",
+    "008.png"
+  ],
+  "method": "Blender bpy mesh modeling; no reference image planes or generated images",
+  "assets": [
+    {
+      "id": "gacha",
+      "triangleCount": 34324,
+      "objects": 57,
+      "materials": 7,
+      "dimensions": [
+        1.16,
+        2.1867,
+        1.05
+      ],
+      "anchors": {
+        "knob": [
+          0,
+          0.83,
+          0.52
+        ],
+        "capsuleOutlet": [
+          0,
+          0.29,
+          0.48
+        ],
+        "hatchPivot": [
+          0,
+          0.5,
+          0.53
+        ],
+        "displayCenter": [
+          0,
+          1.4,
+          0.1
+        ]
+      },
+      "semanticNodes": [
+        "glass",
+        "hatch",
+        "knob",
+        "static"
+      ]
+    },
+    {
+      "id": "capsule",
+      "triangleCount": 2464,
+      "objects": 3,
+      "materials": 2,
+      "dimensions": [
+        0.4779,
+        0.4779,
+        0.4779
+      ],
+      "anchors": {
+        "splitCenter": [
+          0,
+          0.24,
+          0
+        ],
+        "prizeCenter": [
+          0,
+          0.23,
+          0
+        ]
+      },
+      "semanticNodes": [
+        "capsule_bottom",
+        "capsule_top"
+      ]
+    },
+    {
+      "id": "ufo",
+      "triangleCount": 29664,
+      "objects": 71,
+      "materials": 6,
+      "dimensions": [
+        3.0676,
+        2.78,
+        2.6612
+      ],
+      "anchors": {
+        "chuteCenter": [
+          -1.225,
+          1.05,
+          0.9
+        ],
+        "chuteExit": [
+          -1.1,
+          0.35,
+          1.18
+        ],
+        "prizeFloor": [
+          0,
+          1.05,
+          0
+        ],
+        "chuteOpeningMin": [
+          -1.4,
+          1.05,
+          0.625
+        ],
+        "chuteOpeningMax": [
+          -1.025,
+          1.05,
+          1.05
+        ],
+        "carriage": [
+          0.0,
+          2.38,
+          -0.11399999999999999
+        ],
+        "cableTop": [
+          0.0,
+          2.34,
+          -0.11399999999999999
+        ],
+        "clawPivot": [
+          0.0,
+          2.12,
+          -0.11399999999999999
+        ],
+        "gripPoint": [
+          0.0,
+          1.78,
+          -0.11399999999999999
+        ],
+        "fingerPivot_0": [
+          0.11639381051063538,
+          2.009999990463257,
+          -0.1823999959230423
+        ],
+        "fingerPivot_1": [
+          -0.11639381051063538,
+          2.009999990463257,
+          -0.1823999959230423
+        ],
+        "fingerPivot_2": [
+          -2.468887906580933e-17,
+          2.009999990463257,
+          0.022799995243549344
+        ],
+        "prizeBoundsMin": [
+          -1.4,
+          1.05,
+          -0.92
+        ],
+        "prizeBoundsMax": [
+          1.4,
+          2.15,
+          1.05
+        ],
+        "fingerTip_0": [
+          0.16489123688055715,
+          1.68,
+          -0.21089999999999998
+        ],
+        "fingerTip_1": [
+          -0.16489123688055712,
+          1.68,
+          -0.21090000000000003
+        ],
+        "fingerTip_2": [
+          -3.4975912583648407e-17,
+          1.68,
+          0.0798
+        ],
+        "gripCenter": [
+          0,
+          1.76,
+          -0.114
+        ]
+      },
+      "semanticNodes": [
+        "cable",
+        "carriage",
+        "claw",
+        "finger_0",
+        "finger_1",
+        "finger_2",
+        "glass",
+        "roof",
+        "static"
+      ]
+    },
+    {
+      "id": "race",
+      "triangleCount": 31276,
+      "objects": 77,
+      "materials": 8,
+      "dimensions": [
+        2.78,
+        2.45,
+        2.38
+      ],
+      "anchors": {
+        "wheel_left": [
+          -0.68,
+          1.115,
+          0.205
+        ],
+        "seat_left": [
+          -0.68,
+          0.74,
+          0.59
+        ],
+        "wheel_right": [
+          0.68,
+          1.115,
+          0.205
+        ],
+        "seat_right": [
+          0.68,
+          0.74,
+          0.59
+        ],
+        "screen_left": [
+          -0.68,
+          1.65,
+          -0.351
+        ],
+        "screen_right": [
+          0.68,
+          1.65,
+          -0.351
+        ]
+      },
+      "semanticNodes": [
+        "screen_left",
+        "screen_right",
+        "static",
+        "wheel_left",
+        "wheel_right"
+      ]
+    },
+    {
+      "id": "race_course",
+      "triangleCount": 45372,
+      "objects": 331,
+      "materials": 13,
+      "dimensions": [
+        7.45,
+        1.345,
+        4.55
+      ],
+      "anchors": {
+        "startLine": [
+          0,
+          0.12,
+          1.2
+        ],
+        "trackCenter": [
+          0,
+          0.12,
+          0
+        ]
+      },
+      "semanticNodes": [
+        "static"
+      ]
+    },
+    {
+      "id": "kart",
+      "triangleCount": 4652,
+      "objects": 20,
+      "materials": 5,
+      "dimensions": [
+        0.655,
+        0.505,
+        0.836
+      ],
+      "anchors": {
+        "driverSeat": [
+          0,
+          0.37,
+          -0.07
+        ],
+        "front": [
+          0,
+          0.15,
+          0.41
+        ],
+        "rear": [
+          0,
+          0.15,
+          -0.39
+        ]
+      },
+      "semanticNodes": [
+        "static",
+        "wheels"
+      ]
+    }
+  ],
+  "deviations": [
+    "Reference character illustrations and decorative lettering other than MOB omitted. Race header uses modeled MOB lettering and checker strips, without large illustrated mascot heads.",
+    "UFO cabinet is wider relative to height than reference to meet existing gameplay footprint. Plush prizes are supplied by existing game models, not duplicated into cabinet.",
+    "Race screens export plain replaceable display surfaces; live game will supply CanvasTexture."
+  ]
+}

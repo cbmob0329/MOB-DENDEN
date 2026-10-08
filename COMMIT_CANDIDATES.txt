@@ -1,0 +1,224 @@
+MOB STORY — commit候補（未ステージ・未commit）
+2026-10-08 / HEAD 80a9e5aac044365f232f850934634c9dd5fcf34d
+
+実体差分一覧（行末空白差を除外、追加行/削除行/パス）：
+186	34	MOB_CHILL_LIFE.html
+5	4	arcade-integration.js
+3	3	arcade-scene.js
+-	-	assets/meal-bath-v12/denden_meal.png
+-	-	assets/pink/dj_a.png
+-	-	assets/pink/dj_b.png
+1	1	assets/plush-icons.js
+-	-	assets/wait-directional-v10/sheets/nyoro/umbrella_walk_right.png
+-	-	assets/wait-directional-v10/sheets/nyoro/walk_back.png
+-	-	assets/wait-directional-v10/sheets/nyoro/walk_left.png
+-	-	assets/wait-directional-v10/sheets/nyoro/walk_right.png
+-	-	assets/wait-directional-v10/sheets/pink/excited_seated_wait.png
+2	2	build.cjs
+1	1	collection-integration.js
+3	3	collection-state.js
+6	6	game.js
+4	4	index.html
+2	2	qa-arcade-browser.cjs
+5	5	room.js
+-	-	source/assets/denden/idle.png
+-	-	source/assets/denden/read.png
+9	8	ufo-game.js
+-	-	verification-v10/gif-decoded.png
+-	-	verification-v10/normal-speed-430.png
+-	-	verification-v10/nyoro-back.png
+-	-	verification-v10/nyoro-front.png
+-	-	verification-v10/nyoro-left.png
+-	-	verification-v10/nyoro-right.png
+-	-	verification-v10/nyoro-umbrella-back.png
+-	-	verification-v10/nyoro-umbrella-front.png
+-	-	verification-v10/nyoro-umbrella-left.png
+-	-	verification-v10/nyoro-umbrella-right.png
+
+未追跡一覧：
+MOB_CHILL_LIFE_V14_FINAL.zip
+MOB_CHILL_LIFE_V15_BLENDER.zip
+V14_README.txt
+V14_REPORT.md
+V15_BLENDER_REPORT.md
+arcade-v14.js
+assets/bath-picture-v14.js
+assets/blender-models.js
+assets/plush-additions-v14.js
+blender-assets.js
+blender-integration.js
+convert_additions.py
+model-additions/P-09-plush.blend
+model-additions/P-09.json
+model-additions/P-10-plush.blend
+model-additions/P-10-texture.png
+model-additions/P-10.json
+model-additions/preview-back.png
+model-additions/preview-front.png
+model-additions/preview-side.png
+model-additions/runtime-specs.json
+models-blender-v15/arcade/INTEGRATION.md
+models-blender-v15/arcade/arcade_machines.blend
+models-blender-v15/arcade/build_arcade.py
+models-blender-v15/arcade/capsule.glb
+models-blender-v15/arcade/capsule.json
+models-blender-v15/arcade/gacha.glb
+models-blender-v15/arcade/gacha.json
+models-blender-v15/arcade/kart.glb
+models-blender-v15/arcade/kart.json
+models-blender-v15/arcade/manifest.json
+models-blender-v15/arcade/race.glb
+models-blender-v15/arcade/race.json
+models-blender-v15/arcade/race_course.glb
+models-blender-v15/arcade/race_course.json
+models-blender-v15/arcade/render_details.py
+models-blender-v15/arcade/ufo.glb
+models-blender-v15/arcade/ufo.json
+models-blender-v15/arcade/validate_assets.py
+models-blender-v15/arcade/validation.json
+models-blender-v15/interiors/004.png
+models-blender-v15/interiors/README.md
+models-blender-v15/interiors/arcade_shell.blend
+models-blender-v15/interiors/arcade_shell.glb
+models-blender-v15/interiors/arcade_shell.json
+models-blender-v15/interiors/bath_interior.blend
+models-blender-v15/interiors/bath_interior.glb
+models-blender-v15/interiors/bath_interior.json
+models-blender-v15/interiors/build_interiors.py
+models-blender-v15/interiors/cafe_shell.blend
+models-blender-v15/interiors/cafe_shell.glb
+models-blender-v15/interiors/cafe_shell.json
+models-blender-v15/interiors/home_shell.blend
+models-blender-v15/interiors/home_shell.glb
+models-blender-v15/interiors/home_shell.json
+models-blender-v15/interiors/integration_contract.json
+models-blender-v15/interiors/manifest.json
+models-blender-v15/interiors/validate_assets.py
+models-blender-v15/interiors/validation.json
+models-blender-v15/town/MOB_CHILL_TOWN.blend
+models-blender-v15/town/MOB_CHILL_TOWN.glb
+models-blender-v15/town/README.md
+models-blender-v15/town/build_town.py
+models-blender-v15/town/manifest.json
+models-blender-v15/town/prune_runtime.py
+models-blender-v15/town/render_station_front.py
+models-blender-v15/town/town_arcade.json
+models-blender-v15/town/town_bath.json
+models-blender-v15/town/town_cafe.json
+models-blender-v15/town/town_farm.json
+models-blender-v15/town/town_home.json
+models-blender-v15/town/town_terrain.json
+models-blender-v15/town/town_train.json
+models-blender-v15/town/validate_town.py
+models-blender-v15/town/validation.json
+pack-additions.cjs
+plush-additions-template.txt
+qa-v14-final-visual.cjs
+qa-v14-play.cjs
+qa-v14-system.cjs
+qa-v14-ufo-ui.cjs
+v14.css
+verification-v14/additional-models.png
+verification-v14/arcade-320.png
+verification-v14/arcade-390.png
+verification-v14/arcade-430.png
+verification-v14/bag-actor-0.png
+verification-v14/bag-actor-1.png
+verification-v14/bag-actor-2.png
+verification-v14/bag-actor-3.png
+verification-v14/bath-320.png
+verification-v14/bath-390.png
+verification-v14/bath-430.png
+verification-v14/cafe-bag-results.json
+verification-v14/cafe-three-customers.png
+verification-v14/delivery-manifest.json
+verification-v14/farm-320.png
+verification-v14/farm-390.png
+verification-v14/farm-430.png
+verification-v14/final-arcade-320.png
+verification-v14/final-arcade-390.png
+verification-v14/final-arcade-430.png
+verification-v14/final-bath-320.png
+verification-v14/final-bath-390.png
+verification-v14/final-bath-430.png
+verification-v14/final-night-390.png
+verification-v14/final-town-320.png
+verification-v14/final-town-390.png
+verification-v14/final-town-430.png
+verification-v14/final-ufo-320.png
+verification-v14/final-ufo-390.png
+verification-v14/final-ufo-430.png
+verification-v14/final-visual-results.json
+verification-v14/furniture-320.png
+verification-v14/furniture-390.png
+verification-v14/furniture-430.png
+verification-v14/installed-390.png
+verification-v14/installed-results.json
+verification-v14/model-source-check.json
+verification-v14/play-results.json
+verification-v14/race-390.png
+verification-v14/race-duo-320.png
+verification-v14/race-duo-390.png
+verification-v14/race-duo-430.png
+verification-v14/race-result-390.png
+verification-v14/regression-results.json
+verification-v14/system-results.json
+verification-v14/town-320.png
+verification-v14/town-390.png
+verification-v14/town-430.png
+verification-v14/town-night-320.png
+verification-v14/town-night-390.png
+verification-v14/town-night-430.png
+verification-v14/town-resident-320.png
+verification-v14/town-resident-390.png
+verification-v14/town-resident-430.png
+verification-v14/ufo-390.png
+verification-v14/ufo-grasp.png
+verification-v14/ufo-ui-results.json
+verification-v14/ufo-won-P-02.png
+verification-v14/ufo-won-P-07.png
+verification-v14/ufo-won-P-09.png
+verification-v15/arcade-390.png
+verification-v15/bath-390.png
+verification-v15/cafe-390.png
+verification-v15/cafe-bag-results.json
+verification-v15/evidence.json
+verification-v15/home-390.png
+verification-v15/input.json
+verification-v15/race-chase-390.png
+verification-v15/race-drive-390.png
+verification-v15/regression-results.json
+verification-v15/system-results.json
+verification-v15/town-390.png
+verification-v15/town-night-390.png
+verification-v15/ufo-390.png
+verification-v15/ufo-ui-results.json
+world-v14.js
+素材集/001.png
+素材集/002.png
+素材集/003.png
+素材集/004.png
+素材集/005.png
+素材集/006.png
+素材集/007.png
+素材集/008.png
+素材集/009.png
+素材集/010.png
+素材集/011.png
+素材集/012.png
+素材集/013.png
+素材集/014.png
+素材集/015.png
+素材集/016.png
+素材集/017.png
+素材集/町について.txt
+素材集/素材について.txt
+
+
+分類・注意：
+1. 機能候補: index.html, game.js, build.cjs, arcade-integration.js, arcade-v14.js, v14.css, world-v14.js, blender-assets.js, blender-integration.js, assets/blender-models.js とV14追加景品関連。生成本体 MOB_CHILL_LIFE.html は同じビルドの組として扱う。
+2. モデル候補: models-blender-v15/ と model-additions/。元ユーザー素材 素材集/ はサイズと公開可否を別途判断。
+3. 検証・文書候補: V14_REPORT.md, V15_BLENDER_REPORT.md（履歴）, V15_1_C_REPORT.md（最新）, verification-v15-1/。
+4. PNGの差分は自動で承認しない。既知の破損元画像 assets/pink/dj_a.png, assets/pink/dj_b.png, assets/meal-bath-v12/denden_meal.png は有効な埋込データをビルドが保持。元ファイルは復元・上書きしていない。他のPNG差分も素材別レビューが必要。
+5. 旧ZIP・最終ZIPは配布物。git add . は使わず、ソースcommitからは通常除外。行末だけの差分や過去検証出力も一括commitしない。
+公開push/commitは行っていない。

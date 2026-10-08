@@ -5,12 +5,12 @@ window.ChillRoom=class ChillRoom{
  box(g,x,y,z,w,h,d,m,rot=0){let o=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),typeof m==='string'?this.material(m,m):m);o.position.set(x,y,z);o.rotation.y=rot;o.castShadow=o.receiveShadow=true;g.add(o);return o;}
  cyl(g,x,y,z,rt,rb,h,m,n=28){let o=new THREE.Mesh(new THREE.CylinderGeometry(rt,rb,h,n),typeof m==='string'?this.material(m,m):m);o.position.set(x,y,z);o.castShadow=o.receiveShadow=true;g.add(o);return o;}
  buildShell(){const g=this.static,b=(...a)=>this.box(g,...a);this.wood=this.material('wood','#b99062');this.oak=this.material('oak','#d9b483');this.cream=this.material('cream','#f0ead8');this.fabric=this.material('fabric','#8ea27b');this.blanket=this.material('blanket','#b2c4a1');this.accent=this.material('accent','#d4a590');this.leaf=this.material('leaf','#819b70');
- b(0,-.24,0,10.7,.48,8.7,this.cream);for(let z=-4;z<4;z+=.4)for(let x=-5;x<5;x+=2)b(x+1,.006,z+.2,1.982,.04,.385,(Math.round(z*10+x)%3===0)?'#d7b88e':'#e0c399');
- b(0,1.5,-4.13,10.4,3,.16,'#dfe1d0');b(-5.13,1.5,0,.16,3,8.4,'#e8e6d8');b(0,.13,-4,10,.2,.1,this.cream);b(-5,.13,0,.1,.2,8,this.cream);
+ b(0,-.24,0,11.5,.48,9.3,this.cream);for(let z=-4.3;z<4.3;z+=.4)for(let x=-5.4;x<5;x+=2)b(x+1,.006,z+.2,1.982,.04,.385,(Math.round(z*10+x)%3===0)?'#d7b88e':'#e0c399');
+ b(0,1.5,-4.43,11.2,3,.16,'#dfe1d0');b(-5.53,1.5,0,.16,3,9,'#e8e6d8');b(0,.13,-4,10,.2,.1,this.cream);b(-5,.13,0,.1,.2,8,this.cream);
  b(-2.3,2,-4,3.2,1.7,.13,this.oak);b(-2.3,2,-3.91,2.96,1.48,.1,'#b6d3ce');for(let x of [-3.75,-2.3,-.85])b(x,2,-3.82,.06,1.52,.1,this.cream);b(-2.3,2,-3.82,3.05,.06,.1,this.cream);b(-2.3,1.13,-3.75,3.45,.12,.45,this.cream);for(let x of [-4.04,-.56]){b(x,2,-3.72,.34,2.1,.13,'#f3eddf');for(let i=0;i<4;i++)b(x-.14+i*.095,2,-3.63,.03,2.08,.025,'#e1ddca')}
  b(-.7,.04,.65,3.9,.035,3.6,'#ded4bb');for(let z of [-1.08,2.37])b(-.7,.064,z,3.8,.008,.05,'#bfb091');
  b(.25,2.2,-3.98,.8,.8,.08,this.oak);b(.25,2.2,-3.92,.65,.65,.03,'#eee1c3');b(.2,2.24,-3.88,.28,.28,.02,this.accent,.4);
- this.cyl(g,-4.5,.8,2.85,.07,.18,1.6,this.wood);this.cyl(g,-4.5,1.7,2.85,.4,.25,.48,this.cream);
+ for(const o of g.children)if(o.position.z<-3.6&&o.geometry?.parameters?.height<2.3)o.position.z-=.3;this.cyl(g,-4.5,.8,2.85,.07,.18,1.6,this.wood);this.cyl(g,-4.5,1.7,2.85,.4,.25,.48,this.cream);
  }
  configs(){return [
  {sofa:[-3.85,.05,0],bed:[3.5,1.7,0],table:[1.0,-2.15,0],shelf:[3.55,-3.55,0],plant:[-4.3,-2.75,0],deck:[.5,2.65,0]},
@@ -36,8 +36,8 @@ window.ChillRoom=class ChillRoom{
  applyLayout(index){for(let f of Object.values(this.furniture)){this.scene.remove(f.group);f.group.traverse(o=>o.geometry?.dispose())}this.furniture={};this.layout=index;for(let [key,v]of Object.entries(this.configs()[index]))this.create(key,...v);this.bounds=Object.values(this.furniture).map(f=>{let a=f.group.rotation.y;return{x:f.group.position.x,z:f.group.position.z,w:Math.abs(Math.cos(a))*f.w+Math.abs(Math.sin(a))*f.d+.36,d:Math.abs(Math.sin(a))*f.w+Math.abs(Math.cos(a))*f.d+.36,key:f.key}});this.bounds.push({x:-4.5,z:2.85,w:.7,d:.7,key:'lamp'});this.scene.updateMatrixWorld(true);}
  applyTheme(index){this.theme=index;const colors=[['#8ea27b','#b2c4a1','#d4a590'],['#c7999d','#e2c2b4','#a6b999'],['#7d969c','#b3c3bd','#d1b080']][index];this.fabric.color.set(colors[0]);this.blanket.color.set(colors[1]);this.accent.color.set(colors[2]);}
  socket(key,name){this.scene.updateMatrixWorld(true);return this.furniture[key].group.localToWorld(this.furniture[key].sockets[name].clone());}
- valid(x,z){return x>=-4.6&&x<=4.6&&z>=-3.55&&z<=3.65&&!this.bounds.some(o=>Math.abs(x-o.x)<o.w/2&&Math.abs(z-o.z)<o.d/2);}
- contactFloorValid(x,z,key){return x>=-4.6&&x<=4.6&&z>=-3.55&&z<=3.65&&!this.bounds.some(o=>{let inset=o.key===key?(key==='deck'?.24:.12):0;return Math.abs(x-o.x)<(o.w-inset)/2&&Math.abs(z-o.z)<(o.d-inset)/2});}
+ valid(x,z){return x>=-4.95&&x<=4.95&&z>=-3.85&&z<=3.95&&!this.bounds.some(o=>Math.abs(x-o.x)<o.w/2&&Math.abs(z-o.z)<o.d/2);}
+ contactFloorValid(x,z,key){return x>=-4.95&&x<=4.95&&z>=-3.85&&z<=3.95&&!this.bounds.some(o=>{let inset=o.key===key?(key==='deck'?.24:.12):0;return Math.abs(x-o.x)<(o.w-inset)/2&&Math.abs(z-o.z)<(o.d-inset)/2});}
  previewLayout(index){this.clearPreview();let g=new THREE.Group(),m=new THREE.MeshBasicMaterial({color:0x91ae85,transparent:true,opacity:.2,depthWrite:false});for(let [key,v]of Object.entries(this.configs()[index])){let f=this.furniture[key],o=new THREE.Mesh(new THREE.BoxGeometry(f.w,.08,f.d),m);o.position.set(v[0],.12,v[1]);o.rotation.y=v[2];g.add(o)}this.preview=g;this.scene.add(g);}
  clearPreview(){if(this.preview){this.scene.remove(this.preview);this.preview.traverse(o=>o.geometry?.dispose());this.preview=null;}}
 };

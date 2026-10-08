@@ -1,0 +1,397 @@
+{
+  "physics": [
+    {
+      "id": "P-01",
+      "offset": 0,
+      "result": {
+        "caught": true,
+        "prize": "P-01"
+      }
+    },
+    {
+      "id": "P-01",
+      "offset": 0.1,
+      "result": {
+        "caught": true,
+        "prize": "P-01"
+      }
+    },
+    {
+      "id": "P-01",
+      "offset": 0.18,
+      "result": {
+        "caught": true,
+        "prize": "P-01"
+      }
+    },
+    {
+      "id": "P-01",
+      "offset": 0.24,
+      "result": {
+        "caught": true,
+        "prize": "P-01"
+      }
+    },
+    {
+      "id": "P-01",
+      "offset": 0.5,
+      "result": {
+        "caught": false
+      }
+    },
+    {
+      "id": "P-02",
+      "offset": 0,
+      "result": {
+        "caught": true,
+        "prize": "P-02"
+      }
+    },
+    {
+      "id": "P-02",
+      "offset": 0.1,
+      "result": {
+        "caught": true,
+        "prize": "P-02"
+      }
+    },
+    {
+      "id": "P-02",
+      "offset": 0.18,
+      "result": {
+        "caught": true,
+        "prize": "P-02"
+      }
+    },
+    {
+      "id": "P-02",
+      "offset": 0.24,
+      "result": {
+        "caught": true,
+        "prize": "P-02"
+      }
+    },
+    {
+      "id": "P-02",
+      "offset": 0.5,
+      "result": {
+        "caught": false
+      }
+    },
+    {
+      "id": "P-03",
+      "offset": 0,
+      "result": {
+        "caught": true,
+        "prize": "P-03"
+      }
+    },
+    {
+      "id": "P-03",
+      "offset": 0.1,
+      "result": {
+        "caught": true,
+        "prize": "P-03"
+      }
+    },
+    {
+      "id": "P-03",
+      "offset": 0.18,
+      "result": {
+        "caught": true,
+        "prize": "P-03"
+      }
+    },
+    {
+      "id": "P-03",
+      "offset": 0.24,
+      "result": {
+        "caught": true,
+        "prize": "P-03"
+      }
+    },
+    {
+      "id": "P-03",
+      "offset": 0.5,
+      "result": {
+        "caught": false
+      }
+    },
+    {
+      "id": "P-04",
+      "offset": 0,
+      "result": {
+        "caught": true,
+        "prize": "P-04"
+      }
+    },
+    {
+      "id": "P-04",
+      "offset": 0.1,
+      "result": {
+        "caught": true,
+        "prize": "P-04"
+      }
+    },
+    {
+      "id": "P-04",
+      "offset": 0.18,
+      "result": {
+        "caught": true,
+        "prize": "P-04"
+      }
+    },
+    {
+      "id": "P-04",
+      "offset": 0.24,
+      "result": {
+        "caught": true,
+        "prize": "P-04"
+      }
+    },
+    {
+      "id": "P-04",
+      "offset": 0.5,
+      "result": {
+        "caught": false
+      }
+    },
+    {
+      "id": "P-05",
+      "offset": 0,
+      "result": {
+        "caught": true,
+        "prize": "P-05"
+      }
+    },
+    {
+      "id": "P-05",
+      "offset": 0.1,
+      "result": {
+        "caught": true,
+        "prize": "P-05"
+      }
+    },
+    {
+      "id": "P-05",
+      "offset": 0.18,
+      "result": {
+        "caught": true,
+        "prize": "P-05"
+      }
+    },
+    {
+      "id": "P-05",
+      "offset": 0.24,
+      "result": {
+        "caught": true,
+        "prize": "P-05"
+      }
+    },
+    {
+      "id": "P-05",
+      "offset": 0.5,
+      "result": {
+        "caught": false
+      }
+    },
+    {
+      "id": "P-06",
+      "offset": 0,
+      "result": {
+        "caught": true,
+        "prize": "P-06"
+      }
+    },
+    {
+      "id": "P-06",
+      "offset": 0.1,
+      "result": {
+        "caught": true,
+        "prize": "P-06"
+      }
+    },
+    {
+      "id": "P-06",
+      "offset": 0.18,
+      "result": {
+        "caught": true,
+        "prize": "P-06"
+      }
+    },
+    {
+      "id": "P-06",
+      "offset": 0.24,
+      "result": {
+        "caught": true,
+        "prize": "P-06"
+      }
+    },
+    {
+      "id": "P-06",
+      "offset": 0.5,
+      "result": {
+        "caught": false
+      }
+    },
+    {
+      "id": "P-07",
+      "offset": 0,
+      "result": {
+        "caught": true,
+        "prize": "P-07"
+      }
+    },
+    {
+      "id": "P-07",
+      "offset": 0.1,
+      "result": {
+        "caught": true,
+        "prize": "P-07"
+      }
+    },
+    {
+      "id": "P-07",
+      "offset": 0.18,
+      "result": {
+        "caught": true,
+        "prize": "P-07"
+      }
+    },
+    {
+      "id": "P-07",
+      "offset": 0.24,
+      "result": {
+        "caught": true,
+        "prize": "P-07"
+      }
+    },
+    {
+      "id": "P-07",
+      "offset": 0.5,
+      "result": {
+        "caught": false
+      }
+    },
+    {
+      "id": "P-08",
+      "offset": 0,
+      "result": {
+        "caught": true,
+        "prize": "P-08"
+      }
+    },
+    {
+      "id": "P-08",
+      "offset": 0.1,
+      "result": {
+        "caught": true,
+        "prize": "P-08"
+      }
+    },
+    {
+      "id": "P-08",
+      "offset": 0.18,
+      "result": {
+        "caught": true,
+        "prize": "P-08"
+      }
+    },
+    {
+      "id": "P-08",
+      "offset": 0.24,
+      "result": {
+        "caught": true,
+        "prize": "P-08"
+      }
+    },
+    {
+      "id": "P-08",
+      "offset": 0.5,
+      "result": {
+        "caught": false
+      }
+    },
+    {
+      "id": "P-09",
+      "offset": 0,
+      "result": {
+        "caught": true,
+        "prize": "P-09"
+      }
+    },
+    {
+      "id": "P-09",
+      "offset": 0.1,
+      "result": {
+        "caught": true,
+        "prize": "P-09"
+      }
+    },
+    {
+      "id": "P-09",
+      "offset": 0.18,
+      "result": {
+        "caught": true,
+        "prize": "P-09"
+      }
+    },
+    {
+      "id": "P-09",
+      "offset": 0.24,
+      "result": {
+        "caught": true,
+        "prize": "P-09"
+      }
+    },
+    {
+      "id": "P-09",
+      "offset": 0.5,
+      "result": {
+        "caught": false
+      }
+    },
+    {
+      "id": "P-10",
+      "offset": 0,
+      "result": {
+        "caught": true,
+        "prize": "P-10"
+      }
+    },
+    {
+      "id": "P-10",
+      "offset": 0.1,
+      "result": {
+        "caught": true,
+        "prize": "P-10"
+      }
+    },
+    {
+      "id": "P-10",
+      "offset": 0.18,
+      "result": {
+        "caught": true,
+        "prize": "P-10"
+      }
+    },
+    {
+      "id": "P-10",
+      "offset": 0.24,
+      "result": {
+        "caught": true,
+        "prize": "P-10"
+      }
+    },
+    {
+      "id": "P-10",
+      "offset": 0.5,
+      "result": {
+        "caught": false
+      }
+    }
+  ],
+  "exitGuard": true,
+  "soloRace": true,
+  "errors": []
+}

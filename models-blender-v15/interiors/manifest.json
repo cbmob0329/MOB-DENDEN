@@ -1,0 +1,163 @@
+{
+  "assets": [
+    {
+      "id": "home_shell",
+      "triangleCount": 17500,
+      "objects": 165,
+      "materials": 8,
+      "bounds": {
+        "min": [
+          -5.75,
+          -0.3100000023841858,
+          -4.650000095367432
+        ],
+        "max": [
+          5.75,
+          3.0999999046325684,
+          4.650000095367432
+        ]
+      },
+      "anchors": {
+        "floor": [
+          0,
+          0,
+          0
+        ],
+        "window": [
+          -2.3,
+          2,
+          -4.2
+        ]
+      }
+    },
+    {
+      "id": "cafe_shell",
+      "triangleCount": 20416,
+      "objects": 192,
+      "materials": 8,
+      "bounds": {
+        "min": [
+          -5.400000095367432,
+          -0.3100000023841858,
+          -4.199999809265137
+        ],
+        "max": [
+          5.400000095367432,
+          3.0999999046325684,
+          4.199999809265137
+        ]
+      },
+      "anchors": {
+        "floor": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "arcade_shell",
+      "triangleCount": 41148,
+      "objects": 381,
+      "materials": 11,
+      "bounds": {
+        "min": [
+          -5.400000095367432,
+          -0.3100000023841858,
+          -4.199999809265137
+        ],
+        "max": [
+          5.400000095367432,
+          3.0999999046325684,
+          4.199999809265137
+        ]
+      },
+      "anchors": {
+        "floor": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "bath_interior",
+      "triangleCount": 33952,
+      "objects": 302,
+      "materials": 13,
+      "bounds": {
+        "min": [
+          -4.5,
+          -0.3100000023841858,
+          -4.25
+        ],
+        "max": [
+          4.5,
+          3.2099997997283936,
+          4.25
+        ]
+      },
+      "anchors": {
+        "floor": [
+          0,
+          0,
+          0
+        ],
+        "water": [
+          0,
+          0.53,
+          -0.05
+        ],
+        "entry": [
+          0,
+          0,
+          3.3
+        ],
+        "seat0": [
+          -1.2,
+          0.55,
+          -1.3
+        ],
+        "seat1": [
+          1.2,
+          0.55,
+          -1.3
+        ],
+        "seat2": [
+          -1.2,
+          0.55,
+          1.3
+        ],
+        "seat3": [
+          1.2,
+          0.55,
+          1.3
+        ]
+      }
+    }
+  ],
+  "method": "Original Blender bpy modeled meshes, modifiers and curves; no structural image boards. Only user supplied mural 004 is textured.",
+  "referencesViewed": [
+    "001",
+    "002",
+    "003",
+    "004",
+    "010",
+    "011",
+    "012",
+    "013"
+  ],
+  "adoption": {
+    "home": "001 warm timber plank floor, timber borders and curved brackets; no floor mascot embossed to preserve existing furniture",
+    "cafe": "002/011 warm wood shell and lanterns, deliberately no extra luxury furnishings",
+    "arcade": "010 checker tiled floor, low checker wall band, red trim, cornice light and timber columns; 003 sci-fi style intentionally not mixed",
+    "bath": "012 plank walls, stone rounded basin, washing stools buckets shower fixtures lanterns and separate water; 004 4.2x1.6 landscape UV crop preserving pixel aspect; 013 split indigo curtain"
+  },
+  "deviations": [
+    "No ceiling/front wall/right wall to preserve game camera visibility",
+    "Furniture remains runtime-owned and is absent from shell renders",
+    "Bath room and basin dimensions follow existing game coordinates rather than guide dimensions",
+    "Steam and dynamic lighting are runtime additions",
+    "No NPCs modeled in this interiors scope"
+  ]
+}
