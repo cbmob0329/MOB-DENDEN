@@ -1,0 +1,457 @@
+{
+  "results": {
+    "clock": [
+      {
+        "hour": 4.99,
+        "view": "home",
+        "track": "night"
+      },
+      {
+        "hour": 4.99,
+        "view": "cafe",
+        "track": "night"
+      },
+      {
+        "hour": 4.99,
+        "view": "bath",
+        "track": "night"
+      },
+      {
+        "hour": 4.99,
+        "view": "farm",
+        "track": "night"
+      },
+      {
+        "hour": 4.99,
+        "view": "arcade",
+        "track": "night"
+      },
+      {
+        "hour": 4.99,
+        "view": "town",
+        "track": "night"
+      },
+      {
+        "hour": 5,
+        "view": "home",
+        "track": "morning"
+      },
+      {
+        "hour": 5,
+        "view": "cafe",
+        "track": "morning"
+      },
+      {
+        "hour": 5,
+        "view": "bath",
+        "track": "morning"
+      },
+      {
+        "hour": 5,
+        "view": "farm",
+        "track": "morning"
+      },
+      {
+        "hour": 5,
+        "view": "arcade",
+        "track": "morning"
+      },
+      {
+        "hour": 5,
+        "view": "town",
+        "track": "morning"
+      },
+      {
+        "hour": 9.99,
+        "view": "home",
+        "track": "morning"
+      },
+      {
+        "hour": 9.99,
+        "view": "cafe",
+        "track": "morning"
+      },
+      {
+        "hour": 9.99,
+        "view": "bath",
+        "track": "morning"
+      },
+      {
+        "hour": 9.99,
+        "view": "farm",
+        "track": "morning"
+      },
+      {
+        "hour": 9.99,
+        "view": "arcade",
+        "track": "morning"
+      },
+      {
+        "hour": 9.99,
+        "view": "town",
+        "track": "morning"
+      },
+      {
+        "hour": 10,
+        "view": "home",
+        "track": "day"
+      },
+      {
+        "hour": 10,
+        "view": "cafe",
+        "track": "day"
+      },
+      {
+        "hour": 10,
+        "view": "bath",
+        "track": "day"
+      },
+      {
+        "hour": 10,
+        "view": "farm",
+        "track": "day"
+      },
+      {
+        "hour": 10,
+        "view": "arcade",
+        "track": "day"
+      },
+      {
+        "hour": 10,
+        "view": "town",
+        "track": "day"
+      },
+      {
+        "hour": 18.99,
+        "view": "home",
+        "track": "day"
+      },
+      {
+        "hour": 18.99,
+        "view": "cafe",
+        "track": "day"
+      },
+      {
+        "hour": 18.99,
+        "view": "bath",
+        "track": "day"
+      },
+      {
+        "hour": 18.99,
+        "view": "farm",
+        "track": "day"
+      },
+      {
+        "hour": 18.99,
+        "view": "arcade",
+        "track": "day"
+      },
+      {
+        "hour": 18.99,
+        "view": "town",
+        "track": "day"
+      },
+      {
+        "hour": 19,
+        "view": "home",
+        "track": "night"
+      },
+      {
+        "hour": 19,
+        "view": "cafe",
+        "track": "night"
+      },
+      {
+        "hour": 19,
+        "view": "bath",
+        "track": "night"
+      },
+      {
+        "hour": 19,
+        "view": "farm",
+        "track": "night"
+      },
+      {
+        "hour": 19,
+        "view": "arcade",
+        "track": "night"
+      },
+      {
+        "hour": 19,
+        "view": "town",
+        "track": "night"
+      }
+    ],
+    "audio": {
+      "sameElement": true,
+      "sameSource": true,
+      "timeBefore": 0.170667,
+      "timeAfter": 0.170667,
+      "volume": 0.17,
+      "duration": 101.08
+    },
+    "directions": [
+      {
+        "key": "denden",
+        "dirs": [
+          {
+            "dir": "front",
+            "loaded": true
+          },
+          {
+            "dir": "back",
+            "loaded": true
+          },
+          {
+            "dir": "left",
+            "loaded": true
+          },
+          {
+            "dir": "right",
+            "loaded": true
+          }
+        ]
+      },
+      {
+        "key": "pink",
+        "dirs": [
+          {
+            "dir": "front",
+            "loaded": true
+          },
+          {
+            "dir": "back",
+            "loaded": true
+          },
+          {
+            "dir": "left",
+            "loaded": true
+          },
+          {
+            "dir": "right",
+            "loaded": true
+          }
+        ]
+      },
+      {
+        "key": "nyoro",
+        "dirs": [
+          {
+            "dir": "front",
+            "loaded": true
+          },
+          {
+            "dir": "back",
+            "loaded": true
+          },
+          {
+            "dir": "left",
+            "loaded": true
+          },
+          {
+            "dir": "right",
+            "loaded": true
+          }
+        ]
+      },
+      {
+        "key": "irukaeru",
+        "dirs": [
+          {
+            "dir": "front",
+            "loaded": true
+          },
+          {
+            "dir": "back",
+            "loaded": true
+          },
+          {
+            "dir": "left",
+            "loaded": true
+          },
+          {
+            "dir": "right",
+            "loaded": true
+          }
+        ]
+      },
+      {
+        "key": "tetsu",
+        "dirs": [
+          {
+            "dir": "front",
+            "loaded": true
+          },
+          {
+            "dir": "back",
+            "loaded": true
+          },
+          {
+            "dir": "left",
+            "loaded": true
+          },
+          {
+            "dir": "right",
+            "loaded": true
+          }
+        ]
+      },
+      {
+        "key": "nekokoo",
+        "dirs": [
+          {
+            "dir": "front",
+            "loaded": true
+          },
+          {
+            "dir": "back",
+            "loaded": true
+          },
+          {
+            "dir": "left",
+            "loaded": true
+          },
+          {
+            "dir": "right",
+            "loaded": true
+          }
+        ]
+      }
+    ],
+    "widths": [
+      {
+        "width": 320,
+        "overflow": false,
+        "tabs": [
+          {
+            "label": "あなた",
+            "height": 44
+          },
+          {
+            "label": "デンデン",
+            "height": 44
+          },
+          {
+            "label": "ピンク",
+            "height": 44
+          },
+          {
+            "label": "ニョロ",
+            "height": 44
+          },
+          {
+            "label": "イルカエル",
+            "height": 44
+          },
+          {
+            "label": "テツ",
+            "height": 44
+          },
+          {
+            "label": "ネコクー",
+            "height": 44
+          }
+        ],
+        "dialog": {
+          "x": 10,
+          "y": 118.703125,
+          "width": 300,
+          "height": 606.59375,
+          "top": 118.703125,
+          "right": 310,
+          "bottom": 725.296875,
+          "left": 10
+        }
+      },
+      {
+        "width": 390,
+        "overflow": false,
+        "tabs": [
+          {
+            "label": "あなた",
+            "height": 44
+          },
+          {
+            "label": "デンデン",
+            "height": 44
+          },
+          {
+            "label": "ピンク",
+            "height": 44
+          },
+          {
+            "label": "ニョロ",
+            "height": 44
+          },
+          {
+            "label": "イルカエル",
+            "height": 44
+          },
+          {
+            "label": "テツ",
+            "height": 44
+          },
+          {
+            "label": "ネコクー",
+            "height": 44
+          }
+        ],
+        "dialog": {
+          "x": 10,
+          "y": 114.703125,
+          "width": 370,
+          "height": 614.59375,
+          "top": 114.703125,
+          "right": 380,
+          "bottom": 729.296875,
+          "left": 10
+        }
+      },
+      {
+        "width": 430,
+        "overflow": false,
+        "tabs": [
+          {
+            "label": "あなた",
+            "height": 44
+          },
+          {
+            "label": "デンデン",
+            "height": 44
+          },
+          {
+            "label": "ピンク",
+            "height": 44
+          },
+          {
+            "label": "ニョロ",
+            "height": 44
+          },
+          {
+            "label": "イルカエル",
+            "height": 44
+          },
+          {
+            "label": "テツ",
+            "height": 44
+          },
+          {
+            "label": "ネコクー",
+            "height": 44
+          }
+        ],
+        "dialog": {
+          "x": 10,
+          "y": 114.703125,
+          "width": 410,
+          "height": 614.59375,
+          "top": 114.703125,
+          "right": 420,
+          "bottom": 729.296875,
+          "left": 10
+        }
+      }
+    ]
+  },
+  "errors": []
+}

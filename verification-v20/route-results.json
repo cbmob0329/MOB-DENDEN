@@ -1,0 +1,83 @@
+{
+  "results": [
+    {
+      "key": "denden",
+      "started": true,
+      "played": true,
+      "returned": true,
+      "collisions": [],
+      "crossings": [
+        "arcade",
+        "home"
+      ],
+      "doorDistance": 3.0647185841443902,
+      "room": "home"
+    },
+    {
+      "key": "pink",
+      "started": true,
+      "played": true,
+      "returned": true,
+      "collisions": [],
+      "crossings": [
+        "arcade",
+        "home"
+      ],
+      "doorDistance": 2.390083680543423,
+      "room": "home"
+    },
+    {
+      "key": "nyoro",
+      "started": true,
+      "played": true,
+      "returned": true,
+      "collisions": [],
+      "crossings": [
+        "arcade",
+        "home"
+      ],
+      "doorDistance": 1.947434209415044,
+      "room": "home"
+    },
+    {
+      "key": "irukaeru",
+      "started": true,
+      "played": true,
+      "returned": true,
+      "collisions": [],
+      "crossings": [
+        "arcade",
+        "cafe"
+      ],
+      "doorDistance": 6.586349520030045,
+      "room": "cafe"
+    },
+    {
+      "key": "tetsu",
+      "started": true,
+      "played": true,
+      "returned": true,
+      "collisions": [],
+      "crossings": [
+        "arcade",
+        "home"
+      ],
+      "doorDistance": 2.390083680543423,
+      "room": "home"
+    },
+    {
+      "key": "nekokoo",
+      "started": true,
+      "played": true,
+      "returned": true,
+      "collisions": [],
+      "crossings": [
+        "arcade",
+        "bath"
+      ],
+      "doorDistance": 3.3305404966761785,
+      "room": "bath"
+    }
+  ],
+  "errors": []
+}

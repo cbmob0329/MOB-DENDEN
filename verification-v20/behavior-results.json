@@ -1,0 +1,105 @@
+{
+  "results": {
+    "tetsu": {
+      "cafe": {
+        "started": true,
+        "seated": true,
+        "eating": true,
+        "home": true,
+        "states": [
+          "toCafe",
+          "seating",
+          "seated",
+          "eating",
+          "satisfied",
+          "toHome",
+          null
+        ],
+        "pos": [
+          8.881784197001252e-16,
+          0,
+          2.0000000000000004
+        ],
+        "room": "home",
+        "blocked": 0,
+        "path": [],
+        "inventory": 1
+      },
+      "game": {
+        "started": true,
+        "playing": true,
+        "finished": true,
+        "prizes": 1,
+        "pos": [
+          8.881784197001252e-16,
+          0,
+          2.0000000000000004
+        ],
+        "room": "home",
+        "blocked": 0,
+        "path": []
+      },
+      "bag": {
+        "gift": {
+          "ok": true
+        },
+        "start": true,
+        "pose": false,
+        "props": true,
+        "inventory": 1,
+        "eaten": 0
+      }
+    },
+    "nekokoo": {
+      "cafe": {
+        "started": true,
+        "seated": true,
+        "eating": true,
+        "home": true,
+        "states": [
+          "toCafe",
+          "seating",
+          "seated",
+          "eating",
+          "satisfied",
+          "toHome",
+          null
+        ],
+        "pos": [
+          31.25,
+          0,
+          2.8
+        ],
+        "room": "bath",
+        "blocked": 0,
+        "path": [],
+        "inventory": 1
+      },
+      "game": {
+        "started": true,
+        "playing": true,
+        "finished": true,
+        "prizes": 1,
+        "pos": [
+          31.3,
+          0,
+          2.85
+        ],
+        "room": "bath",
+        "blocked": 0,
+        "path": []
+      },
+      "bag": {
+        "gift": {
+          "ok": true
+        },
+        "start": true,
+        "pose": false,
+        "props": false,
+        "inventory": 1,
+        "eaten": 0
+      }
+    }
+  },
+  "errors": []
+}

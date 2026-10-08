@@ -22,5 +22,11 @@
       "bytes": 2381142,
       "sha256": "0ab42e2c9a8f8e4acbb62e892e255af1963b442d8024592841b75ec8104b0137"
     }
-  ]
+  ],
+  "currentSchedule": {
+    "morning": "05:00–09:59 (015.mp3, legacy chill-arcade.mp3 filename)",
+    "day": "10:00–18:59 (013.mp3)",
+    "night": "19:00–04:59 (014.mp3)"
+  },
+  "facilityOverride": false
 }

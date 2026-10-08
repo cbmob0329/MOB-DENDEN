@@ -1,0 +1,12 @@
+{
+  "result": {
+    "sleeping": true,
+    "gameStarted": true,
+    "clockAdvance": 3.999999999999993,
+    "finished": true,
+    "prize": 1,
+    "wallet": 74,
+    "stillResting": true
+  },
+  "errors": []
+}

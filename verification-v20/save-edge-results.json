@@ -1,0 +1,26 @@
+{
+  "results": {
+    "migration": {
+      "furnishing": {},
+      "layout": 0,
+      "egg": 42,
+      "wallet": 77,
+      "omelet": 2,
+      "newBags": [
+        {},
+        {}
+      ],
+      "v19": true
+    },
+    "edges": {
+      "full": true,
+      "refused": true,
+      "rolledBack": true,
+      "alternate": true,
+      "sofa": "home:sofa",
+      "busy": true,
+      "ownerMealDeferred": true
+    }
+  },
+  "errors": []
+}

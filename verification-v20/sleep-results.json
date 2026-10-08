@@ -1,0 +1,125 @@
+{
+  "results": {
+    "start": [
+      {
+        "key": "denden",
+        "started": true,
+        "place": "home:bed"
+      },
+      {
+        "key": "pink",
+        "started": true,
+        "place": "home:sofa"
+      },
+      {
+        "key": "nyoro",
+        "started": true,
+        "place": "cafe:sofa"
+      },
+      {
+        "key": "irukaeru",
+        "started": true,
+        "place": "cafe:chair0"
+      },
+      {
+        "key": "tetsu",
+        "started": true,
+        "place": "cafe:chair1"
+      },
+      {
+        "key": "nekokoo",
+        "started": true,
+        "place": "bath:recliner0"
+      }
+    ],
+    "sleep": [
+      {
+        "key": "denden",
+        "phase": "sleep",
+        "place": "home:bed",
+        "pos": [
+          3.5,
+          0.9,
+          1.7
+        ],
+        "distance": 0,
+        "texture": true
+      },
+      {
+        "key": "pink",
+        "phase": "sleep",
+        "place": "home:sofa",
+        "pos": [
+          -3.67,
+          0.915,
+          0.04999999999999999
+        ],
+        "distance": 1.3877787807814457e-17,
+        "texture": true
+      },
+      {
+        "key": "nyoro",
+        "phase": "sleep",
+        "place": "cafe:sofa",
+        "pos": [
+          17.2,
+          0.72,
+          -2.82
+        ],
+        "distance": 0,
+        "texture": true
+      },
+      {
+        "key": "irukaeru",
+        "phase": "sleep",
+        "place": "cafe:chair0",
+        "pos": [
+          12,
+          0.48,
+          -1.03
+        ],
+        "distance": 0,
+        "texture": true
+      },
+      {
+        "key": "tetsu",
+        "phase": "sleep",
+        "place": "cafe:chair1",
+        "pos": [
+          14,
+          0.48,
+          -1.03
+        ],
+        "distance": 0,
+        "texture": true
+      },
+      {
+        "key": "nekokoo",
+        "phase": "sleep",
+        "place": "bath:recliner0",
+        "pos": [
+          25.15,
+          0.56,
+          3.65
+        ],
+        "distance": 0,
+        "texture": true
+      }
+    ],
+    "reload": {
+      "egg": 42,
+      "claims": 6,
+      "standingSleep": false,
+      "bags": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "player"
+      ]
+    }
+  },
+  "errors": []
+}

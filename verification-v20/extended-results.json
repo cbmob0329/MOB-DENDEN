@@ -1,0 +1,133 @@
+{
+  "results": {
+    "race": {
+      "started": true,
+      "raced": true,
+      "finished": true,
+      "actors": [
+        {
+          "key": "tetsu",
+          "mode": null,
+          "pos": [
+            8.881784197001252e-16,
+            0,
+            2.0000000000000004
+          ]
+        },
+        {
+          "key": "nekokoo",
+          "mode": null,
+          "pos": [
+            31.1,
+            0,
+            0.8
+          ]
+        }
+      ],
+      "history": [
+        {
+          "id": 1,
+          "kind": "race",
+          "owner": "4",
+          "paid": 0,
+          "status": "complete",
+          "prize": null,
+          "winner": "4"
+        }
+      ]
+    },
+    "walk": [
+      {
+        "key": "tetsu",
+        "moved": 0.5099019513592791,
+        "states": [
+          "moving:joy"
+        ],
+        "direction": "right",
+        "frame": 5
+      },
+      {
+        "key": "nekokoo",
+        "moved": 0.5099999999999998,
+        "states": [
+          "idle:walk"
+        ],
+        "direction": "back",
+        "frame": 3
+      }
+    ],
+    "newSleep": [
+      {
+        "key": "tetsu",
+        "start": true,
+        "place": "home:bed",
+        "phase": "sleep",
+        "correctTexture": true
+      },
+      {
+        "key": "nekokoo",
+        "start": true,
+        "place": "home:bed",
+        "phase": "sleep",
+        "correctTexture": true
+      }
+    ],
+    "night": [
+      {
+        "key": "denden",
+        "phase": "sleep",
+        "place": "home:bed",
+        "mode": null,
+        "state": "idle"
+      },
+      {
+        "key": "pink",
+        "phase": "sleep",
+        "place": "home:sofa",
+        "mode": null,
+        "state": "idle"
+      },
+      {
+        "key": "nyoro",
+        "phase": "sleep",
+        "place": "cafe:sofa",
+        "mode": null,
+        "state": "idle"
+      },
+      {
+        "key": "irukaeru",
+        "phase": "sleep",
+        "place": "cafe:chair0",
+        "mode": null,
+        "state": "idle"
+      },
+      {
+        "key": "tetsu",
+        "phase": "sleep",
+        "place": "cafe:chair1",
+        "mode": null,
+        "state": "idle"
+      },
+      {
+        "key": "nekokoo",
+        "phase": "sleep",
+        "place": "bath:recliner0",
+        "mode": null,
+        "state": "idle"
+      }
+    ],
+    "wake": {
+      "claims": 0,
+      "rest": false,
+      "heights": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "errors": []
+}

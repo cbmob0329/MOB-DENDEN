@@ -1,0 +1,45 @@
+{
+  "results": [
+    {
+      "start": true,
+      "playing": true,
+      "key": "tetsu",
+      "bodyVisible": true,
+      "finished": true,
+      "history": [
+        {
+          "id": 1,
+          "kind": "ufo",
+          "owner": "4",
+          "paid": 0,
+          "status": "complete",
+          "prize": "P-07",
+          "winner": null
+        }
+      ],
+      "sessions": [],
+      "room": "home"
+    },
+    {
+      "start": true,
+      "playing": true,
+      "key": "nekokoo",
+      "bodyVisible": true,
+      "finished": true,
+      "history": [
+        {
+          "id": 1,
+          "kind": "ufo",
+          "owner": "5",
+          "paid": 0,
+          "status": "complete",
+          "prize": "P-09",
+          "winner": null
+        }
+      ],
+      "sessions": [],
+      "room": "bath"
+    }
+  ],
+  "errors": []
+}

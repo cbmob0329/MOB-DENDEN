@@ -1,0 +1,32 @@
+{
+  "baseHead": "b39b1b09694ab86f2cb4c0fcd37c73603f4a6031",
+  "bytes": 110772576,
+  "sha256": "f7c0f7e912cd10a6cc2d14a8445cc5459bfe6fb9beb4afbff0fe3e8727c7997c",
+  "htmlBytes": 99203534,
+  "htmlSha256": "ea95cc696e614f4f03f0b371669b601b7e4740268bfd950a1ff18293df78a772",
+  "mainMatches": true,
+  "entries": 141,
+  "runtimePaths": [
+    "arcade-integration.js",
+    "bath-v12.js",
+    "bgm-v18.js",
+    "build.cjs",
+    "collection-integration.js",
+    "collection-state.js",
+    "daily-routine.js",
+    "game.js",
+    "index.html",
+    "residents-v16.js",
+    "routine-dialogue.js",
+    "town-navigation.js",
+    "world-v14.js",
+    "life-v20.js",
+    "assets/audio/manifest.json",
+    "assets/bgm-v18.js",
+    "assets/life-v20.js",
+    "assets/life-v20/npc.png",
+    "assets/life-v20/life-fixed.png",
+    "assets/life-v20/sleep-clean.png",
+    "assets/life-v20/manifest.json"
+  ]
+}

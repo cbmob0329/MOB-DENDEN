@@ -1,0 +1,131 @@
+{
+  "results": [
+    {
+      "key": "denden",
+      "started": true,
+      "soaked": true,
+      "returned": true,
+      "room": "home",
+      "pos": [
+        -0.7999999999999994,
+        0,
+        2.0000000000000004
+      ],
+      "mode": null,
+      "path": [],
+      "collisions": [],
+      "claims": [
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "key": "pink",
+      "started": true,
+      "soaked": true,
+      "returned": true,
+      "room": "home",
+      "pos": [
+        8.881784197001252e-16,
+        0,
+        2.0000000000000004
+      ],
+      "mode": null,
+      "path": [],
+      "collisions": [],
+      "claims": [
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "key": "nyoro",
+      "started": true,
+      "soaked": true,
+      "returned": true,
+      "room": "home",
+      "pos": [
+        0.6000000000000005,
+        0,
+        2.0000000000000004
+      ],
+      "mode": null,
+      "path": [],
+      "collisions": [],
+      "claims": [
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "key": "irukaeru",
+      "started": true,
+      "soaked": true,
+      "returned": true,
+      "room": "cafe",
+      "pos": [
+        13.4,
+        0,
+        2.4
+      ],
+      "mode": null,
+      "path": [],
+      "collisions": [],
+      "claims": [
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "key": "tetsu",
+      "started": true,
+      "soaked": true,
+      "returned": true,
+      "room": "home",
+      "pos": [
+        8.881784197001252e-16,
+        0,
+        2.0000000000000004
+      ],
+      "mode": null,
+      "path": [],
+      "collisions": [],
+      "claims": [
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "key": "nekokoo",
+      "started": true,
+      "soaked": true,
+      "returned": true,
+      "room": "bath",
+      "pos": [
+        31.3,
+        0,
+        2.85
+      ],
+      "mode": null,
+      "path": [],
+      "collisions": [],
+      "claims": [
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  ],
+  "errors": []
+}
