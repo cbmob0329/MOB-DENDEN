@@ -1,0 +1,27 @@
+{
+  "source": [
+    {
+      "file": "index.html",
+      "restoredSha256": "6e6e9b3109098a6d64ae1bffecb3564c369c67101f0d546600e4acfe1fd06beb",
+      "exactPreRenameMatch": true
+    },
+    {
+      "file": "game.js",
+      "restoredSha256": "ec972de692946af95626893405d9cc48680ea7abc4d463bd090aa862b2467fb2",
+      "exactPreRenameMatch": true
+    },
+    {
+      "file": "build.cjs",
+      "restoredSha256": "5a3b0e70be7fb6857ce154001579f8543a4259f841b3ea42ca80f7587606880a",
+      "exactPreRenameMatch": true
+    }
+  ],
+  "mainSha256": "b94603515546d39dd96301b6706c92c3bcf5aa0d32a8d611229c37368c5f037d",
+  "storyAbsent": true,
+  "browser": {
+    "documentTitle": "MOB CHILL LIFE",
+    "header": "MOB CHILL LIFE",
+    "helpDialog": "MOB CHILL LIFE",
+    "scope": "title-only check and three comparison screenshots; no full regression rerun"
+  }
+}

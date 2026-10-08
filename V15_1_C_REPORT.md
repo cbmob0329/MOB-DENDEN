@@ -1,6 +1,6 @@
-# MOB STORY V15.1 — 新C本体・変更と検証
+# MOB CHILL LIFE V15.1 — 新C本体・変更と検証
 
-2026-10-08。正本: C:/Users/CB-Me/Documents/GitHub/MOB-DENDEN。表示名をMOB STORYへ統一。repo名・remote・互換用本体名 MOB_CHILL_LIFE.html・保存キーと保存形式は維持。HEAD: 80a9e5aac044365f232f850934634c9dd5fcf34d。git fsck --full 成功。Dドライブと旧PCには今回アクセスしていない。commit/pushなし。
+2026-10-08。正本: C:/Users/CB-Me/Documents/GitHub/MOB-DENDEN。表示名は箱庭固有のMOB CHILL LIFEを保持。repo名・remote・互換用本体名 MOB_CHILL_LIFE.html・保存キーと保存形式は維持。HEAD: 80a9e5aac044365f232f850934634c9dd5fcf34d。git fsck --full 成功。Dドライブと旧PCには今回アクセスしていない。commit/pushなし。
 
 ## 今回の反映
 町のカメラを近づけ、5施設の44px以上のボタンを画面下へ移動。レースは観客・植栽をコース外へ寄せ、既存建物を遠景へ再利用し、スタート間隔と周回表示、運転カメラを調整。運転視点では自車のスプライトが視界を塞がない。湯面に時間連動の法線・ハイライトを追加。モデルの新規生成は行わず、引継ぎ7ファイルの一致を確認して本体を再ビルド。Blender再生成用の004参照を相対パスに直し、既存の検証補助スクリプトを同梱。
@@ -24,4 +24,9 @@ Edge/Playwright、独立した一時ブラウザ保存領域。320/390/430pxで�
 ## 住民と台詞
 既存ニョロ/イルカエル素材と台詞を維持。今回の新規住民追加や方向アニメ生成なし。確認した発話例: 「いただきますニョロ～！」「また来るでやんす。」「いただきますであります！」「ふふっ、ゆっくり召し上がってください。」「ごめんなさい、今品切れなの、、」。過去の全台詞一覧はV7/V8/V9の一覧を参照。
 
-本体SHA256: 4fa3cdb360414fea92a8765adcc215ab530a433bf2492daeb71536c18d874d69
+本体SHA256: b94603515546d39dd96301b6706c92c3bcf5aa0d32a8d611229c37368c5f037d
+
+## 表示名誤混入の訂正
+MOB-QUESTだけに適用すべきMOB STORYへの名称変更を、本作MOB-DENDENへ誤適用していました。ファイル名だけでなくdocument title・見出し・モーダル・ヘルプと版文字列にも混入していました。index.html / game.js / build.cjsを改名前SHA256と完全一致する内容へ戻して再ビルドしました。機能・保存キー・素材には追加変更なし。名称・ヘルプと比較3画面のみ再確認し、既存の全体検証は再実行していません。
+
+MOB_STORY_V15_1.zip / MOB_STORY_C_REVIEW.png、および旧検証画像は今回の誤名称出力として保存維持し、正規配布・commit候補から除外。正規配布名はMOB_CHILL_LIFE_V15_1.zip、比較はMOB_CHILL_LIFE_C_REVIEW.pngです。Libraryは前回prepare_uploads unavailableで未更新、今回も転送していません。

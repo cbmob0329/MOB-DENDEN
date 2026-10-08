@@ -1,0 +1,16 @@
+{
+  "canonicalRepo": "C:/Users/CB-Me/Documents/GitHub/MOB-DENDEN",
+  "displayTitle": "MOB CHILL LIFE",
+  "mainSha256": "b94603515546d39dd96301b6706c92c3bcf5aa0d32a8d611229c37368c5f037d",
+  "exactPreRenameSourceMatch": true,
+  "properZip": "MOB_CHILL_LIFE_V15_1.zip",
+  "properReview": "MOB_CHILL_LIFE_C_REVIEW.png",
+  "incorrectOutputsPreservedAndExcluded": [
+    "MOB_STORY_V15_1.zip",
+    "verification-v15-1/MOB_STORY_C_REVIEW.png"
+  ],
+  "libraryUpdated": false,
+  "libraryBlocker": "prepare_uploads unavailable on previous attempt; not retried",
+  "otherReposTouched": false,
+  "commitPush": false
+}

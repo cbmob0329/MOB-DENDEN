@@ -1,4 +1,4 @@
-MOB STORY — commit候補（未ステージ・未commit）
+MOB CHILL LIFE — commit候補（未ステージ・未commit）
 2026-10-08 / HEAD 80a9e5aac044365f232f850934634c9dd5fcf34d
 
 実体差分一覧（行末空白差を除外、追加行/削除行/パス）：
@@ -222,3 +222,5 @@ world-v14.js
 4. PNGの差分は自動で承認しない。既知の破損元画像 assets/pink/dj_a.png, assets/pink/dj_b.png, assets/meal-bath-v12/denden_meal.png は有効な埋込データをビルドが保持。元ファイルは復元・上書きしていない。他のPNG差分も素材別レビューが必要。
 5. 旧ZIP・最終ZIPは配布物。git add . は使わず、ソースcommitからは通常除外。行末だけの差分や過去検証出力も一括commitしない。
 公開push/commitは行っていない。
+
+誤名称出力の明示除外: MOB_STORY_V15_1.zip と verification-v15-1/MOB_STORY_C_REVIEW.png および旧名称を写した検証PNGは履歴として維持し、commitしない。最新版は verification-v15-1-corrected/。
