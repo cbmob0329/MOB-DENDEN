@@ -1,0 +1,26 @@
+{
+  "sourceNote": "BGM.txt read-only; 013 morning/day, 014 night, 015 game center. Original MP3/WAV unchanged.",
+  "tracks": [
+    {
+      "name": "day",
+      "source": "013.mp3",
+      "runtime": "assets/audio/chill-day.mp3",
+      "bytes": 3529216,
+      "sha256": "c6ac98d0329d073d397732ff51497b1c6d6f7785b46d5125465b4e15c8c3adb4"
+    },
+    {
+      "name": "night",
+      "source": "014.mp3",
+      "runtime": "assets/audio/chill-night.mp3",
+      "bytes": 3850668,
+      "sha256": "2c8ca8aa837a44b268b6e9abada8fcea5f75235f1da7eb3474ddc1edc2fe766d"
+    },
+    {
+      "name": "arcade",
+      "source": "015.mp3",
+      "runtime": "assets/audio/chill-arcade.mp3",
+      "bytes": 2381142,
+      "sha256": "0ab42e2c9a8f8e4acbb62e892e255af1963b442d8024592841b75ec8104b0137"
+    }
+  ]
+}
