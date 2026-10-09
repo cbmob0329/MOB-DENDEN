@@ -1,0 +1,24 @@
+{
+  "result": {
+    "playerLayers": [
+      "body",
+      "face",
+      "hat",
+      "glasses",
+      "poncho",
+      "accessory",
+      "held-food"
+    ],
+    "homeValid": null,
+    "v24Targets": 29,
+    "actors": 8,
+    "cheeks": 9,
+    "tables": 6,
+    "chairs": 12,
+    "plates": 12,
+    "figures": 8,
+    "frameCount": 544
+  },
+  "bytes": 99112289,
+  "errors": []
+}

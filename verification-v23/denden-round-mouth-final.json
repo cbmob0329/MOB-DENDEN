@@ -1,0 +1,6 @@
+{
+  "tool": "built-in image_gen",
+  "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a11e3f-076c-7c42-b70d-623e1426ef4b\\exec-54c2ca63-b9b5-42eb-8a16-0a50a3187306.png",
+  "destination": "assets/residents-v23/denden-walk.png",
+  "prompt": "Precise character correction. Image1 is EDIT TARGET current sixteen-frame4x4 walk atlas. Image2 is AUTHORITATIVE correct ROUND HEAD silhouette reference. Restore EVERY front and profile face in image1 to the round compact yellow cheek/chin outline in image2: NO protruding dog nose, NO snout bulge, no muzzle jutting out, no round nose tip. Keep all current walking legs/arms/poses/tails/grid unchanged. ONLY mouth line: make the CLOSED wavy smile longer/wider, spanning approximately55-65% of visible yellow face width under sunglasses, with2-3 gentle shallow curves. In profile, follow the rounded cheek with a longer wavy smile reaching inward toward hood; DO NOT change outer contour to make mouth bigger. In front, wide wavy smile as Denden original, not tiny cat w. Mouth remains closed, no tongue/teeth/cavity. Pink catear hoodie, sunglasses and all sixteen sprites preserved. Transparent background."
+}

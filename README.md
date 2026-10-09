@@ -1,14 +1,28 @@
-# MOB CHILL LIFE — V23
+# MOB CHILL LIFE — V24
 
 公開版: https://cbmob0329.github.io/MOB-DENDEN/
+
+V24では、名前を付けられる無口なプレイヤー、一人称視点、自分の家、着替え、コレクション棚、撮影、家具配置の保存、雨の町、海の駅、住人のお出かけと好物リアクションを追加しました。
+
+「プレイヤー」で名前を保存し、「自分の家へ」から開始。「歩く ON」で床をタップ、または画面の空いた所をドラッグして移動します。椅子・ベッド・タンス・棚は直接タップ。「一人称」で視点を切り替え、「ここへ移動」で今見ている施設へ歩きます。プレイヤーは台詞を出しません。
+
+タンスで帽子・ポンチョ・メガネ各5種、アクセサリー5種＋なしを組み合わせられます。モブデンデン仕様の特別衣装もあります。体・顔・帽子・メガネ・ポンチョ・アクセサリーは別レイヤー。歩行・着席・食事・睡眠・調理・手振り・ダンス・伸び・着座の動きを共通で使います。
+
+「町の暮らし」で天気、好物、お出かけの様子を確認できます。デンデンとピンクのカフェ、テツとニョロの対戦は、待ち合わせ→移動→遊び→感想→帰宅。観察中もプレイヤー操作は続けられます。雨にはニョロの傘散歩、雨宿り、カフェへの訪問が増えます。海の駅は見送りとベンチ休憩ができ、乗車はありません。
+
+「プレイヤー → 部屋づくり」で家具の回転、赤・緑の配置可否、取り消し、3件の配置保存。入口から家具までの通路が塞がる配置は保存しません。棚は所持品の数量を超えて展示せず、棚番号を選んで入れ替えできます。
+
+「撮影」でUIを隠し、視点・朝昼夕夜の光・フレームを選択してPNGを保存。撮影の時間帯は暮らしの時計を変更しません。自動ダウンロードが制限される環境では、撮影後の画像を長押し／右クリックで保存してください。
+
+検証結果は [V24動作結果](verification-v24/results.json)、[タップ・一人称・セーブ復帰](verification-v24/interaction-results.json)、[全椅子経路・買い物](verification-v24/seat-shop-results.json)。EdgeのPC・390px表示で検証。iPhone実機Safariは未確認です。デンデンの正面歩行は「のんびり」の顔に合わせ、承認済みの横顔を維持しました。
 
 V23では住人を滑らかなカートゥーンへ描き直し、モブマニー、ショップ限定フィギュア8種類、酒場を追加しました。操作と検証は [V23報告](V23_RESIDENTS_AND_TAVERN_REPORT.md) を参照。
 
 V22ではミータの歩行、他の住民の描画品質、ショップの商品補充・接客・住民の買い物と会話、吹き出しを改善しました。操作と検証範囲は [V22報告](V22_SHOP_AND_SPRITES_REPORT.md) を参照。V21の増築とゲームは [V21報告](V21_EXPANSION_REPORT.md)。V22はローカル更新で、公開版への反映は未実施。iPhone実機Safariは未確認。
 
-配布ZIPの保存先は `C:/Users/CB-Me/Documents/MOB-CHILL-LIFE-Distribution/MOB_CHILL_LIFE_V15_1.zip`。ファイル名は旧版のまま、内容はV23。更新には `node package-distribution.cjs` を使い、ZIPはGitへ追加しない。
+配布ZIPの保存先は `C:/Users/CB-Me/Documents/MOB-CHILL-LIFE-Distribution/MOB_CHILL_LIFE_V15_1.zip`。ファイル名は旧版のまま、内容はV24。更新には `node package-distribution.cjs` を使い、ZIPはGitへ追加しない。
 
-起動：**MOB_CHILL_LIFE.html**。編集用：index.html。再生成：node build.cjs の後、node verification-v23/optimize-standalone.cjs。
+公開用：**index.html / MOB_CHILL_LIFE.html**（JS・画像を分離して読み込みます）。オフライン1ファイル版：**dist-local/MOB_CHILL_LIFE.html**（Git管理外）。再生成：node build.cjs の後、node verification-v23/optimize-standalone.cjs。配布ZIPはGit管理外の1ファイル版を収録します。
 
 ## V8時点の変更・操作記録
 

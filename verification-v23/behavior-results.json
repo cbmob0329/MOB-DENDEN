@@ -10,10 +10,12 @@
       ],
       "frames": {
         "action": 16,
+        "cheeks": 16,
         "dance": 16,
         "domestic": 16,
         "life": 16,
         "taso": 16,
+        "turnjoy": 16,
         "walk": 16
       }
     },

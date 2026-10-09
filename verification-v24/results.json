@@ -1,0 +1,274 @@
+{
+  "home": {
+    "valid": null,
+    "targets": [
+      {
+        "action": "sleep",
+        "route": true
+      },
+      {
+        "action": "collection",
+        "route": true
+      },
+      {
+        "action": "wardrobe",
+        "route": true
+      },
+      {
+        "action": "sit",
+        "route": true
+      },
+      {
+        "action": "eat",
+        "route": true
+      }
+    ],
+    "town": [
+      {
+        "id": "home",
+        "path": true
+      },
+      {
+        "id": "cafe",
+        "path": true
+      },
+      {
+        "id": "arcade",
+        "path": true
+      },
+      {
+        "id": "farm",
+        "path": true
+      },
+      {
+        "id": "bath",
+        "path": true
+      },
+      {
+        "id": "shop",
+        "path": true
+      },
+      {
+        "id": "tavern",
+        "path": true
+      },
+      {
+        "id": "myhome",
+        "path": true
+      },
+      {
+        "id": "station",
+        "path": true
+      }
+    ]
+  },
+  "actions": [
+    {
+      "action": "sit",
+      "started": true,
+      "motion": "sit",
+      "exit": true
+    },
+    {
+      "action": "sleep",
+      "started": true,
+      "motion": "sleep",
+      "exit": true
+    },
+    {
+      "room": "station",
+      "pos": [
+        224,
+        0,
+        3
+      ]
+    },
+    {
+      "room": "myhome"
+    }
+  ],
+  "wardrobe": {
+    "out": [
+      {
+        "hat": 5,
+        "poncho": 5,
+        "glasses": 3,
+        "accessory": 1
+      },
+      {
+        "hat": 6,
+        "poncho": 6,
+        "glasses": 4,
+        "accessory": 2
+      },
+      {
+        "hat": 6,
+        "poncho": 6,
+        "glasses": 3,
+        "accessory": 1
+      },
+      {
+        "hat": 6,
+        "poncho": 6,
+        "glasses": 3,
+        "accessory": 2
+      },
+      {
+        "hat": 6,
+        "poncho": 5,
+        "glasses": 3,
+        "accessory": 1
+      }
+    ],
+    "name": "テストさん",
+    "wear": {
+      "hat": 4,
+      "poncho": 4,
+      "glasses": 4,
+      "accessory": 5,
+      "special": true
+    },
+    "mentions": true
+  },
+  "eat": {
+    "motion": "eat",
+    "after": "idle",
+    "stock": 1
+  },
+  "cook": {
+    "done": true,
+    "stock": 2,
+    "wheat": 1
+  },
+  "favorites": [
+    {
+      "key": "denden",
+      "yes": true,
+      "no": false
+    },
+    {
+      "key": "pink",
+      "yes": true,
+      "no": false
+    },
+    {
+      "key": "nyoro",
+      "yes": true,
+      "no": false
+    },
+    {
+      "key": "irukaeru",
+      "yes": true,
+      "no": false
+    },
+    {
+      "key": "tetsu",
+      "yes": true,
+      "no": false
+    },
+    {
+      "key": "nekokoo",
+      "yes": true,
+      "no": false
+    },
+    {
+      "key": "mita",
+      "yes": true,
+      "no": false
+    },
+    {
+      "key": "money",
+      "yes": true,
+      "no": false
+    }
+  ],
+  "collection": {
+    "models": 1,
+    "owned": 1
+  },
+  "layout": -2.75,
+  "outing": {
+    "started": true,
+    "stages": [
+      "meeting",
+      "travel",
+      "play",
+      "impression",
+      "return"
+    ],
+    "end": true,
+    "actors": [
+      {
+        "room": "home",
+        "mode": null,
+        "free": true,
+        "pos": [
+          -0.7999999999999994,
+          0,
+          2.0000000000000004
+        ],
+        "route": false
+      },
+      {
+        "room": "home",
+        "mode": null,
+        "free": true,
+        "pos": [
+          8.881784197001252e-16,
+          0,
+          2.0000000000000004
+        ],
+        "route": true
+      }
+    ],
+    "log": [
+      "モブデンデンとモブピンク：カフェへお出かけ"
+    ]
+  },
+  "race": {
+    "started": true,
+    "stages": [
+      "meeting",
+      "travel",
+      "play",
+      "impression",
+      "return"
+    ],
+    "end": true,
+    "actors": [
+      {
+        "room": "home",
+        "mode": null
+      },
+      {
+        "room": "home",
+        "mode": null
+      }
+    ],
+    "race": false
+  },
+  "rain": {
+    "started": true,
+    "stages": [
+      "exit",
+      "town",
+      "rest",
+      "back"
+    ],
+    "end": true
+  },
+  "station": {
+    "started": true,
+    "stages": [
+      "exit",
+      "town",
+      "approach",
+      "rest",
+      "leave",
+      "back"
+    ],
+    "end": true
+  },
+  "download": "Headless Edge canceled download; verified long-press PNG preview",
+  "errors": []
+}

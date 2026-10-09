@@ -1,0 +1,26 @@
+{
+  "tool": "built-in image_gen",
+  "jobs": [
+    {
+      "key": "tetsu",
+      "prompt": "Edit this transparent 4x4 sixteen-frame WALK animation atlas. Preserve character design, smooth style, costume, head size and all FOUR direction rows EXACTLY as reference (do NOT swap row directions). Correct the broken gait: columns1 and3 must be OPPOSITE foot contacts, NOT duplicates. Column1 anatomical LEFT leg forward planted / RIGHT leg behind; column2 LEFT support planted under hips / RIGHT leg bent passing forward past left leg; column3 RIGHT leg forward planted / LEFT leg behind; column4 RIGHT support under hips / LEFT leg bent passing forward past right leg. In SIDE rows the legs must visibly pass one another at columns2/4, near leg in front in1 and BEHIND in3; show near/far leg overlap changing. In FRONT/BACK rows foot leading must visibly alternate screen left vs screen right. Opposite arms counter-swing; ONE foot always grounded, not marching with high kicks, not hopping, not skating. Keep stable head/torso height, same baseline. Exactly16 full-body isolated sprites, consistent scale/gutters, no labels/shadows. Mouth CLOSED. Preserve gold glasses, striped cat hood, diagonal rope; no sword drawn, no tail."
+    },
+    {
+      "key": "denden",
+      "prompt": "Edit this transparent 4x4 sixteen-frame WALK animation atlas. Preserve character design, smooth style, costume, head size and all FOUR direction rows EXACTLY as reference (do NOT swap row directions). Correct the broken gait: columns1 and3 must be OPPOSITE foot contacts, NOT duplicates. Column1 anatomical LEFT leg forward planted / RIGHT leg behind; column2 LEFT support planted under hips / RIGHT leg bent passing forward past left leg; column3 RIGHT leg forward planted / LEFT leg behind; column4 RIGHT support under hips / LEFT leg bent passing forward past right leg. In SIDE rows the legs must visibly pass one another at columns2/4, near leg in front in1 and BEHIND in3; show near/far leg overlap changing. In FRONT/BACK rows foot leading must visibly alternate screen left vs screen right. Opposite arms counter-swing; ONE foot always grounded, not marching with high kicks, not hopping, not skating. Keep stable head/torso height, same baseline. Exactly16 full-body isolated sprites, consistent scale/gutters, no labels/shadows. Mouth CLOSED. ALSO adjust side-face shape: extend yellow muzzle moderately beyond sunglasses, about half a lens radius, with rounded soft nose and small CLOSED wavy smile. Current face is too flat/short; a small rounded projecting cheek/muzzle, halfway between current flat face and long crocodile snout. Do not elongate skull. Keep frontal face and pink hoodie/tail."
+    }
+  ],
+  "corrections": [
+    {
+      "key": "tetsu",
+      "prompt": "Edit ONLY THE LEGS AND FEET in this 4x4 sprite atlas. Keep every head, face, torso, arm, costume, scale, transparent background and grid unchanged. Critical: in every row, COLUMN3 and COLUMN4 currently repeat column1 and2 leg silhouettes. REVERSE the leg poses for columns3 and4 only. FRONT row: column3 must have SCREEN RIGHT foot clearly lower and forward, SCREEN LEFT foot higher and back (opposite column1). Column4 SCREEN LEFT knee swings forward while SCREEN RIGHT leg supports. BACK row also alternate which screen-side foot is closest. SIDE rows: column1 near leg points forward and far leg back. In COLUMN3, NEAR leg must point BACKWARD while the FAR leg stretches FORWARD, with the overlap joint showing the near leg crossing in front. In column4 the near foot is just behind the vertical support leg, knee bends and crosses beneath body; do not kick forward. Two legs must remain distinguishable. Keep1 foot on floor, modest grounded walking. No other edits. Exactly16 separate sprites, no labels."
+    },
+    {
+      "key": "denden",
+      "prompt": "Edit ONLY THE LEGS AND FEET in this 4x4 sprite atlas. Keep every head, face, torso, arm, costume, scale, transparent background and grid unchanged. Critical: in every row, COLUMN3 and COLUMN4 currently repeat column1 and2 leg silhouettes. REVERSE the leg poses for columns3 and4 only. FRONT row: column3 must have SCREEN RIGHT foot clearly lower and forward, SCREEN LEFT foot higher and back (opposite column1). Column4 SCREEN LEFT knee swings forward while SCREEN RIGHT leg supports. BACK row also alternate which screen-side foot is closest. SIDE rows: column1 near leg points forward and far leg back. In COLUMN3, NEAR leg must point BACKWARD while the FAR leg stretches FORWARD, with the overlap joint showing the near leg crossing in front. In column4 the near foot is just behind the vertical support leg, knee bends and crosses beneath body; do not kick forward. Two legs must remain distinguishable. Keep1 foot on floor, modest grounded walking. No other edits. Exactly16 separate sprites, no labels."
+    }
+  ],
+  "tetsuFinal": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a11e3f-076c-7c42-b70d-623e1426ef4b\\exec-934874d9-171f-406c-b578-94e0e0b0f50d.png",
+  "dendenFinal": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a11e3f-076c-7c42-b70d-623e1426ef4b\\exec-99ae8aa3-97e6-4243-ba81-1458019f0760.png",
+  "runtimeCorrection": "Denden front/back second half uses mirrored texture UVs of first half to guarantee alternating leading foot; side rows use corrected crossing poses."
+}

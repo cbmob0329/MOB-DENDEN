@@ -1,0 +1,29 @@
+{
+  "first": {
+    "visible": false,
+    "fov": 65,
+    "height": 1.1
+  },
+  "drag": [
+    191.48175834879294,
+    0,
+    1.2334989336249813
+  ],
+  "restore": {
+    "name": "ぽん",
+    "wear": {
+      "hat": 2,
+      "poncho": 1,
+      "glasses": 0,
+      "accessory": 3,
+      "special": false
+    },
+    "route": true,
+    "pos": [
+      189,
+      0,
+      0.5
+    ]
+  },
+  "errors": []
+}

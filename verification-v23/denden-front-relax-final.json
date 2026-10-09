@@ -1,0 +1,7 @@
+{
+  "date": "2026-10-09",
+  "target": "assets/residents-v23/denden-walk.png",
+  "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a11e3f-076c-7c42-b70d-623e1426ef4b\\exec-2da32a69-4009-4cc5-a1d5-ade827a492e3.png",
+  "prompt": "Image1 is EDIT TARGET 4x4 walk sheet. Image2 is AUTHORITATIVE face design from the same character relaxing. Change ONLY the FACE DETAILS INSIDE THE HOOD of the FOUR FRONT-VIEW sprites in TOP ROW of image1. Copy the exact broad yellow face, two little nostril dots above the mouth, and wide shallow wavy smile from the last two front-facing sprites in bottom row of image2. Match his existing relaxing face, no redesign, not a tiny cat w mouth. Keep sunglasses size and head contour. DO NOT change the side views: user likes those as now. Do not change legs, hands, walking sequence, body, colors, scale, grid, or transparency. Exactly16 sprites. All mouths closed.",
+  "notes": "正面を既存のんびり顔と一致。承認済み横顔を維持。前後歩行の後半2コマは実行時UV反転で左右の足を交互に。"
+}
