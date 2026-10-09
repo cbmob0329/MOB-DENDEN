@@ -1,0 +1,51 @@
+[
+  {
+    "key": "denden",
+    "kind": "life",
+    "ref": "C:/Users/CB-Me/Documents/GitHub/MOB-DENDEN/assets/residents-v23/denden-life.png",
+    "prompt": "Precisely edit this existing 4x4 sixteen-frame game sprite atlas. Keep EVERY frame, pose, framing, scale, clothing, eyes, glasses, hands, legs, transparency, sprite positions and composition unchanged. ONLY fix mouths: ALL SIXTEEN characters must have their mouths fully CLOSED. Remove every open mouth cavity, tongue, teeth, round yawning mouth and open laugh. Reconstruct the original face color and use the same simple CLOSED mouth line as the neutral frames. For the yellow lower face character, keep that yellow face field smooth; its zigzag upper boundary is NOT an open mouth. All talking, eating, yawning, celebrating and sleeping poses still have CLOSED mouths. No other alterations. True transparent background. No grid or labels.",
+    "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a11e3f-076c-7c42-b70d-623e1426ef4b\\exec-375b36df-f102-4884-bda3-d10520a2b660.png"
+  },
+  {
+    "key": "denden",
+    "kind": "action",
+    "ref": "C:/Users/CB-Me/Documents/GitHub/MOB-DENDEN/assets/residents-v23/denden-action.png",
+    "prompt": "Precisely edit this existing 4x4 sixteen-frame game sprite atlas. Keep EVERY frame, pose, framing, scale, clothing, eyes, glasses, hands, legs, transparency, sprite positions and composition unchanged. ONLY fix mouths: ALL SIXTEEN characters must have their mouths fully CLOSED. Remove every open mouth cavity, tongue, teeth, round yawning mouth and open laugh. Reconstruct the original face color and use the same simple CLOSED mouth line as the neutral frames. For the yellow lower face character, keep that yellow face field smooth; its zigzag upper boundary is NOT an open mouth. All talking, eating, yawning, celebrating and sleeping poses still have CLOSED mouths. No other alterations. True transparent background. No grid or labels.",
+    "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a11e3f-076c-7c42-b70d-623e1426ef4b\\exec-cec61bf9-1c9d-4be2-a691-843b69ef0352.png"
+  },
+  {
+    "key": "nyoro",
+    "kind": "life",
+    "ref": "C:/Users/CB-Me/Documents/GitHub/MOB-DENDEN/assets/residents-v23/nyoro-life.png",
+    "prompt": "Precisely edit this existing 4x4 sixteen-frame game sprite atlas. Keep EVERY frame, pose, framing, scale, clothing, eyes, glasses, hands, legs, transparency, sprite positions and composition unchanged. ONLY fix mouths: ALL SIXTEEN characters must have their mouths fully CLOSED. Remove every open mouth cavity, tongue, teeth, round yawning mouth and open laugh. Reconstruct the original face color and use the same simple CLOSED mouth line as the neutral frames. For the yellow lower face character, keep that yellow face field smooth; its zigzag upper boundary is NOT an open mouth. All talking, eating, yawning, celebrating and sleeping poses still have CLOSED mouths. No other alterations. True transparent background. No grid or labels.",
+    "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a11e3f-076c-7c42-b70d-623e1426ef4b\\exec-23c10bd4-cb0a-4c7c-9a86-b93b3ae1efb9.png"
+  },
+  {
+    "key": "nyoro",
+    "kind": "action",
+    "ref": "C:/Users/CB-Me/Documents/GitHub/MOB-DENDEN/assets/residents-v23/nyoro-action.png",
+    "prompt": "Precisely edit this existing 4x4 sixteen-frame game sprite atlas. Keep EVERY frame, pose, framing, scale, clothing, eyes, glasses, hands, legs, transparency, sprite positions and composition unchanged. ONLY fix mouths: ALL SIXTEEN characters must have their mouths fully CLOSED. Remove every open mouth cavity, tongue, teeth, round yawning mouth and open laugh. Reconstruct the original face color and use the same simple CLOSED mouth line as the neutral frames. For the yellow lower face character, keep that yellow face field smooth; its zigzag upper boundary is NOT an open mouth. All talking, eating, yawning, celebrating and sleeping poses still have CLOSED mouths. No other alterations. True transparent background. No grid or labels.",
+    "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a11e3f-076c-7c42-b70d-623e1426ef4b\\exec-fe8c9a02-7c7c-47c7-b824-bd0047eb1de6.png"
+  },
+  {
+    "key": "nyoro",
+    "kind": "town",
+    "ref": "C:/Users/CB-Me/Documents/GitHub/MOB-DENDEN/assets/residents-v23/nyoro-town.png",
+    "prompt": "Precisely edit this existing 4x4 sixteen-frame game sprite atlas. Keep EVERY frame, pose, framing, scale, clothing, eyes, glasses, hands, legs, transparency, sprite positions and composition unchanged. ONLY fix mouths: ALL SIXTEEN characters must have their mouths fully CLOSED. Remove every open mouth cavity, tongue, teeth, round yawning mouth and open laugh. Reconstruct the original face color and use the same simple CLOSED mouth line as the neutral frames. For the yellow lower face character, keep that yellow face field smooth; its zigzag upper boundary is NOT an open mouth. All talking, eating, yawning, celebrating and sleeping poses still have CLOSED mouths. No other alterations. True transparent background. No grid or labels.",
+    "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a11e3f-076c-7c42-b70d-623e1426ef4b\\exec-62ffbd7c-e718-4893-8ec0-032b675e93a4.png"
+  },
+  {
+    "key": "irukaeru",
+    "kind": "life",
+    "ref": "C:/Users/CB-Me/Documents/GitHub/MOB-DENDEN/assets/residents-v23/irukaeru-life.png",
+    "prompt": "Precisely edit this existing 4x4 sixteen-frame game sprite atlas. Keep EVERY frame, pose, framing, scale, clothing, eyes, glasses, hands, legs, transparency, sprite positions and composition unchanged. ONLY fix mouths: ALL SIXTEEN characters must have their mouths fully CLOSED. Remove every open mouth cavity, tongue, teeth, round yawning mouth and open laugh. Reconstruct the original face color and use the same simple CLOSED mouth line as the neutral frames. For the yellow lower face character, keep that yellow face field smooth; its zigzag upper boundary is NOT an open mouth. All talking, eating, yawning, celebrating and sleeping poses still have CLOSED mouths. No other alterations. True transparent background. No grid or labels.",
+    "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a11e3f-076c-7c42-b70d-623e1426ef4b\\exec-40553fee-8295-4f2e-a8c7-af2e233e8c6e.png"
+  },
+  {
+    "key": "irukaeru",
+    "kind": "action",
+    "ref": "C:/Users/CB-Me/Documents/GitHub/MOB-DENDEN/assets/residents-v23/irukaeru-action.png",
+    "prompt": "Precisely edit this existing 4x4 sixteen-frame game sprite atlas. Keep EVERY frame, pose, framing, scale, clothing, eyes, glasses, hands, legs, transparency, sprite positions and composition unchanged. ONLY fix mouths: ALL SIXTEEN characters must have their mouths fully CLOSED. Remove every open mouth cavity, tongue, teeth, round yawning mouth and open laugh. Reconstruct the original face color and use the same simple CLOSED mouth line as the neutral frames. For the yellow lower face character, keep that yellow face field smooth; its zigzag upper boundary is NOT an open mouth. All talking, eating, yawning, celebrating and sleeping poses still have CLOSED mouths. No other alterations. True transparent background. No grid or labels.",
+    "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a11e3f-076c-7c42-b70d-623e1426ef4b\\exec-acf090d6-0ce4-4e9c-9254-30fd057776bc.png"
+  }
+]

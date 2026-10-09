@@ -1,0 +1,63 @@
+{
+  "checks": [
+    {
+      "direction": "front",
+      "frame": 2,
+      "filter": true
+    },
+    {
+      "direction": "front",
+      "frame": 3,
+      "filter": true
+    },
+    {
+      "direction": "left",
+      "frame": 4,
+      "filter": true
+    },
+    {
+      "direction": "left",
+      "frame": 5,
+      "filter": true
+    },
+    {
+      "direction": "right",
+      "frame": 6,
+      "filter": true
+    },
+    {
+      "direction": "right",
+      "frame": 7,
+      "filter": true
+    },
+    {
+      "direction": "back",
+      "frame": 8,
+      "filter": true
+    },
+    {
+      "direction": "back",
+      "frame": 9,
+      "filter": true
+    }
+  ],
+  "dimensions": [
+    512,
+    512,
+    512,
+    512,
+    512,
+    512,
+    512,
+    512,
+    512,
+    512,
+    512,
+    512,
+    512,
+    512,
+    512,
+    512
+  ],
+  "otherCanvas": 512
+}

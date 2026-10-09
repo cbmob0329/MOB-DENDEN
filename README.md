@@ -1,12 +1,14 @@
-# MOB CHILL LIFE — V21
+# MOB CHILL LIFE — V23
 
 公開版: https://cbmob0329.github.io/MOB-DENDEN/
 
-V21ではシェアハウス2階、MOB PLAY、MOB SHOPと店主モブミータ（尻尾なし）を追加。ネコクーの口調とプレイヤー用レースも改善しました。操作・検証範囲は [V21報告](V21_EXPANSION_REPORT.md) を参照。V21はローカル更新で、公開版への反映は未実施。iPhone実機Safariは未確認。
+V23では住人を滑らかなカートゥーンへ描き直し、モブマニー、ショップ限定フィギュア8種類、酒場を追加しました。操作と検証は [V23報告](V23_RESIDENTS_AND_TAVERN_REPORT.md) を参照。
 
-配布ZIPの保存先は `C:/Users/CB-Me/Documents/MOB-CHILL-LIFE-Distribution/MOB_CHILL_LIFE_V15_1.zip`。ファイル名は旧版のまま、内容はV21。更新には `node package-distribution.cjs` を使い、ZIPはGitへ追加しない。
+V22ではミータの歩行、他の住民の描画品質、ショップの商品補充・接客・住民の買い物と会話、吹き出しを改善しました。操作と検証範囲は [V22報告](V22_SHOP_AND_SPRITES_REPORT.md) を参照。V21の増築とゲームは [V21報告](V21_EXPANSION_REPORT.md)。V22はローカル更新で、公開版への反映は未実施。iPhone実機Safariは未確認。
 
-起動：**MOB_CHILL_LIFE.html**。編集用：index.html。再生成：node build.cjs。
+配布ZIPの保存先は `C:/Users/CB-Me/Documents/MOB-CHILL-LIFE-Distribution/MOB_CHILL_LIFE_V15_1.zip`。ファイル名は旧版のまま、内容はV23。更新には `node package-distribution.cjs` を使い、ZIPはGitへ追加しない。
+
+起動：**MOB_CHILL_LIFE.html**。編集用：index.html。再生成：node build.cjs の後、node verification-v23/optimize-standalone.cjs。
 
 ## V8時点の変更・操作記録
 

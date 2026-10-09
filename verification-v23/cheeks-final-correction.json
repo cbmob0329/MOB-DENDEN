@@ -1,0 +1,6 @@
+{
+  "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a11e3f-076c-7c42-b70d-623e1426ef4b\\exec-d0df02fb-46bc-4e56-967d-adaa76a4d954.png",
+  "prompt": "Precise expression correction for game sprite sheet. Image1 is the EXACT authoritative mouth/expression reference (small pixel character with hands on cheeks). Image2 is edit target smooth16frame4x4 atlas. Preserve ALL16 poses/grid/scale/outfits/sunglasses/hands/transparency of image2. Change ONLY mouths in frames4-13 to faithfully reproduce image1: cute broad gently wavy smiling upper lip, central VERY SMALL opening shaped like shallow rounded inverted triangle / tiny catlike happy smile with a subtle pink-red inner triangle. The mouth is a SMILE, NOT a round O, NOT oval gasp, NOT puckered lips, NOT big gaping mouth, no teeth. Study image1 mouth shape carefully: cheerful curvy sides and tiny pink center. Frames1-3 and14-16 stay closed wavy smiles. Retain smooth clean cartoon illustration rather than pixels. No text or extra objects.",
+  "reference": "D:/GitHub/MOB-DENDEN/assets/denden/cheer_cheeks.png",
+  "tool": "built-in image_gen"
+}

@@ -1,0 +1,13 @@
+{
+  "result": {
+    "actors": 8,
+    "cheeks": 9,
+    "tables": 6,
+    "chairs": 12,
+    "plates": 12,
+    "figures": 8,
+    "frameCount": 544
+  },
+  "bytes": 99046893,
+  "errors": []
+}

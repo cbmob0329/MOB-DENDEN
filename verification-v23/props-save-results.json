@@ -1,0 +1,30 @@
+{
+  "seats": [
+    {
+      "key": "tetsu",
+      "parked": true,
+      "visible": true,
+      "y": 0,
+      "retrieved": true
+    },
+    {
+      "key": "money",
+      "parked": true,
+      "visible": true,
+      "y": 0,
+      "retrieved": true
+    }
+  ],
+  "practice": {
+    "started": true,
+    "swing": true,
+    "visible": true,
+    "complete": true
+  },
+  "saved": {
+    "player": 2,
+    "money": 1,
+    "stock": 3
+  },
+  "errors": []
+}

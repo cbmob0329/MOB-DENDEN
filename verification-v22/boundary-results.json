@@ -1,0 +1,35 @@
+{
+  "result": {
+    "cancel": {
+      "room": "shop",
+      "height": 0,
+      "claim": false,
+      "path": 0
+    },
+    "fail": {
+      "ok": false,
+      "reason": "save-failed"
+    },
+    "rollback": true,
+    "success": {
+      "ok": true
+    },
+    "double": {
+      "ok": false,
+      "reason": "no-item"
+    },
+    "empty": {
+      "ok": false,
+      "reason": "empty"
+    },
+    "restock": {
+      "ok": true,
+      "count": 1,
+      "cost": 1
+    },
+    "reserved": true,
+    "own": true,
+    "released": true
+  },
+  "errors": []
+}

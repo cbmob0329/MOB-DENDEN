@@ -44,6 +44,24 @@ async function main() {
     const local = path.join(repo, 'verification-v21', file);
     if (fs.statSync(local).isFile()) zip.file('verification-v21/' + file, fs.readFileSync(local));
   }
+  for (const file of ['shop-life-v22.js', 'assets/mita-v21/poses-walk-v22.png']) zip.file('runtime-reference/' + file, fs.readFileSync(path.join(repo, file)));
+  zip.file('V22_SHOP_AND_SPRITES_REPORT.md', fs.readFileSync(path.join(repo, 'V22_SHOP_AND_SPRITES_REPORT.md')));
+  for (const file of fs.readdirSync(path.join(repo, 'verification-v22'))) {
+    if (file === 'package-proof.json') continue;
+    const local = path.join(repo, 'verification-v22', file);
+    if (fs.statSync(local).isFile()) zip.file('verification-v22/' + file, fs.readFileSync(local));
+  }
+  for (const file of ['residents-v23.js', 'tavern-v23.js', 'assets/residents-v23.js', 'assets/shop-figures-v23.js']) zip.file('runtime-reference/' + file, fs.readFileSync(path.join(repo, file)));
+  for (const dir of ['assets/residents-v23', 'assets/shop-figures-v23']) for (const file of fs.readdirSync(path.join(repo, dir))) {
+    const local = path.join(repo, dir, file);
+    if (fs.statSync(local).isFile()) zip.file('runtime-reference/' + dir + '/' + file, fs.readFileSync(local));
+  }
+  zip.file('V23_RESIDENTS_AND_TAVERN_REPORT.md', fs.readFileSync(path.join(repo, 'V23_RESIDENTS_AND_TAVERN_REPORT.md')));
+  for (const file of fs.readdirSync(path.join(repo, 'verification-v23'))) {
+    if (file === 'package-proof.json') continue;
+    const local = path.join(repo, 'verification-v23', file);
+    if (fs.statSync(local).isFile()) zip.file('verification-v23/' + file, fs.readFileSync(local));
+  }
   const bytes = await zip.generateAsync({ type: 'nodebuffer', compression: 'DEFLATE', compressionOptions: { level: 6 } });
   const check = await JSZip.loadAsync(bytes);
   const packed = check.file('MOB_CHILL_LIFE.html');
@@ -53,6 +71,8 @@ async function main() {
   fs.writeFileSync(pending, bytes);
   if (hash(fs.readFileSync(pending)) !== hash(bytes)) throw Error('Archive write mismatch');
   fs.renameSync(pending, output);
-  console.log(JSON.stringify({ output, bytes: bytes.length, sha256: hash(bytes), htmlBytes: html.length, htmlSha256: hash(html), mainMatches: true }, null, 2));
+  const proof = { output, bytes: bytes.length, sha256: hash(bytes), htmlBytes: html.length, htmlSha256: hash(html), mainMatches: true };
+  fs.writeFileSync(path.join(repo, 'verification-v23/package-proof.json'), JSON.stringify(proof, null, 2));
+  console.log(JSON.stringify(proof, null, 2));
 }
 main().catch(error => { console.error(error); process.exitCode = 1; });

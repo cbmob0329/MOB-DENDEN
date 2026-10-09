@@ -1,0 +1,64 @@
+{
+  "result": {
+    "restock": {
+      "r": {
+        "ok": true
+      },
+      "fail": {
+        "ok": false,
+        "reason": "save-failed"
+      },
+      "rolled": true,
+      "poor": {
+        "ok": false,
+        "reason": "hearts"
+      }
+    },
+    "beforeCashier": {
+      "buy": {
+        "ok": false,
+        "reason": "no-item"
+      },
+      "walking": true
+    },
+    "buy": {
+      "r": {
+        "ok": true
+      },
+      "again": {
+        "ok": false,
+        "reason": "no-item"
+      },
+      "stockDelta": 1,
+      "heartDelta": 4,
+      "countDelta": 1,
+      "mita": [
+        130.7,
+        0,
+        -0.25
+      ]
+    },
+    "npc": {
+      "start": true,
+      "stages": [
+        "shelf",
+        "browse",
+        "counter",
+        "wait",
+        "thanks",
+        "return"
+      ],
+      "finished": true,
+      "room": "home",
+      "stockDelta": 1,
+      "heartDelta": 0,
+      "countDelta": 1
+    },
+    "ui": {
+      "productLabels": 0,
+      "townLabels": 0,
+      "bubble": "1"
+    }
+  },
+  "errors": []
+}

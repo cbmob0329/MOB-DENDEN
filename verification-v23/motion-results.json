@@ -1,0 +1,121 @@
+{
+  "result": {
+    "turnjoy": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "dance": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "taso": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "cheeks": 8,
+    "legacy": [
+      {
+        "key": "denden",
+        "old": 0
+      },
+      {
+        "key": "pink",
+        "old": 0
+      },
+      {
+        "key": "nyoro",
+        "old": 0
+      },
+      {
+        "key": "irukaeru",
+        "old": 0
+      },
+      {
+        "key": "tetsu",
+        "old": 0
+      },
+      {
+        "key": "nekokoo",
+        "old": 0
+      },
+      {
+        "key": "money",
+        "old": 0
+      }
+    ],
+    "scale": [
+      {
+        "key": "denden",
+        "scale": 1.9
+      },
+      {
+        "key": "pink",
+        "scale": 1.9
+      },
+      {
+        "key": "nyoro",
+        "scale": 1.9
+      },
+      {
+        "key": "irukaeru",
+        "scale": 1.9
+      },
+      {
+        "key": "tetsu",
+        "scale": 1.9
+      },
+      {
+        "key": "nekokoo",
+        "scale": 1.9
+      },
+      {
+        "key": "money",
+        "scale": 1.9
+      }
+    ],
+    "homeVisible": true
+  },
+  "errors": []
+}

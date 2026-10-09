@@ -1,0 +1,18 @@
+[
+  {
+    "kind": "turnjoy",
+    "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a11e3f-076c-7c42-b70d-623e1426ef4b\\exec-9bd97c2b-23f4-402b-9da8-d0bca3971f3b.png",
+    "prompt": "Create a production transparent sprite atlas, exactly16 full body frames in strict4x4 grid, isolated generous gutters, consistent scale, no shadows, no lettering. Smooth clean cartoon ink/cel shading matches reference2 denden-walk, not pixelart. Yellow chibi lizard pink cat-ear zip hoodie black round sunglasses yellow hands feet short yellow tail. ALL mouths closed thin wavy smile; no mouth cavity tongue teeth. Reference1 is exact pose sequence to recreate in smoother reference2 style. ALL16 poses face BACK, arms bent outward palms up, feet step and hips/tail sway left-right. Only frame7 looks over LEFT shoulder toward camera, frame12 over RIGHT shoulder, frame14 over LEFT shoulder. Body stays mostly back-facing even in those3 frames. This is happy peek-back dance, NOT a full spin. Match source16 poses in reading order."
+  },
+  {
+    "kind": "cheeks",
+    "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a11e3f-076c-7c42-b70d-623e1426ef4b\\exec-4667b87f-ab77-4cd4-af0b-64511811335e.png",
+    "prompt": "Create a production transparent sprite atlas, exactly16 full body frames in strict4x4 grid, isolated generous gutters, consistent scale, no shadows, no lettering. Smooth clean cartoon ink/cel shading matches reference2 denden-walk, not pixelart. Yellow chibi lizard pink cat-ear zip hoodie black round sunglasses yellow hands feet short yellow tail. ALL mouths closed thin wavy smile; no mouth cavity tongue teeth. Reference1 is exact iconic happy pose: front-facing both yellow palms touching cheeks under sunglasses, elbows outward, feet together, closed wavy smile. Create16 subtle consecutive frames:1-4 raise both hands from waist to cheeks;5-12 hold BOTH hands against cheeks with tiny happy bounces/head tilts;13-16 gradually relax to starting pose. Clearly palms touch cheeks, no clapping, no shouting. Happy delighted expression without opening mouth.",
+    "editPrompt": "Edit ONLY expression of this transparent4x4 sixteen-frame smooth sprite atlas. Preserve every pose, layout, scale, colors and identity. In frames4 through13 ONLY (where BOTH hands touch cheeks), Denden happily says 'ほぅ～！': make a SMALL round O-shaped open mouth centered below sunglasses, like a delighted soft gasp. No teeth, no long snout; compact rounded face. First3 and last3frames mouth remains closed tiny wavy line. All16 sprites isolated and complete, no text, no shadows. This mouth opening is explicitly allowed only for this happy cheer."
+  },
+  {
+    "kind": "walk",
+    "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a11e3f-076c-7c42-b70d-623e1426ef4b\\exec-b9f517e2-614a-4fdf-95a8-79796fa98f15.png",
+    "prompt": "Edit this game sprite atlas preserving EXACT 4x4 layout, all16 poses, smooth cartoon style, colors, pink cat-ear hoodie, sunglasses, feet and tail, transparent background. Targeted correction: the Denden yellow face MUST be round compact with VERY SHORT FLAT muzzle, NOT a crocodile/snout. In both side-facing rows (row2 left and row3 right), retract the yellow mouth and nose so they protrude only slightly beyond the sunglasses/hood edge. Use a rounded almost flat cheek/chin silhouette and tiny CLOSED wavy smile. No long horizontal nose, no beak, no projecting upper jaw. Preserve all walking foot/arm phases and front/back designs. All mouths stay closed. Exactly16 complete separate sprites, no marks or ground shadows."
+  }
+]
