@@ -1,10 +1,10 @@
-# MOB CHILL LIFE — V20
+# MOB CHILL LIFE — V21
 
 公開版: https://cbmob0329.github.io/MOB-DENDEN/
 
-現在の住民行動・睡眠・バッグ・画像修正と検証範囲は [V20報告](V20_RESIDENT_LIFE_REPORT.md) を参照。2026年10月9日にローカル本体と公開版を再検証済み。iPhone実機Safariは未確認。
+V21ではシェアハウス2階、MOB PLAY、MOB SHOPと店主モブミータ（尻尾なし）を追加。ネコクーの口調とプレイヤー用レースも改善しました。操作・検証範囲は [V21報告](V21_EXPANSION_REPORT.md) を参照。V21はローカル更新で、公開版への反映は未実施。iPhone実機Safariは未確認。
 
-配布ZIPの保存先は `C:/Users/CB-Me/Documents/MOB-CHILL-LIFE-Distribution/MOB_CHILL_LIFE_V15_1.zip`。ファイル名は旧版のまま、内容はV20。更新には `node package-distribution.cjs` を使い、ZIPはGitへ追加しない。
+配布ZIPの保存先は `C:/Users/CB-Me/Documents/MOB-CHILL-LIFE-Distribution/MOB_CHILL_LIFE_V15_1.zip`。ファイル名は旧版のまま、内容はV21。更新には `node package-distribution.cjs` を使い、ZIPはGitへ追加しない。
 
 起動：**MOB_CHILL_LIFE.html**。編集用：index.html。再生成：node build.cjs。
 

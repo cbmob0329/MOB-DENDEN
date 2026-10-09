@@ -1,0 +1,54 @@
+{
+  "result": {
+    "voice": [
+      "オラがネコクーだぞ。",
+      "ひと休みするんだぞ。",
+      "カフェへ行くんだぞ。",
+      "オラも順番を待つんだぞ。",
+      "おいしいんだぞ！",
+      "また来るんだぞ。",
+      "ネコクーうれしいだぞ！",
+      "ネコクー見てんだぞ！",
+      "ネコクー楽しみなんだぞ！"
+    ],
+    "routes": {
+      "start": true,
+      "stairs": true,
+      "use": true,
+      "returned": true,
+      "room": "home",
+      "pos": [
+        8.881784197001252e-16,
+        0,
+        2.0000000000000004
+      ]
+    },
+    "shopping": {
+      "first": {
+        "ok": true
+      },
+      "second": {
+        "ok": false,
+        "reason": "no-item"
+      },
+      "added": 1,
+      "paid": 4,
+      "price": 4
+    },
+    "skateInput": {
+      "lane": -1.2742799999999983,
+      "jump": 0.1158084200000092,
+      "phase": "run"
+    },
+    "kart": {
+      "boost": 0,
+      "lane": 3.65
+    },
+    "mitaSleep": {
+      "stairs": true,
+      "phase": "sleep",
+      "room": "shop2"
+    }
+  },
+  "errors": []
+}

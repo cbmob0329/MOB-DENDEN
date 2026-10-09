@@ -35,6 +35,15 @@ async function main() {
     if (fs.statSync(local).isFile()) zip.file('verification-v20/' + file, fs.readFileSync(local));
   }
   zip.file('runtime-reference/package-distribution.cjs', fs.readFileSync(__filename));
+  for (const file of ['voice-v21.js', 'spaces-v21.js', 'mob-play-v21.js', 'expansion-v21.js', 'expansion-v21.css', 'assets/mita-v21.js', 'assets/mita-v21/manifest.json', 'assets/mita-v21/poses-no-tail.png']) {
+    zip.file('runtime-reference/' + file, fs.readFileSync(path.join(repo, file)));
+  }
+  zip.file('V21_EXPANSION_REPORT.md', fs.readFileSync(path.join(repo, 'V21_EXPANSION_REPORT.md')));
+  for (const file of fs.readdirSync(path.join(repo, 'verification-v21'))) {
+    if (file === 'package-proof.json') continue;
+    const local = path.join(repo, 'verification-v21', file);
+    if (fs.statSync(local).isFile()) zip.file('verification-v21/' + file, fs.readFileSync(local));
+  }
   const bytes = await zip.generateAsync({ type: 'nodebuffer', compression: 'DEFLATE', compressionOptions: { level: 6 } });
   const check = await JSZip.loadAsync(bytes);
   const packed = check.file('MOB_CHILL_LIFE.html');

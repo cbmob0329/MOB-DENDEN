@@ -1,0 +1,27 @@
+{
+  "results": {
+    "legacyRevision": "b39b1b09694ab86f2cb4c0fcd37c73603f4a6031",
+    "migration": {
+      "furnishing": {},
+      "layout": 0,
+      "egg": 42,
+      "wallet": 77,
+      "omelet": 2,
+      "newBags": [
+        {},
+        {}
+      ],
+      "v19": true
+    },
+    "edges": {
+      "full": true,
+      "refused": true,
+      "rolledBack": true,
+      "alternate": true,
+      "sofa": "home2:bed0",
+      "busy": true,
+      "ownerMealDeferred": true
+    }
+  },
+  "errors": []
+}

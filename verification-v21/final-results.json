@@ -1,0 +1,81 @@
+{
+  "results": {
+    "bag": [
+      {
+        "key": "tetsu",
+        "stages": [
+          {
+            "index": 0,
+            "body": true,
+            "bagVisible": true,
+            "itemVisible": true,
+            "gripError": 0
+          },
+          {
+            "index": 1,
+            "body": true,
+            "bagVisible": true,
+            "itemVisible": true,
+            "gripError": 0
+          },
+          {
+            "index": 2,
+            "body": true,
+            "bagVisible": true,
+            "itemVisible": true,
+            "gripError": 0
+          }
+        ]
+      },
+      {
+        "key": "nekokoo",
+        "stages": [
+          {
+            "index": 0,
+            "body": true,
+            "bagVisible": true,
+            "itemVisible": true,
+            "gripError": 0
+          },
+          {
+            "index": 1,
+            "body": true,
+            "bagVisible": true,
+            "itemVisible": true,
+            "gripError": 0
+          },
+          {
+            "index": 2,
+            "body": true,
+            "bagVisible": true,
+            "itemVisible": true,
+            "gripError": 0
+          }
+        ]
+      }
+    ],
+    "returnToDesk": {
+      "start": true,
+      "returned": true,
+      "pos": [
+        31.299464459587696,
+        0,
+        2.8500730282380413
+      ],
+      "desk": true
+    },
+    "cache": {
+      "missing": true,
+      "restored": true
+    },
+    "newSave": {
+      "tetsu": 2,
+      "neko": 3,
+      "moods": [
+        5,
+        4
+      ]
+    }
+  },
+  "errors": []
+}

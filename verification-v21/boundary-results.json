@@ -1,0 +1,104 @@
+{
+  "result": {
+    "shop": {
+      "refused": {
+        "ok": false,
+        "reason": "save-failed"
+      },
+      "unchanged": true,
+      "retry": {
+        "ok": true
+      },
+      "double": {
+        "ok": false,
+        "reason": "no-item"
+      },
+      "poor": {
+        "ok": false,
+        "reason": "hearts"
+      },
+      "full": {
+        "ok": false,
+        "reason": "full"
+      }
+    },
+    "record": {
+      "failure": false,
+      "kept": true,
+      "success": true,
+      "again": true,
+      "time": 42
+    },
+    "sleep": {
+      "starts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "places": [
+        {
+          "phase": "sleep",
+          "id": "home:bed"
+        },
+        {
+          "phase": "sleep",
+          "id": "home2:bed0"
+        },
+        {
+          "phase": "sleep",
+          "id": "home2:bed1"
+        },
+        {
+          "phase": "sleep",
+          "id": "shop2:bed1"
+        },
+        {
+          "phase": "sleep",
+          "id": "home:sofa"
+        },
+        {
+          "phase": "sleep",
+          "id": "cafe:sofa"
+        }
+      ],
+      "mita": {
+        "phase": "sleep",
+        "bed": "shop2:bed0"
+      },
+      "claims": [
+        [
+          "home:bed",
+          0
+        ],
+        [
+          "home2:bed0",
+          1
+        ],
+        [
+          "home2:bed1",
+          2
+        ],
+        [
+          "shop2:bed1",
+          3
+        ],
+        [
+          "home:sofa",
+          4
+        ],
+        [
+          "cafe:sofa",
+          5
+        ],
+        [
+          "shop2:bed0",
+          6
+        ]
+      ]
+    }
+  },
+  "errors": []
+}
