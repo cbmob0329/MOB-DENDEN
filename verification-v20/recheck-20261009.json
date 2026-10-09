@@ -1,0 +1,1540 @@
+{
+  "date": "2026-10-09",
+  "timezone": "Asia/Tokyo",
+  "head": "a0ce6dfa5a0d1dfce9de5eee06271dc3e1e9a5a6",
+  "local": {
+    "final": {
+      "results": {
+        "bag": [
+          {
+            "key": "tetsu",
+            "stages": [
+              {
+                "index": 0,
+                "body": true,
+                "bagVisible": true,
+                "itemVisible": true,
+                "gripError": 0
+              },
+              {
+                "index": 1,
+                "body": true,
+                "bagVisible": true,
+                "itemVisible": true,
+                "gripError": 0
+              },
+              {
+                "index": 2,
+                "body": true,
+                "bagVisible": true,
+                "itemVisible": true,
+                "gripError": 0
+              }
+            ]
+          },
+          {
+            "key": "nekokoo",
+            "stages": [
+              {
+                "index": 0,
+                "body": true,
+                "bagVisible": true,
+                "itemVisible": true,
+                "gripError": 0
+              },
+              {
+                "index": 1,
+                "body": true,
+                "bagVisible": true,
+                "itemVisible": true,
+                "gripError": 0
+              },
+              {
+                "index": 2,
+                "body": true,
+                "bagVisible": true,
+                "itemVisible": true,
+                "gripError": 0
+              }
+            ]
+          }
+        ],
+        "returnToDesk": {
+          "start": true,
+          "returned": true,
+          "pos": [
+            31.299464459587696,
+            0,
+            2.8500730282380413
+          ],
+          "desk": true
+        },
+        "cache": {
+          "missing": true,
+          "restored": true
+        },
+        "newSave": {
+          "tetsu": 2,
+          "neko": 3,
+          "moods": [
+            5,
+            4
+          ]
+        }
+      },
+      "errors": []
+    },
+    "eye-fix": {
+      "results": {
+        "start": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "sleep": {
+          "phase": "sleep",
+          "place": "cafe:chair0",
+          "usesSleep": true
+        },
+        "wake": {
+          "rest": false,
+          "transit": false,
+          "planeVisible": false,
+          "spriteVisible": false,
+          "room": "cafe"
+        },
+        "service": {
+          "deposit": true,
+          "visit": true,
+          "served": true,
+          "frames": [
+            4,
+            1,
+            0
+          ],
+          "states": [
+            "carry",
+            "settle",
+            "lower",
+            "land",
+            "retract"
+          ],
+          "carry": {
+            "idx": 4,
+            "dir": "left",
+            "rest": false
+          },
+          "remaining": {
+            "dorayaki": 0,
+            "omelet": 0,
+            "soup": 2
+          },
+          "rest": false,
+          "sleepSpriteVisible": false,
+          "guest": {
+            "mode": "seated",
+            "room": "cafe"
+          },
+          "seats": [
+            2,
+            4,
+            null
+          ]
+        }
+      },
+      "errors": []
+    },
+    "bgm-navigation": {
+      "results": {
+        "clock": [
+          {
+            "hour": 4.99,
+            "view": "home",
+            "track": "night"
+          },
+          {
+            "hour": 4.99,
+            "view": "cafe",
+            "track": "night"
+          },
+          {
+            "hour": 4.99,
+            "view": "bath",
+            "track": "night"
+          },
+          {
+            "hour": 4.99,
+            "view": "farm",
+            "track": "night"
+          },
+          {
+            "hour": 4.99,
+            "view": "arcade",
+            "track": "night"
+          },
+          {
+            "hour": 4.99,
+            "view": "town",
+            "track": "night"
+          },
+          {
+            "hour": 5,
+            "view": "home",
+            "track": "morning"
+          },
+          {
+            "hour": 5,
+            "view": "cafe",
+            "track": "morning"
+          },
+          {
+            "hour": 5,
+            "view": "bath",
+            "track": "morning"
+          },
+          {
+            "hour": 5,
+            "view": "farm",
+            "track": "morning"
+          },
+          {
+            "hour": 5,
+            "view": "arcade",
+            "track": "morning"
+          },
+          {
+            "hour": 5,
+            "view": "town",
+            "track": "morning"
+          },
+          {
+            "hour": 9.99,
+            "view": "home",
+            "track": "morning"
+          },
+          {
+            "hour": 9.99,
+            "view": "cafe",
+            "track": "morning"
+          },
+          {
+            "hour": 9.99,
+            "view": "bath",
+            "track": "morning"
+          },
+          {
+            "hour": 9.99,
+            "view": "farm",
+            "track": "morning"
+          },
+          {
+            "hour": 9.99,
+            "view": "arcade",
+            "track": "morning"
+          },
+          {
+            "hour": 9.99,
+            "view": "town",
+            "track": "morning"
+          },
+          {
+            "hour": 10,
+            "view": "home",
+            "track": "day"
+          },
+          {
+            "hour": 10,
+            "view": "cafe",
+            "track": "day"
+          },
+          {
+            "hour": 10,
+            "view": "bath",
+            "track": "day"
+          },
+          {
+            "hour": 10,
+            "view": "farm",
+            "track": "day"
+          },
+          {
+            "hour": 10,
+            "view": "arcade",
+            "track": "day"
+          },
+          {
+            "hour": 10,
+            "view": "town",
+            "track": "day"
+          },
+          {
+            "hour": 18.99,
+            "view": "home",
+            "track": "day"
+          },
+          {
+            "hour": 18.99,
+            "view": "cafe",
+            "track": "day"
+          },
+          {
+            "hour": 18.99,
+            "view": "bath",
+            "track": "day"
+          },
+          {
+            "hour": 18.99,
+            "view": "farm",
+            "track": "day"
+          },
+          {
+            "hour": 18.99,
+            "view": "arcade",
+            "track": "day"
+          },
+          {
+            "hour": 18.99,
+            "view": "town",
+            "track": "day"
+          },
+          {
+            "hour": 19,
+            "view": "home",
+            "track": "night"
+          },
+          {
+            "hour": 19,
+            "view": "cafe",
+            "track": "night"
+          },
+          {
+            "hour": 19,
+            "view": "bath",
+            "track": "night"
+          },
+          {
+            "hour": 19,
+            "view": "farm",
+            "track": "night"
+          },
+          {
+            "hour": 19,
+            "view": "arcade",
+            "track": "night"
+          },
+          {
+            "hour": 19,
+            "view": "town",
+            "track": "night"
+          }
+        ],
+        "audio": {
+          "sameElement": true,
+          "sameSource": true,
+          "timeBefore": 0.16,
+          "timeAfter": 0.16,
+          "volume": 0.17,
+          "duration": 101.08
+        },
+        "directions": [
+          {
+            "key": "denden",
+            "dirs": [
+              {
+                "dir": "front",
+                "loaded": true
+              },
+              {
+                "dir": "back",
+                "loaded": true
+              },
+              {
+                "dir": "left",
+                "loaded": true
+              },
+              {
+                "dir": "right",
+                "loaded": true
+              }
+            ]
+          },
+          {
+            "key": "pink",
+            "dirs": [
+              {
+                "dir": "front",
+                "loaded": true
+              },
+              {
+                "dir": "back",
+                "loaded": true
+              },
+              {
+                "dir": "left",
+                "loaded": true
+              },
+              {
+                "dir": "right",
+                "loaded": true
+              }
+            ]
+          },
+          {
+            "key": "nyoro",
+            "dirs": [
+              {
+                "dir": "front",
+                "loaded": true
+              },
+              {
+                "dir": "back",
+                "loaded": true
+              },
+              {
+                "dir": "left",
+                "loaded": true
+              },
+              {
+                "dir": "right",
+                "loaded": true
+              }
+            ]
+          },
+          {
+            "key": "irukaeru",
+            "dirs": [
+              {
+                "dir": "front",
+                "loaded": true
+              },
+              {
+                "dir": "back",
+                "loaded": true
+              },
+              {
+                "dir": "left",
+                "loaded": true
+              },
+              {
+                "dir": "right",
+                "loaded": true
+              }
+            ]
+          },
+          {
+            "key": "tetsu",
+            "dirs": [
+              {
+                "dir": "front",
+                "loaded": true
+              },
+              {
+                "dir": "back",
+                "loaded": true
+              },
+              {
+                "dir": "left",
+                "loaded": true
+              },
+              {
+                "dir": "right",
+                "loaded": true
+              }
+            ]
+          },
+          {
+            "key": "nekokoo",
+            "dirs": [
+              {
+                "dir": "front",
+                "loaded": true
+              },
+              {
+                "dir": "back",
+                "loaded": true
+              },
+              {
+                "dir": "left",
+                "loaded": true
+              },
+              {
+                "dir": "right",
+                "loaded": true
+              }
+            ]
+          }
+        ],
+        "widths": [
+          {
+            "width": 320,
+            "overflow": false,
+            "tabs": [
+              {
+                "label": "あなた",
+                "height": 44
+              },
+              {
+                "label": "デンデン",
+                "height": 44
+              },
+              {
+                "label": "ピンク",
+                "height": 44
+              },
+              {
+                "label": "ニョロ",
+                "height": 44
+              },
+              {
+                "label": "イルカエル",
+                "height": 44
+              },
+              {
+                "label": "テツ",
+                "height": 44
+              },
+              {
+                "label": "ネコクー",
+                "height": 44
+              }
+            ],
+            "dialog": {
+              "x": 10,
+              "y": 118.703125,
+              "width": 300,
+              "height": 606.59375,
+              "top": 118.703125,
+              "right": 310,
+              "bottom": 725.296875,
+              "left": 10
+            }
+          },
+          {
+            "width": 390,
+            "overflow": false,
+            "tabs": [
+              {
+                "label": "あなた",
+                "height": 44
+              },
+              {
+                "label": "デンデン",
+                "height": 44
+              },
+              {
+                "label": "ピンク",
+                "height": 44
+              },
+              {
+                "label": "ニョロ",
+                "height": 44
+              },
+              {
+                "label": "イルカエル",
+                "height": 44
+              },
+              {
+                "label": "テツ",
+                "height": 44
+              },
+              {
+                "label": "ネコクー",
+                "height": 44
+              }
+            ],
+            "dialog": {
+              "x": 10,
+              "y": 114.703125,
+              "width": 370,
+              "height": 614.59375,
+              "top": 114.703125,
+              "right": 380,
+              "bottom": 729.296875,
+              "left": 10
+            }
+          },
+          {
+            "width": 430,
+            "overflow": false,
+            "tabs": [
+              {
+                "label": "あなた",
+                "height": 44
+              },
+              {
+                "label": "デンデン",
+                "height": 44
+              },
+              {
+                "label": "ピンク",
+                "height": 44
+              },
+              {
+                "label": "ニョロ",
+                "height": 44
+              },
+              {
+                "label": "イルカエル",
+                "height": 44
+              },
+              {
+                "label": "テツ",
+                "height": 44
+              },
+              {
+                "label": "ネコクー",
+                "height": 44
+              }
+            ],
+            "dialog": {
+              "x": 10,
+              "y": 114.703125,
+              "width": 410,
+              "height": 614.59375,
+              "top": 114.703125,
+              "right": 420,
+              "bottom": 729.296875,
+              "left": 10
+            }
+          }
+        ]
+      },
+      "errors": []
+    },
+    "extended": {
+      "results": {
+        "race": {
+          "started": true,
+          "raced": true,
+          "finished": true,
+          "actors": [
+            {
+              "key": "tetsu",
+              "mode": null,
+              "pos": [
+                8.881784197001252e-16,
+                0,
+                2.0000000000000004
+              ]
+            },
+            {
+              "key": "nekokoo",
+              "mode": null,
+              "pos": [
+                31.1,
+                0,
+                0.8
+              ]
+            }
+          ],
+          "history": [
+            {
+              "id": 1,
+              "kind": "race",
+              "owner": "4",
+              "paid": 0,
+              "status": "complete",
+              "prize": null,
+              "winner": "4"
+            }
+          ]
+        },
+        "walk": [
+          {
+            "key": "tetsu",
+            "moved": 0.5099019513592782,
+            "states": [
+              "moving:window"
+            ],
+            "direction": "left",
+            "frame": 5
+          },
+          {
+            "key": "nekokoo",
+            "moved": 0.5099999999999998,
+            "states": [
+              "idle:walk"
+            ],
+            "direction": "back",
+            "frame": 3
+          }
+        ],
+        "newSleep": [
+          {
+            "key": "tetsu",
+            "start": true,
+            "place": "home:bed",
+            "phase": "sleep",
+            "correctTexture": true
+          },
+          {
+            "key": "nekokoo",
+            "start": true,
+            "place": "home:bed",
+            "phase": "sleep",
+            "correctTexture": true
+          }
+        ],
+        "night": [
+          {
+            "key": "denden",
+            "phase": "sleep",
+            "place": "home:bed",
+            "mode": null,
+            "state": "idle"
+          },
+          {
+            "key": "pink",
+            "phase": "sleep",
+            "place": "home:sofa",
+            "mode": null,
+            "state": "idle"
+          },
+          {
+            "key": "nyoro",
+            "phase": "sleep",
+            "place": "cafe:sofa",
+            "mode": null,
+            "state": "idle"
+          },
+          {
+            "key": "irukaeru",
+            "phase": "sleep",
+            "place": "cafe:chair0",
+            "mode": null,
+            "state": "idle"
+          },
+          {
+            "key": "tetsu",
+            "phase": "sleep",
+            "place": "cafe:chair1",
+            "mode": null,
+            "state": "idle"
+          },
+          {
+            "key": "nekokoo",
+            "phase": "sleep",
+            "place": "bath:recliner0",
+            "mode": null,
+            "state": "idle"
+          }
+        ],
+        "wake": {
+          "claims": 0,
+          "rest": false,
+          "heights": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "errors": []
+    },
+    "sleep": {
+      "results": {
+        "start": [
+          {
+            "key": "denden",
+            "started": true,
+            "place": "home:bed"
+          },
+          {
+            "key": "pink",
+            "started": true,
+            "place": "home:sofa"
+          },
+          {
+            "key": "nyoro",
+            "started": true,
+            "place": "cafe:sofa"
+          },
+          {
+            "key": "irukaeru",
+            "started": true,
+            "place": "cafe:chair0"
+          },
+          {
+            "key": "tetsu",
+            "started": true,
+            "place": "cafe:chair1"
+          },
+          {
+            "key": "nekokoo",
+            "started": true,
+            "place": "bath:recliner0"
+          }
+        ],
+        "sleep": [
+          {
+            "key": "denden",
+            "phase": "sleep",
+            "place": "home:bed",
+            "pos": [
+              3.5,
+              0.9,
+              1.7
+            ],
+            "distance": 0,
+            "texture": true
+          },
+          {
+            "key": "pink",
+            "phase": "sleep",
+            "place": "home:sofa",
+            "pos": [
+              -3.67,
+              0.915,
+              0.04999999999999999
+            ],
+            "distance": 1.3877787807814457e-17,
+            "texture": true
+          },
+          {
+            "key": "nyoro",
+            "phase": "sleep",
+            "place": "cafe:sofa",
+            "pos": [
+              17.2,
+              0.72,
+              -2.82
+            ],
+            "distance": 0,
+            "texture": true
+          },
+          {
+            "key": "irukaeru",
+            "phase": "sleep",
+            "place": "cafe:chair0",
+            "pos": [
+              12,
+              0.48,
+              -1.03
+            ],
+            "distance": 0,
+            "texture": true
+          },
+          {
+            "key": "tetsu",
+            "phase": "sleep",
+            "place": "cafe:chair1",
+            "pos": [
+              14,
+              0.48,
+              -1.03
+            ],
+            "distance": 0,
+            "texture": true
+          },
+          {
+            "key": "nekokoo",
+            "phase": "sleep",
+            "place": "bath:recliner0",
+            "pos": [
+              25.15,
+              0.56,
+              3.65
+            ],
+            "distance": 0,
+            "texture": true
+          }
+        ],
+        "reload": {
+          "egg": 42,
+          "claims": 4,
+          "standingSleep": false,
+          "bags": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "player"
+          ]
+        }
+      },
+      "errors": []
+    },
+    "save-edge": {
+      "results": {
+        "legacyRevision": "b39b1b09694ab86f2cb4c0fcd37c73603f4a6031",
+        "migration": {
+          "furnishing": {},
+          "layout": 0,
+          "egg": 42,
+          "wallet": 77,
+          "omelet": 2,
+          "newBags": [
+            {},
+            {}
+          ],
+          "v19": true
+        },
+        "edges": {
+          "full": true,
+          "refused": true,
+          "rolledBack": true,
+          "alternate": true,
+          "sofa": "home:sofa",
+          "busy": true,
+          "ownerMealDeferred": true
+        }
+      },
+      "errors": []
+    }
+  },
+  "published": {
+    "url": "https://cbmob0329.github.io/MOB-DENDEN/",
+    "files": [
+      {
+        "file": "index.html",
+        "status": 200,
+        "matches": false,
+        "remoteSha256": "a733f742bba5cc0f41756db1609dd6a350eb04862d360c67556e8de9348d13b6",
+        "localSha256": "ca40e1e7e6f5e5107e8c3d7bd75d3404b620727967347575d085c0cc0b0a1249",
+        "normalizedLineEndingsMatch": true
+      },
+      {
+        "file": "life-v20.js",
+        "status": 200,
+        "matches": true,
+        "remoteSha256": "01abb376c639cfe6c1666a0a4cbcd54beba60a9a52e2d7e0d07a586df4564e8c",
+        "localSha256": "01abb376c639cfe6c1666a0a4cbcd54beba60a9a52e2d7e0d07a586df4564e8c"
+      },
+      {
+        "file": "assets/life-v20.js",
+        "status": 200,
+        "matches": true,
+        "remoteSha256": "9c53257df2bde53669798990e9956fb208c3337ff9331d5f0eaacdaa5979659d",
+        "localSha256": "9c53257df2bde53669798990e9956fb208c3337ff9331d5f0eaacdaa5979659d"
+      },
+      {
+        "file": "bgm-v18.js",
+        "status": 200,
+        "matches": true,
+        "remoteSha256": "a7b0100ed0814a564f50925c6d1411e1ff4171d04a88e3f55a40595bd63ce40b",
+        "localSha256": "a7b0100ed0814a564f50925c6d1411e1ff4171d04a88e3f55a40595bd63ce40b"
+      },
+      {
+        "file": "game.js",
+        "status": 200,
+        "matches": false,
+        "remoteSha256": "16e351598350c08bd308f03c097b81c50b8409d676a86be8856a69408cd85e1d",
+        "localSha256": "76d7533eb2ba66ce9c896085990b17504dc59385ee90fadb2d89b612a765899e",
+        "normalizedLineEndingsMatch": true
+      }
+    ],
+    "bgmNavigation": {
+      "results": {
+        "clock": [
+          {
+            "hour": 4.99,
+            "view": "home",
+            "track": "night"
+          },
+          {
+            "hour": 4.99,
+            "view": "cafe",
+            "track": "night"
+          },
+          {
+            "hour": 4.99,
+            "view": "bath",
+            "track": "night"
+          },
+          {
+            "hour": 4.99,
+            "view": "farm",
+            "track": "night"
+          },
+          {
+            "hour": 4.99,
+            "view": "arcade",
+            "track": "night"
+          },
+          {
+            "hour": 4.99,
+            "view": "town",
+            "track": "night"
+          },
+          {
+            "hour": 5,
+            "view": "home",
+            "track": "morning"
+          },
+          {
+            "hour": 5,
+            "view": "cafe",
+            "track": "morning"
+          },
+          {
+            "hour": 5,
+            "view": "bath",
+            "track": "morning"
+          },
+          {
+            "hour": 5,
+            "view": "farm",
+            "track": "morning"
+          },
+          {
+            "hour": 5,
+            "view": "arcade",
+            "track": "morning"
+          },
+          {
+            "hour": 5,
+            "view": "town",
+            "track": "morning"
+          },
+          {
+            "hour": 9.99,
+            "view": "home",
+            "track": "morning"
+          },
+          {
+            "hour": 9.99,
+            "view": "cafe",
+            "track": "morning"
+          },
+          {
+            "hour": 9.99,
+            "view": "bath",
+            "track": "morning"
+          },
+          {
+            "hour": 9.99,
+            "view": "farm",
+            "track": "morning"
+          },
+          {
+            "hour": 9.99,
+            "view": "arcade",
+            "track": "morning"
+          },
+          {
+            "hour": 9.99,
+            "view": "town",
+            "track": "morning"
+          },
+          {
+            "hour": 10,
+            "view": "home",
+            "track": "day"
+          },
+          {
+            "hour": 10,
+            "view": "cafe",
+            "track": "day"
+          },
+          {
+            "hour": 10,
+            "view": "bath",
+            "track": "day"
+          },
+          {
+            "hour": 10,
+            "view": "farm",
+            "track": "day"
+          },
+          {
+            "hour": 10,
+            "view": "arcade",
+            "track": "day"
+          },
+          {
+            "hour": 10,
+            "view": "town",
+            "track": "day"
+          },
+          {
+            "hour": 18.99,
+            "view": "home",
+            "track": "day"
+          },
+          {
+            "hour": 18.99,
+            "view": "cafe",
+            "track": "day"
+          },
+          {
+            "hour": 18.99,
+            "view": "bath",
+            "track": "day"
+          },
+          {
+            "hour": 18.99,
+            "view": "farm",
+            "track": "day"
+          },
+          {
+            "hour": 18.99,
+            "view": "arcade",
+            "track": "day"
+          },
+          {
+            "hour": 18.99,
+            "view": "town",
+            "track": "day"
+          },
+          {
+            "hour": 19,
+            "view": "home",
+            "track": "night"
+          },
+          {
+            "hour": 19,
+            "view": "cafe",
+            "track": "night"
+          },
+          {
+            "hour": 19,
+            "view": "bath",
+            "track": "night"
+          },
+          {
+            "hour": 19,
+            "view": "farm",
+            "track": "night"
+          },
+          {
+            "hour": 19,
+            "view": "arcade",
+            "track": "night"
+          },
+          {
+            "hour": 19,
+            "view": "town",
+            "track": "night"
+          }
+        ],
+        "audio": {
+          "sameElement": true,
+          "sameSource": true,
+          "timeBefore": 0.16,
+          "timeAfter": 0.16,
+          "volume": 0.17,
+          "duration": 101.08
+        },
+        "directions": [
+          {
+            "key": "denden",
+            "dirs": [
+              {
+                "dir": "front",
+                "loaded": true
+              },
+              {
+                "dir": "back",
+                "loaded": true
+              },
+              {
+                "dir": "left",
+                "loaded": true
+              },
+              {
+                "dir": "right",
+                "loaded": true
+              }
+            ]
+          },
+          {
+            "key": "pink",
+            "dirs": [
+              {
+                "dir": "front",
+                "loaded": true
+              },
+              {
+                "dir": "back",
+                "loaded": true
+              },
+              {
+                "dir": "left",
+                "loaded": true
+              },
+              {
+                "dir": "right",
+                "loaded": true
+              }
+            ]
+          },
+          {
+            "key": "nyoro",
+            "dirs": [
+              {
+                "dir": "front",
+                "loaded": true
+              },
+              {
+                "dir": "back",
+                "loaded": true
+              },
+              {
+                "dir": "left",
+                "loaded": true
+              },
+              {
+                "dir": "right",
+                "loaded": true
+              }
+            ]
+          },
+          {
+            "key": "irukaeru",
+            "dirs": [
+              {
+                "dir": "front",
+                "loaded": true
+              },
+              {
+                "dir": "back",
+                "loaded": true
+              },
+              {
+                "dir": "left",
+                "loaded": true
+              },
+              {
+                "dir": "right",
+                "loaded": true
+              }
+            ]
+          },
+          {
+            "key": "tetsu",
+            "dirs": [
+              {
+                "dir": "front",
+                "loaded": true
+              },
+              {
+                "dir": "back",
+                "loaded": true
+              },
+              {
+                "dir": "left",
+                "loaded": true
+              },
+              {
+                "dir": "right",
+                "loaded": true
+              }
+            ]
+          },
+          {
+            "key": "nekokoo",
+            "dirs": [
+              {
+                "dir": "front",
+                "loaded": true
+              },
+              {
+                "dir": "back",
+                "loaded": true
+              },
+              {
+                "dir": "left",
+                "loaded": true
+              },
+              {
+                "dir": "right",
+                "loaded": true
+              }
+            ]
+          }
+        ],
+        "widths": [
+          {
+            "width": 320,
+            "overflow": false,
+            "tabs": [
+              {
+                "label": "あなた",
+                "height": 44
+              },
+              {
+                "label": "デンデン",
+                "height": 44
+              },
+              {
+                "label": "ピンク",
+                "height": 44
+              },
+              {
+                "label": "ニョロ",
+                "height": 44
+              },
+              {
+                "label": "イルカエル",
+                "height": 44
+              },
+              {
+                "label": "テツ",
+                "height": 44
+              },
+              {
+                "label": "ネコクー",
+                "height": 44
+              }
+            ],
+            "dialog": {
+              "x": 10,
+              "y": 118.703125,
+              "width": 300,
+              "height": 606.59375,
+              "top": 118.703125,
+              "right": 310,
+              "bottom": 725.296875,
+              "left": 10
+            }
+          },
+          {
+            "width": 390,
+            "overflow": false,
+            "tabs": [
+              {
+                "label": "あなた",
+                "height": 44
+              },
+              {
+                "label": "デンデン",
+                "height": 44
+              },
+              {
+                "label": "ピンク",
+                "height": 44
+              },
+              {
+                "label": "ニョロ",
+                "height": 44
+              },
+              {
+                "label": "イルカエル",
+                "height": 44
+              },
+              {
+                "label": "テツ",
+                "height": 44
+              },
+              {
+                "label": "ネコクー",
+                "height": 44
+              }
+            ],
+            "dialog": {
+              "x": 10,
+              "y": 114.703125,
+              "width": 370,
+              "height": 614.59375,
+              "top": 114.703125,
+              "right": 380,
+              "bottom": 729.296875,
+              "left": 10
+            }
+          },
+          {
+            "width": 430,
+            "overflow": false,
+            "tabs": [
+              {
+                "label": "あなた",
+                "height": 44
+              },
+              {
+                "label": "デンデン",
+                "height": 44
+              },
+              {
+                "label": "ピンク",
+                "height": 44
+              },
+              {
+                "label": "ニョロ",
+                "height": 44
+              },
+              {
+                "label": "イルカエル",
+                "height": 44
+              },
+              {
+                "label": "テツ",
+                "height": 44
+              },
+              {
+                "label": "ネコクー",
+                "height": 44
+              }
+            ],
+            "dialog": {
+              "x": 10,
+              "y": 114.703125,
+              "width": 410,
+              "height": 614.59375,
+              "top": 114.703125,
+              "right": 420,
+              "bottom": 729.296875,
+              "left": 10
+            }
+          }
+        ]
+      },
+      "errors": []
+    },
+    "extended": {
+      "results": {
+        "race": {
+          "started": true,
+          "raced": true,
+          "finished": true,
+          "actors": [
+            {
+              "key": "tetsu",
+              "mode": null,
+              "pos": [
+                8.881784197001252e-16,
+                0,
+                2.0000000000000004
+              ]
+            },
+            {
+              "key": "nekokoo",
+              "mode": null,
+              "pos": [
+                31.1,
+                0,
+                0.8
+              ]
+            }
+          ],
+          "history": [
+            {
+              "id": 1,
+              "kind": "race",
+              "owner": "4",
+              "paid": 0,
+              "status": "complete",
+              "prize": null,
+              "winner": "4"
+            }
+          ]
+        },
+        "walk": [
+          {
+            "key": "tetsu",
+            "moved": 3.75953615126365,
+            "states": [
+              "idle:walk"
+            ],
+            "direction": "right",
+            "frame": 7
+          },
+          {
+            "key": "nekokoo",
+            "moved": 0.5099999999999998,
+            "states": [
+              "idle:walk"
+            ],
+            "direction": "back",
+            "frame": 3
+          }
+        ],
+        "newSleep": [
+          {
+            "key": "tetsu",
+            "start": true,
+            "place": "home:bed",
+            "phase": "sleep",
+            "correctTexture": true
+          },
+          {
+            "key": "nekokoo",
+            "start": true,
+            "place": "home:bed",
+            "phase": "sleep",
+            "correctTexture": true
+          }
+        ],
+        "night": [
+          {
+            "key": "denden",
+            "phase": "sleep",
+            "place": "home:bed",
+            "mode": null,
+            "state": "idle"
+          },
+          {
+            "key": "pink",
+            "phase": "sleep",
+            "place": "home:sofa",
+            "mode": null,
+            "state": "idle"
+          },
+          {
+            "key": "nyoro",
+            "phase": "sleep",
+            "place": "cafe:sofa",
+            "mode": null,
+            "state": "idle"
+          },
+          {
+            "key": "irukaeru",
+            "phase": "sleep",
+            "place": "cafe:chair0",
+            "mode": null,
+            "state": "idle"
+          },
+          {
+            "key": "tetsu",
+            "phase": "sleep",
+            "place": "cafe:chair1",
+            "mode": null,
+            "state": "idle"
+          },
+          {
+            "key": "nekokoo",
+            "phase": "sleep",
+            "place": "bath:recliner0",
+            "mode": null,
+            "state": "idle"
+          }
+        ],
+        "wake": {
+          "claims": 0,
+          "rest": false,
+          "heights": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "errors": []
+    }
+  },
+  "distribution": {
+    "file": "C:/Users/CB-Me/Documents/MOB-CHILL-LIFE-Distribution/MOB_CHILL_LIFE_V15_1.zip",
+    "htmlBytes": 99238319,
+    "htmlMiB": 94.64103603363037,
+    "zipBytes": 111440985,
+    "htmlSha256": "9f74d93789ea7a3ee12065501eb1bca234e864c30e53ed5e8fb77825efc76be1",
+    "packagedSha256": "9f74d93789ea7a3ee12065501eb1bca234e864c30e53ed5e8fb77825efc76be1",
+    "matches": true
+  },
+  "limitations": [
+    "Edge only; no physical iPhone/Safari",
+    "No listening test",
+    "No full asset audit"
+  ],
+  "proofDirectory": "C:/Users/CB-Me/.codex/visualizations/2026/10/09/01a11e3f-076c-7c42-b70d-623e1426ef4b/chill-proof"
+}

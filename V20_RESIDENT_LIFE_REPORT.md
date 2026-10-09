@@ -1,5 +1,17 @@
 # MOB CHILL LIFE V20 — 住人の行動・入室・バッグ・睡眠
 
+## 2026年10月9日 再検証（日本時間）
+
+以下の旧報告にある「未コミット・未公開」は当時の状態。今回、C側HEADとGitHubのmainが画像修正済みの `a0ce6dfa5a0d1dfce9de5eee06271dc3e1e9a5a6` で一致し、開始時の作業ツリーが空であることを確認した。
+
+- ローカル: `qa-final`、`qa-eye-fix`、`qa-bgm-navigation`、`qa-extended`、`qa-sleep`、修正版 `qa-save-edges` が成功。6人の寝床予約・睡眠・起床、バッグとセーブ、配膳でスープ1個のみ消費、追加住民の移動とレースを再確認。ピンクの丸いフードとイルカエルの横歩き開眼も現行本体から描画して確認。
+- 公開版 https://cbmob0329.github.io/MOB-DENDEN/ で `qa-bgm-navigation` と `qa-extended` を分離したEdge環境で実行し成功。朝昼夜の境界、実音源のデコードと再生時間の進行、施設間での同じAudioの継続、320/390/430pxのバッグUI、移動・レース・睡眠・起床を確認。検証中のpageerrorは0。
+- 公開版の `life-v20.js`、`assets/life-v20.js`、`bgm-v18.js` はローカルとバイト一致。`index.html`、`game.js` は改行コードを正規化すると一致。公開ファイル全件の一致を意味するものではない。
+- 外部配布ZIP内HTMLと現行HTMLはSHA256一致（`9f74d93789ea7a3ee12065501eb1bca234e864c30e53ed5e8fb77825efc76be1`）。本体は99,238,319 bytes / 94.64 MiB。ZIPの更新や再追加はしていない。
+- 移行テストが更新可能な配布ZIPをV19として使用していたため、固定したV19コミット `b39b1b09694ab86f2cb4c0fcd37c73603f4a6031` から読むよう修正。V19町アクションが存在しV20睡眠が存在しないことも検証する。旧セーブの卵42、ハート77、卵焼き2、家具設定を保持し、寝床不足・使用中・保存失敗時の予約取消も成功。`CHILL_PROOF_DIR` で抽出HTMLと結果の保存先を指定可能。
+
+今回の集約証跡: [recheck-20261009.json](verification-v20/recheck-20261009.json)。ゲーム本体・素材の変更、ビルド、commit、push、公開更新は行っていない。Safari実機、実機タッチ、耳での音の確認は未実施。以下は以前の実装報告。
+
 正本: `C:/Users/CB-Me/Documents/GitHub/MOB-DENDEN`。
 開始時HEADはユーザー更新の `b39b1b09694ab86f2cb4c0fcd37c73603f4a6031`、作業差分なし。V18 `87a9c75` とV19の4町アクションは、この時点で既に履歴に含まれていた。今回の変更は全て未ステージ・未コミット。push、以前拒否されたpushの再試行、別プロジェクトの変更は行っていない。
 
