@@ -1,0 +1,202 @@
+{
+  "revision": "0.1",
+  "coordinate_system": {
+    "units": "m",
+    "up": "Z",
+    "front": "Y=0",
+    "back": "+Y"
+  },
+  "character": {
+    "height_with_ears": 1.4,
+    "collision_diameter": 0.64,
+    "visual_width_initial": 1.05
+  },
+  "building": {
+    "width": 8,
+    "depth": 7,
+    "wall": 0.2,
+    "floor_to_floor": 2.6,
+    "ceiling_clear": 2.4,
+    "eave": 5.4,
+    "ridge": 6.4,
+    "roof_type": "soft_hipped",
+    "door_x": [
+      3.2,
+      4.8
+    ],
+    "door_height": 1.9
+  },
+  "stair": {
+    "bounds": [
+      5.2,
+      3.6,
+      7.8,
+      6.8
+    ],
+    "flight_width": 1.2,
+    "divider": 0.2,
+    "rises": 16,
+    "rise": 0.1625,
+    "treads_per_flight": 7,
+    "tread": 0.3,
+    "landing": 1.1
+  },
+  "furniture": [
+    {
+      "id": 1,
+      "floor": 1,
+      "label_ja": "衣服ラック 左",
+      "bounds_xy": [
+        0.35,
+        0.7,
+        1.05,
+        2.6
+      ],
+      "height": 1.25,
+      "use_side": "E"
+    },
+    {
+      "id": 2,
+      "floor": 1,
+      "label_ja": "衣服ラック 右",
+      "bounds_xy": [
+        6.95,
+        0.7,
+        7.65,
+        2.4
+      ],
+      "height": 1.25,
+      "use_side": "W"
+    },
+    {
+      "id": 3,
+      "floor": 1,
+      "label_ja": "接客カウンター",
+      "bounds_xy": [
+        0.6,
+        3.8,
+        2.7,
+        4.5
+      ],
+      "height": 0.78,
+      "use_side": "N/S"
+    },
+    {
+      "id": 4,
+      "floor": 1,
+      "label_ja": "布と道具の収納",
+      "bounds_xy": [
+        0.4,
+        6.1,
+        2.6,
+        6.65
+      ],
+      "height": 1.55,
+      "use_side": "S"
+    },
+    {
+      "id": 5,
+      "floor": 1,
+      "label_ja": "仕立て作業台",
+      "bounds_xy": [
+        3.6,
+        5.85,
+        4.9,
+        6.65
+      ],
+      "height": 0.76,
+      "use_side": "S"
+    },
+    {
+      "id": 6,
+      "floor": 1,
+      "label_ja": "姿見",
+      "bounds_xy": [
+        2.2,
+        0.45,
+        2.9,
+        1.05
+      ],
+      "height": 1.45,
+      "use_side": "N"
+    },
+    {
+      "id": 8,
+      "floor": 2,
+      "label_ja": "ベッド",
+      "bounds_xy": [
+        0.55,
+        4.25,
+        2.05,
+        6.45
+      ],
+      "height": 0.42,
+      "use_side": "E"
+    },
+    {
+      "id": 9,
+      "floor": 2,
+      "label_ja": "衣装棚",
+      "bounds_xy": [
+        3.35,
+        6.15,
+        4.85,
+        6.65
+      ],
+      "height": 1.6,
+      "use_side": "S"
+    },
+    {
+      "id": 10,
+      "floor": 2,
+      "label_ja": "ソファ",
+      "bounds_xy": [
+        0.55,
+        2.1,
+        2.35,
+        2.85
+      ],
+      "height": 0.42,
+      "use_side": "S"
+    },
+    {
+      "id": 11,
+      "floor": 2,
+      "label_ja": "ローテーブル",
+      "bounds_xy": [
+        1.1,
+        0.6,
+        1.9,
+        1.2
+      ],
+      "height": 0.36,
+      "use_side": ""
+    },
+    {
+      "id": 12,
+      "floor": 2,
+      "label_ja": "小机",
+      "bounds_xy": [
+        3.5,
+        0.45,
+        4.8,
+        1.15
+      ],
+      "height": 0.72,
+      "use_side": "N"
+    },
+    {
+      "id": 13,
+      "floor": 2,
+      "label_ja": "ミニキッチン",
+      "bounds_xy": [
+        5.8,
+        0.4,
+        7.55,
+        1.05
+      ],
+      "height": 0.76,
+      "use_side": "N"
+    }
+  ]
+}

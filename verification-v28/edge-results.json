@@ -1,0 +1,63 @@
+{
+  "stairs": {
+    "delta": 0,
+    "action": "sleep"
+  },
+  "entrances": [
+    {
+      "id": "home",
+      "clear": true
+    },
+    {
+      "id": "cafe",
+      "clear": true
+    },
+    {
+      "id": "arcade",
+      "clear": true
+    },
+    {
+      "id": "farm",
+      "clear": true
+    },
+    {
+      "id": "bath",
+      "clear": true
+    },
+    {
+      "id": "shop",
+      "clear": true
+    },
+    {
+      "id": "tavern",
+      "clear": true
+    },
+    {
+      "id": "myhome",
+      "clear": true
+    },
+    {
+      "id": "station",
+      "clear": true
+    }
+  ],
+  "lot": {
+    "position": [
+      8,
+      0,
+      -9
+    ],
+    "overlaps": [],
+    "route": true
+  },
+  "compat": {
+    "walletPreserved": true,
+    "newOwner": "idle",
+    "visitors": null
+  },
+  "bow": {
+    "exists": true,
+    "visible": true
+  },
+  "errors": []
+}

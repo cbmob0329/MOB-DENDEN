@@ -1,0 +1,2 @@
+const fs=require('fs'),path=require('path'),root=path.join(__dirname,'assets/tailor-v28');
+const data={dimensions:JSON.parse(fs.readFileSync(path.join(root,'dimensions.json'),'utf8')),sheets:{}};for(const [name,n]of [['turnaround',2],['walk',4],['life',4]])data.sheets[name]={columns:n,rows:n,url:'data:image/png;base64,'+fs.readFileSync(path.join(root,name+'.png')).toString('base64')};fs.writeFileSync(path.join(__dirname,'assets/tailor-v28.js'),'window.CHILL_TAILOR28='+JSON.stringify(data)+';\n');console.log('Packed tailor: 36 frames and floor-plan dimensions');

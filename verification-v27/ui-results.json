@@ -1,0 +1,18 @@
+{
+  "job": {
+    "id": "0:human:input:1",
+    "owner": "player",
+    "total": 1,
+    "next": 0,
+    "kind": "coin",
+    "value": 1,
+    "input": "L",
+    "angle": -35
+  },
+  "layout": {
+    "height": 536,
+    "overflow": false
+  },
+  "errors": [],
+  "persistedAngle": -35
+}

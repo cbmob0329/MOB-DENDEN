@@ -1,0 +1,141 @@
+{
+  "kind": "design-only 2D geometric precheck",
+  "grid_m": 0.05,
+  "wall_and_tall_furniture_envelope_radius_m": 0.525,
+  "low_furniture_collision_radius_m": 0.32,
+  "stair_arithmetic": true,
+  "furniture_overlaps": false,
+  "routes": [
+    {
+      "floor": 1,
+      "target": "左ラック",
+      "point_xy": [
+        1.65,
+        1.7
+      ],
+      "connected": true
+    },
+    {
+      "floor": 1,
+      "target": "右ラック",
+      "point_xy": [
+        6.35,
+        1.55
+      ],
+      "connected": true
+    },
+    {
+      "floor": 1,
+      "target": "接客の客側",
+      "point_xy": [
+        1.65,
+        3.15
+      ],
+      "connected": true
+    },
+    {
+      "floor": 1,
+      "target": "接客の店主側",
+      "point_xy": [
+        1.65,
+        5.1
+      ],
+      "connected": true
+    },
+    {
+      "floor": 1,
+      "target": "布収納",
+      "point_xy": [
+        1.5,
+        5.5
+      ],
+      "connected": true
+    },
+    {
+      "floor": 1,
+      "target": "仕立て台",
+      "point_xy": [
+        4.25,
+        5.25
+      ],
+      "connected": true
+    },
+    {
+      "floor": 1,
+      "target": "姿見",
+      "point_xy": [
+        2.55,
+        1.65
+      ],
+      "connected": true
+    },
+    {
+      "floor": 1,
+      "target": "階段下",
+      "point_xy": [
+        5.8,
+        3.0
+      ],
+      "connected": true
+    },
+    {
+      "floor": 2,
+      "target": "ベッド横",
+      "point_xy": [
+        2.65,
+        5.25
+      ],
+      "connected": true
+    },
+    {
+      "floor": 2,
+      "target": "衣装棚",
+      "point_xy": [
+        4.1,
+        5.55
+      ],
+      "connected": true
+    },
+    {
+      "floor": 2,
+      "target": "ソファ前",
+      "point_xy": [
+        1.45,
+        1.65
+      ],
+      "connected": true
+    },
+    {
+      "floor": 2,
+      "target": "ローテーブル横",
+      "point_xy": [
+        2.5,
+        0.9
+      ],
+      "connected": true
+    },
+    {
+      "floor": 2,
+      "target": "小机前",
+      "point_xy": [
+        4.15,
+        1.75
+      ],
+      "connected": true
+    },
+    {
+      "floor": 2,
+      "target": "キッチン前",
+      "point_xy": [
+        6.7,
+        1.65
+      ],
+      "connected": true
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "Does not check posed mesh, dynamic ears, skirt, needle or 3D head clearance.",
+    "Stairs traversability and actual furniture contact must be checked in Blender after modeling."
+  ]
+}

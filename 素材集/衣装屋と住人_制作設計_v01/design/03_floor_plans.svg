@@ -1,0 +1,214 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2300" height="1780" viewBox="0 0 2300 1780">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#3D7A95" stroke-width="1.3"/></marker></defs>
+<rect x="0" y="0" width="2300" height="1780" rx="0" fill="#F7F4EE" stroke="none" stroke-width="1" />
+<text x="60" y="70" font-family="Noto Sans CJK JP" font-size="22" font-weight="700" text-anchor="start" fill="#C72E4B" >SHOP-01  /  RESIDENT-01</text>
+<text x="60" y="145" font-family="Noto Sans CJK JP" font-size="54" font-weight="700" text-anchor="start" fill="#282329" >03  一階の店舗と二階の住まい</text>
+<text x="60" y="202" font-family="Noto Sans CJK JP" font-size="27" font-weight="400" text-anchor="start" fill="#746971" >家具は番号で整理。青は移動ルートの目安、緑の破線は家具を使うために空ける場所。</text>
+<text x="2240" y="70" font-family="Noto Sans CJK JP" font-size="22" font-weight="400" text-anchor="end" fill="#746971" >設計案 v0.1  |  2026.10.11</text>
+<text x="135" y="294" font-family="Noto Sans CJK JP" font-size="36" font-weight="700" text-anchor="start" fill="#282329" >1F  接客・陳列・仕立て</text>
+<text x="135" y="342" font-family="Noto Sans CJK JP" font-size="26" font-weight="400" text-anchor="start" fill="#746971" >室内 7.60 × 6.60m  /  階高 2.60m</text>
+<rect x="135" y="410" width="936" height="819" rx="0" fill="#D5CDC1" stroke="#282329" stroke-width="4" />
+<rect x="158.4" y="433.40000000000003" width="889.1999999999999" height="772.1999999999999" rx="0" fill="#FFFEFB" stroke="none" stroke-width="2" />
+<line x1="252" y1="1205.6" x2="252" y2="433.40000000000003" stroke="#EAE5DC" stroke-width="1" />
+<line x1="369" y1="1205.6" x2="369" y2="433.40000000000003" stroke="#EAE5DC" stroke-width="1" />
+<line x1="486" y1="1205.6" x2="486" y2="433.40000000000003" stroke="#EAE5DC" stroke-width="1" />
+<line x1="603" y1="1205.6" x2="603" y2="433.40000000000003" stroke="#EAE5DC" stroke-width="1" />
+<line x1="720" y1="1205.6" x2="720" y2="433.40000000000003" stroke="#EAE5DC" stroke-width="1" />
+<line x1="837" y1="1205.6" x2="837" y2="433.40000000000003" stroke="#EAE5DC" stroke-width="1" />
+<line x1="954" y1="1205.6" x2="954" y2="433.40000000000003" stroke="#EAE5DC" stroke-width="1" />
+<line x1="158.4" y1="1112" x2="1047.6" y2="1112" stroke="#EAE5DC" stroke-width="1" />
+<line x1="158.4" y1="995" x2="1047.6" y2="995" stroke="#EAE5DC" stroke-width="1" />
+<line x1="158.4" y1="878" x2="1047.6" y2="878" stroke="#EAE5DC" stroke-width="1" />
+<line x1="158.4" y1="761" x2="1047.6" y2="761" stroke="#EAE5DC" stroke-width="1" />
+<line x1="158.4" y1="644" x2="1047.6" y2="644" stroke="#EAE5DC" stroke-width="1" />
+<line x1="158.4" y1="527" x2="1047.6" y2="527" stroke="#EAE5DC" stroke-width="1" />
+<rect x="509.40000000000003" y="644.0" width="210.59999999999997" height="561.6" rx="0" fill="#E5F0F4" stroke="none" stroke-width="2" />
+<rect x="269.54999999999995" y="784.4000000000001" width="614.25" height="140.39999999999998" rx="0" fill="#E5F0F4" stroke="none" stroke-width="2" />
+<rect x="720.0" y="807.8" width="163.80000000000004" height="140.40000000000003" rx="0" fill="#E5F0F4" stroke="none" stroke-width="2" />
+<rect x="509.40000000000003" y="1200.92" width="187.19999999999996" height="28.08" rx="0" fill="#FFFEFB" stroke="none" stroke-width="2" />
+<path d="M 603,1275.8000000000002 L 603,995 L 743.4,860.45 L 813.6,878.0" fill="none" stroke="#3D7A95" stroke-width="5" marker-end="url(#arrow)"/>
+<text x="603" y="1308.56" font-family="Noto Sans CJK JP" font-size="25" font-weight="700" text-anchor="middle" fill="#3D7A95" >入口 1.60m</text>
+<rect x="257.85" y="924.8000000000001" width="105.30000000000001" height="222.3" rx="0" fill="none" stroke="#538A79" stroke-width="2.4" stroke-dasharray="9 7"/>
+<rect x="175.95" y="924.8000000000001" width="81.9" height="222.3" rx="0" fill="#F8E7EC" stroke="#282329" stroke-width="2.2" />
+<line x1="189.99" y1="1117.85" x2="243.81" y2="1117.85" stroke="#C72E4B" stroke-width="4" />
+<line x1="189.99" y1="1082.75" x2="243.81" y2="1082.75" stroke="#C72E4B" stroke-width="4" />
+<line x1="189.99" y1="1047.65" x2="243.81" y2="1047.65" stroke="#C72E4B" stroke-width="4" />
+<line x1="189.99" y1="1012.5500000000001" x2="243.81" y2="1012.5500000000001" stroke="#C72E4B" stroke-width="4" />
+<line x1="189.99" y1="977.4499999999999" x2="243.81" y2="977.4499999999999" stroke="#C72E4B" stroke-width="4" />
+<circle cx="216.89999999999998" cy="1035.9499999999998" r="25" fill="#C72E4B" stroke="none" stroke-width="1"/>
+<text x="216.89999999999998" y="1045.9499999999998" font-family="Noto Sans CJK JP" font-size="27" font-weight="700" text-anchor="middle" fill="#fff" >1</text>
+<rect x="842.85" y="948.1999999999999" width="105.30000000000004" height="198.9" rx="0" fill="none" stroke="#538A79" stroke-width="2.4" stroke-dasharray="9 7"/>
+<rect x="948.15" y="948.1999999999999" width="81.90000000000002" height="198.9" rx="0" fill="#F8E7EC" stroke="#282329" stroke-width="2.2" />
+<line x1="962.19" y1="1117.85" x2="1016.01" y2="1117.85" stroke="#C72E4B" stroke-width="4" />
+<line x1="962.19" y1="1082.75" x2="1016.01" y2="1082.75" stroke="#C72E4B" stroke-width="4" />
+<line x1="962.19" y1="1047.65" x2="1016.01" y2="1047.65" stroke="#C72E4B" stroke-width="4" />
+<line x1="962.19" y1="1012.5500000000001" x2="1016.01" y2="1012.5500000000001" stroke="#C72E4B" stroke-width="4" />
+<circle cx="989.1000000000001" cy="1047.65" r="25" fill="#C72E4B" stroke="none" stroke-width="1"/>
+<text x="989.1000000000001" y="1057.65" font-family="Noto Sans CJK JP" font-size="27" font-weight="700" text-anchor="middle" fill="#fff" >2</text>
+<rect x="205.2" y="784.4000000000001" width="245.70000000000002" height="105.29999999999998" rx="0" fill="none" stroke="#538A79" stroke-width="2.4" stroke-dasharray="9 7"/>
+<rect x="205.2" y="585.5" width="245.70000000000002" height="117.0" rx="0" fill="none" stroke="#538A79" stroke-width="2.4" stroke-dasharray="9 7"/>
+<rect x="205.2" y="702.5" width="245.70000000000002" height="81.90000000000002" rx="0" fill="#F6E7BF" stroke="#282329" stroke-width="2.2" />
+<circle cx="328.05" cy="743.4499999999999" r="25" fill="#C72E4B" stroke="none" stroke-width="1"/>
+<text x="328.05" y="753.4499999999999" font-family="Noto Sans CJK JP" font-size="27" font-weight="700" text-anchor="middle" fill="#fff" >3</text>
+<rect x="181.8" y="515.3000000000001" width="257.40000000000003" height="105.30000000000004" rx="0" fill="none" stroke="#538A79" stroke-width="2.4" stroke-dasharray="9 7"/>
+<rect x="181.8" y="450.94999999999993" width="257.40000000000003" height="64.35000000000008" rx="0" fill="#F6E7BF" stroke="#282329" stroke-width="2.2" />
+<circle cx="310.5" cy="483.125" r="25" fill="#C72E4B" stroke="none" stroke-width="1"/>
+<text x="310.5" y="493.125" font-family="Noto Sans CJK JP" font-size="27" font-weight="700" text-anchor="middle" fill="#fff" >4</text>
+<rect x="556.2" y="544.5500000000001" width="152.10000000000002" height="105.30000000000004" rx="0" fill="none" stroke="#538A79" stroke-width="2.4" stroke-dasharray="9 7"/>
+<rect x="556.2" y="450.94999999999993" width="152.10000000000002" height="93.60000000000008" rx="0" fill="#F6E7BF" stroke="#282329" stroke-width="2.2" />
+<circle cx="632.25" cy="497.75" r="25" fill="#C72E4B" stroke="none" stroke-width="1"/>
+<text x="632.25" y="507.75" font-family="Noto Sans CJK JP" font-size="27" font-weight="700" text-anchor="middle" fill="#fff" >5</text>
+<rect x="392.40000000000003" y="1000.85" width="81.89999999999996" height="105.30000000000001" rx="0" fill="none" stroke="#538A79" stroke-width="2.4" stroke-dasharray="9 7"/>
+<rect x="392.40000000000003" y="1106.15" width="81.89999999999996" height="70.20000000000002" rx="0" fill="#F6E7BF" stroke="#282329" stroke-width="2.2" />
+<circle cx="433.34999999999997" cy="1141.25" r="25" fill="#C72E4B" stroke="none" stroke-width="1"/>
+<text x="433.34999999999997" y="1151.25" font-family="Noto Sans CJK JP" font-size="27" font-weight="700" text-anchor="middle" fill="#fff" >6</text>
+<rect x="743.4" y="433.40000000000003" width="304.19999999999993" height="374.4" rx="0" fill="#F0EADF" stroke="#282329" stroke-width="2" />
+<rect x="883.8000000000001" y="562.0999999999999" width="23.399999999999917" height="245.70000000000002" rx="0" fill="#D5CDC1" stroke="#282329" stroke-width="1" />
+<line x1="743.4" y1="807.8" x2="883.8000000000001" y2="807.8" stroke="#746971" stroke-width="2" />
+<line x1="907.1999999999999" y1="807.8" x2="1047.6" y2="807.8" stroke="#746971" stroke-width="2" />
+<line x1="743.4" y1="772.7" x2="883.8000000000001" y2="772.7" stroke="#746971" stroke-width="2" />
+<line x1="907.1999999999999" y1="772.7" x2="1047.6" y2="772.7" stroke="#746971" stroke-width="2" />
+<line x1="743.4" y1="737.5999999999999" x2="883.8000000000001" y2="737.5999999999999" stroke="#746971" stroke-width="2" />
+<line x1="907.1999999999999" y1="737.5999999999999" x2="1047.6" y2="737.5999999999999" stroke="#746971" stroke-width="2" />
+<line x1="743.4" y1="702.5" x2="883.8000000000001" y2="702.5" stroke="#746971" stroke-width="2" />
+<line x1="907.1999999999999" y1="702.5" x2="1047.6" y2="702.5" stroke="#746971" stroke-width="2" />
+<line x1="743.4" y1="667.4000000000001" x2="883.8000000000001" y2="667.4000000000001" stroke="#746971" stroke-width="2" />
+<line x1="907.1999999999999" y1="667.4000000000001" x2="1047.6" y2="667.4000000000001" stroke="#746971" stroke-width="2" />
+<line x1="743.4" y1="632.3000000000001" x2="883.8000000000001" y2="632.3000000000001" stroke="#746971" stroke-width="2" />
+<line x1="907.1999999999999" y1="632.3000000000001" x2="1047.6" y2="632.3000000000001" stroke="#746971" stroke-width="2" />
+<line x1="743.4" y1="597.1999999999999" x2="883.8000000000001" y2="597.1999999999999" stroke="#746971" stroke-width="2" />
+<line x1="907.1999999999999" y1="597.1999999999999" x2="1047.6" y2="597.1999999999999" stroke="#746971" stroke-width="2" />
+<line x1="743.4" y1="562.0999999999999" x2="883.8000000000001" y2="562.0999999999999" stroke="#746971" stroke-width="2" />
+<line x1="907.1999999999999" y1="562.0999999999999" x2="1047.6" y2="562.0999999999999" stroke="#746971" stroke-width="2" />
+<circle cx="895.5" cy="497.75" r="25" fill="#C72E4B" stroke="none" stroke-width="1"/>
+<text x="895.5" y="507.75" font-family="Noto Sans CJK JP" font-size="27" font-weight="700" text-anchor="middle" fill="#fff" >7</text>
+<path d="M 813.6,784.4000000000001 L 813.6,585.5" fill="none" stroke="#3D7A95" stroke-width="4" marker-end="url(#arrow)"/>
+<text x="813.6" y="761.0" font-family="Noto Sans CJK JP" font-size="21" font-weight="700" text-anchor="middle" fill="#3D7A95" >UP</text>
+<line x1="135" y1="383.09" x2="1071" y2="383.09" stroke="#3D7A95" stroke-width="2" />
+<text x="603.0" y="371.09" font-family="Noto Sans CJK JP" font-size="24" font-weight="700" text-anchor="middle" fill="#3D7A95" >8.00m</text>
+<line x1="135" y1="374.09" x2="135" y2="392.09" stroke="#3D7A95" stroke-width="2" />
+<line x1="1071" y1="374.09" x2="1071" y2="392.09" stroke="#3D7A95" stroke-width="2" />
+<line x1="96.39" y1="1229" x2="96.39" y2="410" stroke="#3D7A95" stroke-width="2" />
+<text x="80.39" y="819.5" font-family="Noto Sans CJK JP" font-size="24" font-weight="700" text-anchor="middle" fill="#3D7A95" transform="rotate(-90 80.39 819.5)">7.00m</text>
+<text x="1071" y="335" font-family="Noto Sans CJK JP" font-size="23" font-weight="400" text-anchor="end" fill="#746971" >奥 +Y</text>
+<text x="1071" y="1284" font-family="Noto Sans CJK JP" font-size="23" font-weight="400" text-anchor="end" fill="#746971" >正面 Y=0</text>
+<circle cx="160" cy="1351" r="25" fill="#C72E4B" stroke="none" stroke-width="1"/>
+<text x="160" y="1361" font-family="Noto Sans CJK JP" font-size="27" font-weight="700" text-anchor="middle" fill="#fff" >1</text>
+<text x="201" y="1360" font-family="Noto Sans CJK JP" font-size="28" font-weight="500" text-anchor="start" fill="#282329" >衣服ラック 左</text>
+<circle cx="630" cy="1351" r="25" fill="#C72E4B" stroke="none" stroke-width="1"/>
+<text x="630" y="1361" font-family="Noto Sans CJK JP" font-size="27" font-weight="700" text-anchor="middle" fill="#fff" >2</text>
+<text x="671" y="1360" font-family="Noto Sans CJK JP" font-size="28" font-weight="500" text-anchor="start" fill="#282329" >衣服ラック 右</text>
+<circle cx="160" cy="1419" r="25" fill="#C72E4B" stroke="none" stroke-width="1"/>
+<text x="160" y="1429" font-family="Noto Sans CJK JP" font-size="27" font-weight="700" text-anchor="middle" fill="#fff" >3</text>
+<text x="201" y="1428" font-family="Noto Sans CJK JP" font-size="28" font-weight="500" text-anchor="start" fill="#282329" >接客カウンター</text>
+<circle cx="630" cy="1419" r="25" fill="#C72E4B" stroke="none" stroke-width="1"/>
+<text x="630" y="1429" font-family="Noto Sans CJK JP" font-size="27" font-weight="700" text-anchor="middle" fill="#fff" >4</text>
+<text x="671" y="1428" font-family="Noto Sans CJK JP" font-size="28" font-weight="500" text-anchor="start" fill="#282329" >布と道具の収納</text>
+<circle cx="160" cy="1487" r="25" fill="#C72E4B" stroke="none" stroke-width="1"/>
+<text x="160" y="1497" font-family="Noto Sans CJK JP" font-size="27" font-weight="700" text-anchor="middle" fill="#fff" >5</text>
+<text x="201" y="1496" font-family="Noto Sans CJK JP" font-size="28" font-weight="500" text-anchor="start" fill="#282329" >仕立て作業台</text>
+<circle cx="630" cy="1487" r="25" fill="#C72E4B" stroke="none" stroke-width="1"/>
+<text x="630" y="1497" font-family="Noto Sans CJK JP" font-size="27" font-weight="700" text-anchor="middle" fill="#fff" >6</text>
+<text x="671" y="1496" font-family="Noto Sans CJK JP" font-size="28" font-weight="500" text-anchor="start" fill="#282329" >姿見</text>
+<text x="135" y="1600" font-family="Noto Sans CJK JP" font-size="28" font-weight="400" text-anchor="start" fill="#746971" >07  階段は上下階で同じ位置</text>
+<text x="135" y="1650" font-family="Noto Sans CJK JP" font-size="25" font-weight="400" text-anchor="start" fill="#538A79" >空ける：主通路1.20m以上 / 使用面0.90m以上</text>
+<text x="1280" y="294" font-family="Noto Sans CJK JP" font-size="36" font-weight="700" text-anchor="start" fill="#282329" >2F  本人の寝室・休憩・住居</text>
+<text x="1280" y="342" font-family="Noto Sans CJK JP" font-size="26" font-weight="400" text-anchor="start" fill="#746971" >室内 7.60 × 6.60m  /  階高 2.60m</text>
+<rect x="1280" y="410" width="936" height="819" rx="0" fill="#D5CDC1" stroke="#282329" stroke-width="4" />
+<rect x="1303.4" y="433.40000000000003" width="889.1999999999999" height="772.1999999999999" rx="0" fill="#FFFEFB" stroke="none" stroke-width="2" />
+<line x1="1397" y1="1205.6" x2="1397" y2="433.40000000000003" stroke="#EAE5DC" stroke-width="1" />
+<line x1="1514" y1="1205.6" x2="1514" y2="433.40000000000003" stroke="#EAE5DC" stroke-width="1" />
+<line x1="1631" y1="1205.6" x2="1631" y2="433.40000000000003" stroke="#EAE5DC" stroke-width="1" />
+<line x1="1748" y1="1205.6" x2="1748" y2="433.40000000000003" stroke="#EAE5DC" stroke-width="1" />
+<line x1="1865" y1="1205.6" x2="1865" y2="433.40000000000003" stroke="#EAE5DC" stroke-width="1" />
+<line x1="1982" y1="1205.6" x2="1982" y2="433.40000000000003" stroke="#EAE5DC" stroke-width="1" />
+<line x1="2099" y1="1205.6" x2="2099" y2="433.40000000000003" stroke="#EAE5DC" stroke-width="1" />
+<line x1="1303.4" y1="1112" x2="2192.6" y2="1112" stroke="#EAE5DC" stroke-width="1" />
+<line x1="1303.4" y1="995" x2="2192.6" y2="995" stroke="#EAE5DC" stroke-width="1" />
+<line x1="1303.4" y1="878" x2="2192.6" y2="878" stroke="#EAE5DC" stroke-width="1" />
+<line x1="1303.4" y1="761" x2="2192.6" y2="761" stroke="#EAE5DC" stroke-width="1" />
+<line x1="1303.4" y1="644" x2="2192.6" y2="644" stroke="#EAE5DC" stroke-width="1" />
+<line x1="1303.4" y1="527" x2="2192.6" y2="527" stroke="#EAE5DC" stroke-width="1" />
+<rect x="1631.0" y="644.0" width="234.0" height="444.59999999999997" rx="0" fill="#E5F0F4" stroke="none" stroke-width="2" />
+<rect x="1531.55" y="755.1500000000001" width="356.85" height="140.39999999999998" rx="0" fill="#E5F0F4" stroke="none" stroke-width="2" />
+<rect x="1888.4" y="807.8" width="304.19999999999993" height="140.40000000000003" rx="0" fill="#E5F0F4" stroke="none" stroke-width="2" />
+<path d="M 2122.4,825.3499999999999 L 2122.4,889.6999999999999 L 1794.8000000000002,889.6999999999999" fill="none" stroke="#3D7A95" stroke-width="5" marker-end="url(#arrow)"/>
+<rect x="1519.85" y="474.34999999999997" width="105.29999999999998" height="257.40000000000003" rx="0" fill="none" stroke="#538A79" stroke-width="2.4" stroke-dasharray="9 7"/>
+<rect x="1344.35" y="474.34999999999997" width="175.49999999999997" height="257.40000000000003" rx="0" fill="#F8E7EC" stroke="#282329" stroke-width="2.2" />
+<rect x="1356.05" y="488.39" width="152.09999999999997" height="46.80000000000004" rx="0" fill="#FFFEFB" stroke="#D8D0C6" stroke-width="1" />
+<circle cx="1432.1" cy="603.0500000000001" r="25" fill="#C72E4B" stroke="none" stroke-width="1"/>
+<text x="1432.1" y="613.0500000000001" font-family="Noto Sans CJK JP" font-size="27" font-weight="700" text-anchor="middle" fill="#fff" >8</text>
+<rect x="1671.95" y="509.44999999999993" width="175.49999999999994" height="105.30000000000004" rx="0" fill="none" stroke="#538A79" stroke-width="2.4" stroke-dasharray="9 7"/>
+<rect x="1671.95" y="450.94999999999993" width="175.49999999999994" height="58.5" rx="0" fill="#F6E7BF" stroke="#282329" stroke-width="2.2" />
+<circle cx="1759.6999999999998" cy="480.19999999999993" r="25" fill="#C72E4B" stroke="none" stroke-width="1"/>
+<text x="1759.6999999999998" y="490.19999999999993" font-family="Noto Sans CJK JP" font-size="27" font-weight="700" text-anchor="middle" fill="#fff" >9</text>
+<rect x="1344.35" y="983.3000000000001" width="210.6" height="105.29999999999998" rx="0" fill="none" stroke="#538A79" stroke-width="2.4" stroke-dasharray="9 7"/>
+<rect x="1344.35" y="895.5500000000001" width="210.6" height="87.75" rx="0" fill="#F8E7EC" stroke="#282329" stroke-width="2.2" />
+<rect x="1356.05" y="901.3999999999999" width="187.20000000000002" height="19.890000000000043" rx="0" fill="#C72E4B" stroke="none" stroke-width="2" />
+<circle cx="1449.65" cy="939.4250000000001" r="25" fill="#C72E4B" stroke="none" stroke-width="1"/>
+<text x="1449.65" y="949.4250000000001" font-family="Noto Sans CJK JP" font-size="27" font-weight="700" text-anchor="middle" fill="#fff" >10</text>
+<rect x="1408.7" y="1088.6" width="93.59999999999998" height="70.2" rx="0" fill="#F6E7BF" stroke="#282329" stroke-width="2.2" />
+<circle cx="1455.5" cy="1123.6999999999998" r="25" fill="#C72E4B" stroke="none" stroke-width="1"/>
+<text x="1455.5" y="1133.6999999999998" font-family="Noto Sans CJK JP" font-size="27" font-weight="700" text-anchor="middle" fill="#fff" >11</text>
+<rect x="1689.5" y="989.15" width="152.09999999999997" height="105.29999999999998" rx="0" fill="none" stroke="#538A79" stroke-width="2.4" stroke-dasharray="9 7"/>
+<rect x="1689.5" y="1094.4499999999998" width="152.09999999999997" height="81.89999999999999" rx="0" fill="#F6E7BF" stroke="#282329" stroke-width="2.2" />
+<circle cx="1765.5500000000002" cy="1135.4" r="25" fill="#C72E4B" stroke="none" stroke-width="1"/>
+<text x="1765.5500000000002" y="1145.4" font-family="Noto Sans CJK JP" font-size="27" font-weight="700" text-anchor="middle" fill="#fff" >12</text>
+<rect x="1958.6" y="1000.85" width="204.75" height="105.30000000000001" rx="0" fill="none" stroke="#538A79" stroke-width="2.4" stroke-dasharray="9 7"/>
+<rect x="1958.6" y="1106.15" width="204.75" height="76.05" rx="0" fill="#F6E7BF" stroke="#282329" stroke-width="2.2" />
+<rect x="1976.15" y="1117.85" width="58.5" height="46.800000000000004" rx="0" fill="#DDE9EB" stroke="#746971" stroke-width="1" />
+<circle cx="2060.975" cy="1144.1750000000002" r="25" fill="#C72E4B" stroke="none" stroke-width="1"/>
+<text x="2060.975" y="1154.1750000000002" font-family="Noto Sans CJK JP" font-size="27" font-weight="700" text-anchor="middle" fill="#fff" >13</text>
+<rect x="1888.4" y="433.40000000000003" width="304.19999999999993" height="374.4" rx="0" fill="#F0EADF" stroke="#282329" stroke-width="2" />
+<rect x="2028.8000000000002" y="562.0999999999999" width="23.399999999999917" height="245.70000000000002" rx="0" fill="#D5CDC1" stroke="#282329" stroke-width="1" />
+<line x1="1888.4" y1="807.8" x2="2028.8000000000002" y2="807.8" stroke="#746971" stroke-width="2" />
+<line x1="2052.2" y1="807.8" x2="2192.6" y2="807.8" stroke="#746971" stroke-width="2" />
+<line x1="1888.4" y1="772.7" x2="2028.8000000000002" y2="772.7" stroke="#746971" stroke-width="2" />
+<line x1="2052.2" y1="772.7" x2="2192.6" y2="772.7" stroke="#746971" stroke-width="2" />
+<line x1="1888.4" y1="737.5999999999999" x2="2028.8000000000002" y2="737.5999999999999" stroke="#746971" stroke-width="2" />
+<line x1="2052.2" y1="737.5999999999999" x2="2192.6" y2="737.5999999999999" stroke="#746971" stroke-width="2" />
+<line x1="1888.4" y1="702.5" x2="2028.8000000000002" y2="702.5" stroke="#746971" stroke-width="2" />
+<line x1="2052.2" y1="702.5" x2="2192.6" y2="702.5" stroke="#746971" stroke-width="2" />
+<line x1="1888.4" y1="667.4000000000001" x2="2028.8000000000002" y2="667.4000000000001" stroke="#746971" stroke-width="2" />
+<line x1="2052.2" y1="667.4000000000001" x2="2192.6" y2="667.4000000000001" stroke="#746971" stroke-width="2" />
+<line x1="1888.4" y1="632.3000000000001" x2="2028.8000000000002" y2="632.3000000000001" stroke="#746971" stroke-width="2" />
+<line x1="2052.2" y1="632.3000000000001" x2="2192.6" y2="632.3000000000001" stroke="#746971" stroke-width="2" />
+<line x1="1888.4" y1="597.1999999999999" x2="2028.8000000000002" y2="597.1999999999999" stroke="#746971" stroke-width="2" />
+<line x1="2052.2" y1="597.1999999999999" x2="2192.6" y2="597.1999999999999" stroke="#746971" stroke-width="2" />
+<line x1="1888.4" y1="562.0999999999999" x2="2028.8000000000002" y2="562.0999999999999" stroke="#746971" stroke-width="2" />
+<line x1="2052.2" y1="562.0999999999999" x2="2192.6" y2="562.0999999999999" stroke="#746971" stroke-width="2" />
+<circle cx="2040.5" cy="497.75" r="25" fill="#C72E4B" stroke="none" stroke-width="1"/>
+<text x="2040.5" y="507.75" font-family="Noto Sans CJK JP" font-size="27" font-weight="700" text-anchor="middle" fill="#fff" >7</text>
+<path d="M 2122.4,585.5 L 2122.4,784.4000000000001" fill="none" stroke="#3D7A95" stroke-width="4" marker-end="url(#arrow)"/>
+<text x="2122.4" y="761.0" font-family="Noto Sans CJK JP" font-size="21" font-weight="700" text-anchor="middle" fill="#3D7A95" >到着</text>
+<line x1="1280" y1="383.09" x2="2216" y2="383.09" stroke="#3D7A95" stroke-width="2" />
+<text x="1748.0" y="371.09" font-family="Noto Sans CJK JP" font-size="24" font-weight="700" text-anchor="middle" fill="#3D7A95" >8.00m</text>
+<line x1="1280" y1="374.09" x2="1280" y2="392.09" stroke="#3D7A95" stroke-width="2" />
+<line x1="2216" y1="374.09" x2="2216" y2="392.09" stroke="#3D7A95" stroke-width="2" />
+<line x1="1241.39" y1="1229" x2="1241.39" y2="410" stroke="#3D7A95" stroke-width="2" />
+<text x="1225.39" y="819.5" font-family="Noto Sans CJK JP" font-size="24" font-weight="700" text-anchor="middle" fill="#3D7A95" transform="rotate(-90 1225.39 819.5)">7.00m</text>
+<text x="2216" y="335" font-family="Noto Sans CJK JP" font-size="23" font-weight="400" text-anchor="end" fill="#746971" >奥 +Y</text>
+<text x="2216" y="1284" font-family="Noto Sans CJK JP" font-size="23" font-weight="400" text-anchor="end" fill="#746971" >正面 Y=0</text>
+<circle cx="1305" cy="1351" r="25" fill="#C72E4B" stroke="none" stroke-width="1"/>
+<text x="1305" y="1361" font-family="Noto Sans CJK JP" font-size="27" font-weight="700" text-anchor="middle" fill="#fff" >8</text>
+<text x="1346" y="1360" font-family="Noto Sans CJK JP" font-size="28" font-weight="500" text-anchor="start" fill="#282329" >ベッド</text>
+<circle cx="1775" cy="1351" r="25" fill="#C72E4B" stroke="none" stroke-width="1"/>
+<text x="1775" y="1361" font-family="Noto Sans CJK JP" font-size="27" font-weight="700" text-anchor="middle" fill="#fff" >9</text>
+<text x="1816" y="1360" font-family="Noto Sans CJK JP" font-size="28" font-weight="500" text-anchor="start" fill="#282329" >衣装棚</text>
+<circle cx="1305" cy="1419" r="25" fill="#C72E4B" stroke="none" stroke-width="1"/>
+<text x="1305" y="1429" font-family="Noto Sans CJK JP" font-size="27" font-weight="700" text-anchor="middle" fill="#fff" >10</text>
+<text x="1346" y="1428" font-family="Noto Sans CJK JP" font-size="28" font-weight="500" text-anchor="start" fill="#282329" >ソファ</text>
+<circle cx="1775" cy="1419" r="25" fill="#C72E4B" stroke="none" stroke-width="1"/>
+<text x="1775" y="1429" font-family="Noto Sans CJK JP" font-size="27" font-weight="700" text-anchor="middle" fill="#fff" >11</text>
+<text x="1816" y="1428" font-family="Noto Sans CJK JP" font-size="28" font-weight="500" text-anchor="start" fill="#282329" >ローテーブル</text>
+<circle cx="1305" cy="1487" r="25" fill="#C72E4B" stroke="none" stroke-width="1"/>
+<text x="1305" y="1497" font-family="Noto Sans CJK JP" font-size="27" font-weight="700" text-anchor="middle" fill="#fff" >12</text>
+<text x="1346" y="1496" font-family="Noto Sans CJK JP" font-size="28" font-weight="500" text-anchor="start" fill="#282329" >小机</text>
+<circle cx="1775" cy="1487" r="25" fill="#C72E4B" stroke="none" stroke-width="1"/>
+<text x="1775" y="1497" font-family="Noto Sans CJK JP" font-size="27" font-weight="700" text-anchor="middle" fill="#fff" >13</text>
+<text x="1816" y="1496" font-family="Noto Sans CJK JP" font-size="28" font-weight="500" text-anchor="start" fill="#282329" >ミニキッチン</text>
+<text x="1280" y="1600" font-family="Noto Sans CJK JP" font-size="28" font-weight="400" text-anchor="start" fill="#746971" >07  階段は上下階で同じ位置</text>
+<text x="1280" y="1650" font-family="Noto Sans CJK JP" font-size="25" font-weight="400" text-anchor="start" fill="#538A79" >空ける：主通路1.20m以上 / 使用面0.90m以上</text>
+<line x1="60" y1="1688" x2="2240" y2="1688" stroke="#D8D0C6" stroke-width="2" />
+<text x="60" y="1732" font-family="Noto Sans CJK JP" font-size="23" font-weight="400" text-anchor="start" fill="#746971" >床面の配置案。家具の正確な座標・高さは制作指示書と design_dimensions.json に記載。階段前は常に空ける。</text>
+</svg>

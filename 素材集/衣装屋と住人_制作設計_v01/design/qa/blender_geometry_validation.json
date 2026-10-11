@@ -1,0 +1,19 @@
+{
+  "kind": "Actual Blender 4.3.2 file reopened and geometry checked",
+  "checks": {
+    "lower_flight_has_7_treads": true,
+    "upper_flight_has_7_treads": true,
+    "half_landing_height_1_3": true,
+    "upper_floor_height_2_6": true,
+    "rise_height_0_1625": true,
+    "lower_flies_north": true,
+    "upper_returns_south": true,
+    "clear_flight_width_1_2": true,
+    "floor_01_is_8_by_7": true,
+    "floor_02_opening_not_filled": true,
+    "meter_scale": true
+  },
+  "all_pass": true,
+  "object_count": 157,
+  "limitations": "Spatial blockout only; no resident mesh or rig, finished materials, full apertures, actual path following, or furniture-contact animation yet."
+}
