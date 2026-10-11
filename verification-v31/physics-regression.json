@@ -1,0 +1,264 @@
+[
+  {
+    "name": "actual aperture +1 medal and +1 spin",
+    "status": "pass",
+    "detail": {
+      "stats": {
+        "initial": 0,
+        "inserted": 0,
+        "generated": 1,
+        "front": 0,
+        "slot": 1,
+        "prizeGenerated": 0,
+        "prizeCollected": 0,
+        "spins": 1,
+        "completed": 0,
+        "payoutTotal": 0,
+        "payoutGenerated": 0
+      },
+      "audit": {
+        "ok": true,
+        "errors": []
+      }
+    }
+  },
+  {
+    "name": "actual front fall +1 without spin",
+    "status": "pass",
+    "detail": {
+      "stats": {
+        "initial": 0,
+        "inserted": 0,
+        "generated": 1,
+        "front": 1,
+        "slot": 0,
+        "prizeGenerated": 0,
+        "prizeCollected": 0,
+        "spins": 0,
+        "completed": 0,
+        "payoutTotal": 0,
+        "payoutGenerated": 0
+      }
+    }
+  },
+  {
+    "name": "coins stack with thickness",
+    "status": "pass",
+    "detail": {
+      "a": [
+        0.19999151229858397,
+        0.8523195266723633,
+        0.30001053810119627
+      ],
+      "b": [
+        0.20009498596191405,
+        0.8571915626525879,
+        0.31801857948303225
+      ]
+    }
+  },
+  {
+    "name": "kinematic pusher transfers motion to coin",
+    "status": "pass",
+    "detail": {
+      "before": -0.08,
+      "after": 0.18207180500030518
+    }
+  },
+  {
+    "name": "pusher visual and collider aligned",
+    "status": "pass"
+  },
+  {
+    "name": "prize aperture recovery letter_M_red 0,0,0,1",
+    "status": "pass",
+    "detail": {
+      "status": "field",
+      "position": [
+        0.2518305778503418,
+        0.8924256324768066,
+        0.338174033164978
+      ],
+      "audit": {
+        "ok": true,
+        "errors": []
+      }
+    }
+  },
+  {
+    "name": "prize aperture recovery letter_M_red 0.7071067811865476,0,0,0.7071067811865476",
+    "status": "pass",
+    "detail": {
+      "status": "field",
+      "position": [
+        0.2518305778503418,
+        0.8924256324768066,
+        0.338174033164978
+      ],
+      "audit": {
+        "ok": true,
+        "errors": []
+      }
+    }
+  },
+  {
+    "name": "prize aperture recovery letter_M_red 0,0,0.7071067811865476,0.7071067811865476",
+    "status": "pass",
+    "detail": {
+      "status": "field",
+      "position": [
+        0.2518305778503418,
+        0.8924256324768066,
+        0.338174033164978
+      ],
+      "audit": {
+        "ok": true,
+        "errors": []
+      }
+    }
+  },
+  {
+    "name": "prize aperture recovery letter_O_blue 0,0,0,1",
+    "status": "pass",
+    "detail": {
+      "status": "field",
+      "position": [
+        0.24542248249053955,
+        0.8923399925231934,
+        0.33981003761291506
+      ],
+      "audit": {
+        "ok": true,
+        "errors": []
+      }
+    }
+  },
+  {
+    "name": "prize aperture recovery letter_O_blue 0.7071067811865476,0,0,0.7071067811865476",
+    "status": "pass",
+    "detail": {
+      "status": "field",
+      "position": [
+        0.24542248249053955,
+        0.8923399925231934,
+        0.33981003761291506
+      ],
+      "audit": {
+        "ok": true,
+        "errors": []
+      }
+    }
+  },
+  {
+    "name": "prize aperture recovery letter_O_blue 0,0,0.7071067811865476,0.7071067811865476",
+    "status": "pass",
+    "detail": {
+      "status": "field",
+      "position": [
+        0.24542248249053955,
+        0.8923399925231934,
+        0.33981003761291506
+      ],
+      "audit": {
+        "ok": true,
+        "errors": []
+      }
+    }
+  },
+  {
+    "name": "prize aperture recovery letter_B_green 0,0,0,1",
+    "status": "pass",
+    "detail": {
+      "status": "field",
+      "position": [
+        0.24636998176574706,
+        0.8924424171447753,
+        0.3399153709411621
+      ],
+      "audit": {
+        "ok": true,
+        "errors": []
+      }
+    }
+  },
+  {
+    "name": "prize aperture recovery letter_B_green 0.7071067811865476,0,0,0.7071067811865476",
+    "status": "pass",
+    "detail": {
+      "status": "field",
+      "position": [
+        0.24636998176574706,
+        0.8924424171447753,
+        0.3399153709411621
+      ],
+      "audit": {
+        "ok": true,
+        "errors": []
+      }
+    }
+  },
+  {
+    "name": "prize aperture recovery letter_B_green 0,0,0.7071067811865476,0.7071067811865476",
+    "status": "pass",
+    "detail": {
+      "status": "field",
+      "position": [
+        0.24636998176574706,
+        0.8924424171447753,
+        0.3399153709411621
+      ],
+      "audit": {
+        "ok": true,
+        "errors": []
+      }
+    }
+  },
+  {
+    "name": "prize aperture recovery dorayaki 0,0,0,1",
+    "status": "pass",
+    "detail": {
+      "status": "field",
+      "position": [
+        0.24995980262756348,
+        0.8759361267089844,
+        0.34011709690093994
+      ],
+      "audit": {
+        "ok": true,
+        "errors": []
+      }
+    }
+  },
+  {
+    "name": "prize aperture recovery dorayaki 0.7071067811865476,0,0,0.7071067811865476",
+    "status": "pass",
+    "detail": {
+      "status": "field",
+      "position": [
+        0.24995980262756348,
+        0.8759361267089844,
+        0.34011709690093994
+      ],
+      "audit": {
+        "ok": true,
+        "errors": []
+      }
+    }
+  },
+  {
+    "name": "prize aperture recovery dorayaki 0,0,0.7071067811865476,0.7071067811865476",
+    "status": "pass",
+    "detail": {
+      "status": "field",
+      "position": [
+        0.24995980262756348,
+        0.8759361267089844,
+        0.34011709690093994
+      ],
+      "audit": {
+        "ok": true,
+        "errors": []
+      }
+    }
+  }
+]
