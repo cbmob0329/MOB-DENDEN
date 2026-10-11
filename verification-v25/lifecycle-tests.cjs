@@ -1,0 +1,16 @@
+const fs=require('fs'),path=require('path'),assert=require('assert/strict');
+const {chromium}=require('./test-runtime.cjs');let browser;
+(async()=>{browser=await chromium.launch({channel:'msedge',headless:true});const p=await browser.newPage({viewport:{width:1000,height:900}}),errors=[];p.on('pageerror',e=>errors.push(e.message));await p.goto('file:///'+path.resolve('index.html').replaceAll('\\','/'));await p.waitForFunction(()=>window.CHILL?.cafe.pusherReady,{},{timeout:90000});
+const result=await p.evaluate(()=>{CHILL.setPaused(true);const c=CHILL.cafe,s=c.pusherStore;const reset=a=>{a.arcadeMode=null;a.arcadeTarget=null;a.bathMode=null;a.phase=null;a.path=[];a.cafePath=[];a.bagAnimation=null;a.room='home';a.state='idle';a.pos.set(-.8+a.id*.3,0,1.4);};CHILL.actors.forEach(reset);s.state.offline.jobs=[];c.pusherResidentTimer=0;c.tickPusherResidents(3);const visits=c.pusherMachines.map(m=>({session:m.state.session,actor:m.state.session?CHILL.actors[m.state.session.actor].arcadeMode:null}));
+// Follow the existing resident travel path, then let the new AI spend its wallet.
+const m=c.pusherMachines[0],a=CHILL.actors[m.state.session.actor],before=s.state.wallets[a.id],human=s.state.wallets.player;
+for(let i=0;i<6000&&a.arcadeMode==='travel';i++)c.update(a,1/60);
+c.pusherResidentTimer=0;c.tickPusherResidents(3);for(let i=0;i<30;i++)m.step(1/60);
+const resident={visits,mode:a.arcadeMode,before,after:s.state.wallets[a.id],humanBefore:human,humanAfter:s.state.wallets.player,inserted:m.state.stats.inserted,objects:m.state.objects.length};
+// Actual resident race API, old race simulation, and spectating modal.
+CHILL.actors.forEach(reset);for(const x of c.pusherMachines)x.state.session=null;c.cancelRaceInvitation();const requested=c.requestRace(0,[0,1]);for(let i=0;i<8000&&c.raceInvitation;i++){c.update(CHILL.actors[0],1/60);c.update(CHILL.actors[1],1/60);}const started=!!c.raceRun;c.raceView();const controls=['raceBoost','raceLeft14','raceRight14','raceSkip14'].some(id=>document.getElementById(id));for(let i=0;i<3000&&c.raceRun;i++)c.tickRace14(1/60);const race={requested,started,controls,finished:!c.raceRun,result:!!c.lastRace14};document.getElementById('modal').close();
+// Switch both saved boards repeatedly; renderers and temporary floors are disposed.
+let instances=[];for(let i=0;i<12;i++){c.openPusher(i%2);c.pusherActive.step(1/60);instances.push({canvases:document.querySelectorAll('#pusherStage25 canvas').length,objects:c.pusherActive.state.objects.length});c.closePusher();}const closedCanvases=document.querySelectorAll('#pusherStage25 canvas').length;
+return{resident,race,instances,closedCanvases,audit:s.audit()};});
+fs.writeFileSync('verification-v25/lifecycle-results.json',JSON.stringify({result,errors},null,2));assert(result.resident.inserted>0);assert.equal(result.resident.humanBefore,result.resident.humanAfter);assert(result.race.requested&&result.race.started&&result.race.finished&&result.race.result&&!result.race.controls);assert(result.instances.every(x=>x.canvases===1));assert.equal(result.closedCanvases,0);assert(result.audit.ok);assert.deepEqual(errors,[]);console.log('PASS resident travel/input/wallet, resident race and spectating, 12 machine switches');
+})().catch(e=>{console.error(e.message);process.exitCode=1}).finally(()=>browser?.close());

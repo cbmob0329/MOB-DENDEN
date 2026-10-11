@@ -1,0 +1,16 @@
+{
+  "aligned": true,
+  "equal": true,
+  "audit": {
+    "ok": true,
+    "errors": []
+  },
+  "prizes": 2,
+  "received": 180,
+  "advance": 0.04999999999999982,
+  "recoveryCopies": 1,
+  "recoveryAudit": {
+    "ok": true,
+    "errors": []
+  }
+}

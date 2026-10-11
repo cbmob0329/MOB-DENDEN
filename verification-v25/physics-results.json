@@ -1,0 +1,306 @@
+[
+  {
+    "name": "actual aperture +1 medal and +1 spin",
+    "status": "pass",
+    "detail": {
+      "stats": {
+        "initial": 0,
+        "inserted": 0,
+        "generated": 1,
+        "front": 0,
+        "slot": 1,
+        "prizeGenerated": 0,
+        "prizeCollected": 0,
+        "spins": 1,
+        "completed": 0,
+        "payoutTotal": 0,
+        "payoutGenerated": 0
+      },
+      "audit": {
+        "ok": true,
+        "errors": []
+      }
+    }
+  },
+  {
+    "name": "actual front fall +1 without spin",
+    "status": "pass",
+    "detail": {
+      "stats": {
+        "initial": 0,
+        "inserted": 0,
+        "generated": 1,
+        "front": 1,
+        "slot": 0,
+        "prizeGenerated": 0,
+        "prizeCollected": 0,
+        "spins": 0,
+        "completed": 0,
+        "payoutTotal": 0,
+        "payoutGenerated": 0
+      }
+    }
+  },
+  {
+    "name": "coins stack with thickness",
+    "status": "pass",
+    "detail": {
+      "a": [
+        0.20003125667572022,
+        0.8551081657409668,
+        0.3003108024597168
+      ],
+      "b": [
+        0.2000737428665161,
+        0.8593926429748535,
+        0.3079716682434082
+      ]
+    }
+  },
+  {
+    "name": "kinematic pusher transfers motion to coin",
+    "status": "pass",
+    "detail": {
+      "before": -0.08,
+      "after": 0.034188506007194516
+    }
+  },
+  {
+    "name": "pusher visual and collider aligned",
+    "status": "pass"
+  },
+  {
+    "name": "prize aperture recovery letter_M_red 0,0,0,1",
+    "status": "pass",
+    "detail": {
+      "status": "field",
+      "position": [
+        0.25179946422576904,
+        0.8922389030456543,
+        0.34735162258148194
+      ],
+      "audit": {
+        "ok": true,
+        "errors": []
+      }
+    }
+  },
+  {
+    "name": "prize aperture recovery letter_M_red 0.7071067811865476,0,0,0.7071067811865476",
+    "status": "pass",
+    "detail": {
+      "status": "field",
+      "position": [
+        0.25179946422576904,
+        0.8922389030456543,
+        0.34735162258148194
+      ],
+      "audit": {
+        "ok": true,
+        "errors": []
+      }
+    }
+  },
+  {
+    "name": "prize aperture recovery letter_M_red 0,0,0.7071067811865476,0.7071067811865476",
+    "status": "pass",
+    "detail": {
+      "status": "field",
+      "position": [
+        0.25179946422576904,
+        0.8922389030456543,
+        0.34735162258148194
+      ],
+      "audit": {
+        "ok": true,
+        "errors": []
+      }
+    }
+  },
+  {
+    "name": "prize aperture recovery letter_O_blue 0,0,0,1",
+    "status": "pass",
+    "detail": {
+      "status": "field",
+      "position": [
+        0.245756196975708,
+        0.8924313545227051,
+        0.3430455446243286
+      ],
+      "audit": {
+        "ok": true,
+        "errors": []
+      }
+    }
+  },
+  {
+    "name": "prize aperture recovery letter_O_blue 0.7071067811865476,0,0,0.7071067811865476",
+    "status": "pass",
+    "detail": {
+      "status": "field",
+      "position": [
+        0.245756196975708,
+        0.8924313545227051,
+        0.3430455446243286
+      ],
+      "audit": {
+        "ok": true,
+        "errors": []
+      }
+    }
+  },
+  {
+    "name": "prize aperture recovery letter_O_blue 0,0,0.7071067811865476,0.7071067811865476",
+    "status": "pass",
+    "detail": {
+      "status": "field",
+      "position": [
+        0.245756196975708,
+        0.8924313545227051,
+        0.3430455446243286
+      ],
+      "audit": {
+        "ok": true,
+        "errors": []
+      }
+    }
+  },
+  {
+    "name": "prize aperture recovery letter_B_green 0,0,0,1",
+    "status": "pass",
+    "detail": {
+      "status": "field",
+      "position": [
+        0.24676504135131835,
+        0.8926970481872558,
+        0.3405323505401611
+      ],
+      "audit": {
+        "ok": true,
+        "errors": []
+      }
+    }
+  },
+  {
+    "name": "prize aperture recovery letter_B_green 0.7071067811865476,0,0,0.7071067811865476",
+    "status": "pass",
+    "detail": {
+      "status": "field",
+      "position": [
+        0.24676504135131835,
+        0.8926970481872558,
+        0.3405323505401611
+      ],
+      "audit": {
+        "ok": true,
+        "errors": []
+      }
+    }
+  },
+  {
+    "name": "prize aperture recovery letter_B_green 0,0,0.7071067811865476,0.7071067811865476",
+    "status": "pass",
+    "detail": {
+      "status": "field",
+      "position": [
+        0.24676504135131835,
+        0.8926970481872558,
+        0.3405323505401611
+      ],
+      "audit": {
+        "ok": true,
+        "errors": []
+      }
+    }
+  },
+  {
+    "name": "prize aperture recovery dorayaki 0,0,0,1",
+    "status": "pass",
+    "detail": {
+      "status": "field",
+      "position": [
+        0.25001139640808107,
+        0.876123046875,
+        0.3410601854324341
+      ],
+      "audit": {
+        "ok": true,
+        "errors": []
+      }
+    }
+  },
+  {
+    "name": "prize aperture recovery dorayaki 0.7071067811865476,0,0,0.7071067811865476",
+    "status": "pass",
+    "detail": {
+      "status": "field",
+      "position": [
+        0.25001139640808107,
+        0.876123046875,
+        0.3410601854324341
+      ],
+      "audit": {
+        "ok": true,
+        "errors": []
+      }
+    }
+  },
+  {
+    "name": "prize aperture recovery dorayaki 0,0,0.7071067811865476,0.7071067811865476",
+    "status": "pass",
+    "detail": {
+      "status": "field",
+      "position": [
+        0.25001139640808107,
+        0.876123046875,
+        0.3410601854324341
+      ],
+      "audit": {
+        "ok": true,
+        "errors": []
+      }
+    }
+  },
+  {
+    "name": "777 queued+spawned retains exactly 1000",
+    "status": "pass",
+    "detail": {
+      "stats": {
+        "initial": 111,
+        "inserted": 0,
+        "generated": 1111,
+        "front": 923,
+        "slot": 8,
+        "prizeGenerated": 0,
+        "prizeCollected": 0,
+        "spins": 9,
+        "completed": 9,
+        "payoutTotal": 1000,
+        "payoutGenerated": 1000
+      },
+      "remaining": 0,
+      "bodyCount": 180,
+      "audit": {
+        "ok": true,
+        "errors": []
+      },
+      "elapsedMs": 98137.30000007153,
+      "physicsP95Ms": 24.399999976158142
+    }
+  },
+  {
+    "name": "777 finishes dispensing during 120 simulated seconds",
+    "status": "pass",
+    "detail": {
+      "pending": []
+    }
+  },
+  {
+    "name": "long simulation conserved all value",
+    "status": "pass",
+    "detail": {
+      "ok": true,
+      "errors": []
+    }
+  }
+]

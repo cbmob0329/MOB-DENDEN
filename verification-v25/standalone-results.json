@@ -1,0 +1,19 @@
+{
+  "result": {
+    "machines": 2,
+    "coins": 109,
+    "models": 17,
+    "symbols": 10,
+    "audit": {
+      "ok": true,
+      "errors": []
+    },
+    "externalScripts": 0,
+    "renderer": "ANGLE (Intel, Intel(R) UHD Graphics 620 (0x00005917) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+  },
+  "errors": [],
+  "browser": "155.0.4283.45",
+  "platform": "win32",
+  "cpu": "Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz",
+  "bytes": 107078981
+}

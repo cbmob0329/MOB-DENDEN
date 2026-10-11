@@ -1,0 +1,36 @@
+{
+  "import_success": true,
+  "object_count": 148,
+  "pusher_collider_parent": "PusherPlate_MOVING",
+  "slot_trigger_alpha": 0.0,
+  "pusher_sample_y_m": {
+    "t0s": 0.17000000178813934,
+    "t1s": 0.054999999701976776,
+    "t2s": 0.17000000178813934
+  },
+  "pusher_travel_m": 0.11500000208616257,
+  "anchors_found": [
+    "Anchor_CatchRampEntry",
+    "Anchor_CatchRampExit",
+    "Anchor_ChuteExit_L",
+    "Anchor_ChuteExit_R",
+    "Anchor_ControlPod_L",
+    "Anchor_ControlPod_R",
+    "Anchor_FrontFall",
+    "Anchor_Input_L",
+    "Anchor_Input_R",
+    "Anchor_LidService",
+    "Anchor_PrizeRecovery",
+    "Anchor_PrizeSpawn",
+    "Anchor_Reel_1",
+    "Anchor_Reel_2",
+    "Anchor_Reel_3",
+    "Anchor_SlotCoinAndSpin",
+    "Anchor_UpperDisplay",
+    "Anchor_WinCollection"
+  ],
+  "actions": [
+    "Pusher_Reciprocate_2s_PusherPlate_MOVING"
+  ],
+  "physics_runtime_tested": false
+}

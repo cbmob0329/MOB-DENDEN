@@ -1,0 +1,17 @@
+{
+  "before": {
+    "residents": 8,
+    "playerVisible": false,
+    "race": {
+      "ok": false,
+      "reason": "spectator-only"
+    },
+    "audit": {
+      "ok": true,
+      "errors": []
+    }
+  },
+  "errors": [],
+  "restore": true,
+  "multiTab": true
+}

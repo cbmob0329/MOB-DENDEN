@@ -1,0 +1,12 @@
+{
+  "slot_center_clear": true,
+  "slot_center_obstructions": [],
+  "front_center_control_clear": true,
+  "cabinet_counts": {
+    "CABINET_RED": 16360,
+    "CABINET_BLUE": 16360
+  },
+  "front_clearance_method": "Analytic control-pod bounds",
+  "front_center_clear_width_m": 0.66745,
+  "physics_simulation_tested": false
+}

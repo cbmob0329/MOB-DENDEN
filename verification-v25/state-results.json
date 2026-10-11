@@ -1,0 +1,98 @@
+{
+  "results": [
+    {
+      "name": "weights",
+      "status": "pass"
+    },
+    {
+      "name": "atomic exchange and duplicate ID",
+      "status": "pass"
+    },
+    {
+      "name": "save failure rolls back both currencies",
+      "status": "pass"
+    },
+    {
+      "name": "independent persistent initial fields",
+      "status": "pass"
+    },
+    {
+      "name": "input generates one durable reservation",
+      "status": "pass"
+    },
+    {
+      "name": "slot awards coin and one locked spin exactly once",
+      "status": "pass"
+    },
+    {
+      "name": "six waiting stays five lamps on start and complete",
+      "status": "pass"
+    },
+    {
+      "name": "100 waiting survive reload",
+      "status": "pass"
+    },
+    {
+      "name": "all roles and exact RGB order",
+      "status": "pass"
+    },
+    {
+      "name": "777 interrupted at 137 produces exactly 863 more, with no wallet credit",
+      "status": "pass"
+    },
+    {
+      "name": "capacity keeps queued value and rejects spending",
+      "status": "pass"
+    },
+    {
+      "name": "prize recovery preserves ID/value with no extra spin or coin",
+      "status": "pass"
+    },
+    {
+      "name": "residents have independent wallets and immutable beneficiaries",
+      "status": "pass"
+    },
+    {
+      "name": "zero hearts cannot exchange",
+      "status": "pass"
+    },
+    {
+      "name": "all specified queue boundaries and admission during active spin",
+      "status": "pass"
+    },
+    {
+      "name": "100 alternating input events and duplicate deliveries spend exactly 100",
+      "status": "pass"
+    },
+    {
+      "name": "all award quantities and collectible values match the fixed requirements",
+      "status": "pass"
+    },
+    {
+      "name": "failed physical generation preserves the paid reservation across reload",
+      "status": "pass"
+    },
+    {
+      "name": "million-spin frequency within six binomial standard deviations",
+      "status": "pass"
+    }
+  ],
+  "counts": {
+    "miss": 898753,
+    "denden": 6433,
+    "wood_chest": 20170,
+    "coin_bag": 64849,
+    "mob_red": 598,
+    "gold_chest": 4017,
+    "mob_green": 578,
+    "pink": 3455,
+    "dorayaki": 396,
+    "mob_blue": 598,
+    "jackpot_777": 45,
+    "mob_rgb": 108
+  },
+  "audit": {
+    "ok": true,
+    "errors": []
+  }
+}

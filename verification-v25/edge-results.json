@@ -1,0 +1,174 @@
+{
+  "migration": {
+    "hearts": 55,
+    "medals": 0,
+    "backup": 55,
+    "inventory": {
+      "v": 2,
+      "inventory": {
+        "wheat": 3,
+        "beans": 3,
+        "dorayaki": 0,
+        "egg": 3,
+        "corn": 3,
+        "milk": 3,
+        "omelet": 0,
+        "soup": 0
+      },
+      "batch": null,
+      "stove": {
+        "pan": null,
+        "pot": null
+      }
+    },
+    "residents": 8
+  },
+  "exitResume": true,
+  "secondMachine": true,
+  "failure": {
+    "r": {
+      "ok": false,
+      "reason": "save-failed"
+    },
+    "before": 10,
+    "after": 10,
+    "blocked": true,
+    "retry": true,
+    "audit": {
+      "ok": true,
+      "errors": []
+    }
+  },
+  "sizes": [
+    {
+      "width": 320,
+      "height": 568,
+      "rects": [
+        {
+          "id": "pusherExit25",
+          "x": 8,
+          "y": 10,
+          "w": 46.921875,
+          "h": 44
+        },
+        {
+          "id": "pusherLeft25",
+          "x": 8,
+          "y": 472,
+          "w": 97.421875,
+          "h": 44
+        },
+        {
+          "id": "pusherRight25",
+          "x": 214.578125,
+          "y": 472,
+          "w": 97.421875,
+          "h": 44
+        },
+        {
+          "id": "pusherExchange25",
+          "x": 112.421875,
+          "y": 472,
+          "w": 95.15625,
+          "h": 44
+        },
+        {
+          "id": "pusherWallet25",
+          "x": 200.546875,
+          "y": 24,
+          "w": 68.453125,
+          "h": 16
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "rects": [
+        {
+          "id": "pusherExit25",
+          "x": 8,
+          "y": 10,
+          "w": 46.921875,
+          "h": 44
+        },
+        {
+          "id": "pusherLeft25",
+          "x": 8,
+          "y": 748,
+          "w": 132.421875,
+          "h": 44
+        },
+        {
+          "id": "pusherRight25",
+          "x": 249.578125,
+          "y": 748,
+          "w": 132.421875,
+          "h": 44
+        },
+        {
+          "id": "pusherExchange25",
+          "x": 147.421875,
+          "y": 748,
+          "w": 95.15625,
+          "h": 44
+        },
+        {
+          "id": "pusherWallet25",
+          "x": 270.546875,
+          "y": 24,
+          "w": 68.453125,
+          "h": 16
+        }
+      ]
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "rects": [
+        {
+          "id": "pusherExit25",
+          "x": 12,
+          "y": 2,
+          "w": 52.921875,
+          "h": 44
+        },
+        {
+          "id": "pusherLeft25",
+          "x": 12,
+          "y": 314,
+          "w": 352.421875,
+          "h": 44
+        },
+        {
+          "id": "pusherRight25",
+          "x": 479.578125,
+          "y": 314,
+          "w": 352.421875,
+          "h": 44
+        },
+        {
+          "id": "pusherExchange25",
+          "x": 374.421875,
+          "y": 314,
+          "w": 95.15625,
+          "h": 44
+        },
+        {
+          "id": "pusherWallet25",
+          "x": 699.140625,
+          "y": 14.5,
+          "w": 79.859375,
+          "h": 19
+        }
+      ]
+    }
+  ],
+  "offline": {
+    "first": 120,
+    "second": 120,
+    "rollback": 120
+  },
+  "corruptSavePreserved": true,
+  "errors": []
+}

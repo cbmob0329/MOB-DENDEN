@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "status": "Integration binding proposal; file names are real assets, runtime loading is not integrated.",
+  "paths_are_relative_to": "this JSON in the package docs folder",
+  "cabinet_files": {
+    "machine_1": "../gameassets/exports/cabinet_red.glb",
+    "machine_2": "../gameassets/exports/cabinet_blue.glb"
+  },
+  "display_scene": {
+    "file": "../gameassets/exports/two_cabinets.glb",
+    "contains_showcase_coins": true,
+    "not_a_persisted_runtime_field": true
+  },
+  "coin": "../gameassets/exports/coin.glb",
+  "mascot": "../gameassets/exports/gold_sunglasses_mascot.glb",
+  "symbols": {
+    "mob_red": {
+      "glb": "../gameassets/symbols/symbol_redMOB.glb",
+      "png": "../gameassets/symbols/symbol_redMOB.png",
+      "render_type": "3D_mesh"
+    },
+    "mob_blue": {
+      "glb": "../gameassets/symbols/symbol_blueMOB.glb",
+      "png": "../gameassets/symbols/symbol_blueMOB.png",
+      "render_type": "3D_mesh"
+    },
+    "mob_green": {
+      "glb": "../gameassets/symbols/symbol_greenMOB.glb",
+      "png": "../gameassets/symbols/symbol_greenMOB.png",
+      "render_type": "3D_mesh"
+    },
+    "dorayaki": {
+      "glb": "../gameassets/symbols/symbol_dorayaki.glb",
+      "png": "../gameassets/symbols/symbol_dorayaki.png",
+      "render_type": "3D_mesh"
+    },
+    "seven": {
+      "glb": "../gameassets/symbols/symbol_7.glb",
+      "png": "../gameassets/symbols/symbol_7.png",
+      "render_type": "3D_mesh"
+    },
+    "denden": {
+      "glb": "../gameassets/symbols/symbol_Denden.glb",
+      "png": "../gameassets/symbols/symbol_Denden.png",
+      "render_type": "textured_reference_portrait"
+    },
+    "pink": {
+      "glb": "../gameassets/symbols/symbol_Pink.glb",
+      "png": "../gameassets/symbols/symbol_Pink.png",
+      "render_type": "textured_reference_portrait"
+    },
+    "coin_bag": {
+      "glb": "../gameassets/symbols/symbol_coinbag.glb",
+      "png": "../gameassets/symbols/symbol_coinbag.png",
+      "render_type": "3D_mesh"
+    },
+    "wood_chest": {
+      "glb": "../gameassets/symbols/symbol_woodchest.glb",
+      "png": "../gameassets/symbols/symbol_woodchest.png",
+      "render_type": "3D_mesh"
+    },
+    "gold_chest": {
+      "glb": "../gameassets/symbols/symbol_goldchest.glb",
+      "png": "../gameassets/symbols/symbol_goldchest.png",
+      "render_type": "3D_mesh"
+    }
+  },
+  "prizes": {
+    "letter_M_red": "../gameassets/exports/letter_M_red.glb",
+    "letter_M_blue": "../gameassets/exports/letter_M_blue.glb",
+    "letter_M_green": "../gameassets/exports/letter_M_green.glb",
+    "letter_O_red": "../gameassets/exports/letter_O_red.glb",
+    "letter_O_blue": "../gameassets/exports/letter_O_blue.glb",
+    "letter_O_green": "../gameassets/exports/letter_O_green.glb",
+    "letter_B_red": "../gameassets/exports/letter_B_red.glb",
+    "letter_B_blue": "../gameassets/exports/letter_B_blue.glb",
+    "letter_B_green": "../gameassets/exports/letter_B_green.glb",
+    "dorayaki": "../gameassets/exports/dorayaki.glb"
+  },
+  "effects": {
+    "coin_bag": "../gameassets/exports/coin_bag.glb",
+    "wood_chest": "../gameassets/exports/wood_chest.glb",
+    "gold_chest": "../gameassets/exports/gold_chest.glb"
+  },
+  "anchors_blender_m": {
+    "input_left": [
+      -0.255,
+      0.31,
+      1.28
+    ],
+    "input_right": [
+      0.255,
+      0.31,
+      1.28
+    ],
+    "chute_exit_left": [
+      -0.255,
+      0.15,
+      1.041
+    ],
+    "chute_exit_right": [
+      0.255,
+      0.15,
+      1.041
+    ],
+    "slot_coin_and_spin": [
+      0,
+      -0.19,
+      0.8
+    ],
+    "front_fall": [
+      0,
+      -0.46,
+      0.8
+    ],
+    "win_collection": [
+      0,
+      -0.54,
+      0.44
+    ],
+    "prize_spawn": [
+      0,
+      0.05,
+      1.08
+    ],
+    "prize_recovery": [
+      0.25,
+      -0.34,
+      0.88
+    ]
+  },
+  "runtime_binding": {
+    "anchor_source": "actual named nodes after import; transform once into the game coordinate system",
+    "pusher_node": "PusherPlate_MOVING",
+    "pusher_clip": "Pusher_Reciprocate_2s",
+    "pusher_collider": "COL_Pusher",
+    "slot_sensor": "COL_SlotTrigger",
+    "front_sensor": "COL_FrontWinTrigger",
+    "cabinet_bounds": "COL_CabinetBounds",
+    "cabinet_bounds_is_solid": false,
+    "prize_recovery_node": "Anchor_PrizeRecovery",
+    "hide_demo_reel_meshes_before_binding_live_reels": true,
+    "disable_COL_helpers_renderers": true,
+    "COL_helpers_are_not_runtime_physics_until_engine_bindings_are_created": true
+  }
+}

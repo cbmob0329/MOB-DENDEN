@@ -1,0 +1,22 @@
+const fs=require('fs'),path=require('path'),assert=require('assert/strict');
+const {chromium}=require('./test-runtime.cjs');
+(async()=>{
+ const browser=await chromium.launch({channel:'msedge',headless:true,args:['--allow-file-access-from-files']}),context=await browser.newContext({viewport:{width:1400,height:1000}}),page=await context.newPage(),errors=[];
+ page.on('pageerror',e=>errors.push(String(e)));page.on('console',m=>{if(m.type()==='error')console.log('BROWSER ERROR',m.text().slice(0,300));});
+ const url='file:///'+path.resolve('index.html').replaceAll('\\','/')+'?test=1';await page.goto(url);await page.waitForFunction(()=>window.CHILL?.cafe?.pusherReady,{},{timeout:90000});
+ await page.waitForTimeout(1200);
+ const before=await page.evaluate(()=>({residents:CHILL.actors.length,playerVisible:!!CHILL.cafe.player24.group.parent,race:CHILL.cafe.collections.begin('race','player','race0',[]),audit:CHILL.cafe.pusherStore.audit()}));assert.equal(before.residents,8);assert.equal(before.playerVisible,false);assert.equal(before.race.reason,'spectator-only');
+ await page.screenshot({path:'verification-v25/town-desktop.png'});await page.setViewportSize({width:390,height:844});await page.screenshot({path:'verification-v25/town-mobile.png'});
+ await page.evaluate(()=>{CHILL.cafe.setView('arcade');});await page.click('#arcadeNo25');assert.equal(await page.evaluate(()=>CHILL.cafe.view),'home');await page.evaluate(()=>CHILL.cafe.setView('arcade'));await page.click('#arcadeYes25');await page.waitForTimeout(500);await page.screenshot({path:'verification-v25/arcade-mobile.png'});
+ await page.click('#pusherSelect25');await page.click('[data-pusher-machine="0"]');await page.waitForTimeout(1000);await page.screenshot({path:'verification-v25/pusher-mobile.png'});
+ await page.evaluate(()=>{CHILL.cafe.wallet.balance=10;CHILL.save();});await page.click('#pusherExchange25');await page.click('#exchangeYes25');assert.equal(await page.evaluate(()=>CHILL.cafe.pusherStore.state.wallets.player),10);
+ await page.click('#pusherLeft25');await page.click('#pusherRight25');await page.waitForTimeout(1800);
+ console.log('PHYSICS',await page.evaluate(()=>{const m=CHILL.cafe.pusherActive;return{objects:m.state.objects.length,jobs:m.state.jobs,stats:m.state.stats,error:CHILL.cafe.pusherError,audit:CHILL.cafe.pusherStore.audit(),samples:m.state.objects.slice(0,4)}}));
+ await page.click('#pusherCamera25');await page.screenshot({path:'verification-v25/pusher-close-mobile.png'});
+ await page.setViewportSize({width:1400,height:1000});await page.screenshot({path:'verification-v25/pusher-desktop.png'});
+ const save=await page.evaluate(()=>{CHILL.setPaused(true);CHILL.cafe.pusherActive.snapshot();CHILL.save();return{wallet:CHILL.cafe.pusherStore.state.wallets.player,context:JSON.parse(JSON.stringify(CHILL.cafe.pusherActive.state))};});
+ await page.reload();await page.waitForFunction(()=>window.CHILL?.cafe?.pusherReady,{},{timeout:90000});assert.equal(await page.evaluate(()=>CHILL.cafe.pusherStore.state.wallets.player),save.wallet);
+ const restored=await page.evaluate(()=>CHILL.cafe.pusherStore.state.contexts['0:human']);assert.deepEqual(restored.objects,save.context.objects);assert.deepEqual(restored.jobs,save.context.jobs);
+ const second=await context.newPage();await second.goto(url);await second.waitForSelector('#saveGuard25');assert.equal(await second.evaluate(()=>!!window.CHILL),false);await second.close();
+ fs.writeFileSync('verification-v25/browser-results.json',JSON.stringify({before,errors,restore:true,multiTab:true},null,2));assert.deepEqual(errors,[]);await browser.close();
+})().catch(e=>{console.error(e);process.exitCode=1});

@@ -1,0 +1,25 @@
+{
+  "normal": {
+    "frames": 120,
+    "fps": 54.14673765905607,
+    "p95FrameMs": 33.20000000000073,
+    "maxFrameMs": 150.09999999999854,
+    "jsHeapBytes": 364000000,
+    "bodies": 111,
+    "payoutRemaining": 0
+  },
+  "jackpot": {
+    "frames": 120,
+    "fps": 59.03187721369553,
+    "p95FrameMs": 16.799999999995634,
+    "maxFrameMs": 33.400000000001455,
+    "jsHeapBytes": 364000000,
+    "bodies": 182,
+    "payoutRemaining": 600
+  },
+  "audit": {
+    "ok": true,
+    "errors": []
+  },
+  "note": "Windows Edge headless, 390×844 CSS viewport, isolated test profile. Setup advancement excludes disk saves; measured RAF includes normal game saves. Not a physical smartphone measurement."
+}

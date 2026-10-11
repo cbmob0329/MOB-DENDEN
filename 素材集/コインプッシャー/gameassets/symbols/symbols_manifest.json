@@ -1,0 +1,62 @@
+{
+  "redMOB": {
+    "file": "symbol_redMOB.glb",
+    "type": "3D_mesh",
+    "reference": null,
+    "png": "symbol_redMOB.png"
+  },
+  "blueMOB": {
+    "file": "symbol_blueMOB.glb",
+    "type": "3D_mesh",
+    "reference": null,
+    "png": "symbol_blueMOB.png"
+  },
+  "greenMOB": {
+    "file": "symbol_greenMOB.glb",
+    "type": "3D_mesh",
+    "reference": null,
+    "png": "symbol_greenMOB.png"
+  },
+  "dorayaki": {
+    "file": "symbol_dorayaki.glb",
+    "type": "3D_mesh",
+    "reference": null,
+    "png": "symbol_dorayaki.png"
+  },
+  "coinbag": {
+    "file": "symbol_coinbag.glb",
+    "type": "3D_mesh",
+    "reference": null,
+    "png": "symbol_coinbag.png"
+  },
+  "woodchest": {
+    "file": "symbol_woodchest.glb",
+    "type": "3D_mesh",
+    "reference": null,
+    "png": "symbol_woodchest.png"
+  },
+  "goldchest": {
+    "file": "symbol_goldchest.glb",
+    "type": "3D_mesh",
+    "reference": null,
+    "png": "symbol_goldchest.png"
+  },
+  "7": {
+    "file": "symbol_7.glb",
+    "type": "3D_mesh",
+    "reference": null,
+    "png": "symbol_7.png"
+  },
+  "Denden": {
+    "file": "symbol_Denden.glb",
+    "type": "textured_reference_portrait",
+    "reference": "2245C966-C9B2-4D15-971E-A5BDA7141EA4(20261004-012331).jpeg",
+    "png": "symbol_Denden.png"
+  },
+  "Pink": {
+    "file": "symbol_Pink.glb",
+    "type": "textured_reference_portrait",
+    "reference": "25FD9829-5E07-4020-AE0F-FDE216521516(3).jpeg",
+    "png": "symbol_Pink.png"
+  }
+}

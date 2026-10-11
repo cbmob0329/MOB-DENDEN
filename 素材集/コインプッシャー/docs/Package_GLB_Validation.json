@@ -1,0 +1,201 @@
+{
+  "status": "PASS static asset checks; not game runtime QA",
+  "assets": [
+    {
+      "file": "gameassets/exports/cabinet_blue.glb",
+      "bytes": 956360,
+      "meshes": 127,
+      "nodes": 148,
+      "embedded_resources": true
+    },
+    {
+      "file": "gameassets/exports/cabinet_red.glb",
+      "bytes": 956396,
+      "meshes": 127,
+      "nodes": 148,
+      "embedded_resources": true
+    },
+    {
+      "file": "gameassets/exports/coin.glb",
+      "bytes": 7944,
+      "meshes": 4,
+      "nodes": 5,
+      "embedded_resources": true
+    },
+    {
+      "file": "gameassets/exports/coin_bag.glb",
+      "bytes": 29896,
+      "meshes": 12,
+      "nodes": 13,
+      "embedded_resources": true
+    },
+    {
+      "file": "gameassets/exports/dorayaki.glb",
+      "bytes": 22572,
+      "meshes": 7,
+      "nodes": 8,
+      "embedded_resources": true
+    },
+    {
+      "file": "gameassets/exports/gold_chest.glb",
+      "bytes": 83736,
+      "meshes": 23,
+      "nodes": 25,
+      "embedded_resources": true
+    },
+    {
+      "file": "gameassets/exports/gold_sunglasses_mascot.glb",
+      "bytes": 146100,
+      "meshes": 14,
+      "nodes": 15,
+      "embedded_resources": true
+    },
+    {
+      "file": "gameassets/exports/letter_B_blue.glb",
+      "bytes": 38628,
+      "meshes": 1,
+      "nodes": 2,
+      "embedded_resources": true
+    },
+    {
+      "file": "gameassets/exports/letter_B_green.glb",
+      "bytes": 38640,
+      "meshes": 1,
+      "nodes": 2,
+      "embedded_resources": true
+    },
+    {
+      "file": "gameassets/exports/letter_B_red.glb",
+      "bytes": 38624,
+      "meshes": 1,
+      "nodes": 2,
+      "embedded_resources": true
+    },
+    {
+      "file": "gameassets/exports/letter_M_blue.glb",
+      "bytes": 9120,
+      "meshes": 1,
+      "nodes": 2,
+      "embedded_resources": true
+    },
+    {
+      "file": "gameassets/exports/letter_M_green.glb",
+      "bytes": 9128,
+      "meshes": 1,
+      "nodes": 2,
+      "embedded_resources": true
+    },
+    {
+      "file": "gameassets/exports/letter_M_red.glb",
+      "bytes": 9112,
+      "meshes": 1,
+      "nodes": 2,
+      "embedded_resources": true
+    },
+    {
+      "file": "gameassets/exports/letter_O_blue.glb",
+      "bytes": 33968,
+      "meshes": 1,
+      "nodes": 2,
+      "embedded_resources": true
+    },
+    {
+      "file": "gameassets/exports/letter_O_green.glb",
+      "bytes": 33980,
+      "meshes": 1,
+      "nodes": 2,
+      "embedded_resources": true
+    },
+    {
+      "file": "gameassets/exports/letter_O_red.glb",
+      "bytes": 33964,
+      "meshes": 1,
+      "nodes": 2,
+      "embedded_resources": true
+    },
+    {
+      "file": "gameassets/exports/two_cabinets.glb",
+      "bytes": 1030800,
+      "meshes": 143,
+      "nodes": 544,
+      "embedded_resources": true
+    },
+    {
+      "file": "gameassets/exports/wood_chest.glb",
+      "bytes": 86788,
+      "meshes": 25,
+      "nodes": 27,
+      "embedded_resources": true
+    },
+    {
+      "file": "gameassets/symbols/symbol_7.glb",
+      "bytes": 3532,
+      "meshes": 1,
+      "nodes": 2,
+      "embedded_resources": true
+    },
+    {
+      "file": "gameassets/symbols/symbol_Denden.glb",
+      "bytes": 310680,
+      "meshes": 1,
+      "nodes": 2,
+      "embedded_resources": true
+    },
+    {
+      "file": "gameassets/symbols/symbol_Pink.glb",
+      "bytes": 194748,
+      "meshes": 1,
+      "nodes": 2,
+      "embedded_resources": true
+    },
+    {
+      "file": "gameassets/symbols/symbol_blueMOB.glb",
+      "bytes": 80796,
+      "meshes": 3,
+      "nodes": 7,
+      "embedded_resources": true
+    },
+    {
+      "file": "gameassets/symbols/symbol_coinbag.glb",
+      "bytes": 30172,
+      "meshes": 12,
+      "nodes": 14,
+      "embedded_resources": true
+    },
+    {
+      "file": "gameassets/symbols/symbol_dorayaki.glb",
+      "bytes": 22780,
+      "meshes": 7,
+      "nodes": 9,
+      "embedded_resources": true
+    },
+    {
+      "file": "gameassets/symbols/symbol_goldchest.glb",
+      "bytes": 83572,
+      "meshes": 23,
+      "nodes": 26,
+      "embedded_resources": true
+    },
+    {
+      "file": "gameassets/symbols/symbol_greenMOB.glb",
+      "bytes": 80828,
+      "meshes": 3,
+      "nodes": 7,
+      "embedded_resources": true
+    },
+    {
+      "file": "gameassets/symbols/symbol_redMOB.glb",
+      "bytes": 80772,
+      "meshes": 3,
+      "nodes": 7,
+      "embedded_resources": true
+    },
+    {
+      "file": "gameassets/symbols/symbol_woodchest.glb",
+      "bytes": 87304,
+      "meshes": 25,
+      "nodes": 28,
+      "embedded_resources": true
+    }
+  ]
+}
