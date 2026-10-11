@@ -14,3 +14,6 @@ body.chill25 #modal{z-index:120;max-height:82dvh}body.chill25 #modal button{min-
 @media(max-height:500px){#pusher25{grid-template-rows:48px minmax(0,1fr) 28px 25px 48px 30px}.pusher-top button{min-height:44px!important}#pusherNotice25{font-size:10px}.pusher-controls button{min-height:44px!important}.pusher-small button{min-height:28px!important}}
 
 .pusher-aim27{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:center}.pusher-aim27 label{font-size:11px;min-width:0}.pusher-aim27 output{float:right;font-variant-numeric:tabular-nums}.pusher-aim27 input{display:block;width:100%;height:36px;margin:0;accent-color:#536f7d;touch-action:pan-y}#pusherAimReset27{font-size:11px;padding:7px}@media(max-height:600px){#pusher25{grid-template-rows:48px minmax(0,1fr) 26px 28px 58px 46px 38px}.pusher-aim27 input{height:30px}}
+
+/* The live upper monitor remains readable while the camera frames the coins. */
+#pusherStage25{position:relative}#pusherStage25 #pusherMonitor30{position:absolute;top:8px;left:8px;width:min(46%,240px);height:auto;z-index:1;border-radius:10px;pointer-events:none;box-shadow:0 3px 12px #0003}#pusherStage25 #pusherMonitor30[hidden]{display:none}
