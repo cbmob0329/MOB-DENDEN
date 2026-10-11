@@ -1,0 +1,15 @@
+const assert=require('assert/strict'),State=require('../tavern-state-v26.js');
+let pantry={egg:4,corn:4,milk:4},saveOK=true,credits=0;
+const make=()=>new State({pantry:()=>pantry,save:()=>saveOK,backup:()=>credits,rollback:x=>credits=x,credit:()=>credits++});
+const s=make(),guest=id=>({actor:id,seat:id,pos:[160,0,0],path:[],stage:'seated',time:0});
+assert(s.invite(guest(0),true).ok);assert(s.invite(guest(1),true).ok);
+assert(s.order(0,'egg','request1').ok);assert(s.order(0,'egg','request1').duplicate);assert.equal(pantry.egg,3);
+assert(s.order(1,'corn','request2').ok);assert.deepEqual(pantry,{egg:3,corn:3,milk:3});
+assert(s.start().ok);assert(!s.start().ok);assert(s.ready('tavern:1').ok);
+assert(s.claim('tavern:1','manual').ok);assert(!s.claim('tavern:1','resident',0).ok);
+const reloaded=make();reloaded.restore(s.serialize());assert.equal(reloaded.orderFor(0).stage,'manual');
+assert(s.serve('tavern:1').ok);assert(!s.serve('tavern:1').ok);
+saveOK=false;assert(!s.eat('tavern:1').ok);assert.equal(credits,0);assert.equal(s.orderFor(0).stage,'eating');saveOK=true;assert(s.retry());assert(s.eat('tavern:1').ok);assert.equal(credits,1);assert(!s.eat('tavern:1').ok);assert(s.leave(0).ok);
+assert(s.start().ok);assert(s.ready('tavern:2').ok);assert(s.claim('tavern:2','resident',1,[[160,0,-2.85]]).ok);assert(s.pickup('tavern:2',[[161,0,0]]).ok);assert(s.serve('tavern:2').ok);assert(s.eat('tavern:2').ok);assert(s.audit().ok);
+assert(s.invite(guest(2),false).ok);const before={...pantry};saveOK=false;assert(!s.order(2,'corn','failed').ok);assert.deepEqual(pantry,before);assert(!s.orderFor(2));saveOK=true;assert(s.retry());pantry.milk=0;assert.equal(s.order(2,'corn','empty').reason,'ingredients');assert.equal(pantry.corn,before.corn);assert(s.audit().ok);
+console.log('PASS ingredient costs, deduplication, queued cooking, manual/resident delivery, restart, atomic failure rollback, meal credit and accounting');

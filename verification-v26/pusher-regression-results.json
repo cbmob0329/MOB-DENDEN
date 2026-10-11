@@ -1,0 +1,93 @@
+{
+  "result": {
+    "resident": {
+      "visits": [
+        {
+          "session": {
+            "actor": 0,
+            "turns": 1,
+            "inserted": 1
+          },
+          "actor": "travel"
+        },
+        {
+          "session": {
+            "actor": 1,
+            "turns": 0
+          },
+          "actor": "travel"
+        }
+      ],
+      "mode": "playing",
+      "before": 30,
+      "after": 29,
+      "humanBefore": 0,
+      "humanAfter": 0,
+      "inserted": 1,
+      "objects": 111
+    },
+    "race": {
+      "requested": true,
+      "started": true,
+      "controls": false,
+      "finished": true,
+      "result": true
+    },
+    "instances": [
+      {
+        "canvases": 1,
+        "objects": 110
+      },
+      {
+        "canvases": 1,
+        "objects": 109
+      },
+      {
+        "canvases": 1,
+        "objects": 110
+      },
+      {
+        "canvases": 1,
+        "objects": 109
+      },
+      {
+        "canvases": 1,
+        "objects": 110
+      },
+      {
+        "canvases": 1,
+        "objects": 109
+      },
+      {
+        "canvases": 1,
+        "objects": 110
+      },
+      {
+        "canvases": 1,
+        "objects": 109
+      },
+      {
+        "canvases": 1,
+        "objects": 110
+      },
+      {
+        "canvases": 1,
+        "objects": 109
+      },
+      {
+        "canvases": 1,
+        "objects": 110
+      },
+      {
+        "canvases": 1,
+        "objects": 109
+      }
+    ],
+    "closedCanvases": 0,
+    "audit": {
+      "ok": true,
+      "errors": []
+    }
+  },
+  "errors": []
+}

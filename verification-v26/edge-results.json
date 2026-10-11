@@ -1,0 +1,37 @@
+{
+  "result": {
+    "day": 2,
+    "night": 6,
+    "nightStats": 6,
+    "multi": {
+      "ok": true,
+      "errors": []
+    },
+    "stats": {
+      "ordered": 6,
+      "cooked": 5,
+      "served": 4,
+      "eaten": 4,
+      "ingredients": {
+        "egg": 6,
+        "corn": 0,
+        "milk": 0
+      },
+      "dayVisits": 0,
+      "nightVisits": 8
+    },
+    "count": 6,
+    "resume": true,
+    "sleeping": "sleep",
+    "order": {
+      "ok": true,
+      "id": "tavern:1"
+    },
+    "started": true,
+    "wakeAudit": {
+      "ok": true,
+      "errors": []
+    }
+  },
+  "errors": []
+}
