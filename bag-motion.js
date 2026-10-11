@@ -1,6 +1,6 @@
 (function(){'use strict';const clamp=(v,a,b)=>Math.max(a,Math.min(b,v)),smooth=t=>t*t*(3-2*t),mix=(a,b,t)=>a.map((v,i)=>v+(b[i]-v)*smooth(clamp(t,0,1)));
 window.ChillBagMotion={
- load(a){const spec=CHILL_BAG_SPRITES.characters.find(c=>c.key===a.key);if(!spec)return;a.bagSpec=spec;new THREE.TextureLoader().load(spec.url,t=>{for(let i=0;i<3;i++){const c=document.createElement('canvas');c.width=c.height=256;c.getContext('2d').drawImage(t.image,i*256,0,256,256,0,0,256,256);const tx=new THREE.CanvasTexture(c);tx.magFilter=tx.minFilter=THREE.NearestFilter;tx.generateMipmaps=false;tx.colorSpace=THREE.SRGBColorSpace;a.textures['bag_'+i]=tx;}a.bagReady=true;t.dispose();});},
+ load(a){if(window.ChillResources29?.modern(a))return;const spec=CHILL_BAG_SPRITES.characters.find(c=>c.key===a.key);if(!spec)return;a.bagSpec=spec;new THREE.TextureLoader().load(spec.url,t=>{for(let i=0;i<3;i++){const c=document.createElement('canvas');c.width=c.height=256;c.getContext('2d').drawImage(t.image,i*256,0,256,256,0,0,256,256);const tx=new THREE.CanvasTexture(c);tx.magFilter=tx.minFilter=THREE.NearestFilter;tx.generateMipmaps=false;tx.colorSpace=THREE.SRGBColorSpace;a.textures['bag_'+i]=tx;}a.bagReady=true;t.dispose();});},
  sample(a){const b=a.bagAnimation;if(!b)return null;const t=b.time;
  if(b.eat&&t>=1.35&&t<5.5){let q=t-1.35;return {pose:q<.65?'meal_1':q<1.2?'meal_2':q<3.5?'meal_3':'meal_4',index:2,anchor:a.bagSpec.frames[2].heldItemAnchorPx,itemVisible:!b.consumed};}
  const end=b.eat?5.5:3.15,q=b.eat&&t>=end?t-end+3.15:t;

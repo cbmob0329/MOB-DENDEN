@@ -1,0 +1,1 @@
+window.DENDEN_MOTION_SHEETS={"taso":{"url":"assets/runtime-v29/media/914dd3393bd70572f034543c.png","columns":4,"rows":4},"dance":{"url":"assets/runtime-v29/media/c2d75e9b6ddb60d99e952b77.png","columns":4,"rows":4}};
