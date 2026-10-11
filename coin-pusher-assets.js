@@ -3,7 +3,7 @@
  * Unsupported required extensions fail visibly instead of silently changing geometry. */
 (()=>{'use strict';const T=THREE,cache=new Map();
 function parse(encoded){
- const raw=atob(encoded),bytes=Uint8Array.from(raw,c=>c.charCodeAt(0)),view=new DataView(bytes.buffer);
+ const raw=atob(encoded),bytes=new Uint8Array(raw.length);for(let i=0;i<raw.length;i++)bytes[i]=raw.charCodeAt(i);const view=new DataView(bytes.buffer);
  if(view.getUint32(0,true)!==0x46546c67||view.getUint32(4,true)!==2)throw Error('Invalid GLB');
  let doc,bin;for(let p=12;p<bytes.length;){const len=view.getUint32(p,true),type=view.getUint32(p+4,true);p+=8;if(type===0x4e4f534a)doc=JSON.parse(new TextDecoder().decode(bytes.subarray(p,p+len)));if(type===0x004e4942)bin=bytes.slice(p,p+len);p+=len;}
  if(doc.extensionsRequired?.length||doc.skins?.length)throw Error('Unsupported GLB extension/skin');

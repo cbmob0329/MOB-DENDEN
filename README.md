@@ -1,4 +1,10 @@
-# MOB CHILL LIFE — V28
+# MOB CHILL LIFE — V29
+
+iPhoneの起動時メモリ対策として、全モーション分のCanvas生成を廃止しました。元画質・コマ数・住民の行動・既存セーブを維持し、画像・建物・コインプッシャーを必要時に読み込み、最近使った素材を再利用します。PCで起動・往復・保存復元は確認済みですが、初回描画の引っかかりは残り、iPhone 14 Pro実機の確認は未実施です。[V29修正・検証報告](V29_MEMORY_REPORT.md)。
+
+再生成は `node build.cjs`。公開用は `index.html`／`MOB_CHILL_LIFE.html` と付属JS・`assets/runtime-v29/` 一式です。PC向けオフライン版は `dist-local/MOB_CHILL_LIFE.html`（Git管理外）。旧 `optimize-standalone.cjs` の追加圧縮は不要です。公開サイト・配布ZIPは未更新です。
+
+## V28 衣装屋
 
 「場所 → 衣装屋」から、新しい店主と1階の店・2階の住まいを見られます。住民を招き、赤・青・金の試着用リボンを仕立てて着け外しできます。店主の正式名と口調は資料で未確定のため、役名で表示しています。[V28実装・検証報告](V28_TAILOR_REPORT.md)。
 
@@ -42,7 +48,7 @@ V22ではミータの歩行、他の住民の描画品質、ショップの商�
 
 配布ZIPの保存先は `C:/Users/CB-Me/Documents/MOB-CHILL-LIFE-Distribution/MOB_CHILL_LIFE_V15_1.zip`。ファイル名は旧版のまま、内容はV24。更新には `node package-distribution.cjs` を使い、ZIPはGitへ追加しない。
 
-公開用：**index.html / MOB_CHILL_LIFE.html**（JS・画像を分離して読み込みます）。オフライン1ファイル版：**dist-local/MOB_CHILL_LIFE.html**（Git管理外）。再生成：node build.cjs の後、node verification-v23/optimize-standalone.cjs。配布ZIPはGit管理外の1ファイル版を収録します。
+公開用：**index.html / MOB_CHILL_LIFE.html**（JS・画像を分離して読み込みます）。オフライン1ファイル版：**dist-local/MOB_CHILL_LIFE.html**（Git管理外）。再生成：`node build.cjs`。配布ZIPはGit管理外の1ファイル版を収録します。
 
 ## V8時点の変更・操作記録
 

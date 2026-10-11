@@ -1,0 +1,530 @@
+{
+  "browser": "155.0.4283.45",
+  "boot": {
+    "memory": {
+      "decodedImages": 5,
+      "decodedRGBA": 31449256,
+      "peakDecodedRGBA": 31449256,
+      "frameCanvases": 5,
+      "frameRGBA": 5242880,
+      "loading": 0,
+      "models": 1,
+      "loadedGeometry": 1,
+      "geometryBytes": 1663488
+    },
+    "gpu": {
+      "geometries": 171,
+      "textures": 7
+    },
+    "ready": false,
+    "frames": [
+      {
+        "key": "denden",
+        "count": 128
+      },
+      {
+        "key": "pink",
+        "count": 80
+      },
+      {
+        "key": "nyoro",
+        "count": 80
+      },
+      {
+        "key": "irukaeru",
+        "count": 64
+      },
+      {
+        "key": "tetsu",
+        "count": 64
+      },
+      {
+        "key": "nekokoo",
+        "count": 64
+      },
+      {
+        "key": "mita",
+        "count": 16
+      },
+      {
+        "key": "money",
+        "count": 64
+      }
+    ],
+    "rendererRatio": 2,
+    "ms": 2001
+  },
+  "bootRequests": [
+    "/",
+    "/style.css",
+    "/mobile.css",
+    "/cafe-v8.css",
+    "/life-v9.css",
+    "/touch-targets.css",
+    "/meal-shop-v12.css",
+    "/farm-ui.css",
+    "/collection.css",
+    "/arcade.css",
+    "/expansion-v21.css",
+    "/coin-pusher.css",
+    "/vendor/three.min.js",
+    "/resources-v29.js",
+    "/assets/runtime-v29/characters.js",
+    "/room.js",
+    "/oven.js",
+    "/living.js",
+    "/assets/runtime-v29/cafe-characters.js",
+    "/cafe-state.js",
+    "/cafe.js",
+    "/cafe-v8.js",
+    "/life-v9.js",
+    "/contact-depth.js",
+    "/touch-targets.js",
+    "/mobile.js",
+    "/assets/runtime-v29/denden-motions.js",
+    "/motion-sheets.js",
+    "/assets/runtime-v29/sprite-additions.js",
+    "/sprite-additions.js",
+    "/assets/runtime-v29/meal-bath-v12.js",
+    "/meal-shop-v12.js",
+    "/bath-v12.js",
+    "/expansion-config.js",
+    "/farm-state.js",
+    "/farm-scene.js",
+    "/farm-integration.js",
+    "/assets/runtime-v29/plush-icons.js",
+    "/assets/runtime-v29/plush-models.js",
+    "/assets/runtime-v29/keychains.js",
+    "/assets/runtime-v29/bag-sprites.js",
+    "/assets/runtime-v29/shop-figures-v23.js",
+    "/collection-state.js",
+    "/bag-motion.js",
+    "/collection-integration.js",
+    "/arcade-scene.js",
+    "/ufo-game.js",
+    "/arcade-integration.js",
+    "/cafe-requests.js",
+    "/world-feedback.js",
+    "/v14.css",
+    "/assets/runtime-v29/bath-picture-v14.js",
+    "/assets/runtime-v29/plush-additions-v14.js",
+    "/arcade-v14.js",
+    "/world-v14.js",
+    "/assets/runtime-v29/blender-models.js",
+    "/blender-assets.js",
+    "/blender-integration.js",
+    "/assets/runtime-v29/npc-v16.js",
+    "/town-navigation.js",
+    "/residents-v16.js",
+    "/routine-dialogue.js",
+    "/daily-routine.js",
+    "/assets/runtime-v29/npc-motion-v18.js",
+    "/npc-motion-v18.js",
+    "/assets/runtime-v29/town-action-assets-v19.js",
+    "/town-actions-v19.js",
+    "/assets/runtime-v29/life-v20.js",
+    "/life-v20.js",
+    "/voice-v21.js",
+    "/spaces-v21.js",
+    "/mob-play-v21.js",
+    "/assets/runtime-v29/mita-v21.js",
+    "/expansion-v21.js",
+    "/shop-life-v22.js",
+    "/assets/runtime-v29/residents-v23.js",
+    "/tavern-v23.js",
+    "/residents-v23.js",
+    "/player-v24.js",
+    "/neighborhood-v24.js",
+    "/life-v24.js",
+    "/life-v24-features.js",
+    "/assets/runtime-v29/coin-pusher.js",
+    "/coin-pusher-assets.js",
+    "/coin-pusher-state.js",
+    "/coin-pusher-integration.js",
+    "/tavern-v26.css",
+    "/assets/runtime-v29/white-v26.js",
+    "/tavern-state-v26.js",
+    "/tavern-scene-v26.js",
+    "/tavern-v26.js",
+    "/tailor-v28.css",
+    "/assets/runtime-v29/tailor-v28.js",
+    "/tailor-scene-v28.js",
+    "/tailor-v28.js",
+    "/resource-integration-v29.js",
+    "/save-guard-v25.js",
+    "/game.js",
+    "/assets/runtime-v29/bgm-v18.js",
+    "/bgm-v18.js",
+    "/assets/runtime-v29/models/home_shell.js",
+    "/assets/runtime-v29/media/bcc8dcd198d74b51d0561e44.webp",
+    "/assets/runtime-v29/media/f6853d58dd936284e4e3cdf1.webp",
+    "/assets/runtime-v29/media/244c62db774f40f32081dc5b.webp",
+    "/assets/runtime-v29/media/3dace846e4dbe2e1215087ec.webp",
+    "/assets/runtime-v29/media/c980278a4057293f127f4ab9.webp"
+  ],
+  "savePreserved": true,
+  "responses": [
+    {
+      "room": "cafe",
+      "ms": 504,
+      "requests": [
+        "/assets/runtime-v29/models/cafe_shell.js",
+        "/assets/runtime-v29/media/856ceb628eb71218a221ac55.webp"
+      ],
+      "memory": {
+        "decodedImages": 6,
+        "decodedRGBA": 37740112,
+        "peakDecodedRGBA": 37740112,
+        "frameCanvases": 6,
+        "frameRGBA": 6291456,
+        "loading": 0,
+        "models": 2,
+        "loadedGeometry": 2,
+        "geometryBytes": 3606912
+      },
+      "gpu": {
+        "geometries": 233,
+        "textures": 8
+      }
+    },
+    {
+      "room": "home",
+      "ms": 69,
+      "requests": [],
+      "memory": {
+        "decodedImages": 6,
+        "decodedRGBA": 37740112,
+        "peakDecodedRGBA": 37740112,
+        "frameCanvases": 6,
+        "frameRGBA": 6291456,
+        "loading": 0,
+        "models": 2,
+        "loadedGeometry": 2,
+        "geometryBytes": 3606912
+      },
+      "gpu": {
+        "geometries": 233,
+        "textures": 8
+      }
+    },
+    {
+      "room": "cafe",
+      "ms": 59,
+      "requests": [],
+      "memory": {
+        "decodedImages": 6,
+        "decodedRGBA": 37740112,
+        "peakDecodedRGBA": 37740112,
+        "frameCanvases": 6,
+        "frameRGBA": 6291456,
+        "loading": 0,
+        "models": 2,
+        "loadedGeometry": 2,
+        "geometryBytes": 3606912
+      },
+      "gpu": {
+        "geometries": 233,
+        "textures": 8
+      }
+    },
+    {
+      "room": "home",
+      "ms": 38,
+      "requests": [],
+      "memory": {
+        "decodedImages": 6,
+        "decodedRGBA": 37740112,
+        "peakDecodedRGBA": 37740112,
+        "frameCanvases": 6,
+        "frameRGBA": 6291456,
+        "loading": 0,
+        "models": 2,
+        "loadedGeometry": 2,
+        "geometryBytes": 3606912
+      },
+      "gpu": {
+        "geometries": 233,
+        "textures": 8
+      }
+    },
+    {
+      "room": "tavern",
+      "ms": 646,
+      "requests": [
+        "/assets/runtime-v29/media/668cf2a5817d3d070997a76c.png"
+      ],
+      "memory": {
+        "decodedImages": 7,
+        "decodedRGBA": 44029980,
+        "peakDecodedRGBA": 44029980,
+        "frameCanvases": 7,
+        "frameRGBA": 7340032,
+        "loading": 0,
+        "models": 2,
+        "loadedGeometry": 2,
+        "geometryBytes": 3606912
+      },
+      "gpu": {
+        "geometries": 794,
+        "textures": 58
+      }
+    },
+    {
+      "room": "tailor",
+      "ms": 167,
+      "requests": [
+        "/assets/runtime-v29/media/d42b3273a715195cf5668f6a.png"
+      ],
+      "memory": {
+        "decodedImages": 8,
+        "decodedRGBA": 50320044,
+        "peakDecodedRGBA": 50320044,
+        "frameCanvases": 8,
+        "frameRGBA": 8388608,
+        "loading": 0,
+        "models": 2,
+        "loadedGeometry": 2,
+        "geometryBytes": 3606912
+      },
+      "gpu": {
+        "geometries": 956,
+        "textures": 62
+      }
+    },
+    {
+      "room": "tailorHome",
+      "ms": 20,
+      "requests": [],
+      "memory": {
+        "decodedImages": 8,
+        "decodedRGBA": 50320044,
+        "peakDecodedRGBA": 50320044,
+        "frameCanvases": 8,
+        "frameRGBA": 8388608,
+        "loading": 0,
+        "models": 2,
+        "loadedGeometry": 2,
+        "geometryBytes": 3606912
+      },
+      "gpu": {
+        "geometries": 1029,
+        "textures": 63
+      }
+    },
+    {
+      "room": "shop",
+      "ms": 343,
+      "requests": [
+        "/assets/runtime-v29/media/3e4f212a4986afb7b6a7e819.png",
+        "/assets/runtime-v29/media/35f567799f5e4d07ef62e58d.png",
+        "/assets/runtime-v29/media/9e5e55658f19f1841b5e2008.png",
+        "/assets/runtime-v29/media/e8e3515580499c95b6565c31.png",
+        "/assets/runtime-v29/media/305955e71eb14c81aacc3c8e.png",
+        "/assets/runtime-v29/media/b88841bf3d7491c66ffdd34f.png",
+        "/assets/runtime-v29/media/48ef01e2d12a4a98fe71e134.png",
+        "/assets/runtime-v29/media/b8a09e8851af93f175ca90fe.webp",
+        "/assets/runtime-v29/media/a922a0b885ee6ca359d84f98.webp",
+        "/assets/runtime-v29/media/72812147228b17447890f4ad.webp",
+        "/assets/runtime-v29/media/51e6bbaf0ae56b5dfe8a0234.webp",
+        "/assets/runtime-v29/media/72792f52cc885094bbf39a41.webp",
+        "/assets/runtime-v29/media/f523b134ab43e7c29115b2a0.webp",
+        "/assets/runtime-v29/media/4e7d78a7d7c44b5c09bea672.webp",
+        "/assets/runtime-v29/media/424423c9a1dd6bf81a553263.webp"
+      ],
+      "memory": {
+        "decodedImages": 23,
+        "decodedRGBA": 67313084,
+        "peakDecodedRGBA": 67313084,
+        "frameCanvases": 9,
+        "frameRGBA": 9437184,
+        "loading": 0,
+        "models": 2,
+        "loadedGeometry": 2,
+        "geometryBytes": 3606912
+      },
+      "gpu": {
+        "geometries": 1102,
+        "textures": 85
+      }
+    },
+    {
+      "room": "town",
+      "ms": 535,
+      "requests": [
+        "/assets/runtime-v29/models/town_terrain.js",
+        "/assets/runtime-v29/models/town_cafe.js",
+        "/assets/runtime-v29/models/town_arcade.js",
+        "/assets/runtime-v29/models/town_farm.js",
+        "/assets/runtime-v29/models/town_bath.js",
+        "/assets/runtime-v29/models/town_train.js",
+        "/assets/runtime-v29/models/town_home.js",
+        "/assets/runtime-v29/media/3caea568dc19afa8dd45959b.webp"
+      ],
+      "memory": {
+        "decodedImages": 24,
+        "decodedRGBA": 73603148,
+        "peakDecodedRGBA": 73603148,
+        "frameCanvases": 9,
+        "frameRGBA": 9437184,
+        "loading": 0,
+        "models": 9,
+        "loadedGeometry": 9,
+        "geometryBytes": 9691200
+      },
+      "gpu": {
+        "geometries": 1317,
+        "textures": 90
+      }
+    },
+    {
+      "room": "bath",
+      "ms": 614,
+      "requests": [
+        "/assets/runtime-v29/models/bath_interior.js",
+        "/assets/runtime-v29/media/c940662cb1d7eea258a2fbb8.png"
+      ],
+      "memory": {
+        "decodedImages": 25,
+        "decodedRGBA": 79896556,
+        "peakDecodedRGBA": 79896556,
+        "frameCanvases": 10,
+        "frameRGBA": 10485760,
+        "loading": 0,
+        "models": 10,
+        "loadedGeometry": 10,
+        "geometryBytes": 12944400
+      },
+      "gpu": {
+        "geometries": 1346,
+        "textures": 95
+      }
+    },
+    {
+      "room": "home2",
+      "ms": 64,
+      "requests": [
+        "/assets/runtime-v29/media/c333c75bd96c0e4774db571b.webp"
+      ],
+      "memory": {
+        "decodedImages": 26,
+        "decodedRGBA": 86186620,
+        "peakDecodedRGBA": 86186620,
+        "frameCanvases": 10,
+        "frameRGBA": 10485760,
+        "loading": 0,
+        "models": 10,
+        "loadedGeometry": 10,
+        "geometryBytes": 12944400
+      },
+      "gpu": {
+        "geometries": 1443,
+        "textures": 102
+      }
+    },
+    {
+      "room": "home",
+      "ms": 9,
+      "requests": [],
+      "memory": {
+        "decodedImages": 26,
+        "decodedRGBA": 86186620,
+        "peakDecodedRGBA": 86186620,
+        "frameCanvases": 10,
+        "frameRGBA": 10485760,
+        "loading": 0,
+        "models": 10,
+        "loadedGeometry": 10,
+        "geometryBytes": 12944400
+      },
+      "gpu": {
+        "geometries": 1443,
+        "textures": 102
+      }
+    },
+    {
+      "room": "arcade",
+      "ms": 1887,
+      "requests": [
+        "/assets/runtime-v29/models/arcade_shell.js",
+        "/assets/runtime-v29/models/gacha.js",
+        "/assets/runtime-v29/models/capsule.js",
+        "/assets/runtime-v29/models/ufo.js",
+        "/assets/runtime-v29/models/race.js",
+        "/assets/runtime-v29/models/race_course.js",
+        "/assets/runtime-v29/models/kart.js",
+        "/assets/runtime-v29/coin-pusher-full.js",
+        "/assets/runtime-v29/media/7979790b96a3321a0bf5be22.png",
+        "/assets/runtime-v29/media/d852af98710b5a18c38834e2.png",
+        "/assets/runtime-v29/media/9d98209dbc0dd55cdf454ffa.png",
+        "/vendor/rapier-0.21.0.js",
+        "/coin-pusher-physics.js",
+        "/assets/runtime-v29/media/242516074755f6057d1ed3d9.png",
+        "/assets/runtime-v29/media/0dc7b052348b063f4a41291a.png",
+        "/assets/runtime-v29/media/6b5805a47ec7cf1d77b159c6.png"
+      ],
+      "memory": {
+        "decodedImages": 32,
+        "decodedRGBA": 97393276,
+        "peakDecodedRGBA": 97393276,
+        "frameCanvases": 10,
+        "frameRGBA": 10485760,
+        "loading": 0,
+        "models": 17,
+        "loadedGeometry": 26,
+        "geometryBytes": 37302000
+      },
+      "gpu": {
+        "geometries": 1783,
+        "textures": 111
+      }
+    },
+    {
+      "room": "home",
+      "ms": 140,
+      "requests": [],
+      "memory": {
+        "decodedImages": 32,
+        "decodedRGBA": 97393276,
+        "peakDecodedRGBA": 97393276,
+        "frameCanvases": 10,
+        "frameRGBA": 10485760,
+        "loading": 0,
+        "models": 17,
+        "loadedGeometry": 26,
+        "geometryBytes": 37302000
+      },
+      "gpu": {
+        "geometries": 1783,
+        "textures": 111
+      }
+    }
+  ],
+  "pusher": {
+    "audit": {
+      "ok": true,
+      "errors": []
+    },
+    "pending": 0,
+    "current": true,
+    "jobs": 1,
+    "objects": 108
+  },
+  "peak": {
+    "decodedImages": 32,
+    "decodedRGBA": 97393276,
+    "peakDecodedRGBA": 97393276,
+    "frameCanvases": 10,
+    "frameRGBA": 10485760,
+    "loading": 0,
+    "models": 17,
+    "loadedGeometry": 26,
+    "geometryBytes": 37302000,
+    "frameMs": {
+      "p50": 16.69999999999891,
+      "p95": 16.900000000001455,
+      "max": 1116.4000000000015
+    }
+  },
+  "interactiveDuringLoad": true,
+  "errors": []
+}
