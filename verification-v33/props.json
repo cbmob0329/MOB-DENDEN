@@ -1,0 +1,112 @@
+[
+  {
+    "key": "money",
+    "pose": "idle",
+    "visible": false
+  },
+  {
+    "key": "money",
+    "pose": "walk",
+    "visible": false
+  },
+  {
+    "key": "money",
+    "pose": "sit",
+    "visible": false
+  },
+  {
+    "key": "money",
+    "pose": "read",
+    "visible": false
+  },
+  {
+    "key": "money",
+    "pose": "sleep",
+    "visible": false
+  },
+  {
+    "key": "money",
+    "pose": "dance",
+    "visible": false
+  },
+  {
+    "key": "money",
+    "pose": "joy",
+    "visible": false
+  },
+  {
+    "key": "money",
+    "pose": "bath",
+    "visible": false
+  },
+  {
+    "key": "money",
+    "pose": "special",
+    "visible": true
+  },
+  {
+    "key": "money",
+    "pose": "after",
+    "visible": false
+  },
+  {
+    "key": "tetsu",
+    "pose": "idle",
+    "visible": false
+  },
+  {
+    "key": "tetsu",
+    "pose": "walk",
+    "visible": false
+  },
+  {
+    "key": "tetsu",
+    "pose": "sit",
+    "visible": false
+  },
+  {
+    "key": "tetsu",
+    "pose": "read",
+    "visible": false
+  },
+  {
+    "key": "tetsu",
+    "pose": "sleep",
+    "visible": false
+  },
+  {
+    "key": "tetsu",
+    "pose": "dance",
+    "visible": false
+  },
+  {
+    "key": "tetsu",
+    "pose": "joy",
+    "visible": false
+  },
+  {
+    "key": "tetsu",
+    "pose": "bath",
+    "visible": false
+  },
+  {
+    "key": "tetsu",
+    "pose": "special",
+    "visible": true
+  },
+  {
+    "key": "tetsu",
+    "pose": "after",
+    "visible": false
+  },
+  {
+    "key": "tetsu",
+    "pose": "town-walk",
+    "visible": false
+  },
+  {
+    "key": "tetsu",
+    "pose": "special",
+    "visible": true
+  }
+]

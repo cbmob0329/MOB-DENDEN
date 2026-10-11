@@ -1,0 +1,305 @@
+[
+  {
+    "zone": "slot",
+    "x": -0.25,
+    "stats": {
+      "initial": 0,
+      "inserted": 0,
+      "generated": 1,
+      "front": 0,
+      "slot": 1,
+      "prizeGenerated": 0,
+      "prizeCollected": 0,
+      "spins": 1,
+      "completed": 1,
+      "payoutTotal": 0,
+      "payoutGenerated": 0
+    },
+    "p": [
+      -0.25,
+      0.9030542373657227,
+      0.11021008491516113
+    ],
+    "audit": {
+      "ok": true,
+      "errors": []
+    }
+  },
+  {
+    "zone": "slot",
+    "x": 0,
+    "stats": {
+      "initial": 0,
+      "inserted": 0,
+      "generated": 1,
+      "front": 0,
+      "slot": 1,
+      "prizeGenerated": 0,
+      "prizeCollected": 0,
+      "spins": 1,
+      "completed": 1,
+      "payoutTotal": 0,
+      "payoutGenerated": 0
+    },
+    "p": [
+      1.2329753884543493e-10,
+      0.9030542373657227,
+      0.11021008491516113
+    ],
+    "audit": {
+      "ok": true,
+      "errors": []
+    }
+  },
+  {
+    "zone": "slot",
+    "x": 0.25,
+    "stats": {
+      "initial": 0,
+      "inserted": 0,
+      "generated": 1,
+      "front": 0,
+      "slot": 1,
+      "prizeGenerated": 0,
+      "prizeCollected": 0,
+      "spins": 1,
+      "completed": 1,
+      "payoutTotal": 0,
+      "payoutGenerated": 0
+    },
+    "p": [
+      0.25,
+      0.9030542373657227,
+      0.11021008491516113
+    ],
+    "audit": {
+      "ok": true,
+      "errors": []
+    }
+  },
+  {
+    "zone": "ramp",
+    "x": 0.12,
+    "stats": {
+      "initial": 0,
+      "inserted": 0,
+      "generated": 1,
+      "front": 0,
+      "slot": 0,
+      "prizeGenerated": 0,
+      "prizeCollected": 0,
+      "spins": 0,
+      "completed": 0,
+      "payoutTotal": 0,
+      "payoutGenerated": 0
+    },
+    "p": [
+      0.11828035116195679,
+      0.852420711517334,
+      0.2462829351425171
+    ],
+    "audit": {
+      "ok": true,
+      "errors": []
+    }
+  },
+  {
+    "zone": "front",
+    "x": 0.2,
+    "stats": {
+      "initial": 0,
+      "inserted": 0,
+      "generated": 1,
+      "front": 1,
+      "slot": 0,
+      "prizeGenerated": 0,
+      "prizeCollected": 0,
+      "spins": 0,
+      "completed": 0,
+      "payoutTotal": 0,
+      "payoutGenerated": 0
+    },
+    "p": [
+      0.2,
+      0.8457715034484863,
+      0.45999999046325685
+    ],
+    "audit": {
+      "ok": true,
+      "errors": []
+    }
+  },
+  {
+    "names": [
+      "Anchor_SlotCoinAndSpin",
+      "COL_SlotTrigger",
+      "Control_Label_L",
+      "Control_Label_R",
+      "Input_L_Slot",
+      "Input_R_Slot",
+      "Label_Input_L",
+      "Label_Input_R",
+      "Label_Payout",
+      "Label_Select",
+      "Label_Slot",
+      "Slot_EndRim",
+      "Slot_EndRim.001",
+      "Slot_SideRim",
+      "Slot_SideRim.001",
+      "Slot_Tunnel_End",
+      "Slot_Tunnel_End.001",
+      "Slot_Tunnel_Left",
+      "Slot_Tunnel_Right"
+    ]
+  },
+  {
+    "zone": "side-input",
+    "side": "L",
+    "angle": -40,
+    "stats": {
+      "initial": 0,
+      "inserted": 1,
+      "generated": 1,
+      "front": 0,
+      "slot": 0,
+      "prizeGenerated": 0,
+      "prizeCollected": 0,
+      "spins": 0,
+      "completed": 0,
+      "payoutTotal": 0,
+      "payoutGenerated": 0
+    },
+    "audit": {
+      "ok": true,
+      "errors": []
+    }
+  },
+  {
+    "payoutZ": -0.23
+  },
+  {
+    "zone": "side-input",
+    "side": "L",
+    "angle": 0,
+    "stats": {
+      "initial": 0,
+      "inserted": 1,
+      "generated": 1,
+      "front": 0,
+      "slot": 0,
+      "prizeGenerated": 0,
+      "prizeCollected": 0,
+      "spins": 0,
+      "completed": 0,
+      "payoutTotal": 0,
+      "payoutGenerated": 0
+    },
+    "audit": {
+      "ok": true,
+      "errors": []
+    }
+  },
+  {
+    "payoutZ": -0.23
+  },
+  {
+    "zone": "side-input",
+    "side": "L",
+    "angle": 40,
+    "stats": {
+      "initial": 0,
+      "inserted": 1,
+      "generated": 1,
+      "front": 0,
+      "slot": 0,
+      "prizeGenerated": 0,
+      "prizeCollected": 0,
+      "spins": 0,
+      "completed": 0,
+      "payoutTotal": 0,
+      "payoutGenerated": 0
+    },
+    "audit": {
+      "ok": true,
+      "errors": []
+    }
+  },
+  {
+    "payoutZ": -0.23
+  },
+  {
+    "zone": "side-input",
+    "side": "R",
+    "angle": -40,
+    "stats": {
+      "initial": 0,
+      "inserted": 1,
+      "generated": 1,
+      "front": 0,
+      "slot": 0,
+      "prizeGenerated": 0,
+      "prizeCollected": 0,
+      "spins": 0,
+      "completed": 0,
+      "payoutTotal": 0,
+      "payoutGenerated": 0
+    },
+    "audit": {
+      "ok": true,
+      "errors": []
+    }
+  },
+  {
+    "payoutZ": -0.23
+  },
+  {
+    "zone": "side-input",
+    "side": "R",
+    "angle": 0,
+    "stats": {
+      "initial": 0,
+      "inserted": 1,
+      "generated": 1,
+      "front": 0,
+      "slot": 0,
+      "prizeGenerated": 0,
+      "prizeCollected": 0,
+      "spins": 0,
+      "completed": 0,
+      "payoutTotal": 0,
+      "payoutGenerated": 0
+    },
+    "audit": {
+      "ok": true,
+      "errors": []
+    }
+  },
+  {
+    "payoutZ": -0.23
+  },
+  {
+    "zone": "side-input",
+    "side": "R",
+    "angle": 40,
+    "stats": {
+      "initial": 0,
+      "inserted": 1,
+      "generated": 1,
+      "front": 0,
+      "slot": 0,
+      "prizeGenerated": 0,
+      "prizeCollected": 0,
+      "spins": 0,
+      "completed": 0,
+      "payoutTotal": 0,
+      "payoutGenerated": 0
+    },
+    "audit": {
+      "ok": true,
+      "errors": []
+    }
+  },
+  {
+    "payoutZ": -0.23
+  }
+]
