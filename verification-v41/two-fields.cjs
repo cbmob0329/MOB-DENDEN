@@ -1,0 +1,10 @@
+const assert=require('assert/strict'),Farm=require('../farm-state.js');
+const crop={crop:'wheat',wateredAt:100,durationMs:100,yield:2};
+const f=new Farm({}, {v:1,plots:Array.from({length:36},()=>({...crop}))});
+assert.equal(f.state.plots.length,24);assert.equal(f.state.pendingPlots.length,12);
+assert(f.collect('crop',0,500,()=>true,()=>true).ok);assert.equal(f.state.pendingPlots.length,11);assert.equal(f.state.plots[0].wateredAt,100);
+const restored=new Farm({},f.serialize());assert.equal(restored.state.pendingPlots.length,11);
+const before=restored.serialize();assert(!restored.collect('crop',0,500,()=>false,()=>true).ok);assert.deepEqual(restored.serialize(),before);
+const {chromium}=require('../verification-v25/test-runtime.cjs');
+(async()=>{const s=await require('../verification-v29/server.cjs')(),b=await chromium.launch({channel:'msedge',headless:true});try{const p=await b.newPage({viewport:{width:1100,height:1000}}),errors=[];p.on('pageerror',e=>errors.push(e.stack));await p.goto(s.url);await p.waitForFunction(()=>window.CHILL);await p.evaluate(()=>{CHILL.setPaused(true);document.querySelector('#modal').close();CHILL.cafe.setView('farm');});await p.waitForFunction(()=>CHILL.cafe.view==='farm');await p.waitForTimeout(400);await p.screenshot({path:'verification-v41/two-fields.png'});await p.evaluate(()=>{CHILL.cafe.farm.state.seeds.wheat=4;CHILL.cafe.farmMenu();});assert.equal(await p.locator('[data-bed40]').count(),24);assert.equal(await p.locator('.farm-field40').count(),2);await p.click('[data-bed40="23"]');assert.equal(await p.evaluate(()=>CHILL.cafe.farm.state.plots[23].crop),'wheat');await p.click('[data-farm-tool40="water"]');await p.click('[data-bed40="23"]');assert(await p.evaluate(()=>CHILL.cafe.farm.state.plots[23].wateredAt));await p.setViewportSize({width:390,height:844});await p.screenshot({path:'verification-v41/two-fields-mobile.png'});assert.deepEqual(errors,[]);console.log('PASS 24 beds, two fields, planting/watering, migration preserves overflow crops and rollback');}finally{await b.close();await s.close()}})().catch(e=>{console.error(e);process.exitCode=1});
+

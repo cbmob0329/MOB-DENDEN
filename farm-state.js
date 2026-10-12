@@ -15,25 +15,32 @@ class FarmState {
   }
   restore(saved){
     const s=saved&&saved.v===1?saved:{};
-    this.state={v:1,revision:count(s.revision),clock:count(s.clock),plots:Array.from({length:9},(_,i)=>{
+    this.state={v:1,revision:count(s.revision),clock:count(s.clock),plots:Array.from({length:24},(_,i)=>{
       const p=s.plots?.[i];if(!cropKeys.includes(p?.crop))return emptyPlot();
       const growing=integer(p.wateredAt)&&Number.isSafeInteger(p.durationMs)&&p.durationMs>0&&[1,2,3].includes(p.yield);
       return {crop:p.crop,wateredAt:growing?p.wateredAt:null,durationMs:growing?p.durationMs:null,yield:growing?p.yield:null};
     }),seeds:Object.fromEntries(cropKeys.map(k=>[k,count(s.seeds?.[k])])),storage:Object.fromEntries([...cropKeys,'egg','milk','dorayaki','omelet','soup'].map(k=>[k,count(s.storage?.[k])])),hen:{eggs:Math.min(3,count(s.hen?.eggs)),nextAt:integer(s.hen?.nextAt)?s.hen.nextAt:null},cow:{ready:!!s.cow?.ready,nextAt:integer(s.cow?.nextAt)?s.cow.nextAt:null}};
+    // Preserve crops from the former 36-bed layout until a bed becomes available.
+    this.state.pendingPlots=(s.plots?.slice(24)||[]).concat(s.pendingPlots||[]).filter(p=>cropKeys.includes(p?.crop)).map(p=>({...p}));
+    this.refillPending();
     if(this.state.hen.eggs===3)this.state.hen.nextAt=null;
     if(this.state.cow.ready)this.state.cow.nextAt=null;
+    this.state.hen2={eggs:Math.min(3,count(s.hen2?.eggs)),nextAt:integer(s.hen2?.nextAt)?s.hen2.nextAt:null};
+    this.state.cow2={ready:!!s.cow2?.ready,nextAt:integer(s.cow2?.nextAt)?s.cow2.nextAt:null};
+    for(const key of ['cow','cow2'])this.state[key].milk=[2,3,4].includes(s[key]?.milk)?s[key].milk:2+Math.floor(Math.random()*3);
   }
+  refillPending(){for(let i=0;i<this.state.plots.length&&this.state.pendingPlots.length;i++)if(!this.state.plots[i].crop)this.state.plots[i]=this.state.pendingPlots.shift();}
   serialize(){return clone(this.state);}
   now(at){if(!integer(at))throw Error('A nonnegative integer wall-clock timestamp is required');return Math.max(at,this.state.clock);}
   period(){const n=this.config.animalMs;return Number.isSafeInteger(n)&&n>0?n:null;}
   settle(at){
     const s=this.state,t=this.now(at),ms=this.period();s.clock=t;
     if(!ms)return;
-    if(s.hen.eggs<3){
+    for(const hen of [s.hen,s.hen2]){const s={hen};if(s.hen.eggs<3){
       if(s.hen.nextAt===null)s.hen.nextAt=t+ms;
       if(t>=s.hen.nextAt){const n=Math.min(3-s.hen.eggs,Math.floor((t-s.hen.nextAt)/ms)+1);s.hen.eggs+=n;s.hen.nextAt=s.hen.eggs===3?null:s.hen.nextAt+n*ms;}
-    }
-    if(!s.cow.ready){if(s.cow.nextAt===null)s.cow.nextAt=t+ms;if(t>=s.cow.nextAt){s.cow.ready=true;s.cow.nextAt=null;}}
+    }}
+    for(const cow of [s.cow,s.cow2])if(!cow.ready){if(cow.nextAt===null)cow.nextAt=t+ms;if(t>=cow.nextAt){cow.ready=true;cow.nextAt=null;}}
   }
   transact(at,save,change){
     if(this.busy||typeof save!=='function')return {ok:false,reason:'busy-or-no-persistence'};
@@ -63,18 +70,18 @@ class FarmState {
   });}
   plot(index,at){const p=this.state.plots[index];if(!p?.crop)return {stage:0,empty:true};if(p.wateredAt===null)return {stage:0,crop:p.crop,dry:true};const elapsed=Math.max(0,this.now(at)-p.wateredAt),progress=Math.min(1,elapsed/p.durationMs);return {crop:p.crop,stage:Math.min(4,Math.floor(progress*5)),ready:progress===1,remainingMs:Math.max(0,p.durationMs-elapsed),progress};}
   collect(kind,index,at,save,accept){return this.transact(at,save,()=>{
-    const s=this.state;let item,n;
+    const s=this.state,hen=index===1?s.hen2:s.hen,cow=index===1?s.cow2:s.cow;let item,n;
     if(kind==='crop'){const p=s.plots[index];if(!this.plot(index,s.clock).ready)return {ok:false,reason:'not-ready'};item=p.crop;n=p.yield;}
-    else if(kind==='egg'){item='egg';n=s.hen.eggs;if(!n)return {ok:false,reason:'not-ready'};}
-    else if(kind==='milk'){item='milk';n=1;if(!s.cow.ready)return {ok:false,reason:'not-ready'};}
+    else if(kind==='egg'){item='egg';n=hen.eggs;if(!n)return {ok:false,reason:'not-ready'};}
+    else if(kind==='milk'){item='milk';n=cow.milk;if(!cow.ready)return {ok:false,reason:'not-ready'};}
     else return {ok:false,reason:'invalid-kind'};
     // Slot/stack rules are intentionally supplied by the eventual inventory adapter.
     if(typeof accept!=='function'||accept(clone(s.storage),item,n)!==true)return {ok:false,reason:'storage-full-or-policy-pending'};
     if(!Number.isSafeInteger(s.storage[item]+n))return {ok:false,reason:'overflow'};
     s.storage[item]+=n;
-    if(kind==='crop')s.plots[index]=emptyPlot();
-    else if(kind==='egg'){const full=s.hen.eggs===3;s.hen.eggs=0;if(full)s.hen.nextAt=this.period()?s.clock+this.period():null;}
-    else {s.cow.ready=false;s.cow.nextAt=this.period()?s.clock+this.period():null;}
+    if(kind==='crop'){s.plots[index]=emptyPlot();this.refillPending();}
+    else if(kind==='egg'){const full=hen.eggs===3;hen.eggs=0;if(full)hen.nextAt=this.period()?s.clock+this.period():null;}
+    else {cow.ready=false;cow.nextAt=this.period()?s.clock+this.period():null;cow.milk=2+Math.floor(Math.random()*3);}
     return {item,count:n};
   });}
 }
