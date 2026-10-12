@@ -1,7 +1,7 @@
 /* Tavern ingredients and dishes are committed in the same save as the kitchen. */
 (function(root){'use strict';
 const copy=x=>JSON.parse(JSON.stringify(x)),count=n=>Number.isSafeInteger(n)&&n>=0;
-const recipes={egg:{name:'卵スープ',cost:{egg:1},seconds:30},corn:{name:'コーンスープ',cost:{corn:1,milk:1},seconds:30}};
+const recipes={egg:{name:'卵スープ',cost:{egg:1},seconds:15},corn:{name:'コーンスープ',cost:{corn:1,milk:1},seconds:15}};
 class TavernState{
  constructor(hooks){this.hooks=hooks;this.failed=false;this.restore();}
  restore(raw){this.state=raw?copy(raw):{v:1,serial:0,clock:0,nextGuest:8,visits:{},orders:[],receipts:{},history:[],stats:{ordered:0,cooked:0,served:0,eaten:0,ingredients:{egg:0,corn:0,milk:0},dayVisits:0,nightVisits:0},chef:{pos:[160,.9,-5.03],path:[],action:'idle',time:0,nextDance:35,line:0}};this.validate();this.failed=false;}
@@ -12,7 +12,7 @@ class TavernState{
  orderFor(actor){return this.state.orders.find(o=>o.actor===actor&&o.stage!=='done');}
  invite(visit,night){return this.transaction(()=>{if(this.state.visits[visit.actor]||Object.values(this.state.visits).some(v=>v.seat===visit.seat))return{ok:false,reason:'occupied'};this.state.visits[visit.actor]=copy(visit);this.state.stats[night?'nightVisits':'dayVisits']++;});}
  order(actor,recipe,requestId){if(this.state.receipts[requestId])return{ok:true,duplicate:true,id:this.state.receipts[requestId]};return this.transaction(()=>{const r=recipes[recipe],v=this.state.visits[actor];if(!r||!v||!['seated','enter','townIn','depart'].includes(v.stage)||this.orderFor(actor))return{ok:false,reason:'guest'};const p=this.hooks.pantry();if(Object.entries(r.cost).some(([k,n])=>!count(p[k])||p[k]<n))return{ok:false,reason:'ingredients'};for(const [k,n]of Object.entries(r.cost)){p[k]-=n;this.state.stats.ingredients[k]+=n;}const id='tavern:'+ ++this.state.serial;this.state.orders.push({id,actor,recipe,stage:'queued',time:0,helper:null});this.state.receipts[requestId]=id;this.state.stats.ordered++;return{id};});}
- start(){if(this.state.orders.some(o=>o.stage==='cooking'))return{ok:false,reason:'busy'};const o=this.state.orders.find(o=>o.stage==='queued');if(!o)return{ok:false,reason:'empty'};return this.transaction(()=>{o.stage='cooking';o.time=0;});}
+ start(){if(this.state.orders.filter(o=>o.stage==='cooking').length>=3)return{ok:false,reason:'busy'};const o=this.state.orders.find(o=>o.stage==='queued');if(!o)return{ok:false,reason:'empty'};return this.transaction(()=>{o.stage='cooking';o.time=0;});}
  ready(id){return this.transaction(()=>{const o=this.state.orders.find(o=>o.id===id);if(!o||o.stage!=='cooking')return{ok:false,reason:'stage'};o.stage='ready';o.time=0;this.state.stats.cooked++;});}
  claim(id,mode,helper=null,path=[]){return this.transaction(()=>{const o=this.state.orders.find(o=>o.id===id),v=o&&this.state.visits[o.actor];if(!o||o.stage!=='ready'||v?.stage!=='seated')return{ok:false,reason:'stage'};if(mode==='resident'){const h=this.state.visits[helper];if(!h||h.stage!=='seated'||this.state.orders.some(x=>x.helper===helper&&['fetch','carry'].includes(x.stage)))return{ok:false,reason:'helper'};o.stage='fetch';o.helper=helper;h.stage='fetch';h.path=copy(path);h.time=0;}else if(mode==='manual')o.stage='manual';else return{ok:false,reason:'mode'};o.time=0;});}
  pickup(id,path){return this.transaction(()=>{const o=this.state.orders.find(o=>o.id===id),h=o&&this.state.visits[o.helper];if(!o||o.stage!=='fetch'||!h)return{ok:false,reason:'stage'};o.stage='carry';o.time=0;h.stage='carry';h.path=copy(path);});}

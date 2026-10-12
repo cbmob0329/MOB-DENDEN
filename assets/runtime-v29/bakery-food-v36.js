@@ -1,0 +1,1 @@
+window.CHILL_BAKERY_ART36={"koppe": {"url": "assets/runtime-v29/media/e464a5cc6138697a997a4f61.png"}, "anpan": {"url": "assets/runtime-v29/media/eb76705f1c6a9f206013a9b9.png"}, "cheese": {"url": "assets/runtime-v29/media/cb26820f3fb4ea832a36aa22.png"}, "cup-empty": {"url": "assets/runtime-v29/media/c31f696d28aa09ee7429200c.png"}};

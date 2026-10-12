@@ -1,0 +1,71 @@
+{
+  "receipts": [
+    {
+      "ok": true
+    },
+    {
+      "ok": true
+    },
+    {
+      "ok": true
+    },
+    {
+      "ok": true
+    }
+  ],
+  "equip": [
+    {
+      "ok": true
+    },
+    {
+      "ok": true
+    }
+  ],
+  "failed": {
+    "ok": false,
+    "reason": "save-failed"
+  },
+  "rollback": true,
+  "stages": [
+    {
+      "time": 0.1,
+      "visible": false,
+      "pose": "bag_0"
+    },
+    {
+      "time": 0.85,
+      "visible": false,
+      "pose": "bag_0"
+    },
+    {
+      "time": 1.4,
+      "visible": true,
+      "pose": "bag_0"
+    },
+    {
+      "time": 2.5,
+      "visible": true,
+      "pose": "bag_2"
+    },
+    {
+      "time": 5.39,
+      "visible": false,
+      "pose": "bag_0"
+    }
+  ],
+  "skin": "T35-001-bag",
+  "retained": true,
+  "displayed": 1,
+  "locked": true,
+  "counts": {
+    "piercing": 23,
+    "earring": 23,
+    "strap": 23,
+    "ribbon": 23,
+    "bag": 23
+  },
+  "gachaHasGoods": false,
+  "legacyOrder": false,
+  "legacyReceive": false,
+  "errors": []
+}

@@ -1,0 +1,1037 @@
+[
+  {
+    "number": "66",
+    "name": "ステイシーⅡ",
+    "category": "bag",
+    "category_ja": "バッグ",
+    "file": "66_ステイシーⅡ/66_ステイシーⅡモデル バッグ.png",
+    "sha256": "bf4af881d6590fc4590b191b7e4dabda3d781648d05f671ceabd7936191f5ceb",
+    "bytes": 1804038
+  },
+  {
+    "number": "66",
+    "name": "ステイシーⅡ",
+    "category": "ribbon",
+    "category_ja": "リボン",
+    "file": "66_ステイシーⅡ/66_ステイシーⅡモデル リボン.png",
+    "sha256": "51ccb8c6cdfa590d3fa892523e95b19377f5ab0fcd2df2bedbed9d3f2ba09f2e",
+    "bytes": 1693098
+  },
+  {
+    "number": "66",
+    "name": "ステイシーⅡ",
+    "category": "piercing",
+    "category_ja": "ピアス",
+    "file": "66_ステイシーⅡ/66_ステイシーⅡモデル ピアス.png",
+    "sha256": "beed83c8c0b78aa4fa27105251c9a0175599ae2613f7cad38c7756334b9f51c8",
+    "bytes": 1831449
+  },
+  {
+    "number": "66",
+    "name": "ステイシーⅡ",
+    "category": "earring",
+    "category_ja": "イヤリング",
+    "file": "66_ステイシーⅡ/66_ステイシーⅡモデル イヤリング.png",
+    "sha256": "46bf0ba6c848a54f4c07f30cb445e1ceaa86f6a504c42ad74a3fc106ae56269b",
+    "bytes": 1877497
+  },
+  {
+    "number": "66",
+    "name": "ステイシーⅡ",
+    "category": "strap",
+    "category_ja": "ストラップ",
+    "file": "66_ステイシーⅡ/66_ステイシーⅡモデル ストラップ.png",
+    "sha256": "3d6588859cd83133bb7b74b6c84b112eb9cf9e1226699ee47c32be82a7a0e66c",
+    "bytes": 961893
+  },
+  {
+    "number": "07",
+    "name": "モブデンデン",
+    "category": "bag",
+    "category_ja": "バッグ",
+    "file": "07_モブデンデン/07_モブデンデンモデル バッグ.png",
+    "sha256": "2684600f078b4c6391d6585e340aa82cdb739cf9d15a28ca0abe7b83c0ff4555",
+    "bytes": 1484097
+  },
+  {
+    "number": "07",
+    "name": "モブデンデン",
+    "category": "ribbon",
+    "category_ja": "リボン",
+    "file": "07_モブデンデン/07_モブデンデンモデル リボン.png",
+    "sha256": "e70e66fa6c732075186e1cf77a1e45d6bda2bce859aedae080649da54544ff4c",
+    "bytes": 1244060
+  },
+  {
+    "number": "07",
+    "name": "モブデンデン",
+    "category": "piercing",
+    "category_ja": "ピアス",
+    "file": "07_モブデンデン/07_モブデンデンモデル ピアス.png",
+    "sha256": "a7ceeae70cc1e532926c3ef2208d1dfe9434bf83602f6716d86986d5b8a2c167",
+    "bytes": 1454514
+  },
+  {
+    "number": "07",
+    "name": "モブデンデン",
+    "category": "earring",
+    "category_ja": "イヤリング",
+    "file": "07_モブデンデン/07_モブデンデンモデル イヤリング.png",
+    "sha256": "f651aaf65c56b1e2ab63f964192055a639cdb31d26ea78dc79ad38cb18be056e",
+    "bytes": 1536352
+  },
+  {
+    "number": "07",
+    "name": "モブデンデン",
+    "category": "strap",
+    "category_ja": "ストラップ",
+    "file": "07_モブデンデン/07_モブデンデンモデル ストラップ.png",
+    "sha256": "e74704d379ca2612ae0781a7de1058b4276a76760eebb4c693bb35bf78e2ea93",
+    "bytes": 876194
+  },
+  {
+    "number": "09",
+    "name": "モブリーロ",
+    "category": "bag",
+    "category_ja": "バッグ",
+    "file": "09_モブリーロ/09_モブリーロモデル バッグ.png",
+    "sha256": "af6e2bc4b5cbc2c94830a643ef90dec3362a747eaf6f02f1c1c8bdc02bcd72b4",
+    "bytes": 1638077
+  },
+  {
+    "number": "09",
+    "name": "モブリーロ",
+    "category": "ribbon",
+    "category_ja": "リボン",
+    "file": "09_モブリーロ/09_モブリーロモデル リボン.png",
+    "sha256": "63a0dd7c8a45cc656428a6aab45f8c906c33a2fcf10414fba4eb95153827e62c",
+    "bytes": 1463249
+  },
+  {
+    "number": "09",
+    "name": "モブリーロ",
+    "category": "piercing",
+    "category_ja": "ピアス",
+    "file": "09_モブリーロ/09_モブリーロモデル ピアス.png",
+    "sha256": "b22a30ae411b1344e925572102a7056d59cb50064c85cb82265bea96645a5c05",
+    "bytes": 1951772
+  },
+  {
+    "number": "09",
+    "name": "モブリーロ",
+    "category": "earring",
+    "category_ja": "イヤリング",
+    "file": "09_モブリーロ/09_モブリーロモデル イヤリング.png",
+    "sha256": "b4a146980d8cd267d1cd8af0aeec62bf9389293aae460ddfcc6b831ea9c683c8",
+    "bytes": 1971917
+  },
+  {
+    "number": "09",
+    "name": "モブリーロ",
+    "category": "strap",
+    "category_ja": "ストラップ",
+    "file": "09_モブリーロ/09_モブリーロモデル ストラップ.png",
+    "sha256": "ab5ae40b5ea79d60016201c5faff36e08c92add6706f9c2c49236db4036320ad",
+    "bytes": 995446
+  },
+  {
+    "number": "02",
+    "name": "モブピンク",
+    "category": "bag",
+    "category_ja": "バッグ",
+    "file": "02_モブピンク/02_モブピンクモデル バッグ.png",
+    "sha256": "434fe919e1c138e20ded7836435ea9289eef20e0d0ed277ad1293f05fc10c52b",
+    "bytes": 1371511
+  },
+  {
+    "number": "02",
+    "name": "モブピンク",
+    "category": "ribbon",
+    "category_ja": "リボン",
+    "file": "02_モブピンク/02_モブピンクモデル リボン.png",
+    "sha256": "933473e15b233198baf88538f3ba0940148d5fd8e216ef2bf7fbd25b53d29e3a",
+    "bytes": 1388091
+  },
+  {
+    "number": "02",
+    "name": "モブピンク",
+    "category": "piercing",
+    "category_ja": "ピアス",
+    "file": "02_モブピンク/02_モブピンクモデル ピアス.png",
+    "sha256": "b570d8bf7d48c2e79301971a1e789dec65821aa9a2c130b1822d3059d5790d38",
+    "bytes": 1514692
+  },
+  {
+    "number": "02",
+    "name": "モブピンク",
+    "category": "earring",
+    "category_ja": "イヤリング",
+    "file": "02_モブピンク/02_モブピンクモデル イヤリング.png",
+    "sha256": "4e7cc9704eb1bd75a9a1c7a793ad72a94c47b86637d3cbc52bbea1b98c8d81ee",
+    "bytes": 1626528
+  },
+  {
+    "number": "02",
+    "name": "モブピンク",
+    "category": "strap",
+    "category_ja": "ストラップ",
+    "file": "02_モブピンク/02_モブピンクモデル ストラップ.png",
+    "sha256": "cc20a84ddb1dfb2a1b4ecd86facdfd868849661f144be20f31326f68163f62c6",
+    "bytes": 824270
+  },
+  {
+    "number": "007",
+    "name": "モブスライムキング",
+    "category": "bag",
+    "category_ja": "バッグ",
+    "file": "007_モブスライムキング/007_モブスライムキングモデル バッグ.png",
+    "sha256": "72b52fc5318187395b16213bdd6ac62c2b7dbb1e2c6c4ace3e549b600f206987",
+    "bytes": 1528713
+  },
+  {
+    "number": "007",
+    "name": "モブスライムキング",
+    "category": "ribbon",
+    "category_ja": "リボン",
+    "file": "007_モブスライムキング/007_モブスライムキングモデル リボン.png",
+    "sha256": "ce312edda304cd7572c153b4526f26a248b9dc6ecc497de5c944213cd31545c3",
+    "bytes": 1547103
+  },
+  {
+    "number": "007",
+    "name": "モブスライムキング",
+    "category": "piercing",
+    "category_ja": "ピアス",
+    "file": "007_モブスライムキング/007_モブスライムキングモデル ピアス.png",
+    "sha256": "3069804caa0e1b025ac9cd00b2750843ec474f04ecbcab7ad11820921784cb98",
+    "bytes": 1872568
+  },
+  {
+    "number": "007",
+    "name": "モブスライムキング",
+    "category": "earring",
+    "category_ja": "イヤリング",
+    "file": "007_モブスライムキング/007_モブスライムキングモデル イヤリング.png",
+    "sha256": "dd123c0ea2421631305d308a311de0fed1e98bf2ecc3bfab238197aa55701d85",
+    "bytes": 1913830
+  },
+  {
+    "number": "007",
+    "name": "モブスライムキング",
+    "category": "strap",
+    "category_ja": "ストラップ",
+    "file": "007_モブスライムキング/007_モブスライムキングモデル ストラップ.png",
+    "sha256": "dccd37784833d69c7392a7c7960b4b57bdec198042cdf834f54e497496e3ab22",
+    "bytes": 994516
+  },
+  {
+    "number": "14",
+    "name": "モブリリス",
+    "category": "bag",
+    "category_ja": "バッグ",
+    "file": "14_モブリリス/14_モブリリスモデル バッグ.png",
+    "sha256": "494c3bf86c52881c04f47ac7eedccc8061f2fbc5a98fbce455d6c1a0c52be53a",
+    "bytes": 1493272
+  },
+  {
+    "number": "14",
+    "name": "モブリリス",
+    "category": "ribbon",
+    "category_ja": "リボン",
+    "file": "14_モブリリス/14_モブリリスモデル リボン.png",
+    "sha256": "f2639942588539635be27a4ca68c3bb55b3cd3390b708719d5f25d85d5dabe67",
+    "bytes": 1251392
+  },
+  {
+    "number": "14",
+    "name": "モブリリス",
+    "category": "piercing",
+    "category_ja": "ピアス",
+    "file": "14_モブリリス/14_モブリリスモデル ピアス.png",
+    "sha256": "90cf7edd41ecc78d3f690bef963cca9c37bbbf2ddbcf527861a6d1cce267f031",
+    "bytes": 1612236
+  },
+  {
+    "number": "14",
+    "name": "モブリリス",
+    "category": "earring",
+    "category_ja": "イヤリング",
+    "file": "14_モブリリス/14_モブリリスモデル イヤリング.png",
+    "sha256": "f5685972fb67b6295077fe089e0f80e151e585471e34ca2e4442362cfdcde04e",
+    "bytes": 1709861
+  },
+  {
+    "number": "14",
+    "name": "モブリリス",
+    "category": "strap",
+    "category_ja": "ストラップ",
+    "file": "14_モブリリス/14_モブリリスモデル ストラップ.png",
+    "sha256": "e6f9a7ca9163b9e665687aad5d92d0336f88ac17bf6c5633085924b763f8d476",
+    "bytes": 869863
+  },
+  {
+    "number": "10",
+    "name": "モブテツ",
+    "category": "bag",
+    "category_ja": "バッグ",
+    "file": "10_モブテツ/10_モブテツモデル バッグ.png",
+    "sha256": "df33f7798b92b677711582b6e6a36e92bd3c920bd94bb6eeddacf6b80eb37324",
+    "bytes": 1713207
+  },
+  {
+    "number": "10",
+    "name": "モブテツ",
+    "category": "ribbon",
+    "category_ja": "リボン",
+    "file": "10_モブテツ/10_モブテツモデル リボン.png",
+    "sha256": "a74dfaed6cb60dbedd108b55b86b53632fb8d0b1c267568025960875743c0768",
+    "bytes": 1269931
+  },
+  {
+    "number": "10",
+    "name": "モブテツ",
+    "category": "piercing",
+    "category_ja": "ピアス",
+    "file": "10_モブテツ/10_モブテツモデル ピアス.png",
+    "sha256": "22a68425225e4fea45b998665d701a69ffa6b34628999f93c5875f666973e19c",
+    "bytes": 1872944
+  },
+  {
+    "number": "10",
+    "name": "モブテツ",
+    "category": "earring",
+    "category_ja": "イヤリング",
+    "file": "10_モブテツ/10_モブテツモデル イヤリング.png",
+    "sha256": "1f9e7237912807a1274d0f3d9e11918f9ad28a0f4dc3f0bed61d201588a7dfeb",
+    "bytes": 2006303
+  },
+  {
+    "number": "10",
+    "name": "モブテツ",
+    "category": "strap",
+    "category_ja": "ストラップ",
+    "file": "10_モブテツ/10_モブテツモデル ストラップ.png",
+    "sha256": "960bf3c68fc97237b362f39ae8fbb98524e21f4b5a512328aef1c3a64951830a",
+    "bytes": 949927
+  },
+  {
+    "number": "01",
+    "name": "モブ勇者",
+    "category": "bag",
+    "category_ja": "バッグ",
+    "file": "01_モブ勇者/01_モブ勇者モデル バッグ.png",
+    "sha256": "af1e4afc82e4567db7f5eb6a24c6f28b5ff6c7324bf48609d641e4e489c19072",
+    "bytes": 1378053
+  },
+  {
+    "number": "01",
+    "name": "モブ勇者",
+    "category": "ribbon",
+    "category_ja": "リボン",
+    "file": "01_モブ勇者/01_モブ勇者モデル リボン.png",
+    "sha256": "e06bc8554669622c40f3de37bedea46efad177279a18fb11e82ffbad29f549ca",
+    "bytes": 1129424
+  },
+  {
+    "number": "01",
+    "name": "モブ勇者",
+    "category": "piercing",
+    "category_ja": "ピアス",
+    "file": "01_モブ勇者/01_モブ勇者モデル ピアス.png",
+    "sha256": "f6edd8637741c2990734f323fa1a37e182bbaff5dd9c4451ce989f25772943bf",
+    "bytes": 1501036
+  },
+  {
+    "number": "01",
+    "name": "モブ勇者",
+    "category": "earring",
+    "category_ja": "イヤリング",
+    "file": "01_モブ勇者/01_モブ勇者モデル イヤリング.png",
+    "sha256": "1a01f2eb9f15577b3b0c17cd93078f4b72128552f52f65f6486ba8493605814e",
+    "bytes": 1659464
+  },
+  {
+    "number": "01",
+    "name": "モブ勇者",
+    "category": "strap",
+    "category_ja": "ストラップ",
+    "file": "01_モブ勇者/01_モブ勇者モデル ストラップ.png",
+    "sha256": "1d00ff12bd7f52c9304167b28350fcda5adfd565d87215aa55449f8ce88df44c",
+    "bytes": 863886
+  },
+  {
+    "number": "67",
+    "name": "Waack",
+    "category": "bag",
+    "category_ja": "バッグ",
+    "file": "67_Waack/67_Waackモデル バッグ.png",
+    "sha256": "28aa699cf7d6fa5e6688bbad210a88673a8f67d9cbeead221eba919cb22286a9",
+    "bytes": 1646619
+  },
+  {
+    "number": "67",
+    "name": "Waack",
+    "category": "ribbon",
+    "category_ja": "リボン",
+    "file": "67_Waack/67_Waackモデル リボン.png",
+    "sha256": "72c519955dd46ed91bc79700b429690aaab813fc81168f5264013eddf9faaee1",
+    "bytes": 1387331
+  },
+  {
+    "number": "67",
+    "name": "Waack",
+    "category": "piercing",
+    "category_ja": "ピアス",
+    "file": "67_Waack/67_Waackモデル ピアス.png",
+    "sha256": "c4562134104de0341348c9cec9381d8f72e0af6d117e169a4903d48e3370995e",
+    "bytes": 1724805
+  },
+  {
+    "number": "67",
+    "name": "Waack",
+    "category": "earring",
+    "category_ja": "イヤリング",
+    "file": "67_Waack/67_Waackモデル イヤリング.png",
+    "sha256": "626d58aca7c8a7861f5de5c1e3523f4864d00876fadb74e433bd141bdd5c8873",
+    "bytes": 1846735
+  },
+  {
+    "number": "67",
+    "name": "Waack",
+    "category": "strap",
+    "category_ja": "ストラップ",
+    "file": "67_Waack/67_Waackモデル ストラップ.png",
+    "sha256": "3c6ec1738d6207c8c9d75f025c39b061013173f648848fffe7a4e43b4ff6db55",
+    "bytes": 1016108
+  },
+  {
+    "number": "05",
+    "name": "モブネコクー",
+    "category": "bag",
+    "category_ja": "バッグ",
+    "file": "05_モブネコクー/05_モブネコクーモデル バッグ.png",
+    "sha256": "e4e53db2d9f3dd735a24348f114441b51bca26650bf7a9178ef9154d52e2fa29",
+    "bytes": 1449507
+  },
+  {
+    "number": "05",
+    "name": "モブネコクー",
+    "category": "ribbon",
+    "category_ja": "リボン",
+    "file": "05_モブネコクー/05_モブネコクーモデル リボン.png",
+    "sha256": "d245fdb02883cc07c9c16d0407aa7a33ad9ad50fe51443dbcea126ee0ac20147",
+    "bytes": 1496335
+  },
+  {
+    "number": "05",
+    "name": "モブネコクー",
+    "category": "piercing",
+    "category_ja": "ピアス",
+    "file": "05_モブネコクー/05_モブネコクーモデル ピアス.png",
+    "sha256": "fb6b7d7a4e4ffca47f5f3688d8cdcfff1f72e01a1156fe7de0fde8464b8b16a7",
+    "bytes": 1586935
+  },
+  {
+    "number": "05",
+    "name": "モブネコクー",
+    "category": "earring",
+    "category_ja": "イヤリング",
+    "file": "05_モブネコクー/05_モブネコクーモデル イヤリング.png",
+    "sha256": "8e2d8c6926762a3e1db2b70c30ddc71b81f8341e85d087222ec2363ae3620ae3",
+    "bytes": 1692780
+  },
+  {
+    "number": "05",
+    "name": "モブネコクー",
+    "category": "strap",
+    "category_ja": "ストラップ",
+    "file": "05_モブネコクー/05_モブネコクーモデル ストラップ.png",
+    "sha256": "51f0149ba5163f6e05b174f5556edade7f03dc1b08b7126b769b183f906a4bfa",
+    "bytes": 883908
+  },
+  {
+    "number": "008",
+    "name": "モブライトアーム",
+    "category": "bag",
+    "category_ja": "バッグ",
+    "file": "008_モブライトアーム/008_モブライトアームモデル バッグ.png",
+    "sha256": "2cda3621652dee9ab70ba295cbfe924a86502b179370e3ec7527dcda5d4173de",
+    "bytes": 1607301
+  },
+  {
+    "number": "008",
+    "name": "モブライトアーム",
+    "category": "ribbon",
+    "category_ja": "リボン",
+    "file": "008_モブライトアーム/008_モブライトアームモデル リボン.png",
+    "sha256": "c46d7670d4d694be8b9aaa9b463e22fda22cccacba12dc89b5047657112966ee",
+    "bytes": 1426872
+  },
+  {
+    "number": "008",
+    "name": "モブライトアーム",
+    "category": "piercing",
+    "category_ja": "ピアス",
+    "file": "008_モブライトアーム/008_モブライトアームモデル ピアス.png",
+    "sha256": "78f91441c1116150afb0ad5766ae1c3e882f77ea69588ef9915d91c484e2d70e",
+    "bytes": 1754692
+  },
+  {
+    "number": "008",
+    "name": "モブライトアーム",
+    "category": "earring",
+    "category_ja": "イヤリング",
+    "file": "008_モブライトアーム/008_モブライトアームモデル イヤリング.png",
+    "sha256": "6844bd534bb6dc459ce8eb054594453c9047de40943074f157ce28e584f9e2cb",
+    "bytes": 1799870
+  },
+  {
+    "number": "008",
+    "name": "モブライトアーム",
+    "category": "strap",
+    "category_ja": "ストラップ",
+    "file": "008_モブライトアーム/008_モブライトアームモデル ストラップ.png",
+    "sha256": "d3fe973accf6894318aa0f2335cb3f9f9cabbf6762c28b1b54348ab53725d678",
+    "bytes": 961098
+  },
+  {
+    "number": "006",
+    "name": "モブミータ",
+    "category": "bag",
+    "category_ja": "バッグ",
+    "file": "006_モブミータ/006_モブミータモデル バッグ.png",
+    "sha256": "d917069c44334d8ba2b8d41b35d633df2634d4ff45e1269351504e419cccf88a",
+    "bytes": 1526747
+  },
+  {
+    "number": "006",
+    "name": "モブミータ",
+    "category": "ribbon",
+    "category_ja": "リボン",
+    "file": "006_モブミータ/006_モブミータモデル リボン.png",
+    "sha256": "cd949c34e994b5393b07e3d8453e6f25805bc7caf11603ab4c5f4c891235d6bd",
+    "bytes": 1393480
+  },
+  {
+    "number": "006",
+    "name": "モブミータ",
+    "category": "piercing",
+    "category_ja": "ピアス",
+    "file": "006_モブミータ/006_モブミータモデル ピアス.png",
+    "sha256": "90934a51a6c1a78503a5753471242cf8d0550ad9bf82a7adae3a15a26b9373cf",
+    "bytes": 1651271
+  },
+  {
+    "number": "006",
+    "name": "モブミータ",
+    "category": "earring",
+    "category_ja": "イヤリング",
+    "file": "006_モブミータ/006_モブミータモデル イヤリング.png",
+    "sha256": "3a8691f729c16b5dd97a49ae2d6b043f3497e834c2f9f0916022294a39272541",
+    "bytes": 1699742
+  },
+  {
+    "number": "006",
+    "name": "モブミータ",
+    "category": "strap",
+    "category_ja": "ストラップ",
+    "file": "006_モブミータ/006_モブミータモデル ストラップ.png",
+    "sha256": "47c5a2a1af9b8209bc79b4f4f81f698ee5fa8a5aa55957d31747269084ec91f6",
+    "bytes": 829395
+  },
+  {
+    "number": "13",
+    "name": "あのヒーロー",
+    "category": "bag",
+    "category_ja": "バッグ",
+    "file": "13_あのヒーロー/13_あのヒーローモデル バッグ.png",
+    "sha256": "8a92bdeb309e2d37c4b506125d9f34c5aacb672856d4529e9e384c8e3b7ad041",
+    "bytes": 1568078
+  },
+  {
+    "number": "13",
+    "name": "あのヒーロー",
+    "category": "ribbon",
+    "category_ja": "リボン",
+    "file": "13_あのヒーロー/13_あのヒーローモデル リボン.png",
+    "sha256": "0c43b914bbdb169ed0e4bb62bb135460eaf4648244c8bf8e1f34da26d7c28b97",
+    "bytes": 1307742
+  },
+  {
+    "number": "13",
+    "name": "あのヒーロー",
+    "category": "piercing",
+    "category_ja": "ピアス",
+    "file": "13_あのヒーロー/13_あのヒーローモデル ピアス.png",
+    "sha256": "45becabbb6a6950217d5f3c28edccc9b45579ecfda1684979c1afe76a697ba22",
+    "bytes": 1703957
+  },
+  {
+    "number": "13",
+    "name": "あのヒーロー",
+    "category": "earring",
+    "category_ja": "イヤリング",
+    "file": "13_あのヒーロー/13_あのヒーローモデル イヤリング.png",
+    "sha256": "260257a764f1baf570e5a80ffd0f9e87b36984c27ba414a350588f6ebc2f6ee1",
+    "bytes": 1820691
+  },
+  {
+    "number": "13",
+    "name": "あのヒーロー",
+    "category": "strap",
+    "category_ja": "ストラップ",
+    "file": "13_あのヒーロー/13_あのヒーローモデル ストラップ.png",
+    "sha256": "4534643b6dec7ce9d88e85b02ba1f56cfc5775fbaa86189d3f8eb58247c5fc47",
+    "bytes": 886081
+  },
+  {
+    "number": "08",
+    "name": "モブマニー",
+    "category": "bag",
+    "category_ja": "バッグ",
+    "file": "08_モブマニー/08_モブマニーモデル バッグ.png",
+    "sha256": "bdc2689e6249abdf4e8bd3f347836b30af2b01713d4698d50568e3f8037fd901",
+    "bytes": 1441651
+  },
+  {
+    "number": "08",
+    "name": "モブマニー",
+    "category": "ribbon",
+    "category_ja": "リボン",
+    "file": "08_モブマニー/08_モブマニーモデル リボン.png",
+    "sha256": "174f3b8610767de286b73d014ffce992fcec32d658684dc3e11cca9ed193fc37",
+    "bytes": 1358441
+  },
+  {
+    "number": "08",
+    "name": "モブマニー",
+    "category": "piercing",
+    "category_ja": "ピアス",
+    "file": "08_モブマニー/08_モブマニーモデル ピアス.png",
+    "sha256": "e8d66222a5560edbda91400258521705ed3f6cc4da82dca662c5bc87742b499c",
+    "bytes": 1765837
+  },
+  {
+    "number": "08",
+    "name": "モブマニー",
+    "category": "earring",
+    "category_ja": "イヤリング",
+    "file": "08_モブマニー/08_モブマニーモデル イヤリング.png",
+    "sha256": "b3f6d8402f0f56b75b780d64e667f01298caf0a0be011f3238b8b75c9249f22b",
+    "bytes": 1847942
+  },
+  {
+    "number": "08",
+    "name": "モブマニー",
+    "category": "strap",
+    "category_ja": "ストラップ",
+    "file": "08_モブマニー/08_モブマニーモデル ストラップ.png",
+    "sha256": "f5932ed8465e140df339395b107557c01825ce1ac915eb4b2022ed8471bffa79",
+    "bytes": 842548
+  },
+  {
+    "number": "002",
+    "name": "ゴンゾー",
+    "category": "bag",
+    "category_ja": "バッグ",
+    "file": "002_ゴンゾー/002_ゴンゾーモデル バッグ.png",
+    "sha256": "967d9c432e45c9d161c8b5caae865e1db2b16e9c3fbec9d9446cb5721e4f1ea9",
+    "bytes": 1493135
+  },
+  {
+    "number": "002",
+    "name": "ゴンゾー",
+    "category": "ribbon",
+    "category_ja": "リボン",
+    "file": "002_ゴンゾー/002_ゴンゾーモデル リボン.png",
+    "sha256": "8d4be2079d3e55b3fb66e6f14e44cf07e1a4ab711208c5f7e4471d90e1221137",
+    "bytes": 1202354
+  },
+  {
+    "number": "002",
+    "name": "ゴンゾー",
+    "category": "piercing",
+    "category_ja": "ピアス",
+    "file": "002_ゴンゾー/002_ゴンゾーモデル ピアス.png",
+    "sha256": "bc980b46a4c041ce97d3e0b02b62aa3b3c60a7fb6aa6de792330083063a55d14",
+    "bytes": 1391434
+  },
+  {
+    "number": "002",
+    "name": "ゴンゾー",
+    "category": "earring",
+    "category_ja": "イヤリング",
+    "file": "002_ゴンゾー/002_ゴンゾーモデル イヤリング.png",
+    "sha256": "fa4fc631ef4a1bc032bad1683586ef09227563334729f8db5a5d41a887aa6719",
+    "bytes": 1560041
+  },
+  {
+    "number": "002",
+    "name": "ゴンゾー",
+    "category": "strap",
+    "category_ja": "ストラップ",
+    "file": "002_ゴンゾー/002_ゴンゾーモデル ストラップ.png",
+    "sha256": "080917276d760f5a568abfff89c1cf96f564ffaa1daf5ce64a64899f97a1eb39",
+    "bytes": 876329
+  },
+  {
+    "number": "03",
+    "name": "モブデザート",
+    "category": "bag",
+    "category_ja": "バッグ",
+    "file": "03_モブデザート/03_モブデザートモデル バッグ.png",
+    "sha256": "e9288020e56c4c0ad54e6c978b251c170201150a64d1bb0a7880b1b4cfeeeb87",
+    "bytes": 1452677
+  },
+  {
+    "number": "03",
+    "name": "モブデザート",
+    "category": "ribbon",
+    "category_ja": "リボン",
+    "file": "03_モブデザート/03_モブデザートモデル リボン.png",
+    "sha256": "d22abb2db57b3d7dcc8fbc70bf746cd1af2cd16b82307a4677cc4336b4eb1b03",
+    "bytes": 1150049
+  },
+  {
+    "number": "03",
+    "name": "モブデザート",
+    "category": "piercing",
+    "category_ja": "ピアス",
+    "file": "03_モブデザート/03_モブデザートモデル ピアス.png",
+    "sha256": "8612d60fea81588f94cf1e76ebb2b548676414315061e623c38e0d284379fb1e",
+    "bytes": 1549473
+  },
+  {
+    "number": "03",
+    "name": "モブデザート",
+    "category": "earring",
+    "category_ja": "イヤリング",
+    "file": "03_モブデザート/03_モブデザートモデル イヤリング.png",
+    "sha256": "c6d588db26859367dcac3a4a433efaca6523397c2081aaff3bb4b8da314d528d",
+    "bytes": 1618638
+  },
+  {
+    "number": "03",
+    "name": "モブデザート",
+    "category": "strap",
+    "category_ja": "ストラップ",
+    "file": "03_モブデザート/03_モブデザートモデル ストラップ.png",
+    "sha256": "079436fbac89bd2f53cdd060e39a7c554e503b188fd6f70ffaff01fad48d7d92",
+    "bytes": 726740
+  },
+  {
+    "number": "003",
+    "name": "モブコーチ",
+    "category": "bag",
+    "category_ja": "バッグ",
+    "file": "003_モブコーチ/003_モブコーチモデル バッグ.png",
+    "sha256": "5622d4dc2618fbb6039e7d29d1a68b92ee38cfba5c917a8ed64e4df1b5e7ddfa",
+    "bytes": 1460248
+  },
+  {
+    "number": "003",
+    "name": "モブコーチ",
+    "category": "ribbon",
+    "category_ja": "リボン",
+    "file": "003_モブコーチ/003_モブコーチモデル リボン.png",
+    "sha256": "5116ca4f3757f153bacc2789b472a0f4d6ddeffc4a5a2c20e707bb204455ce7f",
+    "bytes": 1130763
+  },
+  {
+    "number": "003",
+    "name": "モブコーチ",
+    "category": "piercing",
+    "category_ja": "ピアス",
+    "file": "003_モブコーチ/003_モブコーチモデル ピアス.png",
+    "sha256": "ca0b6b759527c4976ad3a15dee391345854ac264186371ba9436af16afcffad6",
+    "bytes": 1443625
+  },
+  {
+    "number": "003",
+    "name": "モブコーチ",
+    "category": "earring",
+    "category_ja": "イヤリング",
+    "file": "003_モブコーチ/003_モブコーチモデル イヤリング.png",
+    "sha256": "283eaa5fa5156b1f9821e127d69308fcdc5e6b9d51eb95068083e8841259ca3e",
+    "bytes": 1538300
+  },
+  {
+    "number": "003",
+    "name": "モブコーチ",
+    "category": "strap",
+    "category_ja": "ストラップ",
+    "file": "003_モブコーチ/003_モブコーチモデル ストラップ.png",
+    "sha256": "e5bf593facd81c5a7e373c45a61328a8b1ec8245c9ba9902f277cce9d1ae7edb",
+    "bytes": 865435
+  },
+  {
+    "number": "005",
+    "name": "モブマテリア",
+    "category": "bag",
+    "category_ja": "バッグ",
+    "file": "005_モブマテリア/005_モブマテリアモデル バッグ.png",
+    "sha256": "4835a3bfe4f385eb9401b64acc711d0b3d7cb88b8f1359c3c0685c7f117f828a",
+    "bytes": 1638579
+  },
+  {
+    "number": "005",
+    "name": "モブマテリア",
+    "category": "ribbon",
+    "category_ja": "リボン",
+    "file": "005_モブマテリア/005_モブマテリアモデル リボン.png",
+    "sha256": "48d5d6d172fb6d062e75106bb5e44fe2632285a6d2b2f06fe3a084831a732bd0",
+    "bytes": 1446620
+  },
+  {
+    "number": "005",
+    "name": "モブマテリア",
+    "category": "piercing",
+    "category_ja": "ピアス",
+    "file": "005_モブマテリア/005_モブマテリアモデル ピアス.png",
+    "sha256": "9aea64ce61826c977ed602c6fd841e06abde8a6697fb069661d73318abc18c52",
+    "bytes": 1111412
+  },
+  {
+    "number": "005",
+    "name": "モブマテリア",
+    "category": "earring",
+    "category_ja": "イヤリング",
+    "file": "005_モブマテリア/005_モブマテリアモデル イヤリング.png",
+    "sha256": "438e2b8088bf2bd4f2c468418be21f61dc66ee710d74ba24f71a724ea3df4a19",
+    "bytes": 1193986
+  },
+  {
+    "number": "005",
+    "name": "モブマテリア",
+    "category": "strap",
+    "category_ja": "ストラップ",
+    "file": "005_モブマテリア/005_モブマテリアモデル ストラップ.png",
+    "sha256": "bb92768016b1a0cb52755945cef39fec2b1ca206a981f0bc0a31aa8f8c538bf3",
+    "bytes": 954174
+  },
+  {
+    "number": "001",
+    "name": "モブイルカエル",
+    "category": "bag",
+    "category_ja": "バッグ",
+    "file": "001_モブイルカエル/001_モブイルカエルモデル バッグ.png",
+    "sha256": "142648ab250d2fcc30743e94ab7d4e43f2b9337c3bb38606dad0c2c4673e6b9b",
+    "bytes": 1592599
+  },
+  {
+    "number": "001",
+    "name": "モブイルカエル",
+    "category": "ribbon",
+    "category_ja": "リボン",
+    "file": "001_モブイルカエル/001_モブイルカエルモデル リボン.png",
+    "sha256": "6f8f7d9af7fbfe9181f70e8aed961605fc16c0aae808c2858de2b8f3436a47a4",
+    "bytes": 1697044
+  },
+  {
+    "number": "001",
+    "name": "モブイルカエル",
+    "category": "piercing",
+    "category_ja": "ピアス",
+    "file": "001_モブイルカエル/001_モブイルカエルモデル ピアス.png",
+    "sha256": "569c07a47e1e0e03c788061313743e6d1c5b207caf56af2079a761f7246417b9",
+    "bytes": 960749
+  },
+  {
+    "number": "001",
+    "name": "モブイルカエル",
+    "category": "earring",
+    "category_ja": "イヤリング",
+    "file": "001_モブイルカエル/001_モブイルカエルモデル イヤリング.png",
+    "sha256": "a9dc77ea258356bc6a781d754b5d8027f6c5f09bbe7224c4bd5dfb178b1424f3",
+    "bytes": 1094810
+  },
+  {
+    "number": "001",
+    "name": "モブイルカエル",
+    "category": "strap",
+    "category_ja": "ストラップ",
+    "file": "001_モブイルカエル/001_モブイルカエルモデル ストラップ.png",
+    "sha256": "cbfb6769d7cc742214974d917556826b0b89d344695ed49fbb8567a2833bbb41",
+    "bytes": 863865
+  },
+  {
+    "number": "06",
+    "name": "モブジェシー",
+    "category": "bag",
+    "category_ja": "バッグ",
+    "file": "06_モブジェシー/06_モブジェシーモデル バッグ.png",
+    "sha256": "91b08eadfe35cefc1b4362cd54eaa9c2519200795e16771e0e2121e4d0be1e18",
+    "bytes": 1546983
+  },
+  {
+    "number": "06",
+    "name": "モブジェシー",
+    "category": "ribbon",
+    "category_ja": "リボン",
+    "file": "06_モブジェシー/06_モブジェシーモデル リボン.png",
+    "sha256": "ef750cb5bbf5496255d3dc1bb3fbf498afac82b93e35dad9a084474b298daeec",
+    "bytes": 1610993
+  },
+  {
+    "number": "06",
+    "name": "モブジェシー",
+    "category": "piercing",
+    "category_ja": "ピアス",
+    "file": "06_モブジェシー/06_モブジェシーモデル ピアス.png",
+    "sha256": "4fd384d78acd2c88963a37eafe16eecfa9dec1470f4003d6ffb49a0148e077c6",
+    "bytes": 988341
+  },
+  {
+    "number": "06",
+    "name": "モブジェシー",
+    "category": "earring",
+    "category_ja": "イヤリング",
+    "file": "06_モブジェシー/06_モブジェシーモデル イヤリング.png",
+    "sha256": "6ab545ca955fd90e0ace6f1a98087cedbf9ae6b9eab68bcf2beb68708dde5412",
+    "bytes": 869666
+  },
+  {
+    "number": "06",
+    "name": "モブジェシー",
+    "category": "strap",
+    "category_ja": "ストラップ",
+    "file": "06_モブジェシー/06_モブジェシーモデル ストラップ.png",
+    "sha256": "134c78321d850eba9f580f8278d5c4af70bf45d0b9d38297fa06f1153a55732b",
+    "bytes": 840041
+  },
+  {
+    "number": "009",
+    "name": "モブメープル",
+    "category": "bag",
+    "category_ja": "バッグ",
+    "file": "009_モブメープル/009_モブメープルモデル バッグ.png",
+    "sha256": "70215429e1f95baf1c12c9b0762483224629362bb5f05df114ee2db74ec055f8",
+    "bytes": 1346390
+  },
+  {
+    "number": "009",
+    "name": "モブメープル",
+    "category": "ribbon",
+    "category_ja": "リボン",
+    "file": "009_モブメープル/009_モブメープルモデル リボン.png",
+    "sha256": "0e97a1df62d2bb96b9f0527e901087230282e27b47dc143f9085cf345329f44c",
+    "bytes": 1231975
+  },
+  {
+    "number": "009",
+    "name": "モブメープル",
+    "category": "piercing",
+    "category_ja": "ピアス",
+    "file": "009_モブメープル/009_モブメープルモデル ピアス.png",
+    "sha256": "031a188de771a4d64b4a6d37a598862df4d86f88ecf0da7af1d5f385d4da44a7",
+    "bytes": 959207
+  },
+  {
+    "number": "009",
+    "name": "モブメープル",
+    "category": "earring",
+    "category_ja": "イヤリング",
+    "file": "009_モブメープル/009_モブメープルモデル イヤリング.png",
+    "sha256": "cac86ee947b95167ca00d4bfd1b1be8fd6b13bdd1bb638287fa27fcfd73f6e3e",
+    "bytes": 1113261
+  },
+  {
+    "number": "009",
+    "name": "モブメープル",
+    "category": "strap",
+    "category_ja": "ストラップ",
+    "file": "009_モブメープル/009_モブメープルモデル ストラップ.png",
+    "sha256": "783240fdcfd0ff878bd3a3b72881a7643d92b658bf42b857a423bc8c64c6b1e8",
+    "bytes": 907088
+  },
+  {
+    "number": "04",
+    "name": "モブニョロ",
+    "category": "bag",
+    "category_ja": "バッグ",
+    "file": "04_モブニョロ/04_モブニョロモデル バッグ.png",
+    "sha256": "07be5d4d6194041bcbf7377156823ea6ce310ae0357d29c1e57b6d67a2d73486",
+    "bytes": 1255452
+  },
+  {
+    "number": "04",
+    "name": "モブニョロ",
+    "category": "ribbon",
+    "category_ja": "リボン",
+    "file": "04_モブニョロ/04_モブニョロモデル リボン.png",
+    "sha256": "edf05a0a3735e4230cc493c2292c9876fa86b131c2d909c722acb2fbca4abf40",
+    "bytes": 1257360
+  },
+  {
+    "number": "04",
+    "name": "モブニョロ",
+    "category": "piercing",
+    "category_ja": "ピアス",
+    "file": "04_モブニョロ/04_モブニョロモデル ピアス.png",
+    "sha256": "c6a552d65e8256c4855f24a3f54e0df71889e1e3cf7ddf1bb77d3ee71b3c44a0",
+    "bytes": 782462
+  },
+  {
+    "number": "04",
+    "name": "モブニョロ",
+    "category": "earring",
+    "category_ja": "イヤリング",
+    "file": "04_モブニョロ/04_モブニョロモデル イヤリング.png",
+    "sha256": "7165936c7b74dd0ce1579f69677eebdffb6c19fa7afb282c2b786bc7ed72ad06",
+    "bytes": 898948
+  },
+  {
+    "number": "04",
+    "name": "モブニョロ",
+    "category": "strap",
+    "category_ja": "ストラップ",
+    "file": "04_モブニョロ/04_モブニョロモデル ストラップ.png",
+    "sha256": "ecb832142ee8e1a2653764090dca16da45e5a4060915dfe90eb9a6e0739fc132",
+    "bytes": 745803
+  },
+  {
+    "number": "65",
+    "name": "ステイシー",
+    "category": "bag",
+    "category_ja": "バッグ",
+    "file": "65_ステイシー/65_ステイシーモデル バッグ.png",
+    "sha256": "782cbb2fd92d0603d5cd49fec7e35a9b051ce17a6e62cb8abb28b5f5abd3dea6",
+    "bytes": 1134987
+  },
+  {
+    "number": "65",
+    "name": "ステイシー",
+    "category": "ribbon",
+    "category_ja": "リボン",
+    "file": "65_ステイシー/65_ステイシーモデル リボン.png",
+    "sha256": "f13445dbc3adfb332316a65452f3b115893089e3d23ba5769591243c0f6f4c1e",
+    "bytes": 1230058
+  },
+  {
+    "number": "65",
+    "name": "ステイシー",
+    "category": "piercing",
+    "category_ja": "ピアス",
+    "file": "65_ステイシー/65_ステイシーモデル ピアス.png",
+    "sha256": "ef76f1956e4950c0929ba2ac55e284cdc2df664fcd8e6fd0a3541c9f14e29b73",
+    "bytes": 692618
+  },
+  {
+    "number": "65",
+    "name": "ステイシー",
+    "category": "earring",
+    "category_ja": "イヤリング",
+    "file": "65_ステイシー/65_ステイシーモデル イヤリング.png",
+    "sha256": "28d32f91fc6b68d256a3e8042a1e6148319e560bfb1d1fed242301aa7f66430b",
+    "bytes": 899477
+  },
+  {
+    "number": "65",
+    "name": "ステイシー",
+    "category": "strap",
+    "category_ja": "ストラップ",
+    "file": "65_ステイシー/65_ステイシーモデル ストラップ.png",
+    "sha256": "83dcfbd97fe4c1f03a3c437c29ee8c49c71ecfbe19f7ae9a80bf31df6fe057ba",
+    "bytes": 633625
+  }
+]

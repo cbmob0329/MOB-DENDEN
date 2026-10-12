@@ -1,0 +1,91 @@
+{
+  "day": {
+    "time": 9.55000000000057,
+    "stock": 22,
+    "eaten": 8,
+    "daily": {
+      "0:0:breakfast:wait": "told",
+      "0:1:breakfast:wait": "told",
+      "0:2:breakfast:wait": "told",
+      "0:3:breakfast:wait": "told",
+      "0:4:breakfast:wait": "told",
+      "0:1:breakfast": "done",
+      "0:0:breakfast": "done",
+      "0:3:breakfast": "done",
+      "0:2:breakfast": "done",
+      "0:4:breakfast": "done",
+      "0:5:breakfast": "done",
+      "0:6:breakfast": "done",
+      "0:7:breakfast": "done"
+    },
+    "actors": [
+      {
+        "id": 0,
+        "room": "cafe",
+        "state": "idle"
+      },
+      {
+        "id": 1,
+        "room": "cafe",
+        "state": "idle"
+      },
+      {
+        "id": 2,
+        "room": "cafe",
+        "state": "idle"
+      },
+      {
+        "id": 3,
+        "room": "tavern",
+        "state": "idle",
+        "staff": "work"
+      },
+      {
+        "id": 4,
+        "room": "home2",
+        "state": "idle"
+      },
+      {
+        "id": 5,
+        "room": "cafe",
+        "state": "idle"
+      },
+      {
+        "id": 6,
+        "room": "shop",
+        "state": "idle"
+      },
+      {
+        "id": 7,
+        "room": "cafe",
+        "state": "idle"
+      }
+    ]
+  },
+  "before": {
+    "stock": {
+      "koppe": 7,
+      "anpan": 7,
+      "cheese": 8
+    },
+    "breads": 0
+  },
+  "reload": {
+    "bakery": {
+      "v": 1,
+      "open": true,
+      "oven": null,
+      "ready": [],
+      "stock": {
+        "koppe": 7,
+        "anpan": 7,
+        "cheese": 8
+      },
+      "cups": 52,
+      "visits": {},
+      "eaten": 8
+    },
+    "pantry": 0
+  },
+  "errors": []
+}

@@ -5,7 +5,7 @@ class TavernScene{
   this.bubble=document.createElement('div');this.bubble.className='bubble white-bubble26';this.bubble.setAttribute('role','status');document.querySelector('#labels').append(this.bubble);this.build();this.load().catch(e=>{this.error=String(e);console.error(e);});
  }
  box(x,y,z,w,h,d,color){return this.room.box(this.root,x,y,z,w,h,d,color);}
- build(){for(const o of this.root.children)if(o.position.y>=3.8&&o.position.y<=4.11&&o.position.z>-4&&o.position.z<0){o.position.y+=1.5;o.position.z+=3.3;}for(const g of this.root.children){if(g.isGroup&&g.position.x>6&&g.position.z< -3){g.position.set(-6.2,0,g.position.z< -4?1.25:2.25);g.scale.multiplyScalar(.7);}}
+ build(){for(const o of this.root.children)if(o.position.y>=3.8&&o.position.y<=4.11&&o.position.z>-4&&o.position.z<0){o.position.y+=1.5;o.position.z+=3.3;}for(const g of this.root.children){if(g.isGroup&&g.position.x>6&&g.position.z< -3){g.position.set(-6.2,0,g.position.z< -4?3.65:4.65);g.scale.multiplyScalar(.7);}}
   this.box(5.65,.3,-4.35,1.45,.45,2.4,'#70472e');this.box(5.65,.57,-4.35,1.35,.17,2.26,'#ebe1c8');this.box(5.65,.71,-4.08,1.33,.13,1.6,'#697f85');this.box(5.65,.75,-5.14,1.05,.22,.45,'#fff7dc');this.box(5.65,.95,-5.59,1.5,1.2,.15,'#845632');this.bedHit=this.box(5.65,.72,-4.35,1.48,.15,2.4,'#697f85');this.bedHit.visible=false;this.bedHit.userData.whiteBed26=true;
   this.room.sign(this.root,'WHITE · Zzz',5.65,1.5,-5.57,1.38,.26,'#384b4d');
   this.box(0,.44,-5.02,1.1,.88,.48,'#8f643b');this.box(.5,1.6,-4.05,1.25,.12,.72,'#35464a');

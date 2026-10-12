@@ -8,8 +8,8 @@ const emptyPlot=()=>({crop:null,wateredAt:null,durationMs:null,yield:null});
 const count=x=>integer(x)?x:0;
 class FarmState {
   constructor(config={},saved=null){
-    this.config={durations:{wheat:300000,corn:600000,beans:null,...config.durations},animalMs:null,harvestWeights:null,...config};
-    this.config.durations={wheat:300000,corn:600000,beans:null,...config.durations};
+    this.config={durations:{wheat:300000,corn:240000,beans:null,...config.durations},animalMs:null,harvestWeights:null,...config};
+    this.config.durations={wheat:300000,corn:240000,beans:null,...config.durations};
     this.busy=false;
     this.restore(saved);
   }

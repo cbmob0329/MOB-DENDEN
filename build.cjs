@@ -2,6 +2,7 @@ const fs=require('fs'),path=require('path');const root=__dirname;const read=n=>f
 require('./pack-coin-pusher.cjs');
 require('./pack-white-v26.cjs');
 require('./pack-tailor-v28.cjs');
+require('./pack-tailor-goods-v35.cjs');
 // Optional user-saved formal HTML: extract only its JSON asset assignment. Never evaluate imported JS.
 const sourceIndex=process.argv.indexOf('--source-html');if(sourceIndex>=0){let source=fs.readFileSync(process.argv[sourceIndex+1],'utf8'),mark='window.CHARACTER_ASSETS',start=source.indexOf(mark);if(start<0)throw Error('CHARACTER_ASSETS assignment missing');start=source.indexOf('{',start);let depth=0,quoted=false,escaped=false,end=-1;for(let i=start;i<source.length;i++){let c=source[i];if(quoted){if(escaped)escaped=false;else if(c==='\\')escaped=true;else if(c==='"')quoted=false;}else if(c==='"')quoted=true;else if(c==='{')depth++;else if(c==='}'&&--depth===0){end=i+1;break;}}let assets=JSON.parse(source.slice(start,end));for(let key of ['denden','pink']){let a=assets[key],poses=a?.poses||a;if(!a||typeof a!=='string'&&!poses.idle)throw Error('Final idle asset missing: '+key);}fs.writeFileSync(path.join(root,'assets/characters.js'),'window.CHARACTER_ASSETS='+JSON.stringify(assets)+';\n');}
 // Keep the last valid embedded pose if an existing on-disk PNG is damaged.
