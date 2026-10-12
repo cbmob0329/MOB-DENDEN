@@ -1,6 +1,6 @@
 (()=>{'use strict';const T=THREE,V=(x=0,y=0,z=0)=>new T.Vector3(x,y,z);
 class Neighborhood24{
- constructor(cafe){this.cafe=cafe;this.c=cafe.c;this.s=cafe.spaces21;this.targets=[];this.furniture={};this.home=new T.Group();this.home.position.x=192;this.c.scene.add(this.home);this.station=new T.Group();this.station.position.x=224;this.c.scene.add(this.station);this.buildHome();this.buildStation();this.addExistingSeats();this.buildExterior();this.rain=new T.Group();this.c.scene.add(this.rain);this.drops=[];this.puddles=[];this.windows=[];this.buildRain();}
+ constructor(cafe){this.cafe=cafe;this.c=cafe.c;this.s=cafe.spaces21;this.targets=[];this.furniture={};this.home=new T.Group();this.home.position.x=192;this.c.scene.add(this.home);this.station=new T.Group();this.station.position.x=224;this.c.scene.add(this.station);this.buildHome();this.buildStation();this.addExistingSeats();this.buildExterior();this.rain=new T.Group();this.c.scene.add(this.rain);this.drops=[];this.puddles=[];this.windows=[];this.windowRain=new T.Group();this.c.scene.add(this.windowRain);}
  box(g,...args){return this.s.box(g,...args);}
  target(group,room,action,entry,point=entry){group.userData.playerAction24=action;this.targets.push({group,room,action,entry,point});}
  object(key,x,z,w,d,kind){const g=new T.Group();g.position.set(x,0,z);this.home.add(g);this.furniture[key]={key,group:g,w,d,kind};return g;}
