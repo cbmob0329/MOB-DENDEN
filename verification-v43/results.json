@@ -1,0 +1,47 @@
+{
+  "before": {
+    "calls": 226,
+    "triangles": 86034,
+    "parts": 105,
+    "batches": 19
+  },
+  "after": {
+    "calls": 140,
+    "triangles": 86034,
+    "parts": 105,
+    "batches": 19
+  },
+  "progress": {
+    "walked": 1.0000000000000142,
+    "hidden": true,
+    "trainUnchanged": true,
+    "returned": true,
+    "trainCaughtUp": true
+  },
+  "hits": {
+    "before": [
+      "home",
+      "cafe",
+      "arcade",
+      "farm",
+      "bath",
+      "shop",
+      "tavern",
+      "myhome",
+      null,
+      "tailor"
+    ],
+    "after": [
+      "home",
+      "cafe",
+      "arcade",
+      "farm",
+      "bath",
+      "shop",
+      "tavern",
+      "myhome",
+      null,
+      "tailor"
+    ]
+  }
+}
