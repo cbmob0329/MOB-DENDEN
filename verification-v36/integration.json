@@ -8,14 +8,13 @@
       "0:1:breakfast:wait": "told",
       "0:2:breakfast:wait": "told",
       "0:3:breakfast:wait": "told",
-      "0:4:breakfast:wait": "told",
       "0:1:breakfast": "done",
       "0:0:breakfast": "done",
       "0:3:breakfast": "done",
       "0:2:breakfast": "done",
-      "0:4:breakfast": "done",
       "0:5:breakfast": "done",
       "0:6:breakfast": "done",
+      "0:4:breakfast": "done",
       "0:7:breakfast": "done"
     },
     "actors": [
