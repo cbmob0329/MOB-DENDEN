@@ -1,0 +1,23 @@
+{
+  "operation": "create_library_file",
+  "status": "succeeded",
+  "path": "/manny-special-assets.zip",
+  "file_id": "file_00000000297481f88281052046844baa",
+  "library_file_id": "libfile_b944acc003548191a49e7ccf94e4c6d0",
+  "file_name": "manny-special-assets.zip",
+  "current_version_number": 0,
+  "restored_from_version_number": null,
+  "xattrs": [
+    {
+      "name": "user.library-file-version",
+      "value": "0"
+    }
+  ],
+  "directory_id": "libdir_ffc7eff4ea60819189b0460edb15fd50",
+  "mime_type": "application/zip",
+  "library_artifact_type": "other",
+  "file_size_bytes": 589727,
+  "external_connectors_accessed": false,
+  "original_local_path": "C:\\Users\\CB-Me\\Documents\\GitHub\\MOB-DENDEN\\recovery-mob-gun-gun-ui-20261021-102454\\manny-special-assets.zip",
+  "local_metadata_status": "Identity saved in this sidecar only. Xattrs not applied: current supplied helper uses os.setxattr outside Darwin and has no Windows branch; incompatible helper was not retried, as instructed."
+}

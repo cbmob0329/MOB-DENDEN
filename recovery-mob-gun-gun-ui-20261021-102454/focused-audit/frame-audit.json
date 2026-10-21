@@ -1,0 +1,1693 @@
+{
+  "nativeOnly": true,
+  "frames": [
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v18/reactions_13.webp",
+      "action": "idle",
+      "index": 0,
+      "facing": -1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v18/reactions_14.webp",
+      "action": "idle",
+      "index": 1,
+      "facing": -1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v18/reactions_15.webp",
+      "action": "idle",
+      "index": 2,
+      "facing": -1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v18/locomotion_02.webp",
+      "action": "idle",
+      "index": 3,
+      "facing": -1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v31/gait_00.webp",
+      "action": "run",
+      "index": 0,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v31/gait_01.webp",
+      "action": "run",
+      "index": 1,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v31/gait_04.webp",
+      "action": "run",
+      "index": 2,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v31/gait_02.webp",
+      "action": "run",
+      "index": 3,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v31/gait_03.webp",
+      "action": "run",
+      "index": 4,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v18/locomotion_10.webp",
+      "action": "jump",
+      "index": 0,
+      "facing": -1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v18/locomotion_11.webp",
+      "action": "jump",
+      "index": 1,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v18/locomotion_12.webp",
+      "action": "jump",
+      "index": 2,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v18/locomotion_13.webp",
+      "action": "jump",
+      "index": 3,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v18/locomotion_14.webp",
+      "action": "guard",
+      "index": 0,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v18/locomotion_15.webp",
+      "action": "guard",
+      "index": 1,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/source_recrop_v1/motion_12.webp",
+      "action": "melee1",
+      "index": 0,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        224,
+        192
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/source_recrop_v1/motion_07.webp",
+      "action": "melee1",
+      "index": 1,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        224,
+        192
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/source_recrop_v1/motion_08.webp",
+      "action": "melee1",
+      "index": 2,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        224,
+        192
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/source_recrop_v1/motion_11.webp",
+      "action": "melee1",
+      "index": 3,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        224,
+        192
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/source_recrop_v1/motion_09.webp",
+      "action": "melee2",
+      "index": 1,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        224,
+        192
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/recreated_v1/motion_21.webp",
+      "action": "melee2",
+      "index": 2,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        224,
+        192
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/source_recrop_v1/motion_13.webp",
+      "action": "charge",
+      "index": 1,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        224,
+        192
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/source_recrop_v1/motion_16.webp",
+      "action": "shot",
+      "index": 2,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        224,
+        192
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/source_recrop_v1/motion_17.webp",
+      "action": "shot",
+      "index": 4,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        224,
+        192
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/source_recrop_v1/motion_18.webp",
+      "action": "special",
+      "index": 0,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        224,
+        192
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/source_recrop_v1/motion_19.webp",
+      "action": "special",
+      "index": 1,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        224,
+        192
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/recreated_v1/motion_22.webp",
+      "action": "special",
+      "index": 3,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        224,
+        192
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/source_recrop_v1/motion_23.webp",
+      "action": "special",
+      "index": 5,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        224,
+        192
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v18/context_00.webp",
+      "action": "grab",
+      "index": 0,
+      "facing": -1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v18/context_01.webp",
+      "action": "hold",
+      "index": 1,
+      "facing": -1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v18/context_02.webp",
+      "action": "throw",
+      "index": 0,
+      "facing": -1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v18/context_03.webp",
+      "action": "throw",
+      "index": 1,
+      "facing": -1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v18/context_04.webp",
+      "action": "dodge",
+      "index": 0,
+      "facing": -1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v18/context_05.webp",
+      "action": "dodge",
+      "index": 1,
+      "facing": -1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v18/context_09.webp",
+      "action": "airAttack",
+      "index": 0,
+      "facing": -1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v18/context_10.webp",
+      "action": "airAttack",
+      "index": 1,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v18/context_11.webp",
+      "action": "airAttack",
+      "index": 2,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v18/context_12.webp",
+      "action": "landingAttack",
+      "index": 0,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v18/context_13.webp",
+      "action": "landingAttack",
+      "index": 1,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v18/context_14.webp",
+      "action": "landingAttack",
+      "index": 2,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v18/context_15.webp",
+      "action": "landingAttack",
+      "index": 3,
+      "facing": -1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v18/reactions_00.webp",
+      "action": "hit",
+      "index": 0,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v18/reactions_01.webp",
+      "action": "hit",
+      "index": 1,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v18/airfix_00.webp",
+      "action": "airhit",
+      "index": 0,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v18/airfix_01.webp",
+      "action": "airhit",
+      "index": 1,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v18/airfix_03.webp",
+      "action": "airhit",
+      "index": 2,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v18/airfix_02.webp",
+      "action": "airhit",
+      "index": 3,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v18/reactions_05.webp",
+      "action": "landing",
+      "index": 0,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v18/reactions_06.webp",
+      "action": "getup",
+      "index": 0,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v18/reactions_07.webp",
+      "action": "getup",
+      "index": 1,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v18/reactions_08.webp",
+      "action": "ko",
+      "index": 0,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "asamob",
+      "path": "assets/asamob/v18/reactions_09.webp",
+      "action": "ko",
+      "index": 1,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/locomotion_00.webp",
+      "action": "idle",
+      "index": 0,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/locomotion_01.webp",
+      "action": "idle",
+      "index": 1,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/locomotion_02.webp",
+      "action": "idle",
+      "index": 2,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/locomotion_03.webp",
+      "action": "idle",
+      "index": 3,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/skills_15.webp",
+      "action": "idle",
+      "index": 4,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/locomotion_04.webp",
+      "action": "run",
+      "index": 0,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/locomotion_05.webp",
+      "action": "run",
+      "index": 1,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/locomotion_06.webp",
+      "action": "run",
+      "index": 2,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/locomotion_07.webp",
+      "action": "run",
+      "index": 3,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/reverse_run_00.webp",
+      "action": "run",
+      "index": 4,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/reverse_run_01.webp",
+      "action": "run",
+      "index": 5,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/reverse_run_02.webp",
+      "action": "run",
+      "index": 6,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/reverse_run_03.webp",
+      "action": "run",
+      "index": 7,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/locomotion_12.webp",
+      "action": "jump",
+      "index": 0,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/locomotion_13.webp",
+      "action": "jump",
+      "index": 1,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/locomotion_14.webp",
+      "action": "jump",
+      "index": 2,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/locomotion_15.webp",
+      "action": "jump",
+      "index": 3,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/attacks_00.webp",
+      "action": "melee1",
+      "index": 0,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/attacks_01.webp",
+      "action": "melee1",
+      "index": 1,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/attacks_02.webp",
+      "action": "melee1",
+      "index": 2,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/attacks_03.webp",
+      "action": "melee1",
+      "index": 3,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/attacks_04.webp",
+      "action": "melee2",
+      "index": 0,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/attacks_05.webp",
+      "action": "melee2",
+      "index": 1,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/source_recrop_v1/attacks_06.webp",
+      "action": "melee2",
+      "index": 2,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        224,
+        224
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v31/attacks_clean_07.webp",
+      "action": "melee2",
+      "index": 3,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/attacks_08.webp",
+      "action": "melee3",
+      "index": 0,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/attacks_09.webp",
+      "action": "melee3",
+      "index": 1,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/source_recrop_v1/attacks_10.webp",
+      "action": "melee3",
+      "index": 2,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        224,
+        224
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v31/attacks_clean_11.webp",
+      "action": "melee3",
+      "index": 3,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/attacks_12.webp",
+      "action": "strong",
+      "index": 0,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/attacks_13.webp",
+      "action": "strong",
+      "index": 1,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/source_recrop_v1/attacks_14.webp",
+      "action": "strong",
+      "index": 2,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        224,
+        224
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v31/attacks_clean_15.webp",
+      "action": "strong",
+      "index": 3,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/skills_00.webp",
+      "action": "charge",
+      "index": 0,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/skills_01.webp",
+      "action": "charge",
+      "index": 1,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/skills_02.webp",
+      "action": "charge",
+      "index": 2,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/skills_03.webp",
+      "action": "charge",
+      "index": 3,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/skills_04.webp",
+      "action": "shot",
+      "index": 0,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/skills_05.webp",
+      "action": "shot",
+      "index": 1,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/skills_06.webp",
+      "action": "shot",
+      "index": 2,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/skills_07.webp",
+      "action": "shot",
+      "index": 3,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/skills_08.webp",
+      "action": "special",
+      "index": 0,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/skills_09.webp",
+      "action": "special",
+      "index": 1,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/skills_10.webp",
+      "action": "special",
+      "index": 2,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/skills_11.webp",
+      "action": "special",
+      "index": 3,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/skills_12.webp",
+      "action": "special",
+      "index": 4,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/skills_13.webp",
+      "action": "guard",
+      "index": 0,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/skills_14.webp",
+      "action": "guard",
+      "index": 1,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/context_00.webp",
+      "action": "grab",
+      "index": 0,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/context_01.webp",
+      "action": "hold",
+      "index": 0,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/context_02.webp",
+      "action": "hold",
+      "index": 1,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/context_03.webp",
+      "action": "throw",
+      "index": 1,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/context_04.webp",
+      "action": "dodge",
+      "index": 0,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/context_05.webp",
+      "action": "dodge",
+      "index": 1,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/context_06.webp",
+      "action": "dashAttack",
+      "index": 0,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/context_07.webp",
+      "action": "dashAttack",
+      "index": 1,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/context_08.webp",
+      "action": "dashAttack",
+      "index": 2,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/context_09.webp",
+      "action": "airAttack",
+      "index": 0,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/source_recrop_v1/context_10.webp",
+      "action": "airAttack",
+      "index": 1,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        224,
+        224
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/context_11.webp",
+      "action": "airAttack",
+      "index": 2,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/context_12.webp",
+      "action": "landingAttack",
+      "index": 0,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/context_13.webp",
+      "action": "landingAttack",
+      "index": 1,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/context_14.webp",
+      "action": "landingAttack",
+      "index": 2,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/context_15.webp",
+      "action": "landingAttack",
+      "index": 3,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/reactions_00.webp",
+      "action": "hit",
+      "index": 0,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/reactions_01.webp",
+      "action": "hit",
+      "index": 1,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/reactions_02.webp",
+      "action": "airhit",
+      "index": 0,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/reactions_03.webp",
+      "action": "airhit",
+      "index": 1,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/reactions_04.webp",
+      "action": "airhit",
+      "index": 2,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/reactions_05.webp",
+      "action": "landing",
+      "index": 0,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/reactions_06.webp",
+      "action": "getup",
+      "index": 0,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/reactions_07.webp",
+      "action": "getup",
+      "index": 1,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/reactions_08.webp",
+      "action": "ko",
+      "index": 0,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    },
+    {
+      "id": "mobtoitira",
+      "path": "assets/mobtoitira/v22/reactions_09.webp",
+      "action": "ko",
+      "index": 1,
+      "facing": 1,
+      "clipLeft": 0,
+      "size": [
+        160,
+        160
+      ],
+      "renderEdgePixels": 0
+    }
+  ],
+  "jump": [
+    {
+      "dir": 1,
+      "time": 0.03,
+      "vy": -600,
+      "selected": "assets/asamob/v18/locomotion_10.webp"
+    },
+    {
+      "dir": 1,
+      "time": 0.2,
+      "vy": -300,
+      "selected": "assets/asamob/v18/locomotion_11.webp"
+    },
+    {
+      "dir": 1,
+      "time": 0.4,
+      "vy": 0,
+      "selected": "assets/asamob/v18/locomotion_12.webp"
+    },
+    {
+      "dir": 1,
+      "time": 0.6,
+      "vy": 300,
+      "selected": "assets/asamob/v18/locomotion_13.webp"
+    },
+    {
+      "dir": -1,
+      "time": 0.03,
+      "vy": -600,
+      "selected": "assets/asamob/v18/locomotion_10.webp"
+    },
+    {
+      "dir": -1,
+      "time": 0.2,
+      "vy": -300,
+      "selected": "assets/asamob/v18/locomotion_11.webp"
+    },
+    {
+      "dir": -1,
+      "time": 0.4,
+      "vy": 0,
+      "selected": "assets/asamob/v18/locomotion_12.webp"
+    },
+    {
+      "dir": -1,
+      "time": 0.6,
+      "vy": 300,
+      "selected": "assets/asamob/v18/locomotion_13.webp"
+    }
+  ]
+}

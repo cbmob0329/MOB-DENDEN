@@ -3,13 +3,13 @@
 'use strict';
 const clone=x=>JSON.parse(JSON.stringify(x));
 const integer=x=>Number.isSafeInteger(x)&&x>=0;
-const cropKeys=['wheat','corn','beans'];
+const cropKeys=['wheat','corn','beans','rice','tomato','strawberry','apple','orange','tealeaf'];
 const emptyPlot=()=>({crop:null,wateredAt:null,durationMs:null,yield:null});
 const count=x=>integer(x)?x:0;
 class FarmState {
   constructor(config={},saved=null){
-    this.config={durations:{wheat:300000,corn:240000,beans:null,...config.durations},animalMs:null,harvestWeights:null,...config};
-    this.config.durations={wheat:300000,corn:240000,beans:null,...config.durations};
+    this.config={durations:{wheat:300000,corn:240000,beans:null,rice:300000,tomato:180000,strawberry:240000,apple:300000,orange:240000,tealeaf:180000,...config.durations},animalMs:null,harvestWeights:null,...config};
+    this.config.durations={wheat:300000,corn:240000,beans:null,rice:300000,tomato:180000,strawberry:240000,apple:300000,orange:240000,tealeaf:180000,...config.durations};
     this.busy=false;
     this.restore(saved);
   }

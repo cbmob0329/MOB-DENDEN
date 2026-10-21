@@ -1,5 +1,5 @@
 /* Two twelve-bed touch-operated fields and individually timed livestock. */
-(()=>{'use strict';const T=THREE,P=ChillCafe.prototype,$=s=>document.querySelector(s),names={wheat:'小麦',corn:'トウモロコシ',beans:'小豆'};
+(()=>{'use strict';const T=THREE,P=ChillCafe.prototype,$=s=>document.querySelector(s),names={wheat:'小麦',corn:'トウモロコシ',beans:'小豆',rice:'稲',tomato:'トマト',strawberry:'いちご',apple:'りんご',orange:'オレンジ',tealeaf:'茶葉'};
 ChillFarmScene.prototype.build=function(){const g=this.group;this.box(g,'#adbe89',0,-.2,0,11.8,.35,9.4);this.box(g,'#e8d1a1',0,.01,1.15,11.5,.07,.8);this.fence(-5.5,5.5,-4.35);this.fence(-5.5,-1,4.3);this.fence(1,5.5,4.3);
  for(let i=0;i<24;i++){const p=new T.Group();p.position.set((i<12?-2.7:2.7)+(i%4-1.5)*.95,0,-3.55+Math.floor(i%12/4)*1.18);g.add(p);this.box(p,'#70503b',0,.08,0,.77,.18,1.04);for(let n=-1;n<=1;n++)this.box(p,'#a47751',n*.22,.18,0,.075,.04,.91);this.plots.push(p);this.pick(p,'plot',i);const c=new T.Group();p.add(c);this.crops.push(c);}
  this.cows=[];this.hens=[];this.nests40=[];this.milkBubbles40=[];this.eggGroups40=[];

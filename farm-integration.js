@@ -1,5 +1,5 @@
 (function(){'use strict';
-const $=s=>document.querySelector(s),names={wheat:'小麦',corn:'コーン',beans:'小豆',egg:'卵',milk:'ミルク',dorayaki:'どら焼き',omelet:'卵焼き',soup:'コーンスープ'},cfg=CHILL_EXPANSION_CONFIG,areas=['home','cafe','bath','farm'];
+const $=s=>document.querySelector(s),names={wheat:'小麦',corn:'コーン',beans:'小豆',egg:'卵',milk:'ミルク',dorayaki:'どら焼き',omelet:'卵焼き',soup:'コーンスープ',rice:'お米',tomato:'トマト',strawberry:'いちご',apple:'りんご',orange:'オレンジ',tealeaf:'茶葉'},cfg=CHILL_EXPANSION_CONFIG,areas=['home','cafe','bath','farm'];
 const slots=items=>Object.values(items).reduce((n,v)=>n+v,0);
 const Base=ChillCafe;
 window.ChillCafe=class extends Base {

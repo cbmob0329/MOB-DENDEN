@@ -1,0 +1,13 @@
+# GUNGUN focused audit — 2026-10-21
+
+Target: C:\Users\CB-Me\Documents\GitHub\MOB GUN GUN. Read access succeeded after exact user approval was resubmitted. No game-source or image edits made during this audit; existing uncommitted UI/loading/art changes preserved.
+
+Results:
+- Native production sprite drawing: 126 unique referenced Asamob/Toytira images, both directions (252 renders), no outer 500x500 canvas-edge ink. This verifies renderer bounds, not reconstruction of pixels missing in original source art. Contact sheets and exact paths/facing metadata in this folder. Sheets were visually inspected.
+- Asamob: actual jump selector captured at vy=-600,-300,0,+300 for both facing directions; first jump source uses nativeFacing=-1, remaining jump sources +1. Production renderer multiplies fighter face by per-image facing exactly once. No additional facing defect established by this inspection. Actual special three-cut collision test passes both directions.
+- Toytira: existing repaired-art test passes 17 replacement hashes/pivots/gutters across Asamob/Toytira and 136 preview fits. Existing Toytira surviving source pixels preserved. Full sprite uses padded image dimensions and pivot; draw() does not cull fighters/FX by a narrow character rectangle. Physical screen-edge cropping remains normal and was not browser-tested. No claim of restoring missing original cells.
+- Rami: real engine/sprite trace at 60/120Hz. Normal three-hit chain ready at 1.900s at both rates; comparable Jessie 1.900s, Pink 1.892–1.900s, Tetsu 2.033s. At 60Hz contact starts at .167/.650/1.217s. Hitstop case ready at 2.033s, with 3 actual damage events. All live contact windows match contact art. Awakened form passes. No Rami-specific extra delay reproduced; no balance changes made.
+- Three-character adventure: actual setup functions pass selected/displayed/deployed agreement and duplicate-select swaps. Engine test covers first-stage 3-member switching, switch cooldown, HP/EN/awakening cooldown retention and automatic reserve substitution on KO. Terrain suite separately passes 20 areas/360 viewport-position cases; this is not a claim that every character combination was played on every stage.
+- Passed suites: battle-royale-rami-timing, repaired-art, loading-flow, adventure-stage, update. Custom audit.cjs and frame-audit.json are stored here, outside active GUNGUN source.
+
+Limits: No Chrome/browser automation or iPhone launch; native Canvas and deterministic engine/DOM-stub checks only. No new verified residual defect, so no speculative source edits. No commit/push/publication. Recovery files remain in the authorized MOB-DENDEN recovery folder and must not be accidentally published.

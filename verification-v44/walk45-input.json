@@ -1,0 +1,52 @@
+[
+  {
+    "id": "denden",
+    "name": "モブデンデン",
+    "prompt": "Create a NEW production RPG walk sprite sheet. Reference 1 is character identity only. Reference 2 is target small chibi RPG pixel-art style and layout. Match reference 2's pixel contour, compact proportions and restrained shading; NOT smooth large illustration. Transparent background, no shadows, labels or grid lines. EXACTLY 4 columns x 4 rows, equally sized cells on square canvas. Rows STRICTLY front/down, LEFT facing, RIGHT facing, back/up. Each row 4 distinct walk phases: left foot forward, passing, right foot forward, passing. Feet alternate visibly, natural walking NOT kicking, body consistent size and centered baseline in each cell, ample transparent gutters. Every sprite entirely in own cell. Preserve identity colors and clothes. Closed mouth throughout. Yellow round-faced mascot, pink cat-eared hoodie, BLACK round sunglasses, broad CLOSED wavy smile and tiny nostril dots, short rounded muzzle NOT dog snout. Keep yellow tail."
+  },
+  {
+    "id": "pink",
+    "name": "モブピンク",
+    "prompt": "Create a NEW production RPG walk sprite sheet. Reference 1 is character identity only. Reference 2 is target small chibi RPG pixel-art style and layout. Match reference 2's pixel contour, compact proportions and restrained shading; NOT smooth large illustration. Transparent background, no shadows, labels or grid lines. EXACTLY 4 columns x 4 rows, equally sized cells on square canvas. Rows STRICTLY front/down, LEFT facing, RIGHT facing, back/up. Each row 4 distinct walk phases: left foot forward, passing, right foot forward, passing. Feet alternate visibly, natural walking NOT kicking, body consistent size and centered baseline in each cell, ample transparent gutters. Every sprite entirely in own cell. Preserve identity colors and clothes. Closed mouth throughout. Pink round hood tunic, brown gloves boots belt, black featureless face gold circular glasses. NO mouth NO tail."
+  },
+  {
+    "id": "nyoro",
+    "name": "モブニョロ",
+    "prompt": "Create a NEW production RPG walk sprite sheet. Reference 1 is character identity only. Reference 2 is target small chibi RPG pixel-art style and layout. Match reference 2's pixel contour, compact proportions and restrained shading; NOT smooth large illustration. Transparent background, no shadows, labels or grid lines. EXACTLY 4 columns x 4 rows, equally sized cells on square canvas. Rows STRICTLY front/down, LEFT facing, RIGHT facing, back/up. Each row 4 distinct walk phases: left foot forward, passing, right foot forward, passing. Feet alternate visibly, natural walking NOT kicking, body consistent size and centered baseline in each cell, ample transparent gutters. Every sprite entirely in own cell. Preserve identity colors and clothes. Closed mouth throughout. Charcoal and orange lava-pattern dinosaur hood suit cape, gold goggles, pale yellow CLOSED lower muzzle; no open mouth."
+  },
+  {
+    "id": "irukaeru",
+    "name": "モブイルカエル",
+    "prompt": "Create a NEW production RPG walk sprite sheet. Reference 1 is character identity only. Reference 2 is target small chibi RPG pixel-art style and layout. Match reference 2's pixel contour, compact proportions and restrained shading; NOT smooth large illustration. Transparent background, no shadows, labels or grid lines. EXACTLY 4 columns x 4 rows, equally sized cells on square canvas. Rows STRICTLY front/down, LEFT facing, RIGHT facing, back/up. Each row 4 distinct walk phases: left foot forward, passing, right foot forward, passing. Feet alternate visibly, natural walking NOT kicking, body consistent size and centered baseline in each cell, ample transparent gutters. Every sprite entirely in own cell. Preserve identity colors and clothes. Closed mouth throughout. Pink dolphin helmet silver forehead visor, gold glasses, brown apron cream sleeves cyan shoes. Closed mouth."
+  },
+  {
+    "id": "tetsu",
+    "name": "モブテツ",
+    "prompt": "Create a NEW production RPG walk sprite sheet. Reference 1 is character identity only. Reference 2 is target small chibi RPG pixel-art style and layout. Match reference 2's pixel contour, compact proportions and restrained shading; NOT smooth large illustration. Transparent background, no shadows, labels or grid lines. EXACTLY 4 columns x 4 rows, equally sized cells on square canvas. Rows STRICTLY front/down, LEFT facing, RIGHT facing, back/up. Each row 4 distinct walk phases: left foot forward, passing, right foot forward, passing. Feet alternate visibly, natural walking NOT kicking, body consistent size and centered baseline in each cell, ample transparent gutters. Every sprite entirely in own cell. Preserve identity colors and clothes. Closed mouth throughout. Black white horizontally striped cat hood tracksuit, gold round glasses black face, rope chest strap. NO sword visible, no tail, no mouth. Normal size like peers."
+  },
+  {
+    "id": "nekokoo",
+    "name": "モブネコクー",
+    "prompt": "Create a NEW production RPG walk sprite sheet. Reference 1 is character identity only. Reference 2 is target small chibi RPG pixel-art style and layout. Match reference 2's pixel contour, compact proportions and restrained shading; NOT smooth large illustration. Transparent background, no shadows, labels or grid lines. EXACTLY 4 columns x 4 rows, equally sized cells on square canvas. Rows STRICTLY front/down, LEFT facing, RIGHT facing, back/up. Each row 4 distinct walk phases: left foot forward, passing, right foot forward, passing. Feet alternate visibly, natural walking NOT kicking, body consistent size and centered baseline in each cell, ample transparent gutters. Every sprite entirely in own cell. Preserve identity colors and clothes. Closed mouth throughout. Blue mascot navy white festival happi, white headband, gold glasses black lower face, yellow belly, blue tail. No mouth."
+  },
+  {
+    "id": "money",
+    "name": "モブマニー",
+    "prompt": "Create a NEW production RPG walk sprite sheet. Reference 1 is character identity only. Reference 2 is target small chibi RPG pixel-art style and layout. Match reference 2's pixel contour, compact proportions and restrained shading; NOT smooth large illustration. Transparent background, no shadows, labels or grid lines. EXACTLY 4 columns x 4 rows, equally sized cells on square canvas. Rows STRICTLY front/down, LEFT facing, RIGHT facing, back/up. Each row 4 distinct walk phases: left foot forward, passing, right foot forward, passing. Feet alternate visibly, natural walking NOT kicking, body consistent size and centered baseline in each cell, ample transparent gutters. Every sprite entirely in own cell. Preserve identity colors and clothes. Closed mouth throughout. Black green witch hat gold star charm, black green cape dress pink hem, gold glasses black face. NO staff visible, no mouth, no tail."
+  },
+  {
+    "id": "mita",
+    "name": "モブミータ",
+    "prompt": "Create a NEW production RPG walk sprite sheet. Reference 1 is character identity only. Reference 2 is target small chibi RPG pixel-art style and layout. Match reference 2's pixel contour, compact proportions and restrained shading; NOT smooth large illustration. Transparent background, no shadows, labels or grid lines. EXACTLY 4 columns x 4 rows, equally sized cells on square canvas. Rows STRICTLY front/down, LEFT facing, RIGHT facing, back/up. Each row 4 distinct walk phases: left foot forward, passing, right foot forward, passing. Feet alternate visibly, natural walking NOT kicking, body consistent size and centered baseline in each cell, ample transparent gutters. Every sprite entirely in own cell. Preserve identity colors and clothes. Closed mouth throughout. Dark cat hood gold trim red lining, red eyes gold round glasses, white paw apron brown boots sash. NO tail, no mouth, empty hands."
+  },
+  {
+    "id": "petitnon",
+    "name": "プチノン",
+    "prompt": "Create a NEW production RPG walk sprite sheet. Reference 1 is character identity only. Reference 2 is target small chibi RPG pixel-art style and layout. Match reference 2's pixel contour, compact proportions and restrained shading; NOT smooth large illustration. Transparent background, no shadows, labels or grid lines. EXACTLY 4 columns x 4 rows, equally sized cells on square canvas. Rows STRICTLY front/down, LEFT facing, RIGHT facing, back/up. Each row 4 distinct walk phases: left foot forward, passing, right foot forward, passing. Feet alternate visibly, natural walking NOT kicking, body consistent size and centered baseline in each cell, ample transparent gutters. Every sprite entirely in own cell. Preserve identity colors and clothes. Closed mouth throughout. White red bunny ears outfit gold trim large red gold bow button, red eyes gold round glasses black face. No mouth no tail. Preserve elaborate dress."
+  },
+  {
+    "id": "white",
+    "name": "モブホワイト",
+    "prompt": "既存の新規制作済み4方向歩行素材。"
+  }
+]

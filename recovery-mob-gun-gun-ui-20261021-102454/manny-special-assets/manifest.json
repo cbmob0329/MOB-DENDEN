@@ -1,0 +1,294 @@
+{
+  "title": "GUNGUN Manny special - authoritative current runtime assets",
+  "sourceRoot": "C:/Users/CB-Me/Documents/GitHub/MOB GUN GUN/battle-royale",
+  "skill": "Huge energy orb",
+  "timingUnit": "seconds",
+  "coordinates": "logical pixels",
+  "runtime": {
+    "chargeDuration": 0.28,
+    "chargeRadius": [
+      15,
+      170
+    ],
+    "projectileLife": 2.4,
+    "projectileHeight": 340,
+    "blastDuration": 1.344,
+    "blastHeight": 480
+  },
+  "clips": {
+    "orb": {
+      "loop": true,
+      "frameDurationSeconds": 0.0625,
+      "cycleDurationSeconds": 0.5,
+      "anchor": "center",
+      "frames": [
+        {
+          "relative": "orb/00.webp",
+          "index": 0,
+          "sourceFrameIndex": 0,
+          "pivotNormalized": [
+            0.5,
+            0.5
+          ],
+          "durationSeconds": 0.0625
+        },
+        {
+          "relative": "orb/01.webp",
+          "index": 1,
+          "sourceFrameIndex": 2,
+          "pivotNormalized": [
+            0.5016025641025641,
+            0.46779661016949153
+          ],
+          "durationSeconds": 0.0625
+        },
+        {
+          "relative": "orb/02.webp",
+          "index": 2,
+          "sourceFrameIndex": 4,
+          "pivotNormalized": [
+            0.5,
+            0.5
+          ],
+          "durationSeconds": 0.0625
+        },
+        {
+          "relative": "orb/03.webp",
+          "index": 3,
+          "sourceFrameIndex": 6,
+          "pivotNormalized": [
+            0.5,
+            0.5
+          ],
+          "durationSeconds": 0.0625
+        },
+        {
+          "relative": "orb/04.webp",
+          "index": 4,
+          "sourceFrameIndex": 8,
+          "pivotNormalized": [
+            0.47575757575757577,
+            0.47491638795986624
+          ],
+          "durationSeconds": 0.0625
+        },
+        {
+          "relative": "orb/05.webp",
+          "index": 5,
+          "sourceFrameIndex": 10,
+          "pivotNormalized": [
+            0.5,
+            0.5
+          ],
+          "durationSeconds": 0.0625
+        },
+        {
+          "relative": "orb/06.webp",
+          "index": 6,
+          "sourceFrameIndex": 12,
+          "pivotNormalized": [
+            0.5,
+            0.5
+          ],
+          "durationSeconds": 0.0625
+        },
+        {
+          "relative": "orb/07.webp",
+          "index": 7,
+          "sourceFrameIndex": 14,
+          "pivotNormalized": [
+            0.5,
+            0.5
+          ],
+          "durationSeconds": 0.0625
+        }
+      ]
+    },
+    "orbBurst": {
+      "loop": false,
+      "frameDurationSeconds": 0.168,
+      "cycleDurationSeconds": 1.344,
+      "anchor": "center",
+      "frames": [
+        {
+          "relative": "orbBurst/00.webp",
+          "index": 0,
+          "sourceFrameIndex": 0,
+          "pivotNormalized": [
+            0.49702380952380953,
+            0.6091954022988506
+          ],
+          "durationSeconds": 0.168
+        },
+        {
+          "relative": "orbBurst/01.webp",
+          "index": 1,
+          "sourceFrameIndex": 4,
+          "pivotNormalized": [
+            0.5093167701863354,
+            0.47491638795986624
+          ],
+          "durationSeconds": 0.168
+        },
+        {
+          "relative": "orbBurst/02.webp",
+          "index": 2,
+          "sourceFrameIndex": 8,
+          "pivotNormalized": [
+            0.49521531100478466,
+            0.48507462686567165
+          ],
+          "durationSeconds": 0.168
+        },
+        {
+          "relative": "orbBurst/03.webp",
+          "index": 3,
+          "sourceFrameIndex": 12,
+          "pivotNormalized": [
+            0.5180180180180181,
+            0.463302752293578
+          ],
+          "durationSeconds": 0.168
+        },
+        {
+          "relative": "orbBurst/04.webp",
+          "index": 4,
+          "sourceFrameIndex": 16,
+          "pivotNormalized": [
+            0.5,
+            0.518005540166205
+          ],
+          "durationSeconds": 0.168
+        },
+        {
+          "relative": "orbBurst/05.webp",
+          "index": 5,
+          "sourceFrameIndex": 20,
+          "pivotNormalized": [
+            0.5369928400954654,
+            0.5235457063711911
+          ],
+          "durationSeconds": 0.168
+        },
+        {
+          "relative": "orbBurst/06.webp",
+          "index": 6,
+          "sourceFrameIndex": 24,
+          "pivotNormalized": [
+            0.4699738903394256,
+            0.5456790123456791
+          ],
+          "durationSeconds": 0.168
+        },
+        {
+          "relative": "orbBurst/07.webp",
+          "index": 7,
+          "sourceFrameIndex": 28,
+          "pivotNormalized": [
+            0.48825065274151436,
+            0.5623471882640587
+          ],
+          "durationSeconds": 0.168
+        }
+      ]
+    }
+  },
+  "files": [
+    {
+      "relative": "orb/00.webp",
+      "sourceRelative": "assets/effects/orb/00.webp",
+      "bytes": 11372,
+      "sha256": "982a0791a9a2b1be051e10761caeb9475c25d8748fd0cdd8a657ecb8fc92aad2"
+    },
+    {
+      "relative": "orb/01.webp",
+      "sourceRelative": "assets/effects/orb/01.webp",
+      "bytes": 33328,
+      "sha256": "2cdd19e0c46a318f45026afa3f80e6e2aeb79e60b16f9c61930e29cc1db944d8"
+    },
+    {
+      "relative": "orb/02.webp",
+      "sourceRelative": "assets/effects/orb/02.webp",
+      "bytes": 47422,
+      "sha256": "96ae61177c51038c69e79b281d6607a33082251d0d3347b38ee000920790f7f3"
+    },
+    {
+      "relative": "orb/03.webp",
+      "sourceRelative": "assets/effects/orb/03.webp",
+      "bytes": 55216,
+      "sha256": "c0f4c8b9847c2bbe5e04e8a4deaaff1bc802c383279b09cfa4b62a0d0b0df8fe"
+    },
+    {
+      "relative": "orb/04.webp",
+      "sourceRelative": "assets/effects/orb/04.webp",
+      "bytes": 48218,
+      "sha256": "68fdc5a527e1d1dd6c9a89220a1ea61943fefd7e7710d5cc864b4028068b1d43"
+    },
+    {
+      "relative": "orb/05.webp",
+      "sourceRelative": "assets/effects/orb/05.webp",
+      "bytes": 60474,
+      "sha256": "29a67e5ee4903f725ecef12114af91c3a76e9374214ccdece0cfbd975db6c4a7"
+    },
+    {
+      "relative": "orb/06.webp",
+      "sourceRelative": "assets/effects/orb/06.webp",
+      "bytes": 47286,
+      "sha256": "31fcdf49f971d6e27e9e65ad4e666c04858dc81eecb003d05e3b25b85528ce2b"
+    },
+    {
+      "relative": "orb/07.webp",
+      "sourceRelative": "assets/effects/orb/07.webp",
+      "bytes": 46012,
+      "sha256": "59a6c15f551a955148b181926e744981c452aa7039525e72c7bec3830b784a96"
+    },
+    {
+      "relative": "orbBurst/00.webp",
+      "sourceRelative": "assets/effects/orbBurst/00.webp",
+      "bytes": 8902,
+      "sha256": "b00e775826270e684cb3f5c2ec30c13ca4ed2b5c03745e832bf75055c8e247ad"
+    },
+    {
+      "relative": "orbBurst/01.webp",
+      "sourceRelative": "assets/effects/orbBurst/01.webp",
+      "bytes": 35840,
+      "sha256": "ca9e3a7d68649e463ecfdf569641723b24ef6d6aeeb8da2ede2325286e6914ba"
+    },
+    {
+      "relative": "orbBurst/02.webp",
+      "sourceRelative": "assets/effects/orbBurst/02.webp",
+      "bytes": 34484,
+      "sha256": "99e4867ef16dcf1f77e23b026326b92e369bd4c6713c03bc1b345c0504887d68"
+    },
+    {
+      "relative": "orbBurst/03.webp",
+      "sourceRelative": "assets/effects/orbBurst/03.webp",
+      "bytes": 41648,
+      "sha256": "711dd50d147ecb4a435950766c69351fc2277bfdcaf80af9286c3bfccc6ef75d"
+    },
+    {
+      "relative": "orbBurst/04.webp",
+      "sourceRelative": "assets/effects/orbBurst/04.webp",
+      "bytes": 44242,
+      "sha256": "c7dbc400a9e2544eeadfefc74e128579a1df63aa2a71b370c06396fcc9ce233b"
+    },
+    {
+      "relative": "orbBurst/05.webp",
+      "sourceRelative": "assets/effects/orbBurst/05.webp",
+      "bytes": 35060,
+      "sha256": "ef47bb78d69ed0bfbaef53e24355f9019690c42bfc1e9fe09e1c64f15b3e8921"
+    },
+    {
+      "relative": "orbBurst/06.webp",
+      "sourceRelative": "assets/effects/orbBurst/06.webp",
+      "bytes": 28534,
+      "sha256": "2ac4132ba1d59591be8d6008de26a36182d24c08f74d4c946cedac6440ac3b0e"
+    },
+    {
+      "relative": "orbBurst/07.webp",
+      "sourceRelative": "assets/effects/orbBurst/07.webp",
+      "bytes": 8012,
+      "sha256": "1a77c5a1a322567cab3927cc4ba029c3885a478d8a87babf28fe409a6b5a7bef"
+    }
+  ]
+}
