@@ -1,0 +1,11 @@
+/* Grid placement and routes are shared by residents, player and layout editor. */
+(()=>{'use strict';const W=20,H=12,defs={table:[3,2,'テーブル'],chair:[1,1,'丸椅子'],tv:[3,1,'テレビ'],sofa:[3,1,'ソファ'],plant:[1,1,'観葉植物'],shelf:[2,1,'本棚']};
+const defaults=()=>[{id:1,type:'table',x:3,y:4},{id:2,type:'table',x:3,y:8},{id:3,type:'tv',x:10,y:1},{id:4,type:'sofa',x:10,y:4},{id:5,type:'chair',x:2,y:4},{id:6,type:'chair',x:6,y:4},{id:7,type:'chair',x:2,y:8},{id:8,type:'chair',x:6,y:8},{id:9,type:'plant',x:1,y:1},{id:10,type:'plant',x:18,y:9},{id:11,type:'shelf',x:7,y:1},{id:12,type:'chair',x:4,y:3},{id:13,type:'chair',x:4,y:6},{id:14,type:'chair',x:4,y:7},{id:15,type:'chair',x:4,y:10}];
+function size(o){const d=defs[o.type];return o.rotate?[d[1],d[0]]:d.slice(0,2);}
+function fixed(x,y){return x>=15&&y<=3;}
+function blocked(items,x,y,ignore){return x<0||x>=W||y<0||y>=H||fixed(x,y)||items.some(o=>{const[w,h]=size(o);return o.id!==ignore&&x>=o.x&&x<o.x+w&&y>=o.y&&y<o.y+h;});}
+function route(items,start,end,ignore){const sx=Math.round(start.x),sy=Math.round(start.y),ex=Math.round(end.x),ey=Math.round(end.y),key=(x,y)=>y*W+x,prev=new Map([[key(sx,sy),null]]),q=[[sx,sy]];for(let i=0;i<q.length;i++){const[x,y]=q[i];if(x===ex&&y===ey){const out=[];let k=key(x,y);while(prev.get(k)!==null){out.unshift({x:k%W,y:Math.floor(k/W)});k=prev.get(k);}return out;}for(const[dx,dy]of [[1,0],[-1,0],[0,1],[0,-1]]){const nx=x+dx,ny=y+dy,k=key(nx,ny);if(prev.has(k)||blocked(items,nx,ny,ignore))continue;prev.set(k,key(x,y));q.push([nx,ny]);}}return null;}
+function validate(items){if(!Array.isArray(items)||items.length>32)return '家具は32個までです。';const ids=new Set();for(const o of items){if(!defs[o.type]||!Number.isInteger(o.x)||!Number.isInteger(o.y)||ids.has(o.id))return '家具データが正しくありません。';ids.add(o.id);const[w,h]=size(o);for(let y=o.y;y<o.y+h;y++)for(let x=o.x;x<o.x+w;x++)if(blocked(items,x,y,o.id)||y===11||x===0||x===19||(y===4&&x>=15))return '家具・壁・入口と重なっています。';}
+// Every free cell must remain connected to the entrance, including shower approaches.
+const free=[];for(let y=0;y<H;y++)for(let x=0;x<W;x++)if(!blocked(items,x,y))free.push({x,y});for(const p of free)if(!route(items,{x:10,y:11},p))return '通り道が塞がれます。通路を1マス以上空けてください。';return '';}
+window.ChillCommons48={W,H,defs,defaults,size,blocked,route,validate};})();
